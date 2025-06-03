@@ -1,0 +1,66 @@
+\documentclass[oneside,letterpaper,11pt]{book}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage[sc]{mathpazo} 
+\usepackage{newpxmath}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,     
+    urlcolor=cyan,
+    }
+\usepackage{fancyhdr}
+ 
+\setlength{\headheight}{14.1pt}
+
+
+
+
+
+
+
+\begin{document}
+
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+
+
+\frontmatter
+    \pagestyle{plain}
+    \input{content/titlepage_thesis}    
+    \input{content/dedication}
+    \input{content/thanks}
+    \input{content/resumen}
+    \input{content/abstract}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+
+\mainmatter
+    \pagestyle{fancy}
+    \fancyhf{}
+    \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+    \lhead{\fancyplain{}{\chaptername} \fancyplain{}{\thechapter}. \fancyplain{}{\leftmark}}
+    \rhead{ \fancyplain{}{\thepage} }
+    \renewcommand{\headrulewidth}{1pt} 
+    \renewcommand{\footrulewidth}{0pt} % sin línea
+    \input{content/chapter01}
+    \input{content/chapter02}
+    \input{content/chapter03}
+    \input{content/chapter04}
+    \input{content/chapter05}
+    \input{content/chapter06}
+\appendix
+    \input{content/appendixA}
+    \input{content/appendixB}
+\backmatter
+        \input{content/bibliography}
+     
+\end{document}
