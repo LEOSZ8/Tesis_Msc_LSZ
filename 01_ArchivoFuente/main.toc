@@ -9,9 +9,6 @@
 \contentsline {chapter}{\numberline {2}Remolcador: Descripción y Requerimientos}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}section one}{2}{section.2.1}%
 \contentsline {chapter}{\numberline {3}Hibridación de Remolcadores}{3}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Material Growth and Substrate Preparation}{3}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Device Fabrication Process}{3}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Epitaxial Growth}{3}{subsection.3.2.1}%
 \contentsline {chapter}{\numberline {4}Metodología para diseño de Banco de Baterías}{4}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Resultados de Simulación}{5}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Celda de Batería}{5}{section.5.1}%

@@ -1,25 +1,22 @@
-# Tesis de Magister 
-Repositorio con información sobre el avance del escrito de la tesis de Magister.
+# Tesis de Magister
+Repositorio con información sobre el avance del escrito de la tesis de magister.
+
+Este repositorio se trabajará con las siguientes ramas:
+
+- **Master:** Rama con información del documento que ha sido aprobada y validada para ser parte del documento de tesis.
+
+- **Release:** Rama con información sobre el documento que necesita ser revisada por el supervisor, para correcciones y comentarios. Se pueden hacer correcciones en esta rama sobre la información y plasmar dichos cambios definitivos en la rama *Master*.
+
+- **Develop:** Rama que permite trabajar en todos los capítulos del documento, con tal de que los cambios de acá sean posteriormente plasmados en la rama *Release*.
+
+- **Features:** Ramas que permiten trabajar en capítulos específicos del escrito. Una vez terminado el trabajo en estas ramas, se envía la información a la rama *Develop*.
 
 
-## Instalación Texmaker
-Se ha realizado la configuración básica de:
-- MikTex 
-- Texmaker
+## Rama Master 
 
-Para ello, se han utilizado los siguientes links:
-- [Instalación MikTex + Texmaker](https://www.youtube.com/watch?v=uKetjJTDSqk&ab_channel=Electricallectures)
-- [Solución a "pdflate: major issue: So far, no MikTex administrator has checked for updates"](https://tex.stackexchange.com/questions/530420/how-to-get-rid-of-pdflatex-major-issue-so-far-no-miktex-administrator-has-che)
+Esta rama tiene por finalidad contener información previamente aprobada y validada para ser incorporada al documento de tesis.
 
-## Configuración GitHub
+Además, en esta rama se irán mostrando los cambios en el repositorio.
 
-- [Fundamentos SSH](https://www.youtube.com/watch?v=dPAw4opzN9g)
-- [SSH en GitHub](https://www.youtube.com/watch?v=snCP3c7wXw0)
-
-## Orden de carpetas
-
-- **01_ArchivoFuente:** Carpeta que contiene los archivos *.tex* para la realización del escrito en Texmaker.
-
-- **02_Codigo:** Carpeta que contiene códigos relacionados a las distintas secciones del escrito, permitiendo recopilar resultados.
-
-- **03_ImagenesRepo:** Carpeta que contiente imágenes que muestran información del repositorio.
+### Tesis v0.0
+- Se inicia el trabajo en el repositorio.
