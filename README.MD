@@ -1,9 +1,9 @@
-## Rama Develop 
+## SubRama Feature1: Introducción  
 
-![Evolución Rama Develop]()
+![Evolución Rama F1]()
 
 
-Esta rama tiene por objetivo poder trabajar en el documento para subir los cambios posteriormente a la rama *Release*.
+Esta subrama tiene por objetivo desarrollar el capitulo de introducción del escrito, con tal de completarlo y luego subirlo a la rama *develop*.
 
-### Dev Branch
-- Se inicia el trabajo en el repositorio y se comienza a trabajar en la sub rama *Feature1*, correspondiente a la introducción.
+### F1 SubBranch
+- Se inicia el trabajo en el repositorio.
