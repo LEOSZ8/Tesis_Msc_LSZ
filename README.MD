@@ -7,3 +7,5 @@ Esta subrama tiene por objetivo desarrollar el capitulo de introducción del esc
 
 ### F1 SubBranch
 - Se inicia el trabajo en el repositorio.
+
+- F1 v0.2: Se agregan imágenes de la problemática relacionada a la generación de emisiones de a nivel global, emisiones del sector energía, emisiones del sector transporte y finalmente estimación de emisiones del sector transporte marítimo.
