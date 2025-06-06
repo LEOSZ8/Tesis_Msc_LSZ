@@ -1,6 +1,6 @@
 ## SubRama Feature5: Simulaciones
 
-![Evolución Rama Develop](https://github.com/LEOSZ8/Tesis_Msc_LSZ/blob/af1b3c3fb590699f9ac9a06539952fdc9cc06482/03_ImagenesRepo/Image_readme.svg)
+![Evolución Rama Develop](https://github.com/LEOSZ8/Tesis_Msc_LSZ/blob/0a5d4820e149f63c7d5b9567775fe21f0fb9065a/03_ImagenesRepo/Image_readme.svg)
 
 
 Estasubrama tiene por objetivo simular los diferentes elementos dentro del tren de potencia de la embarcación con tal de analizar el comportamiento eléctrico y mecánico de los distintos elementos.
