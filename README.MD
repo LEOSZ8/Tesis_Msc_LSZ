@@ -1,7 +1,7 @@
 # Tesis de Magister
 Repositorio con información sobre el avance del escrito de la tesis de magister.
 
-![Evolución repositorio](https://github.com/LEOSZ8/Tesis_Msc_LSZ/blob/2776dc385d920127b4aa1178481b4c61efcc48f0/03_ImagenesRepo/03_gitflow.svg)
+![Evolución repositorio](https://github.com/LEOSZ8/Tesis_Msc_LSZ/blob/a72cbba9ca35357151e9436d1d3cad131982c8e3/03_ImagenesRepo/Image_readme.svg)
 
 Este repositorio se trabajará con las siguientes ramas:
 
