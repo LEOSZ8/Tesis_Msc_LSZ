@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  6 JUN 2025 06:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  9 JUN 2025 06:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,64 +788,94 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] (content/chapter05.tex
 Cap\'{\i }tulo 1.
-<images/chapter05/PowerTrain.jpg, id=119, 1533.73pt x 542.025pt>
+<images/chapter05/PowerTrain.jpg, id=126, 1533.73pt x 542.025pt>
 File: images/chapter05/PowerTrain.jpg Graphic file (type jpg)
 <use images/chapter05/PowerTrain.jpg>
 Package pdftex.def Info: images/chapter05/PowerTrain.jpg  used on input line 7.
 
 (pdftex.def)             Requested size: 352.31625pt x 124.50598pt.
-<images/chapter05/BattCell_scheme.jpg, id=120, 1600.98125pt x 542.025pt>
+<images/chapter05/BattCell_scheme.jpg, id=127, 1600.98125pt x 542.025pt>
 File: images/chapter05/BattCell_scheme.jpg Graphic file (type jpg)
 <use images/chapter05/BattCell_scheme.jpg>
 Package pdftex.def Info: images/chapter05/BattCell_scheme.jpg  used on input li
 ne 16.
 (pdftex.def)             Requested size: 352.31625pt x 119.27895pt.
+<images/chapter05/Cell_model.jpg, id=128, 340.27126pt x 185.69376pt>
+File: images/chapter05/Cell_model.jpg Graphic file (type jpg)
+<use images/chapter05/Cell_model.jpg>
+Package pdftex.def Info: images/chapter05/Cell_model.jpg  used on input line 25
+.
+(pdftex.def)             Requested size: 140.92793pt x 76.90846pt.
 
 
 [1
 
 
  <./images/chapter05/PowerTrain.jpg> <./images/chapter05/BattCell_scheme.jpg>]
-<images/chapter05/BattBank_scheme.jpg, id=125, 1533.73pt x 542.025pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/chapter05/BattCellSim_jpg.jpg, id=133, 562.1pt x 421.575pt>
+File: images/chapter05/BattCellSim_jpg.jpg Graphic file (type jpg)
+<use images/chapter05/BattCellSim_jpg.jpg>
+Package pdftex.def Info: images/chapter05/BattCellSim_jpg.jpg  used on input li
+ne 82.
+(pdftex.def)             Requested size: 352.31625pt x 264.23634pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/chapter05/BattBank_scheme.jpg, id=134, 1533.73pt x 542.025pt>
 File: images/chapter05/BattBank_scheme.jpg Graphic file (type jpg)
 <use images/chapter05/BattBank_scheme.jpg>
 Package pdftex.def Info: images/chapter05/BattBank_scheme.jpg  used on input li
-ne 30.
+ne 93.
 (pdftex.def)             Requested size: 352.31625pt x 124.50598pt.
-<images/chapter05/ElectricMotor_scheme.jpg, id=126, 1533.73pt x 542.025pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/chapter05/ElectricMotor_scheme.jpg, id=135, 1533.73pt x 542.025pt>
 File: images/chapter05/ElectricMotor_scheme.jpg Graphic file (type jpg)
 <use images/chapter05/ElectricMotor_scheme.jpg>
 Package pdftex.def Info: images/chapter05/ElectricMotor_scheme.jpg  used on inp
-ut line 39.
+ut line 102.
 (pdftex.def)             Requested size: 352.31625pt x 124.50598pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+
+
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported  on input line 44.
-[2 <./images/chapter05/BattBank_scheme.jpg> <./images/chapter05/ElectricMotor_s
-cheme.jpg>]
-<images/chapter05/DieselEngine_scheme.jpg, id=131, 1533.73pt x 542.025pt>
+(babel)             Reported  on input line 107.
+[2{C:/Miktex/fonts/enc/dvips/newpx/px-lms.enc} <./images/chapter05/Cell_model.j
+pg>]
+<images/chapter05/DieselEngine_scheme.jpg, id=147, 1533.73pt x 542.025pt>
 File: images/chapter05/DieselEngine_scheme.jpg Graphic file (type jpg)
 <use images/chapter05/DieselEngine_scheme.jpg>
 Package pdftex.def Info: images/chapter05/DieselEngine_scheme.jpg  used on inpu
-t line 50.
+t line 113.
 (pdftex.def)             Requested size: 352.31625pt x 124.50598pt.
-<images/chapter05/Propeller_scheme.jpg, id=132, 1533.73pt x 542.025pt>
+<images/chapter05/Propeller_scheme.jpg, id=148, 1533.73pt x 542.025pt>
 File: images/chapter05/Propeller_scheme.jpg Graphic file (type jpg)
 <use images/chapter05/Propeller_scheme.jpg>
 Package pdftex.def Info: images/chapter05/Propeller_scheme.jpg  used on input l
-ine 59.
+ine 122.
 (pdftex.def)             Requested size: 352.31625pt x 124.50598pt.
 )
 
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
-[3 <./images/chapter05/DieselEngine_scheme.jpg> <./images/chapter05/Propeller_s
-cheme.jpg>] (content/bibliography.tex (main.bbl
+[3 <./images/chapter05/BattCellSim_jpg.jpg> <./images/chapter05/BattBank_scheme
+.jpg>]
 
-[4
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+[4 <./images/chapter05/ElectricMotor_scheme.jpg> <./images/chapter05/DieselEngi
+ne_scheme.jpg> <./images/chapter05/Propeller_scheme.jpg>]
+(content/bibliography.tex (main.bbl
+
+[5
 
 
 
@@ -853,7 +883,7 @@ cheme.jpg>] (content/bibliography.tex (main.bbl
 
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
-[5] (main.aux
+[6] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -865,26 +895,25 @@ L3 programming layer <2025-04-29>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EFF3F873A5DE2365DFA178856E12B32F;1166.
+(rerunfilecheck)             Checksum: 0935CF5BA86FA4B9F8769D10A4ADAB0E;1166.
  ) 
 Here is how much of TeX's memory you used:
- 17138 strings out of 469922
- 255402 string characters out of 5485977
- 702384 words of memory out of 5000000
- 43453 multiletter control sequences out of 15000+600000
- 659160 words of font info for 224 fonts, out of 8000000 for 9000
+ 17204 strings out of 469922
+ 256619 string characters out of 5485977
+ 702675 words of memory out of 5000000
+ 43483 multiletter control sequences out of 15000+600000
+ 664693 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1003b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/fpl/fplrc8a.pfb><C:/Miktex/fonts/type1/urw/pala
-tino/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplr8a.pfb><C:/Miktex/fonts
-/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 731133 bytes).
+ 75i,17n,79p,1003b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Miktex/fonts/type1/public/newpx/NewPXMI.pfb><C:/Miktex/fonts/type1/public
+/fpl/fplrc8a.pfb><C:/Miktex/fonts/type1/public/newpx/pxmiaX.pfb><C:/Miktex/font
+s/type1/public/newpx/pxsys.pfb><C:/Miktex/fonts/type1/public/newtx/txexs.pfb><C
+:/Miktex/fonts/type1/urw/palatino/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatin
+o/uplr8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (14 pages, 815244 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 58996 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 63102 words of extra memory for PDF output out of 74296 (max. 10000000)
 

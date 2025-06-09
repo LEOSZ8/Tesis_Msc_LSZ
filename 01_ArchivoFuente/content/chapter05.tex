@@ -20,12 +20,75 @@ The last step here, is to simulate the power train, related with all the element
 
 The battery bank’s design parameters are used to select a cell for electrical modeling with a Shepherd model of order 0. Technical details of the chosen cell, U27-36XP from Valence, are used to find model parameters that closely match its real discharge curve. The model shows good similarity to the actual performance, as illustrated in Fig. 12. This enables the extrapolation of results to model a battery bank and predict its behavior across various operating profiles.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/chapter05/Cell_model.jpg}
+    \caption{Cell model zero order Shepherd.}
+    \label{fig:Zo_Shepherd}
+\end{figure}
+
+\begin{equation}
+    V_{batt} = V_0 -K\frac{Q_0}{Q_0-Q}Q + A\cdot e^{-BQ}
+\label{eq:Voc}
+\end{equation}
+
+\begin{equation}
+    Q = \int_0^t i_{batt}(t)dt
+\end{equation}
+
+\begin{itemize}
+    \item $V_{batt}$: no load voltage [V].
+    \item $V_{0}$: Battery constant voltage [V].
+    \item $K$: Polarizing voltage/resistance factor [V].
+    \item $Q$: Actual battery capacity [Ah].
+    \item $Q_{0}$: Battery capacity [Ah].
+    \item $A$: Exponential zone voltage amplitude [V].
+    \item $B$: Exponential zone time constant inverse [Ah]${}^{-1}$
+\end{itemize}
+
+\textcolor{blue}{Agregar imagen de ajuste de curva}
+
+\begin{equation}
+\begin{split}
+    A &= V_{full}-V_{exp}\\
+    B &= \frac{3}{Q_{exp}}\\
+    K &= \frac{(V_{full}-V_{nom}+A (e^{-B\cdot Q_{nom}}-1)) \Delta Q}{Q_{full}}\\
+    E_0 &= V_{full} + K + R\cdot I_{nom} - A\\
+    \Delta Q &=Q_{full}-Q_{nom}
+\end{split}
+\label{ecuaciones}
+\end{equation}
+
+
+
+\begin{table}[h]
+\centering
+\caption{Valores de los parámetros del modelo Sheperd clásico y ajustado para una celda de batería.}
+\label{table3}
+\begin{tabular}{c|c|c}\hline
+Parámetro& Valor parámetro Shepherd clásico & Valor parámetro Sheperd ajustado\\ \hline \hline 
+A& [V]& [V]\\
+B & [$Ah^{-1}$] & [$Ah^{-1}$]\\
+K & [V]& [V]\\
+%K1 & 0& 8e-4[V]\\
+$E_0$ & [V]& [V]\\
+\hline \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter05/BattCellSim_jpg.jpg}
+    \caption{BattCell Sim.}
+    \label{fig:BattCellSim}
+\end{figure}
 
 
 
 \section{Battery Bank}
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\textwidth]{images/chapter05/BattBank_scheme.jpg}
     \caption{BattBank in power train.}
