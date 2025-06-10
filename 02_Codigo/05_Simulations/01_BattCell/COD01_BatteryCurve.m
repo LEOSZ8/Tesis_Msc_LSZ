@@ -58,7 +58,14 @@ PackNominalDischgCurrent = cellNominalDischargeI * n_parallel; %[A]
 % Determine Pack internal resistance:
 PackInternalResistance = cellInternalR * n_series/n_parallel; %[Ω]
 
-% Determine Battery Parameters:
+% Determine Battery Parameters (Classic Shepherd):
+
+%A = (PackFullChargeVoltage - PackExponentialZoneVoltage); % [V]
+%B = (3/PackExponentialZoneCapacity); % [1/(Ah)]
+%K = (PackFullChargeVoltage - NominalPackVoltage + A*(exp(-B*NominalPackCapacity) - 1))*(PackRatedCapacity - NominalPackCapacity)/NominalPackCapacity;  % [V]
+%E0 = (PackFullChargeVoltage + K - A + PackInternalResistance * PackNominalDischgCurrent);  % [V]
+
+% Determine Battery Parameters (Adjusted Shepherd):
 
 A = 0.6*(PackFullChargeVoltage - PackExponentialZoneVoltage); % [V]
 B = (3/PackExponentialZoneCapacity); % [1/(Ah)]

@@ -4,8 +4,8 @@
 \contentsline {chapter}{Abstract}{\es@scroman {iv}}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Simulation results}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Battery Cell}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Battery Bank}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Electric Motor}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.2}Battery Bank}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Electric Motor}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Diesel Propulsion Engine}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Propeller}{4}{section.1.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{5}{figure.1.8}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{5}{figure.caption.15}%
