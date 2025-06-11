@@ -70,7 +70,7 @@ Parámetro& Shepherd clásico & Sheperd ajustado\\ \hline \hline
 A& 2.4 [V]& 1.44 [V]\\
 B & 3 [$Ah^{-1}$] & 3 [$Ah^{-1}$]\\
 K & 1.2857 [V]& 0.0051 [V]\\
-$E_0$ & 43.9357 [V]& 39.2536 [V]\\
+$V_0$ & 43.9357 [V]& 39.2536 [V]\\
 \hline \hline
 \end{tabular}
 \end{table}
@@ -101,9 +101,39 @@ $E_0$ & 43.9357 [V]& 39.2536 [V]\\
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{images/chapter05/BattBank_scheme.jpg}
+    \includegraphics[width=0.75\textwidth]{images/chapter05/02_BattBank/BattBank_scheme.jpg}
     \caption{BattBank in power train.}
     \label{BattBank}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Valores de los parámetros del modelo Batt Bank}
+\label{table4}
+\begin{tabular}{c|c}\hline
+Parámetro& Shepherd values\\ \hline \hline 
+${N}_{s}$ & 19 [-]\\
+${N}_{p}$ & 85 [-]\\
+A & 27.36 [V]\\
+B & 0.0353 [$Ah^{-1}$] \\
+K & 0.0011 [V]\\
+$V_0$ & 745.7320 [V]\\
+\hline \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter05/02_BattBank/01_VoltageProfile.jpg}
+    \caption{BattBank voltage profile.}
+    \label{BattBank_vp}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter05/02_BattBank/02_ElecBehavior.jpg}
+    \caption{BattBank Electrical behavior.}
+    \label{BattBank_eb}
 \end{figure}
 
 \section{Electric Motor}
