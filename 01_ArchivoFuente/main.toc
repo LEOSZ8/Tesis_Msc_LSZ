@@ -5,8 +5,8 @@
 \contentsline {chapter}{\numberline {1}Simulation results}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Battery Cell}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Battery Bank}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Electric Motor}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Power Inverter}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Diesel Propulsion Engine}{5}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Propeller}{5}{section.1.6}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{6}{figure.caption.18}%
+\contentsline {section}{\numberline {1.3}Power Converter Battery}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Electric Motor}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Diesel Propulsion Engine}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Propeller}{6}{section.1.6}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{7}{figure.caption.19}%
