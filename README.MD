@@ -13,4 +13,5 @@
 * v0.4: Se agrega información general a la subsección "Battery Bank", restando sólo el texto necesario para esta subsección.
     * <ins>**Nota:**</ins> Agregar en la sección "Battery Cell" info gráfica de cómo los parámetros afectan a la curva de voltage profile.
 * v0.5: Se agrega la sección "Power Converter Battery", en donde se describirá el proceso de diseño de la etapa DC-DC y de la etapa DC-AC. La finalidad es poder mostrar el proceso de diseño de cada etapa.
+* v0.6: Se diseña el convertidor DC-DC (TLBBC), el cual considera un control de corriente y un control de balance de condensadores.
 
