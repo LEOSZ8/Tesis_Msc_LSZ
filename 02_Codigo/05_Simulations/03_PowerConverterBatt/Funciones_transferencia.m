@@ -9,7 +9,9 @@ I = eye(3);
 
 G = C*( inv(s*I-A) )*B;
 
-Hib_d1= simplify(G(1,1))
-Hib_d2= simplify(G(1,2))
+Hib_d1= simplify(G(1,1));
+Hib_d2= simplify(G(1,2));
 H_Deltavc_d1= simplify(G(2,1));
 H_Deltavc_d2= simplify(G(2,2));
+H_vo_d1= simplify(G(3,1))
+H_vo_d2= simplify(G(3,2))
