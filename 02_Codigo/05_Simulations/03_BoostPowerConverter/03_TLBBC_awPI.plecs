@@ -1,5 +1,5 @@
 Plecs {
-  Name          "TLBBC"
+  Name          "03_TLBBC_awPI"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
@@ -823,11 +823,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 882]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACw/wCAAAAA/sAAAAQAFoAbwBvA"
+      Location      [0, 23; 1366, 707]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACGPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAsMAAABoAP///wAAAAMAAAVWAAAAdfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABJ4AAALDAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAhgAAABoAP///wAAAAMAAAVWAAAAdfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABJ4AAAIYAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2435,11 +2435,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 819]
+      Location      [0, 27; 1366, 864]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAKXAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAALEAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -3130,7 +3130,7 @@ Plecs {
       Type          Subsystem
       Name          "awPI_DetlaVc"
       Show          on
-      Position      [1470, 505]
+      Position      [660, 645]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -3207,12 +3207,12 @@ Plecs {
           Frame         [-30, -15; 30, 15]
           Parameter {
             Variable      "Numerator"
-            Value         "[1-(0.0059881)^2  -(0.0059881^2)*132.2]"
+            Value         "[-0.0059881*132.2]"
             Show          off
           }
           Parameter {
             Variable      "Denominator"
-            Value         "[0.0059881 0.0059881*132.2]"
+            Value         "[(0.0059881^2) 0.0059881*0.0059881*132.2]"
             Show          off
           }
           Parameter {
@@ -3353,7 +3353,7 @@ Plecs {
       Type          Subsystem
       Name          "awPI_Vo"
       Show          on
-      Position      [1495, 125]
+      Position      [350, 510]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -3464,12 +3464,12 @@ Plecs {
           Frame         [-30, -15; 30, 15]
           Parameter {
             Variable      "Numerator"
-            Value         "[1-(0.1^2)  -(0.1^2)*132.2]"
+            Value         "[-0.1*132.2]"
             Show          off
           }
           Parameter {
             Variable      "Denominator"
-            Value         "[0.1 0.1*132.2]"
+            Value         "[(0.1^2) 0.1*0.1*132.2]"
             Show          off
           }
           Parameter {
@@ -3526,6 +3526,63 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Scope
+          Name          "Scope"
+          Show          on
+          Position      [395, 150]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Location      [0, 23; 1366, 707]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKR"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":97,\"Labels\":"
+"[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "Sum7"
@@ -3546,8 +3603,16 @@ Plecs {
           SrcTerminal   2
           Points        [315, 80]
           Branch {
-            DstComponent  "Saturation"
-            DstTerminal   1
+            Points        [335, 80]
+            Branch {
+              DstComponent  "Saturation"
+              DstTerminal   1
+            }
+            Branch {
+              Points        [335, 150]
+              DstComponent  "Scope"
+              DstTerminal   1
+            }
           }
           Branch {
             Points        [315, 150]
@@ -3574,9 +3639,9 @@ Plecs {
     }
     Component {
       Type          Subsystem
-      Name          "awPI_Ib1"
+      Name          "awPI_Ib"
       Show          on
-      Position      [1495, 60]
+      Position      [650, 505]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -3687,12 +3752,12 @@ Plecs {
           Frame         [-30, -15; 30, 15]
           Parameter {
             Variable      "Numerator"
-            Value         "[1-(0.019925)^2  -(0.019925^2)*1238]"
+            Value         "[-0.019925*1238]"
             Show          off
           }
           Parameter {
             Variable      "Denominator"
-            Value         "[0.019925 0.019925*1238]"
+            Value         "[0.019925^2 0.019925*0.019925*1238]"
             Show          off
           }
           Parameter {
@@ -5139,7 +5204,7 @@ Plecs {
       Type          Subsystem
       Name          "PI_Ib"
       Show          on
-      Position      [650, 505]
+      Position      [1495, 130]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -5162,7 +5227,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1283, 684]
+        Location      [0, 23; 1366, 685]
         ZoomFactor    1.30957
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -5548,7 +5613,7 @@ Plecs {
       Type          Subsystem
       Name          "PI_Vo"
       Show          on
-      Position      [365, 510]
+      Position      [1495, 180]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -5763,11 +5828,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1283, 724]
+          Location      [0, 27; 1283, 733]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUDAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAI4"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJB"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -5893,7 +5958,7 @@ Plecs {
       Type          Subsystem
       Name          "PI_DeltaVc"
       Show          on
-      Position      [660, 645]
+      Position      [1455, 585]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -5916,7 +5981,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 23; 1366, 685]
+        Location      [0, 27; 1366, 689]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -6296,6 +6361,59 @@ Plecs {
           DstComponent  "Integrator"
           DstTerminal   1
         }
+      }
+    }
+    Component {
+      Type          Switch
+      Name          "S1"
+      Show          off
+      Position      [790, 130]
+      Direction     left
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Step
+      Name          "rdy"
+      Show          on
+      Position      [740, 85]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Time"
+        Value         "0.8"
+        Show          off
+      }
+      Parameter {
+        Variable      "Before"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "After"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
       }
     }
     Connection {
@@ -6764,7 +6882,7 @@ Plecs {
         DstTerminal   1
       }
       Branch {
-        DstComponent  "PI_Vo"
+        DstComponent  "awPI_Vo"
         DstTerminal   2
       }
     }
@@ -6850,8 +6968,14 @@ Plecs {
       }
       Branch {
         Points        [740, 130]
-        DstComponent  "Vm6"
-        DstTerminal   1
+        Branch {
+          DstComponent  "Vm6"
+          DstTerminal   1
+        }
+        Branch {
+          DstComponent  "S1"
+          DstTerminal   1
+        }
       }
     }
     Connection {
@@ -6898,21 +7022,6 @@ Plecs {
       DstTerminal   2
     }
     Connection {
-      Type          Wire
-      SrcComponent  "R3"
-      SrcTerminal   1
-      Points        [840, 130; 925, 130]
-      DstComponent  "Vm1"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "PI_Vo"
-      SrcTerminal   1
-      DstComponent  "Sum2"
-      DstTerminal   2
-    }
-    Connection {
       Type          Signal
       SrcComponent  "Sum2"
       SrcTerminal   1
@@ -6922,13 +7031,57 @@ Plecs {
         DstTerminal   1
       }
       Branch {
-        DstComponent  "PI_Ib"
+        DstComponent  "awPI_Ib"
         DstTerminal   2
       }
     }
     Connection {
       Type          Signal
-      SrcComponent  "PI_Ib"
+      SrcComponent  "Sum3"
+      SrcTerminal   1
+      Points        [490, 645]
+      Branch {
+        DstComponent  "Goto13"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "awPI_DetlaVc"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "R3"
+      SrcTerminal   1
+      Points        [840, 130]
+      Branch {
+        Points        [925, 130]
+        DstComponent  "Vm1"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "S1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "rdy"
+      SrcTerminal   1
+      Points        [790, 85]
+      DstComponent  "S1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "awPI_Vo"
+      SrcTerminal   1
+      DstComponent  "Sum2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "awPI_Ib"
       SrcTerminal   1
       Points        [745, 505]
       Branch {
@@ -6943,21 +7096,7 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Sum3"
-      SrcTerminal   1
-      Points        [490, 645]
-      Branch {
-        DstComponent  "Goto13"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "PI_DeltaVc"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "PI_DeltaVc"
+      SrcComponent  "awPI_DetlaVc"
       SrcTerminal   1
       Points        [825, 645]
       Branch {
