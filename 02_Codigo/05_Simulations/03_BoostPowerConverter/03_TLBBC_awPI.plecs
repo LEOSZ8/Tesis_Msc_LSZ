@@ -54,8 +54,8 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [1366, -282; 3286, 692]
-    ZoomFactor    1.14436
+    Location      [0, 26; 1283, 683]
+    ZoomFactor    0.763603
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -259,7 +259,7 @@ Plecs {
       Type          Capacitor
       Name          "C1"
       Show          off
-      Position      [540, 235]
+      Position      [540, 205]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -823,15 +823,15 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1366, 707]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACGPwCAAAAA/sAAAAQAFoAbwBvA"
+      Location      [0, 26; 1283, 705]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACJvwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAhgAAABoAP///wAAAAMAAAVWAAAAdfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABJ4AAAIYAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAiYAAABoAP///wAAAAMAAAUDAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABEsAAAImAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":164,\"Labels\":[\""
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":158,\"Labels\":[\""
 "Mean\"],\"VisualIdxs\":[8]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
@@ -2435,11 +2435,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 864]
+      Location      [0, 26; 1283, 705]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAALEAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUDAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMAAAImAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -6616,7 +6616,6 @@ Plecs {
       Type          Signal
       SrcComponent  "Am1"
       SrcTerminal   3
-      Points        [230, 150]
       DstComponent  "Goto6"
       DstTerminal   1
     }
