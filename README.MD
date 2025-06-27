@@ -17,5 +17,7 @@
 * v0.7: Se diseña el control de voltaje del convertidor TLBBC. Sin embargo, posiblemente será necesario rediseñar el controlador de vo. En este punto, queda mejorar:
     * Sistema de precarga.
     * Diseño de controlador vc.
+* v0.8: Se realiza el circuito de precarga, considerando la secuencia adecuada para que no existiesen problemas de control.
+* v0.9: Se implementa un banco de baterías adecuado para el convertidor visualizar como se descarga el banco de baterías a 50 kW por medio del convertidor de potencia.
 
 
