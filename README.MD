@@ -19,5 +19,5 @@
     * Diseño de controlador vc.
 * v0.8: Se realiza el circuito de precarga, considerando la secuencia adecuada para que no existiesen problemas de control.
 * v0.9: Se implementa un banco de baterías adecuado para el convertidor visualizar como se descarga el banco de baterías a 50 kW por medio del convertidor de potencia.
-
+* v0.10: Se prueba el funcionamiento de 5 convertidores TLBBC, extrayendo 50 kW al banco de baterías (19ns x 21np). La prueba entrega como resultado una descarga progresiva del banco de baterías. Sólo queda aumentar conectar las salidas de todos los convertidores a un punto común (DC-LINK).
 

@@ -1,5 +1,5 @@
 Plecs {
-  Name          "06_TLBBC_BattBank_nmods"
+  Name          "07_TLBBC_BattBank_nmods_250kW"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
@@ -74,13 +74,13 @@ Plecs {
       Type          Resistor
       Name          "Load 50kW"
       Show          off
-      Position      [655, 120]
+      Position      [870, 125]
       Direction     up
       Flipped       off
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "20"
+        Value         "4"
         Show          off
       }
     }
@@ -174,7 +174,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 23; 1366, 685]
+        Location      [1366, -282; 3286, 692]
         ZoomFactor    1
         SliderPosition [411, 0]
         ShowBrowser   off
@@ -1293,7 +1293,7 @@ Plecs {
           Type          Sum
           Name          "Sum4"
           Show          off
-          Position      [770, 705]
+          Position      [770, 760]
           Direction     left
           Flipped       off
           LabelPosition east
@@ -1322,7 +1322,7 @@ Plecs {
           Type          From
           Name          "From7"
           Show          off
-          Position      [740, 705]
+          Position      [740, 760]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1346,7 +1346,7 @@ Plecs {
           Type          From
           Name          "From8"
           Show          off
-          Position      [770, 740]
+          Position      [770, 795]
           Direction     up
           Flipped       off
           LabelPosition east
@@ -2775,6 +2775,120 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Scope
+          Name          "Scope"
+          Show          on
+          Position      [1100, 720]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Location      [1366, -282; 3286, 714]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPJ"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":182,\"Labels\""
+":[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
+        Component {
+          Type          Scope
+          Name          "Scope1"
+          Show          on
+          Position      [890, 725]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Location      [1366, -282; 3286, 714]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPJ"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":94,\"Labels\":"
+"[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
         Connection {
           Type          Wire
           SrcComponent  "IGBTD1"
@@ -3329,25 +3443,10 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "From4"
-          SrcTerminal   1
-          Points        [1070, 695]
-          DstComponent  "Sum2"
-          DstTerminal   3
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "awPI_Vo"
           SrcTerminal   1
           DstComponent  "Sum2"
           DstTerminal   2
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Sum4"
-          SrcTerminal   1
-          DstComponent  "Sum5"
-          DstTerminal   3
         }
         Connection {
           Type          Signal
@@ -3376,6 +3475,36 @@ Plecs {
           SrcTerminal   1
           DstComponent  "Sum5"
           DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From4"
+          SrcTerminal   1
+          Points        [1045, 695]
+          Branch {
+            Points        [1070, 695]
+            DstComponent  "Sum2"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1045, 720]
+            DstComponent  "Scope"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sum4"
+          SrcTerminal   1
+          Points        [770, 725]
+          Branch {
+            DstComponent  "Sum5"
+            DstTerminal   3
+          }
+          Branch {
+            DstComponent  "Scope1"
+            DstTerminal   1
+          }
         }
         Annotation {
           Name          "<html><body>\n<p>delta_d</p></body></html>"
@@ -6533,7 +6662,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          off
-      Position      [740, 120]
+      Position      [1060, 125]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6547,7 +6676,7 @@ Plecs {
       Type          Gain
       Name          "Gain1"
       Show          off
-      Position      [805, 120]
+      Position      [1125, 125]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6579,9 +6708,9 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Po n1 [kW]"
+      Name          "Po [kW]"
       Show          on
-      Position      [875, 120]
+      Position      [1195, 125]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -6594,20 +6723,6 @@ Plecs {
       Parameter {
         Variable      "Precision"
         Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "Load 50kW1"
-      Show          off
-      Position      [655, 235]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "20"
         Show          off
       }
     }
@@ -10012,88 +10127,6 @@ Plecs {
       }
     }
     Component {
-      Type          PlecsProbe
-      Name          "Probe2"
-      Show          off
-      Position      [740, 235]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Probe {
-        Component     "Load 50kW1"
-        Path          ""
-        Signals       {"Resistor power"}
-      }
-    }
-    Component {
-      Type          Gain
-      Name          "Gain2"
-      Show          off
-      Position      [805, 235]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "K"
-        Value         "1e-3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Multiplication"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "OutputDataType"
-        Value         "11"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataTypeOverflowMode"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "GainDataType"
-        Value         "11"
-        Show          off
-      }
-    }
-    Component {
-      Type          Display
-      Name          "Po n2 [kW]"
-      Show          on
-      Position      [875, 235]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "Load 50kW2"
-      Show          off
-      Position      [655, 360]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "20"
-        Show          off
-      }
-    }
-    Component {
       Type          Switch
       Name          "S3"
       Show          off
@@ -13397,88 +13430,6 @@ Plecs {
 "trol</span></p></body></html>"
           Position      [1195, 545]
         } 
-      }
-    }
-    Component {
-      Type          PlecsProbe
-      Name          "Probe3"
-      Show          off
-      Position      [740, 360]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Probe {
-        Component     "Load 50kW2"
-        Path          ""
-        Signals       {"Resistor power"}
-      }
-    }
-    Component {
-      Type          Gain
-      Name          "Gain3"
-      Show          off
-      Position      [805, 360]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "K"
-        Value         "1e-3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Multiplication"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "OutputDataType"
-        Value         "11"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataTypeOverflowMode"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "GainDataType"
-        Value         "11"
-        Show          off
-      }
-    }
-    Component {
-      Type          Display
-      Name          "Po n3 [kW]"
-      Show          on
-      Position      [875, 360]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "Load 50kW3"
-      Show          off
-      Position      [655, 485]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "20"
-        Show          off
       }
     }
     Component {
@@ -16788,88 +16739,6 @@ Plecs {
       }
     }
     Component {
-      Type          PlecsProbe
-      Name          "Probe4"
-      Show          off
-      Position      [740, 485]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Probe {
-        Component     "Load 50kW3"
-        Path          ""
-        Signals       {"Resistor power"}
-      }
-    }
-    Component {
-      Type          Gain
-      Name          "Gain4"
-      Show          off
-      Position      [805, 485]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "K"
-        Value         "1e-3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Multiplication"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "OutputDataType"
-        Value         "11"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataTypeOverflowMode"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "GainDataType"
-        Value         "11"
-        Show          off
-      }
-    }
-    Component {
-      Type          Display
-      Name          "Po n4 [kW]"
-      Show          on
-      Position      [875, 485]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "Load 50kW4"
-      Show          off
-      Position      [655, 620]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "20"
-        Show          off
-      }
-    }
-    Component {
       Type          Switch
       Name          "S5"
       Show          off
@@ -20176,74 +20045,6 @@ Plecs {
       }
     }
     Component {
-      Type          PlecsProbe
-      Name          "Probe5"
-      Show          off
-      Position      [740, 620]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Probe {
-        Component     "Load 50kW4"
-        Path          ""
-        Signals       {"Resistor power"}
-      }
-    }
-    Component {
-      Type          Gain
-      Name          "Gain5"
-      Show          off
-      Position      [805, 620]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "K"
-        Value         "1e-3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Multiplication"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "OutputDataType"
-        Value         "11"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataTypeOverflowMode"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "GainDataType"
-        Value         "11"
-        Show          off
-      }
-    }
-    Component {
-      Type          Display
-      Name          "Po n5 [kW]"
-      Show          on
-      Position      [875, 620]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
       Type          From
       Name          "From"
       Show          off
@@ -20387,27 +20188,81 @@ Plecs {
         Show          off
       }
     }
+    Component {
+      Type          Resistor
+      Name          "R1"
+      Show          off
+      Position      [665, 90]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "1e-3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Resistor
+      Name          "R2"
+      Show          off
+      Position      [665, 205]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "1e-3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Resistor
+      Name          "R3"
+      Show          off
+      Position      [665, 330]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "1e-3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Resistor
+      Name          "R4"
+      Show          off
+      Position      [665, 455]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "1e-3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Resistor
+      Name          "R5"
+      Show          off
+      Position      [665, 590]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "1e-3"
+        Show          off
+      }
+    }
     Connection {
       Type          Wire
       SrcComponent  "TLBBC1"
       SrcTerminal   1
       DstComponent  "S1"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Load 50kW"
-      SrcTerminal   2
-      Points        [655, 150]
-      DstComponent  "TLBBC1"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "S1"
-      SrcTerminal   2
-      Points        [655, 90]
-      DstComponent  "Load 50kW"
       DstTerminal   1
     }
     Connection {
@@ -20457,7 +20312,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Gain1"
       SrcTerminal   2
-      DstComponent  "Po n1 [kW]"
+      DstComponent  "Po [kW]"
       DstTerminal   1
     }
     Connection {
@@ -20465,36 +20320,6 @@ Plecs {
       SrcComponent  "TLBBC2"
       SrcTerminal   1
       DstComponent  "S2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Load 50kW1"
-      SrcTerminal   2
-      Points        [655, 265]
-      DstComponent  "TLBBC2"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "S2"
-      SrcTerminal   2
-      Points        [655, 205]
-      DstComponent  "Load 50kW1"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe2"
-      SrcTerminal   1
-      DstComponent  "Gain2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Gain2"
-      SrcTerminal   2
-      DstComponent  "Po n2 [kW]"
       DstTerminal   1
     }
     Connection {
@@ -20578,36 +20403,6 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "Load 50kW2"
-      SrcTerminal   2
-      Points        [655, 390]
-      DstComponent  "TLBBC3"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "S3"
-      SrcTerminal   2
-      Points        [655, 330]
-      DstComponent  "Load 50kW2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe3"
-      SrcTerminal   1
-      DstComponent  "Gain3"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Gain3"
-      SrcTerminal   2
-      DstComponent  "Po n3 [kW]"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "TLBBC4"
       SrcTerminal   1
       DstComponent  "S4"
@@ -20615,69 +20410,9 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "Load 50kW3"
-      SrcTerminal   2
-      Points        [655, 515]
-      DstComponent  "TLBBC4"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "S4"
-      SrcTerminal   2
-      Points        [655, 455]
-      DstComponent  "Load 50kW3"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe4"
-      SrcTerminal   1
-      DstComponent  "Gain4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Gain4"
-      SrcTerminal   2
-      DstComponent  "Po n4 [kW]"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "TLBBC5"
       SrcTerminal   1
       DstComponent  "S5"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Load 50kW4"
-      SrcTerminal   2
-      Points        [655, 650]
-      DstComponent  "TLBBC5"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "S5"
-      SrcTerminal   2
-      Points        [655, 590]
-      DstComponent  "Load 50kW4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe5"
-      SrcTerminal   1
-      DstComponent  "Gain5"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Gain5"
-      SrcTerminal   2
-      DstComponent  "Po n5 [kW]"
       DstTerminal   1
     }
     Connection {
@@ -20725,6 +20460,113 @@ Plecs {
       Points        [605, 565]
       DstComponent  "S5"
       DstTerminal   3
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Load 50kW"
+      SrcTerminal   1
+      Points        [870, 90; 735, 90]
+      Branch {
+        DstComponent  "R1"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [735, 205]
+        Branch {
+          DstComponent  "R2"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [735, 330]
+          Branch {
+            DstComponent  "R3"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [735, 455]
+            Branch {
+              DstComponent  "R4"
+              DstTerminal   1
+            }
+            Branch {
+              Points        [735, 590]
+              DstComponent  "R5"
+              DstTerminal   1
+            }
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Load 50kW"
+      SrcTerminal   2
+      Points        [870, 150; 710, 150]
+      Branch {
+        DstComponent  "TLBBC1"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [710, 265]
+        Branch {
+          DstComponent  "TLBBC2"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [710, 390]
+          Branch {
+            DstComponent  "TLBBC3"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [710, 515]
+            Branch {
+              DstComponent  "TLBBC4"
+              DstTerminal   2
+            }
+            Branch {
+              Points        [710, 650]
+              DstComponent  "TLBBC5"
+              DstTerminal   2
+            }
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "S1"
+      SrcTerminal   2
+      DstComponent  "R1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "S2"
+      SrcTerminal   2
+      DstComponent  "R2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "S3"
+      SrcTerminal   2
+      DstComponent  "R3"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "S4"
+      SrcTerminal   2
+      DstComponent  "R4"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "S5"
+      SrcTerminal   2
+      DstComponent  "R5"
+      DstTerminal   2
     }
   }
 }
