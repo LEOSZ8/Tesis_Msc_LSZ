@@ -28,8 +28,9 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "Vin = 570\nVc1_0 = Vin/2\nVc2_0 = Vin/2\nD   = 0.55"
-"\nLb  = 2e-3\nCurrent_Limit = 100"
+  InitializationCommands "Vin = 770\nVc1_0 = Vin/2\nVc2_0 = Vin/2\nD   = 0.55"
+"\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 20e3\nTs= 1/fs\n\n%% Controlador vo\n"
+"Kp_vo = 0.4\nKi_vo = Kp_vo*89.53"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -54,8 +55,8 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 1283, 683]
-    ZoomFactor    0.763603
+    Location      [1366, -282; 3286, 692]
+    ZoomFactor    0.999995
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -513,7 +514,7 @@ Plecs {
       }
       Parameter {
         Variable      "f"
-        Value         "20e3"
+        Value         "fs"
         Show          off
       }
       Parameter {
@@ -623,7 +624,7 @@ Plecs {
       }
       Parameter {
         Variable      "f"
-        Value         "20e3"
+        Value         "fs"
         Show          off
       }
       Parameter {
@@ -633,7 +634,7 @@ Plecs {
       }
       Parameter {
         Variable      "Delay"
-        Value         "1/( (20e3)/2 )"
+        Value         "Ts/2"
         Show          off
       }
     }
@@ -730,11 +731,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1366, 707]
+      Location      [0, 27; 1366, 720]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAIrAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAI0AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -823,15 +824,15 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1283, 705]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACJvwCAAAAA/sAAAAQAFoAbwBvA"
+      Location      [0, 27; 1366, 729]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACPfwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAiYAAABoAP///wAAAAMAAAUDAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABEsAAAImAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAj0AAABoAP///wAAAAMAAAVWAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABJ4AAAI9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":158,\"Labels\":[\""
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":164,\"Labels\":[\""
 "Mean\"],\"VisualIdxs\":[8]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
@@ -2435,11 +2436,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1283, 705]
+      Location      [0, 27; 1366, 801]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUDAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMAAAImAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAKFAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2450,7 +2451,7 @@ Plecs {
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -2499,7 +2500,7 @@ Plecs {
       }
       Parameter {
         Variable      "Before"
-        Value         "750"
+        Value         "850"
         Show          off
       }
       Parameter {
@@ -2521,11 +2522,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 720]
+      Location      [0, 27; 1366, 729]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAI0AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAI9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2766,11 +2767,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 747]
+      Location      [0, 27; 1366, 756]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJPAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJYAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -3391,7 +3392,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "K"
-            Value         "0.1"
+            Value         "Kp_vo"
             Show          off
           }
           Parameter {
@@ -3464,12 +3465,12 @@ Plecs {
           Frame         [-30, -15; 30, 15]
           Parameter {
             Variable      "Numerator"
-            Value         "[-0.1*132.2]"
+            Value         "[-Ki_vo]"
             Show          off
           }
           Parameter {
             Variable      "Denominator"
-            Value         "[(0.1^2) 0.1*0.1*132.2]"
+            Value         "[(Kp_vo^2) (Kp_vo)*Ki_vo]"
             Show          off
           }
           Parameter {
@@ -3534,11 +3535,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 23; 1366, 707]
+          Location      [0, 27; 1366, 720]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKR"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKa"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -3664,7 +3665,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1283, 684]
+        Location      [0, 27; 1366, 689]
         ZoomFactor    1.30957
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -3805,7 +3806,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "UpperLimit"
-            Value         "0.95"
+            Value         "1"
             Show          off
           }
           Parameter {
@@ -7065,14 +7066,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "rdy"
-      SrcTerminal   1
-      Points        [790, 85]
-      DstComponent  "S1"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "awPI_Vo"
       SrcTerminal   1
       DstComponent  "Sum2"
@@ -7107,6 +7100,14 @@ Plecs {
         DstComponent  "Sum1"
         DstTerminal   3
       }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "rdy"
+      SrcTerminal   1
+      Points        [790, 85]
+      DstComponent  "S1"
+      DstTerminal   3
     }
     Annotation {
       Name          "<html><body>\n<p>delta_d</p></body></html>"

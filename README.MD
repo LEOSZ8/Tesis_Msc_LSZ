@@ -21,4 +21,6 @@
 * v0.9: Se implementa un banco de baterías adecuado para el convertidor visualizar como se descarga el banco de baterías a 50 kW por medio del convertidor de potencia.
 * v0.10: Se prueba el funcionamiento de 5 convertidores TLBBC, extrayendo 50 kW al banco de baterías (19ns x 21np). La prueba entrega como resultado una descarga progresiva del banco de baterías. Sólo queda aumentar conectar las salidas de todos los convertidores a un punto común (DC-LINK).
 * v0.11: Se genera una simulación que permite extraer 250 kW desde el banco de baterías (19ns x 21np), considerando un voltaje de salida de 1000 V con todos los módulos DCDC conectados en paralelo (x5). Sin embargo, se debe corregir el control de los módulos para evitar un rizado en la corriente de +/- 20A (Valor medio 50A, Ok).
+    * v0.11.1: Se corrige el desfase entre portadoras y además se adecúa el controlador de voltaje de salida para que el sistema pueda funcionar como corresponde       
+
 
