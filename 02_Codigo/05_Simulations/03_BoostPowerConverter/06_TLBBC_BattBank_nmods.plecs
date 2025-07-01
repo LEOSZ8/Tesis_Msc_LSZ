@@ -29,19 +29,21 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\nVc2_0 = 0"
-"\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 20e3\nTs= 1/fs\n\n%% Cont"
-"rolador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n%% BankBatt Parameters\n%tsim"
-"=2*3600;\ntsim=10;\nn_series = 19; % Number of series connected cells\nn_para"
-"llel = 21; % Number of parallel branches\nSOC_init = 1; % initial SOC, range "
-"[0,1]\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n\ncellNominalV "
-"= 38.4; % Voltage at end of nominal zone\ncellFullChargeV = 43.8; % Voltage a"
-"t full SOC\ncellExponentialV = 41.4; % Voltage at end of exponential zone\n\n"
-"cellRatedCapacity = 50; % Cell rated capacity\ncellMaximumCapacity = 50; % Ce"
-"ll maximum capacity\ncellNominalCapacity = 35; % Cell capacity at end of nomi"
-"nal zone\ncellExponentialCapacity = 1; % Cell capacity at end of exponential "
-"zone\n\ncellNominalDischargeI = 50; % Nominal discharge current for cell\ncel"
-"lInternalR =25e-3; % Internal cell resistance\n\ncellLPFTimeConstant = 30; % "
-"30 second time constant for LPF for effect of current on voltage\n\n"
+"\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 10e3\nTs= 1/fs\n\n%% Cont"
+"rolador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n%% Phase-Shift PWM\nPhase_shi"
+"ft = 360/5;\nDesphase    = (Phase_shift*Ts)/360;\nphase2 = Desphase;\nphase3 "
+"= Desphase;\nphase4 = Desphase;\nphase5 = Desphase;\n\n\n%% BankBatt Paramete"
+"rs\n%tsim=2*3600;\ntsim=10;\nn_series = 19; % Number of series connected cell"
+"s\nn_parallel = 21; % Number of parallel branches\nSOC_init = 1; % initial SO"
+"C, range [0,1]\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n\ncell"
+"NominalV = 38.4; % Voltage at end of nominal zone\ncellFullChargeV = 43.8; % "
+"Voltage at full SOC\ncellExponentialV = 41.4; % Voltage at end of exponential"
+" zone\n\ncellRatedCapacity = 50; % Cell rated capacity\ncellMaximumCapacity ="
+" 50; % Cell maximum capacity\ncellNominalCapacity = 35; % Cell capacity at en"
+"d of nominal zone\ncellExponentialCapacity = 1; % Cell capacity at end of exp"
+"onential zone\n\ncellNominalDischargeI = 50; % Nominal discharge current for "
+"cell\ncellInternalR =25e-3; % Internal cell resistance\n\ncellLPFTimeConstant"
+" = 30; % 30 second time constant for LPF for effect of current on voltage\n\n"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -66,7 +68,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [1366, -282; 3286, 692]
+    Location      [0, 26; 1283, 683]
     ZoomFactor    0.905838
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -20480,22 +20482,22 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1366, -282; 3286, 714]
+      Location      [0, 26; 1280, 680]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPJAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJzAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":213,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":205,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"

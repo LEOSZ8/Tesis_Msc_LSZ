@@ -30,7 +30,7 @@ Plecs {
   FixedPointDatatypeOverride "1"
   InitializationCommands base64 "JSUgVExCQkMgUGFyYW1ldGVycwpWaW4gPSA1NzAKVmMxX"
 "zAgPSAwClZjMl8wID0gMApEICAgPSAwLjU1CkxiICA9IDJlLTMKQ3VycmVudF9MaW1pdCA9IDEwMA"
-"pmcyA9IDIwZTMKVHM9IDEvZnMgJSBQaGFzZV9zaGlmdD0gMTgwwrAKCiUlIEJhbmtCYXR0IFBhcmF"
+"pmcyA9IDEwZTMKVHM9IDEvZnMgJSBQaGFzZV9zaGlmdD0gMTgwwrAKCiUlIEJhbmtCYXR0IFBhcmF"
 "tZXRlcnMKJXRzaW09MiozNjAwOwp0c2ltPTE1OwpuX3NlcmllcyA9IDE5OyAlIE51bWJlciBvZiBz"
 "ZXJpZXMgY29ubmVjdGVkIGNlbGxzCm5fcGFyYWxsZWwgPSAyMTsgJSBOdW1iZXIgb2YgcGFyYWxsZ"
 "WwgYnJhbmNoZXMKU09DX2luaXQgPSAxOyAlIGluaXRpYWwgU09DLCByYW5nZSBbMCwxXQoKcG9sYX"
@@ -70,7 +70,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [1366, -282; 3286, 692]
+    Location      [0, 26; 1283, 683]
     ZoomFactor    0.905838
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -21622,11 +21622,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 720]
+      Location      [0, 23; 1280, 659]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKaAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJhAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -21637,7 +21637,7 @@ Plecs {
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
