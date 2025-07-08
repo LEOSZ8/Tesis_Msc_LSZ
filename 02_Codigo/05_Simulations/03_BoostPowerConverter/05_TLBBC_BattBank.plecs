@@ -28,21 +28,21 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\nVc2_0 = 0"
-"\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 20e3\nTs= 1/fs\n\n%% Cont"
-"rolador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n%% BankBatt Parameters\ntsim="
-"2*3600;\n%% Battery cell parameters\nn_series = 19; % Number of series connec"
-"ted cells\nn_parallel = 21; % Number of parallel branches\nSOC_init = 1; % in"
-"itial SOC, range [0,1]\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%"
-"\n\ncellNominalV = 38.4; % Voltage at end of nominal zone\ncellFullChargeV = "
-"43.8; % Voltage at full SOC\ncellExponentialV = 41.4; % Voltage at end of exp"
-"onential zone\n\ncellRatedCapacity = 50; % Cell rated capacity\ncellMaximumCa"
-"pacity = 50; % Cell maximum capacity\ncellNominalCapacity = 35; % Cell capaci"
-"ty at end of nominal zone\ncellExponentialCapacity = 1; % Cell capacity at en"
-"d of exponential zone\n\ncellNominalDischargeI = 50; % Nominal discharge curr"
-"ent for cell\ncellInternalR =25e-3; % Internal cell resistance\n\ncellLPFTime"
-"Constant = 30; % 30 second time constant for LPF for effect of current on vol"
-"tage\n\n"
+  InitializationCommands "tsim=30\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\n"
+"Vc2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 20e3\nTs= 1/fs\n"
+"\n%% Controlador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n%% BankBatt Paramete"
+"rs\n\n%% Battery cell parameters\nn_series = 19; % Number of series connected"
+" cells\nn_parallel = 21; % Number of parallel branches\nSOC_init = 1; % initi"
+"al SOC, range [0,1]\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n"
+"\ncellNominalV = 38.4; % Voltage at end of nominal zone\ncellFullChargeV = 43"
+".8; % Voltage at full SOC\ncellExponentialV = 41.4; % Voltage at end of expon"
+"ential zone\n\ncellRatedCapacity = 50; % Cell rated capacity\ncellMaximumCapa"
+"city = 50; % Cell maximum capacity\ncellNominalCapacity = 35; % Cell capacity"
+" at end of nominal zone\ncellExponentialCapacity = 1; % Cell capacity at end "
+"of exponential zone\n\ncellNominalDischargeI = 50; % Nominal discharge curren"
+"t for cell\ncellInternalR =25e-3; % Internal cell resistance\n\ncellLPFTimeCo"
+"nstant = 30; % 30 second time constant for LPF for effect of current on volta"
+"ge\n\n"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -67,7 +67,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 23; 1366, 685]
+    Location      [1366, -282; 3286, 692]
     ZoomFactor    1.35752
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -634,11 +634,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 26; 1283, 705]
+          Location      [0, 23; 1366, 707]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUDAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMAAAIm"
+"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAeAAAA"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAB4AAAABSAP///wAABVYAAAKR"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1335,11 +1335,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1366, 765]
+          Location      [0, 27; 1366, 774]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJh"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJq"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1392,11 +1392,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1366, 729]
+          Location      [0, 23; 1366, 707]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAI9"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABSAP///wAABVYAAAKR"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1871,7 +1871,7 @@ Plecs {
             Direction     right
           }
           Schematic {
-            Location      [59, 100; 1260, 486]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [0, 0]
             ShowBrowser   off
@@ -2102,7 +2102,7 @@ Plecs {
               }
               Parameter {
                 Variable      "Inputs"
-                Value         "|+-"
+                Value         "|-+"
                 Show          off
               }
               Parameter {
@@ -2455,7 +2455,7 @@ Plecs {
                   Type          Output
                   Name          "u"
                   Show          on
-                  Position      [395, 80]
+                  Position      [530, 80]
                   Direction     right
                   Flipped       off
                   LabelPosition south
@@ -2592,7 +2592,47 @@ Plecs {
                   }
                   Parameter {
                     Variable      "LowerLimit"
-                    Value         "0"
+                    Value         "-1"
+                    Show          off
+                  }
+                }
+                Component {
+                  Type          Display
+                  Name          "Display"
+                  Show          off
+                  Position      [345, 150]
+                  Direction     up
+                  Flipped       off
+                  LabelPosition south
+                  Frame         [-31, -11; 31, 11]
+                  Parameter {
+                    Variable      "Notation"
+                    Value         "1"
+                    Show          off
+                  }
+                  Parameter {
+                    Variable      "Precision"
+                    Value         "4"
+                    Show          off
+                  }
+                }
+                Component {
+                  Type          Display
+                  Name          "Display1"
+                  Show          off
+                  Position      [435, 120]
+                  Direction     up
+                  Flipped       off
+                  LabelPosition south
+                  Frame         [-31, -11; 31, 11]
+                  Parameter {
+                    Variable      "Notation"
+                    Value         "1"
+                    Show          off
+                  }
+                  Parameter {
+                    Variable      "Precision"
+                    Value         "4"
                     Show          off
                   }
                 }
@@ -2621,8 +2661,14 @@ Plecs {
                   }
                   Branch {
                     Points        [295, 150]
-                    DstComponent  "Transfer Fcn"
-                    DstTerminal   1
+                    Branch {
+                      DstComponent  "Transfer Fcn"
+                      DstTerminal   1
+                    }
+                    Branch {
+                      DstComponent  "Display"
+                      DstTerminal   1
+                    }
                   }
                 }
                 Connection {
@@ -2637,8 +2683,16 @@ Plecs {
                   Type          Signal
                   SrcComponent  "Saturation"
                   SrcTerminal   2
-                  DstComponent  "u"
-                  DstTerminal   1
+                  Points        [380, 80]
+                  Branch {
+                    DstComponent  "u"
+                    DstTerminal   1
+                  }
+                  Branch {
+                    Points        [380, 120]
+                    DstComponent  "Display1"
+                    DstTerminal   1
+                  }
                 }
               }
             }

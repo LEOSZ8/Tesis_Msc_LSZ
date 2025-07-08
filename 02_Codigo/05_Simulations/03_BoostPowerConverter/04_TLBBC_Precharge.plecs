@@ -3,7 +3,7 @@ Plecs {
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "8"
+  TimeSpan      "30"
   Timeout       ""
   Solver        "auto"
   MaxStep       "1e-3"
@@ -55,7 +55,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 23; 1366, 685]
+    Location      [0, 27; 1366, 689]
     ZoomFactor    0.905839
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -665,11 +665,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1283, 705]
+      Location      [1366, -282; 3286, 714]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUDAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMAAAImAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAeAAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAB4AAAABSAP///wAAB4AAAAPJAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1022,7 +1022,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "|+-"
+        Value         "|-+"
         Show          off
       }
       Parameter {
@@ -1818,11 +1818,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 729]
+      Location      [0, 23; 1366, 707]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAI9AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABSAP///wAABVYAAAKRAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2091,7 +2091,7 @@ Plecs {
           Type          Output
           Name          "u"
           Show          on
-          Position      [395, 80]
+          Position      [545, 80]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2228,7 +2228,47 @@ Plecs {
           }
           Parameter {
             Variable      "LowerLimit"
-            Value         "0"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Display
+          Name          "Display"
+          Show          off
+          Position      [380, 150]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-31, -11; 31, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "4"
+            Show          off
+          }
+        }
+        Component {
+          Type          Display
+          Name          "Display1"
+          Show          off
+          Position      [450, 125]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-31, -11; 31, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "4"
             Show          off
           }
         }
@@ -2252,8 +2292,16 @@ Plecs {
           SrcTerminal   2
           Points        [295, 80]
           Branch {
-            DstComponent  "Saturation"
-            DstTerminal   1
+            Points        [305, 80]
+            Branch {
+              DstComponent  "Saturation"
+              DstTerminal   1
+            }
+            Branch {
+              Points        [305, 150]
+              DstComponent  "Display"
+              DstTerminal   1
+            }
           }
           Branch {
             Points        [295, 150]
@@ -2273,8 +2321,16 @@ Plecs {
           Type          Signal
           SrcComponent  "Saturation"
           SrcTerminal   2
-          DstComponent  "u"
-          DstTerminal   1
+          Points        [400, 80]
+          Branch {
+            DstComponent  "u"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [400, 125]
+            DstComponent  "Display1"
+            DstTerminal   1
+          }
         }
       }
     }
