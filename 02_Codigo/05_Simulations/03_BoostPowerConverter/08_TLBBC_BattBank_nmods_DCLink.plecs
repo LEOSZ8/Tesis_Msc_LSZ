@@ -66,22 +66,22 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [1366, -282; 3286, 692]
-    ZoomFactor    1.5535
-    SliderPosition [101, 0]
+    Location      [0, 23; 1280, 637]
+    ZoomFactor    1.03661
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
       Type          Resistor
       Name          "Load 50kW"
       Show          off
-      Position      [785, 125]
+      Position      [845, 125]
       Direction     up
       Flipped       off
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "2"
+        Value         "4"
         Show          off
       }
     }
@@ -3053,7 +3053,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          off
-      Position      [905, 110]
+      Position      [1005, 105]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -3067,7 +3067,7 @@ Plecs {
       Type          Gain
       Name          "Gain1"
       Show          off
-      Position      [970, 110]
+      Position      [1070, 105]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -3101,7 +3101,7 @@ Plecs {
       Type          Display
       Name          "Po [kW]"
       Show          on
-      Position      [1045, 110]
+      Position      [1145, 105]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -3284,9 +3284,9 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1366, 689]
+        Location      [0, 27; 1283, 684]
         ZoomFactor    1
-        SliderPosition [0, 6]
+        SliderPosition [0, 11]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -3326,7 +3326,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [0, 27; 1283, 684]
             ZoomFactor    0.763607
             SliderPosition [0, 16]
             ShowBrowser   off
@@ -25970,7 +25970,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1366, 689]
+        Location      [0, 27; 1283, 684]
         ZoomFactor    1
         SliderPosition [0, 6]
         ShowBrowser   off
@@ -42069,9 +42069,9 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [0, 27; 1283, 684]
             ZoomFactor    1
-            SliderPosition [414, 243]
+            SliderPosition [414, 248]
             ShowBrowser   off
             BrowserWidth  100
             Component {
@@ -46949,15 +46949,15 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          off
-      Position      [1040, 170]
+      Position      [1140, 165]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1366, 707]
+      Location      [0, 23; 1280, 659]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKRAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJhAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -47053,7 +47053,7 @@ Plecs {
       Type          PlecsProbe
       Name          "I_load"
       Show          on
-      Position      [925, 160]
+      Position      [1025, 155]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -47067,7 +47067,7 @@ Plecs {
       Type          From
       Name          "From12"
       Show          off
-      Position      [975, 170]
+      Position      [1075, 165]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -47091,7 +47091,7 @@ Plecs {
       Type          From
       Name          "From15"
       Show          off
-      Position      [995, 180]
+      Position      [1095, 175]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -47171,7 +47171,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Load 50kW"
       SrcTerminal   2
-      Points        [785, 150; 750, 150]
+      Points        [845, 150; 750, 150]
       Branch {
         DstComponent  "S3"
         DstTerminal   2
@@ -47214,7 +47214,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Load 50kW"
       SrcTerminal   1
-      Points        [785, 100; 720, 100]
+      Points        [845, 100; 720, 100]
       Branch {
         Points        [720, 225]
         DstComponent  "S2"
