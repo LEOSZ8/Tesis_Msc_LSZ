@@ -28,21 +28,22 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "tsim=15;\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0"
-"\nVc2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 10e3\nTs= 1/fs"
-"\n\nLf= 1e-3;\nCf=47e-6;\n\n%% Controlador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89."
-"53\n\n\n\n\n%% BankBatt Parameters\n\n\nn_series = 19; % Number of series con"
-"nected cells\nn_parallel = 21; % Number of parallel branches\nSOC_init = 1; %"
-" initial SOC, range [0,1]\n\npolarizingRshift = 0.1; % Shift polarizing R by "
-"10%\n\ncellNominalV = 38.4; % Voltage at end of nominal zone\ncellFullChargeV"
-" = 43.8; % Voltage at full SOC\ncellExponentialV = 41.4; % Voltage at end of "
-"exponential zone\n\ncellRatedCapacity = 50; % Cell rated capacity\ncellMaximu"
-"mCapacity = 50; % Cell maximum capacity\ncellNominalCapacity = 35; % Cell cap"
-"acity at end of nominal zone\ncellExponentialCapacity = 1; % Cell capacity at"
-" end of exponential zone\n\ncellNominalDischargeI = 50; % Nominal discharge c"
-"urrent for cell\ncellInternalR =25e-3; % Internal cell resistance\n\ncellLPFT"
-"imeConstant = 30; % 30 second time constant for LPF for effect of current on "
-"voltage\n\n"
+  InitializationCommands "tsim=2;\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\n"
+"Vc2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 10e3\nTs= 1/fs\n"
+"\nLf= 0.5e-3;\nCf=47e-6;\n\n%% Controlador vo\nvo_ref= 1200\nKp_vo = 0.1\nKi_"
+"vo = Kp_vo*89.53\n\n%% Times Operation\nt_PrChr1 = 0.1\nt_PrChr2 = 0.2\nt_PrC"
+"hr3 = 0.8\nt_PrChr4 = 1\nt_Ctl_on = 1.1\n\nt_vo_ref = 1.3\n\n%% BankBatt Para"
+"meters\n\n\nn_series = 19; % Number of series connected cells\nn_parallel = 2"
+"1; % Number of parallel branches\nSOC_init = 1; % initial SOC, range [0,1]\n"
+"\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n\ncellNominalV = 38.4;"
+" % Voltage at end of nominal zone\ncellFullChargeV = 43.8; % Voltage at full "
+"SOC\ncellExponentialV = 41.4; % Voltage at end of exponential zone\n\ncellRat"
+"edCapacity = 50; % Cell rated capacity\ncellMaximumCapacity = 50; % Cell maxi"
+"mum capacity\ncellNominalCapacity = 35; % Cell capacity at end of nominal zon"
+"e\ncellExponentialCapacity = 1; % Cell capacity at end of exponential zone\n"
+"\ncellNominalDischargeI = 50; % Nominal discharge current for cell\ncellInter"
+"nalR =25e-3; % Internal cell resistance\n\ncellLPFTimeConstant = 30; % 30 sec"
+"ond time constant for LPF for effect of current on voltage\n\n"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -67,7 +68,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 1280, 640]
+    Location      [0, 27; 1366, 689]
     ZoomFactor    0.905837
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -82,7 +83,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Time"
-        Value         "8.1"
+        Value         "1.5"
         Show          off
       }
       Parameter {
@@ -3040,22 +3041,32 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          off
-      Position      [810, 470]
+      Position      [800, 480]
       Direction     right
       Flipped       off
       LabelPosition south
+      Probe {
+        Component     "3ph Meter"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "R1"
+        Path          ""
+        Signals       {"Resistor power"}
+      }
     }
     Component {
       Type          Gain
       Name          "Gain1"
       Show          off
-      Position      [875, 470]
+      Position      [865, 480]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "K"
-        Value         "1e-3"
+        Value         "3e-3"
         Show          off
       }
       Parameter {
@@ -3083,7 +3094,7 @@ Plecs {
       Type          Display
       Name          "Po [kW]"
       Show          on
-      Position      [950, 470]
+      Position      [940, 480]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -3133,7 +3144,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Time"
-        Value         "8"
+        Value         "1.4"
         Show          off
       }
       Parameter {
@@ -3186,7 +3197,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Time"
-        Value         "6"
+        Value         "1.3"
         Show          off
       }
       Parameter {
@@ -3266,7 +3277,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1283, 684]
+        Location      [0, 23; 1366, 685]
         ZoomFactor    1
         SliderPosition [0, 6]
         ShowBrowser   off
@@ -3308,7 +3319,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1283, 684]
+            Location      [0, 23; 1366, 685]
             ZoomFactor    0.763607
             SliderPosition [0, 16]
             ShowBrowser   off
@@ -4539,7 +4550,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -4549,7 +4560,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -5327,7 +5338,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -5380,7 +5391,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -5433,7 +5444,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -5486,7 +5497,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -5515,7 +5526,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -5840,6 +5851,182 @@ Plecs {
               Parameter {
                 Variable      "Visibility"
                 Value         "1"
+                Show          off
+              }
+              Parameter {
+                Variable      "NoMatchingCounterpartAction"
+                Value         "1"
+                Show          off
+              }
+            }
+            Component {
+              Type          Scope
+              Name          "Scope"
+              Show          on
+              Position      [1370, 280]
+              Direction     up
+              Flipped       off
+              LabelPosition south
+              Location      [363, 124; 713, 351]
+              State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQA"
+"FoAbwBvAG0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcw"
+"AAAAAA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAA"
+"AAAAAAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAAV4A"
+"AADIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP///"
+"/8AAAAAAAAAAA=="
+              SavedViews    "AAAAAgAAAAA="
+              HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Label"
+"s\":[],\"VisualIdxs\":[]}"
+              PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA=="
+              Axes          "3"
+              TimeRange     "0"
+              ScrollingMode "1"
+              SingleTimeAxis "1"
+              Open          "0"
+              Ts            "-1"
+              SampleLimit   "0"
+              XAxisLabel    "Time / s"
+              ShowLegend    "1"
+              Axis {
+                Name          "Input Current"
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                AxisLabel     "[A]"
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Axis {
+                Name          "Upper voltage capacitor"
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                AxisLabel     "[V]"
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Axis {
+                Name          "Bottom voltage capacitor"
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                AxisLabel     "[V]"
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Fourier {
+                SingleXAxis       on
+                AxisLabel         "Frequency / Hz"
+                Scaling           0
+                PhaseDisplay      0
+                ShowFourierLegend off
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+              }
+            }
+            Component {
+              Type          From
+              Name          "From10"
+              Show          off
+              Position      [1315, 280]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Tag"
+                Value         "vc1"
+                Show          off
+              }
+              Parameter {
+                Variable      "Visibility"
+                Value         "2"
+                Show          off
+              }
+              Parameter {
+                Variable      "NoMatchingCounterpartAction"
+                Value         "1"
+                Show          off
+              }
+            }
+            Component {
+              Type          From
+              Name          "From11"
+              Show          off
+              Position      [1285, 290]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Tag"
+                Value         "vc2"
+                Show          off
+              }
+              Parameter {
+                Variable      "Visibility"
+                Value         "2"
+                Show          off
+              }
+              Parameter {
+                Variable      "NoMatchingCounterpartAction"
+                Value         "1"
+                Show          off
+              }
+            }
+            Component {
+              Type          From
+              Name          "From12"
+              Show          off
+              Position      [1335, 270]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Tag"
+                Value         "ib"
+                Show          off
+              }
+              Parameter {
+                Variable      "Visibility"
+                Value         "2"
                 Show          off
               }
               Parameter {
@@ -6480,6 +6667,27 @@ Plecs {
               DstComponent  "Sum3"
               DstTerminal   3
             }
+            Connection {
+              Type          Signal
+              SrcComponent  "From10"
+              SrcTerminal   1
+              DstComponent  "Scope"
+              DstTerminal   2
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "From11"
+              SrcTerminal   1
+              DstComponent  "Scope"
+              DstTerminal   3
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "From12"
+              SrcTerminal   1
+              DstComponent  "Scope"
+              DstTerminal   1
+            }
             Annotation {
               Name          "<html><body>\n<p>delta_d</p></body></html>"
               Position      [1335, 790]
@@ -6559,7 +6767,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1283, 684]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -7790,7 +7998,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -7800,7 +8008,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -8578,7 +8786,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -8631,7 +8839,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -8684,7 +8892,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -8737,7 +8945,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -8766,7 +8974,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -10591,7 +10799,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -11822,7 +12030,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -11832,7 +12040,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -12610,7 +12818,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -12663,7 +12871,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -12716,7 +12924,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3 "
                 Show          off
               }
               Parameter {
@@ -12769,7 +12977,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -12798,7 +13006,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -14562,7 +14770,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -15793,7 +16001,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -15803,7 +16011,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -16581,7 +16789,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -16634,7 +16842,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -16687,7 +16895,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -16740,7 +16948,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -16769,7 +16977,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -18533,7 +18741,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [9, 243]
             ShowBrowser   off
@@ -19764,7 +19972,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -19774,7 +19982,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -20552,7 +20760,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -20605,7 +20813,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -20658,7 +20866,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -20711,7 +20919,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -20734,13 +20942,13 @@ Plecs {
               Type          Step
               Name          "5.TurnOnControllerSystem"
               Show          on
-              Position      [300, 825]
+              Position      [340, 825]
               Direction     right
               Flipped       off
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -20763,7 +20971,7 @@ Plecs {
               Type          Goto
               Name          "Goto14"
               Show          off
-              Position      [445, 825]
+              Position      [380, 825]
               Direction     right
               Flipped       off
               LabelPosition south
@@ -21566,35 +21774,6 @@ Plecs {
                 }
               }
             }
-            Component {
-              Type          Sum
-              Name          "Sum10"
-              Show          off
-              Position      [415, 825]
-              Direction     up
-              Flipped       off
-              LabelPosition south
-              Parameter {
-                Variable      "IconShape"
-                Value         "2"
-                Show          off
-              }
-              Parameter {
-                Variable      "Inputs"
-                Value         "|+-"
-                Show          off
-              }
-              Parameter {
-                Variable      "DataType"
-                Value         "11"
-                Show          off
-              }
-              Parameter {
-                Variable      "DataTypeOverflowMode"
-                Value         "1"
-                Show          off
-              }
-            }
             Connection {
               Type          Wire
               SrcComponent  "IGBTD1"
@@ -22293,13 +22472,6 @@ Plecs {
             Connection {
               Type          Signal
               SrcComponent  "5.TurnOnControllerSystem"
-              SrcTerminal   1
-              DstComponent  "Sum10"
-              DstTerminal   2
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "Sum10"
               SrcTerminal   1
               DstComponent  "Goto14"
               DstTerminal   1
@@ -25952,7 +26124,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1283, 684]
+        Location      [1366, -282; 3286, 692]
         ZoomFactor    1
         SliderPosition [0, 11]
         ShowBrowser   off
@@ -25994,7 +26166,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -27225,7 +27397,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -27235,7 +27407,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -28013,7 +28185,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -28066,7 +28238,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -28119,7 +28291,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -28172,7 +28344,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -28201,7 +28373,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -30026,7 +30198,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -31257,7 +31429,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -31267,7 +31439,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -32045,7 +32217,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -32098,7 +32270,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -32151,7 +32323,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -32204,7 +32376,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -32233,7 +32405,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -33997,7 +34169,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [414, 243]
             ShowBrowser   off
@@ -35228,7 +35400,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -35238,7 +35410,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -36016,7 +36188,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -36069,7 +36241,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -36122,7 +36294,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -36175,7 +36347,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4 "
                 Show          off
               }
               Parameter {
@@ -36204,7 +36376,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -37968,7 +38140,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 27; 1366, 689]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    1
             SliderPosition [268, 243]
             ShowBrowser   off
@@ -39199,7 +39371,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -39209,7 +39381,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -39987,7 +40159,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -40040,7 +40212,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -40093,7 +40265,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -40146,7 +40318,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -40169,13 +40341,13 @@ Plecs {
               Type          Step
               Name          "5.TurnOnControllerSystem"
               Show          on
-              Position      [300, 825]
+              Position      [340, 825]
               Direction     right
               Flipped       off
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -40198,7 +40370,7 @@ Plecs {
               Type          Goto
               Name          "Goto14"
               Show          off
-              Position      [445, 825]
+              Position      [380, 825]
               Direction     right
               Flipped       off
               LabelPosition south
@@ -41001,35 +41173,6 @@ Plecs {
                 }
               }
             }
-            Component {
-              Type          Sum
-              Name          "Sum10"
-              Show          off
-              Position      [415, 825]
-              Direction     up
-              Flipped       off
-              LabelPosition south
-              Parameter {
-                Variable      "IconShape"
-                Value         "2"
-                Show          off
-              }
-              Parameter {
-                Variable      "Inputs"
-                Value         "|+-"
-                Show          off
-              }
-              Parameter {
-                Variable      "DataType"
-                Value         "11"
-                Show          off
-              }
-              Parameter {
-                Variable      "DataTypeOverflowMode"
-                Value         "1"
-                Show          off
-              }
-            }
             Connection {
               Type          Wire
               SrcComponent  "IGBTD1"
@@ -41729,13 +41872,6 @@ Plecs {
               Type          Signal
               SrcComponent  "5.TurnOnControllerSystem"
               SrcTerminal   1
-              DstComponent  "Sum10"
-              DstTerminal   2
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "Sum10"
-              SrcTerminal   1
               DstComponent  "Goto14"
               DstTerminal   1
             }
@@ -42051,7 +42187,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [0, 26; 1280, 640]
+            Location      [1366, -282; 3286, 692]
             ZoomFactor    0.763607
             SliderPosition [83, 81]
             ShowBrowser   off
@@ -43282,7 +43418,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "5"
+                Value         "t_vo_ref"
                 Show          off
               }
               Parameter {
@@ -43292,7 +43428,7 @@ Plecs {
               }
               Parameter {
                 Variable      "After"
-                Value         "1000"
+                Value         "vo_ref"
                 Show          off
               }
               Parameter {
@@ -44070,7 +44206,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "0.5"
+                Value         "t_PrChr1"
                 Show          off
               }
               Parameter {
@@ -44123,7 +44259,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "1"
+                Value         "t_PrChr2"
                 Show          off
               }
               Parameter {
@@ -44176,7 +44312,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "2.5"
+                Value         "t_PrChr3"
                 Show          off
               }
               Parameter {
@@ -44229,7 +44365,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "3.5"
+                Value         "t_PrChr4"
                 Show          off
               }
               Parameter {
@@ -44258,7 +44394,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Time"
-                Value         "4"
+                Value         "t_Ctl_on"
                 Show          off
               }
               Parameter {
@@ -46931,24 +47067,25 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          off
-      Position      [1150, 50]
+      Position      [1340, 80]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1280, 689]
+      Location      [0, 27; 1366, 720]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAK4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJ8AAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAANYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAABLfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABSAP///wAABVYAAAKaAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":215,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":223,\"Labels\":[\""
+"Delta\",\"Max\"],\"VisualIdxs\":[3,6]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "4"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA="
+      Axes          "5"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
@@ -46958,7 +47095,43 @@ Plecs {
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          "Load current"
+        Name          "Output Voltage DCDC1"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        AxisLabel     "[V]"
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output Voltage DCDC2"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        AxisLabel     "[V]"
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "3ph Voltaje"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        AxisLabel     "[V]"
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "3ph Current"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -46970,37 +47143,13 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          "Output Voltage 1"
+        Name          "Output Power AC"
         AutoScale     1
         MinValue      0
         MaxValue      1
         Signals       {}
         SignalTypes   [ ]
-        AxisLabel     "[V]"
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Axis {
-        Name          "Output Voltage 2"
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        AxisLabel     "[V]"
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Axis {
-        Name          "3ph output"
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        AxisLabel     "[V]"
+        AxisLabel     "[kW]"
         Untangle      0
         KeepBaseline  off
         BaselineValue 0
@@ -47051,13 +47200,23 @@ Plecs {
           KeepBaseline  off
           BaselineValue 0
         }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
       }
     }
     Component {
       Type          From
       Name          "From12"
       Show          off
-      Position      [1065, 45]
+      Position      [1275, 60]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -47081,7 +47240,7 @@ Plecs {
       Type          From
       Name          "From15"
       Show          off
-      Position      [1090, 55]
+      Position      [1295, 70]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -47143,7 +47302,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 26; 1280, 640]
+        Location      [0, 27; 1366, 689]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -47545,7 +47704,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Amplitude"
-            Value         "0.98"
+            Value         "1"
             Show          off
           }
           Parameter {
@@ -48027,7 +48186,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Time"
-            Value         "8.15"
+            Value         "1.45"
             Show          off
           }
           Parameter {
@@ -48139,7 +48298,6 @@ Plecs {
           SrcTerminal   2
           Points        [575, 145]
           Branch {
-            Points        [575, 145; 680, 145]
             DstComponent  "1"
             DstTerminal   1
           }
@@ -48154,7 +48312,6 @@ Plecs {
           SrcTerminal   2
           Points        [635, 165]
           Branch {
-            Points        [635, 165; 680, 165]
             DstComponent  "3"
             DstTerminal   1
           }
@@ -48169,7 +48326,6 @@ Plecs {
           SrcTerminal   2
           Points        [605, 155]
           Branch {
-            Points        [605, 155; 680, 155]
             DstComponent  "2"
             DstTerminal   1
           }
@@ -48370,7 +48526,6 @@ Plecs {
           Type          Wire
           SrcComponent  "4"
           SrcTerminal   1
-          Points        [60, 220; 175, 220]
           DstComponent  "VSI1"
           DstTerminal   6
         }
@@ -48378,7 +48533,6 @@ Plecs {
           Type          Wire
           SrcComponent  "5"
           SrcTerminal   1
-          Points        [60, 90; 175, 90]
           DstComponent  "VSI1"
           DstTerminal   4
         }
@@ -48407,7 +48561,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -48421,7 +48575,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -48435,7 +48589,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -48479,11 +48633,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1280, 680]
+      Location      [0, 27; 1280, 690]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJzAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABQAAAAJ8AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -48526,6 +48680,111 @@ Plecs {
           KeepBaseline  off
           BaselineValue 0
         }
+      }
+    }
+    Component {
+      Type          Function
+      Name          "Fcn"
+      Show          off
+      Position      [1180, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "f(u)"
+        Value         "u[1]*u[2]"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [1140, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average"
+      Show          off
+      Position      [1230, 120]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "1/50"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux"
+      Show          off
+      Position      [1075, 125]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux1"
+      Show          off
+      Position      [1120, 135]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Gain
+      Name          "Gain2"
+      Show          off
+      Position      [1275, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "3e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
       }
     }
     Connection {
@@ -48783,20 +49042,6 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Signal
-      SrcComponent  "From12"
-      SrcTerminal   1
-      DstComponent  "Scope"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From15"
-      SrcTerminal   1
-      DstComponent  "Scope"
-      DstTerminal   3
-    }
-    Connection {
       Type          Wire
       SrcComponent  "S3"
       SrcTerminal   2
@@ -48885,22 +49130,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   7
-      Points        [905, 65]
-      DstComponent  "Scope"
-      DstTerminal   4
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   8
-      Points        [915, 35]
-      DstComponent  "Scope"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "From4"
       SrcTerminal   1
       Points        [424, 385]
@@ -48911,6 +49140,91 @@ Plecs {
       Branch {
         Points        [425, 385; 425, 340]
         DstComponent  "Scope1"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      DstComponent  "Fcn"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux"
+      SrcTerminal   2
+      DstComponent  "Mux"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   2
+      DstComponent  "Mux"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From12"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From15"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Fcn"
+      SrcTerminal   2
+      DstComponent  "Periodic Average"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average"
+      SrcTerminal   1
+      DstComponent  "Gain2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain2"
+      SrcTerminal   2
+      Points        [1305, 120; 1305, 100]
+      DstComponent  "Scope"
+      DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   7
+      Points        [905, 80; 1055, 80]
+      Branch {
+        DstComponent  "Scope"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Demux"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   8
+      Points        [915, 90; 1100, 90]
+      Branch {
+        DstComponent  "Scope"
+        DstTerminal   4
+      }
+      Branch {
+        DstComponent  "Demux1"
         DstTerminal   1
       }
     }

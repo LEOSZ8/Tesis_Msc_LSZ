@@ -58,7 +58,7 @@ Plecs {
   Schematic {
     Location      [1366, -282; 3286, 692]
     ZoomFactor    0.999995
-    SliderPosition [0, 0]
+    SliderPosition [235, 60]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -1798,7 +1798,7 @@ Plecs {
           Type          Goto
           Name          "Goto8"
           Show          off
-          Position      [335, 115]
+          Position      [400, 115]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1952,6 +1952,35 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Step
+          Name          "PI_On_Off"
+          Show          on
+          Position      [360, 115]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Time"
+            Value         "1.1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "10"
+            Show          off
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "From10"
@@ -1972,21 +2001,6 @@ Plecs {
           SrcTerminal   3
           DstComponent  "SR Flip-flop"
           DstTerminal   2
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "SR Flip-flop"
-          SrcTerminal   3
-          Points        [315, 115]
-          Branch {
-            DstComponent  "Goto8"
-            DstTerminal   1
-          }
-          Branch {
-            Points        [315, 180]
-            DstComponent  "Display1"
-            DstTerminal   1
-          }
         }
         Connection {
           Type          Signal
@@ -2016,6 +2030,21 @@ Plecs {
           SrcTerminal   2
           DstComponent  "Relational\nOperator"
           DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "SR Flip-flop"
+          SrcTerminal   3
+          Points        [315, 115; 315, 180]
+          DstComponent  "Display1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "PI_On_Off"
+          SrcTerminal   1
+          DstComponent  "Goto8"
+          DstTerminal   1
         }
       }
     }
@@ -2286,11 +2315,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1366, 783]
+      Location      [0, 27; 1366, 738]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJzAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABSAP///wAABVYAAAJGAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2355,7 +2384,7 @@ Plecs {
       }
       Parameter {
         Variable      "After"
-        Value         "1000"
+        Value         "1200"
         Show          off
       }
       Parameter {
@@ -3543,7 +3572,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "R"
-        Value         "20"
+        Value         "28.8"
         Show          off
       }
     }

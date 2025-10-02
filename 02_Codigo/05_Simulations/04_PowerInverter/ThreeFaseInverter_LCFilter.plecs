@@ -28,7 +28,7 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "RL=0.5;\nLf= 1e-3;\nCf=47e-6;"
+  InitializationCommands "RL=0.5;\nLf= 0.5e-3;\nCf=47e-6;"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -53,7 +53,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 1283, 683]
+    Location      [0, 23; 1366, 685]
     ZoomFactor    0.873846
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -62,13 +62,13 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc"
       Show          on
-      Position      [75, 160]
+      Position      [75, 155]
       Direction     down
       Flipped       on
       LabelPosition east
       Parameter {
         Variable      "V"
-        Value         "1000"
+        Value         "1200"
         Show          off
       }
     }
@@ -154,23 +154,23 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1280, 671]
+      Location      [1366, -282; 3286, 714]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUAAAAAffw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABQAP///wAABQAAAAHpAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAeAAAAAffw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABSAP///wAAB4AAAANIAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":215,\"Labels\":["
-"\"Max\"],\"VisualIdxs\":[6]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":223,\"Labels\":["
+"\"Delta\",\"Max\"],\"VisualIdxs\":[3,6]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
       Axes          "2"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    ""
@@ -534,7 +534,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 0; 935, 656]
+        Location      [0, 27; 1366, 689]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -936,7 +936,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Amplitude"
-            Value         "0.98"
+            Value         "1"
             Show          off
           }
           Parameter {
@@ -1530,7 +1530,6 @@ Plecs {
           SrcTerminal   2
           Points        [575, 145]
           Branch {
-            Points        [575, 145; 680, 145]
             DstComponent  "1"
             DstTerminal   1
           }
@@ -1545,7 +1544,6 @@ Plecs {
           SrcTerminal   2
           Points        [635, 165]
           Branch {
-            Points        [635, 165; 680, 165]
             DstComponent  "3"
             DstTerminal   1
           }
@@ -1560,7 +1558,6 @@ Plecs {
           SrcTerminal   2
           Points        [605, 155]
           Branch {
-            Points        [605, 155; 680, 155]
             DstComponent  "2"
             DstTerminal   1
           }
@@ -1768,7 +1765,6 @@ Plecs {
           Type          Wire
           SrcComponent  "4"
           SrcTerminal   1
-          Points        [60, 220; 175, 220]
           DstComponent  "VSI1"
           DstTerminal   6
         }
@@ -1776,7 +1772,6 @@ Plecs {
           Type          Wire
           SrcComponent  "5"
           SrcTerminal   1
-          Points        [60, 90; 175, 90]
           DstComponent  "VSI1"
           DstTerminal   4
         }
@@ -1928,7 +1923,6 @@ Plecs {
       Type          Wire
       SrcComponent  "Sub"
       SrcTerminal   5
-      Points        [75, 135]
       DstComponent  "V_dc"
       DstTerminal   1
     }
@@ -1936,6 +1930,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Sub"
       SrcTerminal   4
+      Points        [75, 180]
       DstComponent  "V_dc"
       DstTerminal   2
     }
