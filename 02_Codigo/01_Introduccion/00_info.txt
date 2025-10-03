@@ -1,0 +1,2 @@
+Info
+- Carpeta que contiene la información necesaria para terminar este capítulo.
