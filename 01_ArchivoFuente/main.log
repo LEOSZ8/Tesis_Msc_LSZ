@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  3 OCT 2025 05:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  13 OCT 2025 07:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,19 +817,19 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] (content/chapter01.tex
 Cap\'{\i }tulo 1.
-<images/chapter01/global_emss.png, id=105, 602.25pt x 376.40625pt>
+<images/chapter01/global_emss.png, id=108, 602.25pt x 376.40625pt>
 File: images/chapter01/global_emss.png Graphic file (type png)
 <use images/chapter01/global_emss.png>
 Package pdftex.def Info: images/chapter01/global_emss.png  used on input line 1
 5.
 (pdftex.def)             Requested size: 422.77664pt x 264.24644pt.
-<images/chapter01/energy_emss.png, id=107, 602.25pt x 376.40625pt>
+<images/chapter01/energy_emss.png, id=110, 602.25pt x 376.40625pt>
 File: images/chapter01/energy_emss.png Graphic file (type png)
 <use images/chapter01/energy_emss.png>
 Package pdftex.def Info: images/chapter01/energy_emss.png  used on input line 2
 3.
 (pdftex.def)             Requested size: 234.8775pt x 146.79784pt.
-<images/chapter01/transport_emss.png, id=108, 602.25pt x 376.40625pt>
+<images/chapter01/transport_emss.png, id=111, 602.25pt x 376.40625pt>
 File: images/chapter01/transport_emss.png Graphic file (type png)
 <use images/chapter01/transport_emss.png>
 Package pdftex.def Info: images/chapter01/transport_emss.png  used on input lin
@@ -849,7 +849,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./images/chapter01/global_emss.png>]
-<images/chapter01/MARPOL.jpg, id=115, 342.5297pt x 459.96844pt>
+<images/chapter01/MARPOL.jpg, id=118, 342.5297pt x 459.96844pt>
 File: images/chapter01/MARPOL.jpg Graphic file (type jpg)
 <use images/chapter01/MARPOL.jpg>
 Package pdftex.def Info: images/chapter01/MARPOL.jpg  used on input line 43.
@@ -858,7 +858,7 @@ Package pdftex.def Info: images/chapter01/MARPOL.jpg  used on input line 43.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chapter01/CO2_maritime_transport.jpg, id=116, 536.0025pt x 458.46281pt>
+<images/chapter01/CO2_maritime_transport.jpg, id=119, 536.0025pt x 458.46281pt>
 
 File: images/chapter01/CO2_maritime_transport.jpg Graphic file (type jpg)
 <use images/chapter01/CO2_maritime_transport.jpg>
@@ -870,23 +870,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported  on input line 62.
+(babel)             Reported  on input line 65.
 [2 <./images/chapter01/energy_emss.png> <./images/chapter01/transport_emss.png>
 ]
 
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
 [3 <./images/chapter01/MARPOL.jpg>])
 
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
-[4 <./images/chapter01/CO2_maritime_transport.jpg>] (content/bibliography.tex
-(main.bbl))
+[4 <./images/chapter01/CO2_maritime_transport.jpg>]
 
-[5
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+[5] (content/bibliography.tex (main.bbl))
+
+[6
 
 
 
@@ -902,26 +905,23 @@ L3 programming layer <2025-04-29>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4D5AA7620293F449F9F1C275455FB14C;1134.
  ) 
 Here is how much of TeX's memory you used:
- 18578 strings out of 469922
- 283231 string characters out of 5485977
- 725099 words of memory out of 5000000
- 44883 multiletter control sequences out of 15000+600000
- 674210 words of font info for 262 fonts, out of 8000000 for 9000
+ 18589 strings out of 469922
+ 283337 string characters out of 5485977
+ 726324 words of memory out of 5000000
+ 44885 multiletter control sequences out of 15000+600000
+ 674523 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,131p,1003b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Miktex/fonts/type1/public/fpl/fplrc8a.pfb><C:/Miktex/fonts/type1/urw/pala
 tino/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplr8a.pfb><C:/Miktex/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 607196 bytes).
+Output written on main.pdf (14 pages, 611310 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  78943 words of extra memory for PDF output out of 89155 (max. 10000000)
 
