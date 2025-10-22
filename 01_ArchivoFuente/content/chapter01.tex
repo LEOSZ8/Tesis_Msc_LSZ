@@ -34,9 +34,8 @@ The growing global concern over climate change has significantly pressured indus
     \label{emss_2images}
 \end{figure}
 
-Addressing emission reduction is critical, as strict regulations on emissions and fuel efficiency aimed at mitigating the environmental impact of maritime activities are being implemented worldwide [2]. In the area of ships there are several activities to replace the proven diesel mechanical drives by new concepts. The triggers are firsty the ever invreasing price of fossil fuels and the other a mor strigent emission standard in so-called Sulphur Emission Control Areas (SECA) from 1 January 2015. After that, only fuels may be used with a sulfur content of 0.1 percent in may coastal regions, which means additional costs for pushcase of fuel \cite{Volker}.
 
-The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy enisages a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2050 compared to 2008. consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
+The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy enisages a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2050 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
 
 \begin{figure}[!h]
     \centering
@@ -75,20 +74,70 @@ In this type of HPS architecture, two kind of energy system (combustion engines 
 Parallel hybrid architecture combines two kinds of propulsion motors: electric motors and combustion engines which are mechanically coupled by the same shafts through gearboxes and clutches. The electrical motors and drive are supplied by electrical ESS and/or independent power sources generators driven by combustion engines and/or Fuel Cell for example. The two propulsion systems can be used together or separately. In most cases one of the propulsion systems is devoted to be used for low speed operations (classically the electric system) and the other one (classically the combustion engine) is used for high speeds. The first system can also be used as a boost system to provide a supplementary power during transient (starting, acceleration, etc.). This architecture reduces the number of elements compared to hybridization series and allows optimizing the sizing of each of the energy sources.
 \end{itemize}
 
+Tugboats are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption [9]. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles [3].
 
-Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles [3]. Tugboats and ferries are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption [9].
+A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight} .
 
-This paper focuses on designing and sizing an energy storage system for a hybrid tugboat as a specific electro-mobility solution. Despite advancements in marine hybrid technologies, a standardized methodology for tugboat hybridization remains undefined [10]. The study presents a design methodology addressing parameters such as load profiles, power and energy demands, battery technology selection, and propulsion system optimization. Theoretical analysis is presented and simulation shows a emissions reduction while maintaining the robustness needed for towing and transit activities.
+A tug is a particular class of boat which helps mega-ships enter or leave a port. In addition to towing the vessel towards the harbour, tug boats can also be engaged to provide essentials, such as water, air, etc., to a vessel.
+
+Tug boats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.
+
+The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. The common thing is pushing or towing mega boats or barges. Their usage depends on the following factors:
+
+\begin{itemize}
+\item Port traffic Volume
+\item Types of ships to be served by that tug
+\item Navigational obstacles to be catered to
+\item Conditions of environmental protection
+\item Local laws and
+\item Domains to be carried by a tug
+\end{itemize}
+
+An average tug boat has 500-2500 kW engines (680-3400 hp), but those which are larger and venture out into deep waters have engines with a power close to 20000 kW (27200 hp) and a power: tonnage ratio ranging between 2.20-4.50 for large tugs and 4.0-9.5 for harbour tugs. These are high ratios, considering the ratio of cargo ships or vessels varies between 0.35 and 1.20.
+
+Based on purpose, they serve marine tugs can be of two types:
+
+\begin{itemize}
+\item Escort Tugs: The tugs designed generally to escort and manouvre ferries and barges to their destination are known as escort tugs.
+
+\item Support Tugs: These tugs provide support services for offshore and towing operations. These tugs play a significant role in berthing operations.
+
+\end{itemize}
+
+Mainly, tugs used in the marine industry are of three types, which are listed:
+
+\begin{enumerate}
+\item Conventional tug
+\item Tractor tug
+\item Azimuth tug
+\end{enumerate}
+
+The efficiency of vessels is based on fuel consumption in relation to load capacities, always taking into account both the propulsion system and the energy conversion system that determines it. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}. Low efficiency is further affected by the variability of the operating and load conditions to which engines are subjected. This variability leads to an increase in specific fuel consumption, which causes higher emissions and energy waste through exhaust gases and cooling systems \cite{Griffiths}. However, this level of efficiency can and could be optimized by the hybridization.
 
 \section{Challenges and Research Opportunities}
+
+Several studies have examined hybrid propulsion systems. 
+A genetic algorithm to obtain the optimal operating points regard with series hybrid configurations in power generation, especially for the case of heavy duty hybrid drive applications \cite{Bauer}. A marine hybrid propulsion system, focusing on vector control of the electric motor during different modes and verifying the control feasibility \cite{ZFan}. The optimization of hybrid propulsion system design for a tugboat has been explored, presenting a methodology that streamlines powertrain component sizing and control, minimizing costs for a specific operating profile \cite{Hofman}. A coordinated control strategy for a variable-speed hybrid tugboat have been presented to improve fuel economy. The proposed strategy, validated through simulations and a smallscale
+experimental testbed, showed reduced costs and lower
+CO2 emissions \cite{Kumar}.
+
 
 
 \section{Thesis Objectives and Outline}
 
+The specific objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization.
+
+Specific objectives include:
+
+\begin{itemize}
+\item Model the operation of a conventional tugboat
+\item Define hybrid architecture.
+\item Propose the service power of the electrical system.
+\item Preliminary design of the battery bank based on technical and economic criteria.
+\item Simulation of the proposed cell and battery bank.
+\end{itemize}
 
 
-
-\cite{10735355},
 
 
 

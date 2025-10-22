@@ -20,4 +20,11 @@ Esta subrama tiene por objetivo desarrollar el capitulo de introducción del esc
     * Remolcadores.
     * Electromovilidad marítima y sus soluciones.
 
+- F1 v0.4: La introducción responde las siguientes preguntas:
+    * ¿Qué se estudia? --> El diseño y dimensionamiento de baterías para remolcador híbrido.
+    * ¿Por qué es importante? --> Por el rol del transporte marítimo y su impacto medioambiental.
+    * ¿Qué se sabe? --> Existen arquitecturas de propulsión híbrida y eléctrica para embarcaciones.
+    * ¿Qué falta? --> Una metodología para realizar la hibridación de remolcadores.
+    * ¿Que se hará en este trabajo? --> Se diseñará un banco de baterías para un remolcador híbrido, con la finalidad de tener una metodología clara para el proceso de reconversión de embarcaciones convencionales.        
+
 

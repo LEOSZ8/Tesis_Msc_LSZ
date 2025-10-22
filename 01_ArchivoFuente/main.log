@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  21 OCT 2025 06:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  22 OCT 2025 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,47 +849,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./images/chapter01/global_emss.png>]
-<images/chapter01/MARPOL.jpg, id=118, 342.5297pt x 459.96844pt>
+<images/chapter01/MARPOL.jpg, id=117, 342.5297pt x 459.96844pt>
 File: images/chapter01/MARPOL.jpg Graphic file (type jpg)
 <use images/chapter01/MARPOL.jpg>
-Package pdftex.def Info: images/chapter01/MARPOL.jpg  used on input line 43.
+Package pdftex.def Info: images/chapter01/MARPOL.jpg  used on input line 42.
 (pdftex.def)             Requested size: 399.29463pt x 536.23782pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chapter01/CO2_maritime_transport.jpg, id=119, 536.0025pt x 458.46281pt>
+<images/chapter01/CO2_maritime_transport.jpg, id=118, 536.0025pt x 458.46281pt>
 
 File: images/chapter01/CO2_maritime_transport.jpg Graphic file (type jpg)
 <use images/chapter01/CO2_maritime_transport.jpg>
 Package pdftex.def Info: images/chapter01/CO2_maritime_transport.jpg  used on i
-nput line 53.
+nput line 52.
 (pdftex.def)             Requested size: 399.29463pt x 341.53072pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported  on input line 65.
+(babel)             Reported  on input line 66.
 [2 <./images/chapter01/energy_emss.png> <./images/chapter01/transport_emss.png>
 ]
 
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 [3 <./images/chapter01/MARPOL.jpg>]
 
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
-[4 <./images/chapter01/CO2_maritime_transport.jpg>])
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+[4 <./images/chapter01/CO2_maritime_transport.jpg>]
+
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+[5])
 
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
-[5] (content/bibliography.tex (main.bbl))
+[6] (content/bibliography.tex (main.bbl))
 
-[6
+[7
 
 
 
@@ -909,19 +913,27 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4D5AA7620293F449F9F1C275455FB14C;1134.
  ) 
 Here is how much of TeX's memory you used:
- 18612 strings out of 469922
- 283555 string characters out of 5485977
- 726324 words of memory out of 5000000
- 44888 multiletter control sequences out of 15000+600000
- 675523 words of font info for 282 fonts, out of 8000000 for 9000
+ 18663 strings out of 469922
+ 284169 string characters out of 5485977
+ 725552 words of memory out of 5000000
+ 44905 multiletter control sequences out of 15000+600000
+ 676523 words of font info for 297 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,131p,1578b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/fpl/fplrc8a.pfb><C:/Miktex/fonts/type1/urw/pala
-tino/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplr8a.pfb><C:/Miktex/fonts
-/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (14 pages, 614094 bytes).
+
+pdfTeX warning (dest): name{https://www.marineinsight.com/types-of-ships/what-a
+re-tug-boats/} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{https://www.saamtowage.com/harbour-towage/?lang=es}
+ has been referenced but does not exist, replaced by a fixed one
+
+<C:/Miktex/fonts/type1/public/fpl/fplrc8a.pfb><C:/Miktex/fonts/type1/urw/palati
+no/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplr8a.pfb><C:/Miktex/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (15 pages, 622790 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
  78943 words of extra memory for PDF output out of 89155 (max. 10000000)
 

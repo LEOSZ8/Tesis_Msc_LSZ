@@ -37,7 +37,29 @@ N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid p
 \bibitem{Reusser}
 C. A. Reusser, H. A. Young, J. R. Perez Osses, M. A. Perez and O. J. Simmonds, ``Power Electronics and Drives: Applications to Modern Ship Propulsion Systems,'' in \emph{IEEE Industrial Electronics Magazine}, vol. 14, no. 4, pp. 106-122, Dec. 2020, doi: 10.1109/MIE.2020.3002493.
 
+\bibitem{SAAM} 
+``Harbour Towage", SAAM  [Online]: \hyperlink{https://www.saamtowage.com/harbour-towage/?lang=es}{saamtowage.com}
 
+\bibitem{MarineInsight} 
+``The Ultimate Guide to Tug Boats: Types, Functions, and Applications", Marine Insight  [Online]: \hyperlink{https://www.marineinsight.com/types-of-ships/what-are-tug-boats/}{marineinsight.com}
+
+\bibitem{Griffiths} 
+D. Griffiths, ``Marine Medium Speed Diesel Engines", Institute of Marine Engineers, London 1999.
+
+\bibitem{Wik} 
+C. Wik, ``Reducing Medium-Speed Engine Emissions", ournal of Marine Engineering and Technology, A17, 8, 2010.
+
+\bibitem{Bauer} 
+P. H. Bauer and E. Pérez-Bernabeu, ``The effect of the operating point choice on fuel economy in series hybrids," 2013 World Electric Vehicle Symposium and Exhibition (EVS27), Barcelona, Spain, 2013, pp. 1-4, doi: 10.1109/EVS.2013.6914858. 
+
+\bibitem{ZFan}
+Z. Fan, C. Liang, Y. Dong, G. Chang, W. Pan and S. Shao, ``Control of the Diesel-Electric Hybrid Propulsion in a Practical Cruise Vessel," 2021 IEEE International Conference on Power, Intelligent Computing and Systems (ICPICS), Shenyang, China, 2021, pp. 311-316, doi: 10.1109/ICPICS52425.2021.9524194.
+
+\bibitem{Hofman}
+T. Hofman, M. Naaborg and E. Sciberras, ``System-Level Design Optimization of a Hybrid Tug," 2017 IEEE Vehicle Power and Propulsion Conference (VPPC), Belfort, France, 2017, pp. 1-6, doi: 10.1109/VPPC.2017.8331009.
+
+\bibitem{Kumar}
+B. A. Kumar, R. Selvaraj, K. Desingu, T. R. Chelliah and R. S. Upadhyayula, ``A Coordinated Control Strategy for a Diesel-Electric Tugboat System for Improved Fuel Economy," in IEEE Transactions on Industry Applications, vol. 56, no. 5, pp. 5439-5451, Sept.-Oct. 2020, doi: 10.1109/TIA.2020.3010779.
 
 
 \end{thebibliography}
