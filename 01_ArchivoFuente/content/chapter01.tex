@@ -50,6 +50,7 @@ To comply with the standards and emissions reduction goals set by IMO, the marit
     \label{circuito_2}
 \end{figure}
 
+\subsection{Propulsion Architectures}
 Electric and hybrid propulsion architectures, allowed by innovative and high performance components (batteries, fuel cells, supercapacitors, etc) are a promising track to reduce strongly pollutants and GHG emissions \cite{Bennabi}.
 New developments of electrically propelled ships are based on an integrated energy distribution system architecture that releases large propulsion machines \cite{Reusser}.
 
@@ -61,17 +62,129 @@ Hybridization of the propulsion chains are based on the separation or simultaneo
 
 There are three main architectures for hybrid propulsion chains \cite{Bennabi}:
 
-\begin{itemize}
-\item Series Hybrid architecture \\
+\subsubsection{Series Hybrid Architectures}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/Series_prop.png}
+    \caption{Series Hybrid architecture.}
+    \label{fig:SH}
+\end{figure}
+
 In this type of HPS architecture, two kind of energy system (combustion engines and electric systems) are used in series. The propulsion is done by a variable speed electrical drive (propulsion motor and power converter). The electrical power of the propulsion motor is generally supplied by a set of generators driven by combustion engines. Another option is to use fuel cells to provide electric power or a combination of fuel cells and generators driven by combustion engine. Energy storage systems (ESS) (battery, supercapacitors, etc.) can be connected to the electrical bus to provide propulsion power. This ESS can be used separately or with the generators. In this configuration, electric power is used as an energy vector between the combustion engine and the propulsion motor, so there will be no direct mechanical connection between the engine and the propeller. This configuration allows dissociating the operating points of the combustion engine and of the propeller. This is why it allows increasing the global efficiency of the system by optimizing the operating point of combustion engine and propeller in efficiency point of view. Of course, this advantage would be more significant if several generators and ESS are used, because it allows providing the required propulsion power by choosing an optimal combination of sources in order to keep the running combustion engines in their optimal operating area. However, for small ships, the possibility of multiplying the sources is very limited by volume and mass constraints.
 
-\item Parallel Hybrid architecture\\
+\subsubsection{Parallel Hybrid Architectures}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter01/Parallel_prop.png}
+    \caption{Parallel Hybrid architecture.}
+    \label{fig:PH}
+\end{figure}
+
 Parallel hybrid architecture combines two kinds of propulsion motors: electric motors and combustion engines which are mechanically coupled by the same shafts through gearboxes and clutches. The electrical motors and drive are supplied by electrical ESS and/or independent power sources generators driven by combustion engines and/or Fuel Cell for example. The two propulsion systems can be used together or separately. In most cases one of the propulsion systems is devoted to be used for low speed operations (classically the electric system) and the other one (classically the combustion engine) is used for high speeds. The first system can also be used as a boost system to provide a supplementary power during transient (starting, acceleration, etc.). This architecture reduces the number of elements compared to hybridization series and allows optimizing the sizing of each of the energy sources.
-\item Series-Parallel Hybrid architecture\\
+
+
+\subsubsection{Series-Parallel Hybrid Architectures}
 The series-parallel architecture combines both architectures defined previosly. This association allows the passage of a parallel-type operation to a serial type operation.
+
+\subsection{Battery Systems in Maritime Applications}
+
+In 2018, the European Maritime Safety Agency (EMSA) commissioned DNV GL to perform a study on the use of electrical storage systems in shipping, with the objective of providing an overview of technology, research, feasibility, regulations and safety of battery systems in maritime applications \cite{EMSA}.
+
+Batttery application onboard ships can have multiple functional roles. While batteries can fully power a vessel for short distance or duration, improving performance and energy efficiency of the overall vessel is often the key purpose. Among the different uses of batteries on ships are:
+
+\begin{itemize}
+\item Spinning reserve
+\begin{itemize}
+	\item Backup for running generators.
+	\item Fewer generators needed online.
+\end{itemize}
+\item Peak shaving
+\begin{itemize}
+	\item Act as a buffer.
+	\item Level power seen by engines.
+\end{itemize}
+\item Optimise load
+\begin{itemize}
+	\item Optimise the operating point of the generators.
+	\item Reduce maintenance.
+\end{itemize}
+\item Immediate power
+\begin{itemize}
+	\item Instant power in support of generators.
+\end{itemize}
+\item Harvest energy
+\begin{itemize}
+	\item Recover energy from cranes, drilling equipment, etc.
+	\item Accommodate energy from renewables.
+\end{itemize}
+\item Backup power
+\begin{itemize}
+	\item Battery system provides backup power, UPS like functionality.
+\end{itemize}
 \end{itemize}
 
+Different ships have different operating profiles and batteries must respond to specific energy and power demand while also having in consideration the desired/expected life-cycle for the battery \cite{EMSA}. Below are some types of boats that use batteries in different ways \cite{EMSA} \cite{MAN}:
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/PBE_Prop.png}
+    \caption{Pure battery-electric propulsion.}
+    \label{fig:PBE_Prop}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/TDM_Prop.png}
+    \caption{Traditional diesel-mechanic propulsion of a large merchant vessel.}
+    \label{fig:PBE_Prop}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/SHDM_Prop.png}
+    \caption{Semi-hybrid diesel-mechanic propulsion of a large merchant vessel with hybrid electric grid}
+    \label{fig:SHDM_Prop}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/FHDM_Prop.png}
+    \caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK.}
+    \label{fig:FHDM_Prop}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/chapter01/FHDE_Prop.png}
+    \caption{Full-hybrid diesel-electric propulsion with batteries in a hybrid system}
+    \label{fig:FHDE_Prop}
+\end{figure}
+
+\newpage
+\newpage
+
+\subsection{Tugboats}
 Tugboats are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
+
+
+\begin{figure}[!ht]
+
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{images/chapter01/Remolcador.png}
+    \caption{Conventional tug representation.}
+    \label{fig:Tug1}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=0.7\textwidth]{images/chapter01/Remolcador2.png}
+    \caption{Azimuth Tug representation}
+    \label{fig:Tug2}
+    \end{subfigure}
+    
+    \caption{Tugs representations}
+    \label{fig:Tugs}
+\end{figure}
 
 A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
 
