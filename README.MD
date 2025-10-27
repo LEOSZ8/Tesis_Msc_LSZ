@@ -1,6 +1,6 @@
 ## SubRama Feature1: Introducción  
 
-![Evolución Rama Develop](03_ImagenesRepo/Image_readme.svg)
+![Evolución Rama Develop](03_ImagenesRepo/Image_readme.png)
 
 
 Esta subrama tiene por objetivo desarrollar el capitulo de introducción del escrito, con tal de completarlo y luego subirlo a la rama *develop*.
@@ -26,5 +26,17 @@ Esta subrama tiene por objetivo desarrollar el capitulo de introducción del esc
     * ¿Qué se sabe? --> Existen arquitecturas de propulsión híbrida y eléctrica para embarcaciones.
     * ¿Qué falta? --> Una metodología para realizar la hibridación de remolcadores.
     * ¿Que se hará en este trabajo? --> Se diseñará un banco de baterías para un remolcador híbrido, con la finalidad de tener una metodología clara para el proceso de reconversión de embarcaciones convencionales.        
+
+- **F1 v1**: La introducción cuenta con las siguientes secciones
+    * Motivation and Background
+        * Propulsion Architectures
+        * Battery Systems in Maritime Applications
+        * Tugboats
+    * Challenges and Research Opportunities
+    * Thesis Objectives and Outline
+    * Methodology
+    * Scope and Limitations
+    * Chapter Summary
+
 
 
