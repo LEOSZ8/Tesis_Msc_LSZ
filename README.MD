@@ -1,42 +1,18 @@
-## SubRama Feature1: Introducción  
+## Rama Develop 
 
-![Evolución Rama Develop](03_ImagenesRepo/Image_readme.png)
+![Evolución Rama Develop](03_ImagenesRepo/Image_readme.svg)
 
 
-Esta subrama tiene por objetivo desarrollar el capitulo de introducción del escrito, con tal de completarlo y luego subirlo a la rama *develop*.
+Esta rama tiene por objetivo contener las versiones de los diferentes capítulos del documento e ir trabajando el documento respecto al archivo que se le ha enviado al profesor guía.
 
-### F1 SubBranch
-- Se inicia el trabajo en el repositorio.
+Una vez que se finalice el capítulo en esta rama, esta información pasa a la rama *Master*, que es la rama que contiene los capítulos ya finalizados.
 
-- F1 v0.2: Se agregan imágenes de la problemática relacionada a la generación de emisiones de a nivel global, emisiones del sector energía, emisiones del sector transporte y finalmente estimación de emisiones del sector transporte marítimo.
+### Dev Branch
+- Se inicia el trabajo en el repositorio y se comienza a trabajar en la sub rama *Feature1*, correspondiente a la introducción.
 
-- F1 v0.3: Se propone una estructura para la introducción, la cual considera el siguiente desarrollo:
+- Dev v1: Se agregan imágenes de la problemática relacionada a la generación de emisiones de a nivel global, emisiones del sector energía, emisiones del sector transporte y finalmente estimación de emisiones del sector transporte marítimo.
 
-    * Problematica global: Contaminación.
-    * Sector de transporte marítimo.
-    * Proyecciones.
-    * Medidas tomadas por autoridades marítimas.
-    * Vehículos marítimos con mayor cantidad de emisiones.
-    * Remolcadores.
-    * Electromovilidad marítima y sus soluciones.
-
-- F1 v0.4: La introducción responde las siguientes preguntas:
-    * ¿Qué se estudia? --> El diseño y dimensionamiento de baterías para remolcador híbrido.
-    * ¿Por qué es importante? --> Por el rol del transporte marítimo y su impacto medioambiental.
-    * ¿Qué se sabe? --> Existen arquitecturas de propulsión híbrida y eléctrica para embarcaciones.
-    * ¿Qué falta? --> Una metodología para realizar la hibridación de remolcadores.
-    * ¿Que se hará en este trabajo? --> Se diseñará un banco de baterías para un remolcador híbrido, con la finalidad de tener una metodología clara para el proceso de reconversión de embarcaciones convencionales.        
-
-- **F1 v1**: La introducción cuenta con las siguientes secciones
-    * Motivation and Background
-        * Propulsion Architectures
-        * Battery Systems in Maritime Applications
-        * Tugboats
-    * Challenges and Research Opportunities
-    * Thesis Objectives and Outline
-    * Methodology
-    * Scope and Limitations
-    * Chapter Summary
+- Dev v1: Se agrega la información de **F1 v1**, correspondiente a la introducción enviada a Marcelo Pérez para su revisión y comentarios.      
 
 
 
