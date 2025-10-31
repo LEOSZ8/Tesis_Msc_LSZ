@@ -1,7 +1,7 @@
 ## Rama Develop 
 
-![Evolución Rama Develop](03_ImagenesRepo/Image_readme.svg)
 
+![Evolución Rama Develop](03_ImagenesRepo/Image_readme.svg)
 
 Esta rama tiene por objetivo contener las versiones de los diferentes capítulos del documento e ir trabajando el documento respecto al archivo que se le ha enviado al profesor guía.
 
@@ -9,8 +9,6 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 
 ### Dev Branch
 - Se inicia el trabajo en el repositorio y se comienza a trabajar en la sub rama *Feature1*, correspondiente a la introducción.
-
-- Dev v1: Se agregan imágenes de la problemática relacionada a la generación de emisiones de a nivel global, emisiones del sector energía, emisiones del sector transporte y finalmente estimación de emisiones del sector transporte marítimo.
 
 - Dev v1: Se agrega la información de **F1 v1**, correspondiente a la introducción enviada a Marcelo Pérez para su revisión y comentarios.      
 
