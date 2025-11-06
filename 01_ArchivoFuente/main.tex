@@ -1,6 +1,7 @@
 \documentclass[oneside,letterpaper,11pt]{book}
 \usepackage[english]{babel}
 \usepackage{graphicx}
+\usepackage{bbding}
 \usepackage[margin=1in]{geometry}
 \usepackage[svgnames]{xcolor}
 \usepackage[sc]{mathpazo} 
@@ -16,9 +17,13 @@
     urlcolor=cyan,
     }
 \usepackage{fancyhdr}
-
 \usepackage{subcaption}
- 
+
+
+\usepackage{amssymb} % para símbolos como \square
+\newcommand{\checkbox}{\(\square\)} % define el comando
+
+\usepackage{float} 
 \setlength{\headheight}{14.1pt}
 
 
@@ -37,6 +42,7 @@
 \frontmatter
     \pagestyle{plain}
     \input{content/titlepage_thesis}    
+    \input{content/validation}    
     \input{content/dedication}
     \input{content/thanks}
     \input{content/abstract}

@@ -6,14 +6,14 @@
 The growing global concern over climate change has significantly pressured industries to adopt sustainable practices. The maritime sector, responsible for approximately 2.5$\%$ of energy sector CO\textsubscript{2} emmisions \cite{TheRoundup} \cite{containerXchange}, has continuosly increased in emissions, as shown in figure \ref{fig:global_emss}.
 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{images/chapter01/global_emss}
     \caption{Global sources of greenhouse gas emissions \cite{TheRoundup}.}
     \label{fig:global_emss}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 
     \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=1\textwidth]{images/chapter01/energy_emss.png}
@@ -24,68 +24,72 @@ The growing global concern over climate change has significantly pressured indus
     \includegraphics[width=1\textwidth]{images/chapter01/transport_emss.png}
     \caption{CO\textsubscript{2} emissions from the transport subsector.}
     \label{fig:sub_transport}
-    \end{subfigure}
-    
-    \caption{Breakdown of CO\textsubscript{2} emissions from the energy sector and the transport subsector \cite{TheRoundup}.}
+    \end{subfigure}    
+    \caption{Breakdown of CO\textsubscript{2} emissions from the energy sector and the transport subsector \cite{TheRoundup}.\textcolor{blue}{$-->$ PLOT MATLAB}}
     \label{emss_2images}
 \end{figure}
 
 
-The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy enisages a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2050 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI, as shown in figure \ref{fig:MARPOL}. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
+The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy avoids a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2050 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI, as shown in figure \ref{fig:MARPOL}. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.55\textwidth]{images/chapter01/MARPOL.jpg}
-    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs perspective (a) SOx and (b) NOx. (Source: DieselNet)}
+    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs perspective (a) SOx and (b) NOx. (Source: DieselNet) \textcolor{blue}{$-->$ PLOT MATLAB}}
     \label{fig:MARPOL}
 \end{figure}
 
 To comply with the standards and emissions reduction goals set by IMO, the maritime industry is looking for reduced and zero-emission technologies and approaches. The transition from traditional fossil fuel engines to zero-emissions technologies is challenging in a competitive market, where manufacturers are struggling to increase revenue and reduce production cost. The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.\\
 
-
-\begin{figure}[!ht]
+\begin{figure}[t!]
     \centering
-    \includegraphics[width=0.75\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
+    \includegraphics[width=0.9\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
     \caption{IMO greenhouse gas emissions strategy. Source: Lloyd Register, NOV, Assestment of IMO Mandated Energy Efficiency Measures for International Shipping}
     \label{circuito_2}
 \end{figure}
 
+
 \subsection{Propulsion Architectures}
-Full-electric and hybrid propulsion architectures, allowed by innovative and high performance components (batteries, fuel cells, supercapacitors, etc) are a promising track to reduce strongly pollutants and GHG emissions \cite{Bennabi}.
+Full-electric and hybrid propulsion architectures, allowed by innovative and high performance energy storage (batteries, fuel cells, supercapacitors, etc) are a promising track to reduce strongly pollutants and GHG emissions \cite{Bennabi}.
 New developments of electrically propelled ships are based on an integrated energy distribution system architecture that releases large propulsion machines \cite{Reusser}.
 
-For full-electric propulsion, the main advantages include better dynamic performance (start-up,arrest, changes in speed, and regenerative braking), reduced fuel consumption due to the more efficient and flexible use of generators that work within their minimum specific fuel consumption region, and the possibility of having shorter shaft lines because only the electric motor must be installed close to the propeller. 
+For full-electric propulsion, the main advantages include better dynamic performance (start-up, arrest, changes in speed, and regenerative braking), reduced fuel consumption due to the more efficient and flexible use of generators that work within their minimum specific fuel consumption region, and the possibility of having shorter shaft lines because only the electric motor must be installed close to the propeller. 
 
 The hybrid propulsion system uses a combination of diesel engines or gas turbines with electric motors to provide a wide range of propeller speeds \cite{Reusser}. One of the main advantages of this configuration concerns an increase in efficiency at low loads. Hence, less fuel consumption, fewer emissions, and a small footprint are achieved. 
 Hybrid propulsion systems (HPS) are interesting when there is a large variation in power demand during operations. The design rules of this type of systems can differ significatly for different types of vessel, mainly due to the different types of mission profiles and operation requirements \cite{Bennabi}.\\
-Hybridization of the propulsion chains are based on the separation or simultaneous use of several different energy sources. The choice of different sources, and sources combinations is designed to adapt to the ship power and energy requirements which include the needs of low and high power, the needs of flexibility in changes of rhythm and the needs of redundancy and reliability.
+Hybridization of the propulsion chains are based on the separation or simultaneous use of several different energy sources. The choice of different sources, and sources combinations is designed to adapt to the ship power and energy requirements which include the needs of low and high power, the needs of flexibility in changes of rhythm and the needs of redundancy and reliability.\\
 
-There are three main architectures for hybrid propulsion chains \cite{Bennabi}:
+As can be seen in the following subsections, there are three main architectures for hybrid propulsion chains \cite{Bennabi}:
 
-\subsubsection{Series Hybrid Architectures}
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/Series_prop.png}
-    \caption{Series Hybrid architecture \cite{Bennabi}.}
-    \label{fig:SH}
+\begin{figure}[!h]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/Series_prop.png}
+    	\caption{Series Hybrid architecture \cite{Bennabi}.}
+    	\label{fig:SH}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/Parallel_prop.png}
+    	\caption{Parallel Hybrid architecture \cite{Bennabi}.}
+    	\label{fig:PH}
+    \end{subfigure}    
+    \caption{Semi-hybridization.}
+    \label{fig:Hybrid_architectures}
 \end{figure}
 
-In this type of HPS architecture, two kind of energy system (combustion engines and electric systems) are used in series. The propulsion is done by a variable speed electrical drive (propulsion motor and power converter). The electrical power of the propulsion motor is generally supplied by a set of generators driven by combustion engines. Another option is to use fuel cells to provide electric power or a combination of fuel cells and generators driven by combustion engine. Energy storage systems (ESS) (battery, supercapacitors, etc.) can be connected to the electrical bus to provide propulsion power. This ESS can be used separately or with the generators. In this configuration, electric power is used as an energy vector between the combustion engine and the propulsion motor, so there will be no direct mechanical connection between the engine and the propeller. This configuration allows dissociating the operating points of the combustion engine and of the propeller. This is why it allows increasing the global efficiency of the system by optimizing the operating point of combustion engine and propeller in efficiency point of view. Of course, this advantage would be more significant if several generators and ESS are used, because it allows providing the required propulsion power by choosing an optimal combination of sources in order to keep the running combustion engines in their optimal operating area. However, for small ships, the possibility of multiplying the sources is very limited by volume and mass constraints.
-
-\subsubsection{Parallel Hybrid Architectures}
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{images/chapter01/Parallel_prop.png}
-    \caption{Parallel Hybrid architecture \cite{Bennabi}.}
-    \label{fig:PH}
-\end{figure}
-
-Parallel hybrid architecture combines two kinds of propulsion motors: electric motors and combustion engines which are mechanically coupled by the same shafts through gearboxes and clutches. The electrical motors and drive are supplied by electrical ESS and/or independent power sources generators driven by combustion engines and/or Fuel Cell for example. The two propulsion systems can be used together or separately. In most cases one of the propulsion systems is devoted to be used for low speed operations (classically the electric system) and the other one (classically the combustion engine) is used for high speeds. The first system can also be used as a boost system to provide a supplementary power during transient (starting, acceleration, etc.). This architecture reduces the number of elements compared to hybridization series and allows optimizing the sizing of each of the energy sources.
+\subsubsection{a) Series Hybrid Architectures}
 
 
-\subsubsection{Series-Parallel Hybrid Architectures}
+In this type of HPS architecture, two kind of energy system (combustion engines and electric systems) are used in series. The propulsion is done by a variable speed electrical drive (propulsion motor and power converter), as can be seen in the figure \ref{fig:SH}. The electrical power of the propulsion motor is generally supplied by a set of generators driven by combustion engines. Another option is to use fuel cells to provide electric power or a combination of fuel cells and generators driven by combustion engine. Energy storage systems (ESS) (battery, supercapacitors, etc.) can be connected to the electrical bus to provide propulsion power. This ESS can be used separately or with the generators. In this configuration, electric power is used as an energy vector between the combustion engine and the propulsion motor, so there will be no direct mechanical connection between the engine and the propeller. This configuration allows dissociating the operating points of the combustion engine and of the propeller. This is why it allows increasing the global efficiency of the system by optimizing the operating point of combustion engine and propeller in efficiency point of view. Of course, this advantage would be more significant if several generators and ESS are used, because it allows providing the required propulsion power by choosing an optimal combination of sources in order to keep the running combustion engines in their optimal operating area. However, for small ships, the possibility of multiplying the sources is very limited by volume and mass constraints.
+
+\subsubsection{b) Parallel Hybrid Architectures}
+
+
+Parallel hybrid architecture combines two kinds of propulsion motors: electric motors and combustion engines which are mechanically coupled by the same shafts through gearboxes and clutches, as can be seen in the figure \ref{fig:PH}. The electrical motors and drive are supplied by electrical ESS and/or independent power sources generators driven by combustion engines and/or Fuel Cell for example. The two propulsion systems can be used together or separately. In most cases one of the propulsion systems is devoted to be used for low speed operations (classically the electric system) and the other one (classically the combustion engine) is used for high speeds. The first system can also be used as a boost system to provide a supplementary power during transient (starting, acceleration, etc.). This architecture reduces the number of elements compared to hybridization series and allows optimizing the sizing of each of the energy sources.
+
+
+\subsubsection{c) Series-Parallel Hybrid Architectures}
 The series-parallel architecture combines both architectures defined previosly. This association allows the passage of a parallel-type operation to a serial type operation.
 
 \subsection{Battery Systems in Maritime Applications}
@@ -127,54 +131,62 @@ Batttery application onboard ships can have multiple functional roles. While bat
 
 Different ships have different operating profiles and batteries must respond to specific energy and power demand while also having in consideration the desired/expected life-cycle for the battery \cite{EMSA}. 
 
-Considering the incorporation of batteries into the propulsion system of vessels, different propulsion architectures are recognized that provide a different use for batteries, even without considering them, as is the case with conventional propulsion architecture \cite{EMSA} \cite{MAN}:
-
+Considering the incorporation of batteries into the propulsion system of vessels, different propulsion architectures are recognized that provide a different use for batteries, even without considering them, as is the case with conventional propulsion architecture \cite{EMSA} \cite{MAN}.  This can be seen in the figures \ref{fig:Traditional_Prop}, \ref{fig:Layout23} and \ref{fig:Layout45}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.55\textwidth]{images/chapter01/TDM_Prop.png}
     \caption{Traditional diesel-mechanic propulsion of a large merchant vessel.}
-    \label{fig:TDM_Prop}
+    \label{fig:Traditional_Prop}
 \end{figure}
 
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/SHDM_Prop.png}
-    \caption{Semi-hybrid diesel-mechanic propulsion of a large merchant vessel with hybrid electric grid}
+
+
+\begin{figure}[!h]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/SHDM_Prop.png}
+    	\caption{Semi-hybrid diesel-mechanic propulsion of a large merchant vessel with hybrid electric grid}
     \label{fig:SHDM_Prop}
-\end{figure}
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/FHDM_Prop.png}
-    \caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK.}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/FHDM_Prop.png}
+    	\caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK.}
     \label{fig:FHDM_Prop}
+    \end{subfigure}    
+    \caption{Semi-hybridization.}
+    \label{fig:Layout23}
 \end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/FHDE_Prop.png}
-    \caption{Full-hybrid diesel-electric propulsion with batteries in a hybrid system}
-    \label{fig:FHDE_Prop}
+
+
+\begin{figure}[!h]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/FHDE_Prop.png}
+    	\caption{Full-hybrid diesel-electric propulsion with batteries in a hybrid system}
+    	\label{fig:FHDE_Prop}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter01/PBE_Prop.png}
+    	\caption{Pure battery-electric propulsion.}
+    	\label{fig:PBE_Prop}
+    \end{subfigure}    
+    \caption{Electric motor incorporation.}
+    \label{fig:Layout45}
 \end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/PBE_Prop.png}
-    \caption{Pure battery-electric propulsion.}
-    \label{fig:PBE_Prop}
-\end{figure}
 
-\newpage
-\newpage
+
+
 
 \subsection{Tugboats}
-Tugboats are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
 
 
-\begin{figure}[!ht]
-
+\begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=1\textwidth]{images/chapter01/Remolcador.png}
     \caption{Conventional tug representation.}
@@ -184,11 +196,14 @@ Tugboats are ideal candidates for hybridization due to their operational profile
     \includegraphics[width=0.7\textwidth]{images/chapter01/Remolcador2.png}
     \caption{Azimuth Tug representation}
     \label{fig:Tug2}
-    \end{subfigure}
-    
+    \end{subfigure}    
     \caption{Tugs representations}
     \label{fig:Tugs}
 \end{figure}
+
+Tugboats are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
+
+
 
 A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
 
@@ -240,7 +255,7 @@ However, there is no clear and detailed methodology for the hybridization of ves
 
 \section{Thesis Objectives and Outline}
 
-The specific objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization.
+The general objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization.
 
 Specific objectives include:
 
@@ -257,9 +272,9 @@ Specific objectives include:
 The methodology to follow for the development of this work is:
 
 \begin{itemize}
-	\item \textbf{Research:} Review of existing hybrid propulsion system types and battery technologies. 
-	\item \textbf{Analysis:} Theoretical study of the tugboat's load profile and the implementation of batteries to support the vessel's operation.
-	\item \textbf{Simulation:} Simulation of the models obtained to complete the conceptual analysis.
+	\item \textbf{State of Art:} Review of existing hybrid propulsion system types and battery technologies. 
+	\item \textbf{Mathematical Analysis and Modeling:} Theoretical study of the tugboat's load profile and the implementation of batteries to support the vessel's operation.
+	\item \textbf{Results:} Simulation of the models obtained to complete the conceptual analysis.
 \end{itemize}
 
 \section{Scope and Limitations}
