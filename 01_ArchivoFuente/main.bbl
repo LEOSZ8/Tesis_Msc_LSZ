@@ -25,7 +25,7 @@
 ``45 Latest Greenhouse Gas $\&$ Climate Change Statistics", TheRoundup.org  [Online]: \hyperlink{https://theroundup.org/co2-greenhouse-gas-emission-statistics/}{theroundup.org}
 
 \bibitem{containerXchange}
-``How to reduce shipping emissions?Best way to cut emissions $\&$ save money in 2024", Container xChange  [Online]: \hyperlink{https://www.container-xchange.com/blog/shipping-emissions/}{container-xchange.com}
+``How to reduce shipping emissions? Best way to cut emissions $\&$ save money in 2024", Container xChange  [Online]: \hyperlink{https://www.container-xchange.com/blog/shipping-emissions/}{container-xchange.com}
 
 \bibitem{Volker}
 Völker, Thorsten. “Hybrid Propulsion Concepts on Ships.'' 2013.
@@ -37,8 +37,14 @@ N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid p
 \bibitem{Reusser}
 C. A. Reusser, H. A. Young, J. R. Perez Osses, M. A. Perez and O. J. Simmonds, ``Power Electronics and Drives: Applications to Modern Ship Propulsion Systems,'' in \emph{IEEE Industrial Electronics Magazine}, vol. 14, no. 4, pp. 106-122, Dec. 2020, doi: 10.1109/MIE.2020.3002493.
 
+\bibitem{Lloyd}
+Lloyd Register, DNV, ``ASSESSMENT OF IMO MANDATED ENERGY EFFICIENCY MEASURES FOR INTERNATIONAL SHIPPING'' in Project Final Report, MEPC 63/INF.2, Annex, Page 1, 2011.
+
 \bibitem{Chin} 
 Chin, C.S.; Tan, Y.-J.; Kumar, M.V. ``Study of Hybrid Propulsion Systems for Lower Emissions and Fuel Saving on Merchant Ship during Voyage". J. Mar. Sci. Eng. 2022, 10, 393. https://doi.org/10.3390/jmse10030393
+
+\bibitem{Bas}
+B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design methodology of hybrid propulsion systems", Master Thesis conducted at MAN Diesel $\&$ Turbo SE, Augsburg, 2013.
 
 \bibitem{SAAM} 
 ``Harbour Towage", SAAM  [Online]: \hyperlink{https://www.saamtowage.com/harbour-towage/?lang=es}{saamtowage.com}
@@ -59,7 +65,10 @@ P. H. Bauer and E. Pérez-Bernabeu, ``The effect of the operating point choice o
 DNV GL AS Maritime, ``Electrical Energy Storage for Ships", EMSA European MAritime Safety Agency, 2019-0217, Rev. 04, 2020.
 
 \bibitem{MAN}
-MAN Energy Solutions, ``Batteries on Board ocean-going Vessels",2019
+MAN Energy Solutions, ``Batteries on Board ocean-going Vessels", 2019
+
+\bibitem{Chin}
+Chin, C.S.; Tan, Y.-J.; Kumar, M.V. ``Study of Hybrid Propulsion Systems for Lower Emissions and Fuel Saving on Merchant Ship during Voyage". J. Mar. Sci. Eng. 2022, 10, 393.
 
 \bibitem{ZFan}
 Z. Fan, C. Liang, Y. Dong, G. Chang, W. Pan and S. Shao, ``Control of the Diesel-Electric Hybrid Propulsion in a Practical Cruise Vessel," 2021 IEEE International Conference on Power, Intelligent Computing and Systems (ICPICS), Shenyang, China, 2021, pp. 311-316, doi: 10.1109/ICPICS52425.2021.9524194.

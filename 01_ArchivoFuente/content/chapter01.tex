@@ -54,12 +54,21 @@ To comply with the standards and emissions reduction goals set by IMO, the marit
 \begin{figure}[t!]
     \centering
     \includegraphics[width=0.9\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
-    \caption{IMO greenhouse gas emissions strategy. Source: Lloyd Register, NOV, Assestment of IMO Mandated Energy Efficiency Measures for International Shipping}
+    \caption{IMO greenhouse gas emissions strategy \cite{Lloyd}.}
     \label{circuito_2}
 \end{figure}
 
 
 \subsection{Propulsion Architectures}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter01/Propulsion.png}
+    \caption{Types of propulsion systems\textcolor{blue}{$-->$ PDF}}
+    \label{fig:Prop}
+\end{figure}
+
+
 Full-electric and hybrid propulsion architectures, allowed by innovative and high performance energy storage (batteries, fuel cells, supercapacitors, etc) are a promising track to reduce strongly pollutants and GHG emissions \cite{Bennabi}.
 New developments of electrically propelled ships are based on an integrated energy distribution system architecture that releases large propulsion machines \cite{Reusser}.
 
@@ -101,6 +110,55 @@ Parallel hybrid architecture combines two kinds of propulsion motors: electric m
 
 \subsubsection{c) Series-Parallel Hybrid Architectures}
 The series-parallel architecture combines both architectures defined previosly. This association allows the passage of a parallel-type operation to a serial type operation.
+
+Hybrid Propulsion systems are based on the combination of several power sources and energy storage systems.
+
+\subsection{Power Generation Systems}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=1\textwidth]{images/chapter01/Sources.png}
+%    \caption{Types of power sources \textcolor{blue}{$-->$ PDF}.}
+%    \label{fig:sources}
+%\end{figure}
+\subsubsection{a) Steam Turbine}
+
+\subsubsection{b) Gas Turbine}
+
+\subsubsection{c) Diesel Engines}
+A diesel engine is a prime mover with the function to convert chemical energy stored in fuel to mechanical energy \cite{Bennabi}. Diesel
+engine is a prime mover with the function to convert chemical energy stored in fuel to mechanical energy \cite{Bas}. Compared to other prime movers such as a gas turbine or steam turbine, the diesel engine has a high efficiency. Its low fuel consumption is the main reason it is widely used in marine applications.
+
+This power source is characterized by a high level of autonomy and by a relatively low cost compared to other sources. Diesel engines are characterized by a high level of greenhouse gases and pollutants emission particularly if they are used at a lower level of power than their rated power. 
+
+\subsection{Energy Storage Systems}
+
+\subsubsection{a) Supercapacitors}
+
+Supercapacitors can be interesting intermediate energy storage systems for small ships with short power transients \cite{Bennabi}. They are characterized by a high value of charge and discharge peak power and can be used to rapid dynamic storage with very low specific energy. They are usually associated with slower systems, such as batteries and fuel cells, to manage high power short transients. They can operate at very low temperatures at which many types of electrochemical batteries stop working.
+
+\subsubsection{b) Flywheels}
+Flywheels can be used in some particular cases. Like supercapacitors, they are characterized by a high power density but a relatively low energy density. However using flywheels leads to implement safety systems to protect crew and passengers from possible flywheel failure. So their use in small ship context seems very limited.
+
+\subsubsection{c) Batteries}
+The oldest and most classical method for storing electrical energy is using batteries. Battery technology has matured significantly during the past two decades as not only the world but also energy has become increasingly mobile \cite{MAN}. 
+
+
+\begin{table}[H]
+\centering
+\caption{Energy Storage Systems Comparison \cite{Chin}}
+\label{tab:table1}
+\begin{tabular}{cccc}
+\hline      Technology & Battery  & Supercapacitor & Flywheel\\
+\hline \hline
+Energy Density (Wh/kg)    & 50-250   &  0.05-5         & 5-100\\
+Power Density (W/Kg)      & 50-2000  &   100k          & 1000 \\
+Lifecycle (cycle)         & 400-9000 &   50k           & 20k-100k \\
+Lifetime (years)          & 5-10     &   5-8           & 15-20 \\
+Overall Efficiency ($\%$) & 85-99    &   60-65         & 15-20 \\
+\hline \hline
+\end{tabular}
+\end{table}
 
 \subsection{Battery Systems in Maritime Applications}
 
@@ -145,8 +203,8 @@ Considering the incorporation of batteries into the propulsion system of vessels
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/chapter01/TDM_Prop.png}
-    \caption{Traditional diesel-mechanic propulsion of a large merchant vessel.}
+    \includegraphics[width=0.8\textwidth]{images/chapter01/TDM_Prop.png}
+    \caption{Traditional diesel-mechanic propulsion of a large merchant vessel \textcolor{blue}{$-->$ PDF}.}
     \label{fig:Traditional_Prop}
 \end{figure}
 
@@ -156,14 +214,14 @@ Considering the incorporation of batteries into the propulsion system of vessels
 \begin{figure}[!h]
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.9\textwidth]{images/chapter01/SHDM_Prop.png}
-    	\caption{Semi-hybrid diesel-mechanic propulsion of a large merchant vessel with hybrid electric grid}
+    	\includegraphics[width=1\textwidth]{images/chapter01/SHDM_Prop.png}
+    	\caption{Semi-hybrid diesel-mechanic propulsion of a large merchant vessel with hybrid electric grid \textcolor{blue}{$-->$ PDF}}
     \label{fig:SHDM_Prop}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.9\textwidth]{images/chapter01/FHDM_Prop.png}
-    	\caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK.}
+    	\includegraphics[width=1\textwidth]{images/chapter01/FHDM_Prop.png}
+    	\caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK \textcolor{blue}{$-->$ PDF}.}
     \label{fig:FHDM_Prop}
     \end{subfigure}    
     \caption{Semi-hybridization.}
@@ -176,13 +234,13 @@ Considering the incorporation of batteries into the propulsion system of vessels
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=0.9\textwidth]{images/chapter01/FHDE_Prop.png}
-    	\caption{Full-hybrid diesel-electric propulsion with batteries in a hybrid system}
+    	\caption{Full-hybrid diesel-electric propulsion with batteries in a hybrid system \textcolor{blue}{$-->$ PDF}}
     	\label{fig:FHDE_Prop}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=0.9\textwidth]{images/chapter01/PBE_Prop.png}
-    	\caption{Pure battery-electric propulsion.}
+    	\caption{Pure battery-electric propulsion \textcolor{blue}{$-->$ PDF}.}
     	\label{fig:PBE_Prop}
     \end{subfigure}    
     \caption{Electric motor incorporation.}

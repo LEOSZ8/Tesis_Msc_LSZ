@@ -14,5 +14,7 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 
 - Dev v1.1: Se corrigen algunos comentarios pero quedan imágenes por mejorar.
 
+- Dev v1.2: Se corrigen las imágenes y se agrega texto a la introducción para mejorar la estructura.
+
 
 
