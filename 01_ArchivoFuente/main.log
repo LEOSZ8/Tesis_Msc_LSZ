@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.3)  11 NOV 2025 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.3)  12 NOV 2025 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,26 +1129,23 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ] (content/chapter01.tex
 Chapter 1.
-<images/chapter01/global_emss.png, id=177, 602.25pt x 376.40625pt>
-File: images/chapter01/global_emss.png Graphic file (type png)
-<use images/chapter01/global_emss.png>
-Package pdftex.def Info: images/chapter01/global_emss.png  used on input line 1
-1.
-(pdftex.def)             Requested size: 422.77664pt x 264.24644pt.
-<images/chapter01/energy_emss.png, id=181, 602.25pt x 376.40625pt>
-File: images/chapter01/energy_emss.png Graphic file (type png)
-<use images/chapter01/energy_emss.png>
-Package pdftex.def Info: images/chapter01/energy_emss.png  used on input line 1
-9.
-(pdftex.def)             Requested size: 234.8775pt x 146.79784pt.
-<images/chapter01/transport_emss.png, id=182, 602.25pt x 376.40625pt>
-File: images/chapter01/transport_emss.png Graphic file (type png)
-<use images/chapter01/transport_emss.png>
-Package pdftex.def Info: images/chapter01/transport_emss.png  used on input lin
-e 24.
-(pdftex.def)             Requested size: 234.8775pt x 146.79784pt.
+<images/chapter01/GHG.pdf, id=177, 1393.205pt x 328.66588pt>
+File: images/chapter01/GHG.pdf Graphic file (type pdf)
+<use images/chapter01/GHG.pdf>
+Package pdftex.def Info: images/chapter01/GHG.pdf  used on input line 11.
+(pdftex.def)             Requested size: 469.75502pt x 110.81712pt.
+<images/chapter01/SOx.pdf, id=182, 421.575pt x 316.18124pt>
+File: images/chapter01/SOx.pdf Graphic file (type pdf)
+<use images/chapter01/SOx.pdf>
+Package pdftex.def Info: images/chapter01/SOx.pdf  used on input line 23.
+(pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
+<images/chapter01/NOx.pdf, id=183, 421.575pt x 316.18124pt>
+File: images/chapter01/NOx.pdf Graphic file (type pdf)
+<use images/chapter01/NOx.pdf>
+Package pdftex.def Info: images/chapter01/NOx.pdf  used on input line 28.
+(pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 18--28
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 22--32
 [][] [] 
  []
 
@@ -1157,156 +1154,154 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 18--28
 [1
 
 
- <./images/chapter01/global_emss.png>]
-<images/chapter01/SOx.pdf, id=193, 421.575pt x 316.18124pt>
-File: images/chapter01/SOx.pdf Graphic file (type pdf)
-<use images/chapter01/SOx.pdf>
-Package pdftex.def Info: images/chapter01/SOx.pdf  used on input line 37.
-(pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
-<images/chapter01/NOx.pdf, id=194, 421.575pt x 316.18124pt>
-File: images/chapter01/NOx.pdf Graphic file (type pdf)
-<use images/chapter01/NOx.pdf>
-Package pdftex.def Info: images/chapter01/NOx.pdf  used on input line 42.
-(pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
-
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 36--46
-[][] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-
-[2 <./images/chapter01/energy_emss.png> <./images/chapter01/transport_emss.png>
- <./images/chapter01/SOx.pdf> <./images/chapter01/NOx.pdf
-
-pdfTeX warning: pdflatex (file ./images/chapter01/NOx.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->]
-<images/chapter01/CO2_maritime_transport.jpg, id=308, 536.0025pt x 458.46281pt>
+ <./images/chapter01/GHG.pdf>]
+<images/chapter01/CO2_maritime_transport.jpg, id=235, 536.0025pt x 458.46281pt>
 
 File: images/chapter01/CO2_maritime_transport.jpg Graphic file (type jpg)
 <use images/chapter01/CO2_maritime_transport.jpg>
 Package pdftex.def Info: images/chapter01/CO2_maritime_transport.jpg  used on i
-nput line 56.
-(pdftex.def)             Requested size: 422.77664pt x 361.615pt.
-<images/chapter01/Propulsion.png, id=311, 963.6pt x 542.025pt>
+nput line 42.
+(pdftex.def)             Requested size: 305.33789pt x 261.16562pt.
+<images/chapter01/Propulsion.png, id=238, 963.6pt x 542.025pt>
 File: images/chapter01/Propulsion.png Graphic file (type png)
 <use images/chapter01/Propulsion.png>
-Package pdftex.def Info: images/chapter01/Propulsion.png  used on input line 66
+Package pdftex.def Info: images/chapter01/Propulsion.png  used on input line 52
 .
 (pdftex.def)             Requested size: 469.75502pt x 264.23819pt.
 
 
-[3 <./images/chapter01/CO2_maritime_transport.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+[2 <./images/chapter01/SOx.pdf> <./images/chapter01/NOx.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter01/NOx.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <./images/chapter01/CO2_maritime_transport.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
-<images/chapter01/Series_prop.png, id=321, 450.9347pt x 327.47343pt>
+<images/chapter01/Series_prop.png, id=356, 450.9347pt x 327.47343pt>
 File: images/chapter01/Series_prop.png Graphic file (type png)
 <use images/chapter01/Series_prop.png>
-Package pdftex.def Info: images/chapter01/Series_prop.png  used on input line 8
-6.
+Package pdftex.def Info: images/chapter01/Series_prop.png  used on input line 7
+2.
 (pdftex.def)             Requested size: 211.3883pt x 153.51279pt.
-<images/chapter01/Parallel_prop.png, id=324, 435.12563pt x 231.11343pt>
+<images/chapter01/Parallel_prop.png, id=359, 435.12563pt x 231.11343pt>
 File: images/chapter01/Parallel_prop.png Graphic file (type png)
 <use images/chapter01/Parallel_prop.png>
 Package pdftex.def Info: images/chapter01/Parallel_prop.png  used on input line
- 92.
+ 78.
 (pdftex.def)             Requested size: 211.3883pt x 112.2803pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 84--96
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 70--82
 [][] [] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./images/chapter01/Propulsion.png>]
+
+[4 <./images/chapter01/Series_prop.png> <./images/chapter01/Parallel_prop.png>]
 
 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\OT1/pplx/m/n/10.95 (+20) Energy
+ []
 
-[4 <./images/chapter01/Propulsion.png>]
 
-[5 <./images/chapter01/Series_prop.png> <./images/chapter01/Parallel_prop.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\OT1/pplx/m/n/10.95 (+20) Den-sity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\OT1/pplx/m/n/10.95 (+20) Den-sity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\OT1/pplx/m/n/10.95 (+20) Cost
+ []
+
+
+Overfull \hbox (1.61409pt too wide) in paragraph at lines 191--191
+\OT1/pplx/m/n/10.95 (-20) (USD/kWh)| 
+ []
+
 
 
 [6]
-<images/chapter01/TDM_Prop.png, id=369, 1500.60625pt x 363.3575pt>
+<images/chapter01/TDM_Prop.png, id=411, 1500.60625pt x 363.3575pt>
 File: images/chapter01/TDM_Prop.png Graphic file (type png)
 <use images/chapter01/TDM_Prop.png>
-Package pdftex.def Info: images/chapter01/TDM_Prop.png  used on input line 206.
+Package pdftex.def Info: images/chapter01/TDM_Prop.png  used on input line 210.
 
 (pdftex.def)             Requested size: 375.80544pt x 90.99438pt.
-
-
-[7]
-<images/chapter01/SHDM_Prop.png, id=375, 1500.60625pt x 363.3575pt>
+<images/chapter01/SHDM_Prop.png, id=413, 1500.60625pt x 363.3575pt>
 File: images/chapter01/SHDM_Prop.png Graphic file (type png)
 <use images/chapter01/SHDM_Prop.png>
-Package pdftex.def Info: images/chapter01/SHDM_Prop.png  used on input line 217
+Package pdftex.def Info: images/chapter01/SHDM_Prop.png  used on input line 221
 .
 (pdftex.def)             Requested size: 234.8775pt x 56.86871pt.
-<images/chapter01/FHDM_Prop.png, id=376, 1500.60625pt x 391.4625pt>
+<images/chapter01/FHDM_Prop.png, id=414, 1500.60625pt x 391.4625pt>
 File: images/chapter01/FHDM_Prop.png Graphic file (type png)
 <use images/chapter01/FHDM_Prop.png>
-Package pdftex.def Info: images/chapter01/FHDM_Prop.png  used on input line 223
+Package pdftex.def Info: images/chapter01/FHDM_Prop.png  used on input line 227
 .
 (pdftex.def)             Requested size: 234.8775pt x 61.2674pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 215--227
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 219--231
 [][] [] 
  []
 
-<images/chapter01/FHDE_Prop.png, id=377, 1339.0025pt x 579.16376pt>
+<images/chapter01/FHDE_Prop.png, id=415, 1339.0025pt x 579.16376pt>
 File: images/chapter01/FHDE_Prop.png Graphic file (type png)
 <use images/chapter01/FHDE_Prop.png>
-Package pdftex.def Info: images/chapter01/FHDE_Prop.png  used on input line 236
+Package pdftex.def Info: images/chapter01/FHDE_Prop.png  used on input line 240
 .
 (pdftex.def)             Requested size: 211.3883pt x 91.43086pt.
-<images/chapter01/PBE_Prop.png, id=378, 1339.0025pt x 625.33624pt>
+<images/chapter01/PBE_Prop.png, id=416, 1339.0025pt x 625.33624pt>
 File: images/chapter01/PBE_Prop.png Graphic file (type png)
 <use images/chapter01/PBE_Prop.png>
-Package pdftex.def Info: images/chapter01/PBE_Prop.png  used on input line 242.
+Package pdftex.def Info: images/chapter01/PBE_Prop.png  used on input line 246.
 
 (pdftex.def)             Requested size: 211.3883pt x 98.71997pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 234--246
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 238--250
 [][] [] 
  []
 
-<images/chapter01/Remolcador.png, id=379, 2442.87656pt x 1474.75969pt>
+
+
+[7 <./images/chapter01/TDM_Prop.png> <./images/chapter01/SHDM_Prop.png> <./imag
+es/chapter01/FHDM_Prop.png>]
+<images/chapter01/Remolcador.png, id=424, 2442.87656pt x 1474.75969pt>
 File: images/chapter01/Remolcador.png Graphic file (type png)
 <use images/chapter01/Remolcador.png>
-Package pdftex.def Info: images/chapter01/Remolcador.png  used on input line 25
-9.
+Package pdftex.def Info: images/chapter01/Remolcador.png  used on input line 26
+3.
 (pdftex.def)             Requested size: 234.8775pt x 141.79135pt.
-<images/chapter01/Remolcador2.png, id=380, 471.6822pt x 489.9906pt>
+<images/chapter01/Remolcador2.png, id=425, 471.6822pt x 489.9906pt>
 File: images/chapter01/Remolcador2.png Graphic file (type png)
 <use images/chapter01/Remolcador2.png>
 Package pdftex.def Info: images/chapter01/Remolcador2.png  used on input line 2
-64.
+68.
 (pdftex.def)             Requested size: 164.41353pt x 170.79646pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 258--268
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 262--272
 [][] [] 
  []
 
 
 
-[8 <./images/chapter01/TDM_Prop.png> <./images/chapter01/SHDM_Prop.png> <./imag
-es/chapter01/FHDM_Prop.png> <./images/chapter01/FHDE_Prop.png> <./images/chapte
-r01/PBE_Prop.png>]
+[8 <./images/chapter01/FHDE_Prop.png> <./images/chapter01/PBE_Prop.png> <./imag
+es/chapter01/Remolcador.png> <./images/chapter01/Remolcador2.png>]
 
-[9 <./images/chapter01/Remolcador.png> <./images/chapter01/Remolcador2.png>]
+[9])
 
-[10])
+[10] (content/bibliography.tex (main.bbl
 
-[11] (content/bibliography.tex (main.bbl
-
-[12
+[11
 
 
 
@@ -1315,10 +1310,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Chin}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \bibitem{Chin}
+l.75 \bibitem{Chin}
                    ))
 
-[13] (main.aux)
+[12] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
@@ -1331,13 +1326,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 58EB798C5E2E677FDE6309036EB9CB0D;2466.
  ) 
 Here is how much of TeX's memory you used:
- 18961 strings out of 469922
- 299011 string characters out of 5469150
- 727960 words of memory out of 5000000
- 45016 multiletter control sequences out of 15000+600000
+ 18942 strings out of 469922
+ 298247 string characters out of 5469150
+ 730693 words of memory out of 5000000
+ 44997 multiletter control sequences out of 15000+600000
  689489 words of font info for 392 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,131p,1646b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,12n,131p,1646b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{https://www.marineinsight.com/types-of-ships/what-a
 re-tug-boats/} has been referenced but does not exist, replaced by a fixed one
@@ -1361,9 +1356,9 @@ ts/symbols/msam10.pfb><C:/Users/desar/AppData/Local/Programs/MiKTeX/fonts/type1
 e1/urw/palatino/uplb8a.pfb><C:/Users/desar/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/palatino/uplr8a.pfb><C:/Users/desar/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (22 pages, 2040898 bytes).
+Output written on main.pdf (21 pages, 2261048 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
+ 535 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
- 101590 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 101580 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -8,26 +8,12 @@ The growing global concern over climate change has significantly pressured indus
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/chapter01/global_emss}
-    \caption{Global sources of greenhouse gas emissions \cite{TheRoundup}.}
+    \includegraphics[width=1\textwidth]{images/chapter01/GHG}
+    \caption{Global sources of greenhouse gas emissions and breakdown of CO\textsubscript{2} emissions from the energy sector and the transport subsector \cite{TheRoundup}.}
     \label{fig:global_emss}
 \end{figure}
 
-\begin{figure}[H]
 
-    \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=1\textwidth]{images/chapter01/energy_emss.png}
-    \caption{CO\textsubscript{2} emissions from the energy sector.}
-    \label{fig:sub_energy}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=1\textwidth]{images/chapter01/transport_emss.png}
-    \caption{CO\textsubscript{2} emissions from the transport subsector.}
-    \label{fig:sub_transport}
-    \end{subfigure}    
-    \caption{Breakdown of CO\textsubscript{2} emissions from the energy sector and the transport subsector \cite{TheRoundup}.\textcolor{blue}{$-->$ PLOT MATLAB}}
-    \label{emss_2images}
-\end{figure}
 
 
 The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy avoids a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2030 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI, as shown in figure \ref{fig:SOx}. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed, as shown in figure \ref{fig:NOx}. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
@@ -49,11 +35,11 @@ The International Maritime Organization (IMO) is implementing strategies to redu
 
 
 
-To comply with the standards and emissions reduction goals set by IMO, the maritime industry is looking for reduced and zero-emission technologies and approaches. The transition from traditional fossil fuel engines to zero-emissions technologies is challenging in a competitive market, where manufacturers are struggling to increase revenue and reduce production cost. The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.\\
+To comply with the standards and emissions reduction goals set by IMO, the maritime industry is looking for reduced and zero-emission technologies and approaches. The transition from traditional fossil fuel engines to zero-emissions technologies is challenging in a competitive market, where manufacturers are struggling to increase revenue and reduce production cost. The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.
 
-\begin{figure}[t!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
+    \includegraphics[width=0.65\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
     \caption{IMO greenhouse gas emissions strategy \cite{Lloyd}.}
     \label{circuito_2}
 \end{figure}
@@ -80,7 +66,7 @@ Hybridization of the propulsion chains are based on the separation or simultaneo
 
 As can be seen in the following subsections, there are three main architectures for hybrid propulsion chains \cite{Bennabi}:
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=0.9\textwidth]{images/chapter01/Series_prop.png}
@@ -197,11 +183,29 @@ Batttery application onboard ships can have multiple functional roles. While bat
 \end{itemize}
 \end{itemize}
 
+\begin{table}[H]
+\centering
+\caption{Energy Storage Systems Comparison \cite{Chin}}
+\label{tab:table2}
+\begin{tabular}{cp{20mm}p{20mm}p{20mm}cc}
+\hline      Battery & Energy Density (Wh/kg)  & Vol. Energy Density (Wh/L) & Cost (USD/kWh) & Lifecycle & Efficiency ($\%$)\\
+\hline \hline
+Lead-Acid    & 20-40 & 60-110 & 165 & 500-1000 & 50-95\\
+Ni-Cd        & 20-60 & 60-150 &  -  & 2000-2500 & 70-90\\
+Ni-MH        & 50-70 & 140-300 &  146  & 500-2000 & 89-92\\
+Na-S         & $\sim$120  & 150-300 &  400  & $>$1500 & 86-92\\
+Li-ion       & 50-250  & 250-675 &  200-600  & 400-9000 & 85-99\\
+Li-polymer   & $\sim$150  & 250-730 &  -  & - & -\\
+Li-S         & 400  & 350 &  400-500  & 1500 & -\\
+\hline \hline
+\end{tabular}
+\end{table}
+
 Different ships have different operating profiles and batteries must respond to specific energy and power demand while also having in consideration the desired/expected life-cycle for the battery \cite{EMSA}. 
 
 Considering the incorporation of batteries into the propulsion system of vessels, different propulsion architectures are recognized that provide a different use for batteries, even without considering them, as is the case with conventional propulsion architecture \cite{EMSA} \cite{MAN}.  This can be seen in the figures \ref{fig:Traditional_Prop}, \ref{fig:Layout23} and \ref{fig:Layout45}.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/chapter01/TDM_Prop.png}
     \caption{Traditional diesel-mechanic propulsion of a large merchant vessel \textcolor{blue}{$-->$ PDF}.}
@@ -211,7 +215,7 @@ Considering the incorporation of batteries into the propulsion system of vessels
 
 
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=1\textwidth]{images/chapter01/SHDM_Prop.png}
@@ -230,7 +234,7 @@ Considering the incorporation of batteries into the propulsion system of vessels
 
 
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=0.9\textwidth]{images/chapter01/FHDE_Prop.png}
@@ -313,7 +317,7 @@ The efficiency of these types of vessels is based on fuel consumption in relatio
 
 \section{Challenges and Research Opportunities}
 
-Several studies have examined hybrid propulsion systems. 
+Several studies have examined hybrid propulsion systems \cite{LSZ}. 
 A genetic algorithm to obtain the optimal operating points regard with series hybrid configurations in power generation, especially for the case of heavy duty hybrid drive applications \cite{Bauer}. A marine hybrid propulsion system, focusing on vector control of the electric motor during different modes and verifying the control feasibility \cite{ZFan}. The optimization of hybrid propulsion system design for a tugboat has been explored, presenting a methodology that streamlines powertrain component sizing and control, minimizing costs for a specific operating profile \cite{Hofman}. A coordinated control strategy for a variable-speed hybrid tugboat have been presented to improve fuel economy. The proposed strategy, validated through simulations and a smallscale
 experimental testbed, showed reduced costs and lower
 CO2 emissions \cite{Kumar}. \\
