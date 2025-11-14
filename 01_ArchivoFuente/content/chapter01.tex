@@ -55,14 +55,15 @@ To comply with the standards and emissions reduction goals set by IMO, the marit
 \end{figure}
 
 
-Full-electric and hybrid propulsion architectures, allowed by innovative and high performance energy storage (batteries, fuel cells, supercapacitors, etc) are a promising track to reduce strongly pollutants and GHG emissions \cite{Bennabi}.
+While conventional maritime transport is marked by the low technological development of the shipping and maritime industry, especially with regard to propulsion systems, which translates into a continuous increase in fossil fuel consumption, with the environmental impact that this represents, fully electric and hybrid propulsion architectures, made possible by innovative and high-performance energy storage systems (batteries, fuel cells, supercapacitors, etc.), are a promising way to significantly reduce fossil fuel consumption, pollutants, and greenhouse gas emissions \cite{Bennabi}.
+
 New developments of electrically propelled ships are based on an integrated energy distribution system architecture that releases large propulsion machines \cite{Reusser}.
 
 For full-electric propulsion, the main advantages include better dynamic performance (start-up, arrest, changes in speed, and regenerative braking), reduced fuel consumption due to the more efficient and flexible use of generators that work within their minimum specific fuel consumption region, and the possibility of having shorter shaft lines because only the electric motor must be installed close to the propeller. 
 
 The hybrid propulsion system uses a combination of diesel engines or gas turbines with electric motors to provide a wide range of propeller speeds \cite{Reusser}. One of the main advantages of this configuration concerns an increase in efficiency at low loads. Hence, less fuel consumption, fewer emissions, and a small footprint are achieved. 
 Hybrid propulsion systems (HPS) are interesting when there is a large variation in power demand during operations. The design rules of this type of systems can differ significatly for different types of vessel, mainly due to the different types of mission profiles and operation requirements \cite{Bennabi}.\\
-Hybridization of the propulsion chains are based on the separation or simultaneous use of several different energy sources. The choice of different sources, and sources combinations is designed to adapt to the ship power and energy requirements which include the needs of low and high power, the needs of flexibility in changes of rhythm and the needs of redundancy and reliability.\\
+Hybridization of the propulsion chains are based on the separation or simultaneous use of several different energy sources. The choice of different power sources, and sources combinations is designed to adapt to the ship power and energy requirements which include the needs of low and high power, the needs of flexibility in changes of rhythm and the needs of redundancy and reliability.\\
 
 As can be seen in the following subsections, there are three main architectures for hybrid propulsion chains \cite{Bennabi}:
 
@@ -108,8 +109,16 @@ Hybrid Propulsion systems are based on the combination of several power sources 
 %    \label{fig:sources}
 %\end{figure}
 \subsubsection{a) Steam Turbine}
+A steam turbine is a device that extracts thermal energy from pressurized steam and uses it to do mechanical work on a rotating output shaft \cite{Wartsila} \cite{MaritimeEduc}. Steam turbines work by expanding steam through a series of blades mounted on a shaft, which turns a propeller to move the ship. They are particularly favoured for their smooth operation, high power output, and efficiency at high speeds, making them suitable for large vessels like liquefied natural gas (LNG) carriers and naval ships. 
+
+Steam turbines revolutionized ship propulsion with their introduction in the late 19th century, offering advantages such as small size, reduced maintenance, and low vibration. Despite the need for precise reduction gears or turbo-electric transmission to match the high RPM of turbines to the effective propeller speeds, the benefits included light weight and compact engine rooms.
 
 \subsubsection{b) Gas Turbine}
+Gas turbine engines are defined as aerospace engines that convert the chemical energy in fuel into thermal energy through combustion with air, resulting in the rapid expansion of gas that can perform work in the turbine and exhaust nozzle \cite{SD}. 
+
+The gas turbine engine is recognized for its relative mechanical simplicity and its capacity to use a broad spectrum of fuels. The excellent power–weight ratio of gas turbine engines can be effectively exploited. The performance of gas turbine engines is affected by compressor efficiency, turbine efficiency, pressure ratio, peak cycle temperature, and combustion efficiency. Compressor and turbine efficiencies are continuously increasing through better design and manufacturing techniques, but little room is left for improvement. Increasing the pressure ratio can significantly improve the efficiency of an engine, but in order to retain sufficient power output, an increase in pressure ratio must be accompanied by an increase in maximum cycle temperature.
+
+The first time a gas turbine was mounted on a watercraft occurred in 1947 in the United Kingdom, when a diesel free power turbine was mounted on a modified gunboat as a proof of concept \cite{Stepan}. This craft endured sea trials for 4 years, until the technology was proven to be a viable concept for the future of naval propulsion. HMS Grey Goose became the first fully gas turbine powered ship, being launched in the UK in 1953. It served in the British Navy for only four years; however, it has fulfilled its mission of proving the viability of gas turbine propulsion at sea. Since the inception of this technology, gas turbine engines or combinations of them with other engine technologies have been utilized in a wide range of watercraft, ranging from hovercraft all the way up to full-size aircraft carriers, with power outputs starting at single digits of MW all the way to hundreds of MW.
 
 \subsubsection{c) Diesel Engines}
 A diesel engine is a prime mover with the function to convert chemical energy stored in fuel to mechanical energy \cite{Bennabi}. Diesel
@@ -132,7 +141,7 @@ The oldest and most classical method for storing electrical energy is using batt
 
 \begin{table}[H]
 \centering
-\caption{Energy Storage Systems Comparison \cite{Chin}}
+\caption{Energy Storage Systems Comparison \cite{Chin}.}
 \label{tab:table1}
 \begin{tabular}{cccc}
 \hline      Technology & Battery  & Supercapacitor & Flywheel\\
@@ -145,6 +154,10 @@ Overall Efficiency ($\%$) & 85-99    &   60-65         & 15-20 \\
 \hline \hline
 \end{tabular}
 \end{table}
+
+As shown in the table \ref{tab:table1}, the battery provides the highest power density but lacks overall efficiency compared to energy storage systems. The flywheel, on the other hand, is the most durable system, offering a cycle life of between 20,000 and 100,000 cycles and a service life of between 15 and 20 years. However, due to its low power density, it may not provide enough power for a vessel.
+
+The above comparison helps to understand why batteries are usually chosen over other types of energy storage systems: because of their reliability and high energy density.
 
 \subsection{Battery Systems in Maritime Applications}
 
@@ -205,6 +218,8 @@ Different ships have different operating profiles and batteries must respond to 
 
 Considering the incorporation of batteries into the propulsion system of vessels, different propulsion architectures are recognized that provide a different use for batteries, even without considering them, as is the case with conventional propulsion architecture \cite{EMSA} \cite{MAN}.  This can be seen in the figures \ref{fig:Traditional_Prop}, \ref{fig:Layout23} and \ref{fig:Layout45}.
 
+\subsubsection{a) Diesel-mechanic engine propulsion}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/chapter01/TDM_Prop.png}
@@ -212,8 +227,9 @@ Considering the incorporation of batteries into the propulsion system of vessels
     \label{fig:Traditional_Prop}
 \end{figure}
 
+In general, the configuration shown in Figure \ref{fig:Traditional_Prop} is the most common installation on large ocean-going vessels \cite{MAN}. It consists of a two-stroke main engine responsible for propulsion, while the ship's load is covered by auxiliary engines/sensets installed on board the vessel. 
 
-
+\subsubsection{b) Diesel-mechanic engine hybrid propulsion}
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -232,7 +248,18 @@ Considering the incorporation of batteries into the propulsion system of vessels
     \label{fig:Layout23}
 \end{figure}
 
+In Fig. \ref{fig:SHDM_Prop}, a battery is included in a traditional system where the electric grid is separated from the propulsion of the vessel \cite{MAN}. The battery will in such a solution be effective for smoothing the connected hotel electrical loads and contribute to handle large load steps or peaks \cite{EMSA}. When large load steps are increased, the number of auxiliary motors also increases. In some cases, the load can regenerate energy, for example, in crane operations. In such cases, the battery can be used to capture the energy.\\
 
+In \ref{fig:FHDM_Prop}, a battery is included in combination with a shaft generator power take-out (PTO) and power take-in (PTI)\cite{MAN}: 
+
+\begin{itemize}
+\item \textbf{Power Take-Out (PTO):} The electrical/mechanical hybrid solution allows electricity to be generated by the main engine.
+\item \textbf{Power Take-In (PTI):} The electrical/mechanical hybrid solution allows propulsion power to be produced by generator sets and batteries. Additional power is possible (boost mode) when the main engine and PTI motor are running in parallel.
+\end{itemize}
+
+In addition, a ship with a hybrid electric/mechanical propulsion system may have a direct current distribution system, which can adjust the speed of the primary generator engines to the optimum fuel level depending on the load. This will reduce fuel consumption and minimize environmental impact \cite{EMSA}.
+
+\subsubsection{c) Hybrid/electric propulsion with electric motors}
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -251,8 +278,9 @@ Considering the incorporation of batteries into the propulsion system of vessels
     \label{fig:Layout45}
 \end{figure}
 
+A full-hybrid diesel-electric solution, as is shown in fig. \ref{fig:FHDE_Prop}, reduces the noise and vibration level on the ship \cite{EMSA}. Supplementary to be a source of energy for propulsion, the batteries will also smooth the load variations on the generator sets. This type of solution can for instance facilitate the use of zero emission operation when entering a harbour. Another version of this solution is with the batteries distributed into the drives directly \cite{EMSA}. In this way, each propulsion unit is independent of a common power source, which could be valuable for vessels that require highly reliable propulsion thrust.\\
 
-
+In the fig. \ref{fig:PBE_Prop}, the propellers are connected to electric motors, which are driven by the energy stored in a battery system that is typically charged from shore \cite{MAN}. In some battery-electric systems, a smaller diesel generator is sometimes included to ensure operation if the batteries fail to charge or to enable longer voyages, i.e. when the vessel has to dock \cite{MAN}. For such a solution the batteries will be charged through an AC/DC converter. The converter can either be located on board the vessel or on shore. The fig. \ref{fig:PBE_Prop} shows two independent battery systems that deliver power to the thruster. This is according to class rules, which require that two independent battery systems are installed to provide propulsion power in case one of the systems fail \cite{EMSA}.
 
 
 \subsection{Tugboats}

@@ -30,7 +30,6 @@
 \bibitem{Volker}
 Völker, Thorsten. “Hybrid Propulsion Concepts on Ships.'' 2013.
 
-
 \bibitem{Bennabi}
 N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid propulsion systems for small ships: Context and challenges,'' \emph{XXII International Conference on Electrical Machines (ICEM)}, Lausanne, Switzerland, 2016, pp. 2948-2954, doi: 10.1109/ICELMACH.2016.7732943. 
 
@@ -40,19 +39,27 @@ C. A. Reusser, H. A. Young, J. R. Perez Osses, M. A. Perez and O. J. Simmonds, `
 \bibitem{Lloyd}
 Lloyd Register, DNV, ``ASSESSMENT OF IMO MANDATED ENERGY EFFICIENCY MEASURES FOR INTERNATIONAL SHIPPING'' in Project Final Report, MEPC 63/INF.2, Annex, Page 1, 2011.
 
-\bibitem{Chin} 
-Chin, C.S.; Tan, Y.-J.; Kumar, M.V. ``Study of Hybrid Propulsion Systems for Lower Emissions and Fuel Saving on Merchant Ship during Voyage". J. Mar. Sci. Eng. 2022, 10, 393. https://doi.org/10.3390/jmse10030393
+\bibitem{Bas}
+B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design methodology of hybrid propulsion systems", Master Thesis conducted at MAN Diesel $\&$ Turbo SE, Augsburg, 2013.
 
 \bibitem{LSZ}
 L. Solis-Zamora, J. Perez and M. A. Perez, ``Design and Sizing of an Energy Storage System for a Hybrid Tugboat," 2025 IEEE 19th International Conference on Compatibility, Power Electronics and Power Engineering (CPE-POWERENG), Antalya, Turkiye, 2025, pp. 1-6.
 
 
-
-\bibitem{Bas}
-B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design methodology of hybrid propulsion systems", Master Thesis conducted at MAN Diesel $\&$ Turbo SE, Augsburg, 2013.
-
 \bibitem{SAAM} 
-``Harbour Towage", SAAM  [Online]: \hyperlink{https://www.saamtowage.com/harbour-towage/?lang=es}{saamtowage.com}
+SAAM, ``Harbour Towage". [Online]: \hyperlink{https://www.saamtowage.com/harbour-towage/?lang=es}{saamtowage.com}
+
+\bibitem{Wartsila}
+Wärtsilä, ``Encyclopedia of Marine And Energy Technology". [Online]: \hyperlink{https://www.wartsila.com/encyclopedia/term/steam-turbine}{https://www.wartsila.com/encyclopedia/term/steam-turbine} 
+
+\bibitem{MaritimeEduc}
+Maritime Education,``Marine Steam Turbines". \hyperlink{https://maritimeducation.com/marine-steam-turbines/}{https://maritimeducation.com/marine-steam-turbines/}  
+
+\bibitem{SD}
+Science Direct,``Gas Turbine Engines". \hyperlink{https://www.sciencedirect.com/topics/physics-and-astronomy/gas-turbine-engines}{https://www.sciencedirect.com/topics/physics-and-astronomy/gas-turbine-engines}  
+
+\bibitem{Stepan}
+S. Grigoryev,``Gas turbines in marine propulsion",Bachelor's thesis 2025, LUT University.
 
 \bibitem{MarineInsight} 
 ``The Ultimate Guide to Tug Boats: Types, Functions, and Applications", Marine Insight  [Online]: \hyperlink{https://www.marineinsight.com/types-of-ships/what-are-tug-boats/}{marineinsight.com}
