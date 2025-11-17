@@ -10,7 +10,7 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 ### Dev Branch
 - Se inicia el trabajo en el repositorio y se comienza a trabajar en la sub rama *Feature1*, correspondiente a la introducción.
 
-- Dev v1: Se agrega la información de **F1 v1**, correspondiente a la introducción enviada a Marcelo Pérez para su revisión y comentarios.      
+- **Dev v1:** Se agrega la información de **F1 v1**, correspondiente a la introducción enviada a Marcelo Pérez para su revisión y comentarios.      
 
 - Dev v1.1: Se corrigen algunos comentarios pero quedan imágenes por mejorar.
 
@@ -19,4 +19,6 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v1.3: Se corrige la imágene inicial sobre GHG y se agrega una tabla respecto a las características de las baterías. Queda sólo agregar información y además incluir a los otros capítulos dentro del documento.
 
 - Dev v1.4: Se agrega información sobre los tipos de propulsión y también sobre loas diferentes hibridaciones reconocidas.
+
+- **Dev v2:** Se mejora la introducción con información actualizada y además se agrega una estructura del contenido del escrito. Esta versión es enviada a Marcelo Pérez para su revisión.
 

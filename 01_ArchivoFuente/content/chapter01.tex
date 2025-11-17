@@ -3,7 +3,7 @@
 
 \section{Motivation and Background}
 
-The growing global concern over climate change has significantly pressured industries to adopt sustainable practices. The maritime sector, responsible for approximately 2.5$\%$ of energy sector CO\textsubscript{2} emmisions \cite{TheRoundup} \cite{containerXchange}, has continuosly increased in emissions, as shown in figure \ref{fig:global_emss}.
+The growing global concern over climate change has significantly pressured industries to adopt sustainable practices. The maritime sector, responsible for approximately 2.5$\%$ of energy sector CO\textsubscript{2} emmisions as shown in figure \ref{fig:global_emss}, has continuosly increased in emissions \cite{TheRoundup} \cite{containerXchange}.
 
 
 \begin{figure}[H]
@@ -16,7 +16,7 @@ The growing global concern over climate change has significantly pressured indus
 
 
 
-The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy avoids a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2030 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2025 per the International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI, as shown in figure \ref{fig:SOx}. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed, as shown in figure \ref{fig:NOx}. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
+The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy avoids a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2030 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2030 per the \textbf{International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI}, as shown in figure \ref{fig:SOx}. Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed, as shown in figure \ref{fig:NOx}. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -29,20 +29,28 @@ The International Maritime Organization (IMO) is implementing strategies to redu
     \caption{NO\textsubscript{x} limits.}
     \label{fig:NOx}
     \end{subfigure}    
-    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs perspective).}
+    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs) perspective.}
     \label{fig:ECA}
 \end{figure}
 
-
-
-To comply with the standards and emissions reduction goals set by IMO, the maritime industry is looking for reduced and zero-emission technologies and approaches. The transition from traditional fossil fuel engines to zero-emissions technologies is challenging in a competitive market, where manufacturers are struggling to increase revenue and reduce production cost. The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.
+With the\textbf{ Net-Zero Famework (NZF)} approved bye the IMO in April 2025, the course is being set for the global maritime fuel transition \cite{DNV2025}. The NZF aims to meet the emission reduction targets set out in the 2023 IMO GHG Stratey. Pending adoption in October 2025, a GHG fuel intensity (GFI) metric, in combination with a two-tier GHG pricing mechanism, will requiere operators to reduce their ship's GHG emissions intensity by 21$\%$ by 2030, with financial penalties for those who fail to do so. Beyond 2030, the requirements become rapidly stricter.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\textwidth]{images/chapter01/CO2_maritime_transport.jpg}
-    \caption{IMO greenhouse gas emissions strategy \cite{Lloyd}.}
-    \label{circuito_2}
+    \includegraphics[width=0.9\textwidth]{images/chapter01/DNV2025.pdf}
+    \caption{GFI reduction factors and reference value in NZF \cite{DNV2025}. Two tiers of requirements are set on the annual
+attained GFI for a ship: a Base target and a Direct Compliance target. Each ship is required to meet the Direct Compliance target, either through the use of low-GHG fuels, or through one of the alternative compliance approaches. The Base target is used to separate between Tier 1 and Tier 2 compliance deficits.}
+    \label{fig:DNV2025}
 \end{figure}
+
+Specificaly, The NZF aims to accelerate the adoption of low-GHG fuels and technologies, thereby supporting the achievement of the revised 2023 IMO GHG Strategy, namely a 20$\%$ reduction in emissions by 2030, a 70$\%$ reduction by 2040 (compared to 2008 levels), and net-zero emissions ‘by or around’ 2050, as is shown in fig \ref{fig:DNV2025}. It is based on the GHG fuel intensity (GFI) metric expressed in gCO\textsubscript{2}eq/MJ of all energy used on board in a calendar year on a well-to-wake (WtW) basis. Gradually stricter GFI targets are to be set every year from 2028. In effect, the NZF penalizes vessels with a GFI higher than the targets and incentivizes the use of low-GHG fuels and other technologies that can reduce the GFI. So, in response to the NZF, shipowners should carefully identify, evaluate and use technologies, fuels and solutions that help minimize energy consumption and lower GFI for ships. 
+
+Many ships contracted in the coming years may still be in operation in 2025, and need to consider the upcoming stringent requirements to retain their commercial attractiveness, asset value, and profitability in the following decades. In addition, beyond 2030, ships in operation may need to consider retrofit options to allow the use of low-GHG emission fuels.
+
+The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.
+
+
+
 
 
 \subsection{Propulsion Architectures}
@@ -136,7 +144,17 @@ Supercapacitors can be interesting intermediate energy storage systems for small
 Flywheels can be used in some particular cases. Like supercapacitors, they are characterized by a high power density but a relatively low energy density. However using flywheels leads to implement safety systems to protect crew and passengers from possible flywheel failure. So their use in small ship context seems very limited.
 
 \subsubsection{c) Batteries}
-The oldest and most classical method for storing electrical energy is using batteries. Battery technology has matured significantly during the past two decades as not only the world but also energy has become increasingly mobile \cite{MAN}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/chapter01/Batt.pdf}
+    \caption{Components of a battery \cite{EMSA}.}
+    \label{fig:Batt}
+\end{figure}
+
+The oldest and most classical method for storing electrical energy is using batteries. In general, as can be seen in fig. \ref{fig:Batt}, a battery is comprised of two different poles – a positive electrode called the cathode and a negative electrode called the anode. Then some material is used inside the battery, called electrolyte, that enables ions, or charge carriers, to be transferred back and forth between these poles by electrochemical reactions \cite{EMSA}. A separator can be placed between the cathode and anode, preventing them from touching each other. Hence, when the poles are connected by an electrical conducting material, electrons will flow through the external electrical circuit, and ions to flow through the electrolyte. This process allows energy to be stored or produced in the battery. The chosen energy carrier material, electrode and electrolyte composition, and the shape of the electrodes determine the properties of the batteries.
+
+Battery technology has matured significantly during the past two decades as not only the world but also energy has become increasingly mobile \cite{MAN}. 
 
 
 \begin{table}[H]
@@ -144,7 +162,7 @@ The oldest and most classical method for storing electrical energy is using batt
 \caption{Energy Storage Systems Comparison \cite{Chin}.}
 \label{tab:table1}
 \begin{tabular}{cccc}
-\hline      Technology & Battery  & Supercapacitor & Flywheel\\
+\hline      \textbf{Technology} & \textbf{Battery}  & \textbf{Supercapacitor} & \textbf{Flywheel}\\
 \hline \hline
 Energy Density (Wh/kg)    & 50-250   &  0.05-5         & 5-100\\
 Power Density (W/Kg)      & 50-2000  &   100k          & 1000 \\
@@ -161,47 +179,69 @@ The above comparison helps to understand why batteries are usually chosen over o
 
 \subsection{Battery Systems in Maritime Applications}
 
-In 2018, the European Maritime Safety Agency (EMSA) commissioned DNV GL to perform a study on the use of electrical storage systems in shipping, with the objective of providing an overview of technology, research, feasibility, regulations and safety of battery systems in maritime applications \cite{EMSA}.
+Battery application onboard ships can have multiple functional roles. While batteries can fully power a vessel for short distance or duration, improving performance and energy efficiency of the overall vessel is often the key purpose.\\
+In 2018, the European Maritime Safety Agency (EMSA) commissioned DNV GL to perform a study on the use of electrical storage systems in shipping, with the objective of providing an overview of technology, research, feasibility, regulations and safety of battery systems in maritime applications \cite{EMSA}. Figure \ref{fig:Batt_roles} shows the different uses of batteries recognized by EMSA:
 
-Batttery application onboard ships can have multiple functional roles. While batteries can fully power a vessel for short distance or duration, improving performance and energy efficiency of the overall vessel is often the key purpose. Among the different uses of batteries on ships are:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/chapter01/Batt_roles.pdf}
+    \caption{Funcitonal roles of battery systems onboard ships \cite{EMSA}.}
+    \label{fig:Batt_roles}
+\end{figure}
 
 \begin{itemize}
-\item Spinning reserve
+	\item \textbf{Spinning reserve:} This mainly applies to diesel electric dynamic positioning vessels. Using a battery-provided spinning reserve allows the vessel to reduce the number of generators running required to maintain the spinning reserve. It allows for lower fuel consumption, lower emissions, higher efficiency of running engines and lower maintenance costs due to reduced running hours \cite{Marcin}.
+	\item \textbf{Peak shaving:} Battery energy storage systems also provide additional electric power required for short-term additional power demands. In conventional propulsion systems, it is necessary to run additional diesel generator to meet those demands. Using a battery instead, the additional generator can be turned off, therefore saving on fuel and wear and tear of the engine. Vessels equipped with heavy electricity consumers such as cranes or electric-driven thrusters will benefit from this arrangement \cite{Marcin}.
+	\item \textbf{Optimise load:} BESSs are used to keep the load of the diesel engine/generator constant, allowing them to operate at maximum efficiency by charging when the load demand is low, then contributing to the fulfilment of the load request \cite{Luca}.
+	\item \textbf{Immediate power:} This concept is recognized also like \textit{Ramp Levelling} and is used to enhance dynamic engine performance \cite{Luca}. Gas engines and other energy sources are not capable of handling fast load variations. In such cases, a BESS can be utilized to take care of the variations, while the main energy source produces slowly varying power \cite{Marcin}.
+	\item \textbf{Harvest energy:} This service consists of a time shift of energy generation by storing energy from photovoltaic panels, and/or other renewable sources such as wind, and then releasing it when they are absent. In addition, regenerative power improves ship energy management, using BESS to store energy obtained from the regenerative process of double speed engine braking (e.g., ships with cranes or large winches) \cite{Luca}.
+	\item \textbf{Backup power:} BESS allows the vessel to stop diesel engines when onboard electricity consumption is low (e.g., in port). The generators are started only to charge the batteries. It is possible to reduce emissions because the diesel engines operate at optimal load (with maximum efficiency and minimum specific fuel consumption) during charging \cite{Marcin}.
+\end{itemize}
+
+Additionally, other authors acknowledge the service of the \textbf{zero-emission mode} \cite{Luca}, that utilizes full electric propulsion for a limited time, reducing ship noise and vibration. Here, a BESS allows for switching-off all the onboard internal combustion engines. However, when fully powered by its own BESS, these ships are subject to specific technical limitations, such as max speed and maximum operation time, depending on battery power and energy content.\\
+
+Among the commercially available battery technologies that can be used to provide services to boats, considering that is not feasible or possible to cover the entire spectrum of all technologies, because for any given chemistry there is most often a wide range of products representing different levels of quality and performance, information on some of them is provided \cite{EMSA}:
+
 \begin{itemize}
-	\item Backup for running generators.
-	\item Fewer generators needed online.
+	\item \textbf{Lead-acid:} Lead-acid batteries are supplied worldwide by a large supplier base at a very low cost. Automotive batteries and industries where standby electrical power is critical are the biggest markets. It is considered to be very safe, since the electrolyte and active materials are not flammable; although the batteries are known to produce hydrogen under charging.The main drawbacks for such batteries are the specific energy and energy density. The power density is considered high for lead acid battery but is also here outperformed by Li-ion.
+	\item \textbf{Nickel Cadmium (Ni-Cd):} Nickel cadmium batteries are mature technologies, that are widely used in UPS applications, for example. This technology is economically priced and presents the lowest per cycle cost. Good ventilation is important in the room to avoid explosive concentration of hydrogen. Ni-Cd have memory effect that causes a loss of capacity if not given a periodic full discharge cycle.
+	\item \textbf{Nickel Metal Hybride (Ni-MH):} Nickel metal hybride has become one of the most readily available rechargeable batteries for consumer use and is used for the most at the same applications as Ni-Cd. It provides 40 percent higher specific energy than the standard Ni-Cd. Good ventilation is important in the room to avoid explosive concentration of hydrogen. The battery is more delicate and trickier to charge than Ni-Cd. High self-discharge is of ongoing concern, and devices with a Ni-MH battery gets “flat” when put away for only a few weeks.
+	\item \textbf{Sodium Sulphur (Na-S):} The sodium sulphur batteries, are manufactured from cheap and plentiful raw materials and has higher specific energy compared to Li-ion batteries. However, the manufacturing processes and the need for insulation, heating and thermal management make these batteries quite expensive and counteracts the benefits, because these type of batteries need molten sodium-metal as a anode, making it necessary to operate at $300$°C.
+	\item \textbf{Lithium-ion (Li-ion):} Lithium-ion batteries can consist of different material and chemistries in the electrodes and the electrolyte, as well as manufacturing processes and related materials. Has the highest specific energy of commercially available batteries and highest energy density of commercially available batteries. Some disadvantages are flammable electrolyte and potentially limited availability of materials. Among the different \textbf{cathodes} and \textbf{anodes} of lithium-ion batteries are shown in the table \ref{tab:table1_1}:
+	
+\begin{table}[H]
+\centering
+\caption{Lithuim-ion batteries types \cite{EMSA}.}
+\label{tab:table1_1}
+\begin{tabular}{p{70mm}|m{35mm}}
+\hline
+\multicolumn{2}{|c|}{\textbf{Lithium-ion Battery}} \\
+\hline\hline
+\textbf{Cathode Chemistries} & \textbf{Anode Chemistries}    \\
+\hline  
+Nickel Manganese Cobalt Oxide (NMC) & Graphene \\
+Nickel Cobalt Aluminium (NCA) & Titanate \\
+Lithium Cobalt Oxide (LCO) & Silicon \\
+Lithium Manganese Oxide Spinel (LMO) & \\
+Lithium Iron Phosphate (LFP) & \\
+\hline \hline
+\end{tabular}
+\end{table}	
+	
+		
+	\item \textbf{Li-polymer:} Also known like \textit{solid-state battery}, this type of technology gives freedom in design of the battery geometry and improvement of the packing efficiency of the cells. It facilitates a long cycle life and offers the possibility of employing high-voltage cathodes. All these effects increase the practical battery energy density. The biggest challenge however is regarded as the volume changes of the electrodes during charging and discharging, that causes loss of contact between the electrode and the electrolyte. These effects all make ion conductivity low. An polymer interlayer between the electrodes and the solid electrolyte has been proposed to overcome these challenges. Some disadventagse of this technology are its high production cost and low lifetime.
+	\item \textbf{Lithium-Sulphur (Li-S):} Like conventional lithium-ion batteries, these batteries use Li+ ions as energy carriers. They react with sulfur at the cathode giving some high theoretical values for specific energy and energy density. Hence these batteries will be very attractive for marine applications.
+	Safety concerns related to these batteries, like dendrite formation, have been improved. However, this compromises the specific energy and energy density and increases the cost dramatically. Other obstacles to overcome are high electrical resistance, capacity fading, self-discharge, mainly due to the so-called shuttle effect. 
 \end{itemize}
-\item Peak shaving
-\begin{itemize}
-	\item Act as a buffer.
-	\item Level power seen by engines.
-\end{itemize}
-\item Optimise load
-\begin{itemize}
-	\item Optimise the operating point of the generators.
-	\item Reduce maintenance.
-\end{itemize}
-\item Immediate power
-\begin{itemize}
-	\item Instant power in support of generators.
-\end{itemize}
-\item Harvest energy
-\begin{itemize}
-	\item Recover energy from cranes, drilling equipment, etc.
-	\item Accommodate energy from renewables.
-\end{itemize}
-\item Backup power
-\begin{itemize}
-	\item Battery system provides backup power, UPS like functionality.
-\end{itemize}
-\end{itemize}
+
+About the different types of batteries described above, there is a technical comparation in the table \ref{tab:table2}.
 
 \begin{table}[H]
 \centering
 \caption{Energy Storage Systems Comparison \cite{Chin}}
 \label{tab:table2}
-\begin{tabular}{cp{20mm}p{20mm}p{20mm}cc}
-\hline      Battery & Energy Density (Wh/kg)  & Vol. Energy Density (Wh/L) & Cost (USD/kWh) & Lifecycle & Efficiency ($\%$)\\
+\begin{tabular}{cp{20mm}p{28mm}p{20mm}cc}
+\hline      \textbf{Battery} & \textbf{Energy Density (Wh/kg)}  & \textbf{Volumetric Energy Density (Wh/L)} & \textbf{Cost (USD/kWh)} & \textbf{Lifecycle} & \textbf{Efficiency ($\%$)}\\
 \hline \hline
 Lead-Acid    & 20-40 & 60-110 & 165 & 500-1000 & 50-95\\
 Ni-Cd        & 20-60 & 60-150 &  -  & 2000-2500 & 70-90\\
@@ -214,11 +254,11 @@ Li-S         & 400  & 350 &  400-500  & 1500 & -\\
 \end{tabular}
 \end{table}
 
-Different ships have different operating profiles and batteries must respond to specific energy and power demand while also having in consideration the desired/expected life-cycle for the battery \cite{EMSA}. 
+Different ships have different operating profiles and batteries must respond to specific energy and power demand while also having in consideration the desired/expected life-cycle for the battery \cite{EMSA}. In this scenario, lithium batteries are superior to the other mentioned batteries in terms of energy density, lifecycle, and efficiency \cite{Chin}. Lithium batteries have been gaining traction throughout the years, with many applications including portable electronics such as mobile phones, and automobile applications such as electric vehicles. Also are slowly being adopted for aerospace, military and marine applications. Lithium batteries are highly versatile energy storage devices that can be altered to meet specific demands, making them one of the best choices for marine application.\\
 
 Considering the incorporation of batteries into the propulsion system of vessels, different propulsion architectures are recognized that provide a different use for batteries, even without considering them, as is the case with conventional propulsion architecture \cite{EMSA} \cite{MAN}.  This can be seen in the figures \ref{fig:Traditional_Prop}, \ref{fig:Layout23} and \ref{fig:Layout45}.
 
-\subsubsection{a) Diesel-mechanic engine propulsion}
+\subsubsection{a) Diesel-mechanic engine conventional system}
 
 \begin{figure}[H]
     \centering
@@ -229,7 +269,7 @@ Considering the incorporation of batteries into the propulsion system of vessels
 
 In general, the configuration shown in Figure \ref{fig:Traditional_Prop} is the most common installation on large ocean-going vessels \cite{MAN}. It consists of a two-stroke main engine responsible for propulsion, while the ship's load is covered by auxiliary engines/sensets installed on board the vessel. 
 
-\subsubsection{b) Diesel-mechanic engine hybrid propulsion}
+\subsubsection{b) Diesel-mechanic engine hybrid system}
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -259,7 +299,7 @@ In \ref{fig:FHDM_Prop}, a battery is included in combination with a shaft genera
 
 In addition, a ship with a hybrid electric/mechanical propulsion system may have a direct current distribution system, which can adjust the speed of the primary generator engines to the optimum fuel level depending on the load. This will reduce fuel consumption and minimize environmental impact \cite{EMSA}.
 
-\subsubsection{c) Hybrid/electric propulsion with electric motors}
+\subsubsection{c) Hybrid/electric propulsion system with electric motors}
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -282,74 +322,78 @@ A full-hybrid diesel-electric solution, as is shown in fig. \ref{fig:FHDE_Prop},
 
 In the fig. \ref{fig:PBE_Prop}, the propellers are connected to electric motors, which are driven by the energy stored in a battery system that is typically charged from shore \cite{MAN}. In some battery-electric systems, a smaller diesel generator is sometimes included to ensure operation if the batteries fail to charge or to enable longer voyages, i.e. when the vessel has to dock \cite{MAN}. For such a solution the batteries will be charged through an AC/DC converter. The converter can either be located on board the vessel or on shore. The fig. \ref{fig:PBE_Prop} shows two independent battery systems that deliver power to the thruster. This is according to class rules, which require that two independent battery systems are installed to provide propulsion power in case one of the systems fail \cite{EMSA}.
 
+Electrification of ship's propulsion is increasingly recognised as a core part of the maritime industry's future \cite{Marcin}. According to \cite{DNV}, the adoption of alternative fuels in the global fleet by number of ships is dominated by Liquefied Natural Gas (LNG) together with hybrid/battery ships:
+
+\begin{itemize}
+	\item Of the total 1,349 alternative fuel ships in operation during 2022, there were:
+		\begin{itemize}
+			\item 926 LNG ships.
+			\item 396 hybrid/battery-powered ships.
+		\end{itemize}
+	\item  Of the total 1,046 alternative fuel ships ordered, there were:
+		\begin{itemize}
+			\item 534 LNG ships. 
+			\item 417 hybrid/battery-powered ships.
+		\end{itemize}
+\end{itemize}
+
+
+It can be seen that the proportion of hybrid/battery propulsion systems has been increasing. However, it should be noted that the use of batteries as a source of propulsion for ships is limited to certain types of ships, the main ones being ferries, dynamic positioning ships and platforms, dredging, short-range ships, wind farm support vessels, and tugs. For ships that travel most of the time at
+constant speed, such as container ships, it make no sense to replace a diesel mechanical drive by hybrid concepts, because the diesel-mechanical drives are optimized for this operation and then getting a lower consumption than a diesel electric or hybrid system \cite{Volker}.
+
+Harbour tugs are a sector of the maritime industry with great potential for the implementation of hybrid propulsion, as they experience significant variations in power demand during operations \cite{Bennabi}. 
+
+Ports are imposing more and more stringent regulations on exhaust and noise emissions. Those demands for cleaner operation can be easily met by the implementation of batery energy storage systems (BESS) (with hybrid-electric propulsion). Using a combination of electric power, BESS and combustion engines, a hybrid tug optimizes engine loading, resulting in lower specific fuel consumption, higher efficiency, lower emissions and lower fuel consumption.
+
 
 \subsection{Tugboats}
 
-
 \begin{figure}[H]
-    \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=1\textwidth]{images/chapter01/Remolcador.png}
-    \caption{Conventional tug representation.}
-    \label{fig:Tug1}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=0.7\textwidth]{images/chapter01/Remolcador2.png}
-    \caption{Azimuth Tug representation}
-    \label{fig:Tug2}
-    \end{subfigure}    
-    \caption{Tugs representations}
-    \label{fig:Tugs}
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/chapter01/Tug.jpg}
+    \caption{Tugboat}
+    \label{fig:HarbourTug}
 \end{figure}
 
-Tugboats are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
-
-
-
-A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
+Tugboats, as can be seen in fig. \ref{fig:HarbourTug}, are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
 
 A tug is a particular class of boat which helps mega-ships enter or leave a port. In addition to towing the vessel towards the harbour, tug boats can also be engaged to provide essentials, such as water, air, etc., to a vessel.
 
-Tug boats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.
 
-The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. The common thing is pushing or towing mega boats or barges. Their usage depends on the following factors:
-
-\begin{itemize}
-\item Port traffic Volume
-\item Types of ships to be served by that tug
-\item Navigational obstacles to be catered to
-\item Conditions of environmental protection
-\item Local laws and
-\item Domains to be carried by a tug
-\end{itemize}
-
-An average tug boat has 500-2500 kW engines (680-3400 hp), but those which are larger and venture out into deep waters have engines with a power close to 20000 kW (27200 hp) and a power/tonnage ratio ranging between 2.20-4.50 for large tugs and 4.0-9.5 for harbour tugs. These are high ratios, considering the ratio of cargo ships or vessels varies between 0.35 and 1.20.
-
-Based on purpose, they serve marine tugs can be of two types:
-
-\begin{itemize}
-\item Escort Tugs: The tugs designed generally to escort and manouvre ferries and barges to their destination are known as escort tugs.
-
-\item Support Tugs: These tugs provide support services for offshore and towing operations. These tugs play a significant role in berthing operations.
-
-\end{itemize}
-
-Mainly, tugs used in the marine industry are of three types, which are listed:
-
-\begin{enumerate}
-\item Conventional tug
-\item Tractor tug
-\item Azimuth tug
-\end{enumerate}
-
-The efficiency of these types of vessels is based on fuel consumption in relation to load capacities, always taking into account both the propulsion system and the energy conversion system that determines it. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}. Low efficiency is further affected by the variability of the operating and load conditions to which engines are subjected. This variability leads to an increase in specific fuel consumption, which causes higher emissions and energy waste through exhaust gases and cooling systems \cite{Griffiths}. However, this level of efficiency could be optimized by the hybridization.
+Low efficiency is further affected by the variability of the operating and load conditions to which engines are subjected. This variability leads to an increase in specific fuel consumption, which causes higher emissions and energy waste through exhaust gases and cooling systems \cite{Griffiths}. However, this level of efficiency could be optimized by the hybridization.
 
 \section{Challenges and Research Opportunities}
 
-Several studies have examined hybrid propulsion systems \cite{LSZ}. 
-A genetic algorithm to obtain the optimal operating points regard with series hybrid configurations in power generation, especially for the case of heavy duty hybrid drive applications \cite{Bauer}. A marine hybrid propulsion system, focusing on vector control of the electric motor during different modes and verifying the control feasibility \cite{ZFan}. The optimization of hybrid propulsion system design for a tugboat has been explored, presenting a methodology that streamlines powertrain component sizing and control, minimizing costs for a specific operating profile \cite{Hofman}. A coordinated control strategy for a variable-speed hybrid tugboat have been presented to improve fuel economy. The proposed strategy, validated through simulations and a smallscale
+Several studies have examined hybrid propulsion systems \cite{LSZ}, identifying the main topics of study related to hybridization, which are listed below \cite{Marcin}:
+\begin{itemize}
+	\item Optimal sizing of the batteries.
+	\item Optimal control strategy for the parallel operation of a battery and diesel generators.
+	\item Control and safe operation of lithium battery packs.
+	\item BESS control system architecture.
+	\item Design of a battery management system (BMS).
+	\item Safety assessment of the BESS,
+its elements and safeguarding measures required by the classification societies.
+\item Safety assessment of the BESS,
+its elements and safeguarding measures required by the classification societies.
+\item Degradation of Li-ion batteries.
+\item Battery application for large vessels.
+\item Reduction of fuel consumption and emissions.
+\end{itemize}
+
+Some studies related to hybridization are listed below, with emphasis on those related to tugboat hybridization:
+\begin{itemize}
+	\item The feasibility of hybrid propulsion concepts is examined for different types of vessels, including tugboats \cite{Volker}, showing that there are definitely opportunities to save energy by using hybrid drive systems on ships, even return the much higher investment by savings in fuel.
+	\item A genetic algorithm to obtain the optimal operating points regard with series hybrid configurations in power generation, especially for the case of heavy duty hybrid drive applications \cite{Bauer}.
+	\item A marine hybrid propulsion system, focusing on vector control of the electric motor during different modes and verifying the control feasibility \cite{ZFan}.
+	\item An analytical design methodology for BESS in
+hybrid marine vessels \cite{Barrera}.
+	\item The optimization of hybrid propulsion system design for a tugboat has been explored, presenting a methodology that streamlines powertrain component sizing and control, minimizing costs for a specific operating profile \cite{Hofman}.
+	\item A coordinated control strategy for a variable-speed hybrid tugboat have been presented to improve fuel economy. The proposed strategy, validated through simulations and a smallscale
 experimental testbed, showed reduced costs and lower
-CO2 emissions \cite{Kumar}. \\
-However, there is no clear and detailed methodology for the hybridization of vessels such as tugboats that would provide a path from the conceptual stage to the technical details and subsequent implementation.
+CO2 emissions \cite{Kumar}.
+\end{itemize}
+    
+However, the challenge lies in finding a clear and detailed methodology for the hybridization of vessels such as tugboats that provides a path from the conceptual phase to the technical details and subsequent implementation, taking into account technical and economic aspects.
 
 
 
@@ -379,6 +423,24 @@ The methodology to follow for the development of this work is:
 
 \section{Scope and Limitations}
 
+The limitations of the work are:
+
+\begin{itemize}
+	\item Architecture Layout.
+	\item Bill of Components (BOM).
+	\item Simulation considerations.
+\end{itemize}
+
+In conclusion, this work will contribute to the analysis of the different initial stages of hybridizing a tugboat, considering the essential technical aspects that allow us to understand the benefits of this conversion, with an emphasis on the electrical stage, specifically the batteries.
 
 \section{Chapter Summary}
+
+\subsection{Chapter 2}
+
+\subsection{Chapter 3}
+
+\subsection{Chapter 4}
+
+\subsection{Chapter 5}
+
 

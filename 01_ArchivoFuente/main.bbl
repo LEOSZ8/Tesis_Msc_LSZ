@@ -27,8 +27,11 @@
 \bibitem{containerXchange}
 ``How to reduce shipping emissions? Best way to cut emissions $\&$ save money in 2024", Container xChange  [Online]: \hyperlink{https://www.container-xchange.com/blog/shipping-emissions/}{container-xchange.com}
 
+\bibitem{DNV2025}
+DNV, ``Energy Transition Outlook 2025 - Maritime Forecast to 2025, A deep dive into shipping's decarbonization journey", 2025
+
 \bibitem{Volker}
-Völker, Thorsten. “Hybrid Propulsion Concepts on Ships.'' 2013.
+Völker, Thorsten. ``Hybrid Propulsion Concepts on Ships.'' 2013.
 
 \bibitem{Bennabi}
 N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid propulsion systems for small ships: Context and challenges,'' \emph{XXII International Conference on Electrical Machines (ICEM)}, Lausanne, Switzerland, 2016, pp. 2948-2954, doi: 10.1109/ICELMACH.2016.7732943. 
@@ -84,6 +87,18 @@ Chin, C.S.; Tan, Y.-J.; Kumar, M.V. ``Study of Hybrid Propulsion Systems for Low
 
 \bibitem{ZFan}
 Z. Fan, C. Liang, Y. Dong, G. Chang, W. Pan and S. Shao, ``Control of the Diesel-Electric Hybrid Propulsion in a Practical Cruise Vessel," 2021 IEEE International Conference on Power, Intelligent Computing and Systems (ICPICS), Shenyang, China, 2021, pp. 311-316, doi: 10.1109/ICPICS52425.2021.9524194.
+
+\bibitem{Marcin}
+Kolodziejski, M.; Michalska-Pozoga, I. ``Battery Energy Storage Systems in Ships’ Hybrid/Electric Propulsion Systems". Energies 2023, 16, 1122.
+
+\bibitem{Barrera}
+R. Barrera-Cardenas, O. Mo and G. Guidi, ``Optimal Sizing of Battery Energy Storage Systems for Hybrid Marine Power Systems," 2019 IEEE Electric Ship Technologies Symposium (ESTS), Washington, DC, USA, 2019, pp. 293-302.
+
+\bibitem{Luca}
+Lucà Trombetta, G.; Leonardi, S.G.; Aloisio, D.; Andaloro, L.; Sergi, F. ``Lithium-Ion Batteries on Board: A Review on Their Integration for Enabling the Energy Transition in Shipping Industry". Energies 2024, 17, 1019. https://doi.org/10.3390/en17051019
+
+\bibitem{DNV}
+DNV Maritime Forecast to 2050—Energy Transition Outlook 2022.
 
 \bibitem{Hofman}
 T. Hofman, M. Naaborg and E. Sciberras, ``System-Level Design Optimization of a Hybrid Tug," 2017 IEEE Vehicle Power and Propulsion Conference (VPPC), Belfort, France, 2017, pp. 1-6, doi: 10.1109/VPPC.2017.8331009.
