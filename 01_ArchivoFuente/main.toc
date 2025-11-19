@@ -32,46 +32,46 @@
 \contentsline {subsection}{\numberline {1.6.4}Chapter 5}{16}{subsection.1.6.4}%
 \contentsline {chapter}{\numberline {2}Tugboats: Description and Operation}{17}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Overview of tugboats}{17}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Types of tugboats}{18}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Main function and typical maneuvers}{18}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Operating conditions}{18}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Technical characteristics of the propulsion system}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Operational Profile}{18}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Chapter Summary}{18}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Hybrid Tugboats: Requirements and Performance}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}General concepts of marine hybrid systems}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Definition of hybrid propulsion system}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Classification of hybrid systems}{19}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Main Components}{19}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Role of the battery bank in a hybrid system}{19}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Main Functions}{19}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Advantages of incorporating batteries}{19}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Technical limitations}{19}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Impact of hybridization on the operational profile of the tugboat}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Fully electric operation at low load}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Hybrid operation in medium loads}{19}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Optimization of the energy consumption profile}{19}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Impact on fuel consumption and emissions}{19}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Case studies and industry evidence}{19}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Chapter summary}{19}{subsection.3.4.1}%
-\contentsline {chapter}{\numberline {4}Preliminary design of the battery bank for a hybrid propulsion system}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design parameters and initial assumptions}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Operational assumptions}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Energy design parameters}{21}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Power design parameters}{21}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Physical and regulatory constraints}{21}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Battery bank sizing}{21}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Calculation of required energy capacity (kWh)}{21}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Calculation of required power (kW)}{21}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{21}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Selection criteria}{21}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Technology analysis}{21}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Economic and life cycle analysis}{21}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}System CAPEX}{21}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}System OPEX}{21}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}ROI / VAN / TIR / Payback}{21}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Comprehensive comparison of alternatives}{21}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Selection of the optimal alternative}{21}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Chapter Summary}{21}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Simulation results}{22}{chapter.5}%
-\contentsline {chapter}{Bibliography}{23}{chapter.5}%
+\contentsline {subsection}{\numberline {2.1.1}Types of tugboats}{19}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Main function and typical maneuvers}{19}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Operating conditions}{19}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Technical characteristics of the propulsion system}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Operational Profile}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Chapter Summary}{21}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Hybrid Tugboats: Requirements and Performance}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}General concepts of marine hybrid systems}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definition of hybrid propulsion system}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Classification of hybrid systems}{22}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Main Components}{22}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Role of the battery bank in a hybrid system}{22}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Main Functions}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Advantages of incorporating batteries}{22}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Technical limitations}{22}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Impact of hybridization on the operational profile of the tugboat}{22}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Fully electric operation at low load}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Hybrid operation in medium loads}{22}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Optimization of the energy consumption profile}{22}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Impact on fuel consumption and emissions}{22}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Case studies and industry evidence}{22}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Chapter summary}{22}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Preliminary design of the battery bank for a hybrid propulsion system}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design parameters and initial assumptions}{24}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Operational assumptions}{24}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Energy design parameters}{24}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Power design parameters}{24}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Physical and regulatory constraints}{24}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Battery bank sizing}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Calculation of required energy capacity (kWh)}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Calculation of required power (kW)}{24}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Selection criteria}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Technology analysis}{24}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Economic and life cycle analysis}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}System CAPEX}{24}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}System OPEX}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}ROI / VAN / TIR / Payback}{24}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Comprehensive comparison of alternatives}{24}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Selection of the optimal alternative}{24}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{24}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{25}{chapter.5}%
+\contentsline {chapter}{Bibliography}{26}{chapter.5}%
