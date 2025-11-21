@@ -22,3 +22,9 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 
 - **Dev v2:** Se mejora la introducción con información actualizada y además se agrega una estructura del contenido del escrito. Esta versión es enviada a Marcelo Pérez para su revisión.
 
+- Dev v2.1: Se crea una estructura para el capítulo 2: "*Tugs: Description and Operation*".
+
+- Dev v2.2: Se agrega información al capítulo 2 respecto al perfil operacional del remolcador.
+
+- Dev v2.3: Se agrega información del remolcador respecto a cuales son sus funciones principales.
+

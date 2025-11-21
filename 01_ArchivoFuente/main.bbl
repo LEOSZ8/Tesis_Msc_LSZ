@@ -39,8 +39,7 @@ N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid p
 \bibitem{Reusser}
 C. A. Reusser, H. A. Young, J. R. Perez Osses, M. A. Perez and O. J. Simmonds, ``Power Electronics and Drives: Applications to Modern Ship Propulsion Systems,'' in \emph{IEEE Industrial Electronics Magazine}, vol. 14, no. 4, pp. 106-122, Dec. 2020, doi: 10.1109/MIE.2020.3002493.
 
-\bibitem{Lloyd}
-Lloyd Register, DNV, ``ASSESSMENT OF IMO MANDATED ENERGY EFFICIENCY MEASURES FOR INTERNATIONAL SHIPPING'' in Project Final Report, MEPC 63/INF.2, Annex, Page 1, 2011.
+
 
 \bibitem{Bas}
 B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design methodology of hybrid propulsion systems", Master Thesis conducted at MAN Diesel $\&$ Turbo SE, Augsburg, 2013.
@@ -48,6 +47,8 @@ B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design metho
 \bibitem{LSZ}
 L. Solis-Zamora, J. Perez and M. A. Perez, ``Design and Sizing of an Energy Storage System for a Hybrid Tugboat," 2025 IEEE 19th International Conference on Compatibility, Power Electronics and Power Engineering (CPE-POWERENG), Antalya, Turkiye, 2025, pp. 1-6.
 
+\bibitem{Lloyd}
+Lloyd Register, DNV, ``ASSESSMENT OF IMO MANDATED ENERGY EFFICIENCY MEASURES FOR INTERNATIONAL SHIPPING'' in Project Final Report, MEPC 63/INF.2, Annex, Page 1, 2011.
 
 \bibitem{SAAM} 
 SAAM, ``Harbour Towage". [Online]: \hyperlink{https://www.saamtowage.com/harbour-towage/?lang=es}{saamtowage.com}
@@ -106,5 +107,12 @@ T. Hofman, M. Naaborg and E. Sciberras, ``System-Level Design Optimization of a 
 \bibitem{Kumar}
 B. A. Kumar, R. Selvaraj, K. Desingu, T. R. Chelliah and R. S. Upadhyayula, ``A Coordinated Control Strategy for a Diesel-Electric Tugboat System for Improved Fuel Economy," in IEEE Transactions on Industry Applications, vol. 56, no. 5, pp. 5439-5451, Sept.-Oct. 2020, doi: 10.1109/TIA.2020.3010779.
 
+%%%% Chapter 2
+
+\bibitem{INEAL} 
+INEAL, ``Descubre las top 5 Funciones Principales del Remolcador de Puerto". [Online]: \hyperlink{https://ineal.com.mx/funciones-principales-remolcador-de-puerto}{ineal.com.mx}
+
+\bibitem{Bruce}
+A. Bruce, A. Bermejo, ``Remolque en la Mar", Trabajo de Fin de Grado en Náutica y Transporte Marítimo, Universidad de La Laguna, sept. 2020 
 
 \end{thebibliography}

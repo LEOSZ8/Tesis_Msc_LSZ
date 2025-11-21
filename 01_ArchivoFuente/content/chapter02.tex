@@ -1,6 +1,10 @@
 \chapter{Tugboats: Description and Operation}
 
-This chapter presents the technical and operational characteristics of harbor tugs, with the aim of defining the design parameters for the hybrid propulsion system and the sizing of the battery bank.
+A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
+
+Tug boats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.\\
+
+This chapter presents the technical and operational characteristics of tugs, with the aim of defining the design parameters for the hybrid propulsion system and the sizing of the battery bank.
 % Breve descripción de qué se abordará y por qué es relevante.
 
 \section{Overview of tugboats}
@@ -21,23 +25,21 @@ This chapter presents the technical and operational characteristics of harbor tu
     \label{fig:Tugs}
 \end{figure}
 
+A tugboat is technically defined as a type of vessel specifically designed to assist other ships in moving by providing a controlled amount of force. They are essential vessels in ports, as is shown in fig. \ref{fig:Tugs} , where they assist in the movement of floating objects and in emergency tasks \cite{INEAL}.
 
-A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
+In maritime law, maritime towing is defined as the operation whereby a vessel (the tugboat) transports another vessel or floating device that lacks self-propulsion or, despite having it, is unable to navigate under its own power, by pulling it through the sea. This functional duality—which encompasses both high-precision maneuvering assistance in congested environments (port towing) and long-distance transport and salvage (offshore towing)—requires design engineering and system redundancy adapted to very different operational risks \cite{Bruce}.
 
-Tug boats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.
+The importance of tugboats has grown exponentially with the phenomenon of naval gigantism. Large modern ships, such as cruise ships and oil tankers, have tremendous momentum (inertia) that prevents them from stopping quickly or maneuvering effectively on their own in narrow channels or docks.   
 
-The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. The common thing is pushing or towing mega boats or barges. Their usage depends on the following factors:
+Therefore, tugboats are essential to counteract these inertial forces. Support is necessary for entry, exit, and general maneuvering, including assisting ships in emergency situations.   
 
-\begin{itemize}
-\item Port traffic Volume
-\item Types of ships to be served by that tug
-\item Navigational obstacles to be catered to
-\item Conditions of environmental protection
-\item Local laws and
-\item Domains to be carried by a tug
-\end{itemize}
+Technological innovation plays a key role in tugboat operations. Environmental challenges and high efficiency requirements have driven the digitization and development of more sustainable and less polluting tugboats. This trend includes the integration of automatic control technologies to optimize maneuver management, such as investment in hybrid and electric propulsion systems.\\\\     
 
-An average tug boat has 500-2500 kW engines (680-3400 hp), but those which are larger and venture out into deep waters have engines with a power close to 20000 kW (27200 hp) and a power/tonnage ratio ranging between 2.20-4.50 for large tugs and 4.0-9.5 for harbour tugs. These are high ratios, considering the ratio of cargo ships or vessels varies between 0.35 and 1.20.
+
+
+
+
+
 
 Based on purpose, they serve marine tugs can be of two types:
 
@@ -60,6 +62,55 @@ The efficiency of these types of vessels is based on fuel consumption in relatio
 
 \subsection{Types of tugboats}
 %(port, deep-sea, coastal, escort, etc.)
+The classification of tugboats is primarily based on their operational domain and assigned primary mission. The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. The common thing is pushing or towing mega boats or barges. Their usage depends on the following factors:
+
+\begin{itemize}
+\item Port traffic Volume
+\item Types of ships to be served by that tug
+\item Navigational obstacles to be catered to
+\item Conditions of environmental protection
+\item Local laws and
+\item Domains to be carried by a tug
+\end{itemize}
+
+\subsubsection{Harbour Tugs}
+These vessels are specialized in assisting large ships entering and leaving port limits. Their design prioritizes agility and the ability to apply force in any direction with maximum efficiency. 
+
+\begin{itemize}
+	\item \textbf{Design:} Typical dimensions vary in length between 20 and 30 meters, with drafts of 3.0 to 4.5 meters. Their empty displacement speed ranges from 5 to 13 knots. The power of these tugboats can vary considerably, generally between 400 and 3,000 hp.
+	\item \textbf{Propulsion:} Systems that optimize maneuverability in confined spaces predominate, such as the Azimuth propeller (Schottel rudder propeller) or the Voith-Schneider propeller. These systems are crucial for operating with great precision in ports with high maritime traffic density.
+\end{itemize}
+
+\subsubsection{Offshore/SAR Tugs}
+Designed to operate in the open sea, these tugboats are characterized by their robustness, greater autonomy, and ability to withstand severe ocean conditions.
+
+\begin{itemize}
+	\item \textbf{Multifunctionality:} In addition to long-distance towing tasks, they are equipped for rescues and complementary firefighting and pollution control (LCC) tasks. An example of a modern rescue vessel is 40 meters long, has 5,300 hp, and a fixed point traction (BP) of 60 tons. These vessels are equipped to provide any type of assistance to deep-draft vessels. 
+\end{itemize}
+
+\subsubsection{Escort Tugs}
+These tugboats perform a critical safety mission. Their main objective is to provide preventive escort to ships carrying hazardous materials (such as LNG or crude oil) in high-risk areas, standing ready to counteract any possible loss of control of the assisted vessel.
+
+\begin{itemize}
+	\item \textbf{Technology and BP:} They require extremely robust and powerful designs to maintain control of a vessel moving at cruising speeds. An example of a modern escort tugboat (Robert Allan Rastar 3200 model) features Rolls Royce azimuth thrusters and is designed to generate fixed-point traction exceeding 85 tons, making them some of the most powerful in the fleet. They are equipped with constant tension maneuvering winches to maximize safety during operations. 
+\end{itemize}
+
+
+\subsubsection{Tugs Comparation}
+
+\begin{table}[H]
+	\centering
+	\caption{Operational Classification and Dimensional Parameters of the Tugboat}
+	\label{tab:Tugs}
+	\begin{tabular}{c|p{35mm}|p{35mm}|c}
+		\hline      \textbf{Type of Tugboat} & \textbf{Operation}  & \textbf{Design objective} & \textbf{Typical BP} \\		
+\hline \hline
+		Harbour Tug    & Protected maritime and port areas such as bays or estuaries. & Maneuverability, Reduced Draft & 40-80\\ \hline
+		Offshore/SAR Tugs  & Open Ocean & Autonomy, Stability, SAR Power & 60-200+\\ \hline
+		Escort Tugs  & High-Risk Areas (LNG, Crude Oil) & Rollover Control, Side Pull Capacity & 60-120\\
+		\hline \hline
+	\end{tabular}
+\end{table}
 
 \subsection{Main function and typical maneuvers}
 %berthing, unberthing, navigation assistance, etc.
