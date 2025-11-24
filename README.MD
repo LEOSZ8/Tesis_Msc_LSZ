@@ -28,3 +28,6 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 
 - Dev v2.3: Se agrega información del remolcador respecto a cuales son sus funciones principales.
 
+- Dev v2.4: Se corrige la información de cada sección del texto, obteniendo una estructura definitiva para el capítulo 2.
+
+- Dev v2.5: Se mejoran las imágenes de cada sección de capítulo. Queda arreglar las imágenes de las maniobras, agregar tabla de información de la embarcación y agregar información a la sección final "Chapter Summary"

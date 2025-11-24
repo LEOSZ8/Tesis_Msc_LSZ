@@ -13,15 +13,15 @@ This chapter presents the technical and operational characteristics of tugboats,
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=1\textwidth]{images/chapter02/Remolcador.png}
-    \caption{Conventional tug representation.}
+    \caption{Harbour tug representation.}
     \label{fig:Tug1}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.7\textwidth]{images/chapter02/Remolcador2.png}
-    \caption{Azimuth Tug representation}
+    \caption{Escort Tug representation.}
     \label{fig:Tug2}
     \end{subfigure}    
-    \caption{Tugs representations}
+    \caption{Tugs representations.}
     \label{fig:Tugs}
 \end{figure}
 
@@ -59,7 +59,16 @@ The classification of tugboats is primarily based on their operational domain an
 \end{itemize}
 
 \subsubsection{a) Harbour Tugs}
-These vessels are specialized in assisting large ships entering and leaving port limits. Their design prioritizes agility and the ability to apply force in any direction with maximum efficiency \cite{INEAL}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{images/chapter02/Harbour_Tug.png}
+    \caption{A harbour tug in the port of Algeciras \cite{Algeciras}.}
+    \label{fig:HarbourTug}
+\end{figure}
+
+
+These vessels are specialized in assisting large ships entering and leaving port limits, as can be seen in fig. \ref{fig:HarbourTug}. Their design prioritizes agility and the ability to apply force in any direction with maximum efficiency \cite{INEAL}. 
 
 \begin{itemize}
 	\item \textbf{Design:} Typical dimensions vary in length between 20 and 30 meters, with drafts of 3.0 to 4.5 meters. Their empty displacement speed ranges from 5 to 13 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 400 - 3,000 hp (300 and 2200 kW)\cite{IngeMarino}.
@@ -69,22 +78,38 @@ These vessels are specialized in assisting large ships entering and leaving port
 \end{itemize}
 
 \subsubsection{b) Offshore/SAR Tugs}
-Designed to operate in the open sea, these tugboats are characterized by their robustness, greater autonomy, and ability to withstand severe ocean conditions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{images/chapter02/SAR_Tug.png}
+    \caption{SAR BALDER, an offshore Tug built in 2006 \cite{VesselFinder}.}
+    \label{fig:SARTug}
+\end{figure}
+
+An offshore or \textit{search and rescue} (SAR) Tug, is designed to operate in the open sea, these tugboats are characterized by their robustness, greater autonomy, and ability to withstand severe ocean conditions. An example of this vessel is shown in fig. \ref{fig:SARTug}.
 
 \begin{itemize}
-	 \item \textbf{Design:} Typical dimensions vary in length between 25 and 40 meters, with drafts of 4.5 to 6 meters. Their empty displacement speed ranges from 5 to 13 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 1500 - 6,000 hp (1120 - 4470 kW)\cite{IngeMarino}.
+	 \item \textbf{Design:} Typical dimensions vary in length between 25 and 70 meters, with drafts of 4.5 to 6 meters. Their empty displacement speed ranges from 5 to 13 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 1500 - 6,000 hp (1120 - 4470 kW)\cite{IngeMarino}.
 
 	\item \textbf{Multifunctionality:} In addition to long-distance towing tasks, they are equipped for rescues and complementary firefighting and pollution control tasks \cite{SalvamentoMaritimo}. An example of a modern rescue vessel is 40 meters long, has 5,300 hp and a Bollard Pull of 60 tons \cite{Cotecmar}. These vessels are equipped to provide any type of assistance to deep-draft vessels \cite{SalvamentoMaritimo}. 
 \end{itemize}
 
 \subsubsection{c) Escort Tugs}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.49]{images/chapter02/Escort_Tug.png}
+    \caption{Robert Allan Rastar 3200 Escort Tug \cite{RobertAllan}.}
+    \label{fig:EscortTug}
+\end{figure}
+
 These tugboats perform a critical safety mission. Their main objective is to provide preventive escort to ships carrying hazardous materials (such as LNG or crude oil) in high-risk areas, standing ready to counteract any possible loss of control of the assisted vessel.
 
 \begin{itemize}
 
 	\item \textbf{Design:} Typical dimensions vary in length between 40 and 80 meters, with drafts of 5 to 6 meters. Their empty displacement speed ranges from 15 to 16 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 6,000 -20,000 hp (4470 - 14,900 kW)\cite{IngeMarino}.
 
-	\item \textbf{Technology and Bollard Pull:} They require extremely robust and powerful designs to maintain control of a vessel moving at cruising speeds. An example of a modern escort tugboat (\textit{Robert Allan Rastar 3200 model}) features Rolls Royce azimuth thrusters and is designed to generate fixed-point traction exceeding 85 tons \cite{PortalPortuario}. They are equipped with constant tension maneuvering winches to maximize safety during operations. 
+	\item \textbf{Technology and Bollard Pull:} They require extremely robust and powerful designs to maintain control of a vessel moving at cruising speeds. An example of a modern escort tugboat is shown in figure \ref{fig:EscortTug}, features Rolls Royce azimuth thrusters and is designed to generate fixed-point traction exceeding 85 tons \cite{PortalPortuario}. They are equipped with constant tension maneuvering winches to maximize safety during operations. 
 \end{itemize}
 
 
@@ -113,9 +138,17 @@ Below, in the table \ref{tab:Tugs}, there is a summary of key operational and di
 % Explicar las características mecánicas y eléctricas que determinan cómo debe diseñarse el sistema híbrido.
 
 \subsection{Bollard Pull - BP}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1]{images/chapter02/Bollard_pull.png}
+    \caption{The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite{ESC_Group}.}
+    \label{fig:BollardPullTug}
+\end{figure}
+
 Bollard pull (BP) is the fundamental metric for quantifying a tugboat's pulling power.
 
-BP measures the maximum force a vessel can exert while stationary in the water. It is the maritime equivalent of horsepower or torque in land vehicles. The measurement requires securing the vessel to a fixed bollard at the dock and using specialized load cells to calculate the tension generated on the line with the engines running at full power.   
+BP measures the maximum force a vessel can exert while stationary in the water. It is the maritime equivalent of horsepower or torque in land vehicles. The measurement requires securing the vessel to a fixed bollard at the dock and using specialized load cells to calculate the tension generated on the line with the engines running at full power, as is shown in the figure \ref{fig:BollardPullTug}.   
 
 BP specifications are expressed in units such as kilonewtons (kN), short tons (stf), or ton-force (tf) and are critical for demonstrating the vessel's pulling capacity under load. All commercial vessels intended for towing operations must obtain fixed point pulling certification from international classification societies such as the American Bureau of Shipping (ABS) or Bureau Veritas (BV)\cite{Murimar}.   
 
@@ -124,15 +157,61 @@ The tugboat's design is specifically geared toward maximizing pulling force in r
 \subsection{Propulsion Engineering for Maneuvering}
 The maneuverability of a tugboat, which directly influences its operational efficiency and safety, is intrinsically linked to the design of its propulsion system.
 
-\subsubsection{a) Conventional Propulsion} It uses a standard diesel engine connected to a propeller. It is a proven and simple system, with good efficiency in linear towing tasks within ports and coastal areas. However, it offers limited lateral maneuverability compared to more advanced systems \cite{MJimenez}.
+\subsubsection{a) Conventional Propulsion} 
 
-\subsubsection{b) ASD - Azimuthal Stern Drive} These are rotary thrusters, where a motor is capable of directing all its thrust in any direction \cite{MJimenez}. They all have two propellers, and since each one can be oriented independently, maneuverability is greatly increased, allowing them to turn on themselves in a single length \cite{JFarina}. The only difference with conventional tugboats are the modifications to the stern and structure to house the propellers and withstand the forces exerted by the nozzle rudder, which are different from those exerted by a conventional rudder and propeller \cite{JFarina}. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter02/ConventionalTug.pdf}
+    \caption{Conventional propulsion: A tug fitted with fixed propellers, single or twin screw (left or right handed) and single rudders with fixed nozzles \cite{Gokay}.}
+    \label{fig:ConventionalProp}
+\end{figure}
 
-\subsubsection{c) Voith-Schneider Propulsion (VSP)} This system offers omnidirectional thrust and total steering control, resulting in formidable positioning accuracy. These harbor tugs have been equipped with \textit{VoithSchneider} propellers, a unique type of propulsion system consisting of oscillating blades that allow them to have total, targeted control over the vessel without having to adjust the orientation of the main engine or propellers \cite{MJimenez}.
+It uses a standard diesel engine connected to a propeller, as is shown in the figure \ref{fig:ConventionalProp}. It is a proven and simple system, with good efficiency in linear towing tasks within ports and coastal areas. However, it offers limited lateral maneuverability compared to more advanced systems \cite{MJimenez}.
+
+\subsubsection{b) Azimuthal Stern Drive (ASD)} 
+
+
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{images/chapter02/ASD1Tug.pdf}
+    \caption{Azimuth Stern Drive (ASD): A tug fitted with \\two azimuth thrusters in nozzles at the stern, \\capable to direct all its thrust in any direction \cite{Gokay}.}
+    \label{fig:ASD1_Tug}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{images/chapter02/ASD2Tug.pdf}
+    \caption{ASD Tractor: A tug with azimuth thrusters \\located generally forward off the midship and a rudder-shaped fin at aft side. \cite{Gokay}.}
+    \label{fig:ASD2_Tug}
+    \end{subfigure}    
+    \caption{ASD Tugs representations.}
+    \label{fig:ASD_Tugs}
+\end{figure}
+
+These are rotary thrusters, where a motor is capable of directing all its thrust in any direction \cite{MJimenez}. They all have two propellers, and since each one can be oriented independently, maneuverability is greatly increased, allowing them to turn on themselves in a single length \cite{JFarina}, as is shown in the figure \ref{fig:ASD1_Tug}. The only difference with conventional tugboats are the modifications to the stern and structure to house the propellers and withstand the forces exerted by the nozzle rudder, which are different from those exerted by a conventional rudder and propeller \cite{JFarina}. 
+
+The in-line propulsion propeller (Z-Drive) is a system similar to the azimuth propulsion system, but with the difference that the propeller is oriented in only one direction (usually straight ahead), although it still provides great maneuverability in towing operations. In terms of power transmission, these tugs are more efficient \cite{MJimenez}.\\ 
+
+An ASD Tractor Tug generally has two fixed pitch azimuth propellers in the center of the boat or slightly forward of the center of the boat, as is shown in the figure \ref{fig:ASD2_Tug}.
+
+The propulsion units are located well forward of the tow point, close to the pivot point, which generates a large turning thrust. This can result in poor steering performance, which is remedied by installing a large center rudder-shaped fin at aft side \cite{Shiphandling}.
+
+\subsubsection{c) Voith-Schneider Propulsion (VSP)} 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter02/VSPTug.pdf}
+    \caption{Voith-Schneider Propeller (VSP) propulsion: A tug with VSP generally located forward off the midship and a rudder-shaped fin at aft side \cite{Gokay}.}
+    \label{fig:VSP_Prop}
+\end{figure}
+
+This system, as is shown in the figure \ref{fig:VSP_Prop}, offers omnidirectional thrust and total steering control, resulting in formidable positioning accuracy. These harbor tugs have been equipped with \textit{VoithSchneider} propellers, a unique type of propulsion system consisting of oscillating blades that allow them to have total, targeted control over the vessel without having to adjust the orientation of the main engine or propellers \cite{MJimenez}.
 
 This propulsion system allows for highly precise operation in any direction due to its agility, making it ideal for rescue operations as well as in ports crowded with high-density maritime traffic \cite{MJimenez}.
 
 \subsubsection{d) Propulsion Comparation }
+
+The transition from a conventional system to an azimuth system, and even more so to a Voith-Schneider system, involves an increase in engineering complexity and acquisition cost, but this is fully justified by the need to operate with high precision and safety in confined spaces or under adverse weather conditions. The design of these advanced systems is crucial for safety, as they allow the tugboat to apply the required force (BP) without compromising lateral stability and minimizing the risk of capsizing.
+
+Table \ref{tab:Prop_Comp} compares the different types of propulsion discussed in this document.
 
 \begin{table}[H]
 	\centering
@@ -148,7 +227,84 @@ This propulsion system allows for highly precise operation in any direction due 
 	\end{tabular}
 \end{table}
 
-\section{Propellers}
+\subsection{Conventional Propellers}
+
+\subsubsection{a) Fixed Pitch Propellers}
+
+
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/fixed_propeller.png}
+    \caption{Fixed pitch propeller.}
+    \label{fig:fixed_propeller}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/chapter02/fixed_propeller_nozzle.jpg}
+    \caption{Fixed pitch propeller with nozzle.}
+    \label{fig:fixed_propeller_nozzle}
+    \end{subfigure}    
+    \caption{Fixed propellers configuration.}
+    \label{fig:Fixed_propellers}
+\end{figure}
+
+
+These types of propellers, as is shown in the figure \ref{fig:fixed_propeller}, maintain their configuration unchanged, meaning that their blades do not move on their axis \cite{IngeMarino}.
+
+Also, there are fixed pitch propellers with improved propulsion efficiency thanks to the nozzle that aids vector thrust \cite{IngeMarino}, as is shown in the figure \ref{fig:fixed_propeller_nozzle}.
+
+\subsubsection{b) Variable Pitch Propellers}
+
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/variable_propeller.png}
+    \caption{Variable pitch propeller.}
+    \label{fig:variable_propeller}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/variable_propeller_nozzle.png}
+    \caption{Variable pitch propeller with nozzle.}
+    \label{fig:variable_propeller_nozzle}
+    \end{subfigure}    
+    \caption{Variable (controllable) pitch propellers configuration.}
+    \label{fig:Variable_propellers}
+\end{figure}
+
+Unlike fixed-pitch propellers, in a variable pitch propeller (also known like controllable pitch proppeller) each of the blades can rotate on its own axis \cite{IngeMarino}. An example can be seen in the figure \ref{fig:variable_propeller}, where each blade is attached to the central shaft by means of an anchor that allows it to rotate.
+
+In some cases, the propulsion efficiency can be improved thanks to the nozzle that aids vector thrust \cite{IngeMarino}, as is shown in the figure \ref{fig:variable_propeller_nozzle}.
+
+\subsubsection{e) Propellers Comparation}
+Variable pitch propellers are more efficient than fixed pitch propellers because the adjustment of the blades allows for maximum power or variable speed, which is not the case with fixed pitch propellers that are designed for specific ordinary operating conditions.
+
+It should be noted that variable pitch propellers do not provide as much thrust for reverse navigation as fixed pitch propellers do, which limits the tasks that tugboats can perform.
+
+\subsection{Special propellers}
+
+\subsubsection{a) Schottel system}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter02/schottel.jpg}
+    \caption{Schottel system.}
+    \label{fig:schottel}
+\end{figure}
+
+In this system, the propeller positioned at a 90º angle to the vertical, fixed to the shaft is a nozzle inside which the propeller rotates, as is shown in the figure \ref{fig:schottel}. The entire assembly can rotate 360º on the vertical axis, providing excellent maneuverability and allowing movement in any direction.
+
+\subsubsection{b) Voith-Schneider System (Cycloidal Propeller)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/VSP_propeller.jpg}
+    \caption{VSP propeller.}
+    \label{fig:VSP_propeller}
+\end{figure}
+
+This propeller system consists of a rotor that rotates on a vertical shaft fixed to the hull approximately at its pivot point, as is shown in the figure \ref{fig:VSP_propeller}. It is equipped with several blades that pivot on vertical axes controlled from the bridge by a device called a steering control. This device is responsible for directing the thrust in the opposite direction to the desired thrust. The mechanism is synchronized to center the thrust at a single point.
 
 \section{Naval Maneuvers and Assistance Techniques}
 
@@ -166,28 +322,83 @@ The maneuver is initiated by request via VHF radio. The bow and stern operating 
 It is essential to consider the effects of winds and currents. Strong winds from outside can add to the effects of the engine in reverse during undocking, creating a dangerous situation that can violently push the stern or bow toward the dock. The ability of the highly maneuverable tugboat to apply instantaneous lateral force reduces the time the assisted vessel is exposed to the combined and unfavorable action of wind and propulsion, mitigating the risk of collision. If the wind action is severe, tugboat assistance is mandatory, especially if the actions of the assisted vessel's capstan are insufficient.
 
 \subsection{Tugboat Performance}
+The assistance of tugboats is crucial during docking and undocking maneuvers. The undocking maneuver can be as laborious as the docking maneuver and must be planned in advance. The objective is to leave the assisted vessel clear of the dock, in a safe position that allows the rudder and propeller to be effective so that the vessel can gain control and momentum.\\
+
 Tugboats use various configurations to apply controlled force:
 
 \subsubsection{a) Tugboat Working on a Beam or Over a Cable}
-The tugboat tows or holds the assisted vessel via a remote towline. This is the typical form of towing in transit.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/OnCable.png}
+    \caption{Arrow maneuver or rope maneuver \cite{IngeMarino}.}
+    \label{fig:OverCable}
+\end{figure}
+
+In this procedure, the tugboat works separately from the vessel it is assisting, pulling it from the end of a rope, which can be attached at different points on the vessel, thus performing various functions (towing, holding, etc.), as is shwon in the figure \ref{fig:OverCable}. This procedure prevents direct contact between the two vessels and also ensures that all the power of the tugboat is exerted in the direction of the rope. The disadvantage of this procedure is that it requires more maneuvering space due to the length of the mooring line, so the system cannot be used where space is limited \cite{IngeMarino}.
 
 \subsubsection{b) Bow-Supported Tugboat (Ram Locking)}
-The tugboat applies direct thrust force against the side of the assisted vessel, using its fenders, often to rotate or move the vessel sideways.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/Bow.png}
+    \caption{Maneuver supported by the bow \cite{IngeMarino}.}
+    \label{fig:Bow}
+\end{figure}
+
+In this procedure, the tugboat rests its bow on the side of the vessel it is assisting and pushes it in a direction that is essentially perpendicular to the centerline (the straight line running from stern to bow), as is shwon in the figure \ref{fig:Bow}. It is common in this procedure for the tugboat to be secured to the ship with 1, 2, and 3 mooring lines, which prevents relative slippage between the two vessels during the maneuver \cite{IngeMarino}.
 
 \subsubsection{c) Tugboat alongside}
-The tugboat is securely moored alongside the larger vessel. This technique provides very precise lateral and rotational control, which is essential for maneuvering wide-beam vessels in narrow channels. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/chapter02/alongside.png}
+    \caption{Alongside Maneuver \cite{IngeMarino}.}
+    \label{fig:alongside}
+\end{figure}
+
+In this procedure, the tugboat is positioned alongside the ship and roughly parallel to it, moored to the ship by several ropes that ensure the transmission of force, as is shown in the figura \ref{fig:alongside}. This procedure is generally used to maneuver ships that do not have sufficient propulsion, in confined spaces and in very calm waters \cite{IngeMarino}. 
 
 
 \section{Operational Profile}
 %Aquí se describe cómo opera el remolcador durante un día típico o misión.
-Next, we will analyze the operating profile of a tugboat in Chile, considering that it has an operating schedule of 10 working hours, performing this work in Puerto Montt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.75]{images/chapter02/Path.png}
+    \caption{TUG route to the Puerto Montt's pier.}
+    \label{fig:PATH}
+\end{figure}
+
+Next, we will analyze the operational profile of a tugboat in Chile, considering that it has an operating schedule of 10 hours of work, performing this task in Puerto Montt.
+Figure \ref{fig:PATH} shows the route taken by a tugboat from the shipyard to the dock in Puerto Montt, working in Flecha or Sobre Cabo mode or performing a alongside maneuver, assisting ships that need to enter the port or leave the dock to go out to sea. The route taken by the tugboat is divided into three different sections.
+
+\begin{itemize}
+	\item \textbf{Blue:} Low-speed route, tugboat departure from shipyard.
+	\item \textbf{Yellow:} Nominal propulsion speed, tugboat moves toward the dock to perform operational maneuvers.
+	\item \textbf{Red:} High-power section, operational maneuver performed by a tugboat assisting a ship.
+\end{itemize}
+
+Based on the route to be analyzed and the maneuvers that the tugboat must perform at the dock, there are two operating profiles for each maneuver, as it can see in the figure \ref{fig:1M} and figure \ref{fig:2M}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver.pdf}
+    \caption{Operational profile: one maneuver.}
+    \label{fig:1M}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers.pdf}
+    \caption{Operational profile: Two maneuvers.}
+    \label{fig:2M}
+\end{figure}
 
 \subsection{Brake-Specific Fuel Consumption (BSFC)}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1]{images/chapter02/BSFC.pdf}
-    \caption{Brake-specific fuel consumption (BSFC) of the \textit{CAT 3516B engine} used in tugboats.}
+    \includegraphics[width=0.75\textwidth]{images/chapter02/BSFC.pdf}
+    \caption{Brake-specific fuel consumption of a diesel engine model Cat 3516 B.}
     \label{fig:BSFC}
 \end{figure}
 
@@ -201,6 +412,21 @@ The relative efficiency evaluates how the conventional engine is working taking 
     \eta_\text{rel} &= \frac{\text{BSFC}_\text{nom}}{\text{BSFC}}
 \end{align}
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver_RelEff.pdf}
+    \caption{Operational profile: one maneuver.}
+    \label{fig:1M_releff}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers_RelEff.pdf}
+    \caption{Operational profile: two maneuvers.}
+    \label{fig:2M_releff}
+\end{figure}
+
 \subsection{Generated Emissions and Fuel Consumption}
 
 To calculate emissions, the following formula relates brake power (Pb), BSFC, usage time (tu), and a carbon factor (CF):
@@ -209,19 +435,31 @@ To calculate emissions, the following formula relates brake power (Pb), BSFC, us
     \text{Emissions} &= \frac{\text{BSFC} \cdot {P}_{b} \cdot {t}_{u} \cdot \text{CF}}{10^{-6}} \quad \text{[t CO\textsubscript{2}]}
 \end{align}
 
-\begin{figure}[!t]
+
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{images/chapter02/pot_30min.pdf}
-    \caption{Load profile of a tugboat operating in a Chilean harbor: a) One service manoeuvre, b) Two service manoeuvres, c) Fuel consumption/emissions generated for a service maneuver, d) Fuel consumption/emissions generated for two service maneuvers.}
-    \label{fig:load profile}
+    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver_Emiss.pdf}
+    \caption{Operational profile: one maneuver, fuel consumption and emissions.}
+    \label{fig:1M_emiss}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers_Emiss.pdf}
+    \caption{Operational profile: two maneuvers, fuel consumption and emissions.}
+    \label{fig:2M_emiss}
+\end{figure}
+
+
+
 
 The operational profile of a tugboat operating in a Chilean port typically includes one to two maneuvers per day during a 10-hour work shift, as illustrated in Fig. \ref{fig:load profile}.
 Fig. \ref{fig:load profile}-a) shows the power delivered by the tugboat conventional propulsion system and the relative efficiency of the engines during one service maneuver while b) shows the same information for two maneuvers; c) shows the fuel consumption by the tug and the CO\textsubscript{2} emissions generated by the load of the diesel engines, corresponding to a maneuver, while d) shows the emissions generated by the load of the diesel engines for two service maneuvers.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/chapter02/operations.pdf}
+    \includegraphics[width=1\linewidth]{images/chapter02/Stack_1M2M.pdf}
     \caption{Percentage of emissions per day based on power ranges.}
     \label{fig:emmis}
 \end{figure}

@@ -107,7 +107,7 @@ T. Hofman, M. Naaborg and E. Sciberras, ``System-Level Design Optimization of a 
 \bibitem{Kumar}
 B. A. Kumar, R. Selvaraj, K. Desingu, T. R. Chelliah and R. S. Upadhyayula, ``A Coordinated Control Strategy for a Diesel-Electric Tugboat System for Improved Fuel Economy," in IEEE Transactions on Industry Applications, vol. 56, no. 5, pp. 5439-5451, Sept.-Oct. 2020, doi: 10.1109/TIA.2020.3010779.
 
-%%%% Chapter 2
+%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibitem{INEAL} 
 INEAL, ``Descubre las top 5 Funciones Principales del Remolcador de Puerto". [Online]: \hyperlink{https://ineal.com.mx/funciones-principales-remolcador-de-puerto}{ineal.com.mx}
@@ -122,7 +122,16 @@ A. Bruce, A. Bermejo, ``Remolque en la Mar", Trabajo de Fin de Grado en Náutica
 Murimar, ``Remolcadores, elemento clave en la logística marítima", [Online]: \hyperlink{https://www.murimar.com/remolcadores}{murimar.com} 
 
 \bibitem{IngeMarino}
-Ingeniero Marino, ``Remolcador",[Online]: \hyperlink{https://https://ingenieromarino.com/remolcadores/}{https://ingenieromarino.com}
+Ingeniero Marino, ``Remolcador",[Online]: \hyperlink{https://ingenieromarino.com/remolcadores/}{https://ingenieromarino.com}
+
+\bibitem{Algeciras}
+Algeciras al minuto.es,``Los remolcadores del puerto de Algeciras denuncian la excesiva carga de trabajo",[Online]: \hyperlink{https://www.algecirasalminuto.es/puerto/los-remolcadores-del-puerto-de-algeciras-denuncian-la-excesiva-carga-de-trabajo/}{https://www.algecirasalminuto.es} 
+
+\bibitem{RobertAllan}
+Robert Allan,``Rastar Series",[Online]: \hyperlink{https://ral.ca/series/rastar/}{https://ral.ca}
+
+\bibitem{VesselFinder}
+Vessel Finder,``SAR BALDER",[Online]: \hyperlink{https://www.vesselfinder.com/es/vessels/details/9374193}{https://www.vesselfinder.com} 
 
 \bibitem{PracticosPuerto}
 Prácticos de Puerto,``Remolque Portuario",[Online]: \hyperlink{https://www.practicosdepuerto.es/es/colegio-federacion/publicaciones/remolque-portuario}{https://www.practicosdepuerto.es}
@@ -136,13 +145,18 @@ Cotecmar, ``Remolcado Offshore", [Online]: \hyperlink{https://www.cotecmar.com/c
 \bibitem{PortalPortuario}
 Portal Portuario, ``SAAM recibe dos nuevos remolcadores para reforzar su flota en Chile, Mayo 2016", [Online]: \hyperlink{https://portalportuario.cl/saam-recibe-dos-nuevos-remolcadores-para-reforzar-su-flota-en-chile/}{https://portalportuario.cl}
 
-
 \bibitem{MJimenez}
 M. Jiménez Fernández, Dr. J. González Almeida, ``Remolcadores: Diseño y Desempeño," Grado en Náutica y Transporte Marítimo, Escuela Politécnica Superior de Ingeniería Sección Náutica, Máquinas y Radioelectrónica Naval, Universidad de La Laguna, Marzo de 2025.
 
 \bibitem{JFarina}
 J. Farina Orihuela, A. Poleo Mora, ``Maniobras con Remolcadores
 " Grado en Náutica y Transporte Marítimo, Escuela Politécnica Superior de Ingeniería Sección Náutica, Máquinas y Radioelectrónica Naval, Universidad de La Laguna, Junio de 2015.
+
+\bibitem{Gokay}
+G. Çakıroğlu, B. Sener, A. Balin, ``Applying a fuzzy-ahp for the selection of a suitable tugboat based on propulsion system type". Brodogradnja. 69. 1-13. 10.21278/brod69401, 2018. 
+
+\bibitem{Shiphandling}
+Shiphandling for Professionals, ``Types of Tugs", [Online]: \hyperlink{https://www.shiphandlingpro.com/copy-of-tugs}{https://www.shiphandlingpro.com}
 
 
 \end{thebibliography}
