@@ -33,3 +33,5 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v2.5: Se mejoran las imágenes de cada sección de capítulo. Queda arreglar las imágenes de las maniobras, agregar tabla de información de la embarcación y agregar información a la sección final "Chapter Summary"
 
 - Dev v2.6: Dada la información adicional relacionada a las dimensiones del remolcador, se agrega la subsección Main Diesel Engine y la subsección Dimensions, las cuales deben ser completadas.
+
+- Dev v2.7: Se completa la subsección *Main Diesel Engine*.
