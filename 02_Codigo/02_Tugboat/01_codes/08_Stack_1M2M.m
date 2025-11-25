@@ -7,8 +7,8 @@ Percent_fuel1_emiss1= [38,45,17];
 Percent_fuel2_emiss2= [11,51,38];
 p=[Percent_fuel1_emiss1;Percent_fuel2_emiss2];
 
-yya=({'\bf  160kW - 960kW \newline\newline             38%','\bf 1120kW - 2240kW \newline\newline\newline               45%','\bf  2400kW - 3280kW \newline               17%'});
-yyb=({'\bf 160kW - 960kW \newline             11%','\bf 1120kW - 2240kW \newline\newline\newline               51%','\bf 2400kW - 3280kW \newline\newline\newline               38%'});
+yya=({'\bf  180kW - 1270kW \newline\newline             38%','\bf 1270kW - 2000kW \newline\newline\newline               45%','\bf  2000kW - 3650kW \newline               17%'});
+yyb=({'\bf 180kW - 1270kW \newline             11%','\bf 1270kW - 2000kW \newline\newline\newline               51%','\bf 2000kW - 3650kW \newline\newline\newline               38%'});
 labels1_1=yya(1,1);
 labels1_2=yya(1,2);
 labels1_3=yya(1,3);

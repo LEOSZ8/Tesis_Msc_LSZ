@@ -1,36 +1,18 @@
 clc
 clear
-P_engine_continuous=1640;
-P_engine_standby=2000;
+
 P_engine_prime=1825;
 
 
-Info=open("Info_30min.mat");
-fuel1=open("rate_fuel1.mat");
-Info2=open("Info_30min_2m.mat");
-fuel2=open("rate_fuel2.mat");
+Info=open("Info_30min_1825kW.mat");
+
 
 T=Info.Info_30min(:,1);
 Ptg1=Info.Info_30min(:,2);
-sfc1=Info.Info_30min(:,3);
-eff1=Info.Info_30min(:,4);
-emm1=Info.Info_30min(:,5);
+eff1=Info.Info_30min(:,3);
 
-emm1=emm1;
-Ptg1(9,1)= 3040;
-eff1(9,1)=99.77;
-emm1(9,1)= 2.18;
 Ptg1=Ptg1.*1e-3;
-rate_fuel1=fuel1.rate_fuel1;
 
-
-
-Ptg2=Info2.Info_30min_2m(:,2);
-sfc2=Info2.Info_30min_2m(:,3);
-eff2=Info2.Info_30min_2m(:,4);
-emm2=Info2.Info_30min_2m(:,5);
-Ptg2=Ptg2.*1e-3;
-rate_fuel2=fuel2.rate_fuel2;
 
 t = tiledlayout(2,1,'TileSpacing','Compact');
 
