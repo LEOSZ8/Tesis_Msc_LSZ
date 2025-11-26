@@ -19,28 +19,33 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A harbour tug in the port of Algeciras \cite {Algeciras}.}}{19}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces SAR BALDER, an offshore Tug built in 2006 \cite {VesselFinder}.}}{20}{figure.caption.37}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Robert Allan Rastar 3200 Escort Tug \cite {RobertAllan}.}}{21}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces dimensions Tug}}{22}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite {ESC_Group}.}}{24}{figure.caption.51}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Conventional propulsion: A tug fitted with fixed propellers, single or twin screw (left or right handed) and single rudders with fixed nozzles \cite {Gokay}.}}{25}{figure.caption.53}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces ASD Tugs representations.}}{25}{figure.caption.55}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Voith-Schneider Propeller (VSP) propulsion: A tug with VSP generally located forward off the midship and a rudder-shaped fin at aft side \cite {Gokay}.}}{26}{figure.caption.57}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Main diesel engine for a tugboat propulsion system.}}{27}{figure.caption.60}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Fixed pitch propellers configuration.}}{28}{figure.caption.62}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Variable (controllable) pitch propellers configuration.}}{28}{figure.caption.64}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Schottel system.}}{29}{figure.caption.67}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces VSP propeller.}}{30}{figure.caption.69}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Arrow maneuver or rope maneuver \cite {IngeMarino}.}}{31}{figure.caption.73}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Maneuver supported by the bow \cite {IngeMarino}.}}{31}{figure.caption.75}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Alongside Maneuver \cite {IngeMarino}.}}{32}{figure.caption.77}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces TUG route to the Puerto Montt's pier.}}{33}{figure.caption.78}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Operational profile: one maneuver.}}{34}{figure.caption.81}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Operational profile: Two maneuvers.}}{35}{figure.caption.82}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Brake-specific fuel consumption of a diesel engine model Cat 3516 B.}}{35}{figure.caption.83}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Operational profile: one maneuver.}}{36}{figure.caption.84}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Operational profile: two maneuvers.}}{36}{figure.caption.85}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Operational profile: one maneuver, fuel consumption and emissions.}}{37}{figure.caption.86}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Operational profile: two maneuvers, fuel consumption and emissions.}}{37}{figure.caption.87}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Percentage of emissions per day based on power ranges.}}{38}{figure.caption.88}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Length Overall}}{22}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Beam Tug}}{22}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Draught Tug}}{23}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Depth Tug}}{23}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Gross Tonnage Tug}}{24}{figure.caption.51}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Net Tonnage Tug}}{25}{figure.caption.53}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite {ESC_Group}.}}{26}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Conventional propulsion: A tug fitted with fixed propellers, single or twin screw (left or right handed) and single rudders with fixed nozzles \cite {Gokay}.}}{27}{figure.caption.58}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces ASD Tugs representations.}}{27}{figure.caption.60}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Voith-Schneider Propeller (VSP) propulsion: A tug with VSP generally located forward off the midship and a rudder-shaped fin at aft side \cite {Gokay}.}}{28}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Main diesel engine for a tugboat propulsion system.}}{29}{figure.caption.65}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Fixed pitch propellers configuration.}}{30}{figure.caption.67}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Variable (controllable) pitch propellers configuration.}}{30}{figure.caption.69}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Schottel system.}}{31}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces VSP propeller.}}{32}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Arrow maneuver or rope maneuver \cite {IngeMarino}.}}{33}{figure.caption.78}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Maneuver supported by the bow \cite {IngeMarino}.}}{34}{figure.caption.80}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Alongside Maneuver \cite {IngeMarino}.}}{34}{figure.caption.82}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces TUG route to the Puerto Montt's pier.}}{35}{figure.caption.83}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Operational profile: one maneuver.}}{36}{figure.caption.86}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Operational profile: Two maneuvers.}}{37}{figure.caption.87}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Brake-specific fuel consumption of a diesel engine model Cat 3516 B.}}{37}{figure.caption.88}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Operational profile: one maneuver.}}{38}{figure.caption.89}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Operational profile: two maneuvers.}}{38}{figure.caption.90}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Operational profile: one maneuver, fuel consumption and emissions.}}{39}{figure.caption.91}%
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Operational profile: two maneuvers, fuel consumption and emissions.}}{39}{figure.caption.92}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Percentage of emissions per day based on power ranges.}}{40}{figure.caption.93}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

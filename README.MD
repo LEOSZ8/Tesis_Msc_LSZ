@@ -35,3 +35,5 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v2.6: Dada la información adicional relacionada a las dimensiones del remolcador, se agrega la subsección Main Diesel Engine y la subsección Dimensions, las cuales deben ser completadas.
 
 - Dev v2.7: Se completa la subsección *Main Diesel Engine*.
+
+- Dev v2.8: Se insertan todas las imágenes del capítulo 2.
