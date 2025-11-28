@@ -4,7 +4,7 @@ A tug, or more commonly a tugboat, is an assistance boat which helps in the moor
 
 Tugboats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.\\
 
-This chapter presents the technical and operational characteristics of tugboats, with the aim of identifying design aspects for the hybrid propulsion system and the sizing of the battery bank.
+This chapter presents the technical and operational characteristics of tugboats, with the aim of illustrating a real service profile of a tugboat in Chile and identifying its different technical and operational aspects relevant to hybridization.
 % Breve descripción de qué se abordará y por qué es relevante.
 
 \section{Overview of tugboats}
@@ -31,10 +31,8 @@ In maritime law, maritime towing is defined as the operation whereby a vessel (t
 
 The importance of tugboats has grown exponentially with the phenomenon of naval gigantism \cite{Murimar}. Large modern ships, such as cruise ships and oil tankers, have tremendous momentum (inertia) that prevents them from stopping quickly or maneuvering effectively on their own in narrow channels or docks \cite{ESC_Group}.   
 
-Therefore, tugboats are essential to counteract these inertial forces. Support is necessary for entry, exit, and general maneuvering, including assisting ships in emergency situations  \cite{Bruce}.   
-
-Technological innovation plays a key role in tugboat operations. Environmental challenges and high efficiency requirements have driven the digitization and development of more sustainable and less polluting tugboats \cite{Murimar}. This trend includes the integration of automatic control technologies to optimize maneuver management, such as investment in hybrid and electric propulsion systems.\\\\     
-
+Therefore, tugboats are essential to counteract these inertial forces. Support is necessary for entry, exit, and general maneuvering, including assisting ships in emergency situations  \cite{Bruce}. The efficiency of these types of vessels is based on fuel consumption in relation to load capacities, always taking into account both the propulsion system and the energy conversion system that determines it. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}.
+%Technological innovation plays a key role in tugboat operations. Environmental challenges and high efficiency requirements have driven the digitization and development of more sustainable and less polluting tugboats \cite{Murimar}. This trend includes the integration of automatic control technologies to optimize maneuver management, such as investment in hybrid and electric propulsion systems.\\\\     
 
 
 
@@ -43,20 +41,12 @@ Technological innovation plays a key role in tugboat operations. Environmental c
 
 
 
-The efficiency of these types of vessels is based on fuel consumption in relation to load capacities, always taking into account both the propulsion system and the energy conversion system that determines it. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}.
+
+
 
 \subsection{Types of tugboats}
 %(port, deep-sea, coastal, escort, etc.)
-The classification of tugboats is primarily based on their operational domain and assigned primary mission. The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. The common thing is pushing or towing mega boats or barges. Their usage depends on the following factors:
-
-\begin{itemize}
-\item Port traffic Volume,
-\item Types of ships to be served by that tug,
-\item Navigational obstacles to be catered to,
-\item Conditions of environmental protection,
-\item Local laws and
-\item Domains to be carried by a tug.
-\end{itemize}
+The classification of tugboats is primarily based on their operational domain and assigned primary mission. The usage and functions of tugs vary from port to port, as different ports have different requirements and intakes. 
 
 \subsubsection{a) Harbour Tugs}
 
@@ -73,8 +63,6 @@ These vessels are specialized in assisting large ships entering and leaving port
 \begin{itemize}
 	\item \textbf{Design:} Typical dimensions vary in length between 20 and 30 meters, with drafts of 3.0 to 4.5 meters. Their empty displacement speed ranges from 5 to 13 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 400 - 3,000 hp (300 and 2200 kW)\cite{IngeMarino}.
 	
-	
-	\item \textbf{Propulsion:} Their designs have reduced length and increased beam and depth in order to install greater propulsion power, variable pitch propellers, Kort-type rotating nozzles with fixed rudders or rudder flaps, or Tow-Master systems (fixed nozzles with five rudders, two at the bow and three at the stern) to achieve greater traction and maneuverability \cite{IngeMarino} \cite{PracticosPuerto}.
 \end{itemize}
 
 \subsubsection{b) Offshore/SAR Tugs}
@@ -91,8 +79,7 @@ An offshore or \textit{search and rescue} (SAR) Tug, is designed to operate in t
 \begin{itemize}
 	 \item \textbf{Design:} Typical dimensions vary in length between 25 and 70 meters, with drafts of 4.5 to 6 meters. Their empty displacement speed ranges from 5 to 13 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 1500 - 6,000 hp (1120 - 4470 kW)\cite{IngeMarino}.
 
-	\item \textbf{Multifunctionality:} In addition to long-distance towing tasks, they are equipped for rescues and complementary firefighting and pollution control tasks \cite{SalvamentoMaritimo}. An example of a modern rescue vessel is 40 meters long, has 5,300 hp and a Bollard Pull of 60 tons \cite{Cotecmar}. These vessels are equipped to provide any type of assistance to deep-draft vessels \cite{SalvamentoMaritimo}. 
-\end{itemize}
+	\end{itemize}
 
 \subsubsection{c) Escort Tugs}
 
@@ -108,8 +95,7 @@ These tugboats perform a critical safety mission. Their main objective is to pro
 \begin{itemize}
 
 	\item \textbf{Design:} Typical dimensions vary in length between 40 and 80 meters, with drafts of 5 to 6 meters. Their empty displacement speed ranges from 15 to 16 knots (9.3 - 24 km/h). The power of these tugboats can vary considerably, generally between 6,000 -20,000 hp (4470 - 14,900 kW)\cite{IngeMarino}.
-
-	\item \textbf{Technology and Bollard Pull:} They require extremely robust and powerful designs to maintain control of a vessel moving at cruising speeds. An example of a modern escort tugboat is shown in figure \ref{fig:EscortTug}, features Rolls Royce azimuth thrusters and is designed to generate fixed-point traction exceeding 85 tons \cite{PortalPortuario}. They are equipped with constant tension maneuvering winches to maximize safety during operations. 
+	
 \end{itemize}
 
 
@@ -136,81 +122,83 @@ Below, in the table \ref{tab:Tugs}, there is a summary of key operational and di
 
 \subsection{Dimensions}
 
-\subsubsection{a) Length Overall}
-
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/LengthOverall.pdf}
-    \caption{Length Overall}
-    \label{fig:LengthOverallTug}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+     	\includegraphics[width=0.8\textwidth]{images/chapter02/LengthOverall.pdf}
+    	\caption{Length Overall Tug}
+    	\label{fig:LengthOverallTug}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter02/Beam.pdf}
+    	\caption{Beam Tug}
+    	\label{fig:BeamTug}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter02/Draught.pdf}
+    	\caption{Draught Tug}
+    	\label{fig:DraughtTug}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter02/Depth.pdf}
+    	\caption{Depth Tug}
+    	\label{fig:DepthTug}
+    \end{subfigure}
+    \caption{Tugboat Dimensions}
 \end{figure}
 
-The overall length is measured from the bow to the stern of the vessel in a straight line, excluding bowsprits, rudders, outboard motors and their supports, cranks and other accessories, fixed elements, and extensions \cite{wleonline}.
+\subsubsection{a) Length Overall}
+
+The overall length is measured from the bow to the stern of the vessel in a straight line, excluding bowsprits, rudders, outboard motors and their supports, cranks and other accessories, fixed elements, and extensions \cite{wleonline}, as is shown in figure \ref{fig:LengthOverallTug}.
 
 \subsubsection{b) Beam}
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/Beam.pdf}
-    \caption{Beam Tug}
-    \label{fig:BeamTug}
-\end{figure}
-
-A tugboat's beam is the distance between the two widest points of the hull \cite{HZContainer}. It is usually measured at the waterline, although other specifications such as maximum beam or deck beam may be used. Beam is a critical dimension in naval architecture, affecting the stability, maneuverability, and overall performance of the vessel \cite{DiscoverBoating}.
+A tugboat's beam is the distance between the two widest points of the hull \cite{HZContainer}, as is shown in the figure \ref{fig:BeamTug}. It is usually measured at the waterline, although other specifications such as maximum beam or deck beam may be used. Beam is a critical dimension in naval architecture, affecting the stability, maneuverability, and overall performance of the vessel \cite{DiscoverBoating}.
 
 \subsubsection{c) Draught}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/Draught.pdf}
-    \caption{Draught Tug}
-    \label{fig:DraughtTug}
-\end{figure}
-
-Draught or Draft is the vertical distance from the moulded base line amidships to the actual waterline \cite{Wartsila}.
+Draught or Draft is the vertical distance from the moulded base line amidships to the actual waterline \cite{Wartsila}, as is shown in the figure \ref{fig:DraughtTug}.
 
 \subsubsection{d) Depth}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/Depth.pdf}
-    \caption{Depth Tug}
-    \label{fig:DepthTug}
-\end{figure}
-
-Depth or molded depth of a vessel is measured at the center of the length, from the top of the keel to the highest continuous deck on the side \cite{Wartsila}.
+Depth or molded depth of a vessel is measured at the center of the length, from the top of the keel to the highest continuous deck on the side \cite{Wartsila}, as is shown in the figure \ref{fig:DepthTug}.
 
 
 
 \subsection{Volumen and Weight}
 
-\subsubsection{a) Gross Tonnage (GT)}
-
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/GrossTonnage.png}
-    \caption{Gross Tonnage Tug}
-    \label{fig:GrossTonnageTug}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter02/GrossTonnage.png}
+    	\caption{Gross Tonnage Tug}
+    	\label{fig:GrossTonnageTug}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/chapter02/NetTonnage.pdf}
+    	\caption{Net Tonnage Tug}
+    	\label{fig:NetTonnageTug}
+    \end{subfigure}
+    \caption{Tug Volume.}
 \end{figure}
 
-Gross Tonnage (GT) measures the “total inside space” of the ship, including all areas like cargo holds, engine rooms, and crew spaces. It’s about “volume”, not weight \cite{Wartsila} \cite{chinarubberfender}.
+
+\subsubsection{a) Gross Tonnage (GT)}
+
+Gross Tonnage (GT) measures the “total inside space” of the ship, including all areas like cargo holds, engine rooms, and crew spaces. It’s about “volume”, not weight \cite{Wartsila} \cite{chinarubberfender}, as is shown in figure \ref{fig:GrossTonnageTug}.
 \begin{itemize}
-	\item Under vessel measurement rules of various nations, the Panama Canal and the Suez Canal gross tonnage is a measure of the internal volume of space within a vessel in which 1 ton is equivalent to 2.83 cub m or 100 cub ft.
+	\item Under vessel measurement rules of various nations, the Panama Canal and the Suez Canal gross tonnage is a measure of the internal volume of space within a vessel in which 1 ton is equivalent to $2.83 [m^3]$ or $100 [ft^3]$.
 	\item Under the International Convention on Tonnage Measurement of Ships, 1969, (ICTM), a standardized numerical value is a logarithmic function of spaces within a vessel. There is no definition of a ton under ICTM because the value per unit of volume is greater on a vessel of large volume than on a vessel of small volume. Gross tonnage according to the national and canal rules generally includes spaces bounded by the under surface of the uppermost complete deck, the side frames, and the floor frames or the inner bottom if it rests on the floors or if the double water is for water ballast, plus closed-in space in deck structures are available for cargo or stores or for the berthing or accommodation of passengers or crew. Rules vary greatly as to exclusion or inclusion of various spaces. Gross tonnage according to ICTM is GT = K1 V in which V is the total moulded volume of all enclosed spaces of the ship in cub m and K1 is 0.2 + 0.02 log10 V.
 \end{itemize}
  
 
 \subsubsection{b) Net Tonnage (NT)}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/NetTonnage.pdf}
-    \caption{Net Tonnage Tug}
-    \label{fig:NetTonnageTug}
-\end{figure}
-
-Net Tonnage (NT) is focuses on the space available for cargo \cite{Wartsila} \cite{chinarubberfender}.
+Net Tonnage (NT) is focuses on the space available for cargo \cite{Wartsila} \cite{chinarubberfender}, as is shown in figure \ref{fig:NetTonnageTug}.
 
 \begin{itemize}
 	\item Net tonnage according to the national and canal rules is derived from gross tonnage by deducting an allowance for the propelling machinery space and certain other spaces. 
@@ -391,25 +379,28 @@ It should be noted that variable pitch propellers do not provide as much thrust 
 
 \subsection{Special Propellers}
 
-\subsubsection{a) Schottel system}
-
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/schottel.jpg}
-    \caption{Schottel system.}
-    \label{fig:schottel}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=1\textwidth]{images/chapter02/schottel.jpg}
+    	\caption{Schottel system.}
+    	\label{fig:schottel}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=1.2\textwidth]{images/chapter02/VSP_propeller.jpg}
+    	\caption{VSP propeller.}
+    	\label{fig:VSP_propeller}
+    \end{subfigure}    
+    \caption{Special Propellers.}
+    \label{fig:Special_propellers}
 \end{figure}
+
+\subsubsection{a) Schottel system}
 
 In this system, the propeller positioned at a 90º angle to the vertical, fixed to the shaft is a nozzle inside which the propeller rotates, as is shown in the figure \ref{fig:schottel}. The entire assembly can rotate 360º on the vertical axis, providing excellent maneuverability and allowing movement in any direction.
 
 \subsubsection{b) Voith-Schneider System (Cycloidal Propeller)}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{images/chapter02/VSP_propeller.jpg}
-    \caption{VSP propeller.}
-    \label{fig:VSP_propeller}
-\end{figure}
 
 This propeller system consists of a rotor that rotates on a vertical shaft fixed to the hull approximately at its pivot point, as is shown in the figure \ref{fig:VSP_propeller}. It is equipped with several blades that pivot on vertical axes controlled from the bridge by a device called a steering control. This device is responsible for directing the thrust in the opposite direction to the desired thrust. The mechanism is synchronized to center the thrust at a single point.
 
@@ -468,23 +459,39 @@ In this procedure, the tugboat rests its bow on the side of the vessel it is ass
 In this procedure, the tugboat is positioned alongside the ship and roughly parallel to it, moored to the ship by several ropes that ensure the transmission of force, as is shown in the figura \ref{fig:alongside}. This procedure is generally used to maneuver ships that do not have sufficient propulsion, in confined spaces and in very calm waters \cite{IngeMarino}. 
 
 
-\section{Operational Profile}
+\section{Service Maneuvers of a Tugboat}
 %Aquí se describe cómo opera el remolcador durante un día típico o misión.
+
+\subsection{Operational Profile}
+
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.75]{images/chapter02/Path.png}
     \caption{TUG route to the Puerto Montt's pier.}
-    \label{fig:PATH}
+    \label{fig:Route_Tug}
 \end{figure}
 
-Next, we will analyze the operational profile of a tugboat in Chile, considering that it has an operating schedule of 10 hours of work, performing this task in Puerto Montt.
-Figure \ref{fig:PATH} shows the route taken by a tugboat from the shipyard to the dock in Puerto Montt, working in Flecha or Sobre Cabo mode or performing a alongside maneuver, assisting ships that need to enter the port or leave the dock to go out to sea. The route taken by the tugboat is divided into three different sections.
+Next, an analysis of a tugboat's operational load profile of a tugboat in Chile is performed, considering that it has a 10-hour work schedule, performing this task in Puerto Montt.
+Figure \ref{fig:Route_Tug} shows the route taken by a tugboat from the shipyard to the dock in Puerto Montt. The route taken by the tugboat is divided into three different sections.
 
 
-\begin{table}[H]
+\begin{itemize}
+	\item \textcolor{blue}{Blue}: Low-speed route, tugboat departure from shipyard.
+	\item \textcolor{orange}{Yellow}: Nominal propulsion speed, tugboat moves toward the dock to perform operational maneuvers.
+	\item \textcolor{red}{Red}: High-power section, operational maneuver performed by a tugboat assisting a ship.
+\end{itemize}
+
+
+
+Below are some of the features associated with this tugboat:
+
+\begin{itemize}
+	\item \textbf{Type of Tugboat}: This tugboat is considered a \textbf{harbor tugboat}, as it is focused on towing and pushing large ships that want to enter or leave Puerto Montt.
+	\item \textbf{Dimensions}: Table \ref{tab:DimTug} associated with the dimensions of the tugboat to be analyzed is added.
+	\begin{table}[H]
 	\centering
 	\caption{Dimensions}
-	\label{tab:DataTug1}
+	\label{tab:DimTug}
 	\begin{tabular}{|c|c|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Dimensions Tugboat}} \\
@@ -493,52 +500,59 @@ Figure \ref{fig:PATH} shows the route taken by a tugboat from the shipyard to th
 		\hline  
 		\textbf{Beam} & 10.5 m    \\
 		\hline
-		\textbf{Depth} & 4.6 m    \\
-		\hline
 		\textbf{Draught} & 3.9 m    \\
-		\hline 
+		\hline
+		\textbf{Depth} & 4.6 m    \\ 
+		\hline
+	\end{tabular}
+\end{table}
+	\item \textbf{Volumen and Weight}: Table \ref{tab:VandWTug} contains information related to the weight and volume of the tugboat.
+	
+	\begin{table}[H]
+	\centering
+	\caption{Volume and Weight}
+	\label{tab:VandWTug}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Dimensions Tugboat}} \\
+		\hline\hline
 		\textbf{Gross Tonnage} & 269 tons    \\
 		\hline 
 		\textbf{Deadweight} & 220 tons    \\
 		\hline 
 	\end{tabular}
 \end{table}	
-
-\begin{table}[H]
+	\item \textbf{Technical Characteristics of the Propulsion System}: The tugboat has an \textbf{ASD propulsion} system, which incorporates \textbf{two Schottel propellers}. Information is shown in Table \ref{tab:Machinery_Tug} below.
+	\begin{table}[H]
 	\centering
 	\caption{Machinery}
-	\label{tab:DataTug1}
+	\label{tab:Machinery_Tug}
 	\begin{tabular}{|c|c|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Machinery Tugboat}} \\
 		\hline\hline
+		\textbf{Bollard Pull} & 65.4 tons    \\	
+		\hline
 		\textbf{Main Engines} & 2 x Cat 3516 B    \\
 		\hline  
 		\textbf{Total BHP} & 4894 HP (3650 kW)    \\		
-		\hline
-		\textbf{Bollard Pull} & 65.4 tons    \\	
-		\hline
+		\hline		
 		\textbf{Propulsion} & 2 x Schottel SRP 1215    \\
 		\hline 
 	\end{tabular}
-\end{table}
+\end{table} 
 
-
-
-
-
-\begin{itemize}
-	\item \textbf{Blue:} Low-speed route, tugboat departure from shipyard.
-	\item \textbf{Yellow:} Nominal propulsion speed, tugboat moves toward the dock to perform operational maneuvers.
-	\item \textbf{Red:} High-power section, operational maneuver performed by a tugboat assisting a ship.
+	\item \textbf{Naval Maneuvers and Assistance Techniques}: According to the service provided by the tugboat, it is established that in the red section of Figure \ref{fig:Route_Tug}, the tugboat can perform operational maneuvers pulling a vessel from the end of a rope in arrow mode or \textbf{over a cable} and also perform a \textbf{alongside} maneuver, assisting ships that need to enter the port or leave the dock to set sail.
+	
 \end{itemize}
+
 
 Based on the route to be analyzed and the maneuvers that the tugboat must perform at the dock, there are two operating profiles for each maneuver, as it can see in the figure \ref{fig:1M} and figure \ref{fig:2M}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver.pdf}
-    \caption{Operational profile: one maneuver.}
+    \caption{Operational profile: One maneuver.}
     \label{fig:1M}
 \end{figure}
 
@@ -548,6 +562,9 @@ Based on the route to be analyzed and the maneuvers that the tugboat must perfor
     \caption{Operational profile: Two maneuvers.}
     \label{fig:2M}
 \end{figure}
+
+Figures \ref{fig:1M} and \ref{fig:2M} represent the service maneuvers performed along the entire route, shown in Figure \ref{fig:Route_Tug}. These graphs demonstrate the power delivered by the tugboat's propulsion system.
+
 
 \subsection{Brake-Specific Fuel Consumption (BSFC)}
 
@@ -562,12 +579,13 @@ To analyze the operating profile, it is necessary to introduce the concept of \t
 
 The BSFC as a function of output power is illustrated in fig. \ref{fig:BSFC} for a typical engine used in tugboats. At higher power levels, the BSFC is lower, indicating that more power is produced per unit of fuel, resulting in greater efficiency. Maximum efficiency is achieved at the engine's rated power, where it operates as intended, maintaining an optimal balance between fuel consumption and power output. Conversely, at lower power levels, the BSFC is higher, meaning that fuel consumption per unit of power is greater, thus reducing the engine efficiency.
 
-The relative efficiency evaluates how the conventional engine is working taking as a reference the optimal efficiency at the nominal operating point as shown in eq. \ref{eq:rel_eff}. At this operating point the relative efficiency is 100$\%$ reducing its value if the engine works at lower levels of power.
+The relative efficiency evaluates how the conventional engine is working taking as a reference the optimal efficiency at the nominal operating point as shown in eq. \eqref{eq:rel_eff} \cite{LSZ}. At this operating point the relative efficiency is 100$\%$ reducing its value if the engine works at lower levels of power.
 
 \begin{align}\label{eq:rel_eff}
     \eta_\text{rel} &= \frac{\text{BSFC}_\text{nom}}{\text{BSFC}}
 \end{align}
 
+With the information provided by the engine in Figure \ref{fig:BSFC}, it is then possible to analyze how relative efficiency varies based on the load profile. This is shown in Figures \ref{fig:1M_releff} and \ref{fig:2M_releff}.
 
 \begin{figure}[H]
     \centering
@@ -583,15 +601,21 @@ The relative efficiency evaluates how the conventional engine is working taking 
     \label{fig:2M_releff}
 \end{figure}
 
+It can be observed in figures \ref{fig:1M_releff} y \ref{fig:2M_releff} that as the tugboat operates close to the nominal power point of its diesel engines, its relative efficiency improves. This indicates optimal fuel consumption during those periods. Conversely, at lower operating points, the engine consumes more fuel relative to the energy produced.
+
 \subsection{Generated Emissions and Fuel Consumption}
 
-To calculate emissions, the following formula relates brake power (Pb), BSFC, usage time (tu), and a carbon factor (CF):
+To calculate emissions, the following formula relates brake power (${P}_{b}$), BSFC, usage time (${t}_{u}$), and a carbon factor (CF):
 
-\begin{align}
+\begin{align}\label{eq:emiss}
     \text{Emissions} &= \frac{\text{BSFC} \cdot {P}_{b} \cdot {t}_{u} \cdot \text{CF}}{10^{-6}} \quad \text{[t CO\textsubscript{2}]}
 \end{align}
 
+With equation \eqref{eq:emiss}, you can find out the amount of emissions produced by the tugboat for each load profile. This can be seen in Figures \ref{fig:1M_emiss} and \ref{fig:2M_emiss}, where fuel consumption per hour of tugboat service can also be represented, considering the density $d$ of diesel, which in this case corresponds to $832.5$ [g/L] and fuel consumption is related to emissions as follows:
 
+\begin{align}\label{eq:fuel}
+\text{BSFC} &=\frac{d\cdot \text{Fuel}}{{P}_{b}} \to \text{Emissions} = \frac{\text{Fuel} \cdot d \cdot {t}_{u}\cdot \text{CF}}{10^{-6}} \quad \text{[t CO\textsubscript{2}]} 
+\end{align}
 
 \begin{figure}[H]
     \centering
@@ -610,9 +634,6 @@ To calculate emissions, the following formula relates brake power (Pb), BSFC, us
 
 
 
-The operational profile of a tugboat operating in a Chilean port typically includes one to two maneuvers per day during a 10-hour work shift, as illustrated in Fig. \ref{fig:load profile}.
-Fig. \ref{fig:load profile}-a) shows the power delivered by the tugboat conventional propulsion system and the relative efficiency of the engines during one service maneuver while b) shows the same information for two maneuvers; c) shows the fuel consumption by the tug and the CO\textsubscript{2} emissions generated by the load of the diesel engines, corresponding to a maneuver, while d) shows the emissions generated by the load of the diesel engines for two service maneuvers.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{images/chapter02/Stack_1M2M.pdf}
@@ -621,10 +642,47 @@ Fig. \ref{fig:load profile}-a) shows the power delivered by the tugboat conventi
 \end{figure}
 
 
-It can be observed that as the tugboat operates close to the nominal power point of its diesel engines, its relative efficiency improves. This indicates optimal fuel consumption during those periods. Conversely, at lower operating points, the engine consumes more fuel relative to the energy produced.
+Fig. \ref{fig:emmis} shows the accumulated fuel consumption and CO\textsubscript{2} emissions generated for one and two maneuvers. Each service operation is divided into three segments:
 
+\begin{itemize}
+	\item The lower segments correspond to propulsion system power levels with a relative efficiency below $90\%$ (180kW - 1270kW).
+	\item The middle segments correspond to relative efficiencies ranging from $90\%$ to $98\%$ (1270kW - 2000kW).
+	\item The upper segments represent power levels with the highest relative efficiency, ranging from $98\%$ to $99.8\%$ (2000kW - 3650kW). 
+\end{itemize}
 
-
-Fig. \ref{fig:emmis} shows the accumulated fuel consumption and CO\textsubscript{2} emissions generated for one and two maneuvers. Each service operation is divided into three segments: the lower segments correspond to propulsion system power levels with a relative efficiency below 90\%, the middle segments correspond to relative efficiencies ranging from 90\% to 98\%, and the upper segments represent power levels with the highest relative efficiency, ranging from 98\% to 99.8\%.  At low power levels, fuel consumption can account for up to 38\% and 11\% of the total daily fuel usage, for one and two maneuvers, respectively. Resulting in high emissions due to the diesel engine operating far from its optimal efficiency point, emphasizing the variability of the load profile of this type of vessel and its impact on fuel consumption and emissions. 
+At low power levels, fuel consumption can account for up to $38\%$ and $11\%$ of the total daily fuel usage, for one and two maneuvers, respectively. Resulting in high emissions due to the diesel engine operating far from its optimal efficiency point, emphasizing the variability of the load profile of this type of vessel and its impact on fuel consumption and emissions. 
  
 \section{Chapter Summary}
+
+
+This chapter established the fundamental technical and operational framework required to understand the role of tugboats in the maritime industry, serving as the baseline for the proposed hybrid propulsion design.
+
+
+The tugboat is defined as an essential assistance vessel designed to aid the mooring, berthing, and maneuvering of larger ships, particularly in the context of naval gigantism. The chapter classified these vessels into three primary categories based on their operational domain:
+
+\begin{itemize}
+	\item \textbf{Harbour Tugs}: Designed for agility and restricted drafts within ports.
+	\item \textbf{Offshore/SAR Tugs}: Built for open ocean robustness and long-range autonomy.
+	\item \textbf{Escort Tugs}: High-power vessels specialized in safety for hazardous cargo in high-risk zones.
+\end{itemize}
+
+
+A critical analysis of propulsion engineering was presented, highlighting Bollard Pull (BP) as the primary metric for quantifying a tug's static pulling force. The comparison of propulsion systems revealed distinct trade-offs:
+
+\begin{itemize}
+	\item \textbf{Conventional Propulsion}: Offers linear efficiency but limited lateral maneuverability.
+	\item \textbf{Azimuth Stern Drive (ASD)}: Utilizes rotatable thrusters (Z-Drive) for 360-degree maneuverability, a standard for modern port operations.
+	\item \textbf{Voith-Schneider (VSP)}: Provides omnidirectional thrust and extreme precision for congested environments.  
+\end{itemize}
+
+
+The chapter concluded with a case study of a tugboat operating in Puerto Montt, Chile. By analyzing the Brake-Specific Fuel Consumption (BSFC), the study identified a significant inefficiency in traditional diesel configurations:
+
+\begin{itemize}
+	\item Diesel engines achieve optimal efficiency (low BSFC) only at high power ratings.
+	\item The operational profile of a tugboat is highly variable; during low-load periods (e.g., transit or standby), the engines operate at low relative efficiency, leading to higher fuel consumption per kWh produced.
+	\item Data indicated that in low power ranges (180kW – 1270kW), the relative efficiency drops significantly, yet this range can account for up to $38\%$ of daily fuel consumption in single-maneuver scenarios
+\end{itemize}
+
+This analysis demonstrates that the intermittency of the load profile and the reliance on oversized diesel engines for low-load tasks result in excessive greenhouse gas emissions, justifying the need for the hybrid energy storage system proposed in this thesis.
+

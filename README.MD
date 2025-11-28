@@ -37,3 +37,5 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v2.7: Se completa la subsección *Main Diesel Engine*.
 
 - Dev v2.8: Se insertan todas las imágenes del capítulo 2.
+
+- **Dev v3:** Se realiza la primera versión del capítulo 2, relacionado a la descripción y funcionamiento del remolcador. Esta versión es enviada a Marcelo Pérez para su revisión.
