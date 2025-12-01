@@ -8,3 +8,6 @@ f = donutchart(GHG3,"Percent3","Area3",LabelStyle="namepercent",ExplodedWedges=3
 title ("GHG emissions from"+"\newline"+ "Transport Sector")
 mycolors = ["#C8D3D5" "#A3B6B8" "#F7E733" "#A3B6B8" "#C8D3D5" "#A3B6B8"];
 colororder(mycolors)
+fontname("Times New Roman")
+fontsize(20,"points")
+

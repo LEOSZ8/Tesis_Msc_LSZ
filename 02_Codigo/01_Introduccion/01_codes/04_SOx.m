@@ -13,6 +13,7 @@ ylim([0 5])
 hold on
 stairs(Year_ECA,SOx_ECA,'Linewidth',3)
 grid on
-ylabel('Sulphur content in fuel (SO_x) [%]')
-xlabel('Year')
-legend('Global','SO_x ECA','Linewidth',2,'Location','northeast')
+ylabel('Sulphur content in fuel (SO_x) [%]','FontSize',14)
+xlabel('Year','FontSize',14)
+legend('Global','SO_x ECA','Linewidth',2,'Location','northeast','FontSize',12)
+fontname("Times New Roman")

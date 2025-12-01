@@ -39,3 +39,5 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v2.8: Se insertan todas las imágenes del capítulo 2.
 
 - **Dev v3:** Se realiza la primera versión del capítulo 2, relacionado a la descripción y funcionamiento del remolcador. Esta versión es enviada a Marcelo Pérez para su revisión.
+
+- Dev v3.1: Se realizan las correcciones mencionadas en el capítulo 1: "*Introduction*", correcciones mencionadas por Marcelo Pérez. Además, se vectorizan todas las imágenes del capítulo.

@@ -5,42 +5,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Global sources of greenhouse gas emissions and breakdown of CO\textsubscript {2} emissions from the energy sector and the transport subsector \cite {TheRoundup}.}}{1}{figure.caption.7}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs) perspective.}}{2}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces GFI reduction factors and reference value in NZF \cite {DNV2025}. Two tiers of requirements are set on the annual attained GFI for a ship: a Base target and a Direct Compliance target. Each ship is required to meet the Direct Compliance target, either through the use of low-GHG fuels, or through one of the alternative compliance approaches. The Base target is used to separate between Tier 1 and Tier 2 compliance deficits.}}{2}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Types of propulsion systems\textcolor {blue}{$-->$ PDF}}}{3}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Semi-hybridization.}}{4}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Components of a battery \cite {EMSA}.}}{7}{figure.caption.21}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Funcitonal roles of battery systems onboard ships \cite {EMSA}.}}{8}{figure.caption.23}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Traditional diesel-mechanic propulsion of a large merchant vessel \textcolor {blue}{$-->$ PDF}.}}{11}{figure.caption.27}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Semi-hybridization.}}{12}{figure.caption.29}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Electric motor incorporation.}}{12}{figure.caption.31}%
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Tugboat}}{14}{figure.caption.32}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Tugs representations.}}{17}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A harbour tug in the port of Algeciras \cite {Algeciras}.}}{18}{figure.caption.35}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces SAR BALDER, an offshore Tug built in 2006 \cite {VesselFinder}.}}{19}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Robert Allan Rastar 3200 Escort Tug \cite {RobertAllan}.}}{20}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Tugboat Dimensions}}{21}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Tug Volume.}}{22}{figure.caption.47}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite {ESC_Group}.}}{23}{figure.caption.52}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Conventional propulsion: A tug fitted with fixed propellers, single or twin screw (left or right handed) and single rudders with fixed nozzles \cite {Gokay}.}}{24}{figure.caption.54}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces ASD Tugs representations.}}{24}{figure.caption.56}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Voith-Schneider Propeller (VSP) propulsion: A tug with VSP generally located forward off the midship and a rudder-shaped fin at aft side \cite {Gokay}.}}{25}{figure.caption.58}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Main diesel engine for a tugboat propulsion system.}}{26}{figure.caption.61}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Fixed pitch propellers configuration.}}{27}{figure.caption.63}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Variable (controllable) pitch propellers configuration.}}{27}{figure.caption.65}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Special Propellers.}}{28}{figure.caption.67}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Arrow maneuver or rope maneuver \cite {IngeMarino}.}}{29}{figure.caption.73}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Maneuver supported by the bow \cite {IngeMarino}.}}{30}{figure.caption.75}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Alongside Maneuver \cite {IngeMarino}.}}{30}{figure.caption.77}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces TUG route to the Puerto Montt's pier.}}{31}{figure.caption.78}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Operational profile: One maneuver.}}{33}{figure.caption.82}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Operational profile: Two maneuvers.}}{33}{figure.caption.83}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Brake-specific fuel consumption of a diesel engine model Cat 3516 B.}}{34}{figure.caption.84}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Operational profile: one maneuver.}}{35}{figure.caption.85}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Operational profile: two maneuvers.}}{35}{figure.caption.86}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Operational profile: one maneuver, fuel consumption and emissions.}}{36}{figure.caption.87}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Operational profile: two maneuvers, fuel consumption and emissions.}}{36}{figure.caption.88}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Percentage of emissions per day based on power ranges.}}{37}{figure.caption.89}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.3}{\ignorespaces GFI reduction factors and reference value in NZF \cite {DNV2025}.}}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Hybridization options.}}{4}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Components of a battery \cite {EMSA}.}}{6}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Funcitonal roles of battery systems onboard ships \cite {EMSA}.}}{7}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Traditional diesel-mechanic propulsion of a large merchant vessel.}}{10}{figure.caption.26}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Semi-hybridization.}}{11}{figure.caption.28}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Electric motor incorporation.}}{12}{figure.caption.30}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Tugboat}}{13}{figure.caption.31}%
