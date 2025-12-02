@@ -7,9 +7,41 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs) perspective.}}{2}{figure.caption.8}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces GFI reduction factors and reference value in NZF \cite {DNV2025}.}}{2}{figure.caption.9}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Hybridization schemes.}}{4}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Components of a battery \cite {EMSA}.}}{6}{figure.caption.20}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Funcitonal roles of battery systems onboard ships \cite {EMSA}.}}{8}{figure.caption.22}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Traditional diesel-mechanic propulsion of a large merchant vessel.}}{11}{figure.caption.26}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Semi-hybridization.}}{11}{figure.caption.28}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Electric motor incorporation.}}{12}{figure.caption.30}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Tugboat}}{14}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Block diagram of dc bus with UC-ESS \cite {Xu2022}.}}{7}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Structure of the flywheel ESS (FESS)\cite {Xu2022}.}}{7}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Components of a battery \cite {EMSA}.}}{8}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Funcitonal roles of battery systems onboard ships \cite {EMSA}.}}{9}{figure.caption.25}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Traditional diesel-mechanic propulsion of a large merchant vessel.}}{12}{figure.caption.29}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Semi-hybridization.}}{12}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Electric motor incorporation.}}{13}{figure.caption.33}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Tugboat}}{15}{figure.caption.35}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tugs representations.}}{19}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A harbour tug in the port of Algeciras \cite {Algeciras}.}}{20}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces SAR BALDER, an offshore Tug built in 2006 \cite {VesselFinder}.}}{21}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Robert Allan Rastar 3200 Escort Tug \cite {RobertAllan}.}}{22}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Tugboat Dimensions}}{23}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Tug Volume.}}{24}{figure.caption.54}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite {ESC_Group}.}}{25}{figure.caption.59}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Conventional propulsion: A tug fitted with fixed propellers, single or twin screw (left or right handed) and single rudders with fixed nozzles \cite {Gokay}.}}{26}{figure.caption.61}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces ASD Tugs representations.}}{26}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Voith-Schneider Propeller (VSP) propulsion: A tug with VSP generally located forward off the midship and a rudder-shaped fin at aft side \cite {Gokay}.}}{27}{figure.caption.65}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Main diesel engine for a tugboat propulsion system.}}{28}{figure.caption.68}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Fixed pitch propellers configuration.}}{29}{figure.caption.70}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Variable (controllable) pitch propellers configuration.}}{29}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Special Propellers.}}{30}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Arrow maneuver or rope maneuver \cite {IngeMarino}.}}{31}{figure.caption.80}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Maneuver supported by the bow \cite {IngeMarino}.}}{32}{figure.caption.82}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Alongside Maneuver \cite {IngeMarino}.}}{32}{figure.caption.84}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces TUG route to the Puerto Montt's pier.}}{33}{figure.caption.85}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Operational profile: One maneuver.}}{35}{figure.caption.89}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Operational profile: Two maneuvers.}}{35}{figure.caption.90}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Brake-specific fuel consumption of a diesel engine model Cat 3516 B.}}{36}{figure.caption.91}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Operational profile: one maneuver.}}{37}{figure.caption.92}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Operational profile: two maneuvers.}}{37}{figure.caption.93}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Operational profile: one maneuver, fuel consumption and emissions.}}{38}{figure.caption.94}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Operational profile: two maneuvers, fuel consumption and emissions.}}{38}{figure.caption.95}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Percentage of emissions per day based on power ranges.}}{39}{figure.caption.96}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

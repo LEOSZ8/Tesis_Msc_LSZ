@@ -40,7 +40,6 @@ N. Bennabi, J. F. Charpentier, H. Menana, J. Y. Billard and P. Genet, ``Hybrid p
 C. A. Reusser, H. A. Young, J. R. Perez Osses, M. A. Perez and O. J. Simmonds, ``Power Electronics and Drives: Applications to Modern Ship Propulsion Systems,'' in \emph{IEEE Industrial Electronics Magazine}, vol. 14, no. 4, pp. 106-122, Dec. 2020, doi: 10.1109/MIE.2020.3002493.
 
 
-
 \bibitem{Bas}
 B. Kwasieckyj, ``Hybrid Propulsion Systems: Efficiency analysis and design methodology of hybrid propulsion systems", Master Thesis conducted at MAN Diesel $\&$ Turbo SE, Augsburg, 2013.
 
@@ -106,6 +105,10 @@ T. Hofman, M. Naaborg and E. Sciberras, ``System-Level Design Optimization of a 
 
 \bibitem{Kumar}
 B. A. Kumar, R. Selvaraj, K. Desingu, T. R. Chelliah and R. S. Upadhyayula, ``A Coordinated Control Strategy for a Diesel-Electric Tugboat System for Improved Fuel Economy," in IEEE Transactions on Industry Applications, vol. 56, no. 5, pp. 5439-5451, Sept.-Oct. 2020, doi: 10.1109/TIA.2020.3010779.
+
+\bibitem{Xu2022}
+L. Xu et al., ``A Review of DC Shipboard Microgrids—Part I: Power Architectures, Energy Storage, and Power Converters," in IEEE Transactions on Power Electronics, vol. 37, no. 5, pp. 5155-5172, May 2022.
+
 
 %%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

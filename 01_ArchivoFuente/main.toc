@@ -12,18 +12,101 @@
 \contentsline {subsubsection}{a) Steam Turbine}{5}{section*.14}%
 \contentsline {subsubsection}{b) Gas Turbine}{5}{section*.15}%
 \contentsline {subsubsection}{c) Diesel Engines}{5}{section*.16}%
+\contentsline {subsubsection}{d) Fuel Cells}{6}{section*.17}%
 \contentsline {subsection}{\numberline {1.1.3}Energy Storage Systems}{6}{subsection.1.1.3}%
-\contentsline {subsubsection}{a) Supercapacitors}{6}{section*.17}%
-\contentsline {subsubsection}{b) Flywheels}{6}{section*.18}%
-\contentsline {subsubsection}{c) Batteries}{6}{section*.19}%
-\contentsline {subsection}{\numberline {1.1.4}Battery Systems in Maritime Applications}{7}{subsection.1.1.4}%
-\contentsline {subsubsection}{a) Diesel-mechanic engine conventional system}{11}{section*.25}%
-\contentsline {subsubsection}{b) Diesel-mechanic engine hybrid system}{11}{section*.27}%
-\contentsline {subsubsection}{c) Hybrid/electric propulsion system with electric motors}{12}{section*.29}%
-\contentsline {subsection}{\numberline {1.1.5}Tugboats}{14}{subsection.1.1.5}%
-\contentsline {section}{\numberline {1.2}Challenges and Research Opportunities}{14}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Thesis Objectives and Outline}{15}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Methodology}{16}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Scope and Limitations}{16}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Chapter Summary}{16}{section.1.6}%
-\contentsline {chapter}{Bibliography}{17}{section*.36}%
+\contentsline {subsubsection}{a) Ultra-capacitors}{7}{section*.18}%
+\contentsline {subsubsection}{b) Flywheels}{7}{section*.20}%
+\contentsline {subsubsection}{c) Batteries}{8}{section*.22}%
+\contentsline {subsection}{\numberline {1.1.4}Battery Systems in Maritime Applications}{9}{subsection.1.1.4}%
+\contentsline {subsubsection}{a) Diesel-mechanic engine conventional system}{12}{section*.28}%
+\contentsline {subsubsection}{b) Diesel-mechanic engine hybrid system}{12}{section*.30}%
+\contentsline {subsubsection}{c) Hybrid/electric propulsion system with electric motors}{13}{section*.32}%
+\contentsline {subsection}{\numberline {1.1.5}Tugboats}{15}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Challenges and Research Opportunities}{15}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis Objectives and Outline}{16}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Methodology}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Scope and Limitations}{17}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Chapter Summary}{17}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Tugboats: Description and Operation}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview of tugboats}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Types of tugboats}{20}{subsection.2.1.1}%
+\contentsline {subsubsection}{a) Harbour Tugs}{20}{section*.41}%
+\contentsline {subsubsection}{b) Offshore/SAR Tugs}{21}{section*.43}%
+\contentsline {subsubsection}{c) Escort Tugs}{22}{section*.45}%
+\contentsline {subsubsection}{d) Tugs Comparation}{22}{section*.47}%
+\contentsline {section}{\numberline {2.2}Tugboat Sizing Characteristics}{23}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Dimensions}{23}{subsection.2.2.1}%
+\contentsline {subsubsection}{a) Length Overall}{23}{section*.50}%
+\contentsline {subsubsection}{b) Beam}{23}{section*.51}%
+\contentsline {subsubsection}{c) Draught}{23}{section*.52}%
+\contentsline {subsubsection}{d) Depth}{24}{section*.53}%
+\contentsline {subsection}{\numberline {2.2.2}Volumen and Weight}{24}{subsection.2.2.2}%
+\contentsline {subsubsection}{a) Gross Tonnage (GT)}{24}{section*.55}%
+\contentsline {subsubsection}{b) Net Tonnage (NT)}{24}{section*.56}%
+\contentsline {subsubsection}{c) Deadweight (DWT)}{25}{section*.57}%
+\contentsline {subsubsection}{d) Displacement Tonnage}{25}{section*.58}%
+\contentsline {section}{\numberline {2.3}Technical Characteristics of the Propulsion System}{25}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Bollard Pull - BP}{25}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Propulsion Engineering for Maneuvering}{25}{subsection.2.3.2}%
+\contentsline {subsubsection}{a) Conventional Propulsion}{26}{section*.60}%
+\contentsline {subsubsection}{b) Azimuthal Stern Drive (ASD)}{26}{section*.62}%
+\contentsline {subsubsection}{c) Voith-Schneider Propulsion (VSP)}{27}{section*.64}%
+\contentsline {subsubsection}{d) Propulsion Comparation }{27}{section*.66}%
+\contentsline {subsection}{\numberline {2.3.3}Main Diesel Engine}{28}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Conventional Propellers}{29}{subsection.2.3.4}%
+\contentsline {subsubsection}{a) Fixed Pitch Propellers}{29}{section*.69}%
+\contentsline {subsubsection}{b) Variable Pitch Propellers}{29}{section*.71}%
+\contentsline {subsubsection}{e) Propellers Comparation}{30}{section*.73}%
+\contentsline {subsection}{\numberline {2.3.5}Special Propellers}{30}{subsection.2.3.5}%
+\contentsline {subsubsection}{a) Schottel system}{30}{section*.75}%
+\contentsline {subsubsection}{b) Voith-Schneider System (Cycloidal Propeller)}{30}{section*.76}%
+\contentsline {section}{\numberline {2.4}Naval Maneuvers and Assistance Techniques}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Docking and Undocking Procedures}{31}{subsection.2.4.1}%
+\contentsline {subsubsection}{a) Operational Coordination}{31}{section*.77}%
+\contentsline {subsubsection}{b) External Agent Management}{31}{section*.78}%
+\contentsline {subsection}{\numberline {2.4.2}Tugboat Performance}{31}{subsection.2.4.2}%
+\contentsline {subsubsection}{a) Tugboat Working on a Beam or Over a Cable}{31}{section*.79}%
+\contentsline {subsubsection}{b) Bow-Supported Tugboat (Ram Locking)}{32}{section*.81}%
+\contentsline {subsubsection}{c) Tugboat alongside}{32}{section*.83}%
+\contentsline {section}{\numberline {2.5}Service Maneuvers of a Tugboat}{33}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Operational Profile}{33}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Brake-Specific Fuel Consumption (BSFC)}{36}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Generated Emissions and Fuel Consumption}{37}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Chapter Summary}{39}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Hybrid Tugboats: Requirements and Performance}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}General concepts of marine hybrid systems}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definition of hybrid propulsion system}{41}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Classification of hybrid systems}{41}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Main Components}{41}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Role of the battery bank in a hybrid system}{41}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Main Functions}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Advantages of incorporating batteries}{41}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Technical limitations}{41}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Impact of hybridization on the operational profile of the tugboat}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Fully electric operation at low load}{41}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Hybrid operation in medium loads}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Optimization of the energy consumption profile}{41}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Impact on fuel consumption and emissions}{41}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Case studies and industry evidence}{41}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Chapter summary}{41}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Design of the battery bank for a hybrid propulsion system}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design parameters and initial assumptions}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Operational assumptions}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Energy design parameters}{43}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Power design parameters}{43}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Physical and regulatory constraints}{43}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Battery bank sizing}{43}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Calculation of required energy capacity (kWh)}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Calculation of required power (kW)}{43}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Selection criteria}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Technology analysis}{43}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Economic and life cycle analysis}{43}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}System CAPEX}{43}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}System OPEX}{43}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}ROI / VAN / TIR / Payback}{43}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Comprehensive comparison of alternatives}{43}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Selection of the optimal alternative}{43}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{43}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{44}{chapter.5}%
+\contentsline {chapter}{Bibliography}{45}{chapter.5}%

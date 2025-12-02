@@ -126,15 +126,49 @@ A diesel engine is a prime mover with the function to convert chemical energy st
 
 This power source is characterized by a high level of autonomy and by a relatively low cost compared to other sources. Diesel engines are characterized by a high level of greenhouse gases and pollutants emission particularly if they are used at a lower level of power than their rated power. 
 
+\subsubsection{d) Fuel Cells}
+Fuel Cells (FCs) work as power sources without greenhouse gas emissions \cite{Xu2022} \cite{Xu2022}. Instead of burning fuels, FCs have various techniques to transfer chemical energy to electric energy, which include: 
+
+\begin{itemize}
+	\item Alkaline Fuel Cell (AFC)
+	\item Proton Exchange Membrane FC (PEMFC)
+	\item Direct Methanol FC
+	\item Solid Oxide FC (SOFC)
+\end{itemize}
+
+The fuel in FC can be methanol, diesel, hydrogen, LNG, and so on. The dc output of FCs is converted to the
+required voltage through dc/dc converters to fit the dc bus.
+
+FCs have the advantage of a long lifetime, which is attractive in marine applications. However, the slow dynamic response is the main barrier of using FCs in shipboard microgrids due to their slow internal electrochemical and thermodynamic responses \cite{Xu2022}. 
+
 \subsection{Energy Storage Systems}
 An intermediate energy storage system can be used to better manage energy and reduce the size of power generation system. The integration of energy storage systems offers interesting solutions for energy efficiency and optimal energy use.
 
-\subsubsection{a) Supercapacitors}
+\subsubsection{a) Ultra-capacitors}
 
-Supercapacitors can be interesting intermediate energy storage systems for small ships with short power transients \cite{Bennabi}. They are characterized by a high value of charge and discharge peak power and can be used to rapid dynamic storage with very low specific energy. They are usually associated with slower systems, such as batteries and fuel cells, to manage high power short transients. They can operate at very low temperatures at which many types of electrochemical batteries stop working.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/chapter01/UC_ESS.pdf}
+    \caption{Block diagram of dc bus with UC-ESS \cite{Xu2022}.}
+    \label{fig:UC_ESS}
+\end{figure}
+
+Ultra-Capacitors Energy Storage Systems (UCSS), also known like Supercapacitors, can be interesting intermediate energy storage systems with short power transients \cite{Bennabi}. They are characterized by a high value of charge and discharge peak power and can be used to rapid dynamic storage with very low specific energy. They are usually associated with other systems, such as batteries, generators and fuel cells, to manage high power short transients, as is shown in figure \ref{fig:UC_ESS}. Consequently, combining UCs and batteries not only can meet the long-term load demand but also reduce peak power stresses on the battery packs \cite{Xu2022}.
 
 \subsubsection{b) Flywheels}
-Flywheels can be used in some particular cases. Like supercapacitors, they are characterized by a high power density but a relatively low energy density. However using flywheels leads to implement safety systems to protect crew and passengers from possible flywheel failure. So their use in small ship context seems very limited.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/chapter01/Flywheel.pdf}
+    \caption{Structure of the flywheel ESS (FESS)\cite{Xu2022}.}
+    \label{fig:Flywheel}
+\end{figure}
+
+Flywheels Energy Storage Systems (FESS) can be used in some particular cases. Like ultra-capacitors, they are characterized by a high power density but a relatively low energy density. Currently, FESS is becoming widely applied in various applications including the marine industry. 
+
+Typically, FESS is a kind of electric supply device that stores energy in the form of kinetic energy in a rotating flywheel connected to the shaft of an electric machine \cite{Xu2022}. The FESS structure is depicted in Fig. \ref{fig:Flywheel}, containing rotor (flywheel), shaft, motor/generator, and power electronic interface. The amount of stored energy depends on the form, mass, and rotation speed of the flywheel. In charging mode, the flywheel speeds up and store the kinetic energy in the high-speed rotational disk; while in discharging mode, the stored kinetic energy will be released by slowing down the rotating flywheel.
+
+However using flywheels leads to implement safety systems to protect crew and passengers from possible flywheel failure. So their use in small ship context seems very limited.
 
 \subsubsection{c) Batteries}
 
@@ -266,13 +300,13 @@ In general, the configuration shown in Figure \ref{fig:Traditional_Prop} is the 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.8\textwidth]{images/chapter01/SHDM_Prop.pdf}
+    	\includegraphics[width=0.85\textwidth]{images/chapter01/SHDM_Prop.pdf}
     	\caption{Semi-hybrid diesel-mechanic propulsion of \\a large merchant vessel with hybrid electric grid.}
     \label{fig:SHDM_Prop}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.8\textwidth]{images/chapter01/FHDM_Prop.pdf}
+    	\includegraphics[width=0.85\textwidth]{images/chapter01/FHDM_Prop.pdf}
     	\caption{Full-hybrid diesel-mechanic propulsion of a large merchant vessel with front end PTO/PTI from RENK.}
     \label{fig:FHDM_Prop}
     \end{subfigure}    
@@ -296,13 +330,13 @@ In addition, a ship with a hybrid electric/mechanical propulsion system may have
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.8\textwidth]{images/chapter01/FHDE_Prop.pdf}
+    	\includegraphics[width=0.85\textwidth]{images/chapter01/FHDE_Prop.pdf}
     	\caption{Full-hybrid diesel-electric propulsion with\\ batteries in a hybrid system.}
     	\label{fig:FHDE_Prop}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.8\textwidth]{images/chapter01/PBE_Prop.pdf}
+    	\includegraphics[width=0.85\textwidth]{images/chapter01/PBE_Prop.pdf}
     	\caption{Pure electric propulsion with batteries as the\\ primary energy source.}
     	\label{fig:PBE_Prop}
     \end{subfigure}    
@@ -353,7 +387,7 @@ Ports are imposing more and more stringent regulations on exhaust and noise emis
     \label{fig:HarbourTug}
 \end{figure}
 
-Tugboats, as can be seen in fig. \ref{fig:HarbourTug}, are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}.
+Tugboats, as can be seen in fig. \ref{fig:HarbourTug}, are ideal candidates for hybridization due to their operational profiles, which involve prolonged idling, low-speed maneuvering, and frequent speed changes that lead to inefficient fuel consumption \cite{Chin}. Among vessel types, tugboats—used for towing and maneuvering large ships—are among the highest emitters per unit of energy due to their highly variable load profiles \cite{Volker}, since they spend a lot of time at 10-20$\%$ load (inefficient for diesel engines) and very short peaks at 100$\%$. This technically justifies the use of batteries.
 
 %A tug is a particular class of boat which helps mega-ships enter or leave a port. In addition to towing the vessel towards the harbour, tug boats can also be engaged to provide essentials, such as water, air, etc., to a vessel.
 
@@ -397,7 +431,7 @@ However, the challenge lies in finding a clear and detailed methodology for the 
 
 \section{Thesis Objectives and Outline}
 
-The general objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization.
+The general objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization, analyzing the challenge of high CAPEX (initial cost) of batteries versus savings in OPEX (fuel/maintenance).\\
 
 Specific objectives include:
 
@@ -416,7 +450,7 @@ The methodology to follow for the development of this work is:
 \begin{itemize}
 	\item \textbf{State of Art:} Review of existing hybrid propulsion system types and battery technologies. 
 	\item \textbf{Mathematical Analysis and Modeling:} Theoretical study of the tugboat's load profile and the implementation of batteries to support the vessel's operation.
-	\item \textbf{Results:} Simulation of the models obtained to complete the conceptual analysis.
+	\item \textbf{Results:} Simulation of the models obtained through Plecs or MatLab to complete the conceptual analysis and analyze the results related to the battery bank.
 \end{itemize}
 
 \section{Scope and Limitations}
@@ -424,9 +458,9 @@ The methodology to follow for the development of this work is:
 The limitations of the work are:
 
 \begin{itemize}
-	\item Architecture Layout.
-	\item Bill of Components (BOM).
-	\item Simulation considerations.
+	\item \textbf{Architecture Layout}: Only one hybridization layout will be analyzed and compared with the tugboat's conventional propulsion system.
+	\item \textbf{Bill of Components (BOM)}: Within the list of components of the hybrid propulsion system, the associated cost of each will be determined, estimating the costs of those components for which no commercial information is available.
+	\item \textbf{Simulation considerations}: Based on the data provided on the tugboat's operational load profile, simulations will be performed on the sized battery bank. For power converter simulations, simulations will be performed with a shorter duration, given the amount of data required to analyze the battery bank's discharge profile. The thermal effects of the semiconductors used shall be disregarded.
 \end{itemize}
 
 In conclusion, this work will contribute to the analysis of the different initial stages of hybridizing a tugboat, considering the essential technical aspects that allow us to understand the benefits of this conversion, with an emphasis on the electrical stage, specifically the batteries.
