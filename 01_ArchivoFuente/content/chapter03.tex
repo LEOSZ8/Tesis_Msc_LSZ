@@ -3,31 +3,118 @@
 This chapter presents the fundamental concepts associated with tugboat hybridization, its most common technological configurations, and the operational benefits associated with the incorporation of battery banks. The objective is to establish the theoretical and technical basis for the design process carried out in subsequent chapters.
 
 \section{General concepts of marine hybrid systems}
+Given the intermittent nature of the load profile and the dependence on diesel engines, which are oversized for low-load tasks, the implementation of the hybrid energy storage system proposed in this thesis is analyzed.
 
-\subsection{Definition of hybrid propulsion system}
+The first step is to take a closer look at the existing types of hybridization:
 
-\subsection{Classification of hybrid systems}
+\section{Classification of Hybrid Propulsion Systems}
 
-\subsection{Main Components}
+The maritime industry has evolved distinct topological approaches to hybridization, each offering specific trade-offs between complexity, cost, redundancy, and efficiency.
 
-\section{Role of the battery bank in a hybrid system}
+\subsection{Series Hybrid Architecture}
 
-\subsection{Main Functions}
+In a series hybrid configuration, the mechanical link between the internal combustion engine and the propeller shaft is severed completely. The vessel is propelled exclusively by electric motors.
 
-\subsection{Advantages of incorporating batteries}
+The main diesel engines function strictly as generator sets (gensets). They produce electrical energy which is rectified (if AC) and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors. The decoupling of engine speed from propeller speed is the primary advantage here. A fixed-pitch propeller’s torque curve is cubic; at low speeds, it requires very little torque. A diesel engine, however, cannot run stable below a certain RPM (typically 600-800 RPM). In a series hybrid, the genset can run at its optimal constant RPM (e.g., 1500 or 1800 RPM) to generate the exact amount of current needed by the motor, or it can shut down while the battery takes over.
 
-\subsection{Technical limitations}
+\begin{itemize}
+	\item \textbf{Electric Shaft}:  Here, power is transformed by electric machines without intermediate power electronics for the main transmission path, although this is rarer in modern DC-based designs.
+	\item \textbf{DC Link Topology}: This is the modern standard. Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors. This topology allows for independent control of multiple propulsors without variable pitch mechanisms and integrates energy storage seamlessly
+\end{itemize}
 
-\section{Impact of hybridization on the operational profile of the tugboat}
+Series hybrids are ideal for "stop-and-go" vessels like city ferries or tugs that operate predominantly at low speeds. The battery bank in a series hybrid is often larger to buffer the high power demands of the electric motors. However, at full continuous speed, series hybrids suffer from "round-trip efficiency losses." converting mechanical energy to electrical and back to mechanical incurs a penalty of approximately 5-10$\%$ compared to a direct mechanical shaft.
 
-\subsection{Fully electric operation at low load}
+\subsection{Parallel Hybrid Architecture}
 
-\subsection{Hybrid operation in medium loads}
+\begin{itemize}
+	\item Configuración Técnica
+	\item Variaciones
+	\item Escenarios
+	\item Ejemplo de embarcación
+\end{itemize}
 
-\subsection{Optimization of the energy consumption profile}
+In this setup, both the internal combustion engine and an electric machine (motor/generator) are mechanically connected to the propeller shaft, typically via a reduction gearbox with complex clutching arrangements. The electric machine is usually mounted as a PTI (Power Take-In) / PTO (Power Take-Out) unit.
 
-\subsection{Impact on fuel consumption and emissions}
+\begin{itemize}
+	\item \textbf{Mechanical Mode}: The main diesel engine drives the propeller directly. This is used for heavy towing and high-speed transit. The electric machine may freewheel or act as a generator (PTO) to charge batteries.
+	\item \textbf{Electric Mode (Green Mode)}: The main diesel engine is declutched and shut down. The electric motor, powered by the battery or an auxiliary genset, drives the shaft. This is used for loitering (0-6 knots) and "silent" harbor transit.
+	\item \textbf{Boost Mode}: Both the diesel engine and the electric motor provide torque to the shaft simultaneously. This allows the vessel to achieve a total power output greater than the rating of the main engine alone, providing the "peak" power needed for emergency ship assist maneuvers without requiring a larger main engine.   
 
-\section{Case studies and industry evidence}
 
+\end{itemize}
+
+\subsection{Comparation}
+
+The parallel hybrid architecture is currently the dominant configuration for high-bollard-pull tugs because it preserves the mechanical efficiency of the direct drive for peak loads.
+
+
+\section{Power Generation and Energy Storage System}
+
+The hybrid tugboat relies on a triad of power sources: Main Propulsion Engines, Auxiliary Generators, and the Battery Energy Storage System (BESS). The roles of these components have shifted significantly from conventional designs.
+
+\subsection{Main Propulsion Diesel Engines}
+
+Because the electric motor handles low-speed maneuvering and idling, the main engines are only started when high power is actually needed. This dramatically reduces their running hours—often by 50$\%$ or more—extending the time between overhauls (TBO).
+
+The mechanical connection allows the engine to deliver its full rated power to the shaft, supplemented by the electric motor. This allows designers to install slightly smaller main engines (saving weight and cost) while still meeting maximum bollard pull requirements via the battery boost.
+
+\subsection{Auxiliary Diesel Generators}
+
+In a conventional tug, auxiliary generators (gensets) power the lights and galley. In a hybrid tug, they are critical propulsion components. 
+
+They are the primary source of energy, often arranged in banks (e.g., 4 x smaller gensets instead of 2 x large main engines). This allows for granular power management—running only 1 genset for low speed, and 4 for full speed.
+
+They act as range extenders. If the battery is depleted during "Green Mode," the auxiliary genset starts up to power the electric motor (PTI) and recharge the battery, avoiding the startup of the large main engines for low-power tasks.   
+
+\subsection{Battery Bank}
+
+The BESS is the heart of the hybrid system. Its role extends far beyond simple energy storage; it is a dynamic stability tool that fundamentally alters how the diesel engines are operated.
+
+\subsubsection{a) Peak Shaving}
+
+Tugboats experience extreme load transients. When a tug engages a tow line, the load on the propeller can jump from 0$\%$ to 100$\%$ in seconds. A diesel engine struggles to handle this ramp-up rate without thermal stress and incomplete combustion (black smoke). The BESS acts as a capacitor, discharging instantly to meet this spike. This allows the diesel engine to ramp up slowly along its optimal thermal curve. Mechanism: The Energy Management System (EMS) detects a load step. It commands the DC/DC converters on the battery to discharge, supplying the immediate torque demand to the motor. As the diesel engine slowly increases RPM, the battery contribution tapers off. 
+
+\subsubsection{b) Spinning Reverse}
+
+Regulatory bodies and safety guidelines (such as those from DNV and ABS) typically require redundancy during critical maneuvers. Conventionally, this means running a second standby engine even if the load doesn't require it. Mechanism: The BESS serves as a "virtual generator." If the active diesel generator fails, the battery instantaneously picks up the load, preventing a blackout. This capability, recognized by DNV's Battery(Power) notation, allows the operator to keep the standby engine off, saving fuel and engine hours.
+
+\subsubsection{c) Load Levelling (Optimization)}
+Diesel engines are most efficient at high loads (approx. 85$\%$). Mechanism: If the propulsive demand is only 50$\%$, the EMS runs the engine at 85$\%$ load. The excess 35$\%$ is diverted to charge the batteries. Conversely, if the load is 110$\%$, the engine remains at its MCR (100$\%$), and the battery supplies the extra 10$\%$ (Boost Mode). This ensures the engine never operates in the inefficient "wet stacking" zone.
+ 
+
+\section{Grid Distribution}
+
+Traditional ships use 440V or 690V AC grids, but the integration of batteries (DC sources) and variable speed drives (DC internal) makes AC inefficient and cumbersome.
+The architectural shift from Alternating Current (AC) to Direct Current (DC) distribution is the technological enabler of modern hybrid vessels.
+
+\subsection{DC Link}
+
+The industry standard for modern hybrid tugs has coalesced around the 1000V DC grid. This voltage level allows for power distribution up to approximately 20MW, which covers the requirements of even the largest offshore support vessels and tugs.
+
+Distributing power at 1000V DC rather than 690V AC reduces current for the same power transfer, allowing for smaller cable cross-sections. Furthermore, DC does not suffer from the "skin effect" or reactive power losses, allowing for a reduction in cabling mass of up to 40$\%$.
+
+In an AC grid, generators must run at a fixed speed (e.g., 1800 rpm for 60Hz) to maintain frequency, regardless of load. In a DC grid, the engine speed can be decoupled from the grid frequency. The engine can slow down to idle speeds during low load while still producing the required voltage, resulting in fuel savings of up to 20$\%$.
+
+The Onboard DC Grid concept eliminates the need for bulky propulsion transformers and main AC switchboards. This can reduce the total footprint of the electrical equipment by 30$\%$ to 75$\%$, freeing up valuable space in the cramped machinery spaces of a tugboat.
+
+\subsection{AC Link}
+
+FALTA INFO
+
+\subsection{Comparation}
+
+Comparative studies highlight the superiority of DC links in hybrid applications.
+
+\begin{itemize}
+	\item \textbf{Conversion Losses}: n a traditional drive with an AC grid, power flows: Generator (AC) $\to$ Switchboard (AC) $\to$ Rectifier (DC) $\to$ Inverter (AC) $\to$ Motor. With a DC grid, the "Rectifier" stage is centralized or integrated, and batteries connect directly to the DC bus via DC/DC converters. This eliminates multiple conversion steps.
+	\item \textbf{System Efficiency}: Studies indicate a system-level efficiency improvement of 0.5–1$\%$ for DC grids over AC grids purely on conduction losses, but the operational efficiency gains (due to variable speed engines and battery integration) often exceed 20$\%$.
+\end{itemize}
+
+
+\section{Service Maneuvers of a Hybrid Tugboat}
+
+\subsection{Operational Profile}
+
+\subsection{Generated Emissions and Fuel Consumption}
+	
 \subsection{Chapter summary}
