@@ -41,3 +41,9 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - **Dev v3:** Se realiza la primera versión del capítulo 2, relacionado a la descripción y funcionamiento del remolcador. Esta versión es enviada a Marcelo Pérez para su revisión.
 
 - Dev v3.1: Se realizan las correcciones mencionadas en el capítulo 1: "*Introduction*", correcciones mencionadas por Marcelo Pérez. Además, se vectorizan todas las imágenes del capítulo.
+
+- Dev v3.2: Se hacer correcciones a la introducción.
+
+- Dev v3.3: Se crea la estructura del capítulo 3 "*Hybrid Tugboat*".
+
+- Dev v3.4: Se agrega información respecto a los sistemas de potencia integrados y segregados, además de agregar una tabla comparativa de los sistemas de propulsión híbrido y serie

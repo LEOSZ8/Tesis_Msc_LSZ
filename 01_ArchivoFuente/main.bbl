@@ -179,4 +179,13 @@ Shiphandling for Professionals, ``Types of Tugs", [Online]: \hyperlink{https://w
 \bibitem{yachtbuyer}
 Yacht Buyer, ``Horsepower vs Brake Horsepower (hp vs bhp): What’s the Difference?", [Online]: \hyperlink{https://www.yachtbuyer.com/en/advice/horsepower-vs-brake-horsepower-hp-vs-bhp-n-whatrs-the-difference}{https://www.yachtbuyer.com}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter3 %%%%%%%%%%%%%%%%%%%%%
+
+\bibitem{SKSul}
+S. -Y. Kim, S. Choe, S. Ko and S. -K. Sul, "A Naval Integrated Power System with a Battery Energy Storage System: Fuel efficiency, reliability, and quality of power," in IEEE Electrification Magazine, vol. 3, no. 2, pp. 22-33, June 2015.
+
+
+\bibitem{Derman}
+F. Derman, L. Kallryd, ``Development of a flexible control for a simulation model of a hybrid tug propulsion system", Master’s thesis in Naval Architecture and Ocean Engineering, Department of Shipping and Marine Technology, Chalmers University of Technology, Gothenburg, Sweden 2016 
+
 \end{thebibliography}

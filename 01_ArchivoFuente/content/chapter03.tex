@@ -33,6 +33,8 @@ Series hybrids are ideal for "stop-and-go" vessels like city ferries or tugs tha
 	\item Ejemplo de embarcación
 \end{itemize}
 
+In a parallel hybrid layout, both the electric motor and the combustion engine are mechanically connected to the propeller shaft \cite{Derman}.
+
 In this setup, both the internal combustion engine and an electric machine (motor/generator) are mechanically connected to the propeller shaft, typically via a reduction gearbox with complex clutching arrangements. The electric machine is usually mounted as a PTI (Power Take-In) / PTO (Power Take-Out) unit.
 
 \begin{itemize}
@@ -44,6 +46,37 @@ In this setup, both the internal combustion engine and an electric machine (moto
 \end{itemize}
 
 \subsection{Comparation}
+
+\begin{table}[H]
+	\centering
+	\caption{Performances of hybrid propulsion systems \cite{Bennabi}}
+	\label{tab:Series_Parallel_hybrid}
+	\begin{tabular}{|c|p{50mm}|p{50mm}|}
+		\hline      
+		&\textbf{Series}&\textbf{Parallel}\\		
+\hline \hline
+		\textbf{Sizing of elements/costs}& - To be fully efficient, the system must combine several power sources with rated power equal to a fraction of total power. It leads to supplementary costs volumes and weight.
+		
+		- Electric propulsion motors sizing corresponds to the peak power. & The system allows optimizing the sizing of each of the propulsion systems.
+		
+		- Electrical motor sizing is reduced.
+		
+		-Supplementary costs and volume related to complex mechanical system (clutches, gearboxes)\\
+		\hline
+		\textbf{Power and Efficiency}&- The efficiency is limited by the multiplication of systems in series (engine, generator, transformer, converters, motors, etc).
+		
+		- The system allows a precise control and gradual variation of the propeller speed. If several sources are used, combustion engines can be operated at peak efficiency &- Good efficiency related to the reduced numbers of series components (particularly in combustion engine mode).
+		
+		- Precise control and a gradual variation of the propeller speed.
+		
+		-Combustion engine operates at peak efficiency\\
+		\hline
+		\textbf{Redundancy/reliability}&- The system is modular, and offers power sources redundancy. &- Very high level of redundancy since the propulsion power can be provided independently by two independent systems.
+		
+		- Complex mechanical system which can be a cause of failure.\\	
+		\hline \hline
+	\end{tabular}
+\end{table}
 
 The parallel hybrid architecture is currently the dominant configuration for high-bollard-pull tugs because it preserves the mechanical efficiency of the direct drive for peak loads.
 
@@ -110,6 +143,36 @@ Comparative studies highlight the superiority of DC links in hybrid applications
 	\item \textbf{System Efficiency}: Studies indicate a system-level efficiency improvement of 0.5–1$\%$ for DC grids over AC grids purely on conduction losses, but the operational efficiency gains (due to variable speed engines and battery integration) often exceed 20$\%$.
 \end{itemize}
 
+\section{Power Systems Configuration}
+
+The distribution network may or may not be connected to the propulsion system. This results in two different architectures.
+
+\subsection{Segregated Power System}
+
+The segregated power system (SPS) has two separate electrical systems, one dedicated to providing power for ship propulsion and the other reserved for feeding auxiliary loads \cite{Reusser}.\\
+
+Ship propulsion prime movers, reduction gears, long
+shafts, and propellers. The propulsion power supplied from
+the prime movers flows through mechanically connected
+reduction gears and shafts and finally to the propellers. The
+usual prime mover sets consist of diesel engines (DEs) and/
+or gas turbines (GTs) whose configurations vary according
+to the role of the ship and other issues such as cost and
+space. A series of reduction gears appropriately slow down
+the propeller shaft from a relatively high engine shaft while
+transferring propulsion power \cite{SKSul}. 
+The other system is for ship service loads whose power supply comes from the engine-generator sets.\\
+
+As a consequence of this particular arrangement, the generator sets dedicated to each system do not have the ability to interact with other systems since they have their own voltage and frequency. 
+In the SPS, nearly 90$\%$ of the installed power is dedicated to propulsion \cite{Reusser}. However, most of the time, the generators operate below the rated load, increasing emissions. The excess power is not available for the auxiliary loads, hence reducing the power grid flexibility and as well as the availability and redundancy of the propulsion system.
+
+\subsection{Integrated Power System}
+In this architecture, the total power required by the propulsion system and the service loads is supplied by several generators connected to the medium-voltage bus and then distributed to the low-voltage bus through transformers \cite{Reusser}.\\ 
+
+The propulsion motors are fed from power converters, which are connected directly to the main busbar, and the service loads are fed from a low-voltage busbar, using stepdown transformers.\\
+
+The integrated power system (IPS) combines the generation and distribution system into a unified grid, where the generated power is shared between all loads. The greatest advantage of shipboard
+IPS comes from power sharing on the common electrical grid, which improves power flexibility and availability \cite{SKSul}. The IPS also offers the ability to manage the generated and delivered power, optimizing the number of running generator sets, which enhances fuel efficiency and reduces emissions.
 
 \section{Service Maneuvers of a Hybrid Tugboat}
 
