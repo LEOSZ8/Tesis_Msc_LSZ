@@ -46,4 +46,6 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 
 - Dev v3.3: Se crea la estructura del capítulo 3 "*Hybrid Tugboat*".
 
-- Dev v3.4: Se agrega información respecto a los sistemas de potencia integrados y segregados, además de agregar una tabla comparativa de los sistemas de propulsión híbrido y serie
+- Dev v3.4: Se agrega información respecto a los sistemas de potencia integrados y segregados, además de agregar una tabla comparativa de los sistemas de propulsión híbrido y serie.
+
+- Dev v3.5: Se agrega información respecto a los sistemas de propulsión híbrido serie, específicamente sus dos variantes, "*Electric Shaft*" y "*DC-Link*", cada una con y sin opciones de almacenamiento.

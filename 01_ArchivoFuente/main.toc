@@ -77,44 +77,46 @@
 \contentsline {section}{\numberline {3.1}General concepts of marine hybrid systems}{41}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Classification of Hybrid Propulsion Systems}{41}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Series Hybrid Architecture}{41}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Parallel Hybrid Architecture}{42}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparation}{43}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Power Generation and Energy Storage System}{43}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Main Propulsion Diesel Engines}{44}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Auxiliary Diesel Generators}{44}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Battery Bank}{44}{subsection.3.3.3}%
-\contentsline {subsubsection}{a) Peak Shaving}{44}{section*.98}%
-\contentsline {subsubsection}{b) Spinning Reverse}{44}{section*.99}%
-\contentsline {subsubsection}{c) Load Levelling (Optimization)}{45}{section*.100}%
-\contentsline {section}{\numberline {3.4}Grid Distribution}{45}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}DC Link}{45}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}AC Link}{45}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Comparation}{45}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Power Systems Configuration}{46}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Segregated Power System}{46}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Integrated Power System}{46}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Service Maneuvers of a Hybrid Tugboat}{46}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Operational Profile}{46}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Generated Emissions and Fuel Consumption}{46}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Chapter summary}{46}{subsection.3.6.3}%
-\contentsline {chapter}{\numberline {4}Design of the battery bank for a hybrid propulsion system}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design parameters and initial assumptions}{48}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Operational assumptions}{48}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Energy design parameters}{48}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Power design parameters}{48}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Physical and regulatory constraints}{48}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Battery bank sizing}{48}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Calculation of required energy capacity (kWh)}{48}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Calculation of required power (kW)}{48}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{48}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Selection criteria}{48}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Technology analysis}{48}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Economic and life cycle analysis}{48}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}System CAPEX}{48}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}System OPEX}{48}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}ROI / VAN / TIR / Payback}{48}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Comprehensive comparison of alternatives}{48}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Selection of the optimal alternative}{48}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Chapter Summary}{48}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Simulation results}{49}{chapter.5}%
-\contentsline {chapter}{Bibliography}{50}{chapter.5}%
+\contentsline {subsubsection}{a) Electric shaft}{42}{section*.97}%
+\contentsline {subsubsection}{b) DC-Link Topology}{43}{section*.99}%
+\contentsline {subsection}{\numberline {3.2.2}Parallel Hybrid Architecture}{43}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Comparation}{44}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Power Generation and Energy Storage System}{45}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Main Propulsion Diesel Engines}{45}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Auxiliary Diesel Generators}{45}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Battery Bank}{45}{subsection.3.3.3}%
+\contentsline {subsubsection}{a) Peak Shaving}{45}{section*.102}%
+\contentsline {subsubsection}{b) Spinning Reverse}{45}{section*.103}%
+\contentsline {subsubsection}{c) Load Levelling (Optimization)}{46}{section*.104}%
+\contentsline {section}{\numberline {3.4}Grid Distribution}{46}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}DC Link}{46}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}AC Link}{46}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Comparation}{46}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Power Systems Configuration}{47}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Segregated Power System}{47}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Integrated Power System}{47}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Service Maneuvers of a Hybrid Tugboat}{48}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Operational Profile}{48}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Generated Emissions and Fuel Consumption}{48}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Chapter summary}{48}{subsection.3.6.3}%
+\contentsline {chapter}{\numberline {4}Design of the battery bank for a hybrid propulsion system}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design parameters and initial assumptions}{50}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Operational assumptions}{50}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Energy design parameters}{50}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Power design parameters}{50}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Physical and regulatory constraints}{50}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Battery bank sizing}{50}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Calculation of required energy capacity (kWh)}{50}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Calculation of required power (kW)}{50}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{50}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Selection criteria}{50}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Technology analysis}{50}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Economic and life cycle analysis}{50}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}System CAPEX}{50}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}System OPEX}{50}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}ROI / VAN / TIR / Payback}{50}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Comprehensive comparison of alternatives}{50}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Selection of the optimal alternative}{50}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{50}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{51}{chapter.5}%
+\contentsline {chapter}{Bibliography}{52}{chapter.5}%

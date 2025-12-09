@@ -13,16 +13,65 @@ The maritime industry has evolved distinct topological approaches to hybridizati
 
 \subsection{Series Hybrid Architecture}
 
-In a series hybrid configuration, the mechanical link between the internal combustion engine and the propeller shaft is severed completely. The vessel is propelled exclusively by electric motors.
+In a hybrid series configuration, the mechanical connection between the internal combustion engine and the propeller shaft is completely decoupled. The vessel is propelled exclusively by electric motors \cite{VolvoPenta}.
+The main diesel engines function strictly as generator sets (gensets). They produce electrical energy and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors.\\
 
-The main diesel engines function strictly as generator sets (gensets). They produce electrical energy which is rectified (if AC) and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors. The decoupling of engine speed from propeller speed is the primary advantage here. A fixed-pitch propeller’s torque curve is cubic; at low speeds, it requires very little torque. A diesel engine, however, cannot run stable below a certain RPM (typically 600-800 RPM). In a series hybrid, the genset can run at its optimal constant RPM (e.g., 1500 or 1800 RPM) to generate the exact amount of current needed by the motor, or it can shut down while the battery takes over.
+The decoupling of engine speed from propeller speed is the main advantage of this configuration here. A fixed-pitch propeller requires very little torque at low speeds. A diesel engine, however, cannot run stable below a certain RPM (typically 600-800 RPM). In a series hybrid, the genset can run at its optimal constant RPM (e.g., 1500 or 1800 RPM) to generate the exact amount of current needed by the motor, or it can shut down while the battery takes over \cite{Elica}.
 
-\begin{itemize}
-	\item \textbf{Electric Shaft}:  Here, power is transformed by electric machines without intermediate power electronics for the main transmission path, although this is rarer in modern DC-based designs.
-	\item \textbf{DC Link Topology}: This is the modern standard. Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors. This topology allows for independent control of multiple propulsors without variable pitch mechanisms and integrates energy storage seamlessly
-\end{itemize}
+\subsubsection{a) Electric shaft}
 
-Series hybrids are ideal for "stop-and-go" vessels like city ferries or tugs that operate predominantly at low speeds. The battery bank in a series hybrid is often larger to buffer the high power demands of the electric motors. However, at full continuous speed, series hybrids suffer from "round-trip efficiency losses." converting mechanical energy to electrical and back to mechanical incurs a penalty of approximately 5-10$\%$ compared to a direct mechanical shaft.
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter03/Series1.png}
+    	\caption{Electric shaft system.}
+    	\label{fig:Series1}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter03/Series2.png}
+    	\caption{Electric shaft with electric energy storage.}
+    	\label{fig:Series2}
+    \end{subfigure}    
+    \caption{Electric Shaft configuration system.}
+    \label{fig:Series_ESh}
+\end{figure}
+
+The generator transforms the mechanical power of the combustion engine to electrical power. The electric motor on the right transforms the electric power back to mechanical power which is then supplied to the propulsor, as is shown in figure \ref{fig:Series1}. This system is called “electric shaft”, as there is no control input to manipulate the power transmission \cite{Elica}.\\
+
+The generator design, the rotational speed and the power of the combustion engine determine the voltage, current and the frequency in the AC transmission system. The electric motor configuration determines the rotational speed and the mechanic power. Since the design of electric machines is not considered to be modifiable during operation, there is constant transmission. This works not only for ship propellers, but also for aircraft propellers \cite{Elica}.\\
+
+The advantages offered by the two electric machines are the simplicity of connecting multiple motors and generators to the AC transmission system, as well as the practicality of making connections via cables rather than rigid shafts. The drawback of this system is the holding torque limit (cogging torque) of electric machines in such a configuration. When the transmitted torque exceeds the holding torque of synchronous machines, the machine becomes desynchronized, resulting in loss of power transmission and excessive mechanical forces \cite{Elica}.\\
+
+
+The electric shaft system can also be extended with an electric energy storage, to provide additional power during short mission segments, as is shown in figure \ref{fig:Series2}.
+
+With an electric energy storage, the combustion engine can be downscaled to increase its efficiency and to reduce its weight. When an energy storage is utilised, it can be used to compensate the reactive power in the AC transmission system. Moreover, the power electronics of the energy storage would allow to remove the holding torque limit of the electric machines. This allows to reduce the size of both, electric machines and the cables. However, the system could not operate at rated power without reactive power compensation, which means that a failure in the electrical system would result in a decrease in propulsion power \ref{fig:Series2}.
+
+\subsubsection{b) DC-Link Topology}
+
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter03/Series3.png}
+    	\caption{Turboelectric propulsion system.}
+    	\label{fig:Series3}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter03/Series4.png}
+    	\caption{Serial hybrid propulsion system.}
+    	\label{fig:Series4}
+    \end{subfigure}    
+    \caption{DC Link Topology.}
+    \label{fig:Series_DCL}
+\end{figure}
+
+This is the modern standard. Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors, as is shown in figure \ref{fig:Series3}. This topology allows independent control of multiple propellers without variable pitch mechanisms, as well as enabling the integration of energy storage \cite{Elica}.
+
+The insertion of power converters allows the internal combustion engine and the propeller to operate at almost independent rotational speeds. In this way, multiple fixed-pitch rotors can be controlled independently of each other.\\ 
+
+Series hybrids are ideal for "stop-and-go" vessels like city ferries or tugs that operate predominantly at low speeds. The battery bank in a series hybrid is often larger to buffer the high power demands of the electric motors. However, at full continuous speed, series hybrids suffer efficiency losses due to multiple conversion stages (including rectifier, inverter, electric motor, and propeller), which results in an efficiency reduction of approximately 10$\%$ to 15$\%$ compared to a direct mechanical shaft \cite{Elica}.
 
 \subsection{Parallel Hybrid Architecture}
 

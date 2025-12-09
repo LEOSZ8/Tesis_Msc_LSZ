@@ -186,6 +186,12 @@ S. -Y. Kim, S. Choe, S. Ko and S. -K. Sul, "A Naval Integrated Power System with
 
 
 \bibitem{Derman}
-F. Derman, L. Kallryd, ``Development of a flexible control for a simulation model of a hybrid tug propulsion system", Master’s thesis in Naval Architecture and Ocean Engineering, Department of Shipping and Marine Technology, Chalmers University of Technology, Gothenburg, Sweden 2016 
+F. Derman, L. Kallryd, ``Development of a flexible control for a simulation model of a hybrid tug propulsion system", Master’s thesis in Naval Architecture and Ocean Engineering, Department of Shipping and Marine Technology, Chalmers University of Technology, Gothenburg, Sweden 2016.
+
+\bibitem{Elica}
+G. Wortmann, Q. Zhang, ``ELectric Innovative Commuter Aircraft (ELICA) - Hybrid Electric Propulsion Architecture Report", Rolls-Royce Electrical Deutschland, March 2020.
+
+\bibitem{VolvoPenta}
+Volvo Penta, `Serial or parallel hybrid marine propulsion?", [Online]: \hyperlink{https://www.volvopenta.com/en-us/about-us/news-page/2021/may/serial-or-parallel-hybrid-marine-propulsion-how-do-they-work/}{https://www.volvopenta.com}
 
 \end{thebibliography}
