@@ -13,7 +13,7 @@ The maritime industry has evolved distinct topological approaches to hybridizati
 
 \subsection{Series Hybrid Architecture}
 
-In a hybrid series configuration, the mechanical connection between the internal combustion engine and the propeller shaft is completely decoupled. The vessel is propelled exclusively by electric motors \cite{VolvoPenta}.
+In a hybrid series configuration, the mechanical connection between the internal combustion engine and the propeller shaft is completely decoupled, as is shown in \ref{fig:SH}. The vessel is propelled exclusively by electric motors \cite{VolvoPenta}.
 The main diesel engines function strictly as generator sets (gensets). They produce electrical energy and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors.\\
 
 The decoupling of engine speed from propeller speed is the main advantage of this configuration here. A fixed-pitch propeller requires very little torque at low speeds. A diesel engine, however, cannot run stable below a certain RPM (typically 600-800 RPM). In a series hybrid, the genset can run at its optimal constant RPM (e.g., 1500 or 1800 RPM) to generate the exact amount of current needed by the motor, or it can shut down while the battery takes over \cite{Elica}.
@@ -75,21 +75,49 @@ Series hybrids are ideal for "stop-and-go" vessels like city ferries or tugs tha
 
 \subsection{Parallel Hybrid Architecture}
 
-\begin{itemize}
-	\item Configuración Técnica
-	\item Variaciones
-	\item Escenarios
-	\item Ejemplo de embarcación
-\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/chapter03/Parallel1.png}
+    \caption{Parallel hybrid propulsion system.}
+    \label{fig:Parallel_Hybrid}
+\end{figure}
 
 In a parallel hybrid layout, both the electric motor and the combustion engine are mechanically connected to the propeller shaft \cite{Derman}.
 
-In this setup, both the internal combustion engine and an electric machine (motor/generator) are mechanically connected to the propeller shaft, typically via a reduction gearbox with complex clutching arrangements. The electric machine is usually mounted as a PTI (Power Take-In) / PTO (Power Take-Out) unit.
+In this setup, both the combustion engine and an electric machine (motor/generator) are mechanically connected to the propeller shaft, typically via a reduction gearbox with complex clutching arrangements, as is shown in \ref{fig:PH}. 
+
+In this case, as is shown in figure \ref{fig:Parallel_Hybrid}, the electric energy storage is implemented as a battery, but it could be any electric energy storage or a fuel cell. The idea of adding an electric energy storage is its buffering capability. The storage can supply additional power during short time mission segments. The battery power is supplied to an inverter, which drives an electric motor. The mechanical power of the motor is supplied to the propulsor shaft. Hence, the ICE can be downscaled to an average continuous load and the peak loads are covered by the additional power from the electric energy storage.\\
+
+When the power electronics are designed accordingly, the energy flow can be bidirectional. Hence, the battery can be charged when the system is operative by absorbing mechanical power from the ICE. This is done during mission segments, where the propulsor does not require much power.
+
+The following are the operating modes that can be found in the parallel hybrid configuration:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter03/PTO.png}
+    \caption{Energy flow in PTO mode.}
+    \label{fig:PTO}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter03/PTI.png}
+    \caption{Energy flow in PTI mode.}
+    \label{fig:PTI}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/chapter03/PTH.png}
+    \caption{Energy flow in PTH mode.}
+    \label{fig:PTH}
+\end{figure}
 
 \begin{itemize}
-	\item \textbf{Mechanical Mode}: The main diesel engine drives the propeller directly. This is used for heavy towing and high-speed transit. The electric machine may freewheel or act as a generator (PTO) to charge batteries.
-	\item \textbf{Electric Mode (Green Mode)}: The main diesel engine is declutched and shut down. The electric motor, powered by the battery or an auxiliary genset, drives the shaft. This is used for loitering (0-6 knots) and "silent" harbor transit.
-	\item \textbf{Boost Mode}: Both the diesel engine and the electric motor provide torque to the shaft simultaneously. This allows the vessel to achieve a total power output greater than the rating of the main engine alone, providing the "peak" power needed for emergency ship assist maneuvers without requiring a larger main engine.   
+	\item \textbf{Mechanical Mode (PTO)}: The main diesel engine drives the propeller directly. This is used for heavy towing and high-speed transit. The electric machine may freewheel or act as a generator to charge batteries, mode called Power Take Off (PTO) \cite{Bas}. This is shown in figure \ref{fig:PTO}.
+	\item \textbf{Boost Mode (PTI)}: Both the diesel engine and the electric motor provide torque to the shaft simultaneously through the gearbox to the propeller \cite{Bas}. This allows the vessel to achieve a total power output greater than the rating of the main engine alone, providing the "peak" power needed for emergency ship assist maneuvers without requiring a larger main engine. This mode is also called Power Take In (PTI) and is shown in figure \ref{fig:PTI}.
+	\item \textbf{Electric Mode (PTH)}: The main diesel engine is declutched from the gearbox and shut down. The electric motor, powered by the battery or an auxiliary genset, drives the shaft. This is used for loitering (0-6 knots) and "silent" harbor transit. The other applicaction is an alternative propulsion capability. When the main engines fail for whatever reason, the ship is still capable of sailing on a slower speed using the electric motor. This mode is also called Power Take Home (PTH) and is shown in figure \ref{fig:PTH}.
+	   
 
 
 \end{itemize}
