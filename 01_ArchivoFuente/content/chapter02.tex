@@ -1,33 +1,29 @@
 \chapter{Tugboats: Description and Operation}
 
-A tug, or more commonly a tugboat, is an assistance boat which helps in the mooring or berthing operation of a ship by either towing or pushing a vessel towards the port \cite{SAAM} \cite{MarineInsight}.
-
-Tugboats are also essential for non-self-propelled barges, oil platforms, log rafts, etc. Due to their solid structural engineering, tugs are small but relatively powerful machines.\\
-
-This chapter presents the technical and operational characteristics of tugboats, with the aim of illustrating a real service profile of a tugboat in Chile and identifying its different technical and operational aspects relevant to hybridization.
+Tugboats are small but powerful vessels designed to assist in docking ships or moving structures without their own propulsion. Due to their robust engineering and high power, this chapter analyzes their technical and operational characteristics based on a real service profile in Chile, in order to identify the key aspects necessary for their hybridization.
 % Breve descripción de qué se abordará y por qué es relevante.
 
-\section{Overview of tugboats}
+\section{Overview}
 % Definir el tipo de embarcación con la que se está trabajando. Contextualizar qué tipo exacto de remolcador se está modelando
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=1\textwidth]{images/chapter02/Remolcador.png}
-    \caption{Harbour tug representation.}
+    \caption{Harbour Tug.}
     \label{fig:Tug1}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=0.7\textwidth]{images/chapter02/Remolcador2.png}
-    \caption{Escort Tug representation.}
+    \includegraphics[width=0.7\textwidth]{images/chapter02/Remolcador2.jpg}
+    \caption{Escort Tug.}
     \label{fig:Tug2}
     \end{subfigure}    
-    \caption{Tugs representations.}
+    \caption{Different types of tugboats.}
     \label{fig:Tugs}
 \end{figure}
 
 A tugboat is technically defined as a type of vessel specifically designed to assist other ships in moving by providing a controlled amount of force. They are essential vessels in ports, as is shown in fig. \ref{fig:Tugs}, where they assist in the movement of floating objects and in emergency tasks \cite{INEAL}.
 
-In maritime law, maritime towing is defined as the operation whereby a vessel (the tugboat) transports another vessel or floating device that lacks self-propulsion or, despite having it, is unable to navigate under its own power, by pulling it through the sea. This functional duality—which encompasses both high-precision maneuvering assistance in congested environments (port towing) and long-distance transport and salvage (offshore towing)—requires design engineering and system redundancy adapted to very different operational risks \cite{Bruce}.
+In maritime law, maritime towing is defined as the operation whereby a vessel transports another vessel or floating device that lacks self-propulsion or, despite having it, is unable to navigate under its own power, by pulling it through the sea. This functional duality—which encompasses both high-precision maneuvering assistance in congested environments (port towing) and long-distance transport and salvage (offshore towing)—requires design engineering and system redundancy adapted to very different operational risks \cite{Bruce}.
 
 The importance of tugboats has grown exponentially with the phenomenon of naval gigantism \cite{Murimar}. Large modern ships, such as cruise ships and oil tankers, have tremendous momentum (inertia) that prevents them from stopping quickly or maneuvering effectively on their own in narrow channels or docks \cite{ESC_Group}.   
 
@@ -52,7 +48,7 @@ The classification of tugboats is primarily based on their operational domain an
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.3]{images/chapter02/Harbour_Tug.png}
+    \includegraphics[scale=0.3]{images/chapter02/Harbour_Tug.jpg}
     \caption{A harbour tug in the port of Algeciras \cite{Algeciras}.}
     \label{fig:HarbourTug}
 \end{figure}
@@ -85,7 +81,7 @@ An offshore or \textit{search and rescue} (SAR) Tug, is designed to operate in t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.49]{images/chapter02/Escort_Tug.png}
+    \includegraphics[scale=0.3]{images/chapter02/Escort_Tug.jpg}
     \caption{Robert Allan Rastar 3200 Escort Tug \cite{RobertAllan}.}
     \label{fig:EscortTug}
 \end{figure}
@@ -118,7 +114,7 @@ Below, in the table \ref{tab:Tugs}, there is a summary of key operational and di
 \end{table}
 
 
-\section{Tugboat Sizing Characteristics}
+%\section{Tugboat Sizing Characteristics}
 
 \subsection{Dimensions}
 
@@ -131,7 +127,7 @@ Below, in the table \ref{tab:Tugs}, there is a summary of key operational and di
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
-    	\includegraphics[width=0.8\textwidth]{images/chapter02/Beam.pdf}
+    	\includegraphics[width=0.8\textwidth]{images/chapter02/Beam.jpg}
     	\caption{Beam Tug}
     	\label{fig:BeamTug}
     \end{subfigure}
@@ -147,7 +143,7 @@ Below, in the table \ref{tab:Tugs}, there is a summary of key operational and di
     	\caption{Depth Tug}
     	\label{fig:DepthTug}
     \end{subfigure}
-    \caption{Tugboat Dimensions}
+    \caption{Physical dimensions of the tugboat.}
 \end{figure}
 
 \subsubsection{a) Length Overall}
@@ -183,7 +179,7 @@ Depth or molded depth of a vessel is measured at the center of the length, from 
     	\caption{Net Tonnage Tug}
     	\label{fig:NetTonnageTug}
     \end{subfigure}
-    \caption{Tug Volume.}
+    \caption{Total volume and available volume inside the tugboat.}
 \end{figure}
 
 
@@ -216,12 +212,14 @@ Displacement tonnage is used to define the size of naval ships. It refers to the
 
 % Explicar las características mecánicas y eléctricas que determinan cómo debe diseñarse el sistema híbrido.
 
+To understand the work of a tugboat as a maritime unit, it is essential to analyze both its essential operational characteristics and the elements of its propulsion system that enable it to function.
+
 \subsection{Bollard Pull - BP}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1]{images/chapter02/Bollard_pull.png}
-    \caption{The bollard pull test measures a boat's maximum towing capacity by securing it to a fixed point and measuring the force generated at full thrust while maintaining zero forward speed \cite{ESC_Group}.}
+    \caption{The bollard pull test to measure a vessel's maximum towing capacity \cite{ESC_Group}.}
     \label{fig:BollardPullTug}
 \end{figure}
 
@@ -310,7 +308,7 @@ Table \ref{tab:Prop_Comp} compares the different types of propulsion discussed i
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/chapter02/3516B.png}
+    \includegraphics[width=0.5\textwidth]{images/chapter02/3516B.jpg}
     \caption{Main diesel engine for a tugboat propulsion system.}
     \label{fig:MainEngine}
 \end{figure}
@@ -460,13 +458,16 @@ In this procedure, the tugboat is positioned alongside the ship and roughly para
 
 
 \section{Service Maneuvers of a Tugboat}
+\label{sec:Tugboat}
 %Aquí se describe cómo opera el remolcador durante un día típico o misión.
+
+The following is a description of the actual work performed by a tugboat in Chilean ports, including its history, technical characteristics, and finally, its performance during service.
 
 \subsection{Operational Profile}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.75]{images/chapter02/Path.png}
+    \includegraphics[scale=0.75]{images/chapter02/Path.jpg}
     \caption{TUG route to the Puerto Montt's pier.}
     \label{fig:Route_Tug}
 \end{figure}
@@ -552,15 +553,15 @@ Based on the route to be analyzed and the maneuvers that the tugboat must perfor
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver.pdf}
-    \caption{Operational profile: One maneuver.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/1Maneuver.pdf}
+    \caption{Operational profile of a conventional tugboat: one maneuver.}
     \label{fig:1M}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers.pdf}
-    \caption{Operational profile: Two maneuvers.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/2Maneuvers.pdf}
+    \caption{Operational profile of a conventional tugboat: two maneuvers.}
     \label{fig:2M}
 \end{figure}
 
@@ -590,15 +591,15 @@ With the information provided by the engine in Figure \ref{fig:BSFC}, it is then
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver_RelEff.pdf}
-    \caption{Operational profile: one maneuver.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/1Maneuver_RelEff.pdf}
+    \caption{Relative efficiency of a convencitonal tugboat: one maneuver.}
     \label{fig:1M_releff}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers_RelEff.pdf}
-    \caption{Operational profile: two maneuvers.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/2Maneuvers_RelEff.pdf}
+    \caption{Relative efficiency of a convencitonal tugboat: two maneuvers.}
     \label{fig:2M_releff}
 \end{figure}
 
@@ -620,24 +621,25 @@ With equation \eqref{eq:emiss}, you can find out the amount of emissions produce
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/1Maneuver_Emiss.pdf}
-    \caption{Operational profile: one maneuver, fuel consumption and emissions.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/1Maneuver_Emiss.pdf}
+    \caption{Fuel consumption and emissions with respect to the tugboat's operating profile during a maneuver.}
     \label{fig:1M_emiss}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter02/2Maneuvers_Emiss.pdf}
-    \caption{Operational profile: two maneuvers, fuel consumption and emissions.}
+    \includegraphics[width=0.8\textwidth]{images/chapter02/2Maneuvers_Emiss.pdf}
+    \caption{Fuel consumption and emissions with respect to the tugboat's operating profile in two maneuvers.}
     \label{fig:2M_emiss}
 \end{figure}
 
+Based on the information obtained in Figures \ref{fig:1M_emiss} and \ref{fig:2M_emiss}, it is possible to determine the fuel consumption of a conventional tugboat during a day of service for one and two maneuvers, identifying the daily consumption levels at low, medium, and high power.
 
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{images/chapter02/Stack_1M2M.pdf}
+    \includegraphics[width=0.8\linewidth]{images/chapter02/Stack_1M2M.pdf}
     \caption{Percentage of emissions per day based on power ranges.}
     \label{fig:emmis}
 \end{figure}
@@ -646,8 +648,8 @@ With equation \eqref{eq:emiss}, you can find out the amount of emissions produce
 Fig. \ref{fig:emmis} shows the accumulated fuel consumption and CO\textsubscript{2} emissions generated for one and two maneuvers. Each service operation is divided into three segments:
 
 \begin{itemize}
-	\item The lower segments correspond to propulsion system power levels with a relative efficiency below $90\%$ (180kW - 1270kW).
-	\item The middle segments correspond to relative efficiencies ranging from $90\%$ to $98\%$ (1270kW - 2000kW).
+	\item The lower segments correspond to propulsion system power levels with a relative efficiency below $90\%$ (0kW - 1000kW).
+	\item The middle segments correspond to relative efficiencies ranging from $90\%$ to $98\%$ (1000kW - 2000kW).
 	\item The upper segments represent power levels with the highest relative efficiency, ranging from $98\%$ to $99.8\%$ (2000kW - 3650kW). 
 \end{itemize}
 

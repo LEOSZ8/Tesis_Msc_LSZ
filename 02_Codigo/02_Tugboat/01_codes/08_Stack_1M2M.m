@@ -3,12 +3,12 @@ clear
 clc
 
 
-Percent_fuel1_emiss1= [38,45,17];
-Percent_fuel2_emiss2= [11,51,38];
+Percent_fuel1_emiss1= [39,44,17];
+Percent_fuel2_emiss2= [19,31,50];
 p=[Percent_fuel1_emiss1;Percent_fuel2_emiss2];
 
-yya=({'\bf  180kW - 1270kW \newline\newline             38%','\bf 1270kW - 2000kW \newline\newline\newline               45%','\bf  2000kW - 3650kW \newline               17%'});
-yyb=({'\bf 180kW - 1270kW \newline             11%','\bf 1270kW - 2000kW \newline\newline\newline               51%','\bf 2000kW - 3650kW \newline\newline\newline               38%'});
+yya=({'\bf  0kW - 1000kW \newline\newline             39%','\bf 1000kW - 2000kW \newline\newline\newline               44%','\bf  2000kW - 3650kW \newline               17%'});
+yyb=({'\bf 0kW - 1000kW \newline            19%','\bf 1000kW - 2000kW \newline\newline\newline               31%','\bf 2000kW - 3650kW \newline\newline\newline               50%'});
 labels1_1=yya(1,1);
 labels1_2=yya(1,2);
 labels1_3=yya(1,3);

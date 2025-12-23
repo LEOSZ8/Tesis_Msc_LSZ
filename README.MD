@@ -51,3 +51,5 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v3.5: Se agrega información respecto a los sistemas de propulsión híbrido serie, específicamente sus dos variantes, "*Electric Shaft*" y "*DC-Link*", cada una con y sin opciones de almacenamiento.
 
 - Dev v3.6: Se agrega información respecto a los sistemas de propulsión híbrido en paralelo, específicamente sus modos de oepración: PTI, PTO y PTH.
+
+- **Dev v4:** Se realiza la primera versión del capítulo 3, relacionado a la descripción y funcionamiento del remolcador híbrido y las mejoras comparadas con el remolcador convencional. Esta versión es enviada a Marcelo Pérez para su revisión.
