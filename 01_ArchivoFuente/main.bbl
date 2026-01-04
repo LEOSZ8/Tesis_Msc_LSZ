@@ -221,7 +221,13 @@ V. Jayaram, M. Yusuf Khan, J. Wayne Miller, W. A Welch, K. Johnson, D. R Cocker,
 \bibitem{DAMEN}
 DAMEN,``DAMEN ASD TUG 2810", datasheet, 2014.
 
+%%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\bibitem{Valence}
+Valence, ``Hybrid Tugboats Case Study". [Online]: \hyperlink{https://www.lithionbattery.com/news/hybrid-tugboats-case-study}{https://www.lithionbattery.com}
+
+\bibitem{x-engineer}
+Valence, ``Hybrid Tugboats Case Study". [Online]: \hyperlink{https://x-engineer.org/ev-design-battery-calculation/}{https://x-engineer.org}
 
 
 \end{thebibliography}

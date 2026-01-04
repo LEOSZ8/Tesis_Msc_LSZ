@@ -4,7 +4,7 @@ clear
 P_engine_prime=1825;
 
 
-Info=open("Info_30min_HybProp_1m.mat");
+Info=open("Info_30min_HybProp_1m_015.mat");
 
 T=Info.Info_30min(:,1);
 emm1=Info.Info_30min(:,4);

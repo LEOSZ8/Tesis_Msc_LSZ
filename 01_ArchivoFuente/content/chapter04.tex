@@ -2,27 +2,873 @@
 
 This chapter presents the preliminary design process for the battery bank required for the tugboat's hybrid propulsion system. The energy capacity, power requirements, and operating constraints are determined, and then different storage technologies are evaluated from a technical and economic perspective.
 
-\section{Design parameters and initial assumptions}
+%\section{Design parameters and initial assumptions}
 
-\subsection{Operational assumptions}
+%\subsection{Operational assumptions}
 
-\subsection{Energy design parameters}
+%\subsection{Energy design parameters}
 
-\subsection{Power design parameters}
+%\subsection{Power design parameters}
 
-\subsection{Physical and regulatory constraints}
+%\subsection{Physical and regulatory constraints}
 
-\section{Battery bank sizing}
+%\section{Battery bank sizing}
 
-\subsection{Calculation of required energy capacity (kWh)}
+\section{Energy Capacity (kWh)}
+The fundamental energy requirement, denoted as $E_{load}$ (or $E_{used}$), is calculated by integrating the power demand over the duration of the design mission.
 
-\subsection{Calculation of required power (kW)}
+$$E_{load} = \int_{0}^{t} (P_{propulsion}(t) + P_{hotel}(t)) \,dt$$
+
+For discrete phases, this summation becomes:
+
+$$E_{load} = \sum_{i=1}^{n} P_i \times t_i$$
+
+Where:
+
+\begin{itemize}
+	\item $P_i$ is the total electrical load at the DC bus (propulsion + auxiliary + hotel) in kilowatts (kW) for phase $i$.
+	\item $t_i$ is the duration of phase $i$ in hours.
+\end{itemize}
+
+This value, $E_{load}$, represents the energy that must be delivered to the propellers. However, calculating the installed battery capacity ($E_{installed}$) requires expanding this value to account for the physical and chemical realities of the energy storage system. This transformation is achieved through the application of specific sizing factors.
+
+\subsubsection{a) System Efficiency Factor ($\eta_{sys}$)}
+
+Energy stored in the electrochemical cells must traverse a complex electrical path to reach the propulsion motor. Each component in this chain extracts an efficiency penalty (heat loss).
+
+\begin{enumerate}
+	\item \textbf{Coulombic/Voltaic Efficiency} ($\eta_{bat}$): Li-ion batteries are highly efficient, but internal resistance ($R_{int}$) causes $I^2R$ losses during discharge. Typical round-trip efficiency is $92-96\%$; discharge efficiency is generally taken as $0.96$ to $0.98$.
+	\item \textbf{DC/DC Converters} $\eta_{conv}$:  Many hybrid architectures utilize DC/DC converters to decouple the battery voltage from the main DC bus voltage. These typically operate at $0.97$ to $0.98$ efficiency.
+	\item \textbf{Variable Frequency Drives (VFD)} $\eta_{vfd}$: This inverters for electric motors  converting DC bus power to AC for the motors operate at $0.96$ to $0.98$ efficiency.
+	\item \textbf{Electric Motor} $\eta_{motor}$: Permanent Magnet (PM) machines are preferred for hybrid tugs due to their high efficiency at partial loads compared to induction motors. PM motor efficiency is typically $0.95$ to $0.97$.
+\end{enumerate}
+
+To size the battery based on shaft power demand, the cumulative efficiency is:
+
+$$\eta_{sys} = \eta_{bat} \times \eta_{conv} \times \eta_{vfd} \times \eta_{motor}$$
+
+$$\eta_{sys} \approx 0.96 \times 0.97 \times 0.97 \times 0.96 \approx 0.86$$
+
+\subsubsection{b) Maximum Depth of Discharge ($DOD_{max}$) and Reserve Margins}
+
+The Depth of Discharge (DOD) is the percentage of the battery's capacity that has been discharged relative to its total capacity. While Li-ion chemistries can be discharged to $100\%$ ($0\%$ SOC), doing so drastically reduces cycle life and increases the risk of cell degradation.
+
+\begin{itemize}
+	\item  \textbf{Cycle Life Correlation}: The relationship between DOD and cycle life is non-linear. An NMC cell might offer 2,000 cycles at $100\%$ DOD but 5,000 cycles at $80\%$ DOD.
+	\item \textbf{Operational Reserve}: Marine safety standards often dictate a "reserve energy" capability. For a tugboat, this might mean retaining enough energy after a standard operation to perform emergency maneuvering or firefighting for a specified duration.
+	\item \textbf{Voltage Sag}: At very low SOC (< $10\%$), the cell voltage drops rapidly. To maintain the required bus voltage and power delivery ($P = V \cdot I$), the current must increase, leading to higher thermal stress.
+\end{itemize}
+
+Standard marine practice utilizes a Maximum DOD of $80\%$. This implies the battery operates between $10\%$ and $90\%$ SOC.
+
+$$Factor = \frac{1}{DOD_{max}} = \frac{1}{0.80} = 1.25$$
+
+This effectively increases the installed capacity by $25\%$ relative to the usable energy required. Some aggressive designs may push this to $90\%$ DOD, while conservative designs for deep-sea vessels might limit it to $70\%$.
+
+\subsubsection{c) Battery Aging Factor ($k_{aging}$)}
+
+Batteries degrade over time due to two primary mechanisms:
+
+\begin{enumerate}
+	\item \textbf{Calendar Aging:} Loss of capacity due to chemical decomposition of the electrolyte and SEI (Solid Electrolyte Interphase) layer growth, occurring even when the battery is idle. This is temperature and SOC dependent.
+	\item \textbf{Cyclic Aging:} Mechanical stress on the electrode materials during ion insertion/extraction, leading to cracking and active material loss. This is driven by throughput (Ah) and C-rates.
+\end{enumerate}
+
+\textbf{End of Life (EOL) Definition}: In the maritime industry, a battery system is considered to have reached its End of Life (EOL) when its capacity fades to $80\%$ of its original nominal capacity (Beginning of Life, BOL). The vessel must be capable of performing its design mission on the last day of the battery's life (e.g., Year 10). Therefore, the battery must be oversized at installation so that the faded capacity still meets the requirement.
+
+$$k_{aging} = \frac{1}{SOH_{EOL}} - 1$$
+
+For a standard $80\%$ EOL criterion:
+
+$$Multiplier = \frac{1}{0.80} = 1.25$$
+
+This introduces a $25\%$ oversizing factor. This is a significant driver of cost and weight but is non-negotiable for warranty and operational assurance. Recent studies on LFP suggest that "Second Life" applications may allow EOL definitions to be pushed to $70\%$ or $60\%$, but for primary propulsion safety, $80\%$ remains the standard sizing baseline.
+
+\subsubsection{d) Temperature Correction Factor ($k_{temp}$)}
+
+Battery performance is inextricably linked to temperature. The standard rating is typically given at 25°C.
+
+\begin{itemize}
+	\item \textbf{Low Temperature Effects}: At temperatures below 15°C, the viscosity of the electrolyte increases, and ion mobility decreases. This manifests as increased internal resistance. At 0°C, a Li-ion battery may only be able to deliver $80\%$ to $90\%$ of its rated capacity, and its ability to accept charge (regenerative braking) is severely curtailed to prevent lithium plating.
+	\item \textbf{High Temperature Effects}: Operating above 35-40°C accelerates the chemical side reactions that drive aging. While capacity might initially increase slightly due to lower resistance, the long-term penalty is severe lifespan reduction.
+\end{itemize}
+
+Tugboat battery rooms are invariably climate-controlled (Liquid Cooling + HVAC) to maintain an optimal window of 20°C–25°C. However, the sizing must account for:
+
+\begin{itemize}
+	\item \textbf{HVAC Failure Scenarios}: The ability to operate (perhaps at reduced power) if cooling is compromised.
+	\item \textbf{Cold Starts}: If the vessel has been "cold iron" in winter, the battery may need to operate at suboptimal temperatures before self-heating occurs.
+\end{itemize}
+
+A conservative Temperature Correction Factor of $1.05$ to $1.10$ ($5-10\%$ oversizing) is applied. This ensures that the rated energy is available even if the ambient conditions in the battery room deviate from the ISO standard day.
+
+\subsubsection{e) Capacity Rating Factor and Peukert Efficiency ($k_{c-rate}$)}
+
+Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery decreases as the discharge rate increases. For lead-acid batteries, this effect is massive ($k \approx 1.25$). For Lithium-ion batteries, the effect is minimal, with $k$ values typically between 1.01 and 1.05.
+
+However, for hybrid tugs performing peak shaving, discharge rates can be extreme (up to 3C or 4C). At these rates, voltage sag due to internal impedance becomes significant. The battery may hit its low-voltage cutoff ($V_{min}$) before the theoretical energetic capacity (kWh) is fully extracted. This "apparent" capacity loss at high power must be accounted for:
+
+\begin{itemize}
+	\item \textbf{Low Power Applications}: For hotel loads ($< 0.5C$), the factor is negligible (~1.0).
+	\item \textbf{High Power Applications}: For propulsion boost ($> 2C$), a derating factor is prudent. Recommendation: A Capacity Rating Factor of $0.90$ to $0.95$ is used for high-power operational profiles to account for voltage sag and ohmic losses at high currents.
+\end{itemize}
+
+\subsection{Battery Sizing}
+
+Based on the factors described previously, the calculations used to obtain the total installed energy ${E}_{installed}$ are presented:
+
+\begin{enumerate}
+	\item \textbf{Total Load}: This corresponds to adding the energy from the load profile ${E}_{prof}$ to the energy used for hotel loads ${E}_{hotel}$ $${E}_{load}={E}_{prof}+{E}_{hotel}$$
+	\item \textbf{System Efficiency}: To supply power to the mechanical shafts, the battery must generate $${E}_{batt{\_}out}={E}_{load}/{\eta}_{sys}$$
+	\item \textbf{Max DOD}: Ensure that the battery is only used to the appropriate depth of discharge relative to its initial nominal capacity (beginning of life, BOL).  To do this, calculate $${E}_{BOL}={E}_{batt{\_}out}/{DOD}_{max}$$
+	\item \textbf{Aging Factor}:To ensure that the battery bank has a long service life, the aging factor must be taken into account  $${E}_{EOL}={E}_{BOL}/{k}_{aging}$$
+	\item \textbf{Apply Temperature/Rating Factors}: consider the variation in temperature and battery discharge rate through $${E}_{installed}={E}_{EOL}\cdot{k}_{temp}\cdot{k}_{c-rate}$$
+\end{enumerate}
+
+The following equation is presented to obtain the total installed capacity based on the factors explained above.
+
+\begin{equation}\label{eq:Energy_Batt}
+	{E}_{installed}= \frac{{E}_{load}\cdot{k}_{temp}\cdot{k}_{c-rate}}{{DOD}_{max}\cdot{k}_{aging}\cdot{\eta}_{sys}}
+\end{equation}
+
+Based on equation \eqref{eq:Energy_Batt}, the factors used for sizing both battery banks proposed for hybridization are presented.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Energy Factors}
+	\label{tab:Energy_factors}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Energy Factors}} \\
+		\hline\hline
+		${\eta}_{sys}$ & $0.88$    \\	
+		\hline
+		${DOD}_{max}$ & $0.8$    \\
+		\hline  
+		${k}_{aging}$ & $0.8$    \\		
+		\hline		
+		${k}_{temp}$ & $1.05$    \\
+		\hline
+		${k}_{c-rate}$ & $1.02$    \\ 
+		\hline
+	\end{tabular}
+	\end{table} 
+
+Based on the information shown in Figures \ref{fig:1M_HybTug_releff_015}, \ref{fig:2M_HybTug_releff_015}, \ref{fig:1M_HybTug_releff_025} and \ref{fig:2M_HybTug_releff_025}, it can be seen that one maneuver demands the most power from the battery bank in both scenarios. Thus, the total installed power for the two different battery bank options can be calculated. This can be seen in Table \ref{tab:Energy_banks}.
+
+\begin{table}[H]
+	\centering
+	\caption{Comparison of Propulsion Systems in Tugboats and Performance.}
+	\label{tab:Energy_banks}
+	\begin{tabular}{|c|c|c|}
+		\hline      
+		& BESS $15\%$ ${\text{P}}_{\text{nom}}$ & BESS $25\%$ ${\text{P}}_{\text{nom}}$ \\		
+\hline \hline
+${E}_{prof}$ & 1278[kWh] & $3102$[kWh] \\
+\hline
+${E}_{hotel}$ & 192[kWh] & 192[kWh] \\
+\hline
+$\bf {E}_{load}$ & $\bf \approx 1470$\textbf{[kWh]}& $\bf \approx 3300$\textbf{[kWh]} \\
+\hline
+${E}_{bat{\_}out}$ & 1670[kWh] & 3750[kWh] \\
+\hline
+${E}_{BOL}$ & 2088[kWh] & 4688[kWh]\\
+\hline
+${E}_{EOL}$ & 2610[kWh] & 5859[kWh] \\
+\hline
+$\bf {E}_{installed}$ & $\bf \approx 2800$\textbf{[kWh]}& $\bf \approx 6300$\textbf{[kWh]} \\
+\hline \hline
+	\end{tabular}
+\end{table}
+\section{Nominal Battery Voltage}
+
+The system voltage should be determined by the cost, desired generator and propulsion motor drive voltage, converter design, load requirements, cable and bus-bar rating, and the fault energy \cite{Xu2022}. Generally, low-voltage dc (LVdc) systems are lower than 1 kV, with power system capacity in the range of 1–20MW, while medium-voltage dc (MVdc) systems are higher than 1 kV, with 20–100 MW.
+
+
+\begin{itemize}
+	\item \textbf{750V DC}: This range is common in earlier hybrid designs, smaller tugboats, or retrofits where space for series-connected modules might be limited \cite{Valence}. It balances safety requirements with the need for power density but becoming less favorable for tugs with MW-scale power requirements due to the heavy cabling required.
+	\item \textbf{1000V DC}: This is the emerging standard for high-power vessels. Higher voltage reduces the current required for the same power ($P=VI$) and copper losses ($P_{loss} = I^2R$).
+\end{itemize}
+
+The battery bank is constructed of modules in series to achieve the voltage.
+
+\begin{equation}
+	N_{series} = V_{bus\_req} / V_{cell\_nom}
+\end{equation}
+
+For the battery bank in both options, a nominal voltage of $V_{bus\_req}=750$[V] will be proposed.
+
+
 
 \section{Battery technologies applicable to tugboats}
 
-\subsection{Selection criteria}
+Three primary lithium-ion chemistries dominate the marine sector: Nickel Manganese Cobalt (NMC), Lithium Iron Phosphate (LFP), and Lithium Titanate Oxide (LTO).
 
-\subsection{Technology analysis}
+\subsection{Nickel Manganese Cobalt (NMC)}
+
+NMC has historically been the chemistry of choice for first-generation hybrid vessels due to its high specific energy.
+
+\begin{itemize}
+	\item Energy Density: NMC cells offer 150–220 Wh/kg, translating to pack-level densities of roughly 77–120 Wh/kg after accounting for BMS, cooling, and racking.
+	\item C-rate: Standard marine NMC modules (e.g., Corvus Orca Energy) support high discharge rates, typically 3C continuous and 3C peak. This means a 100 kWh bank can deliver 300 kW of power, which is ideal for the power-dense demands of a tugboat.
+	\item Cycle Life: NMC typically offers 1,000–2,500 cycles at $80\%$ DoD. While lower than LFP, this is often sufficient for hybrid tugs where the battery is used for peak shaving rather than full deep cycling every day.
+	\item Cost: Prices have historically been higher ($120-$150/kWh cell cost), though they are declining. The primary drawback is thermal stability; NMC has a lower thermal runaway temperature, requiring robust active cooling and barrier systems. 
+\end{itemize}
+
+\subsection{Lithium Iron Phosphate (LFP)}
+LFP is rapidly gaining market share in the maritime sector, driven by safety and longevity.
+
+\begin{itemize}
+	\item Safety: LFP is chemically stable and has a much higher thermal runaway threshold. It does not release oxygen during decomposition, significantly reducing the intensity of battery fires. This can simplify fire suppression system design.
+	\item  Cycle Life: LFP excels in longevity, offering 2,000–5,000+ cycles even at high Depth of Discharge. Some sources suggest it lasts 2-3 times longer than NMC, making it cheaper over the total vessel lifecycle.
+	\item Energy Density: The trade-off is weight and volume. Cell density is 90–160 Wh/kg. However, for tugboats, weight is often less critical than for high-speed ferries. Tugs require significant ballast to achieve the necessary draft for propeller immersion. Replacing lead or iron ballast with LFP batteries allows the "energy storage" to serve a dual purpose as "stability weight".
+	\item Cost: LFP is generally cheaper, with cell costs estimated between $70–$100/kWh and falling.
+\end{itemize}
+
+\subsection{Lithium Titanate Oxide (LTO)}
+LTO is a niche, high-performance chemistry used in fully electric tugs with rapid charging needs.
+
+\begin{itemize}
+	\item Performance: LTO allows for extreme C-rates (up to 10C charge/discharge) and ultra-fast charging (e.g., 10-20 minutes). It offers exceptional cycle life ($>$15,000 cycles).
+	\item  Drawbacks: It has the lowest energy density (60–120 Wh/kg) and the highest cost.
+	\item Application: The fully electric tug Sparky utilizes LTO technology to allow for rapid opportunity charging between jobs, ensuring 24/7 availability.
+\end{itemize}
+
+\section{Battery Bank Calculations}
+
+Taking into account the battery technologies used in marine environments, the total energy required by the operating profile, and the voltage of the battery bank, the steps to follow to obtain the total number of cells needed to find the right battery bank are shown below \cite{x-engineer}.
+
+To do this, we will consider that the chosen cells have the following input parameters, provided by the manufacturer:
+
+\begin{table}[H]
+	\centering
+	\caption{Technical input information}
+	\label{tab:Technical_input}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Technical input}} \\
+		\hline\hline
+		$\text{V}_{bc}$ & Battery cell voltage [V]    \\	
+		\hline
+		$\text{E}_{bc}$ & Battery cell energy  [Wh]   \\	
+		\hline
+		$\text{C}_{bc}$ & Battery cell capacity [Ah]   \\	
+		\hline
+		$\text{m}_{bc}$ & Battery cell mass [kg]    \\	
+		\hline
+		$\text{vol}_{bc}$ & Battery cell volume [${\text{m}}^{3}$]    \\	
+		\hline
+	\end{tabular}
+\end{table} 
+
+In addition, the calculated energy and the proposed nominal voltage for each bank to be designed shall be considered as inputs.
+
+\begin{table}[H]
+	\centering
+	\caption{Proposed information}
+	\label{tab:Technical_input2_15}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Proposed technical input for BESS}} \\
+		\hline\hline
+& BESS $15\%$ ${\text{P}}_{\text{nom}}$ & BESS $25\%$ ${\text{P}}_{\text{nom}}$ \\
+		\hline
+		 Battery pack voltage $\text{V}_{bp}$ & \multicolumn{2}{c|}{750[V]}   \\
+		 \hline
+		 Battery pack total energy $\text{E}_{bp}$ & 2800[kWh] & 6300[kWh]  \\
+		\hline
+		
+	\end{tabular}
+\end{table} 
+
+The battery bank will be considered to consist of several strings connected in parallel, each of which consists of several cells connected in series.
+
+The volume of the battery pack will be calculated taking into account only the battery cells, without considering other factors such as electronic circuits, cooling circuit, battery casing, wiring, etc.
+
+\subsection{Calculation of essential electrical parameters}
+
+\textbf{The number of battery cells connected in series} $\text{N}_{sc} [-]$ in a string is calculated by dividing the nominal battery pack voltage $\text{V}_{bp} [\text{V}]$ to the voltage of each battery cell $\text{V}_{bc} [\text{V}]$. The number of strings must be an integer. Therefore, the result of the calculation is rounded to the higher integer.
+
+\begin{equation}\label{eq:Ncs}
+\text{N}_{sc} = \frac{\text{V}_{bp}}{\text{V}_{bc}}
+\end{equation}
+
+\textbf{The energy content of a string} $\text{E}_{bs} [\text{Wh}]$ is equal with the product between the number of battery cells connected in series $\text{N}_{sc} [-]$ and the energy of a battery cell $\text{E}_{bc} [\text{Wh}]$.
+
+\begin{equation}\label{eq:Ebs}
+\text{E}_{bs} = \text{N}_{sc} \cdot \text{E}_{bc}
+\end{equation}
+
+\textbf{Total number of strings of the battery pack} $\text{N}_{sb} [-]$ is calculated by dividing the battery pack total energy $\text{E}_{bp} [\text{Wh}]$ to the energy content of a string $\text{E}_{bs} [\text{Wh}]$. The number of strings must be an integer. Therefore, the result of the calculation is rounded to the higher integer.
+
+\begin{equation}\label{eq:Nsb}
+\text{N}_{sb} = \frac{\text{E}_{bp}}{\text{E}_{bs}}
+\end{equation}
+
+%It is now possible to recalculate the battery pack total energy ${E}_{bp} [Wh]$ as the product between number of strings ${N}_{sb} [-]$ and the energy content of each string ${E}_{bs} [Wh]$.
+
+\textbf{The battery pack capacity} $\text{C}_{bp} [\text{Ah}]$ is calculated as the product between the number of strings $\text{N}_{sb} [-]$ and the capacity of the battery $\text{C}_{bc} [\text{Ah}]$.
+
+\begin{equation}\label{eq:Cbp}
+\text{C}_{bp} = \text{N}_{sb} \cdot\text{C}_{bc}
+\end{equation}
+
+\textbf{Total number of cells of the battery pack} $\text{N}_{bp} [-]$ is calculated as the product between the number of strings $\text{N}_{sb} [-]$ and the number of cells in a string $\text{N}_{sc} [-]$.
+
+\begin{equation}\label{eq:Ncb}
+\text{N}_{bp} = \text{N}_{sb} \cdot \text{N}_{sc}
+\end{equation}
+
+\subsection{Calculation of electrical performance parameters}
+
+\textbf{The string continuous current} $\text{I}_{scc} [\text{A}]$ is the product between the continuous C-rate of the battery cell $\text{C-rate}_{bcc} [\text{h}^{-1}]$ and the battery cell capacity $\text{C}_{bc} [\text{Ah}]$.
+
+\begin{equation}\label{eq:Iscc}
+{I}_{scc} = \text{C-rate}_{bcc} \cdot \text{C}_{bc}
+\end{equation}
+
+\textbf{The battery pack continuous current} $\text{I}_{bpc} [\text{A}]$ is the product between the string continuous current $\text{I}_{scc} [\text{A}]$ and the number of strings of the battery pack $\text{N}_{sb} [-]$.
+
+\begin{equation}\label{eq:Ibpc}
+\text{I}_{bpc} = \text{I}_{scc} \cdot \text{N}_{sb}
+\end{equation}
+
+
+\textbf{The battery pack continuous power} $\text{P}_{bpc} [\text{W}]$ is the product between battery pack continuous current $\text{I}_{bpc} [\text{A}]$ and the battery pack voltage $\text{V}_{bp} [\text{V}]$.
+
+\begin{equation}\label{eq:Pbpc}
+\text{P}_{bpc} = \text{I}_{bpc} \cdot \text{V}_{bp}
+\end{equation}
+
+\textbf{The string peak current} $\text{I}_{spc} [\text{A}]$ is the product between the peak C-rate of the battery cell $\text{C-rate}_{bpc} [\text{h}^{-1}]$ and the battery cell capacity $\text{C}_{bc} [\text{Ah}]$.
+
+\begin{equation}\label{eq:Ispc}
+\text{I}_{spc} = \text{C-rate}_{bpc} \cdot \text{C}_{bc}
+\end{equation}
+
+\textbf{The battery pack peak current} $\text{I}_{bpp} [\text{A}]$ is the product between the string peak current $\text{I}_{spc} [\text{A}]$ and the number of strings of the battery pack $\text{N}_{sb} [-]$.
+
+\begin{equation}\label{eq:Ibpp}
+\text{I}_{bpp} = \text{I}_{spc} \cdot \text{N}_{sb}
+\end{equation}
+
+\textbf{The battery pack peak power} $\text{P}_{bpp} [\text{W}]$ is the product between battery pack peak current $\text{I}_{bpp} [\text{A}]$ and the battery pack voltage $\text{V}_{bp} [\text{V}]$.
+
+\begin{equation}\label{eq:Pbpp}
+\text{P}_{bpp} = \text{I}_{bpp} \cdot \text{V}_{bp}
+\end{equation}
+
+\subsection{Calculation of mechanical parameters}
+
+\textbf{The battery pack mass} (cells only) $\text{m}_{bp} [\text{kg}]$ is the product between the total number of cells $\text{N}_{bp} [-]$ and the mass of each battery cell $\text{m}_{bc} [\text{kg}]$.
+
+\begin{equation}\label{eq:mbp}
+\text{m}_{bp} = \text{N}_{bp} \cdot \text{m}_{bc}
+\end{equation}
+
+\textbf{The volume of the battery pack} (cells only) $\text{vol}_{bp} [\text{m}^{3}]$ is the product between the total number of cells $\text{N}_{bp} [-]$ and the volume of each battery cell $\text{vol}_{bc} [\text{m}^{3}]$. This volume is only used to estimate the final volume of the battery pack, since it does not take into account the auxiliary components/systems of the battery \cite{x-engineer}.
+
+\begin{equation}\label{eq:volpc}
+\text{vol}_{bp} = \text{N}_{bp} \cdot \text{vol}_{bc}
+\end{equation}
+
+\subsection{Calculated NMC battery}
+
+Three different models of NMC batteries and their technical characteristics are presented.
+
+\begin{table}[H]
+	\centering
+	\caption{NMC Batteries}
+	\label{tab:Technical_inputNMC}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{NMC Batteries}} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{V}_{bc}$ & 12[V]  & 12[V] & 2.84[V] \\	
+		\hline
+		$\text{E}_{bc}$ &  120[Wh] & 360[Wh] & 264[Wh]\\	
+		\hline
+		$\text{C}_{bc}$ &  10[Ah] & 30[Ah] & 128[Ah]\\	
+		\hline
+		$\text{m}_{bc}$ & 0.8[kg]& 2.1[kg] & 0.48[kg]\\	
+		\hline
+		$\text{vol}_{bc}$ &  0.00049[${\text{m}}^{3}$]& 0.001127[${\text{m}}^{3}$] & 0.0043[${\text{m}}^{3}$]    \\	
+		\hline
+	\end{tabular}
+\end{table} 
+
+\subsubsection{a) BESS $15\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $15\%$}
+	\label{tab:NMC_015_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{N}_{sc}$ & 63  & 63 & 264 \\	
+		\hline
+		$\text{E}_{bs}$ &  7.56[kWh] & 22.68[kWh] & 113[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ &  371 & 124 & 25\\	
+		\hline
+		$\text{C}_{bp}$ & 3,710[Ah]& 3,720[Ah] & 3,200[Ah]\\	
+		\hline
+		$\text{N}_{bp}$ & 23,373 & 7,812 &   6,600  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:NMC_015_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{I}_{scc}$ & 5[A]  & 30[A] & 128[A] \\	
+		\hline
+		$\text{I}_{bpc}$ &  1.86[kA] & 3.72[kA] & 3.2[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ &   1,391[kW] & 2,790[kW] &   2,400[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 20[A] & 60[A] & 750[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 7.42[kA] & 7.44[kA] & 18.75[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 5,565[kW] & 5,580[kW] & 14,062[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $15\%$}
+	\label{tab:NMC_015_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{m}_{bp}$ & 18,698[kg]  & 16,405[kg] & 3,143[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  11.45[${\text{m}}^{3}$] & 8.80[${\text{m}}^{3}$] & 28.11[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table} 
+
+\subsubsection{b) BESS $25\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $15\%$}
+	\label{tab:NMC_025_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{N}_{sc}$ & 63 & 63 & 264 \\	
+		\hline
+		$\text{E}_{bs}$ & 7.56[kWh] & 22.68[kWh] & 113[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ & 834 & 278 & 56\\	
+		\hline
+		$\text{C}_{bp}$ & 8,340[Ah]& 8,340[Ah] & 7,168[Ah]\\	
+		\hline
+		$\text{N}_{bp}$ &  52,542 & 17,514 &  14,784  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:NMC_025_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{I}_{scc}$ & 5[A]  & 30[A] & 128[A] \\	
+		\hline
+		$\text{I}_{bpc}$ & 4.17[kA] & 8.34[kA] & 7.17[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ & 3,128[kW]& 6,255[kW] & 5,376[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 20[A] & 60[A] & 750[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 16.68[kA] & 16.68[A] & 42[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 12,510[kW] & 12,510[kW] & 31,500[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $15\%$}
+	\label{tab:NMC_025_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
+		 \hline
+		$\text{m}_{bp}$ & 40,034[kg]  & 36,779[kg] & 7,096[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  25.75[${\text{m}}^{3}$] & 19.73[${\text{m}}^{3}$] & 28.11[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table} 
+
+
+ 
+\subsection{Calculated LFP battery}
+
+\begin{table}[H]
+	\centering
+	\caption{LFP Batteries}
+	\label{tab:Technical_inputLFP}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{LFP Batteries}} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{V}_{bc}$ & 12.8[V]  & 12.8[V] & 38.4[V] \\	
+		\hline
+		$\text{E}_{bc}$ &  97[Wh] & 640[Wh] & 1,920[Wh]\\	
+		\hline
+		$\text{C}_{bc}$ &  7.6[Ah] & 50[Ah] & 50[Ah]\\	
+		\hline
+		$\text{m}_{bc}$ & 1[kg]& 6.3[kg] & 18.7[kg]\\	
+		\hline
+		$\text{vol}_{bc}$ &  0.00090[${\text{m}}^{3}$]& 0.00559[${\text{m}}^{3}$] & 0.01184[${\text{m}}^{3}$]    \\	
+		\hline
+	\end{tabular}
+\end{table} 
+
+\subsubsection{a) BESS $15\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $15\%$}
+	\label{tab:LFP_015_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{N}_{sc}$ & 59  & 59 & 20 \\	
+		\hline
+		$\text{E}_{bs}$ &  5.72[kWh] & 37.76[kWh] & 38.40[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ &  490 & 75 & 73\\	
+		\hline
+		$\text{C}_{bp}$ & 3,724[Ah]& 3,750[Ah] & 3,650[Ah]\\	
+		\hline
+		$\text{N}_{bp}$ & 28,910 & 4,425 &   1,460  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:LFP_015_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{I}_{scc}$ & 15[A]  & 50[A] & 50[A] \\	
+		\hline
+		$\text{I}_{bpc}$ &  7.35[kA] & 3.75[kA] & 3.65[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ &   5,513[kW] & 2,813[kW] &   2,738[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 55[A] & 140[A] & 150[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 26.95[kA] & 10.5[kA] & 10.95[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 20,212[kW] & 7,875[kW] & 8,213[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $15\%$}
+	\label{tab:LFP_015_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{m}_{bp}$ & 28,910[kg]  & 27,877[kg] & 27,302[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  26.27[${\text{m}}^{3}$] & 24.73[${\text{m}}^{3}$] & 17.28[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table} 
+
+\subsubsection{b) BESS $25\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $25\%$}
+	\label{tab:LFP_025_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{N}_{sc}$ & 59 & 59 & 20 \\	
+		\hline
+		$\text{E}_{bs}$ & 5.72[kWh] & 37.76[kWh] & 38.4[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ & 1,101 & 167 & 165\\	
+		\hline
+		$\text{C}_{bp}$ & 8,368[Ah] & 8,350[Ah] & 8,250[Ah]\\	
+		\hline
+		$\text{N}_{bp}$ & 64,969 & 9,853 & 3,300 \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $25\%$}
+	\label{tab:LFP_025_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{I}_{scc}$ & 15[A]  & 50[A] & 50[A] \\	
+		\hline
+		$\text{I}_{bpc}$ &  16.52[kA] & 8.35[kA] & 8.25[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ &   12,386[kW] & 6,263[kW] &  6,188[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 55[A] & 140[A] & 150[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 60.56[kA] & 23.38[kA] & 24.75[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 45,416[kW] & 17,535[kW] & 18,563[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $25\%$}
+	\label{tab:LFP_025_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
+		 \hline
+		$\text{m}_{bp}$ & 64,960[kg]  & 62,074[kg] & 61,710[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  59.05[${\text{m}}^{3}$] & 55.10[${\text{m}}^{3}$] & 39.08[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table} 
+
+\subsection{Calculated LTO battery}
+
+\begin{table}[H]
+	\centering
+	\caption{LTO Batteries}
+	\label{tab:Technical_inputLTP}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{LTO Batteries}} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{V}_{bc}$ & 2.4[V]  & 2.4[V] & 2.3[V] \\	
+		\hline
+		$\text{E}_{bc}$ &  0.36[Wh] & 0.03[Wh] & 3.6[Wh]\\	
+		\hline
+		$\text{C}_{bc}$ &  0.15[Ah] & 0.014[Ah] & 1.5[Ah]\\	
+		\hline
+		$\text{m}_{bc}$ & 0.09[kg]& 0.0012[kg] & 0.046[kg]\\	
+		\hline
+		$\text{vol}_{bc}$ &  0.00002[${\text{m}}^{3}$]& $2.31\cdot{10}^{-6}$[${\text{m}}^{3}$] & 0.00002[${\text{m}}^{3}$]    \\	
+		\hline
+	\end{tabular}
+\end{table} 
+
+
+\subsubsection{a) BESS $15\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $15\%$}
+	\label{tab:LTO_015_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{N}_{sc}$ & 313  & 313 & 327 \\	
+		\hline
+		$\text{E}_{bs}$ &  113[Wh] & 10.52[Wh] & 1.18[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ &  24,850 & 266,241 & 2,379\\	
+		\hline
+		$\text{C}_{bp}$ & 3,727[Ah]& 3,727[Ah] & 3,568[Ah]\\	
+		\hline
+		$\text{N}_{bp}$ & 7,778,050 & 83,333,433 &   777,933  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:LTO_015_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{I}_{scc}$ & 150[mA] & 7[mA] & 1.5[A] \\	
+		\hline
+		$\text{I}_{bpc}$ & 3.73[kA] & 1.86[kA] & 3.57[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ & 2,795[kW] & 1,398[kW] &   2,676[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 3[A] & 280[mA] & 12[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 74.55[kA] & 74.55[kA] & 28.55[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 55,913[kW] & 55,910[kW] & 21,411[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $15\%$}
+	\label{tab:LTO_015_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{m}_{bp}$ & 700,025[kg]  & 100,000[kg] & 35,785[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  152.72[${\text{m}}^{3}$] & 192.68[${\text{m}}^{3}$] & 13.15[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table} 
+
+\subsubsection{b) BESS $25\%$}
+
+\begin{table}[H]
+	\centering
+	\caption{Essential parameters of the battery bank $25\%$}
+	\label{tab:LTO_025_1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{N}_{sc}$ & 313 & 313 & 327 \\	
+		\hline
+		$\text{E}_{bs}$ & 113[Wh] & 10.52[Wh] & 1.18[kWh]\\	
+		\hline
+		$\text{N}_{sb}$ & 55,911 & 599,042 & 5,352\\	
+		\hline
+		$\text{C}_{bp}$ & 8,386[Ah]& 8,387[Ah] & 8,029[Ah]\\	
+		\hline 
+		$\text{N}_{bp}$ & 17,500,143 & 187,500,146 & 1,750,104  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $25\%$}
+	\label{tab:LTO_025_2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{I}_{scc}$ & 150[mA] & 7[mA] & 1.5[A] \\	
+		\hline
+		$\text{I}_{bpc}$ & 8.38[kA] & 4.19[kA] & 8.03[kA]\\	
+		\hline
+		$\text{P}_{bpc}$ & 6,290[kW] & 3,145[kW] & 6,021[kW]  \\	
+		\hline
+		$\text{I}_{spc}$ & 3[A] & 280[mA] & 12[A] \\	
+		\hline
+		$\text{I}_{bpp}$ & 167.73[kA] & 167.73[kA] & 64.22[kA]  \\	
+		\hline
+		$\text{P}_{bpp}$ & 125,800[kW] & 125,800[kW] & 48,168[kW]  \\	
+		\hline		
+	\end{tabular}
+\end{table}
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of the battery bank $25\%$}
+	\label{tab:LTO_025_3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $25\%$} \\
+		\hline\hline
+		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
+		 \hline
+		$\text{m}_{bp}$ & 1,575,013[kg]  & 225,000[kg] & 80,505[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ & 343.61[${\text{m}}^{3}$] & 433.54[${\text{m}}^{3}$] & 29.59[${\text{m}}^{3}$]\\	
+		\hline
+			
+	\end{tabular}
+\end{table}
+
+\subsection{Comparison between technologies}
+Based on the technical information provided by battery suppliers and on the calculations performed, the values obtained in each calculation for each technology are averaged to obtain average parameters for comparing technologies.
 
 \section{Economic and life cycle analysis}
 

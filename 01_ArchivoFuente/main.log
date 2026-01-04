@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  23 DEC 2025 07:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  4 JAN 2026 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,7 +958,7 @@ Package caption Info: End \AtBeginDocument code.
 
 pdfTeX warning: pdflatex (file ./images/logoUSM.pdf): PDF inclusion: found PDF 
 version <1.6>, but at most version <1.5> allowed
-<images/logoUSM.pdf, id=306, 265.40755pt x 156.2126pt>
+<images/logoUSM.pdf, id=342, 265.40755pt x 156.2126pt>
 File: images/logoUSM.pdf Graphic file (type pdf)
 <use images/logoUSM.pdf>
 Package pdftex.def Info: images/logoUSM.pdf  used on input line 4.
@@ -1085,43 +1085,49 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 [6
 
-])
+]
+
+[7])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[7] (main.lof
+[8] (main.lof
 
-[8
+[9
 
-])
+]
+
+[10])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 
 
-[9] (main.lot)
+[11] (main.lot
+
+[12
+
+])
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
 
 
-[10
-
-] (content/chapter01.tex
+[13] (content/chapter01.tex
 Chapter 1.
-<images/chapter01/GHG.pdf, id=646, 2845.27985pt x 682.86618pt>
+<images/chapter01/GHG.pdf, id=781, 2845.27985pt x 682.86618pt>
 File: images/chapter01/GHG.pdf Graphic file (type pdf)
 <use images/chapter01/GHG.pdf>
 Package pdftex.def Info: images/chapter01/GHG.pdf  used on input line 11.
 (pdftex.def)             Requested size: 469.75502pt x 112.74098pt.
-<images/chapter01/SOx.pdf, id=651, 376.91615pt x 297.71626pt>
+<images/chapter01/SOx.pdf, id=786, 376.91615pt x 297.71626pt>
 File: images/chapter01/SOx.pdf Graphic file (type pdf)
 <use images/chapter01/SOx.pdf>
 Package pdftex.def Info: images/chapter01/SOx.pdf  used on input line 23.
 (pdftex.def)             Requested size: 211.3883pt x 166.96982pt.
-<images/chapter01/NOx.pdf, id=652, 374.65771pt x 297.71626pt>
+<images/chapter01/NOx.pdf, id=787, 374.65771pt x 297.71626pt>
 File: images/chapter01/NOx.pdf Graphic file (type pdf)
 <use images/chapter01/NOx.pdf>
 Package pdftex.def Info: images/chapter01/NOx.pdf  used on input line 28.
@@ -1137,7 +1143,7 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 22--32
 
 
  <./images/chapter01/GHG.pdf>]
-<images/chapter01/DNV2025.pdf, id=803, 679.99847pt x 246.81409pt>
+<images/chapter01/DNV2025.pdf, id=938, 679.99847pt x 246.81409pt>
 File: images/chapter01/DNV2025.pdf Graphic file (type pdf)
 <use images/chapter01/DNV2025.pdf>
 Package pdftex.def Info: images/chapter01/DNV2025.pdf  used on input line 40.
@@ -1153,13 +1159,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
-<images/chapter01/Series_prop.pdf, id=962, 247.06703pt x 177.92874pt>
+<images/chapter01/Series_prop.pdf, id=1096, 247.06703pt x 177.92874pt>
 File: images/chapter01/Series_prop.pdf Graphic file (type pdf)
 <use images/chapter01/Series_prop.pdf>
 Package pdftex.def Info: images/chapter01/Series_prop.pdf  used on input line 7
 2.
 (pdftex.def)             Requested size: 211.3883pt x 152.23653pt.
-<images/chapter01/Parallel_prop.pdf, id=965, 247.30894pt x 129.98964pt>
+<images/chapter01/Parallel_prop.pdf, id=1099, 247.30894pt x 129.98964pt>
 File: images/chapter01/Parallel_prop.pdf Graphic file (type pdf)
 <use images/chapter01/Parallel_prop.pdf>
 Package pdftex.def Info: images/chapter01/Parallel_prop.pdf  used on input line
@@ -1178,7 +1184,7 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 70--82
 
 
 [5]
-<images/chapter01/UC_ESS.pdf, id=1078, 94.2432pt x 128.70183pt>
+<images/chapter01/UC_ESS.pdf, id=1213, 94.2432pt x 128.70183pt>
 File: images/chapter01/UC_ESS.pdf Graphic file (type pdf)
 <use images/chapter01/UC_ESS.pdf>
 Package pdftex.def Info: images/chapter01/UC_ESS.pdf  used on input line 151.
@@ -1186,7 +1192,7 @@ Package pdftex.def Info: images/chapter01/UC_ESS.pdf  used on input line 151.
 
 
 [6]
-<images/chapter01/Flywheel.pdf, id=1089, 158.1649pt x 66.29156pt>
+<images/chapter01/Flywheel.pdf, id=1224, 158.1649pt x 66.29156pt>
 File: images/chapter01/Flywheel.pdf Graphic file (type pdf)
 <use images/chapter01/Flywheel.pdf>
 Package pdftex.def Info: images/chapter01/Flywheel.pdf  used on input line 162.
@@ -1195,7 +1201,7 @@ Package pdftex.def Info: images/chapter01/Flywheel.pdf  used on input line 162.
 
 
 [7 <./images/chapter01/UC_ESS.pdf> <./images/chapter01/Flywheel.pdf>]
-<images/chapter01/Batt.pdf, id=1144, 284.65245pt x 153.16623pt>
+<images/chapter01/Batt.pdf, id=1279, 284.65245pt x 153.16623pt>
 File: images/chapter01/Batt.pdf Graphic file (type pdf)
 <use images/chapter01/Batt.pdf>
 Package pdftex.def Info: images/chapter01/Batt.pdf  used on input line 177.
@@ -1203,7 +1209,7 @@ Package pdftex.def Info: images/chapter01/Batt.pdf  used on input line 177.
 
 
 [8 <./images/chapter01/Batt.pdf>]
-<images/chapter01/Batt_roles.pdf, id=1181, 400.89775pt x 219.3023pt>
+<images/chapter01/Batt_roles.pdf, id=1315, 400.89775pt x 219.3023pt>
 File: images/chapter01/Batt_roles.pdf Graphic file (type pdf)
 <use images/chapter01/Batt_roles.pdf>
 Package pdftex.def Info: images/chapter01/Batt_roles.pdf  used on input line 21
@@ -1251,19 +1257,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
 
 [11{C:/Miktex/fonts/enc/dvips/newpx/px-lms.enc}]
-<images/chapter01/TDM_Prop.pdf, id=1240, 1098.50403pt x 251.14127pt>
+<images/chapter01/TDM_Prop.pdf, id=1375, 1098.50403pt x 251.14127pt>
 File: images/chapter01/TDM_Prop.pdf Graphic file (type pdf)
 <use images/chapter01/TDM_Prop.pdf>
 Package pdftex.def Info: images/chapter01/TDM_Prop.pdf  used on input line 291.
 
 (pdftex.def)             Requested size: 375.80544pt x 85.91573pt.
-<images/chapter01/SHDM_Prop.pdf, id=1243, 1014.61058pt x 251.14127pt>
+<images/chapter01/SHDM_Prop.pdf, id=1378, 1014.61058pt x 251.14127pt>
 File: images/chapter01/SHDM_Prop.pdf Graphic file (type pdf)
 <use images/chapter01/SHDM_Prop.pdf>
 Package pdftex.def Info: images/chapter01/SHDM_Prop.pdf  used on input line 303
 .
 (pdftex.def)             Requested size: 199.64731pt x 49.41495pt.
-<images/chapter01/FHDM_Prop.pdf, id=1244, 1014.61058pt x 268.19598pt>
+<images/chapter01/FHDM_Prop.pdf, id=1379, 1014.61058pt x 268.19598pt>
 File: images/chapter01/FHDM_Prop.pdf Graphic file (type pdf)
 <use images/chapter01/FHDM_Prop.pdf>
 Package pdftex.def Info: images/chapter01/FHDM_Prop.pdf  used on input line 309
@@ -1290,13 +1296,13 @@ pdfTeX warning: pdflatex (file ./images/chapter01/SHDM_Prop.pdf): PDF inclusion
 pdfTeX warning: pdflatex (file ./images/chapter01/FHDM_Prop.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
-<images/chapter01/FHDE_Prop.pdf, id=1859, 897.8534pt x 391.23969pt>
+<images/chapter01/FHDE_Prop.pdf, id=1994, 897.8534pt x 391.23969pt>
 File: images/chapter01/FHDE_Prop.pdf Graphic file (type pdf)
 <use images/chapter01/FHDE_Prop.pdf>
 Package pdftex.def Info: images/chapter01/FHDE_Prop.pdf  used on input line 333
 .
 (pdftex.def)             Requested size: 199.64731pt x 86.99234pt.
-<images/chapter01/PBE_Prop.pdf, id=1860, 898.7487pt x 413.61125pt>
+<images/chapter01/PBE_Prop.pdf, id=1995, 898.7487pt x 413.61125pt>
 File: images/chapter01/PBE_Prop.pdf Graphic file (type pdf)
 <use images/chapter01/PBE_Prop.pdf>
 Package pdftex.def Info: images/chapter01/PBE_Prop.pdf  used on input line 339.
@@ -1323,7 +1329,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--366
 []|\OT1/pplx/m/n/10.95 (+20) Hybrid/battery
  []
 
-<images/chapter01/Tug.jpg, id=2436, 1280.785pt x 945.5325pt>
+<images/chapter01/Tug.jpg, id=2571, 1280.785pt x 945.5325pt>
 File: images/chapter01/Tug.jpg Graphic file (type jpg)
 <use images/chapter01/Tug.jpg>
 Package pdftex.def Info: images/chapter01/Tug.jpg  used on input line 385.
@@ -1345,13 +1351,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
 [18]
 Chapter 2.
-<images/chapter02/Remolcador.png, id=2481, 2442.87656pt x 1474.75969pt>
+<images/chapter02/Remolcador.png, id=2616, 2442.87656pt x 1474.75969pt>
 File: images/chapter02/Remolcador.png Graphic file (type png)
 <use images/chapter02/Remolcador.png>
 Package pdftex.def Info: images/chapter02/Remolcador.png  used on input line 11
 .
 (pdftex.def)             Requested size: 234.8775pt x 141.79135pt.
-<images/chapter02/Remolcador2.jpg, id=2483, 737.00343pt x 765.6103pt>
+<images/chapter02/Remolcador2.jpg, id=2618, 737.00343pt x 765.6103pt>
 File: images/chapter02/Remolcador2.jpg Graphic file (type jpg)
 <use images/chapter02/Remolcador2.jpg>
 Package pdftex.def Info: images/chapter02/Remolcador2.jpg  used on input line 1
@@ -1367,13 +1373,13 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 10--20
 [19
 
  <./images/chapter02/Remolcador.png> <./images/chapter02/Remolcador2.jpg>]
-<images/chapter02/Harbour_Tug.jpg, id=2499, 1091.57813pt x 768.62157pt>
+<images/chapter02/Harbour_Tug.jpg, id=2634, 1091.57813pt x 768.62157pt>
 File: images/chapter02/Harbour_Tug.jpg Graphic file (type jpg)
 <use images/chapter02/Harbour_Tug.jpg>
 Package pdftex.def Info: images/chapter02/Harbour_Tug.jpg  used on input line 5
 1.
 (pdftex.def)             Requested size: 327.47597pt x 230.58824pt.
-<images/chapter02/SAR_Tug.png, id=2505, 532.99126pt x 297.36093pt>
+<images/chapter02/SAR_Tug.png, id=2640, 532.99126pt x 297.36093pt>
 File: images/chapter02/SAR_Tug.png Graphic file (type png)
 <use images/chapter02/SAR_Tug.png>
 Package pdftex.def Info: images/chapter02/SAR_Tug.png  used on input line 68.
@@ -1381,7 +1387,7 @@ Package pdftex.def Info: images/chapter02/SAR_Tug.png  used on input line 68.
 
 
 [20 <./images/chapter02/Harbour_Tug.jpg>]
-<images/chapter02/Escort_Tug.jpg, id=2519, 1129.21875pt x 752.8125pt>
+<images/chapter02/Escort_Tug.jpg, id=2653, 1129.21875pt x 752.8125pt>
 File: images/chapter02/Escort_Tug.jpg Graphic file (type jpg)
 <use images/chapter02/Escort_Tug.jpg>
 Package pdftex.def Info: images/chapter02/Escort_Tug.jpg  used on input line 84
@@ -1404,23 +1410,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []|\OT1/pplx/m/n/10.95 (+20) Rollover Con-trol,
  []
 
-<images/chapter02/LengthOverall.pdf, id=2530, 721.92813pt x 478.04295pt>
+<images/chapter02/LengthOverall.pdf, id=2664, 721.92813pt x 478.04295pt>
 File: images/chapter02/LengthOverall.pdf Graphic file (type pdf)
 <use images/chapter02/LengthOverall.pdf>
 Package pdftex.def Info: images/chapter02/LengthOverall.pdf  used on input line
  124.
 (pdftex.def)             Requested size: 187.90271pt x 124.41953pt.
-<images/chapter02/Beam.jpg, id=2531, 1306.8825pt x 485.815pt>
+<images/chapter02/Beam.jpg, id=2665, 1306.8825pt x 485.815pt>
 File: images/chapter02/Beam.jpg Graphic file (type jpg)
 <use images/chapter02/Beam.jpg>
 Package pdftex.def Info: images/chapter02/Beam.jpg  used on input line 130.
 (pdftex.def)             Requested size: 187.90271pt x 69.84462pt.
-<images/chapter02/Draught.pdf, id=2532, 724.3592pt x 478.04295pt>
+<images/chapter02/Draught.pdf, id=2666, 724.3592pt x 478.04295pt>
 File: images/chapter02/Draught.pdf Graphic file (type pdf)
 <use images/chapter02/Draught.pdf>
 Package pdftex.def Info: images/chapter02/Draught.pdf  used on input line 136.
 (pdftex.def)             Requested size: 187.90271pt x 124.00375pt.
-<images/chapter02/Depth.pdf, id=2533, 724.3592pt x 478.04295pt>
+<images/chapter02/Depth.pdf, id=2667, 724.3592pt x 478.04295pt>
 File: images/chapter02/Depth.pdf Graphic file (type pdf)
 <use images/chapter02/Depth.pdf>
 Package pdftex.def Info: images/chapter02/Depth.pdf  used on input line 142.
@@ -1438,13 +1444,13 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 122--146
 
 
 [22]
-<images/chapter02/GrossTonnage.png, id=2548, 520.44438pt x 345.29pt>
+<images/chapter02/GrossTonnage.png, id=2682, 520.44438pt x 345.29pt>
 File: images/chapter02/GrossTonnage.png Graphic file (type png)
 <use images/chapter02/GrossTonnage.png>
 Package pdftex.def Info: images/chapter02/GrossTonnage.png  used on input line 
 172.
 (pdftex.def)             Requested size: 187.90271pt x 124.66257pt.
-<images/chapter02/NetTonnage.pdf, id=2549, 720.53793pt x 478.04295pt>
+<images/chapter02/NetTonnage.pdf, id=2683, 720.53793pt x 478.04295pt>
 File: images/chapter02/NetTonnage.pdf Graphic file (type pdf)
 <use images/chapter02/NetTonnage.pdf>
 Package pdftex.def Info: images/chapter02/NetTonnage.pdf  used on input line 17
@@ -1462,13 +1468,13 @@ ges/chapter02/Draught.pdf> <./images/chapter02/Depth.pdf>]
 
 [24 <./images/chapter02/GrossTonnage.png (PNG copy)> <./images/chapter02/NetTon
 nage.pdf>]
-<images/chapter02/Bollard_pull.png, id=2634, 289.08pt x 103.88812pt>
+<images/chapter02/Bollard_pull.png, id=2769, 289.08pt x 103.88812pt>
 File: images/chapter02/Bollard_pull.png Graphic file (type png)
 <use images/chapter02/Bollard_pull.png>
 Package pdftex.def Info: images/chapter02/Bollard_pull.png  used on input line 
 221.
 (pdftex.def)             Requested size: 289.07928pt x 103.88786pt.
-<images/chapter02/ConventionalTug.pdf, id=2640, 101.42894pt x 68.05426pt>
+<images/chapter02/ConventionalTug.pdf, id=2775, 101.42894pt x 68.05426pt>
 File: images/chapter02/ConventionalTug.pdf Graphic file (type pdf)
 <use images/chapter02/ConventionalTug.pdf>
 Package pdftex.def Info: images/chapter02/ConventionalTug.pdf  used on input li
@@ -1477,12 +1483,12 @@ ne 241.
 
 
 [25 <./images/chapter02/Bollard_pull.png>]
-<images/chapter02/ASD1Tug.pdf, id=2653, 101.42894pt x 68.05426pt>
+<images/chapter02/ASD1Tug.pdf, id=2788, 101.42894pt x 68.05426pt>
 File: images/chapter02/ASD1Tug.pdf Graphic file (type pdf)
 <use images/chapter02/ASD1Tug.pdf>
 Package pdftex.def Info: images/chapter02/ASD1Tug.pdf  used on input line 253.
 (pdftex.def)             Requested size: 234.8775pt x 157.60246pt.
-<images/chapter02/ASD2Tug.pdf, id=2656, 101.42894pt x 68.05426pt>
+<images/chapter02/ASD2Tug.pdf, id=2791, 101.42894pt x 68.05426pt>
 File: images/chapter02/ASD2Tug.pdf Graphic file (type pdf)
 <use images/chapter02/ASD2Tug.pdf>
 Package pdftex.def Info: images/chapter02/ASD2Tug.pdf  used on input line 258.
@@ -1508,7 +1514,7 @@ multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./images/chapter02/ASD2Tug.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<images/chapter02/VSPTug.pdf, id=2733, 103.13531pt x 68.05426pt>
+<images/chapter02/VSPTug.pdf, id=2867, 103.13531pt x 68.05426pt>
 File: images/chapter02/VSPTug.pdf Graphic file (type pdf)
 <use images/chapter02/VSPTug.pdf>
 Package pdftex.def Info: images/chapter02/VSPTug.pdf  used on input line 278.
@@ -1541,7 +1547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
 
 
 [27 <./images/chapter02/VSPTug.pdf>]
-<images/chapter02/3516B.jpg, id=2765, 659.46375pt x 617.30624pt>
+<images/chapter02/3516B.jpg, id=2899, 659.46375pt x 617.30624pt>
 File: images/chapter02/3516B.jpg Graphic file (type jpg)
 <use images/chapter02/3516B.jpg>
 Package pdftex.def Info: images/chapter02/3516B.jpg  used on input line 311.
@@ -1554,13 +1560,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
 
 [28 <./images/chapter02/3516B.jpg>]
-<images/chapter02/fixed_propeller.png, id=2773, 564.60938pt x 396.7322pt>
+<images/chapter02/fixed_propeller.png, id=2907, 564.60938pt x 396.7322pt>
 File: images/chapter02/fixed_propeller.png Graphic file (type png)
 <use images/chapter02/fixed_propeller.png>
 Package pdftex.def Info: images/chapter02/fixed_propeller.png  used on input li
 ne 332.
 (pdftex.def)             Requested size: 234.8775pt x 165.04033pt.
-<images/chapter02/fixed_propeller_nozzle.jpg, id=2774, 384.43625pt x 376.40625p
+<images/chapter02/fixed_propeller_nozzle.jpg, id=2908, 384.43625pt x 376.40625p
 t>
 File: images/chapter02/fixed_propeller_nozzle.jpg Graphic file (type jpg)
 <use images/chapter02/fixed_propeller_nozzle.jpg>
@@ -1572,13 +1578,13 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 330--342
 [][] [] 
  []
 
-<images/chapter02/variable_propeller.png, id=2779, 376.40625pt x 376.40625pt>
+<images/chapter02/variable_propeller.png, id=2913, 376.40625pt x 376.40625pt>
 File: images/chapter02/variable_propeller.png Graphic file (type png)
 <use images/chapter02/variable_propeller.png>
 Package pdftex.def Info: images/chapter02/variable_propeller.png  used on input
  line 355.
 (pdftex.def)             Requested size: 176.15813pt x 176.16429pt.
-<images/chapter02/variable_propeller_nozzle.png, id=2780, 319.94531pt x 319.945
+<images/chapter02/variable_propeller_nozzle.png, id=2914, 319.94531pt x 319.945
 31pt>
 File: images/chapter02/variable_propeller_nozzle.png Graphic file (type png)
 <use images/chapter02/variable_propeller_nozzle.png>
@@ -1595,13 +1601,13 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 353--365
 [29 <./images/chapter02/fixed_propeller.png> <./images/chapter02/fixed_propelle
 r_nozzle.jpg> <./images/chapter02/variable_propeller.png> <./images/chapter02/v
 ariable_propeller_nozzle.png>]
-<images/chapter02/schottel.jpg, id=2794, 401.5pt x 301.125pt>
+<images/chapter02/schottel.jpg, id=2929, 401.5pt x 301.125pt>
 File: images/chapter02/schottel.jpg Graphic file (type jpg)
 <use images/chapter02/schottel.jpg>
 Package pdftex.def Info: images/chapter02/schottel.jpg  used on input line 383.
 
 (pdftex.def)             Requested size: 234.8775pt x 176.16429pt.
-<images/chapter02/VSP_propeller.jpg, id=2795, 1204.5pt x 677.53125pt>
+<images/chapter02/VSP_propeller.jpg, id=2930, 1204.5pt x 677.53125pt>
 File: images/chapter02/VSP_propeller.jpg Graphic file (type jpg)
 <use images/chapter02/VSP_propeller.jpg>
 Package pdftex.def Info: images/chapter02/VSP_propeller.jpg  used on input line
@@ -1624,7 +1630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
-<images/chapter02/OnCable.pdf, id=2805, 3209.72147pt x 840.24014pt>
+<images/chapter02/OnCable.pdf, id=2940, 3209.72147pt x 840.24014pt>
 File: images/chapter02/OnCable.pdf Graphic file (type pdf)
 <use images/chapter02/OnCable.pdf>
 Package pdftex.def Info: images/chapter02/OnCable.pdf  used on input line 431.
@@ -1632,12 +1638,12 @@ Package pdftex.def Info: images/chapter02/OnCable.pdf  used on input line 431.
 
 
 [31 <./images/chapter02/OnCable.pdf>]
-<images/chapter02/Bow.pdf, id=2831, 2282.16605pt x 998.71017pt>
+<images/chapter02/Bow.pdf, id=2966, 2282.16605pt x 998.71017pt>
 File: images/chapter02/Bow.pdf Graphic file (type pdf)
 <use images/chapter02/Bow.pdf>
 Package pdftex.def Info: images/chapter02/Bow.pdf  used on input line 441.
 (pdftex.def)             Requested size: 352.31625pt x 154.17368pt.
-<images/chapter02/alongside.pdf, id=2836, 2282.16605pt x 913.4707pt>
+<images/chapter02/alongside.pdf, id=2971, 2282.16605pt x 913.4707pt>
 File: images/chapter02/alongside.pdf Graphic file (type pdf)
 <use images/chapter02/alongside.pdf>
 Package pdftex.def Info: images/chapter02/alongside.pdf  used on input line 452
@@ -1646,7 +1652,7 @@ Package pdftex.def Info: images/chapter02/alongside.pdf  used on input line 452
 
 
 [32 <./images/chapter02/Bow.pdf> <./images/chapter02/alongside.pdf>]
-<images/chapter02/Path.jpg, id=2876, 543.53062pt x 353.06906pt>
+<images/chapter02/Path.jpg, id=3010, 543.53062pt x 353.06906pt>
 File: images/chapter02/Path.jpg Graphic file (type jpg)
 <use images/chapter02/Path.jpg>
 Package pdftex.def Info: images/chapter02/Path.jpg  used on input line 470.
@@ -1654,7 +1660,7 @@ Package pdftex.def Info: images/chapter02/Path.jpg  used on input line 470.
 
 
 [33 <./images/chapter02/Path.jpg>]
-<images/chapter02/1Maneuver.pdf, id=2888, 357.60904pt x 152.50075pt>
+<images/chapter02/1Maneuver.pdf, id=3022, 357.60904pt x 152.50075pt>
 File: images/chapter02/1Maneuver.pdf Graphic file (type pdf)
 <use images/chapter02/1Maneuver.pdf>
 Package pdftex.def Info: images/chapter02/1Maneuver.pdf  used on input line 556
@@ -1663,13 +1669,13 @@ Package pdftex.def Info: images/chapter02/1Maneuver.pdf  used on input line 556
 
 
 [34]
-<images/chapter02/2Maneuvers.pdf, id=2893, 357.60904pt x 152.50075pt>
+<images/chapter02/2Maneuvers.pdf, id=3027, 357.60904pt x 152.50075pt>
 File: images/chapter02/2Maneuvers.pdf Graphic file (type pdf)
 <use images/chapter02/2Maneuvers.pdf>
 Package pdftex.def Info: images/chapter02/2Maneuvers.pdf  used on input line 56
 3.
 (pdftex.def)             Requested size: 375.80544pt x 160.26546pt.
-<images/chapter02/BSFC.pdf, id=2897, 372.48961pt x 300.02791pt>
+<images/chapter02/BSFC.pdf, id=3031, 372.48961pt x 300.02791pt>
 File: images/chapter02/BSFC.pdf Graphic file (type pdf)
 <use images/chapter02/BSFC.pdf>
 Package pdftex.def Info: images/chapter02/BSFC.pdf  used on input line 575.
@@ -1681,7 +1687,7 @@ Package pdftex.def Info: images/chapter02/BSFC.pdf  used on input line 575.
 pdfTeX warning: pdflatex (file ./images/chapter02/2Maneuvers.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-<images/chapter02/1Maneuver_RelEff.pdf, id=3193, 385.44101pt x 148.76176pt>
+<images/chapter02/1Maneuver_RelEff.pdf, id=3328, 385.44101pt x 148.76176pt>
 File: images/chapter02/1Maneuver_RelEff.pdf Graphic file (type pdf)
 <use images/chapter02/1Maneuver_RelEff.pdf>
 Package pdftex.def Info: images/chapter02/1Maneuver_RelEff.pdf  used on input l
@@ -1690,13 +1696,13 @@ ine 594.
 
 
 [36 <./images/chapter02/BSFC.pdf>]
-<images/chapter02/2Maneuvers_RelEff.pdf, id=3243, 385.44101pt x 148.76176pt>
+<images/chapter02/2Maneuvers_RelEff.pdf, id=3378, 385.44101pt x 148.76176pt>
 File: images/chapter02/2Maneuvers_RelEff.pdf Graphic file (type pdf)
 <use images/chapter02/2Maneuvers_RelEff.pdf>
 Package pdftex.def Info: images/chapter02/2Maneuvers_RelEff.pdf  used on input 
 line 601.
 (pdftex.def)             Requested size: 375.80544pt x 145.04326pt.
-<images/chapter02/1Maneuver_Emiss.pdf, id=3249, 397.19893pt x 152.50075pt>
+<images/chapter02/1Maneuver_Emiss.pdf, id=3384, 397.19893pt x 152.50075pt>
 File: images/chapter02/1Maneuver_Emiss.pdf Graphic file (type pdf)
 <use images/chapter02/1Maneuver_Emiss.pdf>
 Package pdftex.def Info: images/chapter02/1Maneuver_Emiss.pdf  used on input li
@@ -1710,13 +1716,13 @@ lEff.pdf
 pdfTeX warning: pdflatex (file ./images/chapter02/2Maneuvers_RelEff.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-<images/chapter02/2Maneuvers_Emiss.pdf, id=3384, 397.19893pt x 152.50075pt>
+<images/chapter02/2Maneuvers_Emiss.pdf, id=3519, 397.19893pt x 152.50075pt>
 File: images/chapter02/2Maneuvers_Emiss.pdf Graphic file (type pdf)
 <use images/chapter02/2Maneuvers_Emiss.pdf>
 Package pdftex.def Info: images/chapter02/2Maneuvers_Emiss.pdf  used on input l
 ine 631.
 (pdftex.def)             Requested size: 375.80544pt x 144.28848pt.
-<images/chapter02/Stack_1M2M.pdf, id=3387, 403.40913pt x 291.26817pt>
+<images/chapter02/Stack_1M2M.pdf, id=3522, 403.40913pt x 291.26817pt>
 File: images/chapter02/Stack_1M2M.pdf Graphic file (type pdf)
 <use images/chapter02/Stack_1M2M.pdf>
 Package pdftex.def Info: images/chapter02/Stack_1M2M.pdf  used on input line 64
@@ -1735,7 +1741,7 @@ clusion: multiple pdfs with page group included in a single page
 
 [40]
 Chapter 3.
-<images/chapter03/MainPropDieselEngine2.pdf, id=3556, 561.93538pt x 148.96855pt
+<images/chapter03/MainPropDieselEngine2.pdf, id=3690, 561.93538pt x 148.96855pt
 >
 File: images/chapter03/MainPropDieselEngine2.pdf Graphic file (type pdf)
 <use images/chapter03/MainPropDieselEngine2.pdf>
@@ -1747,13 +1753,13 @@ put line 22.
 [41
 
  <./images/chapter03/MainPropDieselEngine2.pdf>]
-<images/chapter03/AuxGenSet.pdf, id=3580, 456.11806pt x 259.15619pt>
+<images/chapter03/AuxGenSet.pdf, id=3715, 456.11806pt x 259.15619pt>
 File: images/chapter03/AuxGenSet.pdf Graphic file (type pdf)
 <use images/chapter03/AuxGenSet.pdf>
 Package pdftex.def Info: images/chapter03/AuxGenSet.pdf  used on input line 34.
 
 (pdftex.def)             Requested size: 234.8775pt x 133.45308pt.
-<images/chapter03/BattBank.jpg, id=3586, 426.59375pt x 393.47pt>
+<images/chapter03/BattBank.jpg, id=3721, 426.59375pt x 393.47pt>
 File: images/chapter03/BattBank.jpg Graphic file (type jpg)
 <use images/chapter03/BattBank.jpg>
 Package pdftex.def Info: images/chapter03/BattBank.jpg  used on input line 54.
@@ -1765,13 +1771,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
-<images/chapter03/SeriesHybrid.pdf, id=3611, 1067.59853pt x 376.12119pt>
+<images/chapter03/SeriesHybrid.pdf, id=3746, 1067.59853pt x 376.12119pt>
 File: images/chapter03/SeriesHybrid.pdf Graphic file (type pdf)
 <use images/chapter03/SeriesHybrid.pdf>
 Package pdftex.def Info: images/chapter03/SeriesHybrid.pdf  used on input line 
 88.
 (pdftex.def)             Requested size: 211.3883pt x 74.47107pt.
-<images/chapter03/SeriesHybrid2.jpg, id=3612, 1533.73pt x 552.0625pt>
+<images/chapter03/SeriesHybrid2.jpg, id=3747, 1533.73pt x 552.0625pt>
 File: images/chapter03/SeriesHybrid2.jpg Graphic file (type jpg)
 <use images/chapter03/SeriesHybrid2.jpg>
 Package pdftex.def Info: images/chapter03/SeriesHybrid2.jpg  used on input line
@@ -1800,13 +1806,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-<images/chapter03/SeriesHybrid3.pdf, id=3638, 1067.59853pt x 376.12119pt>
+<images/chapter03/SeriesHybrid3.pdf, id=3773, 1067.59853pt x 376.12119pt>
 File: images/chapter03/SeriesHybrid3.pdf Graphic file (type pdf)
 <use images/chapter03/SeriesHybrid3.pdf>
 Package pdftex.def Info: images/chapter03/SeriesHybrid3.pdf  used on input line
  125.
 (pdftex.def)             Requested size: 211.3883pt x 74.47107pt.
-<images/chapter03/SeriesHybrid4.jpg, id=3639, 1533.73pt x 595.22375pt>
+<images/chapter03/SeriesHybrid4.jpg, id=3774, 1533.73pt x 595.22375pt>
 File: images/chapter03/SeriesHybrid4.jpg Graphic file (type jpg)
 <use images/chapter03/SeriesHybrid4.jpg>
 Package pdftex.def Info: images/chapter03/SeriesHybrid4.jpg  used on input line
@@ -1826,7 +1832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
 [44 <./images/chapter03/SeriesHybrid3.pdf> <./images/chapter03/SeriesHybrid4.jp
 g>]
-<images/chapter03/ParallelHybrid.jpg, id=3663, 1533.73pt x 614.295pt>
+<images/chapter03/ParallelHybrid.jpg, id=3797, 1533.73pt x 614.295pt>
 File: images/chapter03/ParallelHybrid.jpg Graphic file (type jpg)
 <use images/chapter03/ParallelHybrid.jpg>
 Package pdftex.def Info: images/chapter03/ParallelHybrid.jpg  used on input lin
@@ -1837,7 +1843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-<images/chapter03/PTO.pdf, id=3669, 1067.59853pt x 425.47154pt>
+<images/chapter03/PTO.pdf, id=3803, 1067.59853pt x 425.47154pt>
 File: images/chapter03/PTO.pdf Graphic file (type pdf)
 <use images/chapter03/PTO.pdf>
 Package pdftex.def Info: images/chapter03/PTO.pdf  used on input line 164.
@@ -1845,12 +1851,12 @@ Package pdftex.def Info: images/chapter03/PTO.pdf  used on input line 164.
 
 
 [45 <./images/chapter03/ParallelHybrid.jpg>]
-<images/chapter03/PTI.pdf, id=3677, 1067.59853pt x 425.47154pt>
+<images/chapter03/PTI.pdf, id=3811, 1067.59853pt x 425.47154pt>
 File: images/chapter03/PTI.pdf Graphic file (type pdf)
 <use images/chapter03/PTI.pdf>
 Package pdftex.def Info: images/chapter03/PTI.pdf  used on input line 171.
 (pdftex.def)             Requested size: 375.80544pt x 149.76773pt.
-<images/chapter03/PTH.pdf, id=3679, 1067.59853pt x 425.47154pt>
+<images/chapter03/PTH.pdf, id=3813, 1067.59853pt x 425.47154pt>
 File: images/chapter03/PTH.pdf Graphic file (type pdf)
 <use images/chapter03/PTH.pdf>
 Package pdftex.def Info: images/chapter03/PTH.pdf  used on input line 178.
@@ -1884,12 +1890,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-<images/chapter03/AC_Link.pdf, id=3776, 1067.59853pt x 376.12119pt>
+<images/chapter03/AC_Link.pdf, id=3911, 1067.59853pt x 376.12119pt>
 File: images/chapter03/AC_Link.pdf Graphic file (type pdf)
 <use images/chapter03/AC_Link.pdf>
 Package pdftex.def Info: images/chapter03/AC_Link.pdf  used on input line 224.
 (pdftex.def)             Requested size: 375.80544pt x 132.39621pt.
-<images/chapter03/DC_Link.pdf, id=3780, 1067.59853pt x 376.12119pt>
+<images/chapter03/DC_Link.pdf, id=3915, 1067.59853pt x 376.12119pt>
 File: images/chapter03/DC_Link.pdf Graphic file (type pdf)
 <use images/chapter03/DC_Link.pdf>
 Package pdftex.def Info: images/chapter03/DC_Link.pdf  used on input line 252.
@@ -1919,7 +1925,7 @@ Overfull \hbox (9.83331pt too wide) in paragraph at lines 273--295
 
 
 [49 <./images/chapter03/DC_Link.pdf>]
-<images/chapter03/Segregated_PS.pdf, id=3843, 1067.59853pt x 425.47154pt>
+<images/chapter03/Segregated_PS.pdf, id=3978, 1067.59853pt x 425.47154pt>
 File: images/chapter03/Segregated_PS.pdf Graphic file (type pdf)
 <use images/chapter03/Segregated_PS.pdf>
 Package pdftex.def Info: images/chapter03/Segregated_PS.pdf  used on input line
@@ -1933,7 +1939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
 
 [50 <./images/chapter03/Segregated_PS.pdf>]
-<images/chapter03/Integrated_PS.pdf, id=3865, 1067.59853pt x 425.47154pt>
+<images/chapter03/Integrated_PS.pdf, id=3999, 1067.59853pt x 425.47154pt>
 File: images/chapter03/Integrated_PS.pdf Graphic file (type pdf)
 <use images/chapter03/Integrated_PS.pdf>
 Package pdftex.def Info: images/chapter03/Integrated_PS.pdf  used on input line
@@ -1952,7 +1958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
 
 [51 <./images/chapter03/Integrated_PS.pdf>]
-<images/chapter03/Esquema_General.jpg, id=3888, 1580.90625pt x 754.82pt>
+<images/chapter03/Esquema_General.jpg, id=4022, 1580.90625pt x 754.82pt>
 File: images/chapter03/Esquema_General.jpg Graphic file (type jpg)
 <use images/chapter03/Esquema_General.jpg>
 Package pdftex.def Info: images/chapter03/Esquema_General.jpg  used on input li
@@ -1966,13 +1972,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
 
 [52 <./images/chapter03/Esquema_General.jpg>]
-<images/chapter03/Towing_Mode.pdf, id=3894, 1067.59853pt x 451.97458pt>
+<images/chapter03/Towing_Mode.pdf, id=4028, 1067.59853pt x 451.97458pt>
 File: images/chapter03/Towing_Mode.pdf Graphic file (type pdf)
 <use images/chapter03/Towing_Mode.pdf>
 Package pdftex.def Info: images/chapter03/Towing_Mode.pdf  used on input line 3
 83.
 (pdftex.def)             Requested size: 375.80544pt x 159.09692pt.
-<images/chapter03/FreeSailingMode.pdf, id=3896, 1067.59853pt x 453.72311pt>
+<images/chapter03/FreeSailingMode.pdf, id=4030, 1067.59853pt x 453.72311pt>
 File: images/chapter03/FreeSailingMode.pdf Graphic file (type pdf)
 <use images/chapter03/FreeSailingMode.pdf>
 Package pdftex.def Info: images/chapter03/FreeSailingMode.pdf  used on input li
@@ -1995,13 +2001,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-<images/chapter03/MTU_16V_4000.jpg, id=4216, 516.42938pt x 335.75438pt>
+<images/chapter03/MTU_16V_4000.jpg, id=4351, 516.42938pt x 335.75438pt>
 File: images/chapter03/MTU_16V_4000.jpg Graphic file (type jpg)
 <use images/chapter03/MTU_16V_4000.jpg>
 Package pdftex.def Info: images/chapter03/MTU_16V_4000.jpg  used on input line 
 413.
 (pdftex.def)             Requested size: 211.3883pt x 137.43475pt.
-<images/chapter03/BSFC_MTU.pdf, id=4217, 372.8911pt x 300.02791pt>
+<images/chapter03/BSFC_MTU.pdf, id=4352, 372.8911pt x 300.02791pt>
 File: images/chapter03/BSFC_MTU.pdf Graphic file (type pdf)
 <use images/chapter03/BSFC_MTU.pdf>
 Package pdftex.def Info: images/chapter03/BSFC_MTU.pdf  used on input line 419.
@@ -2012,7 +2018,7 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 411--423
 [][] [] 
  []
 
-<images/chapter03/StandBy_Mode.pdf, id=4218, 1067.59853pt x 451.97458pt>
+<images/chapter03/StandBy_Mode.pdf, id=4353, 1067.59853pt x 451.97458pt>
 File: images/chapter03/StandBy_Mode.pdf Graphic file (type pdf)
 <use images/chapter03/StandBy_Mode.pdf>
 Package pdftex.def Info: images/chapter03/StandBy_Mode.pdf  used on input line 
@@ -2021,138 +2027,247 @@ Package pdftex.def Info: images/chapter03/StandBy_Mode.pdf  used on input line
 
 
 [54 <./images/chapter03/MTU_16V_4000.jpg> <./images/chapter03/BSFC_MTU.pdf>]
-<images/chapter03/1M_HybTug_RelEff.pdf, id=4263, 385.44202pt x 163.06421pt>
-File: images/chapter03/1M_HybTug_RelEff.pdf Graphic file (type pdf)
-<use images/chapter03/1M_HybTug_RelEff.pdf>
-Package pdftex.def Info: images/chapter03/1M_HybTug_RelEff.pdf  used on input l
-ine 445.
-(pdftex.def)             Requested size: 375.80544pt x 158.98819pt.
-<images/chapter03/2M_HybTug_RelEff.pdf, id=4264, 385.44202pt x 163.06421pt>
-File: images/chapter03/2M_HybTug_RelEff.pdf Graphic file (type pdf)
-<use images/chapter03/2M_HybTug_RelEff.pdf>
-Package pdftex.def Info: images/chapter03/2M_HybTug_RelEff.pdf  used on input l
-ine 452.
+<images/chapter03/1M_HybTug_RelEff_015.pdf, id=4400, 385.44202pt x 163.06421pt>
+
+File: images/chapter03/1M_HybTug_RelEff_015.pdf Graphic file (type pdf)
+<use images/chapter03/1M_HybTug_RelEff_015.pdf>
+Package pdftex.def Info: images/chapter03/1M_HybTug_RelEff_015.pdf  used on inp
+ut line 450.
 (pdftex.def)             Requested size: 375.80544pt x 158.98819pt.
 
 
-[55 <./images/chapter03/StandBy_Mode.pdf> <./images/chapter03/1M_HybTug_RelEff.
-pdf
+[55 <./images/chapter03/StandBy_Mode.pdf>]
+<images/chapter03/1M_HybTug_RelEff_025.pdf, id=4492, 385.44202pt x 163.06421pt>
 
-pdfTeX warning: pdflatex (file ./images/chapter03/1M_HybTug_RelEff.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
+File: images/chapter03/1M_HybTug_RelEff_025.pdf Graphic file (type pdf)
+<use images/chapter03/1M_HybTug_RelEff_025.pdf>
+Package pdftex.def Info: images/chapter03/1M_HybTug_RelEff_025.pdf  used on inp
+ut line 457.
+(pdftex.def)             Requested size: 375.80544pt x 158.98819pt.
+<images/chapter03/2M_HybTug_RelEff_015.pdf, id=4496, 385.44202pt x 163.06421pt>
+
+File: images/chapter03/2M_HybTug_RelEff_015.pdf Graphic file (type pdf)
+<use images/chapter03/2M_HybTug_RelEff_015.pdf>
+Package pdftex.def Info: images/chapter03/2M_HybTug_RelEff_015.pdf  used on inp
+ut line 470.
+(pdftex.def)             Requested size: 375.80544pt x 158.98819pt.
+
+
+[56 <./images/chapter03/1M_HybTug_RelEff_015.pdf> <./images/chapter03/1M_HybTug
+_RelEff_025.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter03/1M_HybTug_RelEff_025.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/1M_HybTug_Emiss.pdf, id=4421, 397.19994pt x 152.49873pt>
-File: images/chapter03/1M_HybTug_Emiss.pdf Graphic file (type pdf)
-<use images/chapter03/1M_HybTug_Emiss.pdf>
-Package pdftex.def Info: images/chapter03/1M_HybTug_Emiss.pdf  used on input li
-ne 465.
+<images/chapter03/2M_HybTug_RelEff_025.pdf, id=4623, 385.44202pt x 163.06421pt>
+
+File: images/chapter03/2M_HybTug_RelEff_025.pdf Graphic file (type pdf)
+<use images/chapter03/2M_HybTug_RelEff_025.pdf>
+Package pdftex.def Info: images/chapter03/2M_HybTug_RelEff_025.pdf  used on inp
+ut line 477.
+(pdftex.def)             Requested size: 375.80544pt x 158.98819pt.
+<images/chapter03/1M_HybTug_Emiss_015.pdf, id=4630, 397.19994pt x 152.49873pt>
+File: images/chapter03/1M_HybTug_Emiss_015.pdf Graphic file (type pdf)
+<use images/chapter03/1M_HybTug_Emiss_015.pdf>
+Package pdftex.def Info: images/chapter03/1M_HybTug_Emiss_015.pdf  used on inpu
+t line 494.
 (pdftex.def)             Requested size: 375.80544pt x 144.28656pt.
-<images/chapter03/2M_HybTug_Emiss.pdf, id=4422, 397.19994pt x 152.49873pt>
-File: images/chapter03/2M_HybTug_Emiss.pdf Graphic file (type pdf)
-<use images/chapter03/2M_HybTug_Emiss.pdf>
-Package pdftex.def Info: images/chapter03/2M_HybTug_Emiss.pdf  used on input li
-ne 472.
-(pdftex.def)             Requested size: 375.80544pt x 144.28656pt.
 
 
-[56 <./images/chapter03/2M_HybTug_RelEff.pdf> <./images/chapter03/1M_HybTug_Emi
-ss.pdf
+[57 <./images/chapter03/2M_HybTug_RelEff_015.pdf> <./images/chapter03/2M_HybTug
+_RelEff_025.pdf
 
-pdfTeX warning: pdflatex (file ./images/chapter03/1M_HybTug_Emiss.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/chapter03/2M_HybTug_RelEff_025.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/Stack_Batt_1M.pdf, id=4540, 403.40913pt x 291.26817pt>
+<images/chapter03/1M_HybTug_Emiss_025.pdf, id=4757, 397.19994pt x 152.49873pt>
+File: images/chapter03/1M_HybTug_Emiss_025.pdf Graphic file (type pdf)
+<use images/chapter03/1M_HybTug_Emiss_025.pdf>
+Package pdftex.def Info: images/chapter03/1M_HybTug_Emiss_025.pdf  used on inpu
+t line 502.
+(pdftex.def)             Requested size: 375.80544pt x 144.28656pt.
+<images/chapter03/2M_HybTug_Emiss_015.pdf, id=4763, 397.19994pt x 152.49873pt>
+File: images/chapter03/2M_HybTug_Emiss_015.pdf Graphic file (type pdf)
+<use images/chapter03/2M_HybTug_Emiss_015.pdf>
+Package pdftex.def Info: images/chapter03/2M_HybTug_Emiss_015.pdf  used on inpu
+t line 517.
+(pdftex.def)             Requested size: 375.80544pt x 144.28656pt.
+
+
+[58 <./images/chapter03/1M_HybTug_Emiss_015.pdf> <./images/chapter03/1M_HybTug_
+Emiss_025.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter03/1M_HybTug_Emiss_025.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>]
+<images/chapter03/2M_HybTug_Emiss_025.pdf, id=4870, 397.19994pt x 152.49873pt>
+File: images/chapter03/2M_HybTug_Emiss_025.pdf Graphic file (type pdf)
+<use images/chapter03/2M_HybTug_Emiss_025.pdf>
+Package pdftex.def Info: images/chapter03/2M_HybTug_Emiss_025.pdf  used on inpu
+t line 524.
+(pdftex.def)             Requested size: 375.80544pt x 144.28656pt.
+<images/chapter03/Stack_Batt_1M.pdf, id=4872, 403.40913pt x 291.26817pt>
 File: images/chapter03/Stack_Batt_1M.pdf Graphic file (type pdf)
 <use images/chapter03/Stack_Batt_1M.pdf>
 Package pdftex.def Info: images/chapter03/Stack_Batt_1M.pdf  used on input line
- 482.
+ 538.
 (pdftex.def)             Requested size: 211.3883pt x 152.62474pt.
-<images/chapter03/Stack_Batt_2M.pdf, id=4541, 400.76225pt x 290.2072pt>
+<images/chapter03/Stack_Batt_2M.pdf, id=4873, 400.76225pt x 290.2072pt>
 File: images/chapter03/Stack_Batt_2M.pdf Graphic file (type pdf)
 <use images/chapter03/Stack_Batt_2M.pdf>
 Package pdftex.def Info: images/chapter03/Stack_Batt_2M.pdf  used on input line
- 488.
+ 544.
 (pdftex.def)             Requested size: 211.3883pt x 153.07841pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 480--492
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 536--548
 [][] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+[59 <./images/chapter03/2M_HybTug_Emiss_015.pdf> <./images/chapter03/2M_HybTug_
+Emiss_025.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter03/2M_HybTug_Emiss_025.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
-<images/chapter03/Stack_HybTug_1M2M.pdf, id=4545, 403.40913pt x 291.26817pt>
-File: images/chapter03/Stack_HybTug_1M2M.pdf Graphic file (type pdf)
-<use images/chapter03/Stack_HybTug_1M2M.pdf>
-Package pdftex.def Info: images/chapter03/Stack_HybTug_1M2M.pdf  used on input 
-line 502.
-(pdftex.def)             Requested size: 375.80544pt x 271.3388pt.
+<images/chapter03/Stack_HybTug_1M2M_015.pdf, id=4984, 403.40913pt x 291.26817pt
+>
+File: images/chapter03/Stack_HybTug_1M2M_015.pdf Graphic file (type pdf)
+<use images/chapter03/Stack_HybTug_1M2M_015.pdf>
+Package pdftex.def Info: images/chapter03/Stack_HybTug_1M2M_015.pdf  used on in
+put line 563.
+(pdftex.def)             Requested size: 211.3883pt x 152.62474pt.
+<images/chapter03/Stack_HybTug_1M2M_025.pdf, id=4985, 403.40913pt x 291.26817pt
+>
+File: images/chapter03/Stack_HybTug_1M2M_025.pdf Graphic file (type pdf)
+<use images/chapter03/Stack_HybTug_1M2M_025.pdf>
+Package pdftex.def Info: images/chapter03/Stack_HybTug_1M2M_025.pdf  used on in
+put line 569.
+(pdftex.def)             Requested size: 211.3883pt x 152.62474pt.
+
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 561--573
+[][] [] 
+ []
 
 
-[57 <./images/chapter03/2M_HybTug_Emiss.pdf> <./images/chapter03/Stack_Batt_1M.
-pdf
 
-pdfTeX warning: pdflatex (file ./images/chapter03/Stack_Batt_1M.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./images/chapter03/Stack_Batt_2M.pdf
+[60 <./images/chapter03/Stack_Batt_1M.pdf> <./images/chapter03/Stack_Batt_2M.pd
+f
 
 pdfTeX warning: pdflatex (file ./images/chapter03/Stack_Batt_2M.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
+> <./images/chapter03/Stack_HybTug_1M2M_015.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter03/Stack_HybTug_1M2M_015.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+> <./images/chapter03/Stack_HybTug_1M2M_025.pdf
+
+pdfTeX warning: pdflatex (file ./images/chapter03/Stack_HybTug_1M2M_025.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/Total_ct_1M.pdf, id=4711, 421.575pt x 316.18124pt>
+<images/chapter03/Total_ct_1M.pdf, id=5191, 421.575pt x 316.18124pt>
 File: images/chapter03/Total_ct_1M.pdf Graphic file (type pdf)
 <use images/chapter03/Total_ct_1M.pdf>
 Package pdftex.def Info: images/chapter03/Total_ct_1M.pdf  used on input line 5
-12.
+82.
+(pdftex.def)             Requested size: 375.80544pt x 281.85875pt.
+<images/chapter03/Total_ht_1M_015.pdf, id=5192, 421.575pt x 316.18124pt>
+File: images/chapter03/Total_ht_1M_015.pdf Graphic file (type pdf)
+<use images/chapter03/Total_ht_1M_015.pdf>
+Package pdftex.def Info: images/chapter03/Total_ht_1M_015.pdf  used on input li
+ne 590.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
-<images/chapter03/Total_ht_1M.pdf, id=4712, 421.575pt x 316.18124pt>
-File: images/chapter03/Total_ht_1M.pdf Graphic file (type pdf)
-<use images/chapter03/Total_ht_1M.pdf>
-Package pdftex.def Info: images/chapter03/Total_ht_1M.pdf  used on input line 5
-18.
+<images/chapter03/Total_ht_1M_025.pdf, id=5193, 421.575pt x 316.18124pt>
+File: images/chapter03/Total_ht_1M_025.pdf Graphic file (type pdf)
+<use images/chapter03/Total_ht_1M_025.pdf>
+Package pdftex.def Info: images/chapter03/Total_ht_1M_025.pdf  used on input li
+ne 596.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 510--522
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 588--600
 [][] [] 
  []
 
-<images/chapter03/Total_ct_2M.pdf, id=4713, 421.575pt x 316.18124pt>
+<images/chapter03/Total_ct_2M.pdf, id=5194, 421.575pt x 316.18124pt>
 File: images/chapter03/Total_ct_2M.pdf Graphic file (type pdf)
 <use images/chapter03/Total_ct_2M.pdf>
-Package pdftex.def Info: images/chapter03/Total_ct_2M.pdf  used on input line 5
-31.
+Package pdftex.def Info: images/chapter03/Total_ct_2M.pdf  used on input line 6
+06.
+(pdftex.def)             Requested size: 375.80544pt x 281.85875pt.
+
+
+[61 <./images/chapter03/Total_ct_1M.pdf> <./images/chapter03/Total_ht_1M_015.pd
+f> <./images/chapter03/Total_ht_1M_025.pdf>]
+<images/chapter03/Total_ht_2M_015.pdf, id=5235, 421.575pt x 316.18124pt>
+File: images/chapter03/Total_ht_2M_015.pdf Graphic file (type pdf)
+<use images/chapter03/Total_ht_2M_015.pdf>
+Package pdftex.def Info: images/chapter03/Total_ht_2M_015.pdf  used on input li
+ne 615.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
-<images/chapter03/Total_ht_2M.pdf, id=4714, 421.575pt x 316.18124pt>
-File: images/chapter03/Total_ht_2M.pdf Graphic file (type pdf)
-<use images/chapter03/Total_ht_2M.pdf>
-Package pdftex.def Info: images/chapter03/Total_ht_2M.pdf  used on input line 5
-37.
+<images/chapter03/Total_ht_2M_025.pdf, id=5236, 421.575pt x 316.18124pt>
+File: images/chapter03/Total_ht_2M_025.pdf Graphic file (type pdf)
+<use images/chapter03/Total_ht_2M_025.pdf>
+Package pdftex.def Info: images/chapter03/Total_ht_2M_025.pdf  used on input li
+ne 621.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 529--541
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 613--625
 [][] [] 
  []
 
 
 
-[58 <./images/chapter03/Stack_HybTug_1M2M.pdf> <./images/chapter03/Total_ct_1M.
-pdf> <./images/chapter03/Total_ht_1M.pdf>]) (content/chapter04.tex
+[62 <./images/chapter03/Total_ct_2M.pdf> <./images/chapter03/Total_ht_2M_015.pd
+f> <./images/chapter03/Total_ht_2M_025.pdf>]) (content/chapter04.tex
 
-[59 <./images/chapter03/Total_ct_2M.pdf> <./images/chapter03/Total_ht_2M.pdf>]
+[63]
 Chapter 4.
-) (content/chapter05.tex
 
-[60
+
+[64
 
 ]
 
-[61]
+[65]
+
+[66]
+
+[67]
+
+[68]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 226.
+
+
+
+[69]
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]) (content/chapter05.tex
+
+[77]
+
+[78]
 Chapter 5.
 )
 
-[62
+[79
 
 ] (content/bibliography.tex (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
@@ -2162,13 +2277,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
 
 
-[63
+[80
 
 
 
 ]
 
-[64]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 []\OT1/pplx/m/n/10.95 (+20) Salvamento Mar[]^^Ptimo, ``Re-mol-cadores de Sal-va
 -mento", [On-line]:
@@ -2188,7 +2303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
 
 
-[65]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 []\OT1/pplx/m/n/10.95 (+20) Volvo Penta, `Se-rial or par-al-lel hy-brid ma-rine
  propul-sion?", [On-line]:
@@ -2196,26 +2311,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
 ))
 
-[66] (main.aux)
+[83] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AD5F5FAF802A3F9FE144A7BC26AA39D4;14295.
+(rerunfilecheck)             Checksum: B16C6EF2B79565D62BE3B62781B0AF91;15768.
  ) 
 Here is how much of TeX's memory you used:
- 20198 strings out of 469922
- 322450 string characters out of 5485977
- 744681 words of memory out of 5000000
- 45796 multiletter control sequences out of 15000+600000
- 708642 words of font info for 542 fonts, out of 8000000 for 9000
+ 20476 strings out of 469922
+ 328192 string characters out of 5485977
+ 754290 words of memory out of 5000000
+ 45920 multiletter control sequences out of 15000+600000
+ 713392 words of font info for 581 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,14n,131p,1646b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,15n,131p,1646b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{https://x-engineer.org/ev-design-battery-calculatio
+n/} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{https://www.lithionbattery.com/news/hybrid-tugboats
+-case-study} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{https://www.wartsila.com/insights/article/dc-or-not
 -dc-that-is-the-question} has been referenced but does not exist, replaced by a
@@ -2342,11 +2461,12 @@ statistics/} has been referenced but does not exist, replaced by a fixed one
 <C:/Miktex/fonts/type1/public/newpx/NewPXMI.pfb><C:/Miktex/fonts/type1/public/n
 ewpx/NewPXMI_gnu.pfb><C:/Miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 <C:/Miktex/fonts/type1/public/newpx/pxmiaX.pfb><C:/Miktex/fonts/type1/public/ne
-wpx/pxsys.pfb><C:/Miktex/fonts/type1/urw/palatino/uplb8a.pfb><C:/Miktex/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (77 pages, 17916985 bytes).
+wpx/pxsys.pfb><C:/Miktex/fonts/type1/public/newtx/txexs.pfb><C:/Miktex/fonts/ty
+pe1/urw/palatino/uplb8a.pfb><C:/Miktex/fonts/type1/urw/palatino/uplr8a.pfb><C:/
+Miktex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (97 pages, 18692688 bytes).
 PDF statistics:
- 5031 PDF objects out of 5155 (max. 8388607)
- 375 named destinations out of 1000 (max. 500000)
- 110085 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 5630 PDF objects out of 6186 (max. 8388607)
+ 478 named destinations out of 1000 (max. 500000)
+ 118384 words of extra memory for PDF output out of 128383 (max. 10000000)
 

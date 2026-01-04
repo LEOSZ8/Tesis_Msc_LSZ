@@ -4,12 +4,12 @@ clear
 
 
 
-Info2=open("Info_30min_HybProp_2m.mat");
+Info2=open("Info_30min_HybProp_2m_015.mat");
 
 
 T=Info2.Info_30min_2m(:,1);
-PBatt2=[Info2.Info_30min_2m(1:3,2); 0;0;0;0 ;Info2.Info_30min_2m(8:15,2); 0;0;0;0;0;0 ];
-PAux2=[0;0;0;Info2.Info_30min_2m(4,2);0;0;Info2.Info_30min_2m(7,2); 0;0;0;0;0;0;0;0;Info2.Info_30min_2m(16,2);0;0;Info2.Info_30min_2m(19:20,2);0];
+PBatt2=[Info2.Info_30min_2m(1:2,2); 0;0;0;0;0 ;Info2.Info_30min_2m(8:15,2); 0;0;0;0;0;0 ];
+PAux2=[0;0;Info2.Info_30min_2m(3:4,2);0;0;Info2.Info_30min_2m(7,2); 0;0;0;0;0;0;0;Info2.Info_30min_2m(15:16,2);0;0;Info2.Info_30min_2m(19:20,2);0];
 PDiesel2=[0;0;0;0;Info2.Info_30min_2m(5:6,2);0;0;0;0;0;0;0;0;0;0;Info2.Info_30min_2m(17:18,2);0;0;0];
 
 PBatt2=PBatt2.*1e-3;

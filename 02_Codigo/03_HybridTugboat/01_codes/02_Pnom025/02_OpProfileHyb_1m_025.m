@@ -3,7 +3,7 @@ clear
 
 
 
-Info=open("Info_30min_HybProp_1m.mat");
+Info=open("Info_30min_HybProp_1m_025.mat");
 
 
 T=Info.Info_30min(:,1);

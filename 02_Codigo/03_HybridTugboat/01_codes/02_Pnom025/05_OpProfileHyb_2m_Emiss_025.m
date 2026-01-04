@@ -5,7 +5,7 @@ P_engine_prime=1825;
 
 
 
-Info2=open("Info_30min_HybProp_2m.mat");
+Info2=open("Info_30min_HybProp_2m_025.mat");
 
 
 T=Info2.Info_30min_2m(:,1);
