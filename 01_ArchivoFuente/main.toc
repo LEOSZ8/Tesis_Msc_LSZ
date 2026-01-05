@@ -130,12 +130,7 @@
 \contentsline {subsubsection}{a) BESS $15\%$}{76}{section*.167}%
 \contentsline {subsubsection}{b) BESS $25\%$}{77}{section*.171}%
 \contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{77}{subsection.4.4.7}%
-\contentsline {section}{\numberline {4.5}Economic and life cycle analysis}{78}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}System CAPEX}{78}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}System OPEX}{78}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}ROI / VAN / TIR / Payback}{78}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Comprehensive comparison of alternatives}{78}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Selection of the optimal alternative}{78}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Chapter Summary}{78}{section.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{77}{subsection.4.4.8}%
+\contentsline {section}{\numberline {4.5}Chapter Summary}{78}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Simulation results}{79}{chapter.5}%
 \contentsline {chapter}{Bibliography}{80}{chapter.5}%
