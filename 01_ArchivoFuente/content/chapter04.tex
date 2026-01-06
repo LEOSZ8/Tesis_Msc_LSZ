@@ -235,7 +235,7 @@ LTO is a niche, high-performance chemistry used in fully electric tugs with rapi
 	\item Application: The fully electric tug Sparky utilizes LTO technology to allow for rapid opportunity charging between jobs, ensuring 24/7 availability.
 \end{itemize}
 
-\section{Battery Bank Calculations}
+\section{Battery Bank Design}
 
 Taking into account the battery technologies used in marine environments, the total energy required by the operating profile, and the voltage of the battery bank, the steps to follow to obtain the total number of cells needed to find the right battery bank are shown below \cite{x-engineer}.
 
@@ -872,15 +872,13 @@ Based on the technical information provided by battery suppliers and on the calc
 
 \subsection{Mechanical design considerations}
 
-The mechanical design is focused on the calculation of the total weight and volume of the battery bank.
+The mechanical design is focused on the calculation of the total weight and volume of the battery bank \cite{LSZ}.
 
-Gross Tonnage (GT) is a measure of the vessel's total internal volume and is calculated by dividing the volume of the vessel's enclosed spaces, in cubic feet, by 100, and is based on two variables: $V$, the total volume of the vessel in cubic meters (m$^3$), and $K$, a multiplier based on the vessel's volume. 
+As mentioned in section \ref{sec:VW}, \textbf{gross tonnage (GT)} is a measure of a ship's total internal volume, while \textbf{net tonnage (NT)} is a ship's gross tonnage minus the space occupied by crew quarters, machinery, navigation equipment, engine rooms, and fuel storage. Therefore, net tonnage represents the space available for passenger, accommodation and cargo storage.
 
-Net Tonnage (NT) is the gross tonnage of a vessel minus the space occupied by crew accommodations, machinery, navigation equipment, engine rooms, and fuel storage. Thus, the net tonnage represents the space available for passenger accommodations and cargo storage.
+Additionally, \textbf{deadweight tonnage (DWT)} measures how much weight a vessel can safely carry, including the combined weight of cargo, fuel, fresh water, ballast water, provisions, passengers, and crew. 
 
-In simple terms, Deadweight Tonnage (DWT) measures how much weight a ship can carry. It includes the combined weight of cargo, fuel, fresh water, ballast water, stores, passengers, and crew. This measurement does not include the ship's empty weight; rather, DWT represents the difference between the ship's displacement in tons when it is "light" and its displacement when submerged to the load line. The load line, located on the ship's hull, indicates the maximum safe submersion depth when the ship is fully loaded.
-
-Stability (GM): Tugboats require a low Vertical Center of Gravity (VCG) to maintain a high Metacentric Height (GM), which provides the righting arm needed to counteract the capsizing forces exerted by the towline.
+Thus, the mechanical parameters of the vessel are presented below in Table \ref{tab:mech_tug}.
 
 \begin{table}[H]
 	\centering
@@ -888,13 +886,108 @@ Stability (GM): Tugboats require a low Vertical Center of Gravity (VCG) to maint
 	\label{tab:mech_tug}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\rule{0pt}{8pt}\textbf{Gross Tonnage [L]} & \textbf{Net Tonage [L]} & \textbf{Deadweight [kg]} \\\hline
-		\rule{0pt}{8pt} 761,808 & 228,542.4 & 220,000 \\\hline
+		\rule{0pt}{8pt}\textbf{Gross Tonnage [${\text{m}}^{3}$]} & \textbf{Net Tonage [${\text{m}}^{3}$]} & \textbf{Deadweight [kg]} \\\hline
+		\rule{0pt}{8pt} 761.81 & 228.54 & 220,000 \\\hline
 	\end{tabular}
 \end{table}
 
-It is necessary to consider the volume and weight of the main generator in order to take into account the available space and the weight allowed for the installation of batteries.
+It is necessary to take into account the volume and weight of the main generator presented in section \ref{sec:FSM}, in order to consider the available space and the weight allowed for the installation of the batteries. These values are presented in table \ref{tab:VW_MTU_16V_4000}.
+
+\begin{table}[H]
+	\centering
+	\caption{Mechanical parameters of MTU 16V 4000.}
+	\label{tab:VW_MTU_16V_4000}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt}\textbf{Volume [${\text{m}}^{3}$]} & \textbf{Weight [kg]}\\
+		\hline
+		\rule{0pt}{8pt} 10.65 & 9,050 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In this way, Table \ref{tab:VW_BankBatt} shows the available space and the permitted weight for the designed battery bank.
+
+\begin{table}[H]
+	\centering
+	\caption{Permitted dimensions inside the vessel.}
+	\label{tab:VW_BankBatt}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt}\textbf{Available space [${\text{m}}^{3}$]} & \textbf{Allowed weight [kg]}\\
+		\hline
+		\rule{0pt}{8pt} 217.88 & 210,950 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In this way, battery banks of different technologies that could be mechanically enabled for incorporation into the vessel are identified. This is shown in Table X.
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:VW_techbatts}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Mechanically permitted batteries} $15\%$} \\
+		\hline\hline
+		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
+		 \hline
+		 \textbf{ABL-012010P} & 18,698[kg]  & 11.45[${\text{m}}^{3}$] \\
+		 \hline	
+		 \textbf{ABL-012030P} & 16,405[kg]  & 8.80[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{E4050T1} &  3,143[kg] &  28.11[${\text{m}}^{3}$]\\
+		 \hline\hline
+		 \textbf{URB1270} & 28,910[kg]  & 26.27[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{PSL-SC-12500} & 27,877[kg]  & 24.73[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{U27-36XP} & 27,302[kg]  & 17.28[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 \textbf{SLB12400L151} & \cellcolor[HTML]{CC444B} \textcolor{white}{700,025[kg]}  & 152.72[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{SLB08115L140} & 100,000[kg]  & 192.68[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{ELB 1500mAh LTO} & 35,785[kg]  & 13.15[${\text{m}}^{3}$] \\
+		 \hline	
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $25\%$}
+	\label{tab:VW_techbatts_025}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Mechanically permitted batteries} $25\%$} \\
+		\hline\hline
+		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
+		 \hline
+		 \textbf{ABL-012010P} &  40,034[kg]  & 25.75[${\text{m}}^{3}$] \\
+		 \hline	
+		 \textbf{ABL-012030P} & 36,779[kg]  & 19.73[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{E4050T1} & 7,096[kg] & 28.11[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 
+		 \textbf{URB1270} &  64,960[kg]  &  59.05[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{PSL-SC-12500} & 62,074[kg]  & 55.10[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{U27-36XP} & 61,710[kg]  & 39.08[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 
+		 \textbf{SLB12400L151} & \cellcolor[HTML]{CC444B} \textcolor{white}{1,575,013[kg]} & \cellcolor[HTML]{CC444B} \textcolor{white}{343.61[${\text{m}}^{3}$]} \\
+		 \hline
+		 \textbf{SLB08115L140} &  \cellcolor[HTML]{CC444B} \textcolor{white}{225,000[kg]}  & \cellcolor[HTML]{CC444B} \textcolor{white}{433.54[${\text{m}}^{3}$]} \\
+		 \hline
+		 \textbf{ELB 1500mAh LTO} & 80,505[kg]  & 29.59[${\text{m}}^{3}$] \\
+		 \hline	
+	\end{tabular}
+\end{table}
 
 
+		
 
 \section{Chapter Summary}
