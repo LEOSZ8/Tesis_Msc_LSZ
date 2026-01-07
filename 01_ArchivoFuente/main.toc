@@ -131,6 +131,16 @@
 \contentsline {subsubsection}{b) BESS $25\%$}{77}{section*.171}%
 \contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{77}{subsection.4.4.7}%
 \contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{77}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Chapter Summary}{79}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Simulation results}{80}{chapter.5}%
-\contentsline {chapter}{Bibliography}{81}{chapter.5}%
+\contentsline {section}{\numberline {4.5}Economic Analysis}{79}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{79}{subsection.4.5.1}%
+\contentsline {subsubsection}{a) Battery Bank NMC}{79}{section*.180}%
+\contentsline {subsubsection}{b) Battery Bank LFP}{79}{section*.181}%
+\contentsline {subsubsection}{c) Battery Bank LTO}{80}{section*.182}%
+\contentsline {subsubsection}{d) Power Electronics}{80}{section*.183}%
+\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{80}{subsection.4.5.2}%
+\contentsline {subsubsection}{a) Fuel Consumption Savings}{80}{section*.184}%
+\contentsline {subsubsection}{b) Maintenance Reduction}{80}{section*.185}%
+\contentsline {subsection}{\numberline {4.5.3}Return on Investment (ROI) and Net Present Value (NPV)}{80}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{81}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{82}{chapter.5}%
+\contentsline {chapter}{Bibliography}{83}{chapter.5}%
