@@ -1219,14 +1219,73 @@ OPEX savings are derived primarily from fuel reduction during "loitering" (low l
 
 \subsection{Return on Investment (ROI) and Net Present Value (NPV)}		
 
-Based on a typical 60-tonne bollard pull tug profile operating 3,000 hours/year:
+
+Based on the information described above, the viability of the project can be determined using economic indicators such as net present value (NPV), internal rate of return (IRR), and finally return on investment (ROI).
+
+\subsubsection{a) Net Present Value (NPV)}
+
+The following equation will be used to calculate the NPV.
+
+\begin{equation}
+NPV = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{ds})^t} - \text{Inv}.
+\end{equation}
 
 \begin{itemize}
-	\item \textbf{Net Present Value (NPV):}
-\begin{itemize}
-	\item Assuming a discount rate of $6\% – 8\%$ and a 20-year vessel life, hybrid tugs generally achieve a positive NPV.
-	\item LFP systems currently show the highest NPV due to lower initial CAPEX and sufficient cycle life (3,000–5,000 cycles).
+	\item \textbf{LFS}: Lifespan of the project.
+	\item \textbf{Prf}: Annual profit.
+	\item \textbf{ds}: Discount rate.
+	\item \textbf{Inv}: Initial Investment.
 \end{itemize}
+
+For all scenarios, a discount rate of $6\%$ to $8\%$ and a ship life of 20 years will be proposed. In this way, the NPV is expected to be positive, demonstrating that the project will generate a return on investment.
+
+In addition, it is proposed that the batteries used will have a lifespan of 3,000 to 5,000 cycles during the lifetime of this project.
+
+This provides the net present values for each technology and for each battery bank requested.
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $15\%$}
+	\label{tab:van1}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{NPV} $15\%$} \\
+		\hline\hline
+	Lifespan  & 20\\
+		 \hline
+    Discount Rate ($\%$) & $10\%$\\
+		 \hline
+	${\text{NPV}}_{\text{NMC}}$ & $\$2,445,272$\\
+		 \hline
+	${\text{NPV}}_{\text{LFP}}$ & $\$2,795,272$\\
+		 \hline
+ 	${\text{NPV}}_{\text{LTO}}$ & $\$1,325,272$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance parameters of the battery bank $25\%$}
+	\label{tab:van2}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{NPV} $25\%$} \\
+		\hline\hline
+	Lifespan  & 20\\
+		 \hline
+    Discount Rate ($\%$) & $10\%$\\
+		 \hline
+	${\text{NPV}}_{\text{NMC}}$ & $\$949,003$\\
+		 \hline
+	${\text{NPV}}_{\text{LFP}}$ & $\$1,736,503$\\
+		 \hline
+ 	${\text{NPV}}_{\text{LTO}}$ & $-\$1,570,997$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+\begin{itemize}
 	\item \textbf{Internal Rate of Return (IRR):}
 	\begin{itemize}
 		\item Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can jump to $>20\%$ if the vessel operates in a region with carbon taxation (e.g., EU ETS) or harbor fee discounts for low-emission vessels.
@@ -1238,47 +1297,7 @@ Based on a typical 60-tonne bollard pull tug profile operating 3,000 hours/year:
 	\end{itemize}
 \end{itemize}
 
-\begin{table}[H]
-	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
-	\label{tab:van1}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{VAN} $15\%$} \\
-		\hline\hline
-	Lifespan  & 20\\
-		 \hline
-    Discount Rate ($\%$) & $10\%$\\
-		 \hline
-	VAN NMC & $\$2,445,272$\\
-		 \hline
-	VAN LFP & $\$2,795,272$\\
-		 \hline
- 	VAN LTO & $\$1,325,272$\\
-		 \hline
-	\end{tabular}
-\end{table}
 
-\begin{table}[H]
-	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
-	\label{tab:van2}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{VAN} $25\%$} \\
-		\hline\hline
-	Lifespan  & 20\\
-		 \hline
-    Discount Rate ($\%$) & $10\%$\\
-		 \hline
-	VAN NMC & $\$949,003$\\
-		 \hline
-	VAN LFP & $\$1,736,503$\\
-		 \hline
- 	VAN LTO & $-\$1,570,997$\\
-		 \hline
-	\end{tabular}
-\end{table}
 
 \begin{table}[H]
 	\centering
