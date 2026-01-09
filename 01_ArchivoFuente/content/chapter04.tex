@@ -991,6 +991,15 @@ In this way, battery banks of different technologies that could be mechanically 
 
 The economic viability of a hybrid tugboat hinges on an "energy arbitrage" strategy: incurring higher upfront capital expenditures (CAPEX) to secure long-term reductions in operational expenditures (OPEX). The analysis below breaks down these costs by component and technology.
 
+In addition, two additional factors related to emissions tax and government subsidies are considered, to analyze how this affects economic indicators: 
+
+
+
+\begin{itemize}
+	\item A CO\textsubscript{2} emissions tax of $\$50/{\text{t}}_{\text{CO\textsubscript{2}}}$.
+	\item A government subsidy of $10\%$ of CAPEX.
+\end{itemize}
+
 \subsection{Capital Expenditure (CAPEX)}
 
 The installation of a hybrid propulsion system typically increases the vessel's total build cost by $20\%$ to $30\%$ compared to a conventional diesel-mechanical tug. The battery bank and associated power electronics are the primary drivers of this premium.
@@ -1222,6 +1231,8 @@ OPEX savings are derived primarily from fuel reduction during "loitering" (low l
 
 Based on the information described above, the viability of the project can be determined using economic indicators such as net present value (NPV), internal rate of return (IRR), and finally return on investment (ROI).
 
+
+
 \subsubsection{a) Net Present Value (NPV)}
 
 The following equation will be used to calculate the NPV.
@@ -1231,13 +1242,13 @@ NPV = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{ds})^t} - \text{Inv}.
 \end{equation}
 
 \begin{itemize}
-	\item \textbf{LFS}: Lifespan of the project.
+	\item \textbf{LFS}: Lifespan of the project (years).
 	\item \textbf{Prf}: Annual profit.
 	\item \textbf{ds}: Discount rate.
 	\item \textbf{Inv}: Initial Investment.
 \end{itemize}
 
-For all scenarios, a discount rate of $6\%$ to $8\%$ and a ship life of 20 years will be proposed. In this way, the NPV is expected to be positive, demonstrating that the project will generate a return on investment.
+For all scenarios, a \textbf{discount rate} of $\bf 8\%$ and a useful life of 10 and 20 years for the hybrid tugboat will be proposed. In this way, the positive NPV will demonstrate that the project will generate a return on investment.
 
 In addition, it is proposed that the batteries used will have a lifespan of 3,000 to 5,000 cycles during the lifetime of this project.
 
@@ -1245,51 +1256,96 @@ This provides the net present values for each technology and for each battery ba
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Calculated NPV, without taxes or subsides (small bank).}
 	\label{tab:van1}
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{NPV} $15\%$} \\
+		\multicolumn{4}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 20\\
+	Lifespan  & 10 & 15 &20\\
 		 \hline
-    Discount Rate ($\%$) & $10\%$\\
+    ${\text{NPV}}_{\text{NMC}}$ & $\$1,153,542$ & $\$2,478,158$ &$\$3,379,670$\\
 		 \hline
-	${\text{NPV}}_{\text{NMC}}$ & $\$2,445,272$\\
+	${\text{NPV}}_{\text{LFP}}$ & $\$1,503,542$ & $\$2,828,158$ & $\$3,729,670$\\
 		 \hline
-	${\text{NPV}}_{\text{LFP}}$ & $\$2,795,272$\\
-		 \hline
- 	${\text{NPV}}_{\text{LTO}}$ & $\$1,325,272$\\
+ 	${\text{NPV}}_{\text{LTO}}$ & $\$33,542$ & $\$1,358,158$ & $\$2,259,670$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Calculated NPV, without taxes or subsides (large bank).}
 	\label{tab:van2}
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{NPV} $25\%$} \\
+		\multicolumn{4}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 20\\
+	Lifespan  & 10 & 15 &20\\
 		 \hline
-    Discount Rate ($\%$) & $10\%$\\
+    ${\text{NPV}}_{\text{NMC}}$ & -$\$530,992$ & $\$986,682$ &$\$2,019,586$\\
 		 \hline
-	${\text{NPV}}_{\text{NMC}}$ & $\$949,003$\\
+	${\text{NPV}}_{\text{LFP}}$ & $\$256,508$ & $\$1,774,182$ & $\$2,807,086$\\
 		 \hline
-	${\text{NPV}}_{\text{LFP}}$ & $\$1,736,503$\\
-		 \hline
- 	${\text{NPV}}_{\text{LTO}}$ & $-\$1,570,997$\\
+ 	${\text{NPV}}_{\text{LTO}}$ & -$\$3,050,992$ & -$\$1,533,318$ &-$\$500,414$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
+Tables X and Y show that for a small battery bank, the project is economically viable for all technologies over a short period of time. This contrasts with the large battery bank, where only LFP technology is viable, NMC is viable over a period of 15 years, and LTO is not viable in any of the proposed periods.
+
+The case is also analyzed in terms of how emissions taxes and government subsidies affect it, effects that can be applied jointly or separately, with graphs provided in \textcolor{red}{ANNEX X}.
+
+\subsubsection{b) Internal Rate of Return (IRR)}
+
+IRR is an indicator of a project's profitability that is used to decide whether to accept or reject an investment project \cite{MinHac}. To do this, the IRR is compared to a minimum rate or discount rate. If the project's rate of return—expressed by the IRR—exceeds the discount rate, it is accepted; otherwise, it is rejected.
+
+Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can jump to $>20\%$ if the vessel operates in a region with carbon taxation (e.g., EU ETS) or harbor fee discounts for low-emission vessels.
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated IRR, without taxes or subsides (small bank).}
+	\label{tab:tir1}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	Lifespan  & 10 & 15 &20\\
+		 \hline
+    ${\text{IRR}}_{\text{NMC}}$ & $14.58\%$ & $17.96\%$ & $19.01\%$ \\
+		 \hline
+	${\text{IRR}}_{\text{LFP}}$ & $17.28\%$ & $20.34\%$ & $21.23\%$\\
+		 \hline
+ 	${\text{IRR}}_{\text{LTO}}$ & $8.16\%$ & $12.41\%$ & $13.90\%$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated IRR, without taxes or subsides (large bank).}
+	\label{tab:tir2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	Lifespan  & 10 & 15 &20\\
+		 \hline
+    ${\text{IRR}}_{\text{NMC}}$ & $6.01\%$ & $10.59\%$ & $12.24\%$ \\
+		 \hline
+	${\text{IRR}}_{\text{LFP}}$ & $9.07\%$ & $13.20\%$ & $14.61\%$\\
+		 \hline
+ 	${\text{IRR}}_{\text{LTO}}$ & $-0.75\%$ & $4.93\%$ & $7.20\%$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+For the cases presented in Tables X and Y, it can be seen that all small battery banks manage to exceed the discount rate imposed by the investment, even though LTO technology slightly exceeds the discount rate over a 10-year period. In the case of large battery banks, only LFP manages to be profitable within the 10-year period, and extending the period allows for the viability of NMC and LFP projects, which is not the case with LTO technology, even when considering a 20-year period.
+
+The case is also analyzed in terms of how emissions taxes and government subsidies affect it, effects that can be applied jointly or separately, with graphs provided in \textcolor{red}{ANNEX X}.
+
 \begin{itemize}
-	\item \textbf{Internal Rate of Return (IRR):}
-	\begin{itemize}
-		\item Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can jump to $>20\%$ if the vessel operates in a region with carbon taxation (e.g., EU ETS) or harbor fee discounts for low-emission vessels.
-	\end{itemize}
 	\item \textbf{Return on Investment (ROI)/ Payback Period}:
 		\begin{itemize}
 		\item \textbf{Simple Payback}: 5 to 9 years depending on fuel prices.
@@ -1299,39 +1355,7 @@ This provides the net present values for each technology and for each battery ba
 
 
 
-\begin{table}[H]
-	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
-	\label{tab:tir1}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{TIR} $15\%$} \\
-		\hline\hline
-	TIR NMC & $19.01\%$\\
-		 \hline
-	TIR LFP & $21.23\%$\\
-		 \hline
- 	TIR LTO & $13.90\%$\\
-		 \hline
-	\end{tabular}
-\end{table}
 
-\begin{table}[H]
-	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
-	\label{tab:tir2}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{TIR} $25\%$} \\
-		\hline\hline
-	TIR NMC & $12.24\%$\\
-		 \hline
-	TIR LFP & $14.61\%$\\
-		 \hline
- 	TIR LTO & $7.20\%$\\
-		 \hline
-	\end{tabular}
-\end{table}
 
 \begin{table}[H]
 	\centering

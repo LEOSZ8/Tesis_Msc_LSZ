@@ -142,6 +142,7 @@
 \contentsline {subsubsection}{b) Maintenance Reduction}{81}{section*.189}%
 \contentsline {subsection}{\numberline {4.5.3}Return on Investment (ROI) and Net Present Value (NPV)}{82}{subsection.4.5.3}%
 \contentsline {subsubsection}{a) Net Present Value (NPV)}{82}{section*.194}%
+\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{83}{section*.197}%
 \contentsline {section}{\numberline {4.6}Chapter Summary}{84}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Simulation results}{85}{chapter.5}%
 \contentsline {chapter}{Bibliography}{86}{chapter.5}%
