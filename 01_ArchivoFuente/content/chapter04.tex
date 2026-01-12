@@ -239,15 +239,15 @@ LTO is a niche, high-performance chemistry used in fully electric tugs with rapi
 
 Taking into account the battery technologies used in marine environments, the total energy required by the operating profile, and the voltage of the battery bank, the steps to follow to obtain the total number of cells needed to find the right battery bank are shown below \cite{x-engineer}.
 
-To do this, we will consider that the chosen cells have the following input parameters, provided by the manufacturer:
+To this end, the selected cells shall be considered to have the following input parameters, as provided by the manufacturer. This is shown in Table \ref{tab:Technical_input}.
 
 \begin{table}[H]
 	\centering
-	\caption{Technical input information}
+	\caption{Technical input information.}
 	\label{tab:Technical_input}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Technical input}} \\
+		\multicolumn{2}{|c|}{\textbf{Input technical information}} \\
 		\hline\hline
 		$\text{V}_{bc}$ & Battery cell voltage [V]    \\	
 		\hline
@@ -255,14 +255,18 @@ To do this, we will consider that the chosen cells have the following input para
 		\hline
 		$\text{C}_{bc}$ & Battery cell capacity [Ah]   \\	
 		\hline
+		$\text{C-rate}_{bcc}$ &  Continuous C-rate of the battery cell $[\text{h}^{-1}]$ \\	
+		\hline
+		$\text{C-rate}_{bpc}$ &  Peak C-rate of the battery cell $[\text{h}^{-1}]$ \\	
+		\hline
 		$\text{m}_{bc}$ & Battery cell mass [kg]    \\	
 		\hline
 		$\text{vol}_{bc}$ & Battery cell volume [${\text{m}}^{3}$]    \\	
-		\hline
+		\hline		
 	\end{tabular}
 \end{table} 
 
-In addition, the calculated energy and the proposed nominal voltage for each bank to be designed shall be considered as inputs.
+In addition, the calculated energy and the proposed nominal voltage for each bank to be designed shall be considered as inputs, data that is provided in Table \ref{tab:Technical_input2_15}.
 
 \begin{table}[H]
 	\centering
@@ -274,17 +278,24 @@ In addition, the calculated energy and the proposed nominal voltage for each ban
 		\hline\hline
 & BESS $15\%$ ${\text{P}}_{\text{nom}}$ & BESS $25\%$ ${\text{P}}_{\text{nom}}$ \\
 		\hline
-		 Battery pack voltage $\text{V}_{bp}$ & \multicolumn{2}{c|}{750[V]}   \\
+		$\text{V}_{bp}$ (Battery pack voltage)  & \multicolumn{2}{c|}{750[V]}   \\
 		 \hline
-		 Battery pack total energy $\text{E}_{bp}$ & 2800[kWh] & 6300[kWh]  \\
+		 $\text{E}_{bp}$ (Battery pack total energy)  & 2800[kWh] & 6300[kWh]  \\
 		\hline
 		
 	\end{tabular}
 \end{table} 
 
-The battery bank will be considered to consist of several strings connected in parallel, each of which consists of several cells connected in series.
+The battery bank will be considered to consist of several strings connected in parallel, each of which consists of several cells connected in series. Also, the volume of the battery pack will be calculated taking into account only the battery cells, without considering other factors such as electronic circuits, cooling circuit, battery casing, wiring, etc.\\
 
-The volume of the battery pack will be calculated taking into account only the battery cells, without considering other factors such as electronic circuits, cooling circuit, battery casing, wiring, etc.
+Next, we will present the basic calculations used to characterize the battery bank. These include:
+
+\begin{itemize}
+	\item Essential electrical parameters.
+	\item Electrical performance parameters.
+	\item Mechanical parameters.
+\end{itemize}
+
 
 \subsection{Calculation of essential electrical parameters}
 
@@ -373,13 +384,13 @@ The volume of the battery pack will be calculated taking into account only the b
 \text{vol}_{bp} = \text{N}_{bp} \cdot \text{vol}_{bc}
 \end{equation}
 
-\subsection{Calculated NMC battery}
+\subsection{Calculated NMC battery banks}
 
-Three different models of NMC batteries and their technical characteristics are presented.
+Three different models of NMC batteries and their technical specifications are presented in Table \ref{tab:Technical_inputNMC}.
 
 \begin{table}[H]
 	\centering
-	\caption{NMC Batteries}
+	\caption{Technical specification of NMC Batteries.}
 	\label{tab:Technical_inputNMC}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -393,6 +404,10 @@ Three different models of NMC batteries and their technical characteristics are 
 		\hline
 		$\text{C}_{bc}$ &  10[Ah] & 30[Ah] & 128[Ah]\\	
 		\hline
+		$\text{C-rate}_{bcc}$ &   &  & \\	
+		\hline
+		$\text{C-rate}_{bpc}$ &   &  & \\	
+		\hline
 		$\text{m}_{bc}$ & 0.8[kg]& 2.1[kg] & 0.48[kg]\\	
 		\hline
 		$\text{vol}_{bc}$ &  0.00049[${\text{m}}^{3}$]& 0.001127[${\text{m}}^{3}$] & 0.0043[${\text{m}}^{3}$]    \\	
@@ -400,15 +415,19 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsubsection{a) BESS $15\%$}
+The technical specifications of each model, in addition to the input parameters of the battery bank, allow the necessary calculations to be made to characterize both small and large NMC battery banks.
+
+\subsubsection{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
+
+The essential electrical characteristics, performance parameters, and physical characteristics of the small NMC battery bank are presented below in Tables \ref{tab:NMC_015_1}, \ref{tab:NMC_015_2}, and \ref{tab:NMC_015_3}, respectively.
 
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $15\%$}
+	\caption{Essential parameters of the small NMC battery bank.}
 	\label{tab:NMC_015_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, NMC battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -427,11 +446,11 @@ Three different models of NMC batteries and their technical characteristics are 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Performance parameters of the small NMC battery bank.}
 	\label{tab:NMC_015_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, NMC battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -453,11 +472,11 @@ Three different models of NMC batteries and their technical characteristics are 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $15\%$}
+	\caption{Mechanical parameters of the small NMC battery bank.}
 	\label{tab:NMC_015_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, NMC battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -469,15 +488,17 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsubsection{b) BESS $25\%$}
+\subsubsection{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
+
+The essential electrical characteristics, performance parameters, and physical characteristics of the large NMC battery bank are presented below in Tables \ref{tab:NMC_025_1}, \ref{tab:NMC_025_2}, and \ref{tab:NMC_025_3}, respectively.
 
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $15\%$}
+	\caption{Essential parameters of the large NMC battery bank.}
 	\label{tab:NMC_025_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, NMC battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -496,11 +517,11 @@ Three different models of NMC batteries and their technical characteristics are 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Performance parameters of the large NMC battery bank.}
 	\label{tab:NMC_025_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, NMC battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -522,11 +543,11 @@ Three different models of NMC batteries and their technical characteristics are 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $15\%$}
+	\caption{Mechanical parameters of the large NMC battery bank.}
 	\label{tab:NMC_025_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, NMC battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
 		 \hline
@@ -540,11 +561,13 @@ Three different models of NMC batteries and their technical characteristics are 
 
 
  
-\subsection{Calculated LFP battery}
+\subsection{Calculated LFP battery banks}
+
+As in the previous case, Table \ref{tab:Technical_inputLFP} shows three different battery models, but now LFP, with their technical specifications.
 
 \begin{table}[H]
 	\centering
-	\caption{LFP Batteries}
+	\caption{Technical specification of NMC Batteries.}
 	\label{tab:Technical_inputLFP}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -558,6 +581,10 @@ Three different models of NMC batteries and their technical characteristics are 
 		\hline
 		$\text{C}_{bc}$ &  7.6[Ah] & 50[Ah] & 50[Ah]\\	
 		\hline
+		$\text{C-rate}_{bcc}$ &   &  & \\	
+		\hline
+		$\text{C-rate}_{bpc}$ &   &  & \\	
+		\hline
 		$\text{m}_{bc}$ & 1[kg]& 6.3[kg] & 18.7[kg]\\	
 		\hline
 		$\text{vol}_{bc}$ &  0.00090[${\text{m}}^{3}$]& 0.00559[${\text{m}}^{3}$] & 0.01184[${\text{m}}^{3}$]    \\	
@@ -565,7 +592,9 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsubsection{a) BESS $15\%$}
+These technical specifications for each model enable the necessary calculations to be made to characterize both small and large LFP battery banks.
+
+\subsubsection{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
 \begin{table}[H]
 	\centering
@@ -573,7 +602,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_015_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, LFP battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -596,7 +625,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_015_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, LFP battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -622,7 +651,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_015_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LFP battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -634,7 +663,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsubsection{b) BESS $25\%$}
+\subsubsection{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
 \begin{table}[H]
 	\centering
@@ -642,7 +671,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_025_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, LFP battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -665,7 +694,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_025_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, LFP battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -691,7 +720,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LFP_025_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LFP battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
 		 \hline
@@ -703,11 +732,11 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsection{Calculated LTO battery}
+\subsection{Calculated LTO battery banks}
 
 \begin{table}[H]
 	\centering
-	\caption{LTO Batteries}
+	\caption{Technical specification of LTO Batteries.}
 	\label{tab:Technical_inputLTP}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -721,6 +750,10 @@ Three different models of NMC batteries and their technical characteristics are 
 		\hline
 		$\text{C}_{bc}$ &  0.15[Ah] & 0.014[Ah] & 1.5[Ah]\\	
 		\hline
+		$\text{C-rate}_{bcc}$ &   &  & \\	
+		\hline
+		$\text{C-rate}_{bpc}$ &   &  & \\	
+		\hline
 		$\text{m}_{bc}$ & 0.09[kg]& 0.0012[kg] & 0.046[kg]\\	
 		\hline
 		$\text{vol}_{bc}$ &  0.00002[${\text{m}}^{3}$]& $2.31\cdot{10}^{-6}$[${\text{m}}^{3}$] & 0.00002[${\text{m}}^{3}$]    \\	
@@ -729,7 +762,7 @@ Three different models of NMC batteries and their technical characteristics are 
 \end{table} 
 
 
-\subsubsection{a) BESS $15\%$}
+\subsubsection{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
 \begin{table}[H]
 	\centering
@@ -737,7 +770,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_015_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, LTO battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -760,7 +793,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_015_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, LTO battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -786,7 +819,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_015_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $15\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LTO battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -798,7 +831,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\end{tabular}
 \end{table} 
 
-\subsubsection{b) BESS $25\%$}
+\subsubsection{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
 \begin{table}[H]
 	\centering
@@ -806,7 +839,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_025_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Essential parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Essential parameters, LTO battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -829,7 +862,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_025_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Performance parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Performance parameters, LTO battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -855,7 +888,7 @@ Three different models of NMC batteries and their technical characteristics are 
 	\label{tab:LTO_025_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters battery bank} $25\%$} \\
+		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LTO battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
 		\hline\hline
 		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
 		 \hline
@@ -886,8 +919,8 @@ Thus, the mechanical parameters of the vessel are presented below in Table \ref{
 	\label{tab:mech_tug}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\rule{0pt}{8pt}\textbf{Gross Tonnage [${\text{m}}^{3}$]} & \textbf{Net Tonage [${\text{m}}^{3}$]} & \textbf{Deadweight [kg]} \\\hline
-		\rule{0pt}{8pt} 761.81 & 228.54 & 220,000 \\\hline
+		\rule{0pt}{8pt} \textbf{Deadweight [kg]} & \textbf{Gross Tonnage [${\text{m}}^{3}$]} & \textbf{Net Tonage [${\text{m}}^{3}$]} \\\hline
+		\rule{0pt}{8pt} 220,000 & 761.81 & 228.54  \\\hline
 	\end{tabular}
 \end{table}
 
@@ -899,9 +932,9 @@ It is necessary to take into account the volume and weight of the main generator
 	\label{tab:VW_MTU_16V_4000}
 	\begin{tabular}{|c|c|}
 		\hline
-		\rule{0pt}{8pt}\textbf{Volume [${\text{m}}^{3}$]} & \textbf{Weight [kg]}\\
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
 		\hline
-		\rule{0pt}{8pt} 10.65 & 9,050 \\
+		\rule{0pt}{8pt} 9,050 & 10.65 \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -914,22 +947,22 @@ In this way, Table \ref{tab:VW_BankBatt} shows the available space and the permi
 	\label{tab:VW_BankBatt}
 	\begin{tabular}{|c|c|}
 		\hline
-		\rule{0pt}{8pt}\textbf{Available space [${\text{m}}^{3}$]} & \textbf{Allowed weight [kg]}\\
+		\rule{0pt}{8pt} \textbf{Allowed weight [kg]} & \textbf{Available space [${\text{m}}^{3}$]} \\
 		\hline
-		\rule{0pt}{8pt} 217.88 & 210,950 \\
+		\rule{0pt}{8pt} 210,950 & 217.88  \\
 		\hline
 	\end{tabular}
 \end{table}
 
-In this way, battery banks of different technologies that could be mechanically enabled for incorporation into the vessel are identified. This is shown in Table X.
+In this way, battery banks of different technologies that could be mechanically enabled for incorporation into the vessel are identified. Options that account for less than $10\%$ of the vessel's capacity are highlighted in green (Table \ref{tab:VW_BankBatt}), while technologies that, given their technical characteristics, do not qualify as solutions are highlighted in red.This is shown in Table \ref{tab:VW_techbatts} and \ref{tab:VW_techbatts_025}.
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Physical aspects of technologies (small battery banks).}
 	\label{tab:VW_techbatts}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{3}{|c|}{\textbf{Mechanically permitted batteries} $15\%$} \\
+		\multicolumn{3}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
 		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
 		 \hline
@@ -956,11 +989,11 @@ In this way, battery banks of different technologies that could be mechanically 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Physical aspects of technologies (large battery banks).}
 	\label{tab:VW_techbatts_025}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{3}{|c|}{\textbf{Mechanically permitted batteries} $25\%$} \\
+		\multicolumn{3}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
 		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
 		 \hline
@@ -989,9 +1022,9 @@ In this way, battery banks of different technologies that could be mechanically 
 
 \section{Economic Analysis}
 
-The economic viability of a hybrid tugboat hinges on an "energy arbitrage" strategy: incurring higher upfront capital expenditures (CAPEX) to secure long-term reductions in operational expenditures (OPEX). The analysis below breaks down these costs by component and technology.
+To analyze the economic viability of a hybrid tugboat, it is necessary to first understand the higher initial capital expenditures (CAPEX) and operating expenses (OPEX).
 
-In addition, two additional factors related to emissions tax and government subsidies are considered, to analyze how this affects economic indicators: 
+In addition, two additional factors related to emissions taxes and government subsidies are taken into account to analyze how this affects economic indicators and how sensitive they are: 
 
 
 
@@ -1000,233 +1033,385 @@ In addition, two additional factors related to emissions tax and government subs
 	\item A government subsidy of $10\%$ of CAPEX.
 \end{itemize}
 
+\textcolor{blue}{Alcance: NO SE CONSIDERA LA INFLACIÓN.}
+
+\textcolor{blue}{Alcance: NO SE CONSIDERA EL COSTO DEL CARGADOR EN PUERTO.}
+
 \subsection{Capital Expenditure (CAPEX)}
 
-The installation of a hybrid propulsion system typically increases the vessel's total build cost by $20\%$ to $30\%$ compared to a conventional diesel-mechanical tug. The battery bank and associated power electronics are the primary drivers of this premium.
+One of the major problems facing the maritime transport sector with regard to the advancement of hybrid propulsion is how to achieve a fully satisfactory implementation of a cost-effective hybrid propulsion plant \cite{MAN2}. 
+The main challenge is CAPEX, i.e., keeping the capital expenditure of hybrid equipment in line with that of conventional propulsion plants.
 
-Unlike automotive batteries, marine-certified systems (DNV/ABS approved) carry a significant price premium due to safety requirements (thermal runaway propagation protection, off-gas ventilation) and ruggedization.
+The cost of marine battery systems is significantly higher than automotive packs due to the "marine tax"—the cost of ruggedization, certification, and low-volume manufacturing.\\
+
+BESS is a mature technology and there are already hybrid tugboats that have been deployed \cite{CaGov}. A BESS contains Li-ion batteries, a battery management system, ventilation/cooling, and a dedicated fire extinguishing system. The BESS must be installed in a dedicated compartment with ventilation. However, Li-ion batteries have a very low energy density, and large battery installations will entail space and weight costs on the vessel\\ 
+Fire safety is also a concern, as battery fires can be difficult to extinguish. The lifetime of the BESS is also limited by the number of charge/discharge cycles. The typical BESS lifetime is 8,000 to 12,000 cycles.\\
+
+It is important to note that this is the estimated cost for the first tugboat \cite{CaGov}. This distinction is important because the first hybrid tugboat is considered a novel design, which requires additional engineering and design work hours.Therefore, $3.5\%$ of the gross cost will be considered, which is a similar engineering cost in proportion to that seen in other projects \cite{CaGov}.
+
+The following are the main elements that are considered for the hybridization and retrofitting of a conventional tugboat.
 
 \subsubsection{a) Battery Bank NMC}
 
-High energy density requirements where space is limited. Mid-range. Good balance of power and energy, but shorter cycle life requires earlier replacement reserves.
+Their life cycles are around 1,000–2,500 cycles. In a heavy-duty tug application with frequent peaks, NMC packs may degrade faster, necessitating a costly replacement mid-lifecycle (Year 7–10), which severely impacts the NPV \cite{ankersolix}.
 
 \begin{itemize}
-	\item \textbf{System Price (2024/2025)}: $\$500-\$750$ per kWh.
-	
+	\item \textbf{System Price (2024/2025)} \cite{ritarpower}: $\text{US}\$600-\text{US}\$1000$ per kWh.	
 \end{itemize}
+
+The higher cost is due to the use of expensive raw materials such as cobalt and the more complex manufacturing processes required to achieve the high energy density and performance characteristics \cite{ritarpower}. For example, in electric vehicles where space and weight are critical factors, NMC batteries are often preferred despite the higher cost, as they can provide longer driving ranges without adding excessive bulk to the vehicle.
 
 \subsubsection{b) Battery Bank LFP}
 
-LFP prices have dropped roughly $20–30\%$ lower than NMC in 2024 due to lower raw material costs (no cobalt/nickel).
-
-Best ROI for standard harbor tugs. The lower energy density is often negated by the tug's need for ballast weight.
-
+While LFP has a lower energy density (90 to 160 Wh/kg) than NMC, it offers a superior cycle life, typically achieving 2,000 to 6,000+ cycles. In many maritime applications, such as cargo vessels or mid-speed ferries, the slightly higher weight of LFP is an acceptable trade-off for the increased safety and the ability to avoid replacement for 10 years or more \cite{evlithium}. 
 \begin{itemize}
-	\item \textbf{System Price (2024/2025)}: $\$450-\$600$ per kWh.
+	\item \textbf{System Price (2024/2025)} \cite{ritarpower}: $\text{US}\$300-\text{US}\$600$ per kWh.
 \end{itemize}
+
+The lower cost can be attributed to the use of more abundant and less expensive raw materials, as well as a simpler manufacturing process \cite{ritarpower}. Although they have a slightly lower energy density compared to NMC batteries, they are a popular choice for applications where safety and long-term reliability are of utmost importance, such as in home energy storage systems and some electric vehicles where cost is a significant consideration.
 
 \subsubsection{c) Battery Bank LTO}
 
-Heavy cycling applications (e.g., 10+ cycles/day). While the upfront cost is nearly double, LTO lasts 15,000–20,000 cycles, often outlasting the vessel's service life without replacement.
+LTO systems can withstand 10,000 to 15,000+ cycles and are capable of ultra-fast charging, often reaching full capacity in 10 to 30 minutes \cite{evlithium}.
 
 \begin{itemize}
-	\item \textbf{System Price (2024/2025)}: $\$900-\$1,200$ per kWh.
+	\item \textbf{System Price (2024/2025)} \cite{ritarpower}: $\text{US}\$800-\text{US}\$1,200$ per kWh.
 \end{itemize}
+
+The higher cost is mainly due to the production process of lithium titanate, which is more complex and requires specialized equipment. Additionally, the raw materials used in LTO batteries can be costly \cite{ritarpower}. Despite their high cost, LTO batteries are finding applications in areas where rapid charging and high power output are crucial, such as in some electric buses and high-performance electric vehicles.\\
 
 \subsubsection{d) Power Electronics}
 
 \begin{itemize}
-	\item \textbf{DC/DC Converters}:Required to connect the battery to the DC Bus. Estimated at $\$100-\$150$ per kWh.
-	\item \textbf{Inverters/Drives:}Marine-grade liquid-cooled drives cost $\$120-\$180$ per kWh.
-	\item \textbf{Electric Motors:}Marine-grade liquid-cooled drives cost $\$120-\$180$ per kWh.
+	\item \textbf{DC/DC Converters}: The DC/DC converters convert and regulate the power supplied from the lithium ion batteries to the voltage requirement of the DC bus \cite{ProfMar}. 
+	\begin{itemize}
+		\item  \textbf{System Price} \cite{Akbarzadeh} \cite{TestEq}: $\text{US}\$100-\text{US}\$400$ per kW.
+	\end{itemize}	
+	
+	\item \textbf{Inverters}: Bidirectional AFE that regulates the voltage from a battery-linked DC/DC converter to an AC propulsion bus, with marine-grade and liquid-cooled drives \cite{Wartsila3}. 
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$250-\text{US}\$450$ per kW.
+	\end{itemize}	
+	\item \textbf{Variable Frequency Drives}: AC drives function as the primary interface between the electrical distribution system—whether it be a traditional AC grid or a modern common DC bus—and the three-phase motors that provide mechanical thrus \cite{Radica}. 
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$120-\text{US}\$250$ per kW.
+	\end{itemize}	
 \end{itemize}
+
+\subsubsection{e) Main genset and Electric motors}
+
+\begin{itemize}
+	\item \textbf{Main Genset}: The price ranges for diesel generators with a power output of 2000 kW (2 MW) vary significantly based on the manufacturer (Tier 1 vs. budget brands), application (Marine vs. Industrial), and condition (New vs. Used).
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$75-\text{US}\$750$ per kW.
+	\end{itemize}	
+	\item \textbf{Electric Motors:} The price for a 1,000 kW (1 MW) squirrel cage induction motor suitable for hybrid tugboat propulsion varies significantly depending on the manufacturer (ABB, Siemens (SIMOTICS M), WEG, Danfoss Editron), cooling method, and classification status. 
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$90-\text{US}\$250$ per kW.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{f) Integration and Safety systems}
+
+\begin{itemize}
+	\item \textbf{Integration/cabling}: It is considered to be around $20\%$ of the cost of equipment.
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$100,000-\text{US}\$175,0000$.
+	\end{itemize}	
+	\item \textbf{Fire/Safety Systems:} Battery rooms must be A-60 fire-rated, gas-tight, and equipped with explosion relief vents and specialized ventilation to handle potential off-gassing, adding structural steel and HVAC costs \cite{Norwegian}. 
+	\begin{itemize}
+		\item \textbf{System Price}: $\text{US}\$50,000-\text{US}\$80,000$.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{g) Total Cost}
+
+Tables \ref{tab:Cost1} and \ref{tab:Cost2} show the total cost obtained for the different elements identified for both the small battery bank and the large battery bank, using an average of the highest and lowest costs for each element.
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{BESS implementation costs, without taxes or subsides (small bank).}
 	\label{tab:Cost1}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Costs} $15\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-   NMC Battery Bank & $\$1,820,000$ \\
+   NMC Battery Bank & US $\$2,240,000$ \\
 		 \hline
-   LFP Battery Bank & $\$1,470,000$ \\
+   LFP Battery Bank & US $\$1,260,000$ \\
 		 \hline
-   LTO Battery Bank & $\$2,940,000$ \\
+   LTO Battery Bank & US $\$2,800,000$ \\
 		 \hline \hline
-		 DC/DC Converters	 & $\$75,000$ \\
+   DC/DC Converters & US $\$150,000$ \\
 		 \hline
-   Inverter and Drives & $\$390,000$\\
+   Inverter and Drives & US $\$580,000$\\
 		 \hline	
-		 Main Genset & $\$825,000$ \\
+           Main Genset & US $\$825,000$ \\
 		 \hline
-	Electric Motors & $\$340,000$ \\
+	Electric Motors & US $\$340,000$ \\
 		 \hline		 
- Integration/Cabling/Equipment & $\$137,500$ \\
+ Integration/Cabling/Equipment & US $\$137,500$ \\
 		 \hline
-	Fire/Safety Systems & $\$65,000$\\
+	Fire/Safety Systems & US $\$65,000$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{BESS implementation costs, without taxes or subsides (small bank).}
 	\label{tab:Cost2}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Costs} $25\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-   NMC Battery Bank & $\$4,095,000$ \\
+   NMC Battery Bank & US $\$5,040,000$ \\
 		 \hline
-   LFP Battery Bank & $\$3,307,500$ \\
+   LFP Battery Bank & US $\$2,835,000$ \\
 		 \hline
-   LTO Battery Bank & $\$6,615,000$ \\
+   LTO Battery Bank & US $\$6,300,000$ \\
 		 \hline \hline
-		 DC/DC Converters	 & $\$125,000$ \\
+   DC/DC Converters & US $\$250,000$ \\
 		 \hline
-   Inverter and Drives & $\$450,000$\\
+   Inverter and Drives & US $\$720,000$\\
 		 \hline	
-		 Main Genset & $\$825,000$ \\
+           Main Genset & US $\$825,000$ \\
 		 \hline
-	Electric Motors & $\$340,000$ \\
+	Electric Motors & US $\$340,000$ \\
 		 \hline		 
- Integration/Cabling/Equipment & $\$137,500$ \\
+ Integration/Cabling/Equipment & US $\$137,500$ \\
 		 \hline
-	Fire/Safety Systems & $\$65,000$\\
+	Fire/Safety Systems & US $\$65,000$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
+Using the cost information provided in the tables, the cost associated with engineering is calculated, considered to be $3.5\%$ of the total costs. This can be seen in tables \ref{tab:enCost1} and \ref{tab:enCost2}.
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Engineering cost associated with the small battery bank.}
+	\label{tab:enCost1}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	Engineering (NMC) & US $\$151,812$\\
+		 \hline
+	Engineering (LFP) & US $\$117,512$\\
+		 \hline
+	Engineering (LTO) & US $\$171,412$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Engineering cost associated with the large battery bank.}
+	\label{tab:enCost2}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	Engineering (NMC) & US $\$258,212$\\
+		 \hline
+	Engineering (LFP) & US $\$181,037$\\
+		 \hline
+	Engineering (LTO) & US $\$302,312$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+Engineering costs will be added to the costs obtained for hybrid propulsion system equipment, thus obtaining the CAPEX for each battery bank. This can be seen in Tables \ref{tab:Cost3} and \ref{tab:Cost4}.
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated CAPEX, without taxes or subsides (small bank).}
 	\label{tab:Cost3}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{CAPEX} $15\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	CAPEX NMC & $\$3,652,500$\\
+	${\text{CAPEX}}_{\text{NMC}}$ & US $\$4,489,313$\\
 		 \hline
-	CAPEX LFP & $\$3,302,500$\\
+	${\text{CAPEX}}_{\text{LFP}}$ & US $\$3,239,988$\\
 		 \hline
-	CAPEX LTO & $\$4,772,500$\\
+	${\text{CAPEX}}_{\text{LTO}}$ & US $\$4,726,088$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Calculated CAPEX, without taxes or subsides (large bank).}
 	\label{tab:Cost4}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{CAPEX} $25\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	CAPEX NMC & $\$6,037,500$\\
+	${\text{CAPEX}}_{\text{NMC}}$ & US $\$7,635,713$\\
 		 \hline
-	CAPEX LFP & $\$5,250,000$\\
+	${\text{CAPEX}}_{\text{LFP}}$ & US $\$5,353,538$\\
 		 \hline
-	CAPEX LTO & $\$8,557,500$\\
+	${\text{CAPEX}}_{\text{LTO}}$ & US $\$8,939,813$\\
 		 \hline
 	\end{tabular}
 \end{table}
+
+This additional capital expenditure must be recouped through reduced operating costs resulting from the use of electricity instead of diesel fuel and reduced maintenance \cite{Wartsila2}. The local price of electricity and the local price of fuel are very important for the business case. This improves substantially when authorities provide cheap green electricity at the port to achieve their zero-emission targets.
 
 \subsection{Operational Expenditure (OPEX)}
 
-OPEX savings are derived primarily from fuel reduction during "loitering" (low load) and maintenance intervals extended by reduced engine runtime.
+OPEX savings are derived primarily from fuel reduction during "loitering" (low load) and maintenance intervals extended by reduced engine runtime \cite{MAN2}. 
 
+
+Thus, the following variables are considered in operating expenses.
 
 \subsubsection{a) Fuel Consumption Savings}
-\begin{itemize}
-	\item \textbf{Standby Mode:} A conventional tug burns $\approx 20–40$ liters/hour just idling. A hybrid tug in electric mode burns 0 liters/hour.
-	\item \textbf{Peak Shaving:} By leveling the load on the main engines, the specific fuel oil consumption (SFOC) improves from $~230 g/kWh$ (part load) to $~190 g/kWh$ (optimal load).
-	\item \textbf{Total Savings}: Real-world data indicates annual fuel savings of $20\%$ to $30\%$ for standard hybrids, and up to $50\%$ for tugs with heavy standby profiles.
-\end{itemize}
 
-\subsubsection{b) Maintenance Reduction}
+The conventional tugboat consumes approximately 1,200 to 2,100 liters of fuel just idling. A hybrid tugboat in electric mode consumes 0 liters in that mode. The batteries allow the load on the main engines to be balanced, thereby improving the specific fuel consumption (BSFC).
 
-\begin{itemize}
-	\item \textbf{Engine Runtime}: Hybrid tugs can reduce main engine running hours by up to $60\%$ annually by using batteries for transit and standby.
-	\item \textbf{Cost Impact}: This extends overhaul intervals (e.g., from 20,000 hours to 30,000+ hours), reducing annualized maintenance costs by $~30–50\%$.
-\end{itemize}
+\subsubsection{b) Maintenance Engine Reduction}
+
+Hybrid tugs can reduce main engine operating hours by up to $60\%$ per year by using batteries for transit and standby mode. This extends the overhaul intervals for propulsion engines, reducing annualized maintenance costs. However, these savings in propulsion engine maintenance are partially offset by the need to budget for battery replacement, so an “amortization fund” must be established in the financial model to cover battery pack replacement \cite{Wartsila2}. For NMC/LFP, replacement will be considered after 15 years, while for LTO, a useful life of 30 years will be considered, exceeding the project period, so no replacement cost will be amortized for this technology.
+
+\subsubsection{c) Total Costs}
+
+To calculate operating costs, a fuel cost of $\$0.8$/L will be used, and the annual consumption for both one maneuver and two maneuvers will be averaged. These consumption figures are obtained from section X.
+
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Operating costs, excluding taxes and subsidies (small bank).}
 	\label{tab:Op1}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{3}{|c|}{\textbf{Op Costs} $15\%$} \\
+		\multicolumn{3}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-   Total fuel cost & $\$1,715,646$ & $\$974,404$\\
+                   & \textbf{Conventional Tug} & \textbf{Hybrid Tug}\\
 		 \hline
-   Electricity & - & $\$30,000$\\
+   Total fuel cost & US $\$1,715,646$ & US $\$974,404$\\
 		 \hline
-   Engine Maintenance & $\$40,000$ & $\$20,000$\\
-   		 \hline
-   Battery Replacement & - & $\$15,000$\\
+   Electricity & - & US $\$30,000$\\
+		 \hline
+   Engine Maintenance & US $\$40,000$ & US $\$20,000$\\
+   		 \hline \hline
+   NMC Battery Replacement & - & US $\$149,400$\\
+		 \hline
+   LFP Battery Replacement & - & US $\$84,000$\\
+		 \hline
+   LTO Battery Replacement & - & - \\
 		 \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Operating costs, excluding taxes and subsidies (large bank).}
 	\label{tab:Op2}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{3}{|c|}{\textbf{Op Costs} $25\%$} \\
+		\multicolumn{3}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-   Total fuel cost & $\$1,715,646$ & $\$870,014$\\
+                   & \textbf{Conventional Tug} & \textbf{Hybrid Tug}\\
 		 \hline
-   Electricity & - & $\$30,000$\\
+   Total fuel cost & US $\$1,715,646$ & US $\$870,014$\\
 		 \hline
-   Engine Maintenance & $\$40,000$ & $\$20,000$\\
-   		 \hline
-   Battery Replacement & - & $\$15,000$\\
+   Electricity & - & US $\$30,000$\\
+		 \hline
+   Engine Maintenance & US $\$40,000$ & US $\$20,000$\\
+   		 \hline \hline
+   NMC Battery Replacement & - & US $\$336,000$\\
+		 \hline
+   LFP Battery Replacement & - & US $\$189,000$\\
+		 \hline
+   LTO Battery Replacement & - & -\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+
+With the operating costs, we proceed to calculate the OPEX for each technology, which can be seen in Tables \ref{tab:opex1} and \ref{tab:opex2}.
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated OPEX (annual), without taxes or subsides (small bank).}
+	\label{tab:opex1}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	${\text{OPEX}}_{\text{NMC}}$ & US $\$1,173,737$\\
+		 \hline
+	${\text{OPEX}}_{\text{LFP}}$ & US $\$1,108,404$\\
+		 \hline
+	${\text{OPEX}}_{\text{LTO}}$ & US $\$1,024,404$ \\
+		 \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated OPEX (annual), without taxes or subsides (large bank).}
+	\label{tab:opex2}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	${\text{OPEX}}_{\text{NMC}}$ & US $\$1,256,014$\\
+		 \hline
+	${\text{OPEX}}_{\text{LFP}}$ & US $\$1,109,014$\\
+		 \hline
+	${\text{OPEX}}_{\text{LTO}}$ & US $\$920,014$\\
+		 \hline
+	\end{tabular}
+\end{table}
+
+Finally, the annual benefit can be obtained by calculating the difference between the OPEX of the conventional tugboat ($\text{OPEX}_{\text{tug}}$) and the OPEX of each technology. These results are shown in Tables \ref{tab:profit1} and \ref{tab:profit2}.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Calculated profit (annual), without taxes or subsides (small bank).}
+	\label{tab:profit1}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+	$\text{OPEX}_{\text{TUG}}$ & US $\$1,755,646$\\
+		 \hline
+	Profit (NMC) & US $\$581,909$\\
+		 \hline
+	Profit (LFP) & US $\$647,242$\\
+		 \hline
+        Profit (LTO) & US $\$731,242$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
-	\label{tab:Op3}
+	\caption{Calculated profit (annual), without taxes or subsides (large bank).}
+	\label{tab:profit2}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{OPEX} $25\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	OPEX Conventional Tug & $\$1,755,646$\\
+	$\text{OPEX}_{\text{TUG}}$ & US $\$1,755,646$\\
 		 \hline
-	OPEX Hybrid Tug & $\$1,039,404$\\
+	Profit (NMC) & US $\$499,632$\\
 		 \hline
-	Yearly Profit & $\$716,242$\\
+	Profit (LFP) & US $\$646,632$\\
+		 \hline
+        Profit (LTO) & US $\$835,632$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
+The economic benefit provides insight into economic sensitivity indicators, which are essential for analyzing the life of a project.
 
-\begin{table}[H]
-	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
-	\label{tab:Op4}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{OPEX} $25\%$} \\
-		\hline\hline
-	OPEX Conventional Tug & $\$1,755,646$\\
-		 \hline
-	OPEX Hybrid Tug & $\$935,014$\\
-		 \hline
-	Yearly Profit & $\$820,632$\\
-		 \hline
-	\end{tabular}
-\end{table}
-
-\subsection{Return on Investment (ROI) and Net Present Value (NPV)}		
+\subsection{Financial Performance}		
 
 
 Based on the information described above, the viability of the project can be determined using economic indicators such as net present value (NPV), internal rate of return (IRR), and finally return on investment (ROI).
@@ -1238,7 +1423,7 @@ Based on the information described above, the viability of the project can be de
 The following equation will be used to calculate the NPV.
 
 \begin{equation}
-NPV = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{ds})^t} - \text{Inv}.
+\text{NPV} = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{ds})^t} - \text{Inv}.
 \end{equation}
 
 \begin{itemize}
@@ -1262,7 +1447,7 @@ This provides the net present values for each technology and for each battery ba
 		\hline
 		\multicolumn{4}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 10 & 15 &20\\
+	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
     ${\text{NPV}}_{\text{NMC}}$ & $\$1,153,542$ & $\$2,478,158$ &$\$3,379,670$\\
 		 \hline
@@ -1281,7 +1466,7 @@ This provides the net present values for each technology and for each battery ba
 		\hline
 		\multicolumn{4}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 10 & 15 &20\\
+	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
     ${\text{NPV}}_{\text{NMC}}$ & -$\$530,992$ & $\$986,682$ &$\$2,019,586$\\
 		 \hline
@@ -1310,7 +1495,7 @@ Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can ju
 		\hline
 		\multicolumn{4}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 10 & 15 &20\\
+	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
     ${\text{IRR}}_{\text{NMC}}$ & $14.58\%$ & $17.96\%$ & $19.01\%$ \\
 		 \hline
@@ -1330,7 +1515,7 @@ Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can ju
 		\hline
 		\multicolumn{4}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-	Lifespan  & 10 & 15 &20\\
+	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
     ${\text{IRR}}_{\text{NMC}}$ & $6.01\%$ & $10.59\%$ & $12.24\%$ \\
 		 \hline
@@ -1345,33 +1530,44 @@ For the cases presented in Tables X and Y, it can be seen that all small battery
 
 The case is also analyzed in terms of how emissions taxes and government subsidies affect it, effects that can be applied jointly or separately, with graphs provided in \textcolor{red}{ANNEX X}.
 
+\subsubsection{c) Return on Investment (ROI)/ Payback Period}
+
+Return on investment (ROI) is a measure of profitability. It indicates how much profit or loss a company makes from an investment in relation to its cost. Measuring return on investment helps identify which projects truly drive profitability, optimize resources, and strengthen the company's competitiveness.
+
+The formula is as follows:
+
+\begin{equation}
+\text{ROI} = \frac{\text{G} - \text{Inv}}{\text{Inv}}\cdot 100
+\end{equation}
+
 \begin{itemize}
-	\item \textbf{Return on Investment (ROI)/ Payback Period}:
-		\begin{itemize}
-		\item \textbf{Simple Payback}: 5 to 9 years depending on fuel prices.
-		\item \textbf{Sensitivity}: A fuel price increase of $20\%$ can shorten the payback period by approximately 1.5 years. Conversely, high shore power electricity tariffs can extend the payback period. 
-	\end{itemize}
+	\item \textbf{G}: Annual gain from investment.
+	\item \textbf{Inv}: Initial Investment.
 \end{itemize}
 
+To calculate the period in which the investment is recouped and profits are generated ${\text{P}}_{\text{ROI}}$, the following formula is used:
 
+\begin{equation}
+{\text{P}}_{\text{ROI}} = \frac{\text{Inv}}{\text{G}}
+\end{equation}
 
-
+This provides the periods for each technology in which the return on investment begins to be positive. This can be seen in Tables X and Y.
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Calculated period for positive ROI, without taxes or subsides (small bank).}
 	\label{tab:roi1}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{ROI} $15\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-		& \textbf{Years}\\
+		    & \textbf{Period}\\
 		 \hline
-	ROI NMC & $\approx 5$\\
+	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 5 years and 2 months\\
 		 \hline
-	ROI LFP & $\approx 4.6$\\
+	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 4 years and 8 months\\
 		 \hline
- 	ROI LTO & $\approx 6.6$\\
+ 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 6 years and 8 months\\
 		 \hline
 	\end{tabular}
 \end{table}
@@ -1379,21 +1575,26 @@ The case is also analyzed in terms of how emissions taxes and government subsidi
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
-	\label{tab:roi1}
+	\caption{Calculated period for positive ROI, without taxes or subsides (large bank).}
+	\label{tab:roi2}
 	\begin{tabular}{|c|c|}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{ROI} $25\%$} \\
+		\multicolumn{2}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
 		\hline\hline
-		    & \textbf{Years}\\
+		    & \textbf{Period}\\
 		 \hline
-	ROI NMC & $\approx 7$\\
+	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 7 years and 4 months \\
 		 \hline
-	ROI LFP & $\approx 6.4$\\
+	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 6 years and 5 months\\
 		 \hline
- 	ROI LTO & $\approx 10.4$\\
+ 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 10 years and 5 months\\
 		 \hline
 	\end{tabular}
 \end{table}
+
+Based on the ROI financial indicator, it can be seen that LFP technology is the one that allows profits to be obtained in a shorter period of time, both for small battery banks and large battery banks. 
+An increase in fuel prices allows for higher annual profits when comparing conventional systems with hybrid systems, which in turn also shortens the payback period. Conversely, high onshore electricity rates can prolong the payback period. 
+
+Details of the annual ROI for each technology for different battery sizes can be found in \textcolor{red}{APPENDIX X}.
 
 \section{Chapter Summary}

@@ -117,32 +117,37 @@
 \contentsline {subsection}{\numberline {4.3.2}Lithium Iron Phosphate (LFP)}{69}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Lithium Titanate Oxide (LTO)}{69}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Battery Bank Design}{70}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Calculation of essential electrical parameters}{70}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Calculation of essential electrical parameters}{71}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Calculation of electrical performance parameters}{71}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Calculation of mechanical parameters}{72}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Calculated NMC battery}{72}{subsection.4.4.4}%
-\contentsline {subsubsection}{a) BESS $15\%$}{72}{section*.149}%
-\contentsline {subsubsection}{b) BESS $25\%$}{73}{section*.153}%
-\contentsline {subsection}{\numberline {4.4.5}Calculated LFP battery}{74}{subsection.4.4.5}%
-\contentsline {subsubsection}{a) BESS $15\%$}{74}{section*.158}%
-\contentsline {subsubsection}{b) BESS $25\%$}{75}{section*.162}%
-\contentsline {subsection}{\numberline {4.4.6}Calculated LTO battery}{76}{subsection.4.4.6}%
-\contentsline {subsubsection}{a) BESS $15\%$}{76}{section*.167}%
-\contentsline {subsubsection}{b) BESS $25\%$}{77}{section*.171}%
-\contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{77}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{77}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.4}Calculated NMC battery banks}{72}{subsection.4.4.4}%
+\contentsline {subsubsection}{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{72}{section*.149}%
+\contentsline {subsubsection}{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{73}{section*.153}%
+\contentsline {subsection}{\numberline {4.4.5}Calculated LFP battery banks}{74}{subsection.4.4.5}%
+\contentsline {subsubsection}{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{75}{section*.158}%
+\contentsline {subsubsection}{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{75}{section*.162}%
+\contentsline {subsection}{\numberline {4.4.6}Calculated LTO battery banks}{76}{subsection.4.4.6}%
+\contentsline {subsubsection}{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{76}{section*.167}%
+\contentsline {subsubsection}{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{77}{section*.171}%
+\contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{78}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{78}{subsection.4.4.8}%
 \contentsline {section}{\numberline {4.5}Economic Analysis}{79}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{79}{subsection.4.5.1}%
-\contentsline {subsubsection}{a) Battery Bank NMC}{79}{section*.180}%
-\contentsline {subsubsection}{b) Battery Bank LFP}{79}{section*.181}%
-\contentsline {subsubsection}{c) Battery Bank LTO}{80}{section*.182}%
-\contentsline {subsubsection}{d) Power Electronics}{80}{section*.183}%
-\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{81}{subsection.4.5.2}%
-\contentsline {subsubsection}{a) Fuel Consumption Savings}{81}{section*.188}%
-\contentsline {subsubsection}{b) Maintenance Reduction}{81}{section*.189}%
-\contentsline {subsection}{\numberline {4.5.3}Return on Investment (ROI) and Net Present Value (NPV)}{82}{subsection.4.5.3}%
-\contentsline {subsubsection}{a) Net Present Value (NPV)}{82}{section*.194}%
-\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{83}{section*.197}%
-\contentsline {section}{\numberline {4.6}Chapter Summary}{84}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Simulation results}{85}{chapter.5}%
-\contentsline {chapter}{Bibliography}{86}{chapter.5}%
+\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{80}{subsection.4.5.1}%
+\contentsline {subsubsection}{a) Battery Bank NMC}{80}{section*.180}%
+\contentsline {subsubsection}{b) Battery Bank LFP}{80}{section*.181}%
+\contentsline {subsubsection}{c) Battery Bank LTO}{81}{section*.182}%
+\contentsline {subsubsection}{d) Power Electronics}{81}{section*.183}%
+\contentsline {subsubsection}{e) Main genset and Electric motors}{81}{section*.184}%
+\contentsline {subsubsection}{f) Integration and Safety systems}{82}{section*.185}%
+\contentsline {subsubsection}{g) Total Cost}{82}{section*.186}%
+\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{83}{subsection.4.5.2}%
+\contentsline {subsubsection}{a) Fuel Consumption Savings}{83}{section*.193}%
+\contentsline {subsubsection}{b) Maintenance Engine Reduction}{84}{section*.194}%
+\contentsline {subsubsection}{c) Total Costs}{84}{section*.195}%
+\contentsline {subsection}{\numberline {4.5.3}Financial Performance}{85}{subsection.4.5.3}%
+\contentsline {subsubsection}{a) Net Present Value (NPV)}{85}{section*.202}%
+\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{86}{section*.205}%
+\contentsline {subsubsection}{c) Return on Investment (ROI)/ Payback Period}{87}{section*.208}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{88}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{89}{chapter.5}%
+\contentsline {chapter}{Bibliography}{90}{chapter.5}%
