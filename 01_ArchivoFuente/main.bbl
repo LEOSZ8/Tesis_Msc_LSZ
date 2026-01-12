@@ -222,6 +222,12 @@ V. Jayaram, M. Yusuf Khan, J. Wayne Miller, W. A Welch, K. Johnson, D. R Cocker,
 DAMEN,``DAMEN ASD TUG 2810", datasheet, 2014.
 
 %%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{UFine}
+UFine Blog, ``LFP vs. NMC Battery: What is the Difference?". [Online]: \hyperlink{https://www.ufinebattery.com/blog/lfp-vs-nmc-battery-what-is-the-difference/}{https://www.ufinebattery.com}
+
+
+\bibitem{Corvus}
+Corvus Energy,``Technical Specifications, Corvus Orca ESS", February 2025.
 
 \bibitem{Valence}
 Valence, ``Hybrid Tugboats Case Study". [Online]: \hyperlink{https://www.lithionbattery.com/news/hybrid-tugboats-case-study}{https://www.lithionbattery.com}
@@ -251,6 +257,14 @@ Test Equipment Depot, ``Preen ADG-PLUS-1000-100" [Online]: \hyperlink{https://ww
 Ritar Power, ``The Price of 50 kWh Lithium Ion Batteries: A Comprehensive Analysis" [Online]: \hyperlink{https://www.ritarpower.com/industry_information/The-Price-of-50-kWh-Lithium-Ion-Batteries-A-Comprehensive-Analysis_297.html}{https://www.ritarpower.com}
 
 
+\bibitem{Sunreef}
+Sunreef Yachts,``High-Performance Electric Boat Batteries for Smooth, Silent Sailing" [Online]: \hyperlink{https://sunreef-yachts.com/en/eco-insights/electric-boat-batteries/}{https://sunreef-yachts.com}
+
+
+\bibitem{Bonnen}
+Bonnen, ``LFP Battery vs NMC Battery",
+[Online]: \hyperlink{https://www.bonnenbatteries.com/lfp-battery-vs-nmc-battery-choosing-the-right-battery-for-your-electric-boat/}{https://www.bonnenbatteries.com}
+
 \bibitem{MAN2}
 MAN Energy Solutions, ``Hybrid power workboats, a holisticapproach for better CAPEX", 2018.
 
@@ -270,7 +284,7 @@ Sjofartsdirektoratet, ``Consultation:  Draft Regulations on ships using battery 
 \bibitem{MinHac}
 Ministerio de Hacienda, ``Tasa Interna de Retorno (TIR)". [Online]: \hyperlink{https://old.hacienda.cl/glosario/tasa-interna-de-retorno-tir.html}{https://old.hacienda.cl}
 
-
-
+\bibitem{Echandia}
+Echandia, ``What batteries are used in Sparky the tugboat?"[Online]: \hyperlink{https://echandia.se/insights/article/what-batteries-are-used-in-sparky-the-tugboat/}{https://echandia.se}
 
 \end{thebibliography}

@@ -203,36 +203,56 @@ For the battery bank in both options, a nominal voltage of $V_{bus\_req}=750$[V]
 
 \section{Battery technologies applicable to tugboats}
 
-Three primary lithium-ion chemistries dominate the marine sector: Nickel Manganese Cobalt (NMC), Lithium Iron Phosphate (LFP), and Lithium Titanate Oxide (LTO).
+Three primary lithium-ion chemistries dominate the marine sector: 
+
+\begin{itemize}
+
+\item \textbf{Nickel Manganese Cobalt (NMC)},
+\item \textbf{Lithium Iron Phosphate (LFP)},
+\item \textbf{Lithium Titanate Oxide (LTO)}.
+
+\end{itemize}
+
 
 \subsection{Nickel Manganese Cobalt (NMC)}
 
-NMC has historically been the chemistry of choice for first-generation hybrid vessels due to its high specific energy.
+NMC technology (LiNiMnCoO\textsubscript{2}) is preferred for
+electric vehicles and within the
+maritime industry as its life cycle is
+long while the energy density is
+satisfying \cite{MAN}.
+
+NMC has historically been the chemistry of choice for first-generation hybrid vessels due to its high specific energy. 
+
+Main features on NMC include the following:
 
 \begin{itemize}
-	\item Energy Density: NMC cells offer 150–220 Wh/kg, translating to pack-level densities of roughly 77–120 Wh/kg after accounting for BMS, cooling, and racking.
-	\item C-rate: Standard marine NMC modules (e.g., Corvus Orca Energy) support high discharge rates, typically 3C continuous and 3C peak. This means a 100 kWh bank can deliver 300 kW of power, which is ideal for the power-dense demands of a tugboat.
-	\item Cycle Life: NMC typically offers 1,000–2,500 cycles at $80\%$ DoD. While lower than LFP, this is often sufficient for hybrid tugs where the battery is used for peak shaving rather than full deep cycling every day.
-	\item Cost: Prices have historically been higher ($120-$150/kWh cell cost), though they are declining. The primary drawback is thermal stability; NMC has a lower thermal runaway temperature, requiring robust active cooling and barrier systems. 
+	\item \textbf{Energy Density}: NMC cells offer between 150 and 220 Wh/kg, which translates into lower densities after taking into account the BMS, cooling, and rack \cite{UFine}.
+	\item \textbf{C-rate}: Standard marine NMC modules (e.g., Corvus Orca Energy) support high discharge rates, typically 3C continuous \cite{Corvus}, ideal for the high power density demands of a tugboat.
+	\item \textbf{Cycle Life}: NMC typically offers between 1000 and 1500 cycles \cite{evlithium}, which may be sufficient for operating modes where the battery is used for peak shaving rather than performing full cycles every day.
+	\item \textbf{Cost}: 
+Cell prices range from $\text{US }\$120-\text{US }\$150/\text{kWh}$ \cite{UFine}. The main drawback is thermal stability; NMC has a lower thermal runaway temperature, requiring robust active cooling systems that could increase its cost \cite{Sunreef}. 	
 \end{itemize}
 
 \subsection{Lithium Iron Phosphate (LFP)}
 LFP is rapidly gaining market share in the maritime sector, driven by safety and longevity.
 
 \begin{itemize}
-	\item Safety: LFP is chemically stable and has a much higher thermal runaway threshold. It does not release oxygen during decomposition, significantly reducing the intensity of battery fires. This can simplify fire suppression system design.
-	\item  Cycle Life: LFP excels in longevity, offering 2,000–5,000+ cycles even at high Depth of Discharge. Some sources suggest it lasts 2-3 times longer than NMC, making it cheaper over the total vessel lifecycle.
-	\item Energy Density: The trade-off is weight and volume. Cell density is 90–160 Wh/kg. However, for tugboats, weight is often less critical than for high-speed ferries. Tugs require significant ballast to achieve the necessary draft for propeller immersion. Replacing lead or iron ballast with LFP batteries allows the "energy storage" to serve a dual purpose as "stability weight".
-	\item Cost: LFP is generally cheaper, with cell costs estimated between $70–$100/kWh and falling.
+\item \textbf{Energy Density}: The cell density is 90-160 Wh/kg \cite{evlithium}. Tugboats require considerable ballast to achieve the draft necessary for propeller immersion. LFP batteries could be a substitute for lead or iron ballast, serving a dual function as “stability weight” \cite{UFine}.
+	\item \textbf{Safety}: The simple chemistry of LFP batteries (no nickel or cobalt) makes them safe and robust. These batteries are used in applications where safety and long life are more important than compact size \cite{Bonnen}.
+	\item  \textbf{Cycle Life}: The LFP offers between 2,000 and more than 5,000 cycles, even with a high discharge depth \cite{evlithium}. Some sources suggest that it lasts between 2 and 3 times longer than the NMC \cite{UFine}, making it ideal for applications that require longer life and reliability.
+	
+	\item \textbf{Cost}: The LFP has an estimated cell cost of between $\text{US }\$80-\text{US }\$100/\text{kWh}$, making it $30\%$ cheaper than the NMC option in 2026 \cite{UFine}.
 \end{itemize}
 
 \subsection{Lithium Titanate Oxide (LTO)}
-LTO is a niche, high-performance chemistry used in fully electric tugs with rapid charging needs.
+
+Lithium titanate batteries are the only ones with a unique anode surface made from lithium and titanium oxides. These batteries for electric boats, also known as LTO batteries, operate in extreme weather conditions, offering greater safety \cite{Sunreef}.
 
 \begin{itemize}
-	\item Performance: LTO allows for extreme C-rates (up to 10C charge/discharge) and ultra-fast charging (e.g., 10-20 minutes). It offers exceptional cycle life ($>$15,000 cycles).
-	\item  Drawbacks: It has the lowest energy density (60–120 Wh/kg) and the highest cost.
-	\item Application: The fully electric tug Sparky utilizes LTO technology to allow for rapid opportunity charging between jobs, ensuring 24/7 availability.
+	\item \textbf{Performance}: One of the main advantages of LTO is its high C-rate capacity (i.e., high maximum power) \cite{Echandia}. It offers exceptional service life (more than 10,000 cycles) \cite{evlithium}.
+	\item  \textbf{Drawbacks}: LTO has the lowest energy density (60–120 Wh/kg) and the highest cost \cite{evlithium}.
+	\item \textbf{Cycle Life}: LTO batteries can operate safely for 25,000 cycles, achieving a service life of more than 20 years \cite{Echandia}.
 \end{itemize}
 
 \section{Battery Bank Design}
@@ -255,7 +275,7 @@ To this end, the selected cells shall be considered to have the following input 
 		\hline
 		$\text{C}_{bc}$ & Battery cell capacity [Ah]   \\	
 		\hline
-		$\text{C-rate}_{bcc}$ &  Continuous C-rate of the battery cell $[\text{h}^{-1}]$ \\	
+		$\text{C-rate}_{bcc}$ &  Continuous C-rate of the battery cell (discharge) $[\text{h}^{-1}]$ \\	
 		\hline
 		$\text{C-rate}_{bpc}$ &  Peak C-rate of the battery cell $[\text{h}^{-1}]$ \\	
 		\hline
@@ -404,13 +424,13 @@ Three different models of NMC batteries and their technical specifications are p
 		\hline
 		$\text{C}_{bc}$ &  10[Ah] & 30[Ah] & 128[Ah]\\	
 		\hline
-		$\text{C-rate}_{bcc}$ &   &  & \\	
+		$\text{C-rate}_{bcc}$ & 1 $[\text{h}^{-1}]$ & 1 $[\text{h}^{-1}]$ & 1 $[\text{h}^{-1}]$\\	
 		\hline
-		$\text{C-rate}_{bpc}$ &   &  & \\	
+		$\text{C-rate}_{bpc}$ & 3 $[\text{h}^{-1}]$  & 3 $[\text{h}^{-1}]$ & 3 $[\text{h}^{-1}]$\\	
 		\hline
 		$\text{m}_{bc}$ & 0.8[kg]& 2.1[kg] & 0.48[kg]\\	
 		\hline
-		$\text{vol}_{bc}$ &  0.00049[${\text{m}}^{3}$]& 0.001127[${\text{m}}^{3}$] & 0.0043[${\text{m}}^{3}$]    \\	
+		$\text{vol}_{bc}$ &  $0.49\cdot{10}^{-3}$[${\text{m}}^{3}$]& $1.13\cdot{10}^{-3}$[${\text{m}}^{3}$] & $4.3\cdot{10}^{-3}$[${\text{m}}^{3}$]    \\	
 		\hline
 	\end{tabular}
 \end{table} 
@@ -567,7 +587,7 @@ As in the previous case, Table \ref{tab:Technical_inputLFP} shows three differen
 
 \begin{table}[H]
 	\centering
-	\caption{Technical specification of NMC Batteries.}
+	\caption{Technical specification of LFP Batteries.}
 	\label{tab:Technical_inputLFP}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -581,13 +601,13 @@ As in the previous case, Table \ref{tab:Technical_inputLFP} shows three differen
 		\hline
 		$\text{C}_{bc}$ &  7.6[Ah] & 50[Ah] & 50[Ah]\\	
 		\hline
-		$\text{C-rate}_{bcc}$ &   &  & \\	
+		$\text{C-rate}_{bcc}$ & 2 $[\text{h}^{-1}]$  & 1 $[\text{h}^{-1}]$ & 1 $[\text{h}^{-1}]$\\	
 		\hline
-		$\text{C-rate}_{bpc}$ &   &  & \\	
+		$\text{C-rate}_{bpc}$ & 7 $[\text{h}^{-1}]$  & 3 $[\text{h}^{-1}]$  & 3 $[\text{h}^{-1}]$\\	
 		\hline
 		$\text{m}_{bc}$ & 1[kg]& 6.3[kg] & 18.7[kg]\\	
 		\hline
-		$\text{vol}_{bc}$ &  0.00090[${\text{m}}^{3}$]& 0.00559[${\text{m}}^{3}$] & 0.01184[${\text{m}}^{3}$]    \\	
+		$\text{vol}_{bc}$ &  $0.9\cdot{10}^{-3}$[${\text{m}}^{3}$]& $5.59\cdot{10}^{-3}$[${\text{m}}^{3}$] & $11.84\cdot{10}^{-3}$[${\text{m}}^{3}$]    \\	
 		\hline
 	\end{tabular}
 \end{table} 
@@ -596,9 +616,11 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsubsection{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
+The essential electrical characteristics, performance parameters, and physical characteristics of the small LFP battery bank are presented below in Tables \ref{tab:LFP_015_1}, \ref{tab:LFP_015_2}, and \ref{tab:LFP_015_3}, respectively.
+
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $15\%$}
+	\caption{Essential parameters of the small LFP battery bank.}
 	\label{tab:LFP_015_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -621,7 +643,7 @@ These technical specifications for each model enable the necessary calculations 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Performance parameters of the small LFP battery bank.}
 	\label{tab:LFP_015_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -647,7 +669,7 @@ These technical specifications for each model enable the necessary calculations 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $15\%$}
+	\caption{Mechanical parameters of the small LFP battery bank.}
 	\label{tab:LFP_015_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -665,9 +687,11 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsubsection{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
+The essential electrical characteristics, performance parameters, and physical characteristics of the large LFP battery bank are presented below in Tables \ref{tab:LFP_025_1}, \ref{tab:LFP_025_2}, and \ref{tab:LFP_025_3}, respectively.
+
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $25\%$}
+	\caption{Essential parameters of the large LFP battery bank.}
 	\label{tab:LFP_025_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -690,7 +714,7 @@ These technical specifications for each model enable the necessary calculations 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Performance parameters of the large LFP battery bank.}
 	\label{tab:LFP_025_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -716,7 +740,7 @@ These technical specifications for each model enable the necessary calculations 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $25\%$}
+	\caption{Mechanical parameters of the large LFP battery bank.}
 	\label{tab:LFP_025_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -734,10 +758,12 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsection{Calculated LTO battery banks}
 
+Finally, the alternatives found for LTO are analyzed using Table \ref{tab:Technical_inputLTO}, which shows the technical specifications.
+
 \begin{table}[H]
 	\centering
 	\caption{Technical specification of LTO Batteries.}
-	\label{tab:Technical_inputLTP}
+	\label{tab:Technical_inputLTO}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\multicolumn{4}{|c|}{\textbf{LTO Batteries}} \\
@@ -750,13 +776,13 @@ These technical specifications for each model enable the necessary calculations 
 		\hline
 		$\text{C}_{bc}$ &  0.15[Ah] & 0.014[Ah] & 1.5[Ah]\\	
 		\hline
-		$\text{C-rate}_{bcc}$ &   &  & \\	
+		$\text{C-rate}_{bcc}$ & 1 $[\text{h}^{-1}]$  & 0.5 $[\text{h}^{-1}]$ & 1 $[\text{h}^{-1}]$\\	
 		\hline
-		$\text{C-rate}_{bpc}$ &   &  & \\	
+		$\text{C-rate}_{bpc}$ & 20 $[\text{h}^{-1}]$  & 20 $[\text{h}^{-1}]$ & 8 $[\text{h}^{-1}]$\\	
 		\hline
 		$\text{m}_{bc}$ & 0.09[kg]& 0.0012[kg] & 0.046[kg]\\	
 		\hline
-		$\text{vol}_{bc}$ &  0.00002[${\text{m}}^{3}$]& $2.31\cdot{10}^{-6}$[${\text{m}}^{3}$] & 0.00002[${\text{m}}^{3}$]    \\	
+		$\text{vol}_{bc}$ &  $0.02\cdot{10}^{-3}$[${\text{m}}^{3}$]& $0.002\cdot{10}^{-3}$[${\text{m}}^{3}$] & $0.02\cdot{10}^{-3}$[${\text{m}}^{3}$]    \\	
 		\hline
 	\end{tabular}
 \end{table} 
@@ -764,9 +790,11 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsubsection{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
+The essential electrical characteristics, performance parameters, and physical characteristics of the small LTO battery bank are presented below in Tables \ref{tab:LTO_015_1}, \ref{tab:LTO_015_2}, and \ref{tab:LTO_015_3}, respectively.
+
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $15\%$}
+	\caption{Essential parameters of the small LTO battery bank.}
 	\label{tab:LTO_015_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -789,7 +817,7 @@ These technical specifications for each model enable the necessary calculations 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $15\%$}
+	\caption{Performance parameters of the small LTO battery bank.}
 	\label{tab:LTO_015_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -815,7 +843,7 @@ These technical specifications for each model enable the necessary calculations 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $15\%$}
+	\caption{Mechanical parameters of the small LTO battery bank.}
 	\label{tab:LTO_015_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -833,9 +861,11 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsubsection{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
+The essential electrical characteristics, performance parameters, and physical characteristics of the large LTO battery bank are presented below in Tables \ref{tab:LTO_025_1}, \ref{tab:LTO_025_2}, and \ref{tab:LTO_025_3}, respectively.
+
 \begin{table}[H]
 	\centering
-	\caption{Essential parameters of the battery bank $25\%$}
+	\caption{Essential parameters of the large LTO battery bank.}
 	\label{tab:LTO_025_1}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -858,7 +888,7 @@ These technical specifications for each model enable the necessary calculations 
 
 \begin{table}[H]
 	\centering
-	\caption{Performance parameters of the battery bank $25\%$}
+	\caption{Performance parameters of the large LTO battery bank.}
 	\label{tab:LTO_025_2}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -884,7 +914,7 @@ These technical specifications for each model enable the necessary calculations 
  
 \begin{table}[H]
 	\centering
-	\caption{Mechanical parameters of the battery bank $25\%$}
+	\caption{Mechanical parameters of the large LTO battery bank.}
 	\label{tab:LTO_025_3}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
