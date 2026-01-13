@@ -222,6 +222,13 @@ V. Jayaram, M. Yusuf Khan, J. Wayne Miller, W. A Welch, K. Johnson, D. R Cocker,
 DAMEN,``DAMEN ASD TUG 2810", datasheet, 2014.
 
 %%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibitem{IEEE1184}
+"IEEE Guide for the Selection and Sizing of Batteries for Uninterruptible Power Systems," in IEEE Std 1184-1994 , vol., no., pp.1-36, 6 June 1995.
+
+\bibitem{ieng}
+IEngineering, ``Battery Energy Storage System Design".[Online]: \hyperlink{https://ieng.tech/battery-energy-storage-system-design/}{https://ieng.tech}
+
 \bibitem{UFine}
 UFine Blog, ``LFP vs. NMC Battery: What is the Difference?". [Online]: \hyperlink{https://www.ufinebattery.com/blog/lfp-vs-nmc-battery-what-is-the-difference/}{https://www.ufinebattery.com}
 

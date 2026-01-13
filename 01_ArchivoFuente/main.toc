@@ -105,7 +105,7 @@
 \contentsline {section}{\numberline {3.8}Chapter summary}{63}{section.3.8}%
 \contentsline {chapter}{\numberline {4}Design of the battery bank for a hybrid propulsion system}{64}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Energy Capacity (kWh)}{64}{section.4.1}%
-\contentsline {subsubsection}{a) System Efficiency Factor ($\eta _{sys}$)}{64}{section*.139}%
+\contentsline {subsubsection}{a) System Efficiency Factor ($\eta _{sys}$)}{65}{section*.139}%
 \contentsline {subsubsection}{b) Maximum Depth of Discharge ($DOD_{max}$) and Reserve Margins}{65}{section*.140}%
 \contentsline {subsubsection}{c) Battery Aging Factor ($k_{aging}$)}{66}{section*.141}%
 \contentsline {subsubsection}{d) Temperature Correction Factor ($k_{temp}$)}{66}{section*.142}%
