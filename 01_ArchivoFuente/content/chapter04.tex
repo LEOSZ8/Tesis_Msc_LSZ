@@ -2,41 +2,32 @@
 
 This chapter presents the preliminary design process for the battery bank required for the tugboat's hybrid propulsion system. The energy capacity, power requirements, and operating constraints are determined, and then different storage technologies are evaluated from a technical and economic perspective.
 
-%\section{Design parameters and initial assumptions}
-
-%\subsection{Operational assumptions}
-
-%\subsection{Energy design parameters}
-
-%\subsection{Power design parameters}
-
-%\subsection{Physical and regulatory constraints}
-
-%\section{Battery bank sizing}
 
 \section{Energy Capacity (kWh)}
 To calculate the net capacity required for the battery bank design, various factors that provide context must be considered \cite{IEEE1184} \cite{ieng}. 
 
-The fundamental energy requirement, denoted as $E_{load}$ (or $E_{used}$), is calculated by integrating the power demand over the duration of the design mission.
+The fundamental energy requirement, denoted as $E_{\text{load}}$ is calculated by integrating the power demand over the duration of the design mission.
 
-$$E_{load} = \int_{0}^{t} (P_{propulsion}(t) + P_{hotel}(t)) \,dt$$
+$$E_{\text{load}} = \int_{0}^{t} (P_{\text{propulsion}}(t) + P_{\text{hotel}}(t)) \,dt$$
 
 For discrete phases, this summation becomes:
 
-$$E_{load} = \sum_{i=1}^{n} P_i \times t_i$$
+$$E_{\text{load}} = \sum_{i=1}^{n} P_i \times t_i$$
 
 Where:
 
 \begin{itemize}
-	\item $P_i$ is the total electrical load at the DC bus (propulsion + auxiliary + hotel) in kilowatts (kW) for phase $i$.
+	\item $P_i$ is the total electrical load at the DC bus (propulsion + hotel) in kilowatts (kW) for phase $i$.
 	\item $t_i$ is the duration of phase $i$ in hours.
 \end{itemize}
 
-This value, $E_{load}$, represents the energy that must be delivered to the propellers. However, calculating the installed battery capacity ($E_{installed}$) requires expanding this value to account for the physical and chemical realities of the energy storage system. This transformation is achieved through the application of specific sizing factors.
+This value, $E_{\text{load}}$, represents the energy that must be delivered to the propellers and the hotel loads. However, calculating the installed battery capacity ($E_{\text{installed}}$) requires expanding this value to account for the physical and chemical realities of the energy storage system.
+
+This transformation is achieved through the application of specific sizing factors.
 
 \subsubsection{a) System Efficiency Factor ($\eta_{sys}$)}
 
-Energy stored in the electrochemical cells must traverse a complex electrical path to reach the propulsion motor. Each component in this chain extracts an efficiency penalty (heat loss).
+Energy stored in the electrochemical cells must traverse a electrical path to reach the propulsion motor. Each component in this chain extracts an efficiency penalty (heat loss).
 
 \begin{enumerate}
 	\item \textbf{Coulombic/Voltaic Efficiency} ($\eta_{bat}$): Li-ion batteries are highly efficient, but internal resistance ($R_{int}$) causes $I^2R$ losses during discharge. Typical round-trip efficiency is $92-96\%$; discharge efficiency is generally taken as $0.96$ to $0.98$.
@@ -47,25 +38,25 @@ Energy stored in the electrochemical cells must traverse a complex electrical pa
 
 To size the battery based on shaft power demand, the cumulative efficiency is:
 
-$$\eta_{sys} = \eta_{bat} \times \eta_{conv} \times \eta_{vfd} \times \eta_{motor}$$
-
-$$\eta_{sys} \approx 0.96 \times 0.97 \times 0.97 \times 0.96 \approx 0.86$$
+\begin{equation}
+\eta_{sys} = \eta_{bat} \times \eta_{conv} \times \eta_{vfd} \times \eta_{motor}
+\end{equation}
 
 \subsubsection{b) Maximum Depth of Discharge ($DOD_{max}$) and Reserve Margins}
 
 The Depth of Discharge (DOD) is the percentage of the battery's capacity that has been discharged relative to its total capacity. While Li-ion chemistries can be discharged to $100\%$ ($0\%$ SOC), doing so drastically reduces cycle life and increases the risk of cell degradation.
 
 \begin{itemize}
-	\item  \textbf{Cycle Life Correlation}: The relationship between DOD and cycle life is non-linear. An NMC cell might offer 2,000 cycles at $100\%$ DOD but 5,000 cycles at $80\%$ DOD.
+	\item  \textbf{Cycle Life Correlation}: The relationship between DOD and cycle life is non-linear. For example, an NMC cell might offer 2,000 cycles at $100\%$ DOD but 5,000 cycles at $80\%$ DOD.
 	\item \textbf{Operational Reserve}: Marine safety standards often dictate a "reserve energy" capability. For a tugboat, this might mean retaining enough energy after a standard operation to perform emergency maneuvering or firefighting for a specified duration.
-	\item \textbf{Voltage Sag}: At very low SOC (< $10\%$), the cell voltage drops rapidly. To maintain the required bus voltage and power delivery ($P = V \cdot I$), the current must increase, leading to higher thermal stress.
+	\item \textbf{Voltage Sag}: At very low SOC ($<10\%$), the cell voltage drops rapidly. To maintain the required bus voltage and power delivery, the current must increase, leading to higher thermal stress.
 \end{itemize}
 
 Standard marine practice utilizes a Maximum DOD of $80\%$. This implies the battery operates between $10\%$ and $90\%$ SOC.
 
-$$Factor = \frac{1}{DOD_{max}} = \frac{1}{0.80} = 1.25$$
-
-This effectively increases the installed capacity by $25\%$ relative to the usable energy required. Some aggressive designs may push this to $90\%$ DOD, while conservative designs for deep-sea vessels might limit it to $70\%$.
+\begin{equation}
+\text{Factor}_{\text{DOD}} = \frac{1}{DOD_{max}} 
+\end{equation}
 
 \subsubsection{c) Battery Aging Factor ($k_{aging}$)}
 
@@ -78,13 +69,12 @@ Batteries degrade over time due to two primary mechanisms:
 
 \textbf{End of Life (EOL) Definition}: In the maritime industry, a battery system is considered to have reached its End of Life (EOL) when its capacity fades to $80\%$ of its original nominal capacity (Beginning of Life, BOL). The vessel must be capable of performing its design mission on the last day of the battery's life (e.g., Year 10). Therefore, the battery must be oversized at installation so that the faded capacity still meets the requirement.
 
-$$k_{aging} = \frac{1}{SOH_{EOL}} - 1$$
 
-For a standard $80\%$ EOL criterion:
 
-$$Multiplier = \frac{1}{0.80} = 1.25$$
+\begin{equation}
+k_{aging} = \frac{1}{SOH_{EOL}}
+\end{equation}
 
-This introduces a $25\%$ oversizing factor. This is a significant driver of cost and weight but is non-negotiable for warranty and operational assurance. Recent studies on LFP suggest that "Second Life" applications may allow EOL definitions to be pushed to $70\%$ or $60\%$, but for primary propulsion safety, $80\%$ remains the standard sizing baseline.
 
 \subsubsection{d) Temperature Correction Factor ($k_{temp}$)}
 
@@ -106,18 +96,16 @@ A conservative Temperature Correction Factor of $1.05$ to $1.10$ ($5-10\%$ overs
 
 \subsubsection{e) Capacity Rating Factor and Peukert Efficiency ($k_{c-rate}$)}
 
-Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery decreases as the discharge rate increases. For lead-acid batteries, this effect is massive ($k \approx 1.25$). For Lithium-ion batteries, the effect is minimal, with $k$ values typically between 1.01 and 1.05.
-
-However, for hybrid tugs performing peak shaving, discharge rates can be extreme (up to 3C or 4C). At these rates, voltage sag due to internal impedance becomes significant. The battery may hit its low-voltage cutoff ($V_{min}$) before the theoretical energetic capacity (kWh) is fully extracted. This "apparent" capacity loss at high power must be accounted for:
+Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery decreases as the discharge rate increases.For Lithium-ion batteries, the effect is minimal, with $k$ values typically between 1.01 and 1.05.
 
 \begin{itemize}
-	\item \textbf{Low Power Applications}: For hotel loads ($< 0.5C$), the factor is negligible (~1.0).
-	\item \textbf{High Power Applications}: For propulsion boost ($> 2C$), a derating factor is prudent. Recommendation: A Capacity Rating Factor of $0.90$ to $0.95$ is used for high-power operational profiles to account for voltage sag and ohmic losses at high currents.
+	\item \textbf{Low Power Applications}: For hotel loads ($< 0.5C$), the factor is negligible ($\sim 1.0$).
+	\item \textbf{High Power Applications}: For propulsion boost ($> 2C$), a derating factor is prudent.
 \end{itemize}
 
 \subsection{Battery Sizing}
 
-Based on the factors described previously, the calculations used to obtain the total installed energy ${E}_{installed}$ are presented:
+Based on the factors described previously, the calculations used to obtain the total installed energy ${E}_{\text{installed}}$ are presented:
 
 \begin{enumerate}
 	\item \textbf{Total Load}: This corresponds to adding the energy from the load profile ${E}_{prof}$ to the energy used for hotel loads ${E}_{hotel}$ $${E}_{load}={E}_{prof}+{E}_{hotel}$$
@@ -152,7 +140,7 @@ Based on equation \eqref{eq:Energy_Batt}, the factors used for sizing both batte
 		\hline		
 		${k}_{temp}$ & $1.05$    \\
 		\hline
-		${k}_{c-rate}$ & $1.02$    \\ 
+		${k}_{c-rate}$ & $1$    \\ 
 		\hline
 	\end{tabular}
 	\end{table} 
@@ -1481,11 +1469,11 @@ This provides the net present values for each technology and for each battery ba
 		\hline\hline
 	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
-    ${\text{NPV}}_{\text{NMC}}$ & $\$1,153,542$ & $\$2,478,158$ &$\$3,379,670$\\
+    ${\text{NPV}}_{\text{NMC}}$ & $-\$584,658$ & $\$491,522$ &$\$1,223,953$\\
 		 \hline
-	${\text{NPV}}_{\text{LFP}}$ & $\$1,503,542$ & $\$2,828,158$ & $\$3,729,670$\\
+	${\text{NPV}}_{\text{LFP}}$ & $\$1,103,059$ & $\$2,300,067$ & $\$3,114,730$\\
 		 \hline
- 	${\text{NPV}}_{\text{LTO}}$ & $\$33,542$ & $\$1,358,158$ & $\$2,259,670$\\
+ 	${\text{NPV}}_{\text{LTO}}$ & $\$180,606$ & $\$1,532,963$ & $\$2,453,354$\\
 		 \hline
 	\end{tabular}
 \end{table}
@@ -1500,18 +1488,18 @@ This provides the net present values for each technology and for each battery ba
 		\hline\hline
 	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
-    ${\text{NPV}}_{\text{NMC}}$ & -$\$530,992$ & $\$986,682$ &$\$2,019,586$\\
+    ${\text{NPV}}_{\text{NMC}}$ & -$\$4,283,141$ & $-\$3,359,123$ &-$\$2,730,252$\\
 		 \hline
-	${\text{NPV}}_{\text{LFP}}$ & $\$256,508$ & $\$1,774,182$ & $\$2,807,086$\\
+	${\text{NPV}}_{\text{LFP}}$ & -$\$1,014,584$ & $\$181,295$ & $\$995,191$\\
 		 \hline
- 	${\text{NPV}}_{\text{LTO}}$ & -$\$3,050,992$ & -$\$1,533,318$ &-$\$500,414$\\
+ 	${\text{NPV}}_{\text{LTO}}$ & -$\$2,766,444$ & -$\$1,064,972$ & $\$93,414$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
-Tables X and Y show that for a small battery bank, the project is economically viable for all technologies over a short period of time. This contrasts with the large battery bank, where only LFP technology is viable, NMC is viable over a period of 15 years, and LTO is not viable in any of the proposed periods.
+Tables \ref{tab:van1} and \ref{tab:van2} show that for a small battery bank, the project is economically viable for all technologies over a short period of time. This contrasts with the large battery bank, where only LFP technology is viable, NMC is viable over a period of 15 years, and LTO is not viable in any of the proposed periods.
 
-The case is also analyzed in terms of how emissions taxes and government subsidies affect it, effects that can be applied jointly or separately, with graphs provided in \textcolor{red}{ANNEX X}.
+The case is also analyzed in terms of how it is affected by emissions taxes and government grants, effects that can be applied jointly or separately. This information is provided in Appendix \ref{sec:tax}, Appendix \ref{sec:grant}, and Appendix \ref{sec:tax_grant}. 
 
 \subsubsection{b) Internal Rate of Return (IRR)}
 
@@ -1529,11 +1517,11 @@ Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can ju
 		\hline\hline
 	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
-    ${\text{IRR}}_{\text{NMC}}$ & $14.58\%$ & $17.96\%$ & $19.01\%$ \\
+    ${\text{IRR}}_{\text{NMC}}$ & $5.02\%$ & $9.75\%$ & $11.49\%$ \\
 		 \hline
-	${\text{IRR}}_{\text{LFP}}$ & $17.28\%$ & $20.34\%$ & $21.23\%$\\
+	${\text{IRR}}_{\text{LFP}}$ & $15.07\%$ & $18.39\%$ & $19.40\%$\\
 		 \hline
- 	${\text{IRR}}_{\text{LTO}}$ & $8.16\%$ & $12.41\%$ & $13.90\%$\\
+ 	${\text{IRR}}_{\text{LTO}}$ & $8.84\%$ & $13.00\%$ & $14.43\%$\\
 		 \hline
 	\end{tabular}
 \end{table}
@@ -1549,18 +1537,18 @@ Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can ju
 		\hline\hline
 	Lifespan  & 10 years & 15 years & 20 years\\
 		 \hline
-    ${\text{IRR}}_{\text{NMC}}$ & $6.01\%$ & $10.59\%$ & $12.24\%$ \\
+    ${\text{IRR}}_{\text{NMC}}$ & $-7.05\%$ & $-0.23\%$ & $2.71\%$ \\
 		 \hline
-	${\text{IRR}}_{\text{LFP}}$ & $9.07\%$ & $13.20\%$ & $14.61\%$\\
+	${\text{IRR}}_{\text{LFP}}$ & $3.59\%$ & $8.55\%$ & $10.41\%$\\
 		 \hline
- 	${\text{IRR}}_{\text{LTO}}$ & $-0.75\%$ & $4.93\%$ & $7.20\%$\\
+ 	${\text{IRR}}_{\text{LTO}}$ & $-1.21\%$ & $4.56\%$ & $6.87\%$\\
 		 \hline
 	\end{tabular}
 \end{table}
 
-For the cases presented in Tables X and Y, it can be seen that all small battery banks manage to exceed the discount rate imposed by the investment, even though LTO technology slightly exceeds the discount rate over a 10-year period. In the case of large battery banks, only LFP manages to be profitable within the 10-year period, and extending the period allows for the viability of NMC and LFP projects, which is not the case with LTO technology, even when considering a 20-year period.
+For the cases presented in Tables \ref{tab:tir1} and \ref{tab:tir2}, it can be seen that all small battery banks manage to exceed the discount rate imposed by the investment, even though LTO technology slightly exceeds the discount rate over a 10-year period. In the case of large battery banks, only LFP manages to be profitable within the 10-year period, and extending the period allows for the viability of NMC and LFP projects, which is not the case with LTO technology, even when considering a 20-year period.
 
-The case is also analyzed in terms of how emissions taxes and government subsidies affect it, effects that can be applied jointly or separately, with graphs provided in \textcolor{red}{ANNEX X}.
+The case is also analyzed in terms of how it is affected by emissions taxes and government grants, effects that can be applied jointly or separately. This information is provided in Appendix \ref{sec:tax}, Appendix \ref{sec:grant}, and Appendix \ref{sec:tax_grant}. 
 
 \subsubsection{c) Return on Investment (ROI)/ Payback Period}
 
@@ -1595,11 +1583,11 @@ This provides the periods for each technology in which the return on investment 
 		\hline\hline
 		    & \textbf{Period}\\
 		 \hline
-	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 5 years and 2 months\\
+	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 7 years and 9 months\\
 		 \hline
-	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 4 years and 8 months\\
+	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 5 years \\
 		 \hline
- 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 6 years and 8 months\\
+ 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 6 years and 6 months\\
 		 \hline
 	\end{tabular}
 \end{table}
@@ -1615,11 +1603,11 @@ This provides the periods for each technology in which the return on investment 
 		\hline\hline
 		    & \textbf{Period}\\
 		 \hline
-	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 7 years and 4 months \\
+	${\text{ROI}}_{\text{NMC}}>0$ & $\approx$ 14 years and 9 months \\
 		 \hline
-	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 6 years and 5 months\\
+	${\text{ROI}}_{\text{LFP}}>0$ & $\approx$ 8 years \\
 		 \hline
- 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 10 years and 5 months\\
+ 	${\text{ROI}}_{\text{LTO}}>0$ & $\approx$ 10 years and 4 months\\
 		 \hline
 	\end{tabular}
 \end{table}
@@ -1627,6 +1615,6 @@ This provides the periods for each technology in which the return on investment 
 Based on the ROI financial indicator, it can be seen that LFP technology is the one that allows profits to be obtained in a shorter period of time, both for small battery banks and large battery banks. 
 An increase in fuel prices allows for higher annual profits when comparing conventional systems with hybrid systems, which in turn also shortens the payback period. Conversely, high onshore electricity rates can prolong the payback period. 
 
-Details of the annual ROI for each technology for different battery sizes can be found in \textcolor{red}{APPENDIX X}.
+The case is also analyzed in terms of how it is affected by emissions taxes and government grants, effects that can be applied jointly or separately. This information is provided in Appendix \ref{sec:tax}, Appendix \ref{sec:grant}, and Appendix \ref{sec:tax_grant}. 
 
 \section{Chapter Summary}

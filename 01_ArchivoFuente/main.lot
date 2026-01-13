@@ -18,7 +18,7 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Comparation between AC and DC grids \cite {Xu2022} \cite {ABB}}}{50}{table.caption.111}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Improvements in hybridization compared to a conventional tugboat.}}{63}{table.caption.138}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Energy Factors}}{68}{table.caption.144}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Energy Factors}}{67}{table.caption.144}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Comparison of Propulsion Systems in Tugboats and Performance.}}{68}{table.caption.145}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Technical input information.}}{70}{table.caption.146}%
 \contentsline {table}{\numberline {4.4}{\ignorespaces Proposed information}}{70}{table.caption.147}%
@@ -26,14 +26,14 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Essential parameters of the small NMC battery bank.}}{73}{table.caption.150}%
 \contentsline {table}{\numberline {4.7}{\ignorespaces Performance parameters of the small NMC battery bank.}}{73}{table.caption.151}%
 \contentsline {table}{\numberline {4.8}{\ignorespaces Mechanical parameters of the small NMC battery bank.}}{73}{table.caption.152}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Essential parameters of the large NMC battery bank.}}{74}{table.caption.154}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Essential parameters of the large NMC battery bank.}}{73}{table.caption.154}%
 \contentsline {table}{\numberline {4.10}{\ignorespaces Performance parameters of the large NMC battery bank.}}{74}{table.caption.155}%
 \contentsline {table}{\numberline {4.11}{\ignorespaces Mechanical parameters of the large NMC battery bank.}}{74}{table.caption.156}%
 \contentsline {table}{\numberline {4.12}{\ignorespaces Technical specification of LFP Batteries.}}{74}{table.caption.157}%
 \contentsline {table}{\numberline {4.13}{\ignorespaces Essential parameters of the small LFP battery bank.}}{75}{table.caption.159}%
 \contentsline {table}{\numberline {4.14}{\ignorespaces Performance parameters of the small LFP battery bank.}}{75}{table.caption.160}%
 \contentsline {table}{\numberline {4.15}{\ignorespaces Mechanical parameters of the small LFP battery bank.}}{75}{table.caption.161}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Essential parameters of the large LFP battery bank.}}{76}{table.caption.163}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Essential parameters of the large LFP battery bank.}}{75}{table.caption.163}%
 \contentsline {table}{\numberline {4.17}{\ignorespaces Performance parameters of the large LFP battery bank.}}{76}{table.caption.164}%
 \contentsline {table}{\numberline {4.18}{\ignorespaces Mechanical parameters of the large LFP battery bank.}}{76}{table.caption.165}%
 \contentsline {table}{\numberline {4.19}{\ignorespaces Technical specification of LTO Batteries.}}{76}{table.caption.166}%
@@ -67,3 +67,22 @@
 \contentsline {table}{\numberline {4.47}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (small bank).}}{88}{table.caption.209}%
 \contentsline {table}{\numberline {4.48}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (large bank).}}{88}{table.caption.210}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Calculated NPV, with carbon taxes, without subsides (small bank).}}{91}{table.caption.211}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Calculated NPV, with carbon taxes and without subsides (large bank).}}{91}{table.caption.212}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Calculated IRR, with carbon taxes and without subsides (small bank).}}{92}{table.caption.213}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Calculated IRR, with carbon tax and without subsides (large bank).}}{92}{table.caption.214}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Calculated period for positive ROI, with carbon taxes and without subsides (small bank).}}{92}{table.caption.215}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Calculated period for positive ROI, witho carbon taxes and without subsides (large bank).}}{92}{table.caption.216}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Calculated NPV, without taxes and with government grants (small bank).}}{93}{table.caption.217}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Calculated NPV, without taxes and with government grants (large bank).}}{93}{table.caption.218}%
+\contentsline {table}{\numberline {6.9}{\ignorespaces Calculated IRR, without taxes and with Government grants (small bank).}}{93}{table.caption.219}%
+\contentsline {table}{\numberline {6.10}{\ignorespaces Calculated IRR, without taxes and with Government grants (large bank).}}{93}{table.caption.220}%
+\contentsline {table}{\numberline {6.11}{\ignorespaces Calculated period for positive ROI, without carbon taxes and with government grants (small bank).}}{94}{table.caption.221}%
+\contentsline {table}{\numberline {6.12}{\ignorespaces Calculated period for positive ROI, without taxes and with Government grants (large bank).}}{94}{table.caption.222}%
+\contentsline {table}{\numberline {6.13}{\ignorespaces Calculated NPV, with taxes and government grants (small bank).}}{94}{table.caption.223}%
+\contentsline {table}{\numberline {6.14}{\ignorespaces Calculated NPV, with taxes and government grants (large bank).}}{95}{table.caption.224}%
+\contentsline {table}{\numberline {6.15}{\ignorespaces Calculated IRR, with taxes and government grants (small bank).}}{95}{table.caption.225}%
+\contentsline {table}{\numberline {6.16}{\ignorespaces Calculated IRR, with taxes and government grants (large bank).}}{95}{table.caption.226}%
+\contentsline {table}{\numberline {6.17}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (small bank).}}{95}{table.caption.227}%
+\contentsline {table}{\numberline {6.18}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (large bank).}}{95}{table.caption.228}%
