@@ -130,37 +130,37 @@
 \contentsline {subsubsection}{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{76}{section*.167}%
 \contentsline {subsubsection}{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{77}{section*.171}%
 \contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{78}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{78}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{79}{subsection.4.4.8}%
 \contentsline {section}{\numberline {4.5}Economic Analysis}{80}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{80}{subsection.4.5.1}%
-\contentsline {subsubsection}{a) Battery Bank NMC}{80}{section*.180}%
-\contentsline {subsubsection}{b) Battery Bank LFP}{81}{section*.181}%
-\contentsline {subsubsection}{c) Battery Bank LTO}{81}{section*.182}%
-\contentsline {subsubsection}{d) Power Electronics}{81}{section*.183}%
-\contentsline {subsubsection}{e) Main genset and Electric motors}{82}{section*.184}%
-\contentsline {subsubsection}{f) Integration and Safety systems}{82}{section*.185}%
-\contentsline {subsubsection}{g) Total Cost}{82}{section*.186}%
-\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{84}{subsection.4.5.2}%
-\contentsline {subsubsection}{a) Fuel Consumption Savings}{84}{section*.193}%
-\contentsline {subsubsection}{b) Maintenance Engine Reduction}{84}{section*.194}%
-\contentsline {subsubsection}{c) Total Costs}{84}{section*.195}%
-\contentsline {subsection}{\numberline {4.5.3}Financial Performance}{86}{subsection.4.5.3}%
-\contentsline {subsubsection}{a) Net Present Value (NPV)}{86}{section*.202}%
-\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{87}{section*.205}%
-\contentsline {subsubsection}{c) Return on Investment (ROI)/ Payback Period}{88}{section*.208}%
-\contentsline {section}{\numberline {4.6}Chapter Summary}{89}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Simulation results}{90}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Appendix}{91}{chapter.6}%
-\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{91}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{91}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{92}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{92}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Government grants}{92}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{93}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{93}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{94}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Taxes and Grants}{94}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{94}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{95}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{95}{subsection.6.3.3}%
-\contentsline {chapter}{Bibliography}{96}{table.caption.228}%
+\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{81}{subsection.4.5.1}%
+\contentsline {subsubsection}{a) Battery Bank NMC}{81}{section*.182}%
+\contentsline {subsubsection}{b) Battery Bank LFP}{82}{section*.183}%
+\contentsline {subsubsection}{c) Battery Bank LTO}{82}{section*.184}%
+\contentsline {subsubsection}{d) Power Electronics}{82}{section*.185}%
+\contentsline {subsubsection}{e) Main genset and Electric motors}{83}{section*.186}%
+\contentsline {subsubsection}{f) Integration and Safety systems}{83}{section*.187}%
+\contentsline {subsubsection}{g) Total Cost}{83}{section*.188}%
+\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{85}{subsection.4.5.2}%
+\contentsline {subsubsection}{a) Fuel Consumption Savings}{85}{section*.195}%
+\contentsline {subsubsection}{b) Maintenance Engine Reduction}{85}{section*.196}%
+\contentsline {subsubsection}{c) Total Costs}{85}{section*.197}%
+\contentsline {subsection}{\numberline {4.5.3}Financial Performance}{87}{subsection.4.5.3}%
+\contentsline {subsubsection}{a) Net Present Value (NPV)}{87}{section*.204}%
+\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{88}{section*.207}%
+\contentsline {subsubsection}{c) Return on Investment (ROI)/ Payback Period}{89}{section*.210}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{90}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{91}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Appendix}{92}{chapter.6}%
+\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{92}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{92}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{93}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{93}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Government grants}{93}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{94}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{94}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{95}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Taxes and Grants}{95}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{95}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{96}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{96}{subsection.6.3.3}%
+\contentsline {chapter}{Bibliography}{97}{table.caption.230}%
