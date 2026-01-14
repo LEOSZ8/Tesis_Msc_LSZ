@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.1" pages="6">
-  <diagram name="Traditional" id="Vxw1aVIBOirIgRuYY6cX">
-    <mxGraphModel dx="1787" dy="1046" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1" pages="6">
+  <diagram name="TDM_Prop" id="Vxw1aVIBOirIgRuYY6cX">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="xjD0KkPepl-1Kit9_9Rt-0" />
         <mxCell id="xjD0KkPepl-1Kit9_9Rt-1" parent="xjD0KkPepl-1Kit9_9Rt-0" />
@@ -94,8 +94,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Semi-hybrid dm" id="hU0dtKdgteAj7JhaHINF">
-    <mxGraphModel dx="2275" dy="1331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+  <diagram name="SHDM_Prop" id="hU0dtKdgteAj7JhaHINF">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="FlnkSvQHw323Ulp1KIen-0" />
         <mxCell id="FlnkSvQHw323Ulp1KIen-1" parent="FlnkSvQHw323Ulp1KIen-0" />
@@ -470,8 +470,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Full-hybrid dm" id="hT5oXMab18Q-OXTwSmA3">
-    <mxGraphModel dx="2502" dy="1464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+  <diagram name="FHDM_Prop" id="hT5oXMab18Q-OXTwSmA3">
+    <mxGraphModel dx="2037" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="wo3nZ8weZ31TjGSP-zmm-0" />
         <mxCell id="wo3nZ8weZ31TjGSP-zmm-1" parent="wo3nZ8weZ31TjGSP-zmm-0" />
@@ -852,8 +852,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Full-hybrid de" id="jEQa7xpfUXkeBTOKHvCj">
-    <mxGraphModel dx="1787" dy="1046" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+  <diagram name="FHDE_Prop" id="jEQa7xpfUXkeBTOKHvCj">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="QtXZo5Z8aveJymMHGAef-0" />
         <mxCell id="QtXZo5Z8aveJymMHGAef-1" parent="QtXZo5Z8aveJymMHGAef-0" />
@@ -1679,8 +1679,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Full-ellectric de" id="uJuQxyS2JXj8LQqJIRg4">
-    <mxGraphModel dx="872" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+  <diagram name="PBE_Prop" id="uJuQxyS2JXj8LQqJIRg4">
+    <mxGraphModel dx="1678" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="PJCIltvvBzoxRryrPlyr-0" />
         <mxCell id="PJCIltvvBzoxRryrPlyr-1" parent="PJCIltvvBzoxRryrPlyr-0" />

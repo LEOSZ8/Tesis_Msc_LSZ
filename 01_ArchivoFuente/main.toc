@@ -112,55 +112,55 @@
 \contentsline {subsubsection}{e) Capacity Rating Factor and Peukert Efficiency ($k_{c-rate}$)}{67}{section*.143}%
 \contentsline {subsection}{\numberline {4.1.1}Battery Sizing}{67}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2}Nominal Battery Voltage}{68}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{68}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{69}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Nickel Manganese Cobalt (NMC)}{69}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Lithium Iron Phosphate (LFP)}{69}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Lithium Titanate Oxide (LTO)}{69}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Lithium Titanate Oxide (LTO)}{70}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Battery Bank Design}{70}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Calculation of essential electrical parameters}{70}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Calculation of electrical performance parameters}{71}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.1}Calculation of essential electrical parameters}{71}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Calculation of electrical performance parameters}{72}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Calculation of mechanical parameters}{72}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Calculated NMC battery banks}{72}{subsection.4.4.4}%
-\contentsline {subsubsection}{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{72}{section*.149}%
-\contentsline {subsubsection}{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{73}{section*.153}%
+\contentsline {subsection}{\numberline {4.4.4}Calculated NMC battery banks}{73}{subsection.4.4.4}%
+\contentsline {subsubsection}{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{73}{section*.149}%
+\contentsline {subsubsection}{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{74}{section*.153}%
 \contentsline {subsection}{\numberline {4.4.5}Calculated LFP battery banks}{74}{subsection.4.4.5}%
-\contentsline {subsubsection}{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{74}{section*.158}%
-\contentsline {subsubsection}{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{75}{section*.162}%
+\contentsline {subsubsection}{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{75}{section*.158}%
+\contentsline {subsubsection}{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{76}{section*.162}%
 \contentsline {subsection}{\numberline {4.4.6}Calculated LTO battery banks}{76}{subsection.4.4.6}%
-\contentsline {subsubsection}{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{76}{section*.167}%
-\contentsline {subsubsection}{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{77}{section*.171}%
+\contentsline {subsubsection}{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{77}{section*.167}%
+\contentsline {subsubsection}{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{78}{section*.171}%
 \contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{78}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{79}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Economic Analysis}{80}{section.4.5}%
+\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{80}{subsection.4.4.8}%
+\contentsline {section}{\numberline {4.5}Economic Analysis}{81}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{81}{subsection.4.5.1}%
-\contentsline {subsubsection}{a) Battery Bank NMC}{81}{section*.182}%
+\contentsline {subsubsection}{a) Battery Bank NMC}{82}{section*.182}%
 \contentsline {subsubsection}{b) Battery Bank LFP}{82}{section*.183}%
-\contentsline {subsubsection}{c) Battery Bank LTO}{82}{section*.184}%
-\contentsline {subsubsection}{d) Power Electronics}{82}{section*.185}%
+\contentsline {subsubsection}{c) Battery Bank LTO}{83}{section*.184}%
+\contentsline {subsubsection}{d) Power Electronics}{83}{section*.185}%
 \contentsline {subsubsection}{e) Main genset and Electric motors}{83}{section*.186}%
 \contentsline {subsubsection}{f) Integration and Safety systems}{83}{section*.187}%
-\contentsline {subsubsection}{g) Total Cost}{83}{section*.188}%
+\contentsline {subsubsection}{g) Total Cost}{84}{section*.188}%
 \contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{85}{subsection.4.5.2}%
 \contentsline {subsubsection}{a) Fuel Consumption Savings}{85}{section*.195}%
 \contentsline {subsubsection}{b) Maintenance Engine Reduction}{85}{section*.196}%
-\contentsline {subsubsection}{c) Total Costs}{85}{section*.197}%
+\contentsline {subsubsection}{c) Total Costs}{86}{section*.197}%
 \contentsline {subsection}{\numberline {4.5.3}Financial Performance}{87}{subsection.4.5.3}%
 \contentsline {subsubsection}{a) Net Present Value (NPV)}{87}{section*.204}%
 \contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{88}{section*.207}%
 \contentsline {subsubsection}{c) Return on Investment (ROI)/ Payback Period}{89}{section*.210}%
 \contentsline {section}{\numberline {4.6}Chapter Summary}{90}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Simulation results}{91}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Appendix}{92}{chapter.6}%
-\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{92}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{92}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{93}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{93}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Government grants}{93}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{94}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{94}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{95}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Taxes and Grants}{95}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{95}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{96}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{96}{subsection.6.3.3}%
-\contentsline {chapter}{Bibliography}{97}{table.caption.230}%
+\contentsline {chapter}{\numberline {5}Simulation results}{92}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Appendix}{93}{chapter.6}%
+\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{93}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{93}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{94}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{94}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Government grants}{94}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{95}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{95}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{96}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Taxes and Grants}{96}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{96}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{97}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{97}{subsection.6.3.3}%
+\contentsline {chapter}{Bibliography}{98}{table.caption.230}%

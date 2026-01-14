@@ -96,23 +96,36 @@ A conservative Temperature Correction Factor of $1.05$ to $1.10$ ($5-10\%$ overs
 
 \subsubsection{e) Capacity Rating Factor and Peukert Efficiency ($k_{c-rate}$)}
 
-Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery decreases as the discharge rate increases.For Lithium-ion batteries, the effect is minimal, with $k$ values typically between 1.01 and 1.05.
+Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery decreases as the discharge rate increases. For Lithium-ion batteries, the effect is minimal, with $k$ values typically between 1.01 and 1.05.
 
 \begin{itemize}
 	\item \textbf{Low Power Applications}: For hotel loads ($< 0.5C$), the factor is negligible ($\sim 1.0$).
 	\item \textbf{High Power Applications}: For propulsion boost ($> 2C$), a derating factor is prudent.
 \end{itemize}
 
+To calculate this factor, an initial ${C}_{rate}$ can be made based on the required energy ${E}_{load}$ and the service power ${P}_{service}$ using the following formula \cite{MAN}:
+
+\begin{equation}
+{C}_{rate}[{h}^{-1}]=\frac{{E}_{load}[kWh]}{{P}_{service}[kWh]}
+\end{equation}
+
+This provides an approximation of the ${C}_{rate}$ to determine the value of the $k_{c-rate}$ factor.
 \subsection{Battery Sizing}
 
 Based on the factors described previously, the calculations used to obtain the total installed energy ${E}_{\text{installed}}$ are presented:
 
 \begin{enumerate}
 	\item \textbf{Total Load}: This corresponds to adding the energy from the load profile ${E}_{prof}$ to the energy used for hotel loads ${E}_{hotel}$ $${E}_{load}={E}_{prof}+{E}_{hotel}$$
+	\item \textbf{C-rate}: Initial calculation of the ${C}_{rate}$ to determine the associated factor $k_{c-rate}$ 
+\begin{align*}
+{C}_{rate}=\frac{{E}_{load}}{{P}_{service}}<0 & \Rightarrow k_{c-rate} = 1\\
+{C}_{rate}=\frac{{E}_{load}}{{P}_{service}}\geq 0 & \Rightarrow k_{c-rate} >1
+\end{align*}
+	
 	\item \textbf{System Efficiency}: To supply power to the mechanical shafts, the battery must generate $${E}_{batt{\_}out}={E}_{load}/{\eta}_{sys}$$
 	\item \textbf{Max DOD}: Ensure that the battery is only used to the appropriate depth of discharge relative to its initial nominal capacity (beginning of life, BOL).  To do this, calculate $${E}_{BOL}={E}_{batt{\_}out}/{DOD}_{max}$$
-	\item \textbf{Aging Factor}:To ensure that the battery bank has a long service life, the aging factor must be taken into account  $${E}_{EOL}={E}_{BOL}/{k}_{aging}$$
-	\item \textbf{Apply Temperature/Rating Factors}: consider the variation in temperature and battery discharge rate through $${E}_{installed}={E}_{EOL}\cdot{k}_{temp}\cdot{k}_{c-rate}$$
+	\item \textbf{Aging Factor}: To ensure that the battery bank has a long service life, the aging factor must be taken into account  $${E}_{EOL}={E}_{BOL}/{k}_{aging}$$
+	\item \textbf{Apply Temperature/Rating Factors}: Consider the variation in temperature and battery discharge rate through $${E}_{installed}={E}_{EOL}\cdot{k}_{temp}\cdot{k}_{c-rate}$$
 \end{enumerate}
 
 The following equation is presented to obtain the total installed capacity based on the factors explained above.
@@ -139,11 +152,10 @@ Based on equation \eqref{eq:Energy_Batt}, the factors used for sizing both batte
 		${k}_{aging}$ & $0.8$    \\		
 		\hline		
 		${k}_{temp}$ & $1.05$    \\
-		\hline
-		${k}_{c-rate}$ & $1$    \\ 
-		\hline
+		\hline		
 	\end{tabular}
 	\end{table} 
+
 
 Based on the information shown in Figures \ref{fig:1M_HybTug_releff_015}, \ref{fig:2M_HybTug_releff_015}, \ref{fig:1M_HybTug_releff_025} and \ref{fig:2M_HybTug_releff_025}, it can be seen that one maneuver demands the most power from the battery bank in both scenarios. Thus, the total installed power for the two different battery bank options can be calculated. This can be seen in Table \ref{tab:Energy_banks}.
 
@@ -155,19 +167,25 @@ Based on the information shown in Figures \ref{fig:1M_HybTug_releff_015}, \ref{f
 		\hline      
 		& BESS $15\%$ ${\text{P}}_{\text{nom}}$ & BESS $25\%$ ${\text{P}}_{\text{nom}}$ \\		
 \hline \hline
-${E}_{prof}$ & 1278[kWh] & $3102$[kWh] \\
+${E}_{prof}$ & 1,278[kWh] & $3,102$[kWh] \\
 \hline
 ${E}_{hotel}$ & 192[kWh] & 192[kWh] \\
 \hline
-$\bf {E}_{load}$ & $\bf \approx 1470$\textbf{[kWh]}& $\bf \approx 3300$\textbf{[kWh]} \\
+$\bf {E}_{load}$ & $\bf \approx 1,470$\textbf{[kWh]}& $\bf \approx 3,300$\textbf{[kWh]} \\
 \hline
-${E}_{bat{\_}out}$ & 1670[kWh] & 3750[kWh] \\
+${P}_{service}$ & $600$[kW] & $1,000$[kW] \\
 \hline
-${E}_{BOL}$ & 2088[kWh] & 4688[kWh]\\
+$\bf {C}_{rate}$ & $\bf \approx 0.4[\text{h}^{-1}]$ & $\bf \approx 0.3[\text{h}^{-1}]$ \\
 \hline
-${E}_{EOL}$ & 2610[kWh] & 5859[kWh] \\
+${k}_{c-rate}$ & $1$[-] & $1$[-]  \\ 
 \hline
-$\bf {E}_{installed}$ & $\bf \approx 2800$\textbf{[kWh]}& $\bf \approx 6300$\textbf{[kWh]} \\
+${E}_{bat{\_}out}$ & 1,670[kWh] & 3,750[kWh] \\
+\hline
+${E}_{BOL}$ & 2,088[kWh] & 4,688[kWh]\\
+\hline
+${E}_{EOL}$ & 2,610[kWh] & 5,859[kWh] \\
+\hline
+$\bf {E}_{installed}$ & $\bf \approx 2,800$\textbf{[kWh]}& $\bf \approx 6,300$\textbf{[kWh]} \\
 \hline \hline
 	\end{tabular}
 \end{table}
@@ -225,7 +243,7 @@ Cell prices range from $\text{US }\$120-\text{US }\$150/\text{kWh}$ \cite{UFine}
 \end{itemize}
 
 \subsection{Lithium Iron Phosphate (LFP)}
-LFP is rapidly gaining market share in the maritime sector, driven by safety and longevity.
+LFP (LiFePO\textsubscript{4}) is rapidly gaining market share in the maritime sector, driven by safety and longevity.
 
 \begin{itemize}
 \item \textbf{Energy Density}: The cell density is 90-160 Wh/kg \cite{evlithium}. Tugboats require considerable ballast to achieve the draft necessary for propeller immersion. LFP batteries could be a substitute for lead or iron ballast, serving a dual function as “stability weight” \cite{UFine}.
@@ -237,7 +255,7 @@ LFP is rapidly gaining market share in the maritime sector, driven by safety and
 
 \subsection{Lithium Titanate Oxide (LTO)}
 
-Lithium titanate batteries are the only ones with a unique anode surface made from lithium and titanium oxides. These batteries for electric boats, also known as LTO batteries, operate in extreme weather conditions, offering greater safety \cite{Sunreef}.
+Lithium titanate batteries (Li\textsubscript{4}Ti\textsubscript{5}O\textsubscript{12}) are the only ones with a unique anode surface made from lithium and titanium oxides. These batteries for electric boats, also known as LTO batteries, operate in extreme weather conditions, offering greater safety \cite{Sunreef}.
 
 \begin{itemize}
 	\item \textbf{Performance}: One of the main advantages of LTO is its high C-rate capacity (i.e., high maximum power) \cite{Echandia}. It offers exceptional service life (more than 10,000 cycles) \cite{evlithium}.
@@ -927,16 +945,16 @@ Based on the technical information provided by battery suppliers and on the calc
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=1\textwidth]{images/chapter04/RadarPlot_x3_015.jpg}
-    	\caption{Daily fuel consumption and emissions of the\\ hybrid tugboat (BESS at $15\%$ of rated \\propulsion power).}
+    	\caption{Radar chart showing a technical comparison \\of small battery bank designs using the\\ three technologies (average).}
     	\label{fig:RadarPlot_x3_015}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=1\textwidth]{images/chapter04/RadarPlot_x2_015.jpg}
-    	\caption{Daily fuel consumption and emissions of the\\ hybrid tugboat (BESS at $25\%$ of rated \\propulsion power).}
+    	\caption{Radar chart showing a technical comparison of small battery pack designs using NMC and LFP technologies (average).}
     	\label{fig:RadarPlot_x2_015}
     \end{subfigure}    
-    \caption{Comparison between the total daily fuel consumption (total daily CO\textsubscript{2} emissions generated) of the hybrid tugboat for two maneuvers.}
+    \caption{Comparison of technologies for the technical analysis of small battery bank design.}
     \label{fig:RadarPlot_015}
 \end{figure}
 
@@ -944,18 +962,26 @@ Based on the technical information provided by battery suppliers and on the calc
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=1\textwidth]{images/chapter04/RadarPlot_x3_025.jpg}
-    	\caption{Daily fuel consumption and emissions of the\\ hybrid tugboat (BESS at $15\%$ of rated \\propulsion power).}
+    	\caption{Radar chart showing a technical comparison\\ of large battery bank designs using the three\\ technologies (average).}
     	\label{fig:RadarPlot_x3_025}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
     	\centering
     	\includegraphics[width=1\textwidth]{images/chapter04/RadarPlot_x2_025.jpg}
-    	\caption{Daily fuel consumption and emissions of the\\ hybrid tugboat (BESS at $25\%$ of rated \\propulsion power).}
+    	\caption{Radar chart showing a technical comparison of small battery pack designs using NMC and LFP technologies (average).}
     	\label{fig:RadarPlot_x2_025}
     \end{subfigure}    
-    \caption{Comparison between the total daily fuel consumption (total daily CO\textsubscript{2} emissions generated) of the hybrid tugboat for two maneuvers.}
+    \caption{Comparison of technologies for the technical analysis of large battery bank design.}
     \label{fig:RadarPlot_025}
 \end{figure}
+
+For comparison purposes, based on the options chosen for each technology, an average value is obtained for the technical parameters of interest to be observed, in order to provide a general analysis of the performance of each technology for the design of large and small banks.
+
+What can be observed in Figures \ref{fig:RadarPlot_x3_015} and \ref{fig:RadarPlot_x3_025} is that LTO technology significantly outperforms most technical parameters of interest. This is because small cells were chosen for the battery banks, which can pose greater technical challenges in their implementation. 
+
+Thus, a comparison is made only between NMC and LFP technologies through Figures \ref{fig:RadarPlot_x2_015} and \ref{fig:RadarPlot_x2_015}. In general, if technology performance is paramount, both in terms of service life and discharge power, LFP is the appropriate choice. But if there are physical restrictions within the vessel, NMC is the most suitable technology. 
+
+Next, a general mechanical analysis of the vessel is performed.
 
 \subsection{Mechanical design considerations}
 
@@ -1087,9 +1113,7 @@ In addition, two additional factors related to emissions taxes and government su
 	\item A government subsidy of $10\%$ of CAPEX.
 \end{itemize}
 
-\textcolor{blue}{Alcance: NO SE CONSIDERA LA INFLACIÓN.}
 
-\textcolor{blue}{Alcance: NO SE CONSIDERA EL COSTO DEL CARGADOR EN PUERTO.}
 
 \subsection{Capital Expenditure (CAPEX)}
 
@@ -1480,6 +1504,8 @@ The following equation will be used to calculate the NPV.
 \text{NPV} = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{ds})^t} - \text{Inv}.
 \end{equation}
 
+Where:
+
 \begin{itemize}
 	\item \textbf{LFS}: Lifespan of the project (years).
 	\item \textbf{Prf}: Annual profit.
@@ -1538,8 +1564,22 @@ The case is also analyzed in terms of how it is affected by emissions taxes and 
 \subsubsection{b) Internal Rate of Return (IRR)}
 
 IRR is an indicator of a project's profitability that is used to decide whether to accept or reject an investment project \cite{MinHac}. To do this, the IRR is compared to a minimum rate or discount rate. If the project's rate of return—expressed by the IRR—exceeds the discount rate, it is accepted; otherwise, it is rejected.
+The IRR can be calculated using the following equation:
 
-Typical IRR for hybrid tug projects falls between $10\%$ and $15\%$. This can jump to $>20\%$ if the vessel operates in a region with carbon taxation (e.g., EU ETS) or harbor fee discounts for low-emission vessels.
+\begin{equation}
+0 = \sum_{t=1}^{\text{LFS}} \frac{\text{Prf}}{(1+\text{IRR})^t} - \text{Inv}.
+\end{equation}
+
+Where:
+
+\begin{itemize}
+	\item \textbf{LFS}: Lifespan of the project (years).
+	\item \textbf{Prf}: Annual profit.
+	\item \textbf{Inv}: Initial Investment.
+	\item \textbf{IRR}: Internal rate of return.
+\end{itemize}
+
+The results obtained for this economic variable for each design are shown below.
 
 \begin{table}[H]
 	\centering
@@ -1652,3 +1692,13 @@ An increase in fuel prices allows for higher annual profits when comparing conve
 The case is also analyzed in terms of how it is affected by emissions taxes and government grants, effects that can be applied jointly or separately. This information is provided in Appendix \ref{sec:tax}, Appendix \ref{sec:grant}, and Appendix \ref{sec:tax_grant}. 
 
 \section{Chapter Summary}
+
+This chapter has the focus on the preliminary design, technical evaluation, and economic viability of an Energy Storage System (ESS) for a hybrid tugboat. The chapter outlines the methodology for sizing battery banks and compares three primary lithium-ion technologies: NMC, LFP, and LTO.
+
+\begin{enumerate}
+\item \textbf{Sizing Methodology and Requirements}: The design process begins by calculating the required energy capacity based on the tugboat's operational load profile ($E_{load}$), which includes both propulsion and "hotel" (auxiliary) loads. To determine the final installed capacity ($E_{installed}$), it was applied several correction factors.
+\item \textbf{Technology Comparison}: It was compared Nickel Manganese Cobalt (NMC), Lithium Iron Phosphate (LFP), and Lithium Titanate Oxide (LTO), , based on market options. The comparison of alternatives was carried out in a particularly technical manner. 
+\item \textbf{Economic and Financial Results}: The economic analysis considers the Capital Expenditure (CAPEX) of retrofitting a tugboat and the Operational Expenditure (OPEX) savings from reduced fuel consumption.
+\end{enumerate}
+
+The conclusion of the design analysis is that LFP technology is the most viable solution for hybrid tugboats, as it balances lower initial cost with a long service life, enabling a faster return on investment compared to NMC or LTO.
