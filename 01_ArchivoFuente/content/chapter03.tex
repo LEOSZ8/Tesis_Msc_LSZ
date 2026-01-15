@@ -101,7 +101,7 @@ This system eliminates the inefficiency of diesel engines at low revs, allowing 
 
 The generator transforms the mechanical power of the combustion engine to electrical power. The electric motor on the right transforms the electric power back to mechanical power which is then supplied to the propulsor, as is shown in figure \ref{fig:Series1}. This system is called “electric shaft”, as there is no control input to manipulate the power transmission \cite{Elica}.\\
 
-In electric propulsion systems (both marine and aeronautical)\cite{Elica}, the characteristics of the generator and electric motor define the voltage, current, and frequency. Since the physical design of these machines does not change while they are running, power transmission remains constant, linking the power of the combustion engine to the final rotation of the propeller.\\
+The electric propulsion system uses the fixed properties of the generator and motor to establish constant power transmission between the combustion engine and the propeller, based on defined voltage, current, and frequency parameters \cite{Elica}.\\
 
 Wired connections make it easy to integrate multiple motors and generators, eliminating the rigidity of mechanical shafts; however, the system is vulnerable to overload: if the holding torque of the synchronous machines is exceeded, the system becomes desynchronized, losing power and risking mechanical integrity (cogging torque) \cite{Elica}.\\
 
@@ -136,7 +136,7 @@ However, as a vulnerability, the system relies entirely on this compensation to 
     \label{fig:Series_DCL}
 \end{figure}
 
-Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors, as is shown in figure \ref{fig:Series3}. The insertion of power converters allows the internal combustion engine and the propeller to operate at almost independent rotational speeds. In this way, multiple fixed-pitch rotors can be controlled independently of each other \cite{Elica}.Additionally, the generator set can be resized by adding a BESS connected to the DC link, as shown in Figure \ref{fig:Series4}.\\ 
+Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors, as is shown in figure \ref{fig:Series3}. Power converters enable independent operation between the motor and the propeller, allowing various fixed-pitch rotors to be managed autonomously \cite{Elica}. Additionally, the generator set can be resized by adding a BESS connected to the DC link, as shown in Figure \ref{fig:Series4}.\\ 
 
 The series hybrid system is ideal for operations involving frequent stops and low speeds (such as tugboats or ferries), but it loses competitiveness on routes traveled at constant speeds, as the system is between $10\%$ and $15\%$ less efficient than a direct mechanical drive due to multiple energy conversions (from mechanical to electrical and vice versa) \cite{Elica}.
 
@@ -256,9 +256,9 @@ may have 10 MW of power requirement \cite{Qazi}.
 
 The Onboard DC Grid concept eliminates the need for bulky propulsion transformers and main AC switchboards. This can reduce the total space occupied by electrical equipment by between 30$\%$ and 75$\%$, freeing up space in a tugboat's engine rooms \cite{ABB}.\\
 
-In an AC grid, generators must run at a fixed speed (e.g., 1800 rpm for 60Hz) to maintain frequency, regardless of load. In a DC grid, the engine speed can be decoupled from the grid frequency. The engine can slow down to idle speeds during low load while still producing the required voltage, with a reduction of the fuel consumption - up to 27$\%$ reduction of specific fuel oil consumption \cite{ABB}.\\
+DC networks allow the motor speed to vary according to the load, unlike the constant speed required in AC. This decoupling optimizes consumption at low demand, achieving fuel savings of up to 27$\%$ \cite{ABB}.\\
 
-The industry standard for modern hybrid tugboats has been established around the 1000 V DC grid, considering unipolar and bipolar bus architectures. Generally, low-voltage dc (LVdc) systems are lower than 1000 V DC, with power system capacity in the range of 1–20MW, while medium-voltage dc (MVdc) systems are higher than 1000 V DC, with 20–100 MW \cite{Xu2022}.
+Hybrid tugboats typically use 1000 V DC networks. These are categorized as LVdc (up to 1000 V and 20 MW) or MVdc (above 1000 V and 20 MW) systems, using unipolar or bipolar bus architectures \cite{Xu2022}.
 
 
 
@@ -339,8 +339,7 @@ In this architecture, the total power required by the propulsion system and serv
 
 The propulsion motors are fed from power converters, which are connected directly to the main busbar, and the service loads are fed from a low-voltage busbar, using stepdown transformers.\\
 
-The integrated power system (IPS) combines the generation and distribution system into a unified grid, where the generated power is shared between all loads. The greatest advantage of shipboard
-IPS comes from power sharing on the common electrical grid, which improves power flexibility and availability \cite{SKSul}. The IPS also offers the ability to manage the generated and delivered power, optimizing the number of running generator sets, which enhances fuel efficiency and reduces emissions.
+The integrated power system (IPS) system integrates generation and distribution into a common electrical network. This energy exchange dramatically improves operational flexibility and system availability compared to traditional configurations \cite{SKSul}. By actively managing the power delivered, IPS minimizes the use of generators, optimizing consumption and environmental impact.
 
 IPS eliminates the separation between propulsion power and service power, creating a single, shared network \cite{SKSul}:
 
@@ -433,7 +432,7 @@ For this purpose, we considered the use of an MTU 16V 4000 P63 engine, whose BSF
     \label{fig:StandBy_Mode}
 \end{figure}
 
-In \textit{Standby Mode},the diesel engines will shut down and the battery will power the normal electrical system and the electric propulsion motors that drive the rudder propellers, as is shown in Figure \ref{fig:StandBy_Mode}. \textit{Standby Mode} can be used to maintain position, maneuver, and navigate freely at speeds of up to 5 knots, thus complying with the PTH functionality. In addition, the battery bank may provide \textbf{peak shaving} and \textbf{spinning reverse} functions.
+In \textit{Standby Mode}, the diesel engines will shut down and the battery will power the normal electrical system and the electric propulsion motors that drive the rudder propellers, as is shown in Figure \ref{fig:StandBy_Mode}. \textit{Standby Mode} can be used to maintain position, maneuver, and navigate freely at speeds of up to 5 knots, thus complying with the PTH functionality. In addition, the battery bank may provide \textbf{peak shaving} and \textbf{spinning reverse} functions.
 
 
 \section{Operational Profile}

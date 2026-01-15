@@ -23,12 +23,11 @@ Tugboats are small but powerful vessels designed to assist in docking ships or m
 
 A tugboat is technically defined as a type of vessel specifically designed to assist other ships in moving by providing a controlled amount of force. They are essential vessels in ports, as is shown in fig. \ref{fig:Tugs}, where they assist in the movement of floating objects and in emergency tasks \cite{INEAL}.
 
-In maritime law, maritime towing is defined as the operation whereby a vessel transports another vessel or floating device that lacks self-propulsion or, despite having it, is unable to navigate under its own power, by pulling it through the sea. This functional duality—which encompasses both high-precision maneuvering assistance in congested environments (port towing) and long-distance transport and salvage (offshore towing)—requires design engineering and system redundancy adapted to very different operational risks \cite{Bruce}.
+Maritime towing is legally defined as the action of pulling a vessel or floating device that lacks its own propulsion or navigational autonomy. This activity has a dual function: on the one hand, precision assistance in port maneuvers and, on the other, deep-sea towing or salvage. Both functions require specific design engineering and system redundancy to manage the different operational risks of each environment\cite{Bruce}.
 
 The importance of tugboats has grown exponentially with the phenomenon of naval gigantism \cite{Murimar}. Large modern ships, such as cruise ships and oil tankers, have tremendous momentum (inertia) that prevents them from stopping quickly or maneuvering effectively on their own in narrow channels or docks \cite{ESC_Group}.   
 
-Therefore, tugboats are essential to counteract these inertial forces. Support is necessary for entry, exit, and general maneuvering, including assisting ships in emergency situations  \cite{Bruce}. The efficiency of these types of vessels is based on fuel consumption in relation to load capacities, always taking into account both the propulsion system and the energy conversion system that determines it. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}.
-%Technological innovation plays a key role in tugboat operations. Environmental challenges and high efficiency requirements have driven the digitization and development of more sustainable and less polluting tugboats \cite{Murimar}. This trend includes the integration of automatic control technologies to optimize maneuver management, such as investment in hybrid and electric propulsion systems.\\\\     
+The tugboat is essential for managing the ship's inertia and ensuring operational safety during maneuvers and contingencies \cite{Bruce}. Operational efficiency depends on fuel consumption relative to load, factors that are conditioned by the configuration of the propulsion and energy system. The efficiency of conventional propulsion systems varies between 38$\%$ and 41$\%$ for a power range between 100 kW and 2,500 kW. For vessels with higher power ratings, efficiency increases to 48$\%$ \cite{Griffiths} \cite{Wik}.
 
 
 
@@ -188,7 +187,11 @@ Depth or molded depth of a vessel is measured at the center of the length, from 
 Gross Tonnage (GT) measures the “total inside space” of the ship, including all areas like cargo holds, engine rooms, and crew spaces. It’s about “volume”, not weight \cite{Wartsila} \cite{chinarubberfender}, as is shown in figure \ref{fig:GrossTonnageTug}.
 \begin{itemize}
 	\item Under vessel measurement rules of various nations, the Panama Canal and the Suez Canal gross tonnage is a measure of the internal volume of space within a vessel in which 1 ton is equivalent to $2.83 [m^3]$ or $100 [ft^3]$.
-	\item Under the International Convention on Tonnage Measurement of Ships, 1969, (ICTM), a standardized numerical value is a logarithmic function of spaces within a vessel. There is no definition of a ton under ICTM because the value per unit of volume is greater on a vessel of large volume than on a vessel of small volume. Gross tonnage according to the national and canal rules generally includes spaces bounded by the under surface of the uppermost complete deck, the side frames, and the floor frames or the inner bottom if it rests on the floors or if the double water is for water ballast, plus closed-in space in deck structures are available for cargo or stores or for the berthing or accommodation of passengers or crew. Rules vary greatly as to exclusion or inclusion of various spaces. Gross tonnage according to ICTM is GT = K1 V in which V is the total moulded volume of all enclosed spaces of the ship in cub m and K1 is 0.2 + 0.02 log10 V.
+	\item \textbf{ICTM 1969 Agreement}: Introduced a standardized numerical value based on a logarithmic function of the total molded volume ($V$). The official formula is:
+	
+	$$ GT={K}_{1}\cdot V$$
+	
+Where $V$ is the volume in $[\text{m}^{3}]$ and the coefficient $K_1$ is calculated as $0.2 + 0.02 \cdot \log_{10}(V)$. Under the ICTM, a unit of volume is worth more on a large ship than on a small one, so there is no fixed definition of a “ton”.
 \end{itemize}
  
 
@@ -225,11 +228,11 @@ To understand the work of a tugboat as a maritime unit, it is essential to analy
 
 Bollard pull (BP) is the fundamental metric for quantifying a tugboat's pulling power.
 
-BP measures the maximum force a vessel can exert while stationary in the water. It is the maritime equivalent of horsepower or torque in land vehicles. The measurement requires securing the vessel to a fixed bollard at the dock and using specialized load cells to calculate the tension generated on the line with the engines running at full power, as is shown in the figure \ref{fig:BollardPullTug}.   
+Equivalent to automotive torque, BP measures the static traction of the vessel. The process involves securing the vessel to a fixed point and recording the tension of the line using load cells at full thrust, as is shown in the figure \ref{fig:BollardPullTug}.   
 
-BP specifications are expressed in units such as kilonewtons (kN), short tons (stf), or ton-force (tf) and are critical for demonstrating the vessel's pulling capacity under load. All commercial vessels intended for towing operations must obtain fixed point pulling certification from international classification societies such as the American Bureau of Shipping (ABS) or Bureau Veritas (BV)\cite{Murimar}.   
+The BP measures load capacity in units such as kN or tf. All tugboats require a fixed point certification issued by classification societies (such as ABS or BV) to validate their operability \cite{Murimar}.  
 
-The tugboat's design is specifically geared toward maximizing pulling force in relation to its size. A common and effective way to increase pulling force is by adding a nozzle (duct) that surrounds the propeller, which improves propulsive efficiency \cite{Murimar}. 
+The tugboat's design seeks to maximize its pulling power in relation to its dimensions. A common method of achieving this is to install a nozzle around the propeller, thereby optimizing propulsion efficiency. \cite{Murimar}. 
 
 \subsection{Propulsion Engineering for Maneuvering}
 The maneuverability of a tugboat, which directly influences its operational efficiency and safety, is intrinsically linked to the design of its propulsion system.
@@ -263,13 +266,13 @@ It uses a standard diesel engine connected to a propeller, as is shown in the fi
     \label{fig:ASD_Tugs}
 \end{figure}
 
-These are rotary thrusters, where a motor is capable of directing all its thrust in any direction \cite{MJimenez}. They all have two propellers, and since each one can be oriented independently, maneuverability is greatly increased, allowing them to turn on themselves in a single length \cite{JFarina}, as is shown in the figure \ref{fig:ASD1_Tug}. The only difference with conventional tugboats are the modifications to the stern and structure to house the propellers and withstand the forces exerted by the nozzle rudder, which are different from those exerted by a conventional rudder and propeller \cite{JFarina}. 
+These are rotary thrusters, where a motor is capable of directing all its thrust in any direction \cite{MJimenez}. Its two independent propellers maximize maneuverability, allowing the ship to turn 360° on its own length \cite{JFarina}, as is shown in the figure \ref{fig:ASD1_Tug}. The only difference with conventional tugboats are the modifications to the stern and structure to house the propellers and withstand the forces exerted by the nozzle rudder, which are different from those exerted by a conventional rudder and propeller \cite{JFarina}. 
 
-The in-line propulsion propeller (Z-Drive) is a system similar to the azimuth propulsion system, but with the difference that the propeller is oriented in only one direction (usually straight ahead), although it still provides great maneuverability in towing operations. In terms of power transmission, these tugs are more efficient \cite{MJimenez}.\\ 
+Z-Drive propulsion systems optimize power transmission and provide superior maneuverability when towing thanks to their efficient mechanical configuration \cite{MJimenez}.\\ 
 
 An ASD Tractor Tug generally has two fixed pitch azimuth propellers in the center of the boat or slightly forward of the center of the boat, as is shown in the figure \ref{fig:ASD2_Tug}.
 
-The propulsion units are located well forward of the tow point, close to the pivot point, which generates a large turning thrust. This can result in poor steering performance, which is remedied by installing a large center rudder-shaped fin at aft side \cite{Shiphandling}.
+To compensate for the loss of directional control caused by very forward-mounted thrusters, a stern fin is installed to stabilize the trajectory \cite{Shiphandling}.
 
 \subsubsection{c) Voith-Schneider Propulsion (VSP)} 
 
@@ -315,11 +318,11 @@ Table \ref{tab:Prop_Comp} compares the different types of propulsion discussed i
 
 Diesel engines for propulsion, as is shown in figure \ref{fig:MainEngine}, are designed to increase efficiency and keep costs to a minimum, whether in port or at a terminal. They are characterized by high power density, acceleration, and static traction.
 
-In general, the output power is available with variable load for an unlimited time, with an overload capacity of $10\%$ of the rated power, for use in emergencies for a maximum period of time (1 out of every 12 hours, for example), considering that overload operation cannot exceed a certain number of hours per year.\\
+The system supports continuous variable load and an emergency overload of $10\%$ (maximum 1h/12h), without exceeding a total limit of hours per year.\\
 
-Regard with the main diesel engines for propulsion system, the brake horsepower (BHP) is the power measured directly at the engine of a boat before any power loss through the transmission system or propeller shaft \cite{yachtbuyer}. It influences maneuverability when docking and handling in adverse conditions. 
+BHP represents the gross power of the propulsion engine prior to mechanical losses in the transmission system and axle \cite{yachtbuyer}. It influences maneuverability when docking and handling in adverse conditions. 
 
-BHP provides a realistic figure for useful power, as any kinetic application, such as a boat, will suffer a certain degree of resistance from the sea, which will reduce the actual power. Therefore, BHP can be thought of as the gross power of the engine, while the actual useful power will be somewhat lower due to mechanical losses in the transmission. 
+BHP measures the gross power of the engine; however, the actual useful power is reduced by transmission losses and hydrodynamic resistance.
 
 
 \subsection{Conventional Propellers}
@@ -433,7 +436,7 @@ Tugboats use various configurations to apply controlled force:
     \label{fig:OverCable}
 \end{figure}
 
-In this procedure, the tugboat works separately from the vessel it is assisting, pulling it from the end of a rope, which can be attached at different points on the vessel, thus performing various functions (towing, holding, etc.), as is shwon in the figure \ref{fig:OverCable}. This procedure prevents direct contact between the two vessels and also ensures that all the power of the tugboat is exerted in the direction of the rope. The disadvantage of this procedure is that it requires more maneuvering space due to the length of the mooring line, so the system cannot be used where space is limited \cite{IngeMarino}.
+Line towing allows the tugboat to assist the ship from a distance, adjusting its function (pull or hold) according to the connection point of the rope, as is shwon in the figure \ref{fig:OverCable}. Trailing-line towing optimizes power transfer and prevents collisions, but its large space requirement prevents use in restricted areas \cite{IngeMarino}.
 
 \subsubsection{b) Bow-Supported Tugboat (Ram Locking)}
 \begin{figure}[H]
@@ -579,7 +582,7 @@ Figures \ref{fig:1M} and \ref{fig:2M} represent the service maneuvers performed 
 
 To analyze the operating profile, it is necessary to introduce the concept of \textbf{brake-specific fuel consumption (BSFC)}. BSFC is a measure of an engine's fuel efficiency, calculated as the amount of fuel consumed per unit of power produced over a specific time \cite{LSZ}. 
 
-The BSFC as a function of output power is illustrated in fig. \ref{fig:BSFC} for a typical engine used in tugboats. At higher power levels, the BSFC is lower, indicating that more power is produced per unit of fuel, resulting in greater efficiency. Maximum efficiency is achieved at the engine's rated power, where it operates as intended, maintaining an optimal balance between fuel consumption and power output. Conversely, at lower power levels, the BSFC is higher, meaning that fuel consumption per unit of power is greater, thus reducing the engine efficiency.
+The BSFC as a function of output power is illustrated in fig. \ref{fig:BSFC} for a typical engine used in tugboats. The engine achieves maximum efficiency at rated power, where BSFC is minimal. In contrast, operating at low power increases consumption per unit of energy, decreasing efficiency.
 
 The relative efficiency evaluates how the conventional engine is working taking as a reference the optimal efficiency at the nominal operating point as shown in eq. \eqref{eq:rel_eff} \cite{LSZ}. At this operating point the relative efficiency is 100$\%$ reducing its value if the engine works at lower levels of power.
 

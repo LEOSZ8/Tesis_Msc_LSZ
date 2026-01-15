@@ -14,75 +14,75 @@
 \contentsline {table}{\numberline {2.4}{\ignorespaces Volume and Weight}}{34}{table.caption.87}%
 \contentsline {table}{\numberline {2.5}{\ignorespaces Machinery}}{34}{table.caption.88}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Performances of hybrid propulsion systems \cite {Bennabi}}}{47}{table.caption.108}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparation between AC and DC grids \cite {Xu2022} \cite {ABB}}}{50}{table.caption.111}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Improvements in hybridization compared to a conventional tugboat.}}{63}{table.caption.138}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Performances of hybrid propulsion systems \cite {Bennabi}}}{46}{table.caption.108}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparation between AC and DC grids \cite {Xu2022} \cite {ABB}}}{48}{table.caption.111}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Improvements in hybridization compared to a conventional tugboat.}}{61}{table.caption.138}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Energy Factors}}{68}{table.caption.144}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Comparison of Propulsion Systems in Tugboats and Performance.}}{68}{table.caption.145}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Technical input information.}}{70}{table.caption.146}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Proposed information}}{71}{table.caption.147}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Technical specification of NMC Batteries.}}{73}{table.caption.148}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Essential parameters of the small NMC battery bank.}}{73}{table.caption.150}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Performance parameters of the small NMC battery bank.}}{73}{table.caption.151}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Mechanical parameters of the small NMC battery bank.}}{74}{table.caption.152}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Essential parameters of the large NMC battery bank.}}{74}{table.caption.154}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Performance parameters of the large NMC battery bank.}}{74}{table.caption.155}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Mechanical parameters of the large NMC battery bank.}}{74}{table.caption.156}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Technical specification of LFP Batteries.}}{75}{table.caption.157}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Essential parameters of the small LFP battery bank.}}{75}{table.caption.159}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Performance parameters of the small LFP battery bank.}}{75}{table.caption.160}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Mechanical parameters of the small LFP battery bank.}}{76}{table.caption.161}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Essential parameters of the large LFP battery bank.}}{76}{table.caption.163}%
-\contentsline {table}{\numberline {4.17}{\ignorespaces Performance parameters of the large LFP battery bank.}}{76}{table.caption.164}%
-\contentsline {table}{\numberline {4.18}{\ignorespaces Mechanical parameters of the large LFP battery bank.}}{76}{table.caption.165}%
-\contentsline {table}{\numberline {4.19}{\ignorespaces Technical specification of LTO Batteries.}}{77}{table.caption.166}%
-\contentsline {table}{\numberline {4.20}{\ignorespaces Essential parameters of the small LTO battery bank.}}{77}{table.caption.168}%
-\contentsline {table}{\numberline {4.21}{\ignorespaces Performance parameters of the small LTO battery bank.}}{77}{table.caption.169}%
-\contentsline {table}{\numberline {4.22}{\ignorespaces Mechanical parameters of the small LTO battery bank.}}{77}{table.caption.170}%
-\contentsline {table}{\numberline {4.23}{\ignorespaces Essential parameters of the large LTO battery bank.}}{78}{table.caption.172}%
-\contentsline {table}{\numberline {4.24}{\ignorespaces Performance parameters of the large LTO battery bank.}}{78}{table.caption.173}%
-\contentsline {table}{\numberline {4.25}{\ignorespaces Mechanical parameters of the large LTO battery bank.}}{78}{table.caption.174}%
-\contentsline {table}{\numberline {4.26}{\ignorespaces Mechanical parameters of the Chilean tugboat}}{80}{table.caption.177}%
-\contentsline {table}{\numberline {4.27}{\ignorespaces Mechanical parameters of MTU 16V 4000.}}{80}{table.caption.178}%
-\contentsline {table}{\numberline {4.28}{\ignorespaces Permitted dimensions inside the vessel.}}{80}{table.caption.179}%
-\contentsline {table}{\numberline {4.29}{\ignorespaces Physical aspects of technologies (small battery banks).}}{81}{table.caption.180}%
-\contentsline {table}{\numberline {4.30}{\ignorespaces Physical aspects of technologies (large battery banks).}}{81}{table.caption.181}%
-\contentsline {table}{\numberline {4.31}{\ignorespaces BESS implementation costs, without taxes or subsides (small bank).}}{84}{table.caption.189}%
-\contentsline {table}{\numberline {4.32}{\ignorespaces BESS implementation costs, without taxes or subsides (small bank).}}{84}{table.caption.190}%
-\contentsline {table}{\numberline {4.33}{\ignorespaces Engineering cost associated with the small battery bank.}}{84}{table.caption.191}%
-\contentsline {table}{\numberline {4.34}{\ignorespaces Engineering cost associated with the large battery bank.}}{85}{table.caption.192}%
-\contentsline {table}{\numberline {4.35}{\ignorespaces Calculated CAPEX, without taxes or subsides (small bank).}}{85}{table.caption.193}%
-\contentsline {table}{\numberline {4.36}{\ignorespaces Calculated CAPEX, without taxes or subsides (large bank).}}{85}{table.caption.194}%
-\contentsline {table}{\numberline {4.37}{\ignorespaces Operating costs, excluding taxes and subsidies (small bank).}}{86}{table.caption.198}%
-\contentsline {table}{\numberline {4.38}{\ignorespaces Operating costs, excluding taxes and subsidies (large bank).}}{86}{table.caption.199}%
-\contentsline {table}{\numberline {4.39}{\ignorespaces Calculated OPEX (annual), without taxes or subsides (small bank).}}{86}{table.caption.200}%
-\contentsline {table}{\numberline {4.40}{\ignorespaces Calculated OPEX (annual), without taxes or subsides (large bank).}}{87}{table.caption.201}%
-\contentsline {table}{\numberline {4.41}{\ignorespaces Calculated profit (annual), without taxes or subsides (small bank).}}{87}{table.caption.202}%
-\contentsline {table}{\numberline {4.42}{\ignorespaces Calculated profit (annual), without taxes or subsides (large bank).}}{87}{table.caption.203}%
-\contentsline {table}{\numberline {4.43}{\ignorespaces Calculated NPV, without taxes or subsides (small bank).}}{88}{table.caption.205}%
-\contentsline {table}{\numberline {4.44}{\ignorespaces Calculated NPV, without taxes or subsides (large bank).}}{88}{table.caption.206}%
-\contentsline {table}{\numberline {4.45}{\ignorespaces Calculated IRR, without taxes or subsides (small bank).}}{89}{table.caption.208}%
-\contentsline {table}{\numberline {4.46}{\ignorespaces Calculated IRR, without taxes or subsides (large bank).}}{89}{table.caption.209}%
-\contentsline {table}{\numberline {4.47}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (small bank).}}{90}{table.caption.211}%
-\contentsline {table}{\numberline {4.48}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (large bank).}}{90}{table.caption.212}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Energy Factors}}{66}{table.caption.144}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Comparison of Propulsion Systems in Tugboats and Performance.}}{66}{table.caption.145}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Technical input information.}}{68}{table.caption.146}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Proposed information}}{69}{table.caption.147}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Technical specification of NMC Batteries.}}{71}{table.caption.148}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Essential parameters of the small NMC battery bank.}}{71}{table.caption.150}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Performance parameters of the small NMC battery bank.}}{71}{table.caption.151}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Mechanical parameters of the small NMC battery bank.}}{72}{table.caption.152}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Essential parameters of the large NMC battery bank.}}{72}{table.caption.154}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Performance parameters of the large NMC battery bank.}}{72}{table.caption.155}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Mechanical parameters of the large NMC battery bank.}}{72}{table.caption.156}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Technical specification of LFP Batteries.}}{73}{table.caption.157}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Essential parameters of the small LFP battery bank.}}{73}{table.caption.159}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Performance parameters of the small LFP battery bank.}}{73}{table.caption.160}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Mechanical parameters of the small LFP battery bank.}}{74}{table.caption.161}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Essential parameters of the large LFP battery bank.}}{74}{table.caption.163}%
+\contentsline {table}{\numberline {4.17}{\ignorespaces Performance parameters of the large LFP battery bank.}}{74}{table.caption.164}%
+\contentsline {table}{\numberline {4.18}{\ignorespaces Mechanical parameters of the large LFP battery bank.}}{74}{table.caption.165}%
+\contentsline {table}{\numberline {4.19}{\ignorespaces Technical specification of LTO Batteries.}}{75}{table.caption.166}%
+\contentsline {table}{\numberline {4.20}{\ignorespaces Essential parameters of the small LTO battery bank.}}{75}{table.caption.168}%
+\contentsline {table}{\numberline {4.21}{\ignorespaces Performance parameters of the small LTO battery bank.}}{75}{table.caption.169}%
+\contentsline {table}{\numberline {4.22}{\ignorespaces Mechanical parameters of the small LTO battery bank.}}{75}{table.caption.170}%
+\contentsline {table}{\numberline {4.23}{\ignorespaces Essential parameters of the large LTO battery bank.}}{76}{table.caption.172}%
+\contentsline {table}{\numberline {4.24}{\ignorespaces Performance parameters of the large LTO battery bank.}}{76}{table.caption.173}%
+\contentsline {table}{\numberline {4.25}{\ignorespaces Mechanical parameters of the large LTO battery bank.}}{76}{table.caption.174}%
+\contentsline {table}{\numberline {4.26}{\ignorespaces Mechanical parameters of the Chilean tugboat}}{78}{table.caption.177}%
+\contentsline {table}{\numberline {4.27}{\ignorespaces Mechanical parameters of MTU 16V 4000.}}{78}{table.caption.178}%
+\contentsline {table}{\numberline {4.28}{\ignorespaces Permitted dimensions inside the vessel.}}{78}{table.caption.179}%
+\contentsline {table}{\numberline {4.29}{\ignorespaces Physical aspects of technologies (small battery banks).}}{79}{table.caption.180}%
+\contentsline {table}{\numberline {4.30}{\ignorespaces Physical aspects of technologies (large battery banks).}}{79}{table.caption.181}%
+\contentsline {table}{\numberline {4.31}{\ignorespaces BESS implementation costs, without taxes or subsides (small bank).}}{82}{table.caption.189}%
+\contentsline {table}{\numberline {4.32}{\ignorespaces BESS implementation costs, without taxes or subsides (small bank).}}{82}{table.caption.190}%
+\contentsline {table}{\numberline {4.33}{\ignorespaces Engineering cost associated with the small battery bank.}}{82}{table.caption.191}%
+\contentsline {table}{\numberline {4.34}{\ignorespaces Engineering cost associated with the large battery bank.}}{83}{table.caption.192}%
+\contentsline {table}{\numberline {4.35}{\ignorespaces Calculated CAPEX, without taxes or subsides (small bank).}}{83}{table.caption.193}%
+\contentsline {table}{\numberline {4.36}{\ignorespaces Calculated CAPEX, without taxes or subsides (large bank).}}{83}{table.caption.194}%
+\contentsline {table}{\numberline {4.37}{\ignorespaces Operating costs, excluding taxes and subsidies (small bank).}}{84}{table.caption.198}%
+\contentsline {table}{\numberline {4.38}{\ignorespaces Operating costs, excluding taxes and subsidies (large bank).}}{84}{table.caption.199}%
+\contentsline {table}{\numberline {4.39}{\ignorespaces Calculated OPEX (annual), without taxes or subsides (small bank).}}{84}{table.caption.200}%
+\contentsline {table}{\numberline {4.40}{\ignorespaces Calculated OPEX (annual), without taxes or subsides (large bank).}}{85}{table.caption.201}%
+\contentsline {table}{\numberline {4.41}{\ignorespaces Calculated profit (annual), without taxes or subsides (small bank).}}{85}{table.caption.202}%
+\contentsline {table}{\numberline {4.42}{\ignorespaces Calculated profit (annual), without taxes or subsides (large bank).}}{85}{table.caption.203}%
+\contentsline {table}{\numberline {4.43}{\ignorespaces Calculated NPV, without taxes or subsides (small bank).}}{86}{table.caption.205}%
+\contentsline {table}{\numberline {4.44}{\ignorespaces Calculated NPV, without taxes or subsides (large bank).}}{86}{table.caption.206}%
+\contentsline {table}{\numberline {4.45}{\ignorespaces Calculated IRR, without taxes or subsides (small bank).}}{87}{table.caption.208}%
+\contentsline {table}{\numberline {4.46}{\ignorespaces Calculated IRR, without taxes or subsides (large bank).}}{87}{table.caption.209}%
+\contentsline {table}{\numberline {4.47}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (small bank).}}{88}{table.caption.211}%
+\contentsline {table}{\numberline {4.48}{\ignorespaces Calculated period for positive ROI, without taxes or subsides (large bank).}}{88}{table.caption.212}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Calculated NPV, with carbon taxes, without subsides (small bank).}}{93}{table.caption.213}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Calculated NPV, with carbon taxes and without subsides (large bank).}}{93}{table.caption.214}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Calculated IRR, with carbon taxes and without subsides (small bank).}}{94}{table.caption.215}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Calculated IRR, with carbon tax and without subsides (large bank).}}{94}{table.caption.216}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Calculated period for positive ROI, with carbon taxes and without subsides (small bank).}}{94}{table.caption.217}%
-\contentsline {table}{\numberline {6.6}{\ignorespaces Calculated period for positive ROI, witho carbon taxes and without subsides (large bank).}}{94}{table.caption.218}%
-\contentsline {table}{\numberline {6.7}{\ignorespaces Calculated NPV, without taxes and with government grants (small bank).}}{95}{table.caption.219}%
-\contentsline {table}{\numberline {6.8}{\ignorespaces Calculated NPV, without taxes and with government grants (large bank).}}{95}{table.caption.220}%
-\contentsline {table}{\numberline {6.9}{\ignorespaces Calculated IRR, without taxes and with Government grants (small bank).}}{95}{table.caption.221}%
-\contentsline {table}{\numberline {6.10}{\ignorespaces Calculated IRR, without taxes and with Government grants (large bank).}}{95}{table.caption.222}%
-\contentsline {table}{\numberline {6.11}{\ignorespaces Calculated period for positive ROI, without carbon taxes and with government grants (small bank).}}{96}{table.caption.223}%
-\contentsline {table}{\numberline {6.12}{\ignorespaces Calculated period for positive ROI, without taxes and with Government grants (large bank).}}{96}{table.caption.224}%
-\contentsline {table}{\numberline {6.13}{\ignorespaces Calculated NPV, with taxes and government grants (small bank).}}{96}{table.caption.225}%
-\contentsline {table}{\numberline {6.14}{\ignorespaces Calculated NPV, with taxes and government grants (large bank).}}{97}{table.caption.226}%
-\contentsline {table}{\numberline {6.15}{\ignorespaces Calculated IRR, with taxes and government grants (small bank).}}{97}{table.caption.227}%
-\contentsline {table}{\numberline {6.16}{\ignorespaces Calculated IRR, with taxes and government grants (large bank).}}{97}{table.caption.228}%
-\contentsline {table}{\numberline {6.17}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (small bank).}}{97}{table.caption.229}%
-\contentsline {table}{\numberline {6.18}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (large bank).}}{97}{table.caption.230}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Calculated NPV, with carbon taxes, without subsides (small bank).}}{91}{table.caption.213}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Calculated NPV, with carbon taxes and without subsides (large bank).}}{91}{table.caption.214}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Calculated IRR, with carbon taxes and without subsides (small bank).}}{92}{table.caption.215}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Calculated IRR, with carbon tax and without subsides (large bank).}}{92}{table.caption.216}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Calculated period for positive ROI, with carbon taxes and without subsides (small bank).}}{92}{table.caption.217}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Calculated period for positive ROI, witho carbon taxes and without subsides (large bank).}}{92}{table.caption.218}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Calculated NPV, without taxes and with government grants (small bank).}}{93}{table.caption.219}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Calculated NPV, without taxes and with government grants (large bank).}}{93}{table.caption.220}%
+\contentsline {table}{\numberline {6.9}{\ignorespaces Calculated IRR, without taxes and with Government grants (small bank).}}{93}{table.caption.221}%
+\contentsline {table}{\numberline {6.10}{\ignorespaces Calculated IRR, without taxes and with Government grants (large bank).}}{93}{table.caption.222}%
+\contentsline {table}{\numberline {6.11}{\ignorespaces Calculated period for positive ROI, without carbon taxes and with government grants (small bank).}}{94}{table.caption.223}%
+\contentsline {table}{\numberline {6.12}{\ignorespaces Calculated period for positive ROI, without taxes and with Government grants (large bank).}}{94}{table.caption.224}%
+\contentsline {table}{\numberline {6.13}{\ignorespaces Calculated NPV, with taxes and government grants (small bank).}}{94}{table.caption.225}%
+\contentsline {table}{\numberline {6.14}{\ignorespaces Calculated NPV, with taxes and government grants (large bank).}}{95}{table.caption.226}%
+\contentsline {table}{\numberline {6.15}{\ignorespaces Calculated IRR, with taxes and government grants (small bank).}}{95}{table.caption.227}%
+\contentsline {table}{\numberline {6.16}{\ignorespaces Calculated IRR, with taxes and government grants (large bank).}}{95}{table.caption.228}%
+\contentsline {table}{\numberline {6.17}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (small bank).}}{95}{table.caption.229}%
+\contentsline {table}{\numberline {6.18}{\ignorespaces Calculated period for positive ROI, with taxes and government grants (large bank).}}{95}{table.caption.230}%

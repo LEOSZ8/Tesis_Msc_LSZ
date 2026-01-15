@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="22">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1" pages="22">
   <diagram name="MainPropDieselEngine1" id="oiPNvRfW1LL6ZE7B5_p3">
     <mxGraphModel dx="1453" dy="732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -6266,8 +6266,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Segregated_PowerSystem" id="1nnvp9bN_6bd2MUdeSBe">
-    <mxGraphModel dx="1453" dy="732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+  <diagram name="Segregated_PS" id="1nnvp9bN_6bd2MUdeSBe">
+    <mxGraphModel dx="1678" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="X-yhzLohlsY-8LFAYDwe-0" />
         <mxCell id="X-yhzLohlsY-8LFAYDwe-1" parent="X-yhzLohlsY-8LFAYDwe-0" />
