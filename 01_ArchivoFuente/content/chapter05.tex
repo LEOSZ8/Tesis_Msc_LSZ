@@ -1,1 +1,207 @@
 \chapter{Simulation results}
+
+
+This chapter presents the simulation of the battery bank following selection based on technical and economic criteria. The proposed model for the cell is presented and its electrical performance is analyzed, with the aim of analyzing the electrical performance of the battery bank.
+
+\section{Battery selection}
+
+The battery is chosen based on electrical performance, service life, and return on investment. Based on the comparison table, the best option is chosen.
+
+
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.8\textwidth]{images/chapter05/U27_36XP.jpg}
+    	\caption{U27 36XP Valence LFP battery cell.}
+    	\label{fig:U27_36XP}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{images/chapter05/U27_36XP_profile.jpg}
+    	\caption{Electrical profile battery cell.}
+    	\label{fig:U27_36XP_profile}
+    \end{subfigure}    
+    \caption{Valence LFP Battery \cite{Valence2}.}
+    \label{fig:Valence}
+\end{figure}
+
+\subsection{Battery mathematical model}
+
+One way to model the battery cell is by obtaining a mathematical model that allows us to determine the electrical performance of the cell.
+
+To do this, the Shepherd mathematical model is used, which models the battery cell as a Thevenin equivalent, parameterizing the controlled voltage source, as shown in the following equation:
+\begin{equation}\label{eq:Voc}
+    V_{batt} = E_0 -K\frac{Q_0}{Q_0-Q}Q + A\cdot e^{-BQ}
+\end{equation}
+
+\begin{equation}
+    Q = \int_0^t i_{bat}(t)dt
+\end{equation}
+
+Based on the parameters shown in equation X, the following parameters are described:
+
+\begin{table}[H]
+	\centering
+	\caption{Technical input information.}
+	\label{tab:Shepherd_zero}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Input technical information}} \\
+		\hline\hline
+		$E_0$ & Open circuit voltage [V]    \\	
+		\hline
+		$K$ & Polarization voltage [V]   \\	
+		\hline
+		$Q_0$ & Nominal battery capacity [Ah]   \\	
+		\hline
+		$A$ & Exponential zone amplitude [V] \\	
+		\hline
+		$B$ & Exponential zone inverse time constant [1/Ah] \\	
+		\hline
+		\end{tabular}
+\end{table} 
+
+
+\begin{equation}\label{eq:ecuaciones}
+\begin{split}
+    A &= V_{full}-V_{exp}\\
+    B &= \frac{3}{Q_{exp}}\\
+    K &= \frac{(V_{full}-V_{nom}+A (e^{-B\cdot Q_{nom}}-1)) \cdot \Delta Q}{Q_{full}}\\
+    E_0 &= V_{full} + K + R\cdot I_{nom} - A\\
+    \Delta Q &=Q_{full}-Q_{nom}
+\end{split}
+\end{equation}
+
+\begin{table}[H]
+	\centering
+	\caption{Technical input information.}
+	\label{tab:Shepherd_zero2}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Input technical information}} \\
+		\hline\hline
+		$V_{full}$ & Fully charged voltage [V]    \\	
+		\hline
+		$V_{exp}$ & Voltage at end of exponential zone [V]   \\	
+		\hline
+		$Q_{full}$ & Total charge delivered [Ah]   \\	
+		\hline
+		$Q_{exp}$ & Charge depleted at end of exponential zone [Ah] \\	
+		\hline
+		$V_{nom}$ & Voltage at end of nominal zone [V] \\	
+		\hline
+		$Q_{nom}$ & Charge depleted at end of nominal zone [Ah]\\	
+		\hline
+		$I_{nom}$ & Nominal Current [A]\\	
+		\hline
+		\end{tabular}
+\end{table} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter05/discharge_curve.jpg}
+    \caption{discharge curve.}
+    \label{fig:discharge_curve}
+\end{figure}
+
+The purpose of the parameters shown in Table X is to be able to modify the different areas of the curve in order to match the curve provided by the manufacturer.
+
+Based on the results shown regarding the comparison of the actual cell data with the mathematical model, the parameters of the modeled cell are as follows:
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter05/simulink_profile.jpg}
+    \caption{discharge curve.}
+    \label{fig:sim_discharge_curve}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Parameters}
+	\label{tab:parameters_cell}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Energy Factors}} \\
+		\hline\hline
+		${E}_{0}$ & $39.2536$    \\	
+		\hline
+		$K$ & $0.0051$    \\
+		\hline  
+		${Q}_{0}$ & $50$    \\		
+		\hline		
+		$A$ & $1.44$    \\
+		\hline
+		$B$ & $3$    \\
+		\hline		
+	\end{tabular}
+	\end{table} 
+
+\section{Battery Bank}
+
+\subsection{Small Battery Bank}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter05/simulink_small_bank.jpg}
+    \caption{discharge curve.}
+    \label{fig:sim_small bank}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Parameters small LFP batt}
+	\label{tab:parameters_small_batt}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Energy Factors}} \\
+		\hline\hline
+		${n}_{s}$ & $20$    \\
+		\hline
+		${n}_{p}$ & $73$    \\
+		\hline			
+		${E}_{0}$ & $784.9811$    \\	
+		\hline
+		$K$ & $0.0012$    \\
+		\hline  
+		$A$ & $28.8$    \\
+		\hline
+		$B$ & $0.0411$    \\
+		\hline	
+			
+	\end{tabular}
+\end{table} 
+
+\subsection{Large Battery Bank}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/chapter05/simulink_large_bank.jpg}
+    \caption{discharge curve.}
+    \label{fig:sim_large bank}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Parameters large LFP batt}
+	\label{tab:parameters_largebatt}
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Energy Factors}} \\
+		\hline\hline
+		${n}_{s}$ & $20$    \\
+		\hline
+		${n}_{p}$ & $165$    \\
+		\hline			
+		${E}_{0}$ & $784.9811$    \\	
+		\hline
+		$K$ & $0.0012$    \\
+		\hline  
+		$A$ & $28.8$    \\
+		\hline
+		$B$ & $0.0182$    \\
+		\hline	
+			
+	\end{tabular}
+\end{table} 
