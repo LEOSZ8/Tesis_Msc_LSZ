@@ -81,7 +81,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "4"
+        Value         "6.67"
         Show          off
       }
     }

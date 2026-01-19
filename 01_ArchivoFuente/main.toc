@@ -155,17 +155,26 @@
 \contentsline {section}{\numberline {5.2}Battery Bank}{93}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Small Battery Bank}{93}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Large Battery Bank}{93}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{95}{chapter.6}%
-\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{95}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{95}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{96}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{96}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Government grants}{96}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{97}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{97}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{98}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Taxes and Grants}{98}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{98}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{99}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{99}{subsection.6.3.3}%
-\contentsline {chapter}{Bibliography}{100}{table.caption.240}%
+\contentsline {section}{\numberline {5.3}Bus DC}{94}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Small Battery Bank}{94}{subsection.5.3.1}%
+\contentsline {subsubsection}{a) TLBBC}{94}{section*.223}%
+\contentsline {subsubsection}{b) DC-DC}{94}{section*.224}%
+\contentsline {subsubsection}{c) Bus DC}{94}{section*.225}%
+\contentsline {subsection}{\numberline {5.3.2}Large Battery Bank}{94}{subsection.5.3.2}%
+\contentsline {subsubsection}{a) TLBBC}{94}{section*.226}%
+\contentsline {subsubsection}{b) DC-DC}{95}{section*.227}%
+\contentsline {subsubsection}{c) Bus DC}{95}{section*.228}%
+\contentsline {chapter}{\numberline {6}Appendix}{96}{chapter.6}%
+\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{96}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{96}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{97}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{97}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Government grants}{97}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{98}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{98}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{99}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Taxes and Grants}{99}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{99}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{100}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{100}{subsection.6.3.3}%
+\contentsline {chapter}{Bibliography}{101}{table.caption.246}%
