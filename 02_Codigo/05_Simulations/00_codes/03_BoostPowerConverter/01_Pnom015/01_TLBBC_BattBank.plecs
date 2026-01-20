@@ -924,7 +924,7 @@ Plecs {
           MaskIconOpaque off
           MaskIconRotates on
           Schematic {
-            Location      [1366, -282; 3286, 692]
+            Location      [0, 23; 1280, 637]
             ZoomFactor    1
             SliderPosition [0, 0]
             ShowBrowser   off
@@ -7544,13 +7544,13 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          "Bus DC [V]"
+        Name          "Input Current TLBBC [A]"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -7583,7 +7583,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          "Input Current TLBBC [A]"
+        Name          "Bus DC [V]"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -7666,7 +7666,7 @@ Plecs {
       Type          From
       Name          "From10"
       Show          off
-      Position      [685, 330]
+      Position      [490, 370]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7690,7 +7690,7 @@ Plecs {
       Type          From
       Name          "From11"
       Show          off
-      Position      [655, 340]
+      Position      [460, 380]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7714,7 +7714,7 @@ Plecs {
       Type          SignalMux
       Name          "Mux"
       Show          off
-      Position      [710, 335]
+      Position      [515, 375]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7761,7 +7761,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          off
-      Position      [550, 400]
+      Position      [655, 340]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7902,14 +7902,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Mux"
-      SrcTerminal   1
-      Points        [720, 345]
-      DstComponent  "Errores Controladores"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "vc1 vc2"
       SrcTerminal   1
       DstComponent  "Demux"
@@ -7931,14 +7923,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe1"
-      SrcTerminal   1
-      Points        [635, 400; 635, 375]
-      DstComponent  "Errores Controladores"
-      DstTerminal   4
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Po [kW]3"
       SrcTerminal   1
       DstComponent  "Gain1"
@@ -7951,6 +7935,21 @@ Plecs {
       Points        [685, 385]
       DstComponent  "Errores Controladores"
       DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe1"
+      SrcTerminal   1
+      Points        [705, 340; 705, 345]
+      DstComponent  "Errores Controladores"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      DstComponent  "Errores Controladores"
+      DstTerminal   4
     }
     Annotation {
       Name          "<html><body>\n<p>Small Battery Bank - 30 kW TLBBC</p></bo"

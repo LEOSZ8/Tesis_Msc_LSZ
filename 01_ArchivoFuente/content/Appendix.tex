@@ -384,3 +384,129 @@ The following section presents the effect of applying taxes and government subsi
 	\end{tabular}
 \end{table}
 
+\section{Three Level Buck Boost Converter}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Appendix/TLBBC.jpg}
+    \caption{BusDC.}
+    \label{fig:BusDC025}
+\end{figure}
+
+\subsection{Modelling}
+
+It is assumed that C1 and C2 are equal.
+
+\begin{equation}
+{C}_{1}={C}_{2}=C
+\end{equation}
+
+\subsubsection{State E0}
+
+\begin{align}
+{v}_{in}(t)-{v}_{L/2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
+{v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
+ \Rightarrow L\cdot \frac{d{i}_{L}(t)}{dt} &= {v}_{in}(t)
+\end{align}
+
+\begin{align}
+{i}_{c1}(t) &= - {i}_{o}(t) \nonumber\\ \Rightarrow C\cdot \frac{d{v}_{c1}(t)}{dt}&=- {i}_{o}(t)
+\end{align}
+
+\begin{align}
+{i}_{c2}(t) &= - {i}_{o}(t) \nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c2}(t)}{dt} &=- {i}_{o}(t)
+\end{align}
+
+
+
+
+\subsubsection{State E1}
+
+\begin{align}
+{v}_{in}(t)-{v}_{L/2}(t)-{v}_{c1}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
+{v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-{v}_{c1}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
+ \Rightarrow L\cdot \frac{d{i}_{L}(t)}{dt} &= {v}_{in}(t)-{v}_{c1}(t)
+\end{align}
+
+\begin{align}
+{i}_{c1}(t) &= {i}_{L}(t) - {i}_{o}(t)\nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c1}(t)}{dt}&= {i}_{L}(t) - {i}_{o}(t)
+\end{align}
+
+\begin{align}
+{i}_{c1}(t) &= {i}_{L}(t)+{i}_{c2}(t) \nonumber \\
+{i}_{L}(t) - {i}_{o}(t) &= {i}_{L}(t)+{i}_{c2}(t) \nonumber \\
+-{i}_{o}(t) &= {i}_{c2}(t) \nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c2}(t)}{dt} &=- {i}_{o}(t)
+\end{align}
+
+
+\subsubsection{State E2}
+
+\begin{align}
+{v}_{in}(t)-{v}_{L/2}(t)-{v}_{c2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
+{v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-{v}_{c2}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
+ \Rightarrow L\cdot \frac{d{i}_{L}(t)}{dt} &= {v}_{in}(t)-{v}_{c2}(t)
+\end{align}
+
+\begin{align}
+{i}_{c1}(t) &= - {i}_{o}(t)\nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c1}(t)}{dt}&= - {i}_{o}(t)
+\end{align}
+
+\begin{align}
+{i}_{c2}(t) &= {i}_{L}(t)- {i}_{o}(t) \nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c2}(t)}{dt} &= {i}_{L}(t)- {i}_{o}(t)
+\end{align}
+
+\subsubsection{State E3}
+
+\begin{align}
+{v}_{in}(t)-{v}_{L/2}(t)-{v}_{c1}(t)-{v}_{c2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
+{v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-{v}_{c1}(t)-{v}_{c2}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
+ \Rightarrow L\cdot \frac{d{i}_{L}(t)}{dt} &= {v}_{in}(t)-{v}_{c1}(t)-{v}_{c2}(t)
+\end{align}
+
+\begin{align}
+{i}_{c1}(t) &= {i}_{L}(t) - {i}_{o}(t)\nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c1}(t)}{dt}&= {i}_{L}(t)- {i}_{o}(t)
+\end{align}
+
+\begin{align}
+{i}_{c2}(t) &= {i}_{L}(t)- {i}_{o}(t) \nonumber \\ \Rightarrow C\cdot \frac{d{v}_{c2}(t)}{dt} &= {i}_{L}(t)- {i}_{o}(t)
+\end{align}
+
+\subsubsection{General differential Model}
+
+\begin{align}
+\frac{d{i}_{L}(t)}{dt}&=\frac{{v}_{in}(t)-{v}_{c1}(t)\cdot{\bf S}_{\bf 1}[t]-{v}_{c2}(t)\cdot{\bf S}_{\bf 2}[t]}{L} \\
+\frac{d{v}_{c1}(t)}{dt}&=\frac{{i}_{L}(t)\cdot{\bf S}_{\bf 1}[t]-{i}_{o}(t)}{C} \\
+\frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot{\bf S}_{\bf 2}[t]-{i}_{o}(t)}{C} \\
+\end{align}
+
+where
+
+\begin{equation}
+{\bf S}_{\bf 1},{\bf S}_{\bf 2} \in \{0,1\}
+\end{equation}
+
+An average model consider:
+
+\begin{align}
+{d}_{i}&=\frac{{t}_{i}^{ON}}{{t}_{i}^{ON}+{t}_{i}^{OFF}} \nonumber\\
+{S}_{1}[t] &\Rightarrow {d}_{1}(t) \nonumber\\
+{S}_{2}[t] &\Rightarrow {d}_{2}(t) \nonumber\\
+{d}_{1},{d}_{2} &\in (0,1)
+\end{align}
+
+If the change of variables is performed:
+
+\begin{align}
+{u}_{i}(t) &= \frac{{d}_{1}+{d}_{2}}{2} \nonumber\\
+{u}_{v}(t) &= \frac{{d}_{1}-{d}_{2}}{2} \nonumber\\
+\Rightarrow {u}_{i}(t)+{u}_{v}(t)&={d}_{1} \nonumber\\
+\Rightarrow {u}_{i}(t)-{u}_{v}(t)&={d}_{2} \nonumber\\
+\end{align}
+
+In this way:
+
+\begin{align}
+\frac{d{i}_{L}(t)}{dt}&=\frac{{v}_{in}(t)-{\bf u}_{\bf i}(t)\cdot({v}_{c1}(t)+{v}_{c2}(t))-{\bf u}_{\bf v}(t)\cdot({v}_{c1}(t)-{v}_{c2}(t))}{L} \\
+\frac{d{v}_{c1}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)+{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} \\
+\frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)-{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} 
+\end{align}

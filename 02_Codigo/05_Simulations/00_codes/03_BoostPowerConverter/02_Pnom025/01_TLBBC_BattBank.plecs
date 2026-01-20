@@ -7526,11 +7526,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1280, 680]
+      Location      [0, 26; 1280, 671]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAANYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABQAP///wAABQAAAAJzAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABQAP///wAABQAAAAJqAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -7550,7 +7550,7 @@ Plecs {
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          "Bus DC [V]"
+        Name          "Input Current TLBBC [A]"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -7583,7 +7583,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          "Input Current TLBBC [A]"
+        Name          "Bus DC [V]"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -7666,7 +7666,7 @@ Plecs {
       Type          From
       Name          "From10"
       Show          off
-      Position      [685, 330]
+      Position      [645, 380]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7690,7 +7690,7 @@ Plecs {
       Type          From
       Name          "From11"
       Show          off
-      Position      [655, 340]
+      Position      [615, 390]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7714,7 +7714,7 @@ Plecs {
       Type          SignalMux
       Name          "Mux"
       Show          off
-      Position      [710, 335]
+      Position      [670, 385]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7761,7 +7761,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          off
-      Position      [550, 400]
+      Position      [655, 335]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7902,14 +7902,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Mux"
-      SrcTerminal   1
-      Points        [720, 345]
-      DstComponent  "Errores Controladores"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "vc1 vc2"
       SrcTerminal   1
       DstComponent  "Demux"
@@ -7931,14 +7923,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe1"
-      SrcTerminal   1
-      Points        [635, 400; 635, 375]
-      DstComponent  "Errores Controladores"
-      DstTerminal   4
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Po [kW]3"
       SrcTerminal   1
       DstComponent  "Gain1"
@@ -7951,6 +7935,22 @@ Plecs {
       Points        [685, 385]
       DstComponent  "Errores Controladores"
       DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe1"
+      SrcTerminal   1
+      Points        [705, 335; 705, 345]
+      DstComponent  "Errores Controladores"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      Points        [680, 375]
+      DstComponent  "Errores Controladores"
+      DstTerminal   4
     }
     Annotation {
       Name          "<html><body>\n<p>Large Battery Bank - 50 kW TLBBC</p></bo"

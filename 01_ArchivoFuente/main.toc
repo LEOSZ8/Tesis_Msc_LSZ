@@ -154,25 +154,32 @@
 \contentsline {subsection}{\numberline {5.1.1}Battery mathematical model}{90}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Battery Bank}{93}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Small Battery Bank}{93}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Large Battery Bank}{93}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Bus DC}{94}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Small Battery Bank}{94}{subsection.5.3.1}%
-\contentsline {subsubsection}{a) TLBBC}{94}{section*.223}%
-\contentsline {subsubsection}{b) Bus DC}{94}{section*.224}%
-\contentsline {subsection}{\numberline {5.3.2}Large Battery Bank}{95}{subsection.5.3.2}%
-\contentsline {subsubsection}{a) TLBBC}{95}{section*.226}%
-\contentsline {subsubsection}{b) Bus DC}{95}{section*.227}%
-\contentsline {chapter}{\numberline {6}Appendix}{97}{chapter.6}%
-\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{97}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{97}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{98}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{98}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Government grants}{98}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{99}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{99}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{100}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Taxes and Grants}{100}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{100}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{101}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{101}{subsection.6.3.3}%
-\contentsline {chapter}{Bibliography}{102}{table.caption.246}%
+\contentsline {subsection}{\numberline {5.2.2}Large Battery Bank}{95}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Bus DC}{98}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Small Battery Bank}{99}{subsection.5.3.1}%
+\contentsline {subsubsection}{a) TLBBC}{99}{section*.229}%
+\contentsline {subsubsection}{b) Bus DC}{100}{section*.231}%
+\contentsline {subsection}{\numberline {5.3.2}Large Battery Bank}{101}{subsection.5.3.2}%
+\contentsline {subsubsection}{a) TLBBC}{101}{section*.233}%
+\contentsline {subsubsection}{b) Bus DC}{102}{section*.235}%
+\contentsline {chapter}{\numberline {6}Appendix}{103}{chapter.6}%
+\contentsline {section}{\numberline {6.1}CO\textsubscript {2} tax emissions}{103}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Net Present Value (NPV)}{103}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Internal Rate of Return (IRR)}{104}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Return on Investment (ROI)/ Payback Period}{104}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Government grants}{104}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Net Present Value (NPV)}{105}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Internal Rate of Return (IRR)}{105}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Return on Investment (ROI)/ Payback Period}{106}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Taxes and Grants}{106}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Net Present Value (NPV)}{106}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Internal Rate of Return (IRR)}{107}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Return on Investment (ROI)/ Payback Period}{107}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Three Level Buck Boost Converter}{108}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Modelling}{108}{subsection.6.4.1}%
+\contentsline {subsubsection}{State E0}{108}{section*.256}%
+\contentsline {subsubsection}{State E1}{109}{section*.257}%
+\contentsline {subsubsection}{State E2}{109}{section*.258}%
+\contentsline {subsubsection}{State E3}{109}{section*.259}%
+\contentsline {subsubsection}{General differential Model}{110}{section*.260}%
+\contentsline {chapter}{Bibliography}{112}{equation.6.23}%
