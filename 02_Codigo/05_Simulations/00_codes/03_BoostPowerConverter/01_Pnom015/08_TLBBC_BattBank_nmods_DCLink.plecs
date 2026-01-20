@@ -28,17 +28,17 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "tsim=15;\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0"
-"\nVc2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 10e3\nTs= 1/fs"
-"\n\n%% Controlador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n\n\n\n%% BankBatt "
-"Parameters\n\n\nn_series = 20; % Number of series connected cells\nn_parallel"
-" = 18; % Number of parallel branches\nSOC_init = 1; % initial SOC, range [0,1"
-"]\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n\ncellNominalV = 38"
-".4; % Voltage at end of nominal zone\ncellFullChargeV = 43.8; % Voltage at fu"
-"ll SOC\ncellExponentialV = 41.4; % Voltage at end of exponential zone\n\ncell"
-"RatedCapacity = 50; % Cell rated capacity\ncellMaximumCapacity = 50; % Cell m"
-"aximum capacity\ncellNominalCapacity = 35; % Cell capacity at end of nominal "
-"zone\ncellExponentialCapacity = 1; % Cell capacity at end of exponential zone"
+  InitializationCommands "tsim=7;\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\n"
+"Vc2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 10e3\nTs= 1/fs\n"
+"\n%% Controlador vo\nKp_vo = 0.5\nKi_vo = Kp_vo*89.53\n\n\n\n\n%% BankBatt Pa"
+"rameters\n\n\nn_series = 20; % Number of series connected cells\nn_parallel ="
+" 18; % Number of parallel branches\nSOC_init = 1; % initial SOC, range [0,1]"
+"\n\npolarizingRshift = 0.1; % Shift polarizing R by 10%\n\ncellNominalV = 38."
+"4; % Voltage at end of nominal zone\ncellFullChargeV = 43.8; % Voltage at ful"
+"l SOC\ncellExponentialV = 41.4; % Voltage at end of exponential zone\n\ncellR"
+"atedCapacity = 50; % Cell rated capacity\ncellMaximumCapacity = 50; % Cell ma"
+"ximum capacity\ncellNominalCapacity = 35; % Cell capacity at end of nominal z"
+"one\ncellExponentialCapacity = 1; % Cell capacity at end of exponential zone"
 "\n\ncellNominalDischargeI = 50; % Nominal discharge current for cell\ncellInt"
 "ernalR =25e-3; % Internal cell resistance\n\ncellLPFTimeConstant = 30; % 30 s"
 "econd time constant for LPF for effect of current on voltage\n\n"
@@ -66,7 +66,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 1280, 640]
+    Location      [0, 23; 1366, 685]
     ZoomFactor    1.03661
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -46953,15 +46953,15 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1280, 671]
+      Location      [0, 23; 1366, 707]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAK4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAAAAJqAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABVYAAAKRAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":178,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":119,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -46970,7 +46970,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -47503,7 +47503,7 @@ Plecs {
       DstTerminal   1
     }
     Annotation {
-      Name          "<html><body>\n<p>Small Battery Bank:  300 kW</p></body></"
+      Name          "<html><body>\n<p>Large Battery Bank:  500 kW</p></body></"
 "html>"
       Position      [495, 35]
     } 
