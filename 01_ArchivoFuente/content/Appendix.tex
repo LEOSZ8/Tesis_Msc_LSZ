@@ -497,10 +497,10 @@ An average model consider:
 If the change of variables is performed:
 
 \begin{align}
-{u}_{i}(t) &= \frac{{d}_{1}+{d}_{2}}{2} \nonumber\\
-{u}_{v}(t) &= \frac{{d}_{1}-{d}_{2}}{2} \nonumber\\
-\Rightarrow {u}_{i}(t)+{u}_{v}(t)&={d}_{1} \nonumber\\
-\Rightarrow {u}_{i}(t)-{u}_{v}(t)&={d}_{2} \nonumber\\
+{u}_{i}(t) &= \frac{{d}_{1}(t)+{d}_{2}(t)}{2} \nonumber\\
+{u}_{v}(t) &= \frac{{d}_{1}(t)-{d}_{2}(t)}{2} \nonumber\\
+\Rightarrow {u}_{i}(t)+{u}_{v}(t)&={d}_{1}(t) \nonumber\\
+\Rightarrow {u}_{i}(t)-{u}_{v}(t)&={d}_{2}(t) \nonumber\\
 \end{align}
 
 In this way:
@@ -510,3 +510,100 @@ In this way:
 \frac{d{v}_{c1}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)+{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} \\
 \frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)-{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} 
 \end{align}
+
+\section{Linearization}
+
+The state variables to be linearized are defined.
+
+\begin{align}
+x(t) &= {[{i}_{L}(t)\quad{v}_{c1}(t)\quad{v}_{c2}(t)]}^{T} \nonumber\\
+u(t) &= {[{d}_{1}(t)\quad{d}_{2}(t)]}^{T} \nonumber\\
+y(t) &= {[{i}_{L}(t)\quad({v}_{c1}(t)-{v}_{c2}(t))\quad{v}_{o}(t)]}^{T} 
+\end{align}
+
+where $x(t)$ are the state variables, $u(t)$ are the inputs of the system and $y(t)$ are the output of the system.
+
+To perform linearization, a signal corresponding to its equilibrium point plus a small variation will be taken into account.
+
+\begin{align}
+x(t) &= \Delta x(t)+ {x}_{Q} \nonumber\\
+u(t) &= \Delta u(t)+ {u}_{Q}  
+\end{align}
+
+
+In this way, and applying a low-order Taylor series to linearize, the linearized differential equations are found.
+
+
+\begin{align}
+\frac{d\Delta{i}_{L}(t)}{dt}&=\frac{\Delta{v}_{in}(t)-\Delta{v}_{c1}(t)\cdot{d}_{1Q}-\Delta{v}_{c2}(t)\cdot{d}_{2Q}-\Delta{d}_{1}(t)\cdot{v}_{c1Q}-\Delta{d}_{2}(t)\cdot{v}_{c2Q}}{L} \\
+\frac{d\Delta{v}_{c1}(t)}{dt}&=\frac{\Delta{i}_{L}(t)\cdot{d}_{1Q}+\Delta{d}_{1}(t)\cdot{i}_{LQ}-\Delta{i}_{o}(t)}{C} \\
+\frac{d\Delta{v}_{c2}(t)}{dt}&=\frac{\Delta{i}_{L}(t)\cdot{d}_{2Q}+\Delta{d}_{2}(t)\cdot{i}_{LQ}-\Delta{i}_{o}(t)}{C}
+\end{align}
+
+In this way, the matrices of interest can be found in state variables within the linearized differential equations.
+
+\begin{align}
+\frac{d}{dt}
+	\begin{bmatrix}
+        	\Delta{i}_{L}(t)\\
+        	\Delta{v}_{c1}(t)\\
+                \Delta{v}_{c2}(t)
+    	\end{bmatrix} &=
+    	\begin{bmatrix}
+        	0  & -{d}_{1Q}/L & -{d}_{2Q}/L \\
+        {d}_{1Q}/C &       0     &      0      \\
+        {d}_{2Q}/C &       0     &      0              
+    	\end{bmatrix}
+    	\begin{bmatrix}
+        	\Delta{i}_{L}(t)\\
+        	\Delta{v}_{c1}(t)\\
+                \Delta{v}_{c2}(t)
+    	\end{bmatrix}
+    	+
+    	\begin{bmatrix}
+        	-{v}_{c1Q}/L & -{v}_{c2Q}/L \\
+        	 {i}_{LQ}/C  &   0          \\
+                       0     &  {i}_{LQ}/C  \\
+    	\end{bmatrix}
+    	\begin{bmatrix}
+        	\Delta{d}_{1}(t) \\
+        	\Delta{d}_{2}(t)
+    	\end{bmatrix} \nonumber\\
+    	&+
+    	\begin{bmatrix}
+        	1/L &      0 \\
+        	 0  &   -1/C \\
+                 0  &   -1/C 
+    	\end{bmatrix}
+    	\begin{bmatrix}
+        	\Delta{v}_{in}(t) \\
+        	\Delta{i}_{o}(t)
+    	\end{bmatrix} \nonumber\\
+    	\begin{bmatrix}
+        	\Delta{i}_{L}(t)\\
+        	\Delta{v}_{c1}(t)-\Delta{v}_{c2}(t)\\
+                \Delta{v}_{o}(t)
+    	\end{bmatrix} &=
+    	\begin{bmatrix}
+        	1 & 0 & 0 \\
+        	0 & 1 & -1 \\
+        	0 & 1 & 1 \\
+    	\end{bmatrix}
+    	\begin{bmatrix}
+        	\Delta{i}_{L}(t)\\
+        	\Delta{v}_{c1}(t)\\
+                \Delta{v}_{c2}(t)
+    	\end{bmatrix}
+    	+
+    	\begin{bmatrix}
+        	0 & 0 \\
+        	0 & 0 \\
+                0 & 0 \\
+    	\end{bmatrix}
+    	\begin{bmatrix}
+        	\Delta{d}_{1}(t) \\
+        	\Delta{d}_{2}(t)
+    	\end{bmatrix}
+\end{align}
+
+
