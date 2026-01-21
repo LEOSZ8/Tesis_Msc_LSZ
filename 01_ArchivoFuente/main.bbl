@@ -299,6 +299,17 @@ Echandia, ``What batteries are used in Sparky the tugboat?"[Online]: \hyperlink{
 \bibitem{Valence2}
 Valence, ``Group 27, 36 Volt 50 Ah Lithium Ion Battery Module".
 
+\bibitem{Moussa}
+S. Moussa and M. J. Ben Ghorbal, ``Shepherd Battery Model Parametrization for Battery Emulation in EV Charging Application," 2022 IEEE International Conference on Electrical Sciences and Technologies in Maghreb (CISTEM), Tunis, Tunisia, 2022, pp. 1-6.
+
+\bibitem{Plecs1}
+M. Ahmed, ``Modeling Lithium-ion Battery Chargers in PLECS", Plexim Inc, 2016.
+
+\bibitem{Zhang}
+Z. Zhang, Z. Zhang, S. Xie and C. Yang, ``A control strategy for paralleled bi-directional DC-DC converters used in energy storage systems," 2016 IEEE Energy Conversion Congress and Exposition (ECCE), Milwaukee, WI, USA, 2016, pp. 1-6.
+
+\bibitem{sensata}
+B. Munari, A. Schneer, ``How to design a precharge circuit for hybrid and eectric vehicle applications",Technical white paper, Sensata Technologies.
 
 %%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%
 
@@ -309,7 +320,11 @@ United Nations,``Carbon Tax (CO\textsubscript{2} Tax)"[Online]: \hyperlink{https
 Ministry of Oceans and Fisheries, ``2030 Greenship-K Promotion Strategy to Dominate the Global Green Ship Market"[Online]: \hyperlink{https://www.mof.go.kr/page/en/selectPage.do?menuSeq=1588&pageSeq=1017&listUpdtDt=2026-01-12++10$\%$3A00}{https://www.mof.go.kr}
 
 
+\bibitem{Monteiro}
+V. Monteiro, T. J. C. Sousa, D. Pedrosa, S. Coelho and J. L. Afonso, ``A Three-Level dc-dc Converter for Bipolar dc Power Grids: Analysis and Experimental Validation," IECON 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society, Singapore, 2020, pp. 3761-3766.
 
+\bibitem{CR7}
+R. González, C. A. Rojas and L. Callegaro, ``Three-level DC-DC GaN-based Converter with Active Thermal Control for Powertrain applications in Electric Vehicles," 2021 22nd IEEE International Conference on Industrial Technology (ICIT), Valencia, Spain, 2021, pp. 502-507.
 
 
 

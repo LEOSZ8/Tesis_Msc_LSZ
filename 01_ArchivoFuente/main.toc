@@ -2,25 +2,188 @@
 \contentsline {chapter}{Acknowledgments}{iii}{chapter*.1}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.2}%
 \contentsline {chapter}{Resumen}{v}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}Appendix}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}CO\textsubscript {2} tax emissions}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Net Present Value (NPV)}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Internal Rate of Return (IRR)}{2}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Return on Investment (ROI)/ Payback Period}{2}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Government grants}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Net Present Value (NPV)}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Internal Rate of Return (IRR)}{3}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Return on Investment (ROI)/ Payback Period}{4}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Taxes and Grants}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Net Present Value (NPV)}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Internal Rate of Return (IRR)}{5}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Return on Investment (ROI)/ Payback Period}{5}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Three Level Buck Boost Converter}{6}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Modelling}{6}{subsection.1.4.1}%
-\contentsline {subsubsection}{State E0}{6}{section*.26}%
-\contentsline {subsubsection}{State E1}{7}{section*.27}%
-\contentsline {subsubsection}{State E2}{7}{section*.28}%
-\contentsline {subsubsection}{State E3}{7}{section*.29}%
-\contentsline {subsubsection}{General differential Model}{8}{section*.30}%
-\contentsline {section}{\numberline {1.5}Linearization}{9}{section.1.5}%
-\contentsline {chapter}{Bibliography}{10}{equation.1.29}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation and Background}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Propulsion Architectures}{3}{subsection.1.1.1}%
+\contentsline {subsubsection}{a) Series Hybrid Architectures}{4}{section*.11}%
+\contentsline {subsubsection}{b) Parallel Hybrid Architectures}{4}{section*.12}%
+\contentsline {subsubsection}{c) Series-Parallel Hybrid Architectures}{5}{section*.13}%
+\contentsline {subsection}{\numberline {1.1.2}Power Generation Systems}{5}{subsection.1.1.2}%
+\contentsline {subsubsection}{a) Steam Turbine}{5}{section*.14}%
+\contentsline {subsubsection}{b) Gas Turbine}{5}{section*.15}%
+\contentsline {subsubsection}{c) Diesel Engines}{5}{section*.16}%
+\contentsline {subsubsection}{d) Fuel Cells}{6}{section*.17}%
+\contentsline {subsection}{\numberline {1.1.3}Energy Storage Systems}{6}{subsection.1.1.3}%
+\contentsline {subsubsection}{a) Ultra-capacitors}{7}{section*.18}%
+\contentsline {subsubsection}{b) Flywheels}{7}{section*.20}%
+\contentsline {subsubsection}{c) Batteries}{8}{section*.22}%
+\contentsline {subsection}{\numberline {1.1.4}Battery Systems in Maritime Applications}{9}{subsection.1.1.4}%
+\contentsline {subsubsection}{a) Diesel-mechanic engine conventional system}{12}{section*.28}%
+\contentsline {subsubsection}{b) Diesel-mechanic engine hybrid system}{12}{section*.30}%
+\contentsline {subsubsection}{c) Hybrid/electric propulsion system with electric motors}{13}{section*.32}%
+\contentsline {subsection}{\numberline {1.1.5}Tugboats}{15}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Challenges and Research Opportunities}{15}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis Objectives and Outline}{16}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Methodology}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Scope and Limitations}{17}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Chapter Summary}{17}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Tugboats: Description and Operation}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Types of tugboats}{20}{subsection.2.1.1}%
+\contentsline {subsubsection}{a) Harbour Tugs}{20}{section*.41}%
+\contentsline {subsubsection}{b) Offshore/SAR Tugs}{21}{section*.43}%
+\contentsline {subsubsection}{c) Escort Tugs}{21}{section*.45}%
+\contentsline {subsubsection}{d) Tugs Comparation}{22}{section*.47}%
+\contentsline {subsection}{\numberline {2.1.2}Dimensions}{23}{subsection.2.1.2}%
+\contentsline {subsubsection}{a) Length Overall}{23}{section*.50}%
+\contentsline {subsubsection}{b) Beam}{23}{section*.51}%
+\contentsline {subsubsection}{c) Draught}{23}{section*.52}%
+\contentsline {subsubsection}{d) Depth}{23}{section*.53}%
+\contentsline {subsection}{\numberline {2.1.3}Volumen and Weight}{24}{subsection.2.1.3}%
+\contentsline {subsubsection}{a) Gross Tonnage (GT)}{24}{section*.55}%
+\contentsline {subsubsection}{b) Net Tonnage (NT)}{24}{section*.56}%
+\contentsline {subsubsection}{c) Deadweight (DWT)}{24}{section*.57}%
+\contentsline {subsubsection}{d) Displacement Tonnage}{25}{section*.58}%
+\contentsline {section}{\numberline {2.2}Technical Characteristics of the Propulsion System}{25}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Bollard Pull - BP}{25}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Propulsion Engineering for Maneuvering}{25}{subsection.2.2.2}%
+\contentsline {subsubsection}{a) Conventional Propulsion}{26}{section*.60}%
+\contentsline {subsubsection}{b) Azimuthal Stern Drive (ASD)}{26}{section*.62}%
+\contentsline {subsubsection}{c) Voith-Schneider Propulsion (VSP)}{27}{section*.64}%
+\contentsline {subsubsection}{d) Propulsion Comparation }{27}{section*.66}%
+\contentsline {subsection}{\numberline {2.2.3}Main Diesel Engine}{28}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Conventional Propellers}{29}{subsection.2.2.4}%
+\contentsline {subsubsection}{a) Fixed Pitch Propellers}{29}{section*.69}%
+\contentsline {subsubsection}{b) Variable Pitch Propellers}{29}{section*.71}%
+\contentsline {subsubsection}{e) Propellers Comparation}{30}{section*.73}%
+\contentsline {subsection}{\numberline {2.2.5}Special Propellers}{30}{subsection.2.2.5}%
+\contentsline {subsubsection}{a) Schottel system}{30}{section*.75}%
+\contentsline {subsubsection}{b) Voith-Schneider System (Cycloidal Propeller)}{30}{section*.76}%
+\contentsline {section}{\numberline {2.3}Naval Maneuvers and Assistance Techniques}{31}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Docking and Undocking Procedures}{31}{subsection.2.3.1}%
+\contentsline {subsubsection}{a) Operational Coordination}{31}{section*.77}%
+\contentsline {subsubsection}{b) External Agent Management}{31}{section*.78}%
+\contentsline {subsection}{\numberline {2.3.2}Tugboat Performance}{31}{subsection.2.3.2}%
+\contentsline {subsubsection}{a) Tugboat Working on a Beam or Over a Cable}{31}{section*.79}%
+\contentsline {subsubsection}{b) Bow-Supported Tugboat (Ram Locking)}{32}{section*.81}%
+\contentsline {subsubsection}{c) Tugboat alongside}{32}{section*.83}%
+\contentsline {section}{\numberline {2.4}Service Maneuvers of a Tugboat}{33}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Operational Profile}{33}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Brake-Specific Fuel Consumption (BSFC)}{36}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Generated Emissions and Fuel Consumption}{37}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Chapter Summary}{39}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Hybrid Tugboats: Requirements and Performance}{40}{chapter.3}%
+\contentsline {section}{\numberline {3.1}General Power Sources and Energy Storage System}{40}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Main Propulsion Diesel Engines}{40}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Auxiliary Diesel Generators}{41}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Battery Bank}{41}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Classification of Hybrid Propulsion Systems}{42}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Series Hybrid Architecture}{42}{subsection.3.2.1}%
+\contentsline {subsubsection}{a) Electric shaft}{42}{section*.100}%
+\contentsline {subsubsection}{b) DC-Link Topology}{43}{section*.102}%
+\contentsline {subsection}{\numberline {3.2.2}Parallel Hybrid Architecture}{44}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Comparation}{45}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Grid Distribution}{46}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}AC Link}{47}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}DC Link}{47}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Comparation}{48}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Incorporation Grid Distribution}{48}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Segregated Power System}{49}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Integrated Power System}{50}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Service Maneuvers of a Hybrid Tugboat}{50}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Operating Modes}{51}{subsection.3.5.1}%
+\contentsline {subsubsection}{a) Towing Mode}{52}{section*.115}%
+\contentsline {subsubsection}{b) Free Sailing Mode}{52}{section*.117}%
+\contentsline {subsubsection}{c) Standby Mode}{53}{section*.121}%
+\contentsline {section}{\numberline {3.6}Operational Profile}{54}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}One Maneuver}{54}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Two Maneuvers}{55}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Generated Emissions and Fuel Consumption}{56}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}One Maneuver}{56}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Two Maneuvers}{56}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Comparation}{57}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Chapter summary}{61}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Design of the battery bank for a hybrid propulsion system}{62}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Energy Capacity (kWh)}{62}{section.4.1}%
+\contentsline {subsubsection}{a) System Efficiency Factor ($\eta _{sys}$)}{63}{section*.139}%
+\contentsline {subsubsection}{b) Maximum Depth of Discharge ($DOD_{max}$) and Reserve Margins}{63}{section*.140}%
+\contentsline {subsubsection}{c) Battery Aging Factor ($k_{aging}$)}{64}{section*.141}%
+\contentsline {subsubsection}{d) Temperature Correction Factor ($k_{temp}$)}{64}{section*.142}%
+\contentsline {subsubsection}{e) Capacity Rating Factor and Peukert Efficiency ($k_{c-rate}$)}{65}{section*.143}%
+\contentsline {subsection}{\numberline {4.1.1}Battery Sizing}{65}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Nominal Battery Voltage}{66}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Battery technologies applicable to tugboats}{67}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Nickel Manganese Cobalt (NMC)}{67}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Lithium Iron Phosphate (LFP)}{67}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Lithium Titanate Oxide (LTO)}{68}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Battery Bank Design}{68}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Calculation of essential electrical parameters}{69}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Calculation of electrical performance parameters}{70}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Calculation of mechanical parameters}{70}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Calculated NMC battery banks}{71}{subsection.4.4.4}%
+\contentsline {subsubsection}{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{71}{section*.149}%
+\contentsline {subsubsection}{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{72}{section*.153}%
+\contentsline {subsection}{\numberline {4.4.5}Calculated LFP battery banks}{72}{subsection.4.4.5}%
+\contentsline {subsubsection}{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{73}{section*.158}%
+\contentsline {subsubsection}{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{74}{section*.162}%
+\contentsline {subsection}{\numberline {4.4.6}Calculated LTO battery banks}{74}{subsection.4.4.6}%
+\contentsline {subsubsection}{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text {P}}_{\text {nom}}$)}{75}{section*.167}%
+\contentsline {subsubsection}{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text {P}}_{\text {nom}}$)}{76}{section*.171}%
+\contentsline {subsection}{\numberline {4.4.7}Comparison between technologies}{76}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Mechanical design considerations}{78}{subsection.4.4.8}%
+\contentsline {section}{\numberline {4.5}Economic Analysis}{79}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Capital Expenditure (CAPEX)}{79}{subsection.4.5.1}%
+\contentsline {subsubsection}{a) Battery Bank NMC}{80}{section*.182}%
+\contentsline {subsubsection}{b) Battery Bank LFP}{80}{section*.183}%
+\contentsline {subsubsection}{c) Battery Bank LTO}{81}{section*.184}%
+\contentsline {subsubsection}{d) Power Electronics}{81}{section*.185}%
+\contentsline {subsubsection}{e) Main genset and Electric motors}{81}{section*.186}%
+\contentsline {subsubsection}{f) Integration and Safety systems}{81}{section*.187}%
+\contentsline {subsubsection}{g) Total Cost}{82}{section*.188}%
+\contentsline {subsection}{\numberline {4.5.2}Operational Expenditure (OPEX)}{83}{subsection.4.5.2}%
+\contentsline {subsubsection}{a) Fuel Consumption Savings}{83}{section*.195}%
+\contentsline {subsubsection}{b) Maintenance Engine Reduction}{83}{section*.196}%
+\contentsline {subsubsection}{c) Total Costs}{84}{section*.197}%
+\contentsline {subsection}{\numberline {4.5.3}Financial Performance}{85}{subsection.4.5.3}%
+\contentsline {subsubsection}{a) Net Present Value (NPV)}{85}{section*.204}%
+\contentsline {subsubsection}{b) Internal Rate of Return (IRR)}{86}{section*.207}%
+\contentsline {subsubsection}{c) Return on Investment (ROI)/ Payback Period}{87}{section*.210}%
+\contentsline {section}{\numberline {4.6}Chapter Summary}{88}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Simulation results}{90}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Cell Battery}{90}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Battery mathematical model}{90}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Model simulation}{92}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Battery Bank}{93}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Small Battery Bank}{93}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Large Battery Bank}{95}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Bus DC}{99}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Small Battery Bank}{99}{subsection.5.3.1}%
+\contentsline {subsubsection}{a) TLBBC}{100}{section*.229}%
+\contentsline {subsubsection}{b) Bus DC}{101}{section*.231}%
+\contentsline {subsection}{\numberline {5.3.2}Large Battery Bank}{101}{subsection.5.3.2}%
+\contentsline {subsubsection}{a) TLBBC}{102}{section*.233}%
+\contentsline {subsubsection}{b) Bus DC}{103}{section*.235}%
+\contentsline {section}{\numberline {5.4}Chapter Summary}{103}{section.5.4}%
+\contentsline {chapter}{\numberline {A}Appendix}{106}{appendix.A}%
+\contentsline {section}{\numberline {A.1}CO\textsubscript {2} tax emissions}{106}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Net Present Value (NPV)}{106}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Internal Rate of Return (IRR)}{107}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Return on Investment (ROI)/ Payback Period}{107}{subsection.A.1.3}%
+\contentsline {section}{\numberline {A.2}Government grants}{107}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Net Present Value (NPV)}{108}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Internal Rate of Return (IRR)}{108}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Return on Investment (ROI)/ Payback Period}{109}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A.3}Taxes and Grants}{109}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Net Present Value (NPV)}{109}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Internal Rate of Return (IRR)}{110}{subsection.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Return on Investment (ROI)/ Payback Period}{110}{subsection.A.3.3}%
+\contentsline {section}{\numberline {A.4}Three Level Buck Boost Converter - TLBBC}{111}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Modelling}{111}{subsection.A.4.1}%
+\contentsline {subsubsection}{State E0}{111}{section*.258}%
+\contentsline {subsubsection}{State E1}{112}{section*.259}%
+\contentsline {subsubsection}{State E2}{112}{section*.260}%
+\contentsline {subsubsection}{State E3}{113}{section*.261}%
+\contentsline {subsubsection}{General differential Model}{113}{section*.262}%
+\contentsline {section}{\numberline {A.5}Linearization}{114}{section.A.5}%
+\contentsline {subsection}{\numberline {A.5.1}Transfer Functions}{115}{subsection.A.5.1}%
+\contentsline {chapter}{Bibliography}{117}{equation.A.39}%

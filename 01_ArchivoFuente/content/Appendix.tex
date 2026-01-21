@@ -2,6 +2,7 @@
 
 
 
+
 \section{CO\textsubscript{2} tax emissions}\label{sec:tax}
 
 In countries such as Finland, there is a so-called carbon tax, which seeks to mitigate the effects of climate change by discouraging the use of fossil fuels 
@@ -384,7 +385,17 @@ The following section presents the effect of applying taxes and government subsi
 	\end{tabular}
 \end{table}
 
-\section{Three Level Buck Boost Converter}
+\section{Three Level Buck Boost Converter - TLBBC}\label{sec:TLBBC}
+
+The three-level buck-boost DC-DC converter (TLBBC) is a good alternative,
+as it has lower stress on the semiconductors
+compared to two-level topologies, and uses fewer switches
+compared to other three-level topologies.
+
+Furthermore, one of its advantages is that this converter is capable of operating in a manner similar to an interleaved mode,
+reducing the requirements for passive filters, which represents an interesting possibility for bipolar DC power grids \cite{Monteiro}.
+
+Thus, the modeling of this converter and how to obtain the transfer functions for the subsequent design of controllers are shown below.
 
 \begin{figure}[H]
     \centering
@@ -395,11 +406,13 @@ The following section presents the effect of applying taxes and government subsi
 
 \subsection{Modelling}
 
-It is assumed that C1 and C2 are equal.
+For modeling purposes, we will first assume that the capacitors are identical.
 
 \begin{equation}
 {C}_{1}={C}_{2}=C
 \end{equation}
+
+Based on this, the states of the converter are analyzed based on the switching on and off of the power switches, with the aim of finding a pattern between the state variables and the states of the power switches.
 
 \subsubsection{State E0}
 
@@ -473,7 +486,9 @@ It is assumed that C1 and C2 are equal.
 
 \subsubsection{General differential Model}
 
-\begin{align}
+Based on the states identified above, the different combinations are analyzed and the pattern of switches with the variables of interest is identified. This is shown in equation \ref{eq:tlbbc}.
+
+\begin{align}\label{eq:tlbbc}
 \frac{d{i}_{L}(t)}{dt}&=\frac{{v}_{in}(t)-{v}_{c1}(t)\cdot{\bf S}_{\bf 1}[t]-{v}_{c2}(t)\cdot{\bf S}_{\bf 2}[t]}{L} \\
 \frac{d{v}_{c1}(t)}{dt}&=\frac{{i}_{L}(t)\cdot{\bf S}_{\bf 1}[t]-{i}_{o}(t)}{C} \\
 \frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot{\bf S}_{\bf 2}[t]-{i}_{o}(t)}{C} \\
@@ -484,6 +499,8 @@ where
 \begin{equation}
 {\bf S}_{\bf 1},{\bf S}_{\bf 2} \in \{0,1\}
 \end{equation}
+
+The equations described in are nonlinear, given that the states of the switches consider discrete states, so it is necessary to perform a conversion related to the duty cycle of the switches.
 
 An average model consider:
 
@@ -511,6 +528,8 @@ In this way:
 \frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)-{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} 
 \end{align}
 
+This allows the differential equations to contain only continuous variables, thus obtaining an average model of the system.
+
 \section{Linearization}
 
 The state variables to be linearized are defined.
@@ -530,6 +549,12 @@ x(t) &= \Delta x(t)+ {x}_{Q} \nonumber\\
 u(t) &= \Delta u(t)+ {u}_{Q}  
 \end{align}
 
+The purpose is to represent the state variables, inputs, and outputs using the following matrix equation:
+
+\begin{align}
+ \Delta\dot{x}(t)&= A\Delta x(t)+B\Delta u(t)+ E\Delta u(t)\\
+\Delta y(t)&= C \Delta x(t)+D\Delta u(t) 
+\end{align}
 
 In this way, and applying a low-order Taylor series to linearize, the linearized differential equations are found.
 
@@ -606,4 +631,52 @@ In this way, the matrices of interest can be found in state variables within the
     	\end{bmatrix}
 \end{align}
 
+
+\subsection{Transfer Functions}
+
+Given a state model defined by the matrices (A,B,C,D), the transfer function can be expressed as follows
+
+\begin{equation*}
+    H(s)=C{(sI-A)}^{-1}B+D
+\end{equation*}
+
+Whose transfer function allows the following expression as:
+
+\begin{equation}
+    Y(s)=H(s)U(s)
+\end{equation}
+
+A transfer function will be found for each element related to the inputs available. Thus, matrix C can take different values, depending on the variables desired as output, considering D = 0.
+
+
+\begin{align*}
+y(t)=\Delta{i}_{L}(t)&\rightarrow C=\begin{bmatrix}
+        	1 & 0 & 0 \\
+        	0 & 0 & 0 \\
+        	0 & 0 & 0 \\
+    	\end{bmatrix}\\
+y(t)=(\Delta{v}_{c1}(t)-\Delta{v}_{c2}(t))&\rightarrow C=\begin{bmatrix}
+        	0 & 0 & 0 \\
+        	0 & 1 & -1 \\
+        	0 & 0 & 0 \\
+    	\end{bmatrix}\\
+y(t)=\Delta{v}_{0}(t)&\rightarrow C=\begin{bmatrix}
+        	0 & 0 & 0 \\
+        	0 & 0 & 0 \\
+        	0 & 1 & 1 \\
+    	\end{bmatrix}
+\end{align*}	
+
+In this way, the following transfer functions can be obtained:
+
+\begin{align}
+H{i}_{L}{d}_{2}&=\frac{-s\cdot C{v}_{cQ}-{I}_{LQ}{d}_{Q}}{{s}^{2}\cdot LC+2{d}_{Q}^2}\\
+H{i}_{L}{d}_{2}&=\frac{-s\cdot C{v}_{cQ}-{I}_{LQ}{d}_{Q}}{{s}^{2}\cdot LC+2{d}_{Q}^2}\\
+H{\tilde{v}}_{c}{d}_{1}&=\frac{{i}_{LQ}}{s\cdot C}\\
+H{\tilde{v}}_{c}{d}_{2}&=-\frac{{i}_{LQ}}{s\cdot C}\\
+H{v}_{o}{d}_{1}&=\frac{-(s\cdot {I}_{LQ}L+2{d}_{Q}{v}_{cQ})}{{s}^{2}\cdot LC+2{d}_{Q}^2}\\
+H{v}_{o}{d}_{2}&=\frac{-(s\cdot {I}_{LQ}L+2{d}_{Q}{v}_{cQ})}{{s}^{2}\cdot LC+2{d}_{Q}^2}\\
+\end{align}
+
+With these transfer functions, current and voltage controllers can be designed to control the input current to the converter and the voltage balance at the output.
 
