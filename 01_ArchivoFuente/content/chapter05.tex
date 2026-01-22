@@ -47,7 +47,7 @@ Based on equation \ref{eq:Voc}, its parameters are described in Table \ref{tab:S
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/chapter05/discharge_curve.jpg}
-    \caption{discharge curve.}
+    \caption{Discharge curve description \cite{Moussa}.}
     \label{fig:discharge_curve}
 \end{figure}
 
@@ -132,7 +132,7 @@ Based on the adjusted parameters of the mathematically obtained curve, the compa
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/chapter05/simulink_profile.jpg}
-    \caption{discharge curve.}
+    \caption{discharge curve of the cell battery.}
     \label{fig:sim_discharge_curve}
 \end{figure}
 
@@ -194,7 +194,7 @@ The small battery bank model is simulated and subjected to the operating profile
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/Bank_1M_015.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/Bank_1M_015.jpg}
     \caption{Operation and electrical performance of the small battery bank for one maneuver.}
     \label{fig:Bank_1M_015}
 \end{figure}
@@ -203,7 +203,7 @@ The small battery bank model is simulated and subjected to the operating profile
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/Bank_2M_015.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/Bank_2M_015.jpg}
     \caption{Operation and electrical performance of the small battery bank for two maneuvers.}
     \label{fig:Bank_2M_015}
 \end{figure}
@@ -253,7 +253,7 @@ Based on the discharge profile, the battery bank is subjected to electrical perf
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/Bank_1M_025.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/Bank_1M_025.jpg}
     \caption{Operation and electrical performance of the large battery bank for one maneuver.}
     \label{fig:Bank_1M_025}
 \end{figure}
@@ -262,7 +262,7 @@ Based on the discharge profile, the battery bank is subjected to electrical perf
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/Bank_2M_025.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/Bank_2M_025.jpg}
     \caption{Operation and electrical performance of the large battery bank for two maneuvers.}
     \label{fig:Bank_2M_025}
 \end{figure}
@@ -294,7 +294,7 @@ Next, we analyze the operation of a power module inserted in the DC-DC converter
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/TLBBC_015.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/TLBBC_015.jpg}
     \caption{Electrical performance of power module under nominal operation.}
     \label{fig:TLBBC015}
 \end{figure}
@@ -307,7 +307,7 @@ Based on the voltage graphs, it can be seen that the module is initially prechar
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/BusDC_015.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/BusDC_015.jpg}
     \caption{Electrical performance of power DC-DC converter under nominal operation.}
     \label{fig:BusDC015}
 \end{figure}
@@ -328,7 +328,7 @@ In the case of the large battery bank, each battery pack will have 41 strings in
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/TLBBC_025.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/TLBBC_025.jpg}
     \caption{Electrical performance of power module under nominal operation.}
     \label{fig:TLBBC025}
 \end{figure}
@@ -341,7 +341,7 @@ Figure \ref{fig:TLBBC025}, as in the previous case, shows the input current to t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/chapter05/BusDC_025.jpg}
+    \includegraphics[width=0.8\textwidth]{images/chapter05/BusDC_025.jpg}
     \caption{Electrical performance of power DC-DC converter under nominal operation.}
     \label{fig:BusDC025}
 \end{figure}
@@ -351,3 +351,13 @@ Figure \ref{fig:BusDC025}, as previously done, analyzes the output power of each
 It can be seen that no converter loses the 1000 [V] voltage reference and also that each module operates at 50 [kW], thus obtaining 500 [kW] with 2 battery packs, which, with proper coordination, could reach 1000 [kW] with the 4 battery packs, maintaining the same control strategy as for the small battery bank \cite{Zhang}\cite{sensata}.
 
 \section{Chapter Summary}
+
+The simulations confirm that both the small and large banks are suitable for the load profiles studied, since the load state does not exceed $50\%$ discharge in the maneuvers analyzed.
+
+By maintaining a high residual charge level (around $75\%$ after two maneuvers on the large bank), the system offers flexibility to power hotel loads and allows for charging in port without compromising the ship's availability.
+
+The use of three-level converters (TLBBC) allows for stable regulation of the $1,000[V]$ bus, even in the event of sudden load steps, ensuring safe operation and reducing electrical stress on internal components, potentially extending their useful life.
+
+It has been demonstrated that, through proper coordination of battery packs, it is possible to achieve operating powers of up to $1,000[kW]$ (in the case of the large bank), meeting the demands of hybrid propulsion systems.
+
+

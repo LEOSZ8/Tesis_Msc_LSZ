@@ -17,7 +17,7 @@ The growing global concern over climate change has significantly pressured indus
 
 
 The International Maritime Organization (IMO) is implementing strategies to reduce the emissions from international shipping by establishing standards, imposing restrictions and provinding incentives. The initial strategy avoids a reduction in total GHG emissions from international shipping by at least 50$\%$ by 2030 compared to 2008, consistent with the Paris Agreement. IMO's current global standard for SO\textsubscript{x} emissions is 0.5$\%$ mass by mass (m/m) by 2030 per the \textbf{International Convention for the Prevention of Pollution by Ships (MARPOL 73/78) Annex VI}, as shown in figure \ref{fig:SOx}.\\ 
-Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed, as shown in figure \ref{fig:NOx}. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min.
+Similarly, the emission limit for NO\textsubscript{x} from engines is dependent on the type of the engine and the nominal engine speed, as shown in figure \ref{fig:NOx}. The global limit has been set to 14.4 g/kWh for engines with speeds less than 130 rev/min and 7.7 g/kWh for engines with speed greater than 2000 rev/min \cite{Muzaidi}.
 
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
@@ -30,7 +30,7 @@ Similarly, the emission limit for NO\textsubscript{x} from engines is dependent 
     \caption{NO\textsubscript{x} limits in terms of engine speed.}
     \label{fig:NOx}
     \end{subfigure}    
-    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs) perspective.}
+    \caption{The MARPOL Annex VI emission limits for global and Emission Controlled Areas (ECAs) perspective \cite{Muzaidi}.}
     \label{fig:ECA}
 \end{figure}
 
@@ -48,7 +48,7 @@ The NZF promotes low-GHG fuels and technologies to comply with the IMO's 2023 St
 
 Many vessels chartered in the coming years could still be in operation in 2050, so it is necessary to take into account the strict requirements that lie ahead in order to maintain their commercial appeal, asset value, and profitability in the coming decades. Furthermore, beyond 2030, ships in operation may need to consider modernization options that allow for the use of fuels with low greenhouse gas emissions.
 
-The incentives to reduce emissions and improve the efficiency of equipment are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storages (for example, batteries and supercapacitors) reduce GHG emissions and are the key enablers for the realization of low-emissions operation of marine vessels.
+Incentives to reduce emissions and improve equipment efficiency are motivating ship manufacturers to adopt zero-emission technologies. Fuel cells and energy storage systems such as batteries (main source of electrical energy) and supercapacitors (high power peaks and improved battery system life) reduce greenhouse gas emissions and are key factors in achieving low-emission operation of marine vessels.
 
 
 
@@ -56,14 +56,13 @@ The incentives to reduce emissions and improve the efficiency of equipment are m
 
 \subsection{Propulsion Architectures}
 
-While conventional maritime transport is characterized by restricting the amount of fuel produced by diesel engines in propulsion systems through Tier standards, which translates into a continuous decrease in fossil fuel consumption, fully electric and hybrid propulsion architectures, made possible by innovative high-performance energy storage systems (batteries, fuel cells, supercapacitors, etc.), are a promising way to significantly reduce fossil fuel consumption, pollutants, and greenhouse gas emissions \cite{Bennabi}.
+While conventional maritime transport is characterized by restricting the amount of fuel produced by diesel engines in propulsion systems through Tier standards, which translates into a continuous decrease in fossil fuel consumption, fully electric and hybrid propulsion architectures, made possible by innovative high-performance energy storage systems (batteries, fuel cells, supercapacitors, etc.), are a promising way to significantly reduce fossil fuel consumption, pollutants, and greenhouse gas emissions \cite{Bennabi}.\\
 
-New developments of electrically propelled ships are based on an integrated energy distribution system architecture that releases large propulsion machines \cite{Reusser}.
 
-For full-electric propulsion, the main advantages include better dynamic performance (start-up, arrest, changes in speed, and regenerative braking), reduced fuel consumption due to the more efficient and flexible use of generators that work within their minimum specific fuel consumption region, and the possibility of having shorter shaft lines because the electric motor must be installed close to the propeller. 
+For full-electric propulsion, the main advantages include better dynamic performance (start-up, arrest, changes in speed, and regenerative braking), reduced fuel consumption due to the more efficient and flexible use of generators that work within their minimum specific fuel consumption region, and the possibility of having shorter shaft lines because the electric motor must be installed close to the propeller \cite{Reusser}. 
 
 The hybrid propulsion system uses a combination of diesel engines or gas turbines with electric motors to provide a wide range of propeller speeds \cite{Reusser}. One of the main advantages of this configuration concerns an increase in efficiency at low loads. Hence, less fuel consumption, fewer emissions, and a small footprint are achieved. 
-Hybrid propulsion systems (HPS) are interesting when there is a large variation in power demand during operations. The design rules of this type of systems can differ significatly for different types of vessel, mainly due to the different types of mission profiles and operation requirements \cite{Bennabi}.\\
+Hybrid propulsion systems (HPS) are interesting when there is a large variation in power demand during operations. The design rules of this type of systems can differ significatly for different types of vessel, mainly due to the different types of mission profiles and operation requirements \cite{Bennabi}.
 
 Hybridization of the propulsion chains are based on the separation or simultaneous use of several different energy sources. The choice of different power sources, and sources combinations is designed to adapt to the ship power and energy requirements which include the needs of low and high power, the needs of flexibility in changes of rhythm and the needs of redundancy and reliability.\\
 
@@ -434,7 +433,7 @@ However, the challenge lies in finding a clear and detailed methodology for the 
 
 \section{Thesis Objectives and Outline}
 
-The general objective of this work is to develop a methodology for the design and sizing of the battery bank for a hybrid tugboat, which will allow us to determine the benefits that would be obtained from hybridization, analyzing the challenge of high CAPEX (initial cost) of batteries versus savings in OPEX (fuel/maintenance).\\
+The overall objective of this work is to develop a mathematical model of the battery bank for a hybrid tugboat, involving a methodology for the design and sizing of the battery bank, analyzing the technical and economic feasibility of its implementation. This mathematical model can be tested with DC/DC converter models and other elements within the hybrid powertrain.\\
 
 Specific objectives include:
 
@@ -461,7 +460,7 @@ The methodology to follow for the development of this work is:
 The limitations of the work are:
 
 \begin{itemize}
-	\item \textbf{Architecture Layout}: Only one hybridization layout will be analyzed and compared with the tugboat's conventional propulsion system.
+	\item \textbf{Architecture Layout}: As discussed in section \label{sec:Roles}, there are different ways to make batteries supply power to the propulsion system and internal loads of the ship. Based on this, a semi-hybrid diesel-mechanical propulsion system will be established for the tugboat and compared with the tugboat's conventional propulsion system.
 	\item \textbf{Bill of Components (BOM)}: Within the list of components of the hybrid propulsion system, the associated cost of each will be determined, estimating the costs of those components for which no commercial information is available.
 	\item \textbf{Economic analysis}: Although information on costs related to the hybrid propulsion system will be added, it should be noted that inflation or deflation will not be taken into account in this exercise. Furthermore, this economic assessment does not consider the cost of the port charger.
 	\item \textbf{Simulation considerations}: Based on the data provided on the tugboat's operational load profile, simulations will be performed on the sized battery bank. For power converter simulations, simulations will be performed with a shorter duration, given the amount of data required to analyze the battery bank's discharge profile. The thermal effects of the semiconductors used shall be disregarded.

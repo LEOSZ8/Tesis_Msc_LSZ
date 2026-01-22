@@ -85,8 +85,15 @@ DODcell=100.*DODcell;
 %%
 load('VOC_U27_36X.mat');
 load('DOD_U27_36X.mat');
-plot(DOD_U27_36X,VOC_U27_36X,DODcell,VOCcell,'Linewidth',2)
+plot(DOD_U27_36X,VOC_U27_36X,'--','Linewidth',2)
+hold on
+plot(DODcell,VOCcell,'Color',[0.51 0.87 0.46],'Linewidth',2)
 grid on
 ylabel('Voltage [V]')
 xlabel('Depth of Discharge [%]')
-legend('Datasheet','Simulation','Location','northeast')
+legend('Datasheet','Model','Location','northeast')
+ax = gca;
+ax.XAxis.FontSize = 12; % or whatever
+ax.XAxis.FontName = 'Times New Roman';
+ax.YAxis.FontSize = 12; % or whatever
+ax.YAxis.FontName = 'Times New Roman';

@@ -77,6 +77,13 @@ DODbank=sim.DOD_data(:,2);
 DODbank=100.*DODbank;
 
 %%
-plot(DODbank,VOCbank,'Linewidth',2)
+plot(DODbank,VOCbank,'Color','#00994D','Linewidth',2)
 grid on
-legend('Bank Battery 25% Pnom','Linewidth',2,'Location','northeast')
+ylabel('Voltage [V]')
+xlabel('Depth of Discharge [%]')
+legend('Large Battery Bank','Linewidth',2,'Location','northeast')
+ax = gca;
+ax.XAxis.FontSize = 12; % or whatever
+ax.XAxis.FontName = 'Times New Roman';
+ax.YAxis.FontSize = 12; % or whatever
+ax.YAxis.FontName = 'Times New Roman';

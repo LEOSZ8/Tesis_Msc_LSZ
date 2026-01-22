@@ -400,8 +400,8 @@ Thus, the modeling of this converter and how to obtain the transfer functions fo
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/Appendix/TLBBC.jpg}
-    \caption{BusDC.}
-    \label{fig:BusDC025}
+    \caption{Three Level Buck Boost Converter (TLBBC).}
+    \label{fig:TLBBC_d}
 \end{figure}
 
 \subsection{Modelling}
@@ -413,8 +413,18 @@ For modeling purposes, we will first assume that the capacitors are identical.
 \end{equation}
 
 Based on this, the states of the converter are analyzed based on the switching on and off of the power switches, with the aim of finding a pattern between the state variables and the states of the power switches.
+This is shown in the figures \ref{fig:E0}, \ref{fig:E1}, \ref{fig:E2} and \ref{fig:E3}.
+
 
 \subsubsection{State E0}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Appendix/E0.jpg}
+    \caption{State 0 (S1:Off, S2:Off).}
+    \label{fig:E0}
+\end{figure}
+
 
 \begin{align}
 {v}_{in}(t)-{v}_{L/2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
@@ -435,6 +445,13 @@ Based on this, the states of the converter are analyzed based on the switching o
 
 \subsubsection{State E1}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Appendix/E1.jpg}
+    \caption{State 1 (S1:On, S2:Off).}
+    \label{fig:E1}
+\end{figure}
+
 \begin{align}
 {v}_{in}(t)-{v}_{L/2}(t)-{v}_{c1}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
 {v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-{v}_{c1}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
@@ -454,6 +471,13 @@ Based on this, the states of the converter are analyzed based on the switching o
 
 \subsubsection{State E2}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Appendix/E2.jpg}
+    \caption{State 2 (S1:Off, S2:On).}
+    \label{fig:E2}
+\end{figure}
+
 \begin{align}
 {v}_{in}(t)-{v}_{L/2}(t)-{v}_{c2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
 {v}_{in}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt}-{v}_{c2}(t)-(L/2)\cdot \frac{d{i}_{L}(t)}{dt} &= 0 \nonumber\\
@@ -469,6 +493,13 @@ Based on this, the states of the converter are analyzed based on the switching o
 \end{align}
 
 \subsubsection{State E3}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Appendix/E3.jpg}
+    \caption{State 3 (S1:On, S2:On).}
+    \label{fig:E3}
+\end{figure}
 
 \begin{align}
 {v}_{in}(t)-{v}_{L/2}(t)-{v}_{c1}(t)-{v}_{c2}(t)-{v}_{L/2}(t) &= 0 \nonumber \\
@@ -523,9 +554,9 @@ If the change of variables is performed:
 In this way:
 
 \begin{align}
-\frac{d{i}_{L}(t)}{dt}&=\frac{{v}_{in}(t)-{\bf u}_{\bf i}(t)\cdot({v}_{c1}(t)+{v}_{c2}(t))-{\bf u}_{\bf v}(t)\cdot({v}_{c1}(t)-{v}_{c2}(t))}{L} \\
-\frac{d{v}_{c1}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)+{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} \\
-\frac{d{v}_{c2}(t)}{dt}&=\frac{{i}_{L}(t)\cdot({\bf u}_{\bf i}(t)-{\bf u}_{\bf v}(t))-{i}_{o}(t)}{C} 
+\frac{d{i}_{L}(t)}{dt}&=\frac{{v}_{in}(t)-{\bf d}_{\bf 1}(t)\cdot{v}_{c1}(t)-{\bf d}_{\bf 2}(t)\cdot{v}_{c2}(t)}{L} \\
+\frac{d{v}_{c1}(t)}{dt}&=\frac{{\bf d}_{\bf 1}(t)\cdot{i}_{L}(t)-{i}_{o}(t)}{C} \\
+\frac{d{v}_{c2}(t)}{dt}&=\frac{{\bf d}_{\bf 2}(t)\cdot{i}_{L}(t)-{i}_{o}(t)}{C} 
 \end{align}
 
 This allows the differential equations to contain only continuous variables, thus obtaining an average model of the system.
@@ -678,5 +709,11 @@ H{v}_{o}{d}_{1}&=\frac{-(s\cdot {I}_{LQ}L+2{d}_{Q}{v}_{cQ})}{{s}^{2}\cdot LC+2{d
 H{v}_{o}{d}_{2}&=\frac{-(s\cdot {I}_{LQ}L+2{d}_{Q}{v}_{cQ})}{{s}^{2}\cdot LC+2{d}_{Q}^2}\\
 \end{align}
 
-With these transfer functions, current and voltage controllers can be designed to control the input current to the converter and the voltage balance at the output.
+With these transfer functions, current and voltage controllers can be designed to control the input current to the converter and the voltage balance at the output, as is shown in figure \ref{fig:control}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Appendix/Control_TLBBC.jpg}
+    \caption{Proposed control strategy.}
+    \label{fig:control}
+\end{figure}
