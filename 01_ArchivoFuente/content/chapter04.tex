@@ -30,7 +30,7 @@ This transformation is achieved through the application of specific sizing facto
 Energy stored in the electrochemical cells must traverse a electrical path to reach the propulsion motor. Each component in this chain extracts an efficiency penalty (heat loss).
 
 \begin{enumerate}
-	\item \textbf{Coulombic/Voltaic Efficiency} ($\eta_{bat}$): Li-ion batteries are highly efficient, but internal resistance ($R_{int}$) causes $I^2R$ losses during discharge. Typical round-trip efficiency is $92-96\%$; discharge efficiency is generally taken as $0.96$ to $0.98$.
+	\item \textbf{Coulombic/Voltaic Efficiency} ($\eta_{bat}$): Li-ion batteries are highly efficient, but internal resistance ($R_{int}$) causes $I^2R$ losses during discharge. Typical round-trip efficiency is $92-96\%$; discharge efficiency is generally taken as $0.96$ to $0.98$ \cite{BattUniversity}.
 	\item \textbf{DC/DC Converters} $\eta_{conv}$:  Many hybrid architectures utilize DC/DC converters to decouple the battery voltage from the main DC bus voltage. These typically operate at $0.97$ to $0.98$ efficiency.
 	\item \textbf{Variable Frequency Drives (VFD)} $\eta_{vfd}$: This inverters for electric motors  converting DC bus power to AC for the motors operate at $0.96$ to $0.98$ efficiency.
 	\item \textbf{Electric Motor} $\eta_{motor}$: Permanent Magnet (PM) machines are preferred for hybrid tugs due to their high efficiency at partial loads compared to induction motors. PM motor efficiency is typically $0.95$ to $0.97$.
@@ -85,12 +85,7 @@ Battery performance is inextricably linked to temperature. The standard rating i
 	\item \textbf{High Temperature Effects}: Operating above 35-40°C accelerates the chemical side reactions that drive aging. While capacity might initially increase slightly due to lower resistance, the long-term penalty is severe lifespan reduction.
 \end{itemize}
 
-Tugboat battery rooms are invariably climate-controlled (Liquid Cooling + HVAC) to maintain an optimal window of 20°C–25°C. However, the sizing must account for:
-
-\begin{itemize}
-	\item \textbf{HVAC Failure Scenarios}: The ability to operate (perhaps at reduced power) if cooling is compromised.
-	\item \textbf{Cold Starts}: If the vessel has been "cold iron" in winter, the battery may need to operate at suboptimal temperatures before self-heating occurs.
-\end{itemize}
+Tugboat battery rooms are invariably climate-controlled (Liquid Cooling + HVAC) to maintain an optimal window of 20°C–25°C. 
 
 A conservative Temperature Correction Factor of $1.05$ to $1.10$ ($5-10\%$ oversizing) is applied. This ensures that the rated energy is available even if the ambient conditions in the battery room deviate from the ISO standard day.
 
@@ -211,7 +206,7 @@ For the battery bank in both options, a nominal voltage of $V_{bus\_req}=750$[V]
 
 \section{Battery technologies applicable to tugboats}
 
-Three primary lithium-ion chemistries dominate the marine sector: 
+Although several battery technologies for different vessels were mentioned in section \ref{sec:Roles}, in the field of hybrid and electric tugboats, three main lithium-ion chemical compositions dominate this sector \cite{BattForum}:
 
 \begin{itemize}
 
@@ -246,7 +241,7 @@ Cell prices range from $\text{US }\$120-\text{US }\$150/\text{kWh}$ \cite{UFine}
 LFP (LiFePO\textsubscript{4}) is rapidly gaining market share in the maritime sector, driven by safety and longevity.
 
 \begin{itemize}
-\item \textbf{Energy Density}: The cell density is 90-160 Wh/kg \cite{evlithium}. Tugboats require considerable ballast to achieve the draft necessary for propeller immersion. LFP batteries could be a substitute for lead or iron ballast, serving a dual function as “stability weight” \cite{UFine}.
+\item \textbf{Energy Density}: The cell density is 90-160 Wh/kg \cite{evlithium}. Tugboats require considerable ballast to achieve the draft necessary for propeller immersion. LFP batteries could replace lead or iron ballast, serving a dual function as a “\textbf{stability weight”} \cite{UFine}, representing around $30\%$ of the total ballast, which could reach approximately $55 [{m}^{3}]$ \cite{cotecmar}.
 	\item \textbf{Safety}: The simple chemistry of LFP batteries (no nickel or cobalt) makes them safe and robust. These batteries are used in applications where safety and long life are more important than compact size \cite{Bonnen}.
 	\item  \textbf{Cycle Life}: The LFP offers between 2,000 and more than 5,000 cycles, even with a high discharge depth \cite{evlithium}. Some sources suggest that it lasts between 2 and 3 times longer than the NMC \cite{UFine}, making it ideal for applications that require longer life and reliability.
 	
@@ -294,25 +289,20 @@ To this end, the selected cells shall be considered to have the following input 
 	\end{tabular}
 \end{table} 
 
-In addition, the calculated energy and the proposed nominal voltage for each bank to be designed shall be considered as inputs, data that is provided in Table \ref{tab:Technical_input2_15}.
+In addition, the calculated energy and the proposed nominal voltage for each bank to be designed shall be considered as inputs. Below is the information that will be used for the small battery bank and the large battery bank.
 
-\begin{table}[H]
-	\centering
-	\caption{Proposed information}
-	\label{tab:Technical_input2_15}
-	\begin{tabular}{|c|c|c|}
-		\hline
-		\multicolumn{3}{|c|}{\textbf{Proposed technical input for BESS}} \\
-		\hline\hline
-& BESS $15\%$ ${\text{P}}_{\text{nom}}$ & BESS $25\%$ ${\text{P}}_{\text{nom}}$ \\
-		\hline
-		$\text{V}_{bp}$ (Battery pack voltage)  & \multicolumn{2}{c|}{750[V]}   \\
-		 \hline
-		 $\text{E}_{bp}$ (Battery pack total energy)  & 2,800[kWh] & 6,300[kWh]  \\
-		\hline
-		
-	\end{tabular}
-\end{table} 
+\begin{itemize}
+	\item Small Battery Bank ($15\%$ ${\text{P}}_{\text{nom}}$):
+	\begin{itemize}
+		\item $\text{V}_{bp}$ (Battery pack voltage): 750 [V].
+		\item  $\text{E}_{bp}$ (Battery pack total energy): 2,800[kWh].
+	\end{itemize}
+	\item Large Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$):
+	\begin{itemize}
+		\item $\text{V}_{bp}$ (Battery pack voltage): 750 [V].
+		\item  $\text{E}_{bp}$ (Battery pack total energy): 6,300[kWh].
+	\end{itemize}
+\end{itemize}
 
 The battery bank will be considered to consist of several strings connected in parallel, each of which consists of several cells connected in series. Also, the volume of the battery pack will be calculated taking into account only the battery cells, without considering other factors such as electronic circuits, cooling circuit, battery casing, wiring, etc.\\
 
@@ -447,7 +437,7 @@ The technical specifications of each model, in addition to the input parameters 
 
 \subsubsection{a) NMC Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the small NMC battery bank are presented below in Tables \ref{tab:NMC_015_1}, \ref{tab:NMC_015_2}, and \ref{tab:NMC_015_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the small NMC battery bank are presented below in Tables \ref{tab:NMC_015_1} and \ref{tab:NMC_015_2}, respectively.
 
 \begin{table}[H]
 	\centering
@@ -494,31 +484,18 @@ The essential electrical characteristics, performance parameters, and physical c
 		\hline
 		$\text{P}_{bpp}$ & 5,565[kW] & 5,580[kW] & 14,062[kW]  \\	
 		\hline		
-	\end{tabular}
-\end{table}
-
- 
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the small NMC battery bank.}
-	\label{tab:NMC_015_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, NMC battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
-		 \hline
 		$\text{m}_{bp}$ & 18,698[kg]  & 16,405[kg] & 3,143[kg] \\	
 		\hline
 		$\text{vol}_{bp}$ &  11.45[${\text{m}}^{3}$] & 8.80[${\text{m}}^{3}$] & 28.11[${\text{m}}^{3}$]\\	
 		\hline
-			
 	\end{tabular}
-\end{table} 
+\end{table}
+
+
 
 \subsubsection{b) NMC Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the large NMC battery bank are presented below in Tables \ref{tab:NMC_025_1}, \ref{tab:NMC_025_2}, and \ref{tab:NMC_025_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the large NMC battery bank are presented below in Tables \ref{tab:NMC_025_1} and \ref{tab:NMC_025_2}, respectively.
 
 \begin{table}[H]
 	\centering
@@ -564,29 +541,15 @@ The essential electrical characteristics, performance parameters, and physical c
 		$\text{I}_{bpp}$ & 16.68[kA] & 16.68[A] & 42[kA]  \\	
 		\hline
 		$\text{P}_{bpp}$ & 12,510[kW] & 12,510[kW] & 31,500[kW]  \\	
+		\hline
+		$\text{m}_{bp}$ & 40,034[kg]  & 36,779[kg] & 7,096[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  25.75[${\text{m}}^{3}$] & 19.73[${\text{m}}^{3}$] & 28.11[${\text{m}}^{3}$]\\	
 		\hline		
 	\end{tabular}
 \end{table}
 
  
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the large NMC battery bank.}
-	\label{tab:NMC_025_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, NMC battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{ABL-012010P} & \textbf{ABL-012030P} & \textbf{E4050T1}\\
-		 \hline
-		$\text{m}_{bp}$ & 40,034[kg]  & 36,779[kg] & 7,096[kg] \\	
-		\hline
-		$\text{vol}_{bp}$ &  25.75[${\text{m}}^{3}$] & 19.73[${\text{m}}^{3}$] & 28.11[${\text{m}}^{3}$]\\	
-		\hline
-			
-	\end{tabular}
-\end{table} 
-
 
  
 \subsection{Calculated LFP battery banks}
@@ -624,7 +587,7 @@ These technical specifications for each model enable the necessary calculations 
 
 \subsubsection{a) LFP Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the small LFP battery bank are presented below in Tables \ref{tab:LFP_015_1}, \ref{tab:LFP_015_2}, and \ref{tab:LFP_015_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the small LFP battery bank are presented below in Tables \ref{tab:LFP_015_1} and \ref{tab:LFP_015_2}, respectively.
 
 \begin{table}[H]
 	\centering
@@ -671,31 +634,19 @@ The essential electrical characteristics, performance parameters, and physical c
 		\hline
 		$\text{P}_{bpp}$ & 20,212[kW] & 7,875[kW] & 8,213[kW]  \\	
 		\hline		
-	\end{tabular}
-\end{table}
-
- 
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the small LFP battery bank.}
-	\label{tab:LFP_015_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LFP battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
-		 \hline
 		$\text{m}_{bp}$ & 28,910[kg]  & 27,877[kg] & 27,302[kg] \\	
 		\hline
 		$\text{vol}_{bp}$ &  26.27[${\text{m}}^{3}$] & 24.73[${\text{m}}^{3}$] & 17.28[${\text{m}}^{3}$]\\	
 		\hline
-			
 	\end{tabular}
-\end{table} 
+\end{table}
+
+ 
+
 
 \subsubsection{b) LFP Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the large LFP battery bank are presented below in Tables \ref{tab:LFP_025_1}, \ref{tab:LFP_025_2}, and \ref{tab:LFP_025_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the large LFP battery bank are presented below in Tables \ref{tab:LFP_025_1} and \ref{tab:LFP_025_2}, respectively.
 
 \begin{table}[H]
 	\centering
@@ -741,28 +692,15 @@ The essential electrical characteristics, performance parameters, and physical c
 		$\text{I}_{bpp}$ & 60.56[kA] & 23.38[kA] & 24.75[kA]  \\	
 		\hline
 		$\text{P}_{bpp}$ & 45,416[kW] & 17,535[kW] & 18,563[kW]  \\	
+		\hline
+		$\text{m}_{bp}$ & 64,960[kg]  & 62,074[kg] & 61,710[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  59.05[${\text{m}}^{3}$] & 55.10[${\text{m}}^{3}$] & 39.08[${\text{m}}^{3}$]\\	
 		\hline		
 	\end{tabular}
 \end{table}
 
  
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the large LFP battery bank.}
-	\label{tab:LFP_025_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LFP battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{URB1270} & \textbf{PSL-SC-12500} & \textbf{U27-36XP}\\
-		 \hline
-		$\text{m}_{bp}$ & 64,960[kg]  & 62,074[kg] & 61,710[kg] \\	
-		\hline
-		$\text{vol}_{bp}$ &  59.05[${\text{m}}^{3}$] & 55.10[${\text{m}}^{3}$] & 39.08[${\text{m}}^{3}$]\\	
-		\hline
-			
-	\end{tabular}
-\end{table} 
 
 \subsection{Calculated LTO battery banks}
 
@@ -844,32 +782,21 @@ The essential electrical characteristics, performance parameters, and physical c
 		$\text{I}_{bpp}$ & 74.55[kA] & 74.55[kA] & 28.55[kA]  \\	
 		\hline
 		$\text{P}_{bpp}$ & 55,913[kW] & 55,910[kW] & 21,411[kW]  \\	
+		\hline
+		$\text{m}_{bp}$ & 700,025[kg]  & 100,000[kg] & 35,785[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ &  152.72[${\text{m}}^{3}$] & 192.68[${\text{m}}^{3}$] & 13.15[${\text{m}}^{3}$]\\	
 		\hline		
 	\end{tabular}
 \end{table}
 
  
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the small LTO battery bank.}
-	\label{tab:LTO_015_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LTO battery bank} $\bf 15\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
-		 \hline
-		$\text{m}_{bp}$ & 700,025[kg]  & 100,000[kg] & 35,785[kg] \\	
-		\hline
-		$\text{vol}_{bp}$ &  152.72[${\text{m}}^{3}$] & 192.68[${\text{m}}^{3}$] & 13.15[${\text{m}}^{3}$]\\	
-		\hline
-			
-	\end{tabular}
-\end{table} 
+		
+
 
 \subsubsection{b) LTO Large Battery Bank (Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the large LTO battery bank are presented below in Tables \ref{tab:LTO_025_1}, \ref{tab:LTO_025_2}, and \ref{tab:LTO_025_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the large LTO battery bank are presented below in Tables \ref{tab:LTO_025_1} and \ref{tab:LTO_025_2}, respectively.
 
 \begin{table}[H]
 	\centering
@@ -915,28 +842,14 @@ The essential electrical characteristics, performance parameters, and physical c
 		$\text{I}_{bpp}$ & 167.73[kA] & 167.73[kA] & 64.22[kA]  \\	
 		\hline
 		$\text{P}_{bpp}$ & 125,800[kW] & 125,800[kW] & 48,168[kW]  \\	
+		\hline
+		$\text{m}_{bp}$ & 1,575,013[kg]  & 225,000[kg] & 80,505[kg] \\	
+		\hline
+		$\text{vol}_{bp}$ & 343.61[${\text{m}}^{3}$] & 433.54[${\text{m}}^{3}$] & 29.59[${\text{m}}^{3}$]\\	
 		\hline		
 	\end{tabular}
 \end{table}
 
- 
-\begin{table}[H]
-	\centering
-	\caption{Mechanical parameters of the large LTO battery bank.}
-	\label{tab:LTO_025_3}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Mechanical parameters, LTO battery bank} $\bf 25\%$ ${\bf \text{P}}_{\bf \text{nom}}$} \\
-		\hline\hline
-		 &  \textbf{SLB12400L151} & \textbf{SLB08115L140} & \textbf{ELB 1500mAh LTO}\\
-		 \hline
-		$\text{m}_{bp}$ & 1,575,013[kg]  & 225,000[kg] & 80,505[kg] \\	
-		\hline
-		$\text{vol}_{bp}$ & 343.61[${\text{m}}^{3}$] & 433.54[${\text{m}}^{3}$] & 29.59[${\text{m}}^{3}$]\\	
-		\hline
-			
-	\end{tabular}
-\end{table}
 
 \subsection{Comparison between technologies}
 Based on the technical information provided by battery suppliers and on the calculations performed, the values obtained in each calculation for each technology are averaged to obtain average parameters for comparing technologies.
@@ -981,7 +894,7 @@ What can be observed in Figures \ref{fig:RadarPlot_x3_015} and \ref{fig:RadarPlo
 
 Thus, a comparison is made only between NMC and LFP technologies through Figures \ref{fig:RadarPlot_x2_015} and \ref{fig:RadarPlot_x2_015}. In general, if technology performance is paramount, both in terms of service life and discharge power, LFP is the appropriate choice. But if there are physical restrictions within the vessel, NMC is the most suitable technology. 
 
-Next, a general mechanical analysis of the vessel is performed.
+
 
 \subsection{Mechanical design considerations}
 
@@ -1170,7 +1083,7 @@ The higher cost is mainly due to the production process of lithium titanate, whi
 	\begin{itemize}
 		\item \textbf{System Price}: $\text{US}\$250-\text{US}\$450$ per kW.
 	\end{itemize}	
-	\item \textbf{Variable Frequency Drives}: AC drives function as the primary interface between the electrical distribution system—whether it be a traditional AC grid or a modern common DC bus—and the three-phase motors that provide mechanical thrus \cite{Radica}. 
+	\item \textbf{Variable Frequency Drives}: AC drives function as the primary interface between the electrical distribution system—whether it be a traditional AC grid or a modern common DC bus—and the three-phase motors that provide mechanical thrust \cite{Radica}. 
 	\begin{itemize}
 		\item \textbf{System Price}: $\text{US}\$120-\text{US}\$250$ per kW.
 	\end{itemize}	
@@ -1347,7 +1260,7 @@ Thus, the following variables are considered in operating expenses.
 
 \subsubsection{a) Fuel Consumption Savings}
 
-The conventional tugboat consumes approximately 1,200 to 2,100 liters of fuel just idling. A hybrid tugboat in electric mode consumes 0 liters in that mode. The batteries allow the load on the main engines to be balanced, thereby improving the specific fuel consumption (BSFC).
+A conventional tugboat consumes approximately several thousand liters of fuel just idling during its daily workday. A hybrid tugboat in electric mode consumes 0 liters in that mode. The batteries allow the load on the main engines to be balanced, thereby improving the specific fuel consumption (BSFC).
 
 \subsubsection{b) Maintenance Engine Reduction}
 
@@ -1355,7 +1268,7 @@ Hybrid tugs can reduce main engine operating hours by up to $60\%$ per year by u
 
 \subsubsection{c) Total Costs}
 
-To calculate operating costs, a fuel cost of $\$0.8$/L will be used, and the annual consumption for both one maneuver and two maneuvers will be averaged. These consumption figures are obtained from section X.
+To calculate operating costs, a fuel cost of $\$0.8$/L will be used, and the annual consumption for both one maneuver and two maneuvers will be averaged. These consumption figures are obtained from section \ref{sec:comphyb}.
 
 
 \begin{table}[H]
