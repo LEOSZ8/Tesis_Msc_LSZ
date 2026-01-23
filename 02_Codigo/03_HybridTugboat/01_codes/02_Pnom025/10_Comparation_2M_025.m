@@ -15,13 +15,16 @@ title("Conventional Tugboat : \newline   6,385 L (17 t CO_2)\newline  ","FontNam
 clear
 clc
 % ht: hybrid tugboat
-ht = [0.50,0.13];
-labels2 = {'\bf 2000 kW - 3650 kW\newline             (80%)','\bf 1000 kW - 2000 kW\newline              (20%)'};
-p = pie(ht,labels2)
+ht = [0.50,0.13,0.37];
+labels2 = {'\bf 2000 kW - 3650 kW\newline             (80%)','\bf 1000 kW - 2000 kW\newline              (20%)','\bf         BESS \newline Total reduction\newline         (37%)'};
+explode = [0,0,1];
+p = pie(ht,explode,labels2)
 set(findobj(p,'type','text'),'FontName','times','FontSize',12)  % THIS LINE ADDED
 p(1).FaceColor=[0.60,0.62,0.58];
 p(3).FaceColor=[0.42 0.68 0.87];
-title("Hybrid Tugboat :\newline4,030 L (10.8 t CO_2)\newline  ","FontName",'Times New Roman','FontSize',18)
+p(5).FaceColor=[0.51 0.87 0.46];
+p(5).EdgeColor=[0.51 0.87 0.46];
+title("  Hybrid Tugboat :\newline4,030 L (10.8 t CO_2)\newline  ","FontName",'Times New Roman','FontSize',18)
 
 
 
