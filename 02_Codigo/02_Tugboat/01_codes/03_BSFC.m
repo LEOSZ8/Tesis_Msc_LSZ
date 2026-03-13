@@ -13,8 +13,8 @@ T = table(BSFC,POU)
 
 stem(POU,BSFC,'-.','LineWidth', 1.5)
 grid on
-ylabel('BSFC (g/kWh)')
-xlabel('Power (kW)')
+ylabel('BSFC [g/kWh]')
+xlabel('Power [kW]')
 ax = gca;
 ax.XAxis.FontSize = 14; % or whatever
 ax.XAxis.FontName = 'Times New Roman';

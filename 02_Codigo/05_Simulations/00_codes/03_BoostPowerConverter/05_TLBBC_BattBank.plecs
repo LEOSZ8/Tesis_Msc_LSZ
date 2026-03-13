@@ -28,7 +28,7 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "tsim=3\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\nV"
+  InitializationCommands "tsim=2\n%% TLBBC Parameters\nVin = 570\nVc1_0 = 0\nV"
 "c2_0 = 0\nD   = 0.55\nLb  = 2e-3\nCurrent_Limit = 100\nfs = 20e3\nTs= 1/fs\n"
 "\n%% Controlador vo\nKp_vo = 0.1\nKi_vo = Kp_vo*89.53\n\n%% BankBatt Paramete"
 "rs\n\n%% Battery cell parameters\nn_series = 20; % Number of series connected"
@@ -82,7 +82,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "33.33"
+        Value         "20"
         Show          off
       }
     }
@@ -120,7 +120,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Time"
-        Value         "2"
+        Value         "1.6"
         Show          off
       }
       Parameter {
@@ -176,7 +176,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 26; 1280, 640]
+        Location      [0, 23; 1280, 637]
         ZoomFactor    1
         SliderPosition [0, 15]
         ShowBrowser   off
@@ -459,7 +459,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "~S1"
+            Value         "S2"
             Show          off
           }
           Parameter {
@@ -483,7 +483,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "~S2"
+            Value         "S3"
             Show          off
           }
           Parameter {
@@ -507,7 +507,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "S2"
+            Value         "S4"
             Show          off
           }
           Parameter {
@@ -531,7 +531,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "~S1"
+            Value         "S2"
             Show          off
           }
           Parameter {
@@ -555,7 +555,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "S2"
+            Value         "S3"
             Show          off
           }
           Parameter {
@@ -579,7 +579,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "~S2"
+            Value         "S4"
             Show          off
           }
           Parameter {
@@ -634,11 +634,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 26; 1283, 705]
+          Location      [0, 23; 1280, 659]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAeAAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAB4AAAABQAP///wAABQMAAAKM"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAB4AAAABQAP///wAABQAAAAJh"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1331,23 +1331,24 @@ Plecs {
           Type          Scope
           Name          "Scope5"
           Show          off
-          Position      [600, 590]
+          Position      [655, 595]
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 26; 1280, 705]
+          Location      [0, 26; 1280, 671]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAUAAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABQAP///wAABQAAAAIm"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABQAAAABQAP///wAABQAAAAJq"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
           HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":178,\"Labels\""
 ":[\"Delta\"],\"VisualIdxs\":[3]}"
-          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-          Axes          "1"
-          TimeRange     "0.0"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          Axes          "2"
+          TimeRange     "0"
           ScrollingMode "1"
           SingleTimeAxis "1"
           Open          "0"
@@ -1355,6 +1356,17 @@ Plecs {
           SampleLimit   "0"
           XAxisLabel    "Time / s"
           ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
           Axis {
             Name          ""
             AutoScale     1
@@ -1382,6 +1394,16 @@ Plecs {
               KeepBaseline  off
               BaselineValue 0
             }
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
           }
         }
         Component {
@@ -1392,11 +1414,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1366, 720]
+          Location      [0, 26; 1280, 680]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAVWAAA"
-"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABSAP///wAABVYAAAKa"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAABVYAAABQAP///wAABQAAAAJz"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1911,25 +1933,6 @@ Plecs {
               }
             }
             Component {
-              Type          LogicalOperator
-              Name          "Logical\nOperator"
-              Show          off
-              Position      [1055, 125]
-              Direction     up
-              Flipped       off
-              LabelPosition south
-              Parameter {
-                Variable      "Operator"
-                Value         "6"
-                Show          off
-              }
-              Parameter {
-                Variable      "Inputs"
-                Value         "2"
-                Show          off
-              }
-            }
-            Component {
               Type          Comparator
               Name          "Comparator"
               Show          off
@@ -1942,7 +1945,7 @@ Plecs {
               Type          TriangleGenerator
               Name          "Triangular Wave1"
               Show          off
-              Position      [910, 250]
+              Position      [920, 285]
               Direction     right
               Flipped       off
               LabelPosition south
@@ -1973,25 +1976,6 @@ Plecs {
               }
             }
             Component {
-              Type          LogicalOperator
-              Name          "Logical\nOperator1"
-              Show          off
-              Position      [1055, 215]
-              Direction     up
-              Flipped       off
-              LabelPosition south
-              Parameter {
-                Variable      "Operator"
-                Value         "6"
-                Show          off
-              }
-              Parameter {
-                Variable      "Inputs"
-                Value         "2"
-                Show          off
-              }
-            }
-            Component {
               Type          Comparator
               Name          "Comparator1"
               Show          off
@@ -2004,7 +1988,7 @@ Plecs {
               Type          Sum
               Name          "Sum"
               Show          off
-              Position      [865, 210]
+              Position      [890, 210]
               Direction     up
               Flipped       off
               LabelPosition south
@@ -2073,7 +2057,7 @@ Plecs {
               }
               Parameter {
                 Variable      "Inputs"
-                Value         "|-+"
+                Value         "|+-"
                 Show          off
               }
               Parameter {
@@ -2102,7 +2086,7 @@ Plecs {
               }
               Parameter {
                 Variable      "Inputs"
-                Value         "|-+"
+                Value         "|+-"
                 Show          off
               }
               Parameter {
@@ -3252,7 +3236,7 @@ Plecs {
               Type          From
               Name          "From21"
               Show          off
-              Position      [1070, 95]
+              Position      [1070, 80]
               Direction     right
               Flipped       off
               LabelPosition south
@@ -3375,7 +3359,7 @@ Plecs {
                 Direction     left
               }
               Schematic {
-                Location      [0, 27; 1366, 689]
+                Location      [0, 26; 1280, 640]
                 ZoomFactor    1.30957
                 SliderPosition [0, 0]
                 ShowBrowser   off
@@ -3637,21 +3621,100 @@ Plecs {
                 }
               }
             }
-            Connection {
-              Type          Signal
-              SrcComponent  "Triangular Wave"
-              SrcTerminal   1
-              Points        [940, 155; 940, 130]
-              DstComponent  "Comparator"
-              DstTerminal   2
+            Component {
+              Type          Scope
+              Name          "Scope"
+              Show          on
+              Position      [840, 35]
+              Direction     up
+              Flipped       off
+              LabelPosition south
+              Location      [0, 26; 1280, 671]
+              State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQA"
+"FoAbwBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcw"
+"AAAAAA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAA"
+"AAAAAAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABQAA"
+"AAJqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP///"
+"/8AAAAAAAAAAA=="
+              SavedViews    "AAAAAgAAAAA="
+              HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":116,\"Labe"
+"ls\":[],\"VisualIdxs\":[]}"
+              PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              Axes          "1"
+              TimeRange     "0.0"
+              ScrollingMode "1"
+              SingleTimeAxis "1"
+              Open          "0"
+              Ts            "-1"
+              SampleLimit   "0"
+              XAxisLabel    "Time / s"
+              ShowLegend    "1"
+              Axis {
+                Name          ""
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Fourier {
+                SingleXAxis       on
+                AxisLabel         "Frequency / Hz"
+                Scaling           0
+                PhaseDisplay      0
+                ShowFourierLegend off
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+              }
             }
-            Connection {
-              Type          Signal
-              SrcComponent  "Triangular Wave1"
-              SrcTerminal   1
-              Points        [940, 250; 940, 220]
-              DstComponent  "Comparator1"
-              DstTerminal   2
+            Component {
+              Type          LogicalOperator
+              Name          "Logical\nOperator1"
+              Show          off
+              Position      [1055, 105]
+              Direction     up
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Operator"
+                Value         "6"
+                Show          off
+              }
+              Parameter {
+                Variable      "Inputs"
+                Value         "2"
+                Show          off
+              }
+            }
+            Component {
+              Type          LogicalOperator
+              Name          "Logical\nOperator8"
+              Show          off
+              Position      [1055, 215]
+              Direction     up
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Operator"
+                Value         "6"
+                Show          off
+              }
+              Parameter {
+                Variable      "Inputs"
+                Value         "2"
+                Show          off
+              }
             }
             Connection {
               Type          Signal
@@ -3712,21 +3775,6 @@ Plecs {
             }
             Connection {
               Type          Signal
-              SrcComponent  "Comparator1"
-              SrcTerminal   3
-              Points        [1020, 215]
-              Branch {
-                Points        [1020, 185]
-                DstComponent  "Logical\nOperator7"
-                DstTerminal   3
-              }
-              Branch {
-                DstComponent  "Logical\nOperator1"
-                DstTerminal   2
-              }
-            }
-            Connection {
-              Type          Signal
               SrcComponent  "vo*"
               SrcTerminal   1
               Points        [165, 110]
@@ -3761,28 +3809,14 @@ Plecs {
               SrcTerminal   3
               Points        [1015, 125]
               Branch {
-                DstComponent  "Logical\nOperator"
+                Points        [1015, 105]
+                DstComponent  "Logical\nOperator1"
                 DstTerminal   2
               }
               Branch {
-                Points        [1015, 105]
-                DstComponent  "Logical\nOperator4"
-                DstTerminal   3
+                DstComponent  "Logical\nOperator6"
+                DstTerminal   2
               }
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "Logical\nOperator"
-              SrcTerminal   1
-              DstComponent  "Logical\nOperator6"
-              DstTerminal   2
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "Logical\nOperator1"
-              SrcTerminal   1
-              DstComponent  "Logical\nOperator9"
-              DstTerminal   3
             }
             Connection {
               Type          Signal
@@ -3804,36 +3838,6 @@ Plecs {
               SrcTerminal   1
               DstComponent  "Sum2"
               DstTerminal   2
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "awPI_Ib"
-              SrcTerminal   1
-              Points        [755, 120]
-              Branch {
-                DstComponent  "Sum1"
-                DstTerminal   2
-              }
-              Branch {
-                Points        [755, 210]
-                DstComponent  "Sum"
-                DstTerminal   2
-              }
-            }
-            Connection {
-              Type          Signal
-              SrcComponent  "awPI_DetlaVc"
-              SrcTerminal   1
-              Points        [835, 260]
-              Branch {
-                Points        [865, 260]
-                DstComponent  "Sum"
-                DstTerminal   3
-              }
-              Branch {
-                DstComponent  "Sum1"
-                DstTerminal   3
-              }
             }
             Connection {
               Type          Signal
@@ -3922,7 +3926,7 @@ Plecs {
               Type          Signal
               SrcComponent  "From21"
               SrcTerminal   1
-              Points        [1085, 95]
+              Points        [1085, 80; 1085, 95]
               Branch {
                 DstComponent  "Logical\nOperator4"
                 DstTerminal   2
@@ -3975,13 +3979,96 @@ Plecs {
               DstComponent  "Sw4"
               DstTerminal   1
             }
+            Connection {
+              Type          Signal
+              SrcComponent  "Triangular Wave"
+              SrcTerminal   1
+              Points        [940, 155; 940, 130]
+              DstComponent  "Comparator"
+              DstTerminal   2
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "Triangular Wave1"
+              SrcTerminal   1
+              Points        [940, 220]
+              DstComponent  "Comparator1"
+              DstTerminal   2
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "awPI_DetlaVc"
+              SrcTerminal   1
+              Points        [835, 260]
+              Branch {
+                DstComponent  "Sum1"
+                DstTerminal   3
+              }
+              Branch {
+                Points        [890, 260]
+                DstComponent  "Sum"
+                DstTerminal   3
+              }
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "Comparator1"
+              SrcTerminal   3
+              Points        [1020, 215]
+              Branch {
+                Points        [1020, 185]
+                DstComponent  "Logical\nOperator7"
+                DstTerminal   3
+              }
+              Branch {
+                DstComponent  "Logical\nOperator8"
+                DstTerminal   2
+              }
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "awPI_Ib"
+              SrcTerminal   1
+              Points        [765, 120]
+              Branch {
+                Points        [765, 35]
+                DstComponent  "Scope"
+                DstTerminal   1
+              }
+              Branch {
+                Points        [800, 120]
+                Branch {
+                  DstComponent  "Sum1"
+                  DstTerminal   2
+                }
+                Branch {
+                  Points        [800, 210]
+                  DstComponent  "Sum"
+                  DstTerminal   2
+                }
+              }
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "Logical\nOperator1"
+              SrcTerminal   1
+              DstComponent  "Logical\nOperator4"
+              DstTerminal   3
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "Logical\nOperator8"
+              SrcTerminal   1
+              DstComponent  "Logical\nOperator9"
+              DstTerminal   3
+            }
             Annotation {
               Name          "<html><body>\n<p>delta_d</p></body></html>"
               Position      [785, 250]
             } 
             Annotation {
               Name          "<html><body>\n<p>d</p></body></html>"
-              Position      [785, 110]
+              Position      [800, 95]
             } 
           }
         }
@@ -4061,6 +4148,129 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Voltmeter
+          Name          "Vm5"
+          Show          off
+          Position      [485, 250]
+          Direction     up
+          Flipped       off
+          LabelPosition west
+        }
+        Component {
+          Type          Goto
+          Name          "Goto9"
+          Show          off
+          Position      [520, 250]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "vab"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From13"
+          Show          off
+          Position      [600, 600]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "vab"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ammeter
+          Name          "Am3"
+          Show          off
+          Position      [510, 300]
+          Direction     left
+          Flipped       off
+          LabelPosition south
+        }
+        Component {
+          Type          Scope
+          Name          "IPrChr1"
+          Show          on
+          Position      [575, 280]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Location      [0, 26; 1283, 759]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACK/wCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAMAAAAisAAABoAP///wAAAAMAAAUDAAA"
+"AYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMAAAJc"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":177,\"Labels\""
+":[\"Mean\"],\"VisualIdxs\":[8]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
         Connection {
           Type          Wire
           SrcComponent  "IGBTD1"
@@ -4071,17 +4281,20 @@ Plecs {
             DstTerminal   2
           }
           Branch {
+            DstComponent  "Am3"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Vm2"
+          SrcTerminal   2
+          Points        [645, 300]
+          Branch {
             Points        [545, 300]
             Branch {
-              Points        [645, 300]
-              Branch {
-                DstComponent  "Vm2"
-                DstTerminal   2
-              }
-              Branch {
-                DstComponent  "Vm3"
-                DstTerminal   1
-              }
+              DstComponent  "Am3"
+              DstTerminal   2
             }
             Branch {
               DstComponent  "C1"
@@ -4092,22 +4305,26 @@ Plecs {
               DstTerminal   1
             }
           }
+          Branch {
+            DstComponent  "Vm3"
+            DstTerminal   1
+          }
         }
         Connection {
           Type          Wire
-          SrcComponent  "IGBTD3"
-          SrcTerminal   2
-          Points        [545, 420]
+          SrcComponent  "Vout-"
+          SrcTerminal   1
+          Points        [745, 420]
           Branch {
             Points        [645, 420]
             Branch {
-              Points        [745, 420]
+              Points        [545, 420]
               Branch {
-                DstComponent  "Vout-"
-                DstTerminal   1
+                DstComponent  "IGBTD3"
+                DstTerminal   2
               }
               Branch {
-                DstComponent  "Vm6"
+                DstComponent  "C2"
                 DstTerminal   2
               }
             }
@@ -4117,7 +4334,7 @@ Plecs {
             }
           }
           Branch {
-            DstComponent  "C2"
+            DstComponent  "Vm6"
             DstTerminal   2
           }
         }
@@ -4207,34 +4424,34 @@ Plecs {
         }
         Connection {
           Type          Wire
-          SrcComponent  "Vm4"
+          SrcComponent  "Vin+"
           SrcTerminal   1
-          Points        [135, 225]
+          Points        [70, 225]
           Branch {
-            Points        [70, 225]
+            Points        [135, 225]
             Branch {
-              DstComponent  "Vin+"
+              DstComponent  "Vm4"
               DstTerminal   1
             }
             Branch {
-              Points        [70, 125]
-              DstComponent  "R4"
-              DstTerminal   2
+              DstComponent  "Am1"
+              DstTerminal   1
             }
           }
           Branch {
-            DstComponent  "Am1"
-            DstTerminal   1
+            Points        [70, 125]
+            DstComponent  "R4"
+            DstTerminal   2
           }
         }
         Connection {
           Type          Wire
-          SrcComponent  "Vm4"
-          SrcTerminal   2
+          SrcComponent  "Vin-"
+          SrcTerminal   1
           Points        [135, 355]
           Branch {
-            DstComponent  "Vin-"
-            DstTerminal   1
+            DstComponent  "Vm4"
+            DstTerminal   2
           }
           Branch {
             DstComponent  "S3"
@@ -4385,6 +4602,11 @@ Plecs {
             DstComponent  "IGBTD3"
             DstTerminal   1
           }
+          Branch {
+            Points        [485, 355]
+            DstComponent  "Vm5"
+            DstTerminal   2
+          }
         }
         Connection {
           Type          Wire
@@ -4397,6 +4619,11 @@ Plecs {
           }
           Branch {
             DstComponent  "IGBTD"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [485, 225]
+            DstComponent  "Vm5"
             DstTerminal   1
           }
         }
@@ -4473,6 +4700,28 @@ Plecs {
           SrcTerminal   3
           Points        [420, 85]
           DstComponent  "IPrChr"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From13"
+          SrcTerminal   1
+          DstComponent  "Scope5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm5"
+          SrcTerminal   3
+          DstComponent  "Goto9"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Am3"
+          SrcTerminal   3
+          Points        [510, 280]
+          DstComponent  "IPrChr1"
           DstTerminal   1
         }
       }
@@ -7455,7 +7704,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Po [kW]2"
       Show          off
-      Position      [550, 260]
+      Position      [550, 345]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7469,7 +7718,7 @@ Plecs {
       Type          Gain
       Name          "Gain"
       Show          off
-      Position      [600, 260]
+      Position      [600, 345]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7503,7 +7752,7 @@ Plecs {
       Type          Display
       Name          "Po [kW]"
       Show          on
-      Position      [675, 260]
+      Position      [675, 345]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -7580,10 +7829,10 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "Load 50kW"
+      SrcComponent  "TLBBC"
       SrcTerminal   2
       Points        [635, 220]
-      DstComponent  "TLBBC"
+      DstComponent  "Load 50kW"
       DstTerminal   2
     }
   }

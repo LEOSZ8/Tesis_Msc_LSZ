@@ -110,19 +110,22 @@ Based on equation \ref{eq:Voc}, its parameters are described in Table \ref{tab:S
 
 \subsection{Model simulation}
 
-The objective of the parameters shown in Table \ref{tab:Shepherd_zero} is to modify the different areas of the curve provided by the mathematical model so that it matches the curve provided by the manufacturer. In this way, the parameters obtained and the manually adjusted parameters are shown.
+The objective of the parameters shown in Table \ref{tab:Shepherd_zero} is to modify the different areas of the curve provided by the mathematical model so that it matches the curve provided by the manufacturer. In this way, the manually adjusted parameters are shown.
 
 \begin{table}[H]
 \centering
-\caption{Parameters of the classic and adjusted Shepherd model for a battery cell.}
+\caption{Parameters of adjusted Shepherd model for a battery cell.}
 \label{tab:ParamsBatt}
-\begin{tabular}{c|p{20mm}|p{20mm}}\hline
-Parameters& Classic Shepherd parameter value & Adjusted Sheperd parameter value\\ \hline \hline 
-A& -[V]& 1.44[V]\\
-B & -[$Ah^{-1}$] & 3[$Ah^{-1}$]\\
-K & -[V]& 0.0051[V]\\
-$E_0$ & -[V]& 39.25[V]\\
-\hline \hline
+\begin{tabular}{|c|c|}\hline
+Parameters & Adjusted Sheperd parameter value\\ \hline \hline 
+A & 1.44[V]\\
+\hline
+B & 3[$Ah^{-1}$]\\
+\hline
+K & 0.0051[V]\\
+\hline
+$E_0$ & 39.25[V]\\
+\hline 
 \end{tabular}
 \end{table}
 
@@ -280,7 +283,9 @@ The electrical performance of the large battery bank shows that, for the maneuve
 
 The performance of the battery bank for regulating a 1,000[V] DC bus is analyzed below. To do this, the operation of several power converters connected in parallel to the battery pack is analyzed, as well as their electrical performance in regulation.
 
-The proposed implementation for the power converters is shown in Figure \ref{fig:TLBBC bank}. The proposal to use this power converter is related to the fact that, having more than two levels, there is less electrical stress on the internal components of this converter \cite{CR7}, which could extend the useful life of this converter and even the useful life of the hybrid vessel. The maximum stable operating power is achieved for both the small and large battery banks, as shown in Table 	\ref{tab:Energy_banks}. The performance of an individual power module will be analyzed, as well as the performance of the set of power modules that enable the DC-DC converter connected to the battery pack to be implemented.\\
+The proposed implementation for power converters is shown in Figure \ref{fig:TLBBC bank}. The proposal to use this power converter is related to the fact that it can operate with more than two levels, which means less electrical stress on the internal components of this converter \cite{CR7}, extending its service life and even the service life of the hybrid propulsion system. The maximum stable operating power is achieved for both small and large battery banks, as shown in Table \ref{tab:Energy_banks}. The performance of an individual power module will be analyzed, as well as the performance of the set of power modules that enable the implementation of the DC-DC converter connected to the battery pack.
+
+The performance of an individual power module will be analyzed, as well as the performance of the set of power modules that enable the DC-DC converter connected to the battery pack to be implemented.\\
 
 The power module chosen is a TLBBC, which is explained in Appendix \ref{sec:TLBBC}.
 

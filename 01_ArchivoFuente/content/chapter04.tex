@@ -101,7 +101,7 @@ Peukert's Law ($C_p = I^k t$) describes how the available capacity of a battery 
 To calculate this factor, an initial ${C}_{rate}$ can be made based on the required energy ${E}_{load}$ and the service power ${P}_{service}$ using the following formula \cite{MAN}:
 
 \begin{equation}
-{C}_{rate}[{h}^{-1}]=\frac{{E}_{load}[kWh]}{{P}_{service}[kWh]}
+{C}_{rate}[{h}^{-1}]=\frac{{E}_{load}[kWh]}{{P}_{service}[kW]}
 \end{equation}
 
 This provides an approximation of the ${C}_{rate}$ to determine the value of the $k_{c-rate}$ factor.
@@ -156,7 +156,7 @@ Based on the information shown in Figures \ref{fig:1M_HybTug_releff_015}, \ref{f
 
 \begin{table}[H]
 	\centering
-	\caption{Comparison of Propulsion Systems in Tugboats and Performance.}
+	\caption{Calculation procedure used to determine the installed capacity of each BESS (small BESS and large BESS).}
 	\label{tab:Energy_banks}
 	\begin{tabular}{|c|c|c|}
 		\hline      
@@ -250,7 +250,7 @@ LFP (LiFePO\textsubscript{4}) is rapidly gaining market share in the maritime se
 
 \subsection{Lithium Titanate Oxide (LTO)}
 
-Lithium titanate batteries (Li\textsubscript{4}Ti\textsubscript{5}O\textsubscript{12}) are the only ones with a unique anode surface made from lithium and titanium oxides. These batteries for electric boats, also known as LTO batteries, operate in extreme weather conditions, offering greater safety \cite{Sunreef}.
+Lithium titanate batteries (Li\textsubscript{4}Ti\textsubscript{5}O\textsubscript{12}) are the only ones with a unique anode surface made from lithium and titanium oxides. These batteries, also known as LTO batteries, operate in extreme weather conditions, offering greater safety \cite{Sunreef}.
 
 \begin{itemize}
 	\item \textbf{Performance}: One of the main advantages of LTO is its high C-rate capacity (i.e., high maximum power) \cite{Echandia}. It offers exceptional service life (more than 10,000 cycles) \cite{evlithium}.
@@ -917,7 +917,12 @@ Thus, the mechanical parameters of the vessel are presented below in Table \ref{
 	\end{tabular}
 \end{table}
 
-It is necessary to take into account the volume and weight of the main generator presented in section \ref{sec:FSM}, in order to consider the available space and the weight allowed for the installation of the batteries. These values are presented in table \ref{tab:VW_MTU_16V_4000}.
+It is necessary to take into account the volume and weight of several elements inside the hibrid propulsion system, regardless of whether you consider installing a small or large battery bank. Between these common elements are:
+\begin{itemize}
+\item The main generator presented in section \ref{sec:FSM}.
+\item Reduction gearbox, to connect the diesel engine with the electric motor.
+\end{itemize}
+This takes into account the minimum weight and volume considered for the hybrid powertrain. These values are presented in table \ref{tab:VW_MTU_16V_4000}.
 
 \begin{table}[H]
 	\centering
@@ -932,27 +937,109 @@ It is necessary to take into account the volume and weight of the main generator
 	\end{tabular}
 \end{table}
 
-In this way, Table \ref{tab:VW_BankBatt} shows the available space and the permitted weight for the designed battery bank.
+
+Finally, we consider the pair of reduction gearboxes, each of which connects an electric motor in parallel with a diesel engine, with a power output of 3.5 MW.
 
 \begin{table}[H]
 	\centering
-	\caption{Permitted dimensions inside the vessel.}
-	\label{tab:VW_BankBatt}
+	\caption{Estimated mechanical parameters of a pair of gearbox (up to 4MW)\cite{Reintjes}.}
+	\label{tab:VW_gearbox}
 	\begin{tabular}{|c|c|}
 		\hline
-		\rule{0pt}{8pt} \textbf{Allowed weight [kg]} & \textbf{Available space [${\text{m}}^{3}$]} \\
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
 		\hline
-		\rule{0pt}{8pt} 210,950 & 217.88  \\
+		\rule{0pt}{8pt} 17,000 & 10.9 \\
 		\hline
 	\end{tabular}
 \end{table}
 
-In this way, battery banks of different technologies that could be mechanically enabled for incorporation into the vessel are identified. Options that account for less than $10\%$ of the vessel's capacity are highlighted in green (Table \ref{tab:VW_BankBatt}), while technologies that, given their technical characteristics, do not qualify as solutions are highlighted in red. This is shown in Table \ref{tab:VW_techbatts} and \ref{tab:VW_techbatts_025}.
+In this way, Table \ref{tab:VW_BankBatt} shows the available space and the permitted weight for the designed battery bank.
+
+\begin{table}[H]
+	\centering
+	\caption{Dimensiones available for the rest of the hybrid powertrain.}
+	\label{tab:VW_BankBatt}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Allowed gross weight [kg]} & \textbf{Available gross space [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 193,950 & 206.99  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Small BESS}
+
+It is necessary to take into account the mechanical aspects related to extra elements of the hybrid powertrain, considering the small battery bank, given that the electrical requirements for these elements are different from the electrical elements for the small battery bank.
+
+In this case, it will be considered:
+
+\begin{itemize}
+\item Pair of power inverters (0.3 MW each).
+\item Pair of drives por electric motors (0.3 MW each).
+\item Pair of electric motors (0.3 MW each).
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of power inverters (0.3MW) \cite{ABBDrives_0}.}
+	\label{tab:VW_power_inverters_I}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 200 & 0.21 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of power drives (0.3MW) \cite{ABBDrives_0}.}
+	\label{tab:VW_power_drives_I}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 200 & 0.21 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of electric motors (0.3MW) \cite{ABBDrives_motors}.}
+	\label{tab:VW_electric_motors_I}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 3,700 & 1.85 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In this way, the weight and space available for incorporating the battery pack are calculated.
+
+\begin{table}[H]
+	\centering
+	\caption{Available Dimensions for the small BESS.}
+	\label{tab:VW_BankBatt_I}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Allowed net weight [kg]} & \textbf{Available net space [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 189,850 & 204.72  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In this way, small battery banks of different technologies that could be mechanically enabled for incorporation into the vessel are identified. Options that account for less than $10\%$ of the vessel's capacity are highlighted in green (Table \ref{tab:VW_BankBatt_I}), while technologies that, given their technical characteristics, do not qualify as solutions are highlighted in red. This is shown in Table \ref{tab:VW_techbatts_015}.
 
 \begin{table}[H]
 	\centering
 	\caption{Physical aspects of technologies (small battery banks).}
-	\label{tab:VW_techbatts}
+	\label{tab:VW_techbatts_015}
 	\begin{tabular}{|c|c|c|}
 		\hline
 		\multicolumn{3}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
@@ -980,6 +1067,107 @@ In this way, battery banks of different technologies that could be mechanically 
 	\end{tabular}
 \end{table}
 
+Finally, the weight and volume of the hybrid propulsion system are identified (without considering azimuth propellers), taking into account only the small BESS options that are feasible for integration into the ship and considering the physical aspects of the diesel engines of the propulsion system provided in Table \ref{tab:VW_Cat3516B}.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated dimensiones  for the hybrid powertrain (considering small BESS options).}	\label{tab:VW_HybPowerTrain_SmallBESS}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
+		 \hline
+		 \textbf{ABL-012010P} &  48,848[kg]  & 35.27[${\text{m}}^{3}$] \\
+		 \hline	
+		 \textbf{ABL-012030P} & 46,555[kg]  & 32.62[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{E4050T1} & 33,293[kg] & 51.93[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 
+		 \textbf{URB1270} &  59,060[kg]  &  50.09[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{PSL-SC-12500} & 58,027[kg]  & 48.55[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{U27-36XP} & 57,452[kg]  & 41.1[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 \textbf{SLB08115L140} & 130,150[kg] & 216.5 [${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{ELB 1500mAh LTO} & 65,935[kg]  & 36.97[${\text{m}}^{3}$] \\
+		 \hline	
+	\end{tabular}
+\end{table}
+
+\subsubsection{Large BESS}
+
+As was done previously, it is necessary to take into account the mechanical aspects related to extra elements of the hybrid powertrain, considering now the large battery bank, given that the electrical requirements for these elements are different from the electrical elements for the small battery bank.
+
+In this case, it will be considered:
+
+\begin{itemize}
+\item Pair of power inverters (0.5 MW each).
+\item Pair of drives por electric motors (0.5 MW each).
+\item Pair of electric motors (0.5 MW each).
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of power inverters (0.5MW) \cite{ABBDrives}.}
+	\label{tab:VW_power_inverters}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 1,900 & 3.27 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of power drives (0.5MW) \cite{ABBDrives}.}
+	\label{tab:VW_power_drives}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 1,900 & 3.27 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated mechanical parameters of a pair of electric motors (0.5MW) \cite{W50}.}
+	\label{tab:VW_electric_motors}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Weight [kg]} & \textbf{Volume [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 6,560 & 3.91 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In this way, the weight and space available for incorporating the battery pack are calculated.
+
+\begin{table}[H]
+	\centering
+	\caption{Available dimensions for the large BESS.}
+	\label{tab:VW_BankBatt_II}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rule{0pt}{8pt} \textbf{Allowed net weight [kg]} & \textbf{Available net space [${\text{m}}^{3}$]} \\
+		\hline
+		\rule{0pt}{8pt} 183,590 & 196.54  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Large battery banks of different technologies are identified. Options that account for less than $10\%$ of the vessel's capacity are highlighted in green (Table \ref{tab:VW_BankBatt_II}), while technologies that, given their technical characteristics, do not qualify as solutions are highlighted in red. This is shown in Table \ref{tab:VW_techbatts_025}.
+
+
 \begin{table}[H]
 	\centering
 	\caption{Physical aspects of technologies (large battery banks).}
@@ -992,7 +1180,7 @@ In this way, battery banks of different technologies that could be mechanically 
 		 \hline
 		 \textbf{ABL-012010P} &  40,034[kg]  & 25.75[${\text{m}}^{3}$] \\
 		 \hline	
-		 \textbf{ABL-012030P} & 36,779[kg]  & \cellcolor[HTML]{81DE76}19.73[${\text{m}}^{3}$] \\
+		 \textbf{ABL-012030P} & 36,779[kg]  & 19.73[${\text{m}}^{3}$] \\
 		 \hline
 		 \textbf{E4050T1} & \cellcolor[HTML]{81DE76}7,096[kg] & 28.11[${\text{m}}^{3}$] \\
 		 \hline\hline
@@ -1009,6 +1197,36 @@ In this way, battery banks of different technologies that could be mechanically 
 		 \textbf{SLB08115L140} &  {\cellcolor[HTML]{CC444B}} \textcolor{white}{225,000[kg]}  & {\cellcolor[HTML]{CC444B}} \textcolor{white}{433.54[${\text{m}}^{3}$]} \\
 		 \hline
 		 \textbf{ELB 1500mAh LTO} & 80,505[kg]  & 29.59[${\text{m}}^{3}$] \\
+		 \hline	
+	\end{tabular}
+\end{table}
+
+
+Finally, as was done previously, the weight and volume of the hybrid propulsion system are identified (without considering azimuth propellers), taking into account only the large BESS options that are feasible for integration into the ship and considering the physical aspects of the diesel engines of the propulsion system provided in Table \ref{tab:VW_Cat3516B}.
+	
+\begin{table}[H]
+	\centering
+	\caption{Estimated dimensiones  for the hybrid powertrain (considering large BESS options).}	\label{tab:VW_HybPowerTrain_LargeBESS}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{Battery Bank $25\%$ ${\text{P}}_{\text{nom}}$} \\
+		\hline\hline
+		 &  $\text{m}_{bp}$ & $\text{vol}_{bp}$\\
+		 \hline
+		 \textbf{ABL-012010P} &  103,944[kg]  & 91.71[${\text{m}}^{3}$] \\
+		 \hline	
+		 \textbf{ABL-012030P} & 100,689[kg]  & 85.69[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{E4050T1} & 71,006[kg] & 94.07[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 
+		 \textbf{URB1270} &  128,870[kg]  &  124.01[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{PSL-SC-12500} & 125,984[kg]  & 121.06[${\text{m}}^{3}$] \\
+		 \hline
+		 \textbf{U27-36XP} & 125,620[kg]  & 105.04[${\text{m}}^{3}$] \\
+		 \hline\hline
+		 \textbf{ELB 1500mAh LTO} & 144,415[kg]  & 95.55[${\text{m}}^{3}$] \\
 		 \hline	
 	\end{tabular}
 \end{table}
@@ -1150,7 +1368,7 @@ Tables \ref{tab:Cost1} and \ref{tab:Cost2} show the total cost obtained for the 
 
 \begin{table}[H]
 	\centering
-	\caption{BESS implementation costs, without taxes or subsides (small bank).}
+	\caption{BESS implementation costs, without taxes or subsides (large bank).}
 	\label{tab:Cost2}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -1470,7 +1688,7 @@ This provides the net present values for each technology and for each battery ba
 	\end{tabular}
 \end{table}
 
-Tables \ref{tab:van1} and \ref{tab:van2} show that for a small battery bank, the project is economically viable for all technologies over a short period of time. This contrasts with the large battery bank, where only LFP technology is viable, NMC is viable over a period of 15 years, and LTO is not viable in any of the proposed periods.
+Tables \ref{tab:van1} and \ref{tab:van2} show that, for a small battery bank, only NMC technology makes the project unfeasible within a 10-year period. The rest of the technologies show viability for installation within all the periods mentioned. This contrasts with the large battery bank, where only LFP technology has the highest viability, with NMC being unviable and LTO viable only within a 20-year period.
 
 The case is also analyzed in terms of how it is affected by emissions taxes and government grants, effects that can be applied jointly or separately. This information is provided in Appendix \ref{sec:tax}, Appendix \ref{sec:grant}, and Appendix \ref{sec:tax_grant}. 
 

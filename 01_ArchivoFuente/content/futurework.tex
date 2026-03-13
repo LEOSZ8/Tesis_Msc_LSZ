@@ -1,8 +1,16 @@
 \chapter{Future Work}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/Appendix/TLBBC_mejora.jpg}
+    \caption{Changes in the selection of the firing logic for the upper and lower phases of the TLBBC converter.}
+    \label{fig:TLBBC_m}
+\end{figure}
+
 Based on the methodology presented in this paper, it is proposed as future work:
 
 \begin{itemize}
+	\item As shown in Figure \ref{fig:TLBBC_m}, it is proposed to change the switching logic of the TLBBC converter to achieve not only two levels, but three voltage levels through LS-PWM modulation, which reduces the voltage on the power switches and increases their service life. Three-level switching can be interpreted as a vertical interleaving of the two bridges \cite{Eull}. This is considered essential to ensure that these power converters do not need to be replaced.
 	\item Model the other internal elements of the hybrid powertrain to ultimately obtain a simulated model of the propulsion system that allows different load profiles to be tested.
 	\item Based on the information provided in this paper, related to technical and economic aspects, the aim is to work on an optimization function that incorporates information from all these areas and allows us to identify the best battery alternatives, optimizing variables such as project cost, number of cells, available space, etc.
 	\item The complexity of the battery bank model can be increased by adding dynamics that provide a better understanding of performance when a more detailed load profile is obtained, not only in terms of hours but also in terms of minutes or seconds.

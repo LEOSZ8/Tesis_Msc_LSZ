@@ -31,6 +31,8 @@
 M. B. Othman, N. P. Reddy, P. Ghimire, M. K. Zadeh, A. Anvari-Moghaddam and J. M. Guerrero, ``A Hybrid Power System Laboratory: Testing Electric and Hybrid Propulsion," in IEEE Electrification Magazine, vol. 7, no. 4, pp. 89-97, Dec. 2019.
 
 
+\bibitem{protea} 
+``IMO Postpones Adoption Of Global Net-Zero Shipping Framework", www.protea.ltd.uk.
 
 \bibitem{DNV2025}
 DNV, ``Energy Transition Outlook 2025 - Maritime Forecast to 2025, A deep dive into shipping's decarbonization journey", 2025
@@ -132,6 +134,9 @@ Murimar, ``Remolcadores, elemento clave en la logística marítima", [Online]: \
 \bibitem{IngeMarino}
 Ingeniero Marino, ``Remolcador",[Online]: \hyperlink{https://ingenieromarino.com/remolcadores/}{https://ingenieromarino.com}
 
+\bibitem{inter}
+``El remolcador ASD presenta hélices Schottel Rudder y una solución híbrida mecánica", www.interempresas.net
+
 \bibitem{Algeciras}
 Algeciras al minuto.es,``Los remolcadores del puerto de Algeciras denuncian la excesiva carga de trabajo",[Online]: \hyperlink{https://www.algecirasalminuto.es/puerto/los-remolcadores-del-puerto-de-algeciras-denuncian-la-excesiva-carga-de-trabajo/}{https://www.algecirasalminuto.es} 
 
@@ -173,7 +178,8 @@ Discover Boating, ``What Is a Boat Beam and Why Is It Important?", [Online]: \hy
 Marine Rubber Fender, ``Difference between Gross Tonnage, Net Tonnage, and Deadweight Tonnage". [Online]: \hyperlink{https://www.chinarubberfender.com/difference-between-gross-tonnage-net-tonnage-and-deadweight-tonnage/}{https://www.chinarubberfender.com} 
 
 \bibitem{Britannica}
-Britannica, ``Cars and Other Vehicles: Tonnage", [Online]: \hyperlink{https://www.britannica.com/technology}{https://www.britannica.com}
+A. F. Molland, ``Ship Resistance and Propulsion: Practical Estimation of Ship Propulsive Power." 
+
 
 \bibitem{Gokay}
 G. Çakıroğlu, B. Sener, A. Balin, ``Applying a fuzzy-ahp for the selection of a suitable tugboat based on propulsion system type". Brodogradnja. 69. 1-13. 10.21278/brod69401, 2018. 
@@ -183,6 +189,16 @@ Shiphandling for Professionals, ``Types of Tugs", [Online]: \hyperlink{https://w
 
 \bibitem{yachtbuyer}
 Yacht Buyer, ``Horsepower vs Brake Horsepower (hp vs bhp): What’s the Difference?", [Online]: \hyperlink{https://www.yachtbuyer.com/en/advice/horsepower-vs-brake-horsepower-hp-vs-bhp-n-whatrs-the-difference}{https://www.yachtbuyer.com}
+
+\bibitem{Reusser2}
+C. A. Reusser, M. Perez and J. Perez, "Ship‘s PTO / PTI Torque Field Oriented Control scheme, with optimization strategy, for EEDI index improvement," 2018 IEEE International Conference on Electrical Systems for Aircraft, Railway, Ship Propulsion and Road Vehicles $\&$ International Transportation Electrification Conference (ESARS-ITEC), Nottingham, UK, 2018, pp. 1-6.
+
+\bibitem{MEPC}
+MEPC.212(63) Annex 8 - 2012 Guidelines on the Method of Calculation of the Attained EEDI for New Ships. In: ORGANIZATION, I.M. (ed.).
+
+\bibitem{lgc}
+``Density, Diesel (Nominal: 0.8375 g/mL at 15°C)", www.lgcstandards.com
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter3 %%%%%%%%%%%%%%%%%%%%%
 
@@ -286,6 +302,22 @@ Sunreef Yachts,``High-Performance Electric Boat Batteries for Smooth, Silent Sai
 Bonnen, ``LFP Battery vs NMC Battery",
 [Online]: \hyperlink{https://www.bonnenbatteries.com/lfp-battery-vs-nmc-battery-choosing-the-right-battery-for-your-electric-boat/}{https://www.bonnenbatteries.com}
 
+\bibitem{ABBDrives_0}
+ABB, ``ACS880, single drives 0.55 to 6000 kW".
+
+\bibitem{ABBDrives_motors}
+ABB, ``Low Voltage, Process performance motors 400 V 50 Hz, 460 V 60 Hz".
+
+\bibitem{W50}
+WEG, ``Motor Eléctrico Trifásico
+Catálogo Técnico - Mercado Latinoamericano".
+
+\bibitem{ABBDrives}
+ABB, ``ACS880-07 drives (45 to 710kW, 50to 700CV), Manual de Hardware".
+
+\bibitem{Reintjes}
+Reintjes, ``Product Guide 2025, Marine".
+
 \bibitem{MAN2}
 MAN Energy Solutions, ``Hybrid power workboats, a holisticapproach for better CAPEX", 2018.
 
@@ -324,6 +356,11 @@ Z. Zhang, Z. Zhang, S. Xie and C. Yang, ``A control strategy for paralleled bi-d
 
 \bibitem{sensata}
 B. Munari, A. Schneer, ``How to design a precharge circuit for hybrid and eectric vehicle applications",Technical white paper, Sensata Technologies.
+
+\bibitem{Eull}
+M. Eull and M. Preindl, "Bidirectional three-level DC-DC converters: Sum-difference modeling and control," 2017 IEEE Transportation Electrification Conference and Expo (ITEC), Chicago, IL, USA, 2017, pp. 573-578.
+
+
 
 %%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%
 
