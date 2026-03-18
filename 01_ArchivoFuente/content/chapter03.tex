@@ -1,50 +1,50 @@
 \chapter{Hybrid Tugboats: Requirements and Performance}
 
-This chapter presents the fundamental concepts associated with tugboat hybridization, its most common technological configurations, and the operational benefits associated with the incorporation of battery banks. The objective is to establish the theoretical and technical basis for the design process carried out in subsequent chapters.
+This chapter presents the fundamental concepts associated with tugboat hybridization, its most common technological configurations, and the operational benefits associated with the integration of battery banks. The objective is to establish the theoretical and technical basis for the design process carried out in subsequent chapters.
 
-Given the intermittent nature of the load profile and the dependence on diesel engines, which are oversized for low-load tasks, the implementation of the hybrid energy storage system proposed in this thesis is analyzed.
+Given the intermittent nature of the load profile and the dependence on diesel propulsion engines, which are oversized for low-load operation, the implementation of the battery energy storage system (BESS) proposed in this thesis is analyzed.
 
 \section{General Power Sources and Energy Storage System}
 
-In general, the hybrid tugboat relies on a triad of power sources:
+In general, the hybrid tugboat relies on differents power sources:
 \begin{itemize}
-	\item Main Propulsion Engines,
-	\item Auxiliary Generators,
+	\item Diesel propulsion engines,
+	\item Diesel generators (gensets),
 	\item Battery Energy Storage System (BESS).
 \end{itemize}
 
-The functions of these components have changed significantly compared to conventional designs, and the aim is to contribute to both propulsion and hotel loads.
+The functions of these power sources have changed significantly compared to conventional designs, and the aim is to contribute to both propulsion and hotel loads.
 
-\subsection{Main Propulsion Diesel Engines}
+\subsection{Diesel Propulsion Engines}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/chapter03/MainPropDieselEngine2.pdf}
-    \caption{Main diesel engine used in hybrid vessels.}
+    \caption{Diesel propulsion engine used in hybrid tugboats.}
     \label{fig:MainDieselengine2}
 \end{figure}
-In hybrid vessels, the main engines are only started when high power is actually needed, as the electric motor handles low-speed maneuvers and idling. This reduces their operating hours, which increases their operational efficiency and reduces their emissions \cite{MAN} \cite{Jayaram}.
+In hybrid tugboats, the diesel propulsion engines are only started when high power is actually needed, as the electric motor handles low-speed maneuvers and idling. This reduces their operating hours, which increases their operational efficiency and reduces their emissions \cite{MAN} \cite{Jayaram}.
 
-As shown in Figure \ref{fig:MainDieselengine2}, The mechanical connection via a reduction gearbox allows an electric motor to be coupled \cite{Bas} \cite{MAN}, enabling the main diesel engine to transmit its full rated power to the shaft, complementing the work of the electric motor. \cite{Jayaram}.
+As shown in Figure \ref{fig:MainDieselengine2}, the mechanical connection via a reduction gearbox allows an electric motor to be coupled \cite{Bas} \cite{MAN}, which allows the electric motor to transmit its full rated power to the propeller, complementing the work of the diesel propulsion engine \cite{Jayaram}.
 
-\subsection{Auxiliary Diesel Generators}
+\subsection{Diesel Generator(Genset)}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{images/chapter03/AuxGenSet.pdf}
-    \caption{Main generator inside a hybrid vessel.}
+    \includegraphics[width=0.5\linewidth]{images/chapter03/AuxGenSet.jpg}
+    \caption{Genset inside a hybrid vessel.}
     \label{fig:AuxGenSet}
 \end{figure}
 
-In a conventional tugboat, auxiliary generators (generator sets) power the ship's service loads \cite{SKSul}. In a hybrid tugboat, they can play a role in both powering the hotel loads and taking over propulsion. 
+In a conventional tugboat, gensets power the ship's service and hotel loads \cite{SKSul}. In a hybrid tugboat, they can play a role in powering the propulsion, services loads and hotel loads. 
 
-They are usually arranged in banks to provide different service powers (for example, four small generators instead of two large main generators) \cite{Zhang} \cite{Chua}, which makes it possible to use only one generator for low energy demand and the rest for higher demands.
+They are usually arranged in banks to provide different service powers (for example, four small gensets instead of two large main genset) \cite{Zhang} \cite{Chua}, which makes it possible to use only one genset for low energy demand and the rest for higher demands.
 
-As shown in Figure \ref{fig:AuxGenSet}, auxiliary diesel generators can be used to \cite{Hofman}:
+As shown in Figure \ref{fig:AuxGenSet}, a genset can be used to \cite{Hofman}:
 \begin{itemize}
-	\item Deliver power to the propellers via a series connection when less power than the rated power of the main diesel engines is required.
+	\item Deliver power to the propellers via a series connection, when less power than the rated power of the diesel propulsion engines is required.
 	\item Without connecting to the propellers, it allows the batteries to be charged when there is no possibility of charging them in port. 
-	\item Power supply to the tugboat hotel loads.
+	\item Power supply to the tugboat services and hotel loads.
 \end{itemize}
  
 \subsection{Battery Bank}
@@ -56,29 +56,29 @@ As shown in Figure \ref{fig:AuxGenSet}, auxiliary diesel generators can be used 
     \label{fig:BattBank_scheme}
 \end{figure}
 
-The function of the BESS shown in the Figura \ref{fig:BattBank_scheme} is not only to store energy; it also complements the operation of the main diesel engines. As mentioned in section \ref{sec:Roles}, these are some of the complementary functions that the BESS can provide in a hybrid tugboat.
+The function of the BESS shown in the Figure \ref{fig:BattBank_scheme} it is not just about storing energy for the propulsion system; it also complements the operation of the diesel propulsion engines and gensets in a hybrid configuration. As mentioned in section \ref{sec:Roles}, these are some of the complementary functions that the BESS can provide in a hybrid tugboat.
 
 \begin{itemize}
-	\item \textbf{Peak Shaving:} The use of a BESS solves the inefficiencies of diesel engines when faced with sudden changes in power. Instead of forcing the engine to accelerate rapidly—which causes thermal stress and polluting emissions (black smoke)—the battery supplies energy instantly. 
-	\item \textbf{Spinning Reverse:} If the active diesel generator fails, the BESS instantly takes over the load, preventing a blackout and saving fuel and operating hours for the main diesel engine.
-	\item \textbf{Optimise Load:} The integration of a battery energy storage system (BESS) allows diesel engines to always operate at their maximum efficiency point, regardless of speed demand:
+	\item \textbf{Peak Shaving:} The use of a BESS solves the inefficiencies of diesel propulsion engines when faced with sudden changes in power. Instead of forcing the propulsion engines to accelerate rapidly—which causes thermal stress and polluting emissions (black smoke)—the battery supplies energy instantly. 
+	\item \textbf{Spinning Reverse:} Traditionally, a genset is kept running and synchronized with the ship’s electrical system, operating at low load. Its purpose is to be ready to take over the load instantly if another generator fails, thereby preventing a blackout.
+In the case of a battery energy storage system (BESS), the battery can take on this role instantly: unlike an internal combustion engine, which needs time to accelerate and take on the load, the power electronics of a BESS can deliver its rated power within milliseconds. In addition, the BESS allows for the shutdown of those gensets that previously had to be kept running for safety reasons. This translates into significant fuel savings and a reduction in maintenance hours.
+	\item \textbf{Optimise Load:} The integration of a BESS could allows diesel propulsion engines to operate at their maximum efficiency point, regardless of speed demand:
 	\begin{itemize}
-		\item Low propulsion demand: Excess energy generated by the engine is used to charge the batteries.
-		\item High propulsion demand: Batteries provide additional power (hybrid propulsion), preventing the engine from being overloaded or taken out of its optimal range.
+		\item Low propulsion demand: Excess energy generated by the diesel propulsion engine is used to charge the batteries.
+		\item High propulsion demand: Batteries provide additional power (hybrid propulsion), preventing the propulsion engine from being overloaded or taken out of its optimal range.
 	\end{itemize}
 	
 \end{itemize}
 
 \section{Classification of Hybrid Propulsion Systems}
 
-The maritime industry has evolved distinct topological approaches to hybridization, each offering specific trade-offs between complexity, cost, redundancy, and efficiency.
+The maritime industry has developed different topological approaches to hybridization, each offering specific trade-offs between complexity, cost, redundancy, and efficiency.
 
 \subsection{Series Hybrid Architecture}
 
-In a hybrid series configuration, the mechanical connection between the internal combustion engine and the propeller shaft is completely decoupled, as is shown in \ref{fig:SH}. The vessel is propelled exclusively by electric motors \cite{VolvoPenta}.
-The main diesel engines function strictly as generator sets (gensets). They produce electrical energy and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors.\\
+In a hybrid series configuration, the mechanical connection between the internal combustion engine and the propeller shaft is mechanically decoupled, as is shown in \ref{fig:SH}. The vessel is propelled exclusively by electric motors \cite{VolvoPenta}.
+Gensets produce electrical energy and fed into a common distribution bus. This bus supplies power to variable frequency drives (VFDs) that control the electric propulsion motors.\\
 
-This system eliminates the inefficiency of diesel engines at low revs, allowing them to always operate at peak performance or delegate the task entirely to the batteries when the load is low \cite{Elica}.
 
 \subsubsection{a) Electric shaft}
 
@@ -95,24 +95,24 @@ This system eliminates the inefficiency of diesel engines at low revs, allowing 
     	\caption{Electric shaft with electric energy storage system.}
     	\label{fig:Series2}
     \end{subfigure}    
-    \caption{Electric Shaft configuration system.}
+    \caption{Electric Shaft configuration system \cite{Elica}.}
     \label{fig:Series_ESh}
 \end{figure}
 
-The generator transforms the mechanical power of the combustion engine to electrical power. The electric motor on the right transforms the electric power back to mechanical power which is then supplied to the propulsor, as is shown in figure \ref{fig:Series1}. This system is called “electric shaft”, as there is no control input to manipulate the power transmission \cite{Elica}.\\
+The genset transforms the mechanical power of the diesel engine to electrical power. The electric motor transforms the electric power back to mechanical power, which is then supplied to the propeller, as is shown in figure \ref{fig:Series1}. This system is called “electric shaft” \cite{Elica}.\\
 
-The electric propulsion system uses the fixed properties of the generator and motor to establish constant power transmission between the combustion engine and the propeller, based on defined voltage, current, and frequency parameters \cite{Elica}.\\
+The electric propulsion system uses the fixed properties of the genset and motor to establish constant power transmission between the diesel engine and the propeller, based on defined voltage, current, and frequency parameters \cite{Elica}.\\
 
-Wired connections make it easy to integrate multiple motors and generators, eliminating the rigidity of mechanical shafts; however, the system is vulnerable to overload: if the holding torque of the synchronous machines is exceeded, the system becomes desynchronized, losing power and risking mechanical integrity (cogging torque) \cite{Elica}.\\
+Wired connections make it easy to integrate multiple motors and generators; however, the system is vulnerable to overload: if the holding torque of the synchronous machines is exceeded, the system becomes desynchronized, losing power and risking mechanical integrity \cite{Elica}.\\
 
 
-The electric shaft system can also be extended with an electric energy storage, to provide additional power during short mission segments, as is shown in figure \ref{fig:Series2}.
+The electric shaft system can also be extended with an electric energy storage, to provide additional power during short services, as is shown in figure \ref{fig:Series2} (a BESS in this case).
 
 The integration of batteries not only improves consumption, but also allows for a physical redesign of the system:
 
 \begin{itemize}
-	\item \textbf{Downsizing:} The combustion engine, electric motors, and wiring can be smaller and lighter, as the storage system compensates for any shortcomings.
-	\item \textbf{Electrical Management:} The storage system compensates for reactive power and, through power electronics, eliminates the risk of desynchronization (cogging torque) mentioned above.
+	\item \textbf{Downsizing:} Gensets, electric motors and wiring can be smaller and lighter, as the energy storage system compensates for any shortcomings.
+	\item \textbf{Electrical Management:} The energy storage system compensates for reactive power and, through power electronics, eliminates the risk of desynchronization.
 \end{itemize}
 
 However, as a vulnerability, the system relies entirely on this compensation to reach its rated power. Therefore, any electrical failure would immediately reduce propulsion capacity \cite{Elica}.
@@ -136,43 +136,42 @@ However, as a vulnerability, the system relies entirely on this compensation to 
     \label{fig:Series_DCL}
 \end{figure}
 
-Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the propulsion motors, as is shown in figure \ref{fig:Series3}. Power converters enable independent operation between the motor and the propeller, allowing various fixed-pitch rotors to be managed autonomously \cite{Elica}. Additionally, the generator set can be resized by adding a BESS connected to the DC link, as shown in Figure \ref{fig:Series4}.\\ 
+Mechanical power is converted to electricity, fed into a DC bus (often 1000V DC), and then inverted back to AC for the electric motors, as is shown in figure \ref{fig:Series3}.  Additionally, the genset can be resized by adding a BESS connected to the DC link, as shown in Figure \ref{fig:Series4}. The idea behind this is to ensure that the genset operates at its optimal efficiency and the BESS operates at lower power levels or helps supply the additional power needed by the genset, if required by the propeller.\\ 
 
-The series hybrid system is ideal for operations involving frequent stops and low speeds (such as tugboats or ferries), but it loses competitiveness on routes traveled at constant speeds, as the system is between $10\%$ and $15\%$ less efficient than a direct mechanical drive due to multiple energy conversions (from mechanical to electrical and vice versa) \cite{Elica}.
+The series hybrid system loses competitiveness on routes traveled at constant speeds, as the system is between $10\%$ and $15\%$ less efficient than a direct mechanical drive due to multiple energy conversions (from mechanical to electrical and vice versa) \cite{Elica}.
 
 \subsection{Parallel Hybrid Architecture}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/chapter03/ParallelHybrid.jpg}
-    \caption{Parallel hybrid propulsion system.}
+    \caption{Scheme of a parallel hybrid propulsion system.}
     \label{fig:Parallel_Hybrid}
 \end{figure}
 
-In a parallel hybrid layout, both the electric motor and the combustion engine are mechanically connected to the propeller shaft with a gearbox \cite{Derman}.
+In a parallel hybrid layout, both the electric motor and the diesel engine are mechanically connected to the propeller through a gearbox, as is shown in \ref{fig:PH}. The main idea is to perform various functions related to the power flow to the propellers like PTI and PTO, as mentioned in section \ref{sec:Diesel_Hyb_Sys}   \cite{Derman}.
 
-In this setup, both the combustion engine and an electric machine (motor/generator) are mechanically connected to the propeller shaft, typically via a reduction gearbox with complex clutching arrangements, as is shown in \ref{fig:PH}. 
+In this case, as shown in Figure \ref{fig:Parallel_Hybrid}, the main function of energy storage system is to supplement the power of the diesel propulsion engine, allowing the latter to be sized only for average loads, not for peaks.\\
 
-In this case, as shown in Figure \ref{fig:Parallel_Hybrid}, the main function of electrical storage is to supplement the power of the main diesel engine, allowing the latter to be sized only for average loads, not for peaks.\\
-
-The following are the operating modes that can be found in the parallel hybrid configuration:
+The following is a list of the operating modes found in the parallel hybrid configuration. Although these were mentioned in Section \ref{sec:Diesel_Hyb_Sys}, further details will be provided here:
 
 \begin{itemize}
-	\item \textbf{Mechanical Mode (PTO)}: The main diesel engine drives the propeller directly. This is used for heavy towing and high-speed transit. The electric machine may freewheel or act as a generator to charge batteries, mode called Power Take-Off (PTO), mentioned in the subsection \ref{sec:Diesel_Hyb_Sys}\cite{Bas}. This is shown in figure \ref{fig:PTO}.
+	\item \textbf{Mechanical Mode (PTO)}: The diesel propulsion engine drives the propeller directly. This is used for heavy towing and high-speed transit. The electric motor can operate in freewheel mode or act as an electric generator to charge the batteries in the event that the diesel propulsion engine produces excess power; this mode is called power take-off (PTO) \cite{Bas}. This is shown in figure \ref{fig:PTO}.
 	\begin{figure}[H]
     		\centering
     		\includegraphics[width=0.8\textwidth]{images/chapter03/PTO.pdf}
     		\caption{Energy flow in PTO mode.}
     		\label{fig:PTO}
 	\end{figure}
-	\item \textbf{Boost Mode (PTI)}: Both the diesel engine and the electric motor provide torque to the shaft simultaneously through the gearbox to the propeller \cite{Bas}. This allows the vessel to achieve a total power output greater than the rating of the main engine alone, providing the "peak" power needed for emergency ship assist maneuvers without requiring a larger main engine. This mode is also called Power Take In (PTI) and is shown in figure \ref{fig:PTI}.
+	\item \textbf{Boost Mode (PTI)}: Both the diesel propulsion engine and the electric motor provide torque to the propeller simultaneously through the gearbox \cite{Bas}. This allows the vessel to achieve a total power output greater than the rating of the diesel propulsion engine alone, providing the "peak" power needed for emergency ship assist maneuvers without requiring a larger diesel engine. This mode is also called Power Take In (PTI) and is shown in figure \ref{fig:PTI}.
 	\begin{figure}[H]
     		\centering
     		\includegraphics[width=0.8\textwidth]{images/chapter03/PTI.pdf}
     		\caption{Energy flow in PTI mode.}
     		\label{fig:PTI}
 	\end{figure}
-	\item \textbf{Electric Mode (PTH)}: The diesel engine shuts down and the shaft is powered exclusively by the electric motor. This configuration allows for silent, emission-free navigation in ports (0-6 knots), as well as functioning as an emergency system that guarantees the mobility of the tugboat at reduced speed in the event of main engine failure. This mode is also called Power Take Home (PTH) and is shown in figure \ref{fig:PTH}.
+	
+	\item \textbf{Electric Mode (PTH)}: The diesel propulsion engine shuts down and the propeller is powered exclusively by the electric motor. This configuration allows for silent, emission-free navigation in ports (0-6 knots), as well as functioning as an emergency system that guarantees the mobility of the tugboat at reduced speed in the event of diesel engine failure. This mode is also called Power Take Home (PTH) and is shown in figure \ref{fig:PTH}.
 	 \begin{figure}[H]
     	 	\centering
          	\includegraphics[width=0.8\textwidth]{images/chapter03/PTH.pdf}
@@ -197,8 +196,8 @@ Table \ref{tab:Series_Parallel_hybrid} below compares some characteristics betwe
 		
 		 & The system allows optimizing the sizing of each of the propulsion systems. Supplementary costs and volume related to complex mechanical system (clutches, gearboxes).\\
 		\hline
-		\textbf{Power and Efficiency}& Efficiency limited by the multiplication of series systems (motor, generator, transformer, converters, motors, etc.). If multiple sources are used, combustion engines can operate at maximum efficiency.  
-		& Good efficiency related to the reduction in the number of components in the series (especially in combustion engine mode). The combustion engine operates at maximum efficiency.\\
+		\textbf{Power and Efficiency}& Efficiency limited by the multiplication of series systems (motor, generator, transformer, converters, motors, etc.). If multiple sources are used, diesel engines can operate at maximum efficiency.  
+		& Good efficiency related to the reduction in the number of components in the series (especially in diesel engine mode). The combustion engine operates at maximum efficiency.\\
 		\hline
 		\textbf{Redundancy/reliability}& The system is modular, and offers power sources redundancy. 
 		& Very high level of redundancy since the propulsion power can be provided independently by two independent systems.\\	
@@ -206,14 +205,14 @@ Table \ref{tab:Series_Parallel_hybrid} below compares some characteristics betwe
 	\end{tabular}
 \end{table}
 
-The parallel hybrid architecture is currently the dominant configuration for high-bollard-pull tugs because it preserves the mechanical efficiency of the direct drive for peak loads.
+While the series hybrid architecture is simpler to implement and may be a less expensive solution (in terms of acquisition cost), the parallel hybrid architecture offers greater functional versatility due to the larger number of connected components, enabling optimal operation of the diesel propulsion system.
 
 
 \section{Grid Distribution}
 
-Typically, electricity has been distributed to other consumers in AC and converted to direct current (DC) for consumers that need it – usually smaller onboard electrical systems, as opposed to the bigger systems such as electric propulsion that require AC \cite{Wartsila2}. Traditional ships use 440V or 690V AC grids. 
+Typically, electricity has been distributed to other consumers in AC and converted to direct current (DC) for consumers that need it – usually smaller onboard electrical systems, as opposed to the bigger systems such as electric propulsion that require AC \cite{Wartsila2}. Traditional ships use 400V or 690V AC grids. 
 
-But as fully electric and hybrid vessels have become increasingly popular, a new electrical integration concept that uses DC for electricity distributio has become a hot topic. With the integration of batteries (DC sources) and variable speed drives (DC internal), makes AC inefficient.\\
+But as fully electric and hybrid vessels have become increasingly popular, a new electrical integration concept that uses DC for electricity distribution has become a hot topic. With the integration of batteries (DC sources) and variable speed drives (DC internal), makes AC inefficient.\\
 
 The architectural shift from AC to DC distribution is the technological enabler of modern hybrid vessels.
 
@@ -221,16 +220,16 @@ The architectural shift from AC to DC distribution is the technological enabler 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{images/chapter03/AC_Link.pdf}
-    \caption{AC Link.}
+    \includegraphics[width=0.8\linewidth]{images/chapter03/AC_Link.jpg}
+    \caption{Scheme of AC Link into the tugboat.}
     \label{fig:AC_Link}
 \end{figure}
 
 Historically, AC has been the standard on ships \cite{Nautech}, but it imposes rigid restrictions on the diesel engine:
 
 \begin{itemize}
-	\item \textbf{Mandatory synchronization:} Motors must rotate at a constant speed to maintain stable voltage and frequency in the electrical system.
-	\item \textbf{Narrow efficiency range:} Due to this fixed speed, the engine only achieves its optimal fuel consumption (SFOC) in a very limited range, generally around $85\%$ of its rated load.
+	\item \textbf{Mandatory synchronization:} Gensets must rotate at a constant speed to maintain stable voltage and frequency in the electrical system.
+	\item \textbf{Narrow efficiency range:} Due to this fixed speed, the engine only achieves its optimal fuel consumption (BSFC) in a very limited range, generally around $85\%$ of its rated load.
 \end{itemize}
 
 The control strategy for electrical architectures consists of two parts \cite{Geertsma}: 
@@ -242,7 +241,7 @@ The control strategy for electrical architectures consists of two parts \cite{Ge
 For onboard power systems, voltages can range from 400 V
 in small ships to 11 kV in large vessels with total onboard power
 up to 100 MW. Even when docked in a port, a large vessel
-may have 10 MW of power requirement \cite{Qazi}.
+may have 10 MW of power requirement for hotel and services loads \cite{Qazi}.
 
 
 \subsection{DC Link}
@@ -250,15 +249,15 @@ may have 10 MW of power requirement \cite{Qazi}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{images/chapter03/DC_Link.pdf}
-    \caption{DC Link.}
+    \caption{Scheme of DC Link into the tugboat.}
     \label{fig:DC_Link}
 \end{figure}
 
-The Onboard DC Grid concept eliminates the need for bulky propulsion transformers and main AC switchboards. This can reduce the total space occupied by electrical equipment by between 30$\%$ and 75$\%$, freeing up space in a tugboat's engine rooms \cite{ABB}.\\
+The onboard DC Grid concept eliminates the need for bulky propulsion transformers and a main AC switchboards. This can reduce the total space occupied by electrical equipment by between 30$\%$ and 75$\%$, freeing up space in a tugboat's engine rooms \cite{ABB}.\\
 
-DC networks allow the motor speed to vary according to the load, unlike the constant speed required in AC. This decoupling optimizes consumption at low demand, achieving fuel savings of up to 27$\%$ \cite{ABB}.\\
+DC networks allow the genset speed to vary according to the load, unlike the constant speed required in AC. This decoupling optimizes consumption at low demand, achieving fuel savings of up to 27$\%$ \cite{ABB}.\\
 
-Hybrid tugboats typically use 1000 V DC networks. These are categorized as LVdc (up to 1000 V and 20 MW) or MVdc (above 1000 V and 20 MW) systems, using unipolar or bipolar bus architectures \cite{Xu2022}.
+Hybrid architectures typically use 1000 V DC networks. These are categorized as LVdc (up to 1000 V and 20 MW) or MVdc (above 1000 V and 20 MW) systems, using unipolar or bipolar bus architectures \cite{Xu2022}.
 
 
 
@@ -281,7 +280,7 @@ In Table \ref{tab:AC_DC_Grid} there is a comparison between the two ways to elec
 \\
 \hline
 		\textbf{Conversion Losses}
-		& In a traditional drive with an AC grid, power flows: Generator (AC) $\to$ Switchboard (AC) $\to$ Rectifier (DC) $\to$ Inverter (AC) $\to$ Motor. 
+		& In a traditional drive with an AC grid, power flows: Generator (AC) $\to$ Switchboard (AC) $\to$ Power Drive (\textit{Rectifier (DC) $\to$ Inverter (AC)}) $\to$ Motor. 
 		 & With a DC grid, the "Rectifier" stage is centralized or integrated, and batteries connect directly to the DC bus via DC/DC converters. This eliminates multiple conversion steps.
 \\
 \hline
@@ -310,21 +309,20 @@ Electric propulsion and distribution systems can fulfill their role either joint
     \label{fig:Segregated_PS}
 \end{figure}
 
-The segregated power system (SPS) has two separate electrical systems, one dedicated to providing power for ship propulsion and the other reserved for feeding auxiliary loads \cite{Reusser}.\\
+The segregated power system (SPS) has two separate electrical systems, one dedicated to providing power for ship propulsion and the other reserved for feeding service and hotel loads \cite{Reusser}.\\
 
 In this configuration, energy flows linearly and mechanically:
 
 \begin{itemize}
-	\item \textbf{Direct Drive:} The prime movers (diesel engines) drive the propellers through a physical connection of reduction gears and long shafts.
-	\item \textbf{Function of the Gears:} Their role is to transform the high speed of the engine into a speed suitable for the propeller while transferring power, as well as to couple the electric motor with the diesel engine \cite{SKSul}.	
+	\item \textbf{Direct Drive:} Diesel propulsion engines drive the propellers through a physical connection of reduction gears and long shafts.
+	\item \textbf{Function of gearboxes:} Their role is to transform the high speed of the engine into a speed suitable for the propeller while transferring power, as well as to couple the electric motor with the diesel propulsion engine \cite{SKSul}.	
 \end{itemize}
 
-In this traditional configuration, propulsion generators and auxiliary generators are separated, which creates three main problems:
+In this traditional configuration, gensets and diesel propulsion engines are separated, which creates some problems:
 
 \begin{itemize}
-	\item \textbf{Incompatibility:} Operating at different voltages and frequencies, the systems cannot share power with each other.
-	\item \textbf{Lack of Flexibility:} Excess power from the main engines cannot be used for ship loads, reducing operational efficiency.
-	\item \textbf{Low Performance and Emissions:} Although $90\%$ of installed power is for propulsion \cite{Reusser}, auxiliary generators often operate far from their optimal load due to hotel loads, which unnecessarily increases consumption and pollution.
+	\item \textbf{Lack of Flexibility:} Excess power from the diesel propulsion engines cannot be used for ship loads, reducing operational efficiency.
+	\item \textbf{Low Performance and Emissions:} Although $90\%$ of installed power is for propulsion \cite{Reusser}, gensets often operate far from their optimal load due to service and hotel loads, which unnecessarily increases consumption and pollution.
 \end{itemize}
 
 \subsection{Integrated Power System}
@@ -336,17 +334,17 @@ In this traditional configuration, propulsion generators and auxiliary generator
     \label{fig:Integrated_PS}
 \end{figure}
 
-In this architecture, the total power required by the propulsion system and service loads is supplied by one or more generators connected to the medium-voltage bus and then distributed to the low-voltage bus via transformers \cite{Reusser}.\\ 
+In this architecture, the total power required by the propulsion system and service and hotel loads is supplied by one or more gensets connected to the main voltage bus and then distributed to the via transformers \cite{Reusser}.\\ 
 
-The propulsion motors are fed from power converters, which are connected directly to the main busbar, and the service loads are fed from a low-voltage busbar, using stepdown transformers.\\
+The propulsion electric motors are fed from power drives, which are connected directly to the main busbar, and the service and hotel loads are fed using stepdown transformers.\\
 
 The integrated power system (IPS) system integrates generation and distribution into a common electrical network. This energy exchange dramatically improves operational flexibility and system availability compared to traditional configurations \cite{SKSul}. By actively managing the power delivered, IPS minimizes the use of generators, optimizing consumption and environmental impact.
 
-IPS eliminates the separation between propulsion power and service power, creating a single, shared network \cite{SKSul}:
+Therefore, IPS eliminates the separation between propulsion power and service and hotel power, creating a single, shared network \cite{SKSul}:
 
 \begin{itemize}
 	\item \textbf{Unified Network:} All generated energy is centralized, powering both the propulsion engines and the ship's loads.
-	\item \textbf{Intelligent Management:} Allows you to optimize how many generators should be turned on based on actual demand, preventing them from operating inefficiently.
+	\item \textbf{Energy Management System (EMS):} Allows you to optimize how gensets should be turned on based on actual demand, preventing them from operating inefficiently.
 \end{itemize}
 
 Thus, the direct benefits come from improved operational flexibility, increased energy availability, optimized fuel use, and reduced pollutant emissions.
@@ -367,9 +365,9 @@ This hybrid propulsion system is designed to incorporate electrical and electrom
 Below are some of the features associated with this hybrid tugboat:
 
 \begin{itemize}
-	\item \textbf{Classification of Hybrid Propulsion System:} The propulsion system is a parallel hybrid propulsion system, as it has a gearbox that allows the electric motor and the diesel propulsion engine to be coupled together in order to deliver power to the propeller either mechanically or electrically.
-	\item \textbf{Grid Distribution:} The tugboat's internal electrical distribution network is AC, so as not to add an additional stage to the main diesel generator, thus avoiding complexity in control. In addition, the voltage level (400 V) is associated with the levels that can be found in port in order to charge the batteries, taking into account that such (slow charging) can be carried out during the remaining hours outside of service hours.
-	\item \textbf{Incorporation Grid Distribution:} The electrical distribution network is considered integrated, given that there is no separation from the propulsion stage. The purpose of this is to enable the main generator to deliver power to the propellers if required.
+	\item \textbf{Classification of Hybrid Propulsion System:} The propulsion system is primarily a parallel hybrid system, with a secondary operating mode that allows for a series hybrid configuration. This is because it features a gearbox that allows the electric motor and the diesel propulsion engine to be coupled to transmit power to the propeller, either mechanically or electrically, and, independently, can drive the generator set to supply power to the propulsion system.
+	\item \textbf{Grid Distribution:} The tugboat's internal electrical distribution network is AC, so as not to add an additional stage to the genset and avoiding the installation of an AC/DC charger on board, thus avoiding complexity in control. In addition, the voltage level (400 V) is associated with the levels that can be found in port in order to charge the batteries, taking into account that such (slow charging) can be carried out during the remaining hours outside of service hours.
+	\item \textbf{Integration Grid Distribution:} The electrical distribution network is considered integrated, given that there is no separation from the propulsion stage. The purpose of this is to enable the genset to deliver power to the propellers if required.
 \end{itemize}
 
 \subsection{Operating Modes}
@@ -385,7 +383,7 @@ Based on the proposed design for the hybrid propulsion system shown in the previ
     \label{fig:Towing_Mode}
 \end{figure}
 
-In \textit{Towing Mode}, the main engines start up and drive the rudder propellers, as is shown in Figure \ref{fig:Towing_Mode}. The main generator is disconnected from the propulsion system and the auxiliary generator set powers the normal electrical system. This mode is intended for use during thrust/traction operations and free navigation at speeds above 8 knots. It should also be noted that PTO and PTI functionalities are not considered, given the modes of operation explained below.
+In \textit{Towing Mode}, the main engines start up and drive the propellers, as is shown in Figure \ref{fig:Towing_Mode}. The genset is disconnected from the propulsion system and one auxiliary generator set powers to the services and hotel loads. This mode is intended for use during towing operations and free navigation at speeds above 8 knots. It should also be noted that PTO and PTI functionalities are not considered, given the modes of operation explained below.
 
 \subsubsection{b) Free Sailing Mode} \label{sec:FSM}
 
@@ -396,12 +394,12 @@ In \textit{Towing Mode}, the main engines start up and drive the rudder propelle
     \label{fig:FreeSailingMode}
 \end{figure}
 
-In \textit{Free Sailing Mode}, the main generator set powers the electric propulsion motors that drive the rudder propellers, while the main engines are not running and the auxiliary generator set also powers the standard electrical system, as shown in Figure \ref{fig:FreeSailingMode}. Free sailing mode can be used to maintain position, maneuver, and sail freely at speeds of up to 8 knots.\\
+In \textit{Free Sailing Mode}, the genset powers the electric propulsion motors that drive the propellers, while the diesel propulsion engines are not running and the auxiliary generator set also powers to the hotel and services loads, as shown in Figure \ref{fig:FreeSailingMode}. Free sailing mode can be used to maintain position, maneuver, and sail freely at speeds of up to 8 knots.\\
 
-This mode also allows the batteries to be charged when the tugboat is docked, for example (\textit{Charging Mode}). If the state of charge (SOC) of the battery banks drops to 60$\%$, the main generator switches on to charge the batteries. As soon as the batteries are charged to an SOC of 80$\%$, the generator switches off and the batteries can power the vessel if necessary.\\
+This mode also could allows the batteries to be charged when the tugboat is docked, for example (\textit{Charging Mode}). If the state of charge (SOC) of the battery banks drops to 60$\%$, the genset switches on to charge the batteries. As soon as the batteries are charged to an SOC of 80$\%$, the generator switches off and the batteries can power the vessel if necessary.\\
 
-At medium operating power, the efficiency of the system is measured by comparing the consumption of the diesel engines of a conventional tugboat with the consumption of the main generator under the same loads. \\
-For this purpose, we considered the use of an MTU 16V 4000 P63 engine, whose BSFC profile can be seen in Figure \ref{fig:MTU_general}.
+To compare at medium operating power, the efficiency of the system is measured by comparing the consumption of the diesel propulsion engines of a conventional tugboat with the genset's internal diesel engine under the same loads. \\
+For this purpose, it was considered the use of genset with a MTU 16V 4000 P63 engine, whose BSFC profile can be seen in Figure \ref{fig:MTU_general}.
 
 \begin{figure}[H]
     
@@ -433,7 +431,7 @@ For this purpose, we considered the use of an MTU 16V 4000 P63 engine, whose BSF
     \label{fig:StandBy_Mode}
 \end{figure}
 
-In \textit{Standby Mode}, the diesel engines will shut down and the battery will power the normal electrical system and the electric propulsion motors that drive the rudder propellers, as is shown in Figure \ref{fig:StandBy_Mode}. \textit{Standby Mode} can be used to maintain position, maneuver, and navigate freely at speeds of up to 5 knots, thus complying with the PTH functionality. In addition, the battery bank may provide \textbf{peak shaving} and \textbf{spinning reverse} functions.
+In \textit{Standby Mode}, diesel engines will shut down and the battery will power the normal electrical system and the electric propulsion motors that drive the propellers, as is shown in Figure \ref{fig:StandBy_Mode}. \textit{Standby Mode} can be used to maintain position, maneuver, and navigate freely at speeds of up to 5 knots, thus complying with the PTH functionality. In addition, the battery bank may provide \textbf{peak shaving} and \textbf{spinning reverse} functions.
 
 
 \section{Operational Profile}
@@ -442,8 +440,10 @@ Based on the operating modes described above and the tugboat load profiles seen 
 
 \subsection{One Maneuver}
 
-Based on the profile in Figure \ref{fig:1M_releff}, two hybridization alternatives are proposed that integrate battery banks with capacities of $15\%$ and $25\%$ of the propulsion system's nominal power. This can be seen in Figures \ref{fig:1M_HybTug_releff_015} and \ref{fig:1M_HybTug_releff_025}, respectively.
-
+Based on the profile in Figure \ref{fig:1M_releff}, two hybridization alternatives are proposed that integrate battery banks with capacities of $15\%$ (small bank) and $25\%$ (large bank) of the propulsion system's nominal power.\\ 
+The idea is to show in which power ranges the different operating modes proposed above can be used: \textit{StandBy Mode} for low power levels (green), \textit{Free sailing Mode} for medium power levels (blue), and \textit{Towing Mode} for high power levels (gray).\\
+Once the various modes required to meet the load profile have been identified, the small battery bank is used to deliver up to 600 kW of power, and the large battery bank is used to deliver 1 MW of power.\\\\
+In Figures \ref{fig:1M_HybTug_releff_015} and \ref{fig:1M_HybTug_releff_025}, can see how \textit{Standby Mode} (green), \textit{Freesailing Mode} (blue), and \textit{Towing Mode} (gray) work for the small battery bank and the large battery bank, respectively.
 
 \begin{figure}[H]
     \centering
@@ -460,6 +460,8 @@ Based on the profile in Figure \ref{fig:1M_releff}, two hybridization alternativ
 \end{figure}
 
 By visually comparing the graphically represented load profiles, it can be seen that increasing the nominal power of the bank reduces the use of \textit{Free Sailing Mode}, without altering \textit{Towing Mode}.
+
+In addition, using the genset increases the relative efficiency of the propulsion system, achieving values above $90\%$ relative efficiency. This is because the relative efficiency of the generator set for Free Sailing mode is now being considered.
 
 \subsection{Two Maneuvers}
 
@@ -479,11 +481,11 @@ Following the above procedure, the load profile of the service maneuver (Fig. \r
     \label{fig:2M_HybTug_releff_025}
 \end{figure}
 
-The figures \ref{fig:1M_HybTug_releff_015}, \ref{fig:1M_HybTug_releff_025}, \ref{fig:2M_HybTug_releff_015} and \ref{fig:2M_HybTug_releff_025} show that each operating mode is executed in the operating profile depending on the power levels requested by the service. This leads to improvements in the relative efficiency of the engines, since the modes used by the engines were selected to achieve optimal BSFC for those power levels, which also improves fuel consumption and reduces CO\textsubscript{2} emissions.
+The figures \ref{fig:1M_HybTug_releff_015}, \ref{fig:1M_HybTug_releff_025}, \ref{fig:2M_HybTug_releff_015} and \ref{fig:2M_HybTug_releff_025} show that each operating mode is executed in the operating profile depending on the power levels requested by the service. This leads to improvements in the relative efficiency of the diesel propulsion engines, since the modes used by the engines were selected to achieve optimal BSFC for those power levels, which also improves fuel consumption and reduces CO\textsubscript{2} emissions.
 
 \section{Generated Emissions and Fuel Consumption}
 
-The hybrid tugboat's operating modes reduce fuel consumption and emissions, especially during periods of service when batteries are used. It can also be seen that \textit{Free Sailing Mode} significantly reduces fuel consumption levels thanks to the use of the main generator. 
+The hybrid tugboat's operating modes reduce fuel consumption and emissions, especially during periods of service when batteries are used. It can also be seen that \textit{Free Sailing Mode} significantly reduces fuel consumption levels thanks to the use of the genset. 
 
 \subsection{One Maneuver}
 
@@ -549,7 +551,7 @@ Based on the results shown by the hybridization, a comparison is made of the con
     \label{fig:Stacks_HybTug}
 \end{figure}
 
-Analysis of the data (Figures \ref{fig:Stack1M} and \ref{fig:Stack2M}) shows that the hybrid tugboat reduces fuel consumption compared to a conventional tugboat when power requirements are low, thanks to the use of the main generator (blue) and batteries (green). This demonstrates that, by having a battery bank with greater service power, the tugboat does not need to start up the main generator for minor tasks. As a result, there is lower consumption and a reduction in daily pollutant emissions.\\
+Analysis of the data (Figures \ref{fig:Stack1M} and \ref{fig:Stack2M}) shows that the hybrid tugboat reduces fuel consumption compared to a conventional tugboat when power requirements are low, thanks to the use of the genset (blue) and BESS (green). This demonstrates that, by having a battery bank with greater service power, the tugboat does not need to start up the genset for minor tasks. As a result, there is lower consumption and a reduction in daily pollutant emissions.\\
 
 Considering the possible use of the battery bank in the tugboat's low-power range, it is possible to observe how the percentages of daily fuel consumption and daily emissions generated are distributed for one and two maneuvers of the hybrid tugboat. This can be seen in Figure \ref{fig:Stacks_HybTug_1M2M}.
 
@@ -575,7 +577,7 @@ Considering the possible use of the battery bank in the tugboat's low-power rang
 \end{figure}
 
 
-In this way, a comparison of the total daily fuel consumption (CO\textsubscript{2} emissions) between the conventional tugboat and the hybrid tugboat can be obtained for one and two maneuvers with the proposed architecture, considering a battery bank of $15\%$ of the total propulsion power and another battery bank of $25\%$ of the total propulsion power.
+In this way, a comparison of the total daily fuel consumption (CO\textsubscript{2} emissions) between the conventional tugboat and the hybrid tugboat can be obtained for one and two maneuvers with the proposed architecture, considering the small battery bank and the large battery bank.
 
 \begin{figure}[H]
     \centering
@@ -626,7 +628,9 @@ In this way, a comparison of the total daily fuel consumption (CO\textsubscript{
     \label{fig:Total_2M}
 \end{figure}
 
-The images above show how fuel consumption is reduced with the support of the battery bank and the use of the main generator at medium and low power levels (blue). Table \ref{tab:HybImprovement} summarizes the improvements of hybridization with respect to the maneuvers of the conventional tugboat.
+The figures above show how fuel consumption is reduced thanks to the support provided by the battery bank and the use of the genset. The green slice shows the total reduction in fuel consumption and emissions resulting from the incorporation of the BESS compared to a conventional tugboat; the blue slices show the fuel consumption and emissions generated by the genset; and the gray slice shows the fuel consumption and emissions generated by the diesel propulsion engines.
+
+Table \ref{tab:HybImprovement} summarizes the improvements provided by hybridization compared to the operations of a conventional tugboat.
 
 \begin{table}[H]
 	\centering
@@ -646,15 +650,15 @@ The images above show how fuel consumption is reduced with the support of the ba
 \end{table}
 
 \section{Chapter summary}
-This chapter establishes the theoretical and technical foundation for designing an layout for a hybrid propulsion system system. It primarily focuses on how different propulsion setups and electrical grids can improve efficiency and reduce the environmental impact of maritime operations.
+This chapter establishes the theoretical and technical foundation for designing a layout for a hybrid propulsion system. It primarily focuses on how different propulsion setups and electrical grids can improve efficiency and reduce the environmental impact of maritime operations.
 
 \begin{itemize}
-	\item \textbf{Power Triad}: Hybrid tugboats mostly have three main energy sources: main propulsion engines, auxiliary generators, and the battery energy storage system (BESS).
+	\item \textbf{Different power sources}: Hybrid tugboats mostly have three main energy sources: diesel propulsion engines, gensets and BESS.
 	\begin{itemize}
 		\item \textbf{BESS Functions}: Beyond energy storage, the battery bank provides multiple functions such as peak shaving (management of high accelerations), spin reserve (prevention of blackouts), and load optimization (maintaining motors in their efficiency zones).
 	\end{itemize}
-	\item \textbf{Propulsion Architectures}: Serial architectures (motor and propeller decoupled) and parallel architectures (motor and propeller connected to the shaft) are compared. The parallel configuration is currently the most common in hybrid tugboats, as it allows for variations in operating mode and does not rely on a generator to propel the propellers.
-	\item \textbf{Grid Distribution}: A technological shift is taking place from traditional AC links to DC links. DC networks allow motors to operate at variable speeds. However, AC links have the advantage of not requiring a DC charger at the port, making it easier to charge hybrid tugboats.
+	\item \textbf{Propulsion Architectures}: Series architectures (where the engine and propeller are mechanically decoupled) and parallel architectures (where the engine and propeller are connected to the same shaft). Although the first configuration is generally less complex than the second one, each has its advantages in hybrid propulsion systems, allowing for the best of both options to be leveraged when considering a series/parallel configuration.
+	\item \textbf{Grid Distribution}: DC internal grids allow motors to operate at variable speeds and are an option that improves the efficiency of the electrical system. However, internal AC grid have the advantage of directly integrating the gensets located inside the tugboat, without the need for an onboard charger (AC/DC) on the tugboat or a onshore charger (DC/DC), which could increase the acquisition cost of the hybrid system.
 \end{itemize}
 
-Therefore, the operational advantages of the proposed hybrid system are the use of specific modes, such as towing, free sailing, and standby mode, to optimize efficiency. By using batteries for low-power tasks and the main generator for medium-power tasks, the tugboat can significantly reduce its daily fuel consumption and CO\textsubscript{2} emissions. Thus, the only decision left to make is whether to cover the low-power range fully or partially with the power delivered by the battery bank.
+Therefore, the operational advantages of the proposed hybrid system are the use of specific modes, such as \textit{Towing Mode}, \textit{Free Sailing Mode} and \textit{StandBy Mode}, to optimize efficiency. By using batteries for low-power tasks and the genset for medium-power tasks, the tugboat can significantly reduce its daily fuel consumption and CO\textsubscript{2} emissions. Thus, the only decision left to make is whether to cover the low-power range fully or partially with the power delivered by the battery bank.

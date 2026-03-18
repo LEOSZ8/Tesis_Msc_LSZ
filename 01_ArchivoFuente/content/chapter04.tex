@@ -32,7 +32,7 @@ Energy stored in the electrochemical cells must traverse a electrical path to re
 \begin{enumerate}
 	\item \textbf{Coulombic/Voltaic Efficiency} ($\eta_{bat}$): Li-ion batteries are highly efficient, but internal resistance ($R_{int}$) causes $I^2R$ losses during discharge. Typical round-trip efficiency is $92-96\%$; discharge efficiency is generally taken as $0.96$ to $0.98$ \cite{BattUniversity}.
 	\item \textbf{DC/DC Converters} $\eta_{conv}$:  Many hybrid architectures utilize DC/DC converters to decouple the battery voltage from the main DC bus voltage. These typically operate at $0.97$ to $0.98$ efficiency.
-	\item \textbf{Variable Frequency Drives (VFD)} $\eta_{vfd}$: This inverters for electric motors  converting DC bus power to AC for the motors operate at $0.96$ to $0.98$ efficiency.
+	\item \textbf{Variable Frequency Drives (VFD)} $\eta_{vfd}$: These inverters for electric motors  converting DC bus power to AC for the motors operate at $0.96$ to $0.98$ efficiency.
 	\item \textbf{Electric Motor} $\eta_{motor}$: Permanent Magnet (PM) machines are preferred for hybrid tugs due to their high efficiency at partial loads compared to induction motors. PM motor efficiency is typically $0.95$ to $0.97$.
 \end{enumerate}
 
@@ -48,7 +48,7 @@ The Depth of Discharge (DOD) is the percentage of the battery's capacity that ha
 
 \begin{itemize}
 	\item  \textbf{Cycle Life Correlation}: The relationship between DOD and cycle life is non-linear. For example, an NMC cell might offer 2,000 cycles at $100\%$ DOD but 5,000 cycles at $80\%$ DOD.
-	\item \textbf{Operational Reserve}: Marine safety standards often dictate a "reserve energy" capability. For a tugboat, this might mean retaining enough energy after a standard operation to perform emergency maneuvering or firefighting for a specified duration.
+	\item \textbf{Operational Reserve}: Marine safety standards often dictate a "margin" capability. For a tugboat, this might mean retaining enough energy after a standard operation to perform emergency maneuvering or firefighting for a specified duration.
 	\item \textbf{Voltage Sag}: At very low SOC ($<10\%$), the cell voltage drops rapidly. To maintain the required bus voltage and power delivery, the current must increase, leading to higher thermal stress.
 \end{itemize}
 
@@ -117,7 +117,7 @@ Based on the factors described previously, the calculations used to obtain the t
 {C}_{rate}=\frac{{E}_{load}}{{P}_{service}}\geq 0 & \Rightarrow k_{c-rate} >1
 \end{align*}
 	
-	\item \textbf{System Efficiency}: To supply power to the mechanical shafts, the battery must generate $${E}_{batt{\_}out}={E}_{load}/{\eta}_{sys}$$
+	\item \textbf{System Efficiency}: To supply power to the propellers, the battery must generate $${E}_{batt{\_}out}={E}_{load}/{\eta}_{sys}$$
 	\item \textbf{Max DOD}: Ensure that the battery is only used to the appropriate depth of discharge relative to its initial nominal capacity (beginning of life, BOL).  To do this, calculate $${E}_{BOL}={E}_{batt{\_}out}/{DOD}_{max}$$
 	\item \textbf{Aging Factor}: To ensure that the battery bank has a long service life, the aging factor must be taken into account  $${E}_{EOL}={E}_{BOL}/{k}_{aging}$$
 	\item \textbf{Apply Temperature/Rating Factors}: Consider the variation in temperature and battery discharge rate through $${E}_{installed}={E}_{EOL}\cdot{k}_{temp}\cdot{k}_{c-rate}$$
@@ -736,7 +736,7 @@ Finally, the alternatives found for LTO are analyzed using Table \ref{tab:Techni
 
 \subsubsection{a) LTO Small Battery Bank (Battery Bank $15\%$ ${\text{P}}_{\text{nom}}$)}
 
-The essential electrical characteristics, performance parameters, and physical characteristics of the small LTO battery bank are presented below in Tables \ref{tab:LTO_015_1}, \ref{tab:LTO_015_2}, and \ref{tab:LTO_015_3}, respectively.
+The essential electrical characteristics, performance parameters, and physical characteristics of the small LTO battery bank are presented below in Tables \ref{tab:LTO_015_1} and \ref{tab:LTO_015_2}.
 
 \begin{table}[H]
 	\centering
@@ -1249,7 +1249,7 @@ In addition, two additional factors related to emissions taxes and government su
 \subsection{Capital Expenditure (CAPEX)}
 
 One of the major problems facing the maritime transport sector with regard to the advancement of hybrid propulsion is how to achieve a fully satisfactory implementation of a cost-effective hybrid propulsion plant \cite{MAN2}. 
-The main challenge is CAPEX, i.e., keeping the capital expenditure of hybrid equipment in line with that of conventional propulsion plants.
+The main challenge of CAPEX, is keeping the capital expenditures for hybrid propulsion system at the same level as those for conventional power system.
 
 The cost of marine battery systems is significantly higher than automotive packs due to the "marine tax"—the cost of ruggedization, certification, and low-volume manufacturing.\\
 
@@ -1471,14 +1471,14 @@ This additional capital expenditure must be recouped through reduced operating c
 
 \subsection{Operational Expenditure (OPEX)}
 
-OPEX savings are derived primarily from fuel reduction during "loitering" (low load) and maintenance intervals extended by reduced engine runtime \cite{MAN2}. 
+OPEX savings are derived primarily from fuel reduction during low load and maintenance intervals extended by reduced engine runtime \cite{MAN2}. 
 
 
 Thus, the following variables are considered in operating expenses.
 
 \subsubsection{a) Fuel Consumption Savings}
 
-A conventional tugboat consumes approximately several thousand liters of fuel just idling during its daily workday. A hybrid tugboat in electric mode consumes 0 liters in that mode. The batteries allow the load on the main engines to be balanced, thereby improving the specific fuel consumption (BSFC).
+A conventional tugboat consumes approximately several thousand liters of fuel just idling during its daily workday. The hybrid tugboat in \textit{StandBy Mode} consumes 0 liters of fuel. The batteries help balance the load on the diesel propulsion engines, thereby improving specific fuel consumption (BSFC).
 
 \subsubsection{b) Maintenance Engine Reduction}
 

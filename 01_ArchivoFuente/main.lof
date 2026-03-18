@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Components of a battery \cite {EMSA}.}}{8}{figure.caption.23}%
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Funcitonal roles of battery systems onboard ships \cite {EMSA}.}}{9}{figure.caption.25}%
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Traditional diesel-mechanic propulsion of a large merchant vessel.}}{12}{figure.caption.29}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Semi-hybridization.}}{12}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Hybridization with diesel propulsion systems.}}{12}{figure.caption.31}%
 \contentsline {figure}{\numberline {1.11}{\ignorespaces Propulsion system based on electric motors, with different power sources.}}{13}{figure.caption.33}%
 \contentsline {figure}{\numberline {1.12}{\ignorespaces Tugboat}}{15}{figure.caption.35}%
 \addvspace {10\p@ }
@@ -42,66 +42,66 @@
 \contentsline {figure}{\numberline {2.24}{\ignorespaces Fuel consumption and emissions with respect to the tugboat's operating profile in two maneuvers.}}{37}{figure.caption.90}%
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Percentage of emissions per day based on power ranges.}}{38}{figure.caption.91}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Main diesel engine used in hybrid vessels.}}{40}{figure.caption.92}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Main generator inside a hybrid vessel.}}{41}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diesel propulsion engine used in hybrid tugboats.}}{40}{figure.caption.92}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Genset inside a hybrid vessel.}}{41}{figure.caption.93}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Battery bank made with multiple cells.}}{41}{figure.caption.94}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Electric Shaft configuration system.}}{42}{figure.caption.96}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Serial connection with built-in DC link.}}{43}{figure.caption.98}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Parallel hybrid propulsion system.}}{44}{figure.caption.99}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Energy flow in PTO mode.}}{44}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Electric Shaft configuration system \cite {Elica}.}}{43}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Serial connection with built-in DC link.}}{44}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Scheme of a parallel hybrid propulsion system.}}{44}{figure.caption.99}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Energy flow in PTO mode.}}{45}{figure.caption.100}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Energy flow in PTI mode.}}{45}{figure.caption.101}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy flow in PTH mode.}}{45}{figure.caption.102}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces AC Link.}}{47}{figure.caption.104}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces DC Link.}}{47}{figure.caption.105}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy flow in PTH mode.}}{46}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Scheme of AC Link into the tugboat.}}{47}{figure.caption.104}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Scheme of DC Link into the tugboat.}}{48}{figure.caption.105}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Segregated PowerSystem}}{49}{figure.caption.107}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Integrated PowerSystem}}{50}{figure.caption.108}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces General Scheme}}{51}{figure.caption.109}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Towing Mode}}{52}{figure.caption.111}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces FreeSailingMode}}{52}{figure.caption.113}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Proposed main generator for use in hybrid tugboat.}}{53}{figure.caption.115}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces StandBy Mode}}{53}{figure.caption.117}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for one maneuver and a battery banks with a capacity of $15\%$ of the propulsion system's rated power.}}{54}{figure.caption.118}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for one maneuver and a battery banks with a capacity of $25\%$ of the propulsion system's rated power.}}{54}{figure.caption.119}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for two maneuvers and a battery banks with a capacity of $15\%$ of the propulsion system's rated power.}}{55}{figure.caption.120}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for two maneuvers and a battery banks with a capacity of $25\%$ of the propulsion system's rated power.}}{55}{figure.caption.121}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during a maneuver and with a battery bank at $15\%$ of the nominal propulsion power.}}{56}{figure.caption.122}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during a maneuver and with a battery bank at $25\%$ of the nominal propulsion power.}}{56}{figure.caption.123}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during two maneuvers, considering a battery bank of $15\%$ of the nominal propulsion power.}}{57}{figure.caption.124}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during two maneuvers, considering a battery bank of $25\%$ of the nominal propulsion power.}}{57}{figure.caption.125}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Fuel savings and reduction in CO\textsubscript {2} emissions associated with increased service power from the battery bank.}}{58}{figure.caption.126}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Percentage of daily emissions and daily fuel consuption for differents battery sizes.}}{58}{figure.caption.128}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Total daily fuel consumption and daily emissions generated by a conventional tugboat during one maneuver.}}{59}{figure.caption.129}%
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison between the total daily fuel consumption (total daily CO\textsubscript {2} emissions generated) of the hybrid tugboat for one maneuver.}}{59}{figure.caption.130}%
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Total daily fuel consumption and daily emissions generated by a conventional tugboat during two maneuvers.}}{60}{figure.caption.131}%
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Comparison between the total daily fuel consumption (total daily CO\textsubscript {2} emissions generated) of the hybrid tugboat for two maneuvers.}}{60}{figure.caption.132}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces FreeSailingMode}}{53}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Proposed main generator for use in hybrid tugboat.}}{54}{figure.caption.115}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces StandBy Mode}}{54}{figure.caption.117}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for one maneuver and a battery banks with a capacity of $15\%$ of the propulsion system's rated power.}}{55}{figure.caption.118}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for one maneuver and a battery banks with a capacity of $25\%$ of the propulsion system's rated power.}}{55}{figure.caption.119}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for two maneuvers and a battery banks with a capacity of $15\%$ of the propulsion system's rated power.}}{56}{figure.caption.120}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Operational profile and relative efficiency of a hybrid tugboat for two maneuvers and a battery banks with a capacity of $25\%$ of the propulsion system's rated power.}}{56}{figure.caption.121}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during a maneuver and with a battery bank at $15\%$ of the nominal propulsion power.}}{57}{figure.caption.122}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during a maneuver and with a battery bank at $25\%$ of the nominal propulsion power.}}{57}{figure.caption.123}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during two maneuvers, considering a battery bank of $15\%$ of the nominal propulsion power.}}{58}{figure.caption.124}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Fuel consumption and emissions with respect to the operating profile of the hybrid tugboat during two maneuvers, considering a battery bank of $25\%$ of the nominal propulsion power.}}{58}{figure.caption.125}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Fuel savings and reduction in CO\textsubscript {2} emissions associated with increased service power from the battery bank.}}{59}{figure.caption.126}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Percentage of daily emissions and daily fuel consuption for differents battery sizes.}}{59}{figure.caption.128}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Total daily fuel consumption and daily emissions generated by a conventional tugboat during one maneuver.}}{60}{figure.caption.129}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison between the total daily fuel consumption (total daily CO\textsubscript {2} emissions generated) of the hybrid tugboat for one maneuver.}}{60}{figure.caption.130}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Total daily fuel consumption and daily emissions generated by a conventional tugboat during two maneuvers.}}{61}{figure.caption.131}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Comparison between the total daily fuel consumption (total daily CO\textsubscript {2} emissions generated) of the hybrid tugboat for two maneuvers.}}{61}{figure.caption.132}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of technologies for the technical analysis of small battery bank design.}}{76}{figure.caption.163}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of technologies for the technical analysis of large battery bank design.}}{76}{figure.caption.164}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of technologies for the technical analysis of small battery bank design.}}{77}{figure.caption.163}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of technologies for the technical analysis of large battery bank design.}}{77}{figure.caption.164}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces LFP battery selected for modeling. \cite {Valence2}.}}{91}{figure.caption.214}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Discharge curve description \cite {Moussa}.}}{92}{figure.caption.215}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces discharge curve of the cell battery.}}{93}{figure.caption.219}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Proposed layout for battery bank implementation.}}{94}{figure.caption.220}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Voltage profile of the small battery bank.}}{95}{figure.caption.222}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Operation and electrical performance of the small battery bank for one maneuver.}}{95}{figure.caption.223}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Operation and electrical performance of the small battery bank for two maneuvers.}}{96}{figure.caption.224}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Voltage profile of the small battery bank.}}{97}{figure.caption.226}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Operation and electrical performance of the large battery bank for one maneuver.}}{97}{figure.caption.227}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Operation and electrical performance of the large battery bank for two maneuvers.}}{98}{figure.caption.228}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Power converter implementation for Bus DC regulation.}}{99}{figure.caption.229}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Electrical performance of power module under nominal operation.}}{100}{figure.caption.231}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Electrical performance of power DC-DC converter under nominal operation.}}{101}{figure.caption.233}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Electrical performance of power module under nominal operation.}}{102}{figure.caption.235}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Electrical performance of power DC-DC converter under nominal operation.}}{103}{figure.caption.237}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LFP battery selected for modeling. \cite {Valence2}.}}{92}{figure.caption.214}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Discharge curve description \cite {Moussa}.}}{93}{figure.caption.215}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces discharge curve of the cell battery.}}{94}{figure.caption.219}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Proposed layout for battery bank implementation.}}{95}{figure.caption.220}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Voltage profile of the small battery bank.}}{96}{figure.caption.222}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Operation and electrical performance of the small battery bank for one maneuver.}}{96}{figure.caption.223}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Operation and electrical performance of the small battery bank for two maneuvers.}}{97}{figure.caption.224}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Voltage profile of the small battery bank.}}{98}{figure.caption.226}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Operation and electrical performance of the large battery bank for one maneuver.}}{98}{figure.caption.227}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Operation and electrical performance of the large battery bank for two maneuvers.}}{99}{figure.caption.228}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Power converter implementation for Bus DC regulation.}}{100}{figure.caption.229}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Electrical performance of power module under nominal operation.}}{101}{figure.caption.231}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Electrical performance of power DC-DC converter under nominal operation.}}{102}{figure.caption.233}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Electrical performance of power module under nominal operation.}}{103}{figure.caption.235}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Electrical performance of power DC-DC converter under nominal operation.}}{104}{figure.caption.237}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Changes in the selection of the firing logic for the upper and lower phases of the TLBBC converter.}}{105}{figure.caption.238}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Changes in the selection of the firing logic for the upper and lower phases of the TLBBC converter.}}{106}{figure.caption.238}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Three Level Buck Boost Converter (TLBBC).}}{112}{figure.caption.257}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces State 0 (S1:Off, S2:Off).}}{113}{figure.caption.259}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces State 1 (S1:On, S2:Off).}}{114}{figure.caption.261}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces State 2 (S1:Off, S2:On).}}{115}{figure.caption.263}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces State 3 (S1:On, S2:On).}}{116}{figure.caption.265}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Proposed control strategy.}}{120}{figure.caption.267}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Implementation of contactors in TLBBC for capacitor precharging process.}}{120}{figure.caption.268}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Proposed Master-Slave control strategy.}}{121}{figure.caption.269}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Three Level Buck Boost Converter (TLBBC).}}{113}{figure.caption.257}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces State 0 (S1:Off, S2:Off).}}{114}{figure.caption.259}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces State 1 (S1:On, S2:Off).}}{115}{figure.caption.261}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces State 2 (S1:Off, S2:On).}}{116}{figure.caption.263}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces State 3 (S1:On, S2:On).}}{117}{figure.caption.265}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Proposed control strategy.}}{121}{figure.caption.267}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Implementation of contactors in TLBBC for capacitor precharging process.}}{121}{figure.caption.268}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Proposed Master-Slave control strategy.}}{122}{figure.caption.269}%

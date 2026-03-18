@@ -58,3 +58,7 @@ Una vez que se finalice el capítulo en esta rama, esta información pasa a la r
 - Dev v4.1: Se agrega información sobre el dimensionamiento y los parámetros de diseño de la batería. Queda en consideración los criterios físicos de la embarcación, CAPEX, OPEX y ROI.
 
 - **Dev v5:** Se realiza la primera versión del capítulo 4, relacionado a las comparaciones técnicas y económicas de las tecnologías de baterías para el diseño del banco de baterías. Esta versión es enviada a Marcelo Pérez para su revisión.
+
+- **Dev v6:** Se entrega el documento completo para la revisión del comité evaluador y el profesor guía.
+
+- **Dev v7:** Versión final del documento subido a la plataforma de biblioteca. Gracias y espero que este repositorio sea de ayuda para alguien en un futuro. No te rindas, puedes lograrlo.
